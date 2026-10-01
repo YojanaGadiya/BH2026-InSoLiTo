@@ -13,3 +13,5 @@ DB/InSoLiToSupportFiles.zip
 DB/CoCitation/data/
 **.log
 **.python-version
+__pycache__/
+.DS_Store
