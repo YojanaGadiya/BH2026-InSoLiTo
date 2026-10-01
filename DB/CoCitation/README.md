@@ -120,6 +120,16 @@ All three tables share `pmcid`, the citing paper. `references` and `mentions` jo
 | `char_offset` | Character position in the paper's body text |
 | `in_table`, `in_caption` | Citation is inside a table or a figure/table caption |
 
+## Sharing: `export_compact.py`
+
+This packs `data/parsed/` into four single Parquet files in `data/export/`, plus a
+`README.txt`, for sending to collaborators. Each cited paper is stored once in `works`, and
+the slim `citations` table points to it by `work_id`. That roughly halves the size.
+
+```bash
+python export_compact.py        # a few minutes; uses DuckDB, so it can spill to disk
+```
+
 ## TLS errors behind a corporate proxy
 
 `CERTIFICATE_VERIFY_FAILED: self-signed certificate in certificate chain` means a
