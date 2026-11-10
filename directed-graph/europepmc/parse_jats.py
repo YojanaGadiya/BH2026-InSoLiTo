@@ -108,13 +108,46 @@ def localname(el) -> str | None:
     return tag.rsplit("}", 1)[-1]
 
 
+# DOI clean-up. Reference text often glues junk onto a DOI: a URL tail ("/full",
+# ".pdf", "/abstract"), the next word ("…[epub ahead of print]", "%0ahttps://…"), a
+# stray bracket, or a doubled prefix ("10.10.1016/…"). Old Wiley DOIs legitimately
+# contain "<", ">", "[", "]", ";" and "(…)", and some have "www." in them, so the
+# rules below only cut at whitespace or "http", strip unbalanced closing brackets,
+# and remove known URL suffixes from the end.
+_DOI_PREFIX = re.compile(r"10\.\d{4,9}/")
+_DOI_INVISIBLE = re.compile(r"[   ​⁠﻿]")
+_DOI_CUT = re.compile(r"(%0[ad]|%20|%09|\s|https?:)", re.I)
+_DOI_SUFFIX = re.compile(
+    r"(?:[./](?:abstract|full|pdf|epdf|html?|short|long|meta|full\.pdf|fulltext|full-text|"
+    r"supplemental|references|figures?|tables?|issuetoc|summary)"
+    r"|(?<=\d)(?:doi|pmid|pmcid|pmc))$", re.I)
+_DOI_TRAIL = ".,;:'\"*/\\"
+
+
 def norm_doi(doi: str | None) -> str | None:
+    """Lower-cased DOI without resolver prefix or junk from the surrounding text."""
     if not doi:
         return None
-    doi = doi.strip().lower()
-    doi = re.sub(r"^(https?://)?(dx\.)?doi\.org/|^doi:\s*", "", doi)
-    doi = doi.rstrip(".,;)")
-    return doi or None
+    d = _DOI_INVISIBLE.sub("", doi).strip().lower()
+    d = re.sub(r"^(https?://)?(dx\.)?doi\.org/|^doi:\s*", "", d)
+    m = _DOI_PREFIX.search(d)
+    if not m:  # not a well-formed DOI: keep it, lightly trimmed
+        return d.rstrip(".,;") or None
+    d = d[m.start():]  # drops a doubled prefix such as "10.10.1016/..."
+    head = len(m.group(0))
+    cut = _DOI_CUT.search(d, head)
+    if cut:
+        d = d[:cut.start()]
+    while True:
+        before = d
+        d = d.rstrip(_DOI_TRAIL)
+        for close, opening in ((")", "("), ("]", "[")):
+            while d.endswith(close) and d.count(close) > d.count(opening):
+                d = d[:-1]
+        d = _DOI_SUFFIX.sub("", d)
+        if d == before:
+            break
+    return d if len(d) > head else None
 
 
 def text_of(el) -> str:

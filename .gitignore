@@ -16,3 +16,4 @@ directed-graph/biotools/data/*.jsonl
 **.python-version
 __pycache__/
 .DS_Store
+DB/CoCitation/*

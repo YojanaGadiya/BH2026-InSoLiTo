@@ -189,6 +189,46 @@ the slim `citations` table points to it by `work_id`. That roughly halves the si
 python export_compact.py        # a few minutes; uses DuckDB, so it can spill to disk
 ```
 
+## Preprints: `resolve_preprints.py`
+
+A tool can be cited through its preprint or through the journal paper that came later,
+and bio.tools may list only one of them. GAMer, for example, lists only its bioRxiv
+preprint (`10.1101/765453`), while papers also cite its Biophysical Journal version
+(`10.1016/j.bpj.2019.11.3400`). This step links the two versions so both match the tool.
+
+```bash
+python resolve_preprints.py --contact you@example.org    # about 1 hour for ~28k DOIs
+pytest test_resolve_preprints.py
+```
+
+- **Finds preprints** in `works.parquet` and `../biotools/data/biotools_publications.csv`
+  by DOI prefix: bioRxiv/medRxiv (`10.1101/` + digits or a date, and `10.64898/`),
+  Research Square, Preprints.org, ChemRxiv, SSRN, OSF, Authorea, ESS Open Archive,
+  PeerJ Preprints and arXiv. Genome Research and other Cold Spring Harbor journals share
+  `10.1101` but use `10.1101/gr.…`, so they aren't flagged.
+- **Removes version suffixes** from bioRxiv/medRxiv DOIs (`10.1101/003905v2` becomes
+  `10.1101/003905`). The suffix isn't part of the registered DOI, so Crossref doesn't
+  know the versioned form, and the two forms are the same paper.
+- **Asks Crossref** for each one. Preprint servers record the published version under
+  `relation.is-preprint-of`. Crossref misses many bioRxiv/medRxiv links (libRoadRunner's
+  `10.1101/001230` has none), so for those it also asks bioRxiv's own API, which does
+  (`10.1093/bioinformatics/btv363`). arXiv DOIs are registered with DataCite, not
+  Crossref, so they're skipped for now (`skipped_arxiv`).
+- **Writes `data/export/doi_aliases.parquet`**, one row per preprint DOI as it appears in
+  the data:
+  - `preprint_doi`, `lookup_doi` (version removed), `published_doi`
+  - `canonical_doi`: the published DOI if there is one, else `lookup_doi`. **Match on this.**
+  - `status`: `linked`, `no_link`, `not_preprint`, `not_found`, `skipped_arxiv` or `error: ...`
+  - `source` (`crossref` or `biorxiv_api`), `server`, `listed_in` (`works`, `biotools`)
+  - `preprint_work_id`, `published_work_id`: both versions in `works`
+- **Caches** answers in `data/preprints/crossref_cache.jsonl`, so re-runs only look up
+  new DOIs and retry errors.
+- `--contact` puts an email in the request so Crossref serves it from its faster
+  "polite" pool. Without it, requests go one at a time at up to 4 per second.
+
+`../citation-order/01_match_tools.py` uses the file when it exists: every DOI, on both
+the bio.tools and the `works` side, is replaced by its `canonical_doi` before matching.
+
 ## TLS errors behind a corporate proxy
 
 `CERTIFICATE_VERIFY_FAILED: self-signed certificate in certificate chain` means a

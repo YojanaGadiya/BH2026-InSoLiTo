@@ -72,6 +72,11 @@ mentions.parquet: one row per in-text citation, in reading order
   sentence_idx        same value = same sentence
   in_table, in_caption
 
+doi_aliases.parquet: written by resolve_preprints.py, if it has been run
+  preprint_doi -> canonical_doi (the published version from Crossref or bioRxiv,
+  else the DOI without a "v2" suffix), with status and the work_id of both versions.
+  Replace each DOI by its canonical_doi before matching.
+
 Quick start (Python)
 --------------------
   import duckdb

@@ -124,3 +124,36 @@ def test_classify_section(title, expected):
 def test_norm_doi():
     assert norm_doi("https://doi.org/10.1/ABC.") == "10.1/abc"
     assert norm_doi("doi: 10.1/x") == "10.1/x"
+
+
+@pytest.mark.parametrize("raw,expected", [
+    # Junk glued on in reference text (real examples from the corpus)
+    ("10.1002/pmic.201400449/abstract", "10.1002/pmic.201400449"),
+    ("10.3389/fmicb.2015.00001/full", "10.3389/fmicb.2015.00001"),
+    ("10.1093/nar/gks1219/", "10.1093/nar/gks1219"),
+    ("10.1093/bib/bbz151]", "10.1093/bib/bbz151"),
+    ("10.1039/c5mb00663e\\", "10.1039/c5mb00663e"),
+    ("10.1093/nar/gkw1099%20UniProt%20Knowledgebase%20(UniProtKB", "10.1093/nar/gkw1099"),
+    ("10.1101/gr.229102. Article published online before print in May 2002", "10.1101/gr.229102"),
+    ("10.1186/1471-2164-9-488%20BioVenn", "10.1186/1471-2164-9-488"),
+    ("10.10.1016/j.ctim.2011.09.004", "10.1016/j.ctim.2011.09.004"),
+    ("10.1101/050559doi", "10.1101/050559"),
+    ("10.1002/1097-0231(20001215)14:23 < 2158::AID-RCM147 > 3.0.CO;2-C",
+     "10.1002/1097-0231(20001215)14:23<2158::aid-rcm147>3.0.co;2-c"),
+    ("10.1042/", None),
+])
+def test_norm_doi_removes_junk(raw, expected):
+    assert norm_doi(raw) == expected
+
+
+@pytest.mark.parametrize("doi", [
+    # Valid DOIs with characters that look like junk: must be left alone
+    "10.1002/(sici)1097-0134(19990401)35:1<114::aid-prot11>3.0.co;2-t",
+    "10.1890/0012-9658(1997)078[0977:hpqida]2.0.co;2",
+    "10.1016/s0022-2836(05)80360-2",
+    "10.4028/www.scientific.net/amr.995.1",
+    "10.1016/j.bpj.2019.11.3400",
+    "10.21203/rs.3.rs-123456/v1",
+])
+def test_norm_doi_keeps_valid(doi):
+    assert norm_doi(doi) == doi
