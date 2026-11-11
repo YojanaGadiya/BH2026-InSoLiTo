@@ -16,6 +16,7 @@ directed-graph/workflowhub/data/nextflow/
 directed-graph/biotools/data/*.jsonl
 directed-graph/edges-processed/
 directed-graph/biotools/data/*.parquet
+directed-graph/edges_processed
 **.log
 **.python-version
 __pycache__/
