@@ -1,0 +1,122 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_HICAR:HICAR:CHECKSUMS,CHECKSUMS,modules/local/checksums.nf,1,checksums,,,module name
+NFCORE_HICAR:HICAR:PREPARE_GENOME:GUNZIP_FASTA,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,,meta.yml
+NFCORE_HICAR:HICAR:PREPARE_GENOME:GUNZIP_GTF,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,,meta.yml
+NFCORE_HICAR:HICAR:PREPARE_GENOME:GUNZIP_GFF,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,,meta.yml
+NFCORE_HICAR:HICAR:PREPARE_GENOME:GFFREAD,GFFREAD,modules/nf-core/gffread/main.nf,1,gffread,gffread,,meta.yml
+NFCORE_HICAR:HICAR:PREPARE_GENOME:GUNZIP_GENE_BED,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,,meta.yml
+NFCORE_HICAR:HICAR:PREPARE_GENOME:GTF2BED,GTF2BED,modules/local/gtf2bed.nf,1,gtf2bed,,,module name
+NFCORE_HICAR:HICAR:PREPARE_GENOME:CHROMSIZES,CHROMSIZES,modules/local/genome/chromsizes.nf,1,chromsizes,,,module name
+NFCORE_HICAR:HICAR:PREPARE_GENOME:GENOME_FILTER,GENOME_FILTER,modules/local/genome/filter.nf,1,genome_filter,,,module name
+NFCORE_HICAR:HICAR:PREPARE_GENOME:COOLER_DIGEST,COOLER_DIGEST,modules/nf-core/cooler/digest/main.nf,1,cooler,cooler,,meta.yml
+NFCORE_HICAR:HICAR:PREPARE_GENOME:RE_CUTSITE,RE_CUTSITE,modules/local/re_cut.nf,1,re_cutsite,,,module name
+NFCORE_HICAR:HICAR:PREPARE_GENOME:GENMAP_INDEX,GENMAP_INDEX,modules/nf-core/genmap/index/main.nf,1,genmap,genmap,,meta.yml
+NFCORE_HICAR:HICAR:PREPARE_GENOME:UCSC_WIGTOBIGWIG,UCSC_WIGTOBIGWIG,modules/nf-core/ucsc/wigtobigwig/main.nf,1,ucsc,ucsc,,meta.yml
+NFCORE_HICAR:HICAR:PREPARE_GENOME:BWA_INDEX,BWA_INDEX,modules/nf-core/bwa/index/main.nf,1,bwa,bwa,,meta.yml
+NFCORE_HICAR:HICAR:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,,meta.yml
+NFCORE_HICAR:HICAR:CUTADAPT,CUTADAPT,modules/nf-core/cutadapt/main.nf,1,cuatadapt,cuatadapt,,meta.yml
+NFCORE_HICAR:HICAR:BWA_MEM,BWA_MEM,modules/nf-core/bwa/mem/main.nf,1,bwa,bwa,,meta.yml
+NFCORE_HICAR:HICAR:SAMTOOLS_MERGE,SAMTOOLS_MERGE,modules/nf-core/samtools/merge/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_HICAR:HICAR:BAM_STAT:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/local/samtools/sort/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_HICAR:HICAR:BAM_STAT:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_HICAR:HICAR:BAM_STAT:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_HICAR:HICAR:BAM_STAT:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_HICAR:HICAR:BAM_STAT:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_HICAR:HICAR:PAIRTOOLS_PAIRE:PAIRTOOLS_PARSE,PAIRTOOLS_PARSE,modules/nf-core/pairtools/parse/main.nf,1,pairtools,pairtools,,meta.yml
+NFCORE_HICAR:HICAR:PAIRTOOLS_PAIRE:COVERAGE_SCALE:GET_SCALE,GET_SCALE,modules/local/atacreads/getscale.nf,1,get_scale,,,module name
+NFCORE_HICAR:HICAR:PAIRTOOLS_PAIRE:PAIRTOOLS_SAMPLE,PAIRTOOLS_SAMPLE,modules/local/pairtools/sample.nf,1,pairtools_sample,,,module name
+NFCORE_HICAR:HICAR:PAIRTOOLS_PAIRE:PAIRTOOLS_STATS,PAIRTOOLS_STATS,modules/local/pairtools/stats.nf,1,pairtools_stats,,,module name
+NFCORE_HICAR:HICAR:PAIRTOOLS_PAIRE:PAIRTOOLS_RESTRICT,PAIRTOOLS_RESTRICT,modules/nf-core/pairtools/restrict/main.nf,1,pairtools,pairtools,,meta.yml
+NFCORE_HICAR:HICAR:PAIRTOOLS_PAIRE:DUMP4HOMER,DUMP4HOMER,modules/local/homer/dump4homer.nf,1,dump4homer,,,module name
+NFCORE_HICAR:HICAR:PAIRTOOLS_PAIRE:BIOC_PAIRS2HDF5,BIOC_PAIRS2HDF5,modules/local/bioc/pairs2hdf5.nf,1,bioc_pairs2hdf5,,,module name
+NFCORE_HICAR:HICAR:PAIRTOOLS_PAIRE:PAIRTOOLS_FLIP,PAIRTOOLS_FLIP,modules/nf-core/pairtools/flip/main.nf,1,pairtools,pairtools,,meta.yml
+NFCORE_HICAR:HICAR:PAIRTOOLS_PAIRE:PAIRTOOLS_SORT,PAIRTOOLS_SORT,modules/nf-core/pairtools/sort/main.nf,1,pairtools,pairtools,,meta.yml
+NFCORE_HICAR:HICAR:PAIRTOOLS_PAIRE:PAIRTOOLS_DEDUP,PAIRTOOLS_DEDUP,modules/nf-core/pairtools/dedup/main.nf,1,pairtools,pairtools,,meta.yml
+NFCORE_HICAR:HICAR:PAIRTOOLS_PAIRE:PAIRIX,PAIRIX,modules/nf-core/pairix/main.nf,1,pairix,pairix,,meta.yml
+NFCORE_HICAR:HICAR:PAIRTOOLS_PAIRE:READS_STAT,READS_STAT,modules/local/reads_stat.nf,1,reads_stat,,,module name
+NFCORE_HICAR:HICAR:PAIRTOOLS_PAIRE:PAIRSQC,PAIRSQC,modules/local/pairix/pairsqc.nf,1,pairsqc,,,module name
+NFCORE_HICAR:HICAR:PAIRTOOLS_PAIRE:PAIRSPLOT,PAIRSPLOT,modules/local/pairix/pairsplot.nf,1,pairsplot,,,module name
+NFCORE_HICAR:HICAR:PAIRTOOLS_PAIRE:READS_SUMMARY,READS_SUMMARY,modules/local/reads_summary.nf,1,reads_summary,,,module name
+NFCORE_HICAR:HICAR:COOLER:COOLER_CLOAD,COOLER_CLOAD,modules/nf-core/cooler/cload/main.nf,1,cooler,cooler,,meta.yml
+NFCORE_HICAR:HICAR:COOLER:COOLER_MERGE,COOLER_MERGE,modules/nf-core/cooler/merge/main.nf,1,cooler,cooler,,meta.yml
+NFCORE_HICAR:HICAR:COOLER:COOLER_BALANCE,COOLER_BALANCE,modules/nf-core/cooler/balance/main.nf,1,cooler,cooler,,meta.yml
+NFCORE_HICAR:HICAR:COOLER:COOLER_ZOOMIFY,COOLER_ZOOMIFY,modules/nf-core/cooler/zoomify/main.nf,1,cooler,cooler,,meta.yml
+NFCORE_HICAR:HICAR:COOLER:JUICER_PRE,JUICER_PRE,modules/local/juicer/pre.nf,1,juicer_pre,,,module name
+NFCORE_HICAR:HICAR:ATAC_PEAK:SHIFT_READS,SHIFT_READS,modules/local/atacreads/shiftreads.nf,1,shift_reads,,,module name
+NFCORE_HICAR:HICAR:ATAC_PEAK:MERGE_READS,MERGE_READS,modules/local/atacreads/mergereads.nf,1,merge_reads,,,module name
+NFCORE_HICAR:HICAR:ATAC_PEAK:MACS2_CALLPEAK,MACS2_CALLPEAK,modules/nf-core/macs2/callpeak/main.nf,1,macs2,macs2,,meta.yml
+NFCORE_HICAR:HICAR:ATAC_PEAK:MERGE_PEAK,MERGE_PEAK,modules/local/atacreads/mergepeak.nf,1,merge_peak,,,module name
+NFCORE_HICAR:HICAR:ATAC_PEAK:ATACQC,ATACQC,modules/local/atacreads/atacqc.nf,1,atacqc,,,module name
+NFCORE_HICAR:HICAR:ATAC_PEAK:UCSC_BEDCLIP,UCSC_BEDCLIP,modules/nf-core/ucsc/bedclip/main.nf,1,ucsc,ucsc,,meta.yml
+NFCORE_HICAR:HICAR:ATAC_PEAK:COVERAGE_SCALE:GET_SCALE,GET_SCALE,modules/local/atacreads/getscale.nf,1,get_scale,,,module name
+NFCORE_HICAR:HICAR:RECENTER_PEAK,RECENTER_PEAK,modules/local/hicexplorer/recenterpeak.nf,1,recenter_peak,,,module name
+NFCORE_HICAR:HICAR:HICEXPLORER_CHICQUALITYCONTROL,HICEXPLORER_CHICQUALITYCONTROL,modules/local/hicexplorer/chicqualitycontrol.nf,1,hicexplorer_chicqualitycontrol,,,module name
+NFCORE_HICAR:HICAR:HICEXPLORER_CHICVIEWPOINTBACKGROUNDMODEL,HICEXPLORER_CHICVIEWPOINTBACKGROUNDMODEL,modules/local/hicexplorer/chicviewpointbackgroundmodel.nf,1,hicexplorer_chicviewpointbackgroundmodel,,,module name
+NFCORE_HICAR:HICAR:HICEXPLORER_CHICVIEWPOINT,HICEXPLORER_CHICVIEWPOINT,modules/local/hicexplorer/chicviewpoint.nf,1,hicexplorer_chicviewpoint,,,module name
+NFCORE_HICAR:HICAR:HOMER_INSTALL,HOMER_INSTALL,modules/local/homer/install.nf,1,homer_install,,,module name
+NFCORE_HICAR:HICAR:CAT_CAT,CAT_CAT,modules/nf-core/cat/cat/main.nf,1,cat,cat,,meta.yml
+NFCORE_HICAR:HICAR:HOMER_MAKETAGDIRECTORY,HOMER_MAKETAGDIRECTORY,modules/nf-core/homer/maketagdirectory/main.nf,1,homer,homer;samtools;DESeq2;edgeR,,meta.yml
+NFCORE_HICAR:HICAR:JUICER_ADDNORM,JUICER_ADDNORM,modules/local/juicer/addnorm.nf,1,juicer_addnorm,,,module name
+NFCORE_HICAR:HICAR:COMPARTMENTS:COOLTOOLS_COMPARTMENTS:COOLTOOLS_EIGSCIS,COOLTOOLS_EIGSCIS,modules/local/cooltools/eigscis.nf,1,cooltools_eigscis,,,module name
+NFCORE_HICAR:HICAR:COMPARTMENTS:HOMER_COMPARTMENTS:HOMER_RUNHICPCA,HOMER_RUNHICPCA,modules/local/homer/run_hic_pca.nf,1,homer_runhicpca,,,module name
+NFCORE_HICAR:HICAR:COMPARTMENTS:HOMER_COMPARTMENTS:HOMER_FINDHICCOMPARTMENTS,HOMER_FINDHICCOMPARTMENTS,modules/local/homer/find_hic_compartments.nf,1,homer_findhiccompartments,,,module name
+NFCORE_HICAR:HICAR:COMPARTMENTS:HOMER_COMPARTMENTS:BEDGRAPH_TRIM,BEDGRAPH_TRIM,modules/local/bioc/trimbedgraph.nf,1,bedgraph_trim,,,module name
+NFCORE_HICAR:HICAR:COMPARTMENTS:JUICER_COMPARTMENTS:JUICER_EIGENVECTOR,JUICER_EIGENVECTOR,modules/local/juicer/eigenvector.nf,1,juicer_eigenvector,,,module name
+NFCORE_HICAR:HICAR:COMPARTMENTS:HICEXPLORER_COMPARTMENTS:HICEXPLORER_HICPCA,HICEXPLORER_HICPCA,modules/local/hicexplorer/hicpca.nf,1,hicexplorer_hicpca,,,module name
+NFCORE_HICAR:HICAR:COMPARTMENTS:HICEXPLORER_COMPARTMENTS:HICEXPLORER_HICTRANSFORM,HICEXPLORER_HICTRANSFORM,modules/local/hicexplorer/hictransform.nf,1,hicexplorer_hictransform,,,module name
+NFCORE_HICAR:HICAR:TADS:COOLTOOLS_TADS:COOLTOOLS_INSULATION,COOLTOOLS_INSULATION,modules/local/cooltools/insulation.nf,1,cooltools_insulation,,,module name
+NFCORE_HICAR:HICAR:TADS:HICEXPLORER_TADS:HICEXPLORER_HICFINDTADS,HICEXPLORER_HICFINDTADS,modules/local/hicexplorer/hicfindtads.nf,1,hicexplorer_hicfindtads,,,module name
+NFCORE_HICAR:HICAR:TADS:HICEXPLORER_TADS:HICEXPLORER_HICPLOTTADS,HICEXPLORER_HICPLOTTADS,modules/local/hicexplorer/hicplottads.nf,1,hicexplorer_hicplottads,,,module name
+NFCORE_HICAR:HICAR:INTERACTIONS:MAPS:MAPS_MULTIENZYME:MAPS_FEND,MAPS_FEND,modules/local/maps/fend.nf,1,maps_fend,,,module name
+NFCORE_HICAR:HICAR:INTERACTIONS:MAPS:MAPS_MULTIENZYME:BIOC_ENZYMECUT,BIOC_ENZYMECUT,modules/local/bioc/enzyme_cut.nf,1,bioc_enzymecut,,,module name
+NFCORE_HICAR:HICAR:INTERACTIONS:MAPS:MAPS_MULTIENZYME:MAPS_CUT,MAPS_CUT,modules/local/maps/cut.nf,1,maps_cut,,,module name
+NFCORE_HICAR:HICAR:INTERACTIONS:MAPS:MAPS_MULTIENZYME:SEQLEVELS_STYLE,SEQLEVELS_STYLE,modules/local/bioc/seqlevelsstyle.nf,1,seqlevels_style,,,module name
+NFCORE_HICAR:HICAR:INTERACTIONS:MAPS:MAPS_MULTIENZYME:UCSC_BIGWIGAVERAGEOVERBED,UCSC_BIGWIGAVERAGEOVERBED,modules/nf-core/ucsc/bigwigaverageoverbed/main.nf,1,ucsc,ucsc,,meta.yml
+NFCORE_HICAR:HICAR:INTERACTIONS:MAPS:MAPS_MULTIENZYME:MAPS_MERGE,MAPS_MERGE,modules/local/maps/merge.nf,1,maps_merge,,,module name
+NFCORE_HICAR:HICAR:INTERACTIONS:MAPS:MAPS_MULTIENZYME:MAPS_FEATURE,MAPS_FEATURE,modules/local/maps/feature.nf,1,maps_feature,,,module name
+NFCORE_HICAR:HICAR:INTERACTIONS:MAPS:MAPS_PEAK:MAPS_MAPS,MAPS_MAPS,modules/local/maps/maps.nf,1,maps_maps,,,module name
+NFCORE_HICAR:HICAR:INTERACTIONS:MAPS:MAPS_PEAK:MAPS_CALLPEAK,MAPS_CALLPEAK,modules/local/maps/callpeak.nf,1,maps_callpeak,,,module name
+NFCORE_HICAR:HICAR:INTERACTIONS:MAPS:MAPS_PEAK:MAPS_RAW2BG2,MAPS_RAW2BG2,modules/local/maps/raw2bg2.nf,1,maps_raw2bg2,,,module name
+NFCORE_HICAR:HICAR:INTERACTIONS:MAPS:MAPS_PEAK:COOLER_LOAD,COOLER_LOAD,modules/local/cooler/load/main.nf,1,cooler,cooler,,meta.yml
+NFCORE_HICAR:HICAR:INTERACTIONS:MAPS:MAPS_PEAK:COOLER_MERGE,COOLER_MERGE,modules/nf-core/cooler/merge/main.nf,1,cooler,cooler,,meta.yml
+NFCORE_HICAR:HICAR:INTERACTIONS:MAPS:MAPS_PEAK:MAPS_REFORMAT,MAPS_REFORMAT,modules/local/maps/reformat.nf,1,maps_reformat,,,module name
+NFCORE_HICAR:HICAR:INTERACTIONS:HICDCPLUS:HICDCPLUS_FEATURES,HICDCPLUS_FEATURES,modules/local/hicdcplus/features.nf,1,hicdcplus_features,,,module name
+NFCORE_HICAR:HICAR:INTERACTIONS:HICDCPLUS:HICDCPLUS_CALL_LOOPS,HICDCPLUS_CALL_LOOPS,modules/local/hicdcplus/callloops.nf,1,hicdcplus_call_loops,,,module name
+NFCORE_HICAR:HICAR:INTERACTIONS:PEAKACHU:PEAKACHU_MODEL,PEAKACHU_MODEL,modules/local/peakachu/model.nf,1,peakachu_model,,,module name
+NFCORE_HICAR:HICAR:INTERACTIONS:PEAKACHU:PEAKACHU_SCORE,PEAKACHU_SCORE,modules/local/peakachu/score_genome.nf,1,peakachu_score,,,module name
+NFCORE_HICAR:HICAR:INTERACTIONS:MERGE_INTERACTIONS,MERGE_INTERACTIONS,modules/local/bioc/merge_interactions.nf,1,merge_interactions,,,module name
+NFCORE_HICAR:HICAR:APA:HICEXPLORER_HICAGGREGATECONTACTS,HICEXPLORER_HICAGGREGATECONTACTS,modules/local/hicexplorer/hicaggregatecontacts.nf,1,hicexplorer_hicaggregatecontacts,,,module name
+NFCORE_HICAR:HICAR:APA:JUICER_APACALLER:BIOC_SUBSETLOOPS,BIOC_SUBSETLOOPS,modules/local/bioc/subsetloops.nf,1,bioc_subsetloops,,,module name
+NFCORE_HICAR:HICAR:APA:JUICER_APACALLER:JUICER_APA,JUICER_APA,modules/local/juicer/apa.nf,1,juicer_apa,,,module name
+NFCORE_HICAR:HICAR:APA:COOLTOOLS_APACALLER:COOLTOOLS_PILEUP,COOLTOOLS_PILEUP,modules/local/cooltools/pileup.nf,1,cooltools_pileup,,,module name
+NFCORE_HICAR:HICAR:APA:COOLTOOLS_APACALLER:PLOTNPZ_BY_COOLTOOLS,PLOTNPZ_BY_COOLTOOLS,modules/local/cooltools/plotnpz.nf,1,plotnpz_by_cooltools,,,module name
+NFCORE_HICAR:HICAR:HIPEAK:R1_PEAK:R1READS,R1READS,modules/local/fragmentreads/r1reads.nf,1,r1reads,,,module name
+NFCORE_HICAR:HICAR:HIPEAK:R1_PEAK:CALL_R1PEAK,CALL_R1PEAK,modules/local/fragmentreads/call_peak.nf,1,call_r1peak,,,module name
+NFCORE_HICAR:HICAR:HIPEAK:R1_PEAK:UCSC_BEDCLIP,UCSC_BEDCLIP,modules/nf-core/ucsc/bedclip/main.nf,1,ucsc,ucsc,,meta.yml
+NFCORE_HICAR:HICAR:HIPEAK:HI_PEAK:PREPARE_COUNTS,PREPARE_COUNTS,modules/local/hipeak/prepare_counts.nf,1,prepare_counts,,,module name
+NFCORE_HICAR:HICAR:HIPEAK:HI_PEAK:POST_COUNTS,POST_COUNTS,modules/local/hipeak/post_counts.nf,1,post_counts,,,module name
+NFCORE_HICAR:HICAR:HIPEAK:HI_PEAK:CALL_HIPEAK,CALL_HIPEAK,modules/local/hipeak/callpeak.nf,1,call_hipeak,,,module name
+NFCORE_HICAR:HICAR:HIPEAK:HI_PEAK:ASSIGN_TYPE,ASSIGN_TYPE,modules/local/hipeak/assign_type.nf,1,assign_type,,,module name
+NFCORE_HICAR:HICAR:HIPEAK:HI_PEAK:BEDPE2BED_HI,BEDPE2BED,modules/local/bioc/bedpe2bed.nf,1,bedpe2bed,,,module name
+NFCORE_HICAR:HICAR:HIPEAK:HI_PEAK:DIFF_HIPEAK,DIFF_HIPEAK,modules/local/hipeak/diff_hipeak.nf,1,diff_hipeak,,,module name
+NFCORE_HICAR:HICAR:HIPEAK:HI_PEAK:BEDPE2BED_DIFF,BEDPE2BED,modules/local/bioc/bedpe2bed.nf,1,bedpe2bed,,,module name
+NFCORE_HICAR:HICAR:DA:DIFFHICAR,DIFFHICAR,modules/local/bioc/diffhicar.nf,1,diffhicar,,,module name
+NFCORE_HICAR:HICAR:DA:DIFFHIC,DIFFHIC,modules/local/bioc/diffhic.nf,1,diffhic,,,module name
+NFCORE_HICAR:HICAR:DA:DIFFSET,DIFFSET,modules/local/bioc/diffset.nf,1,diffset,,,module name
+NFCORE_HICAR:HICAR:DA:HICEXPLORER_DIFFHIC:HICEXPLORER_CHICSIGNIFICANTINTERACTIONS,HICEXPLORER_CHICSIGNIFICANTINTERACTIONS,modules/local/hicexplorer/chicsignificantinteractions.nf,1,hicexplorer_chicsignificantinteractions,,,module name
+NFCORE_HICAR:HICAR:DA:HICEXPLORER_DIFFHIC:HICEXPLORER_CHICAGGREGATESTATISTIC,HICEXPLORER_CHICAGGREGATESTATISTIC,modules/local/hicexplorer/chicaggregatestatistic.nf,1,hicexplorer_chicaggregatestatistic,,,module name
+NFCORE_HICAR:HICAR:DA:HICEXPLORER_DIFFHIC:HICEXPLORER_CHICDIFFERENTIALTEST,HICEXPLORER_CHICDIFFERENTIALTEST,modules/local/hicexplorer/chicdifferentialtest.nf,1,hicexplorer_chicdifferentialtest,,,module name
+NFCORE_HICAR:HICAR:TFEA:HOMER_TFEA:SEQLEVELS_STYLE,SEQLEVELS_STYLE,modules/local/bioc/seqlevelsstyle.nf,1,seqlevels_style,,,module name
+NFCORE_HICAR:HICAR:TFEA:HOMER_TFEA:ENSEMBL_UCSC_CONVERT,ENSEMBL_UCSC_CONVERT,modules/local/bioc/ensembl_ucsc_convert.nf,1,ensembl_ucsc_convert,,,module name
+NFCORE_HICAR:HICAR:TFEA:HOMER_TFEA:HOMER_FINDMOTIFSGENOME,HOMER_FINDMOTIFSGENOME,modules/local/homer/find_motifs_genome.nf,1,homer_findmotifsgenome,,,module name
+NFCORE_HICAR:HICAR:TFEA:BIOC_ATACSEQTFEA,BIOC_ATACSEQTFEA,modules/local/bioc/atacseqtfea.nf,1,bioc_atacseqtfea,,,module name
+NFCORE_HICAR:HICAR:BIOC_CHIPPEAKANNO,BIOC_CHIPPEAKANNO,modules/local/bioc/chippeakanno.nf,1,bioc_chippeakanno,,,module name
+NFCORE_HICAR:HICAR:V4C:COOLTOOLS_V4C:BIOC_SUBSETLOOPS,BIOC_SUBSETLOOPS,modules/local/bioc/subsetloops.nf,1,bioc_subsetloops,,,module name
+NFCORE_HICAR:HICAR:V4C:COOLTOOLS_V4C:VIRTUAL4C_BY_COOLTOOLS,VIRTUAL4C_BY_COOLTOOLS,modules/local/cooltools/virtual4c.nf,1,virtual4c_by_cooltools,,,module name
+NFCORE_HICAR:HICAR:V4C:HICEXPLORER_CHICPLOTVIEWPOINT,HICEXPLORER_CHICPLOTVIEWPOINT,modules/local/hicexplorer/chicplotviewpoint.nf,1,hicexplorer_chicplotviewpoint,,,module name
+NFCORE_HICAR:HICAR:V4C:BIOC_TRACKVIEWER,BIOC_TRACKVIEWER,modules/local/bioc/trackviewer.nf,1,bioc_trackviewer,,,module name
+NFCORE_HICAR:HICAR:RUN_CIRCOS:CIRCOS_PREPARE,CIRCOS_PREPARE,modules/local/circos/circos_prepare.nf,1,circos_prepare,,,module name
+NFCORE_HICAR:HICAR:RUN_CIRCOS:CIRCOS,CIRCOS,modules/local/circos/circos.nf,1,circos,,,module name
+NFCORE_HICAR:HICAR:IGV,IGV,modules/local/igv.nf,1,igv,,,module name
+NFCORE_HICAR:HICAR:CUSTOM_DUMPSOFTWAREVERSIONS,CUSTOM_DUMPSOFTWAREVERSIONS,modules/nf-core/custom/dumpsoftwareversions/main.nf,1,custom,custom,,meta.yml
+NFCORE_HICAR:HICAR:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,,meta.yml

@@ -1,0 +1,183 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bcftools,multiqc,data_flow,2,2,E00947,
+bioconductor-complexheatmap,pandas,data_flow,4,4,E00489,
+build_intervals,create_intervals_bed,data_flow,2,2,E00018,
+build_intervals,mosdepth,data_flow,6,6,E00127,
+build_intervals,vcftools,data_flow,6,6,E00411,
+build_intervals,xz,data_flow,2,2,E00020,
+bwa,bwa-mem2,data_flow,1,1,E00052,
+bwa,dragmap,data_flow,1,1,E00057,
+bwa,gatk4,data_flow,5,5,E00130,
+bwa,maf2bed,data_flow,1,1,E00515,
+bwa,manta,data_flow,1,1,E00254,
+bwa,mosdepth,data_flow,1,1,E00120,
+bwa,sage,data_flow,1,1,E00225,
+bwa,samtools,data_flow,4,4,E00086,
+bwa,strelka,data_flow,1,1,E00277,
+bwa-mem2,bwa,data_flow,1,1,E00048,
+bwa-mem2,dragmap,data_flow,1,1,E00058,
+bwa-mem2,gatk4,data_flow,5,5,E00131,
+bwa-mem2,maf2bed,data_flow,1,1,E00516,
+bwa-mem2,manta,data_flow,1,1,E00255,
+bwa-mem2,mosdepth,data_flow,1,1,E00121,
+bwa-mem2,sage,data_flow,1,1,E00226,
+bwa-mem2,samtools,data_flow,4,4,E00087,
+bwa-mem2,strelka,data_flow,1,1,E00278,
+cat,bwa,data_flow,1,1,E00046,
+cat,bwa-mem2,data_flow,1,1,E00051,
+cat,dragmap,data_flow,1,1,E00056,
+cat,fastp,data_flow,1,1,E00044,
+cat,fastqc,data_flow,1,1,E00043,
+cat,gatk4,data_flow,5,5,E00134,
+cat,hisat2,data_flow,1,1,E00560,
+cat,maf2bed,data_flow,1,1,E00519,
+cat,manta,data_flow,1,1,E00258,
+cat,mosdepth,data_flow,1,1,E00124,
+cat,sage,data_flow,1,1,E00229,
+cat,samtools,data_flow,5,5,E00061,
+cat,strelka,data_flow,1,1,E00281,
+create_intervals_bed,gatk4,data_flow,28,28,E00160,
+create_intervals_bed,sage,data_flow,2,2,E00233,
+create_intervals_bed,xz,data_flow,4,4,E00019,
+dragmap,bwa,data_flow,1,1,E00049,
+dragmap,bwa-mem2,data_flow,1,1,E00054,
+dragmap,gatk4,data_flow,5,5,E00132,
+dragmap,maf2bed,data_flow,1,1,E00517,
+dragmap,manta,data_flow,1,1,E00256,
+dragmap,mosdepth,data_flow,1,1,E00122,
+dragmap,sage,data_flow,1,1,E00227,
+dragmap,samtools,data_flow,4,4,E00088,
+dragmap,strelka,data_flow,1,1,E00279,
+ensembl-vep,bioconductor-complexheatmap,data_flow,15,15,E00468,
+ensembl-vep,gunzip,data_flow,4,4,E00448,
+ensembl-vep,multiqc,data_flow,2,2,E00951,
+ensembl-vep,pandas,data_flow,6,6,E00491,
+fastp,bwa,data_flow,1,1,E00045,
+fastp,bwa-mem2,data_flow,1,1,E00050,
+fastp,dragmap,data_flow,1,1,E00055,
+fastp,gatk4,data_flow,5,5,E00133,
+fastp,maf2bed,data_flow,1,1,E00518,
+fastp,manta,data_flow,1,1,E00257,
+fastp,mosdepth,data_flow,1,1,E00123,
+fastp,multiqc,data_flow,2,2,E00934,
+fastp,sage,data_flow,1,1,E00228,
+fastp,samtools,data_flow,5,5,E00060,
+fastp,strelka,data_flow,1,1,E00280,
+fastqc,multiqc,data_flow,1,1,E00933,
+gatk4,bcftools,data_flow,8,8,E00399,
+gatk4,bioconductor-complexheatmap,data_flow,20,20,E00472,
+gatk4,ensembl-vep,data_flow,16,16,E00439,
+gatk4,gunzip,data_flow,8,8,E00451,
+gatk4,maf2bed,data_flow,6,6,E00508,
+gatk4,manta,data_flow,12,12,E00247,
+gatk4,mosdepth,data_flow,12,12,E00128,
+gatk4,multiqc,data_flow,6,6,E00938,
+gatk4,pandas,data_flow,8,8,E00495,
+gatk4,sage,data_flow,12,12,E00218,
+gatk4,samtools,data_flow,20,20,E00138,
+gatk4,strelka,data_flow,12,12,E00270,
+gatk4,vcftools,data_flow,30,30,E00405,
+gatk4,vt,data_flow,8,8,E00429,
+gatk4,xz,data_flow,2,2,E00021,
+gatk4-lite,gatk4,data_flow,24,24,E00163,
+gatk4-lite,sage,data_flow,2,2,E00238,
+gffread,hisat2,data_flow,2,2,E00012,
+gffread,samtools,data_flow,2,2,E00010,
+gunzip,bwa,data_flow,1,1,E00001,
+gunzip,bwa-mem2,data_flow,1,1,E00002,
+gunzip,dragmap,data_flow,1,1,E00003,
+gunzip,ensembl-vep,data_flow,6,6,E00447,
+gunzip,gatk4,data_flow,16,16,E00136,
+gunzip,gatk4-lite,data_flow,1,1,E00004,
+gunzip,gffread,data_flow,2,2,E00006,
+gunzip,hisat2,data_flow,3,3,E00011,
+gunzip,manta,data_flow,4,4,E00264,
+gunzip,mosdepth,data_flow,6,6,E00129,
+gunzip,pandas,data_flow,2,2,E00501,
+gunzip,picard,data_flow,1,1,E00530,
+gunzip,rna_filtering,data_flow,1,1,E00932,
+gunzip,sage,data_flow,2,2,E00236,
+gunzip,samtools,data_flow,40,40,E00005,
+gunzip,samtools_extract_read_ids,data_flow,1,1,E00525,
+gunzip,strelka,data_flow,2,2,E00287,
+gunzip,vt,data_flow,2,2,E00436,
+hisat2,samtools,data_flow,1,1,E00563,
+maf2bed,samtools_extract_read_ids,data_flow,1,1,E00524,
+manta,strelka,data_flow,4,4,E00285,
+mosdepth,multiqc,data_flow,8,8,E00940,
+p7zip,ensembl-vep,data_flow,2,2,E00446,
+p7zip,sage,data_flow,2,2,E00235,
+pandas,maf2bed,data_flow,1,1,E00523,
+pandas,rna_filtering,data_flow,2,2,E00930,
+picard,samtools,data_flow,8,8,E00531,
+sage,gatk4,data_flow,2,2,E00239,
+sage,xz,data_flow,2,2,E00242,
+samtools,build_intervals,data_flow,2,2,E00017,
+samtools,cat,data_flow,4,4,E00041,
+samtools,gatk4,data_flow,75,75,E00135,
+samtools,maf2bed,data_flow,5,5,E00507,
+samtools,manta,data_flow,15,15,E00244,
+samtools,mosdepth,data_flow,7,7,E00125,
+samtools,multiqc,data_flow,6,6,E00936,
+samtools,picard,data_flow,1,1,E00529,
+samtools,sage,data_flow,15,15,E00215,
+samtools,strelka,data_flow,17,17,E00267,
+samtools,vt,data_flow,2,2,E00437,
+samtools_extract_read_ids,samtools,data_flow,1,1,E00526,
+strelka,gatk4,data_flow,4,4,E00289,
+untar,sage,data_flow,2,2,E00234,
+untar,samtools,data_flow,1,1,E00062,
+vcftools,multiqc,data_flow,6,6,E00948,
+vt,bioconductor-complexheatmap,data_flow,5,5,E00471,
+vt,ensembl-vep,data_flow,4,4,E00438,
+vt,gunzip,data_flow,2,2,E00450,
+vt,pandas,data_flow,2,2,E00494,
+xz,bcftools,data_flow,4,4,E00401,
+xz,bioconductor-complexheatmap,data_flow,10,10,E00474,
+xz,ensembl-vep,data_flow,8,8,E00441,
+xz,gatk4,data_flow,28,28,E00178,
+xz,gunzip,data_flow,4,4,E00453,
+xz,manta,data_flow,4,4,E00262,
+xz,pandas,data_flow,4,4,E00497,
+xz,vcftools,data_flow,12,12,E00407,
+xz,vt,data_flow,4,4,E00431,
+bcftools,vcftools,parallel_co_use,0,0,,"both consume FILTERMUTECTCALLS.vcf (E00399, E00421); no directed path between any process of the two tools"
+bwa,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00046, E00043); no directed path between any process of the two tools"
+bwa,gatk4-lite,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00001, E00004); no directed path between any process of the two tools"
+bwa,gffread,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00001, E00007); no directed path between any process of the two tools"
+bwa-mem2,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00051, E00043); no directed path between any process of the two tools"
+bwa-mem2,gatk4-lite,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00002, E00004); no directed path between any process of the two tools"
+bwa-mem2,gffread,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00002, E00007); no directed path between any process of the two tools"
+dragmap,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00056, E00043); no directed path between any process of the two tools"
+dragmap,gatk4-lite,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00003, E00004); no directed path between any process of the two tools"
+dragmap,gffread,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00003, E00007); no directed path between any process of the two tools"
+fastp,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00044, E00043); no directed path between any process of the two tools"
+fastqc,bwa,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00043, E00046); no directed path between any process of the two tools"
+fastqc,bwa-mem2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00043, E00051); no directed path between any process of the two tools"
+fastqc,dragmap,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00043, E00056); no directed path between any process of the two tools"
+fastqc,fastp,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00043, E00044); no directed path between any process of the two tools"
+fastqc,gatk4,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00043, E00134); no directed path between any process of the two tools"
+fastqc,maf2bed,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00043, E00519); no directed path between any process of the two tools"
+fastqc,manta,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00043, E00258); no directed path between any process of the two tools"
+fastqc,mosdepth,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00043, E00124); no directed path between any process of the two tools"
+fastqc,sage,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00043, E00229); no directed path between any process of the two tools"
+fastqc,strelka,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00043, E00281); no directed path between any process of the two tools"
+gatk4,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00134, E00043); no directed path between any process of the two tools"
+gatk4-lite,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00004, E00001); no directed path between any process of the two tools"
+gatk4-lite,bwa-mem2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00004, E00002); no directed path between any process of the two tools"
+gatk4-lite,dragmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00004, E00003); no directed path between any process of the two tools"
+gatk4-lite,gffread,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00004, E00007); no directed path between any process of the two tools"
+gffread,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00007, E00001); no directed path between any process of the two tools"
+gffread,bwa-mem2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00007, E00002); no directed path between any process of the two tools"
+gffread,dragmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00007, E00003); no directed path between any process of the two tools"
+gffread,gatk4-lite,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00007, E00004); no directed path between any process of the two tools"
+maf2bed,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00519, E00043); no directed path between any process of the two tools"
+manta,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00258, E00043); no directed path between any process of the two tools"
+mosdepth,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00124, E00043); no directed path between any process of the two tools"
+mosdepth,rna_filtering,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00146, E00932); no directed path between any process of the two tools"
+mosdepth,vcftools,parallel_co_use,0,0,,"both consume BUILD_INTERVALS.bed (E00594, E00843); no directed path between any process of the two tools"
+rna_filtering,mosdepth,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00932, E00146); no directed path between any process of the two tools"
+sage,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00229, E00043); no directed path between any process of the two tools"
+strelka,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00281, E00043); no directed path between any process of the two tools"
+vcftools,bcftools,parallel_co_use,0,0,,"both consume FILTERMUTECTCALLS.vcf (E00421, E00399); no directed path between any process of the two tools"
+vcftools,mosdepth,parallel_co_use,0,0,,"both consume BUILD_INTERVALS.bed (E00843, E00594); no directed path between any process of the two tools"

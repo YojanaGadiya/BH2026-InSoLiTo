@@ -1,0 +1,186 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bbmap,multiqc,data_flow,2,1,E00049,
+bwa-mem2,picard,data_flow,2,2,E00033,
+bwa-mem2,riker,data_flow,1,1,E00040,
+bwa-mem2,samtools,data_flow,1,1,E00032,
+chelae,multiqc,data_flow,4,2,E00059,
+fastp,multiqc,data_flow,6,3,E00056,
+fastq-screen,multiqc,data_flow,6,4,E00063,
+fastqc,multiqc,data_flow,4,2,E00052,
+fastqe,multiqc,data_flow,2,1,E00054,
+fq,bbmap,gate_metadata,1,0,E00007,
+fq,bwa-mem2,gate_metadata,1,0,E00030,
+fq,chelae,gate_metadata,1,0,E00019,
+fq,fastp,gate_metadata,1,0,E00017,
+fq,fastq-screen,gate_metadata,1,0,E00023,
+fq,fastqc,gate_metadata,1,0,E00011,
+fq,fastqe,gate_metadata,1,0,E00013,
+fq,kraken2,gate_metadata,1,0,E00025,
+fq,multiqc,data_flow,2,1,E00043,
+fq,pip,gate_metadata,1,0,E00003,
+fq,sample-sheet,gate_metadata,1,0,E00002,
+fq,seqfu,gate_metadata,1,0,E00009,
+fq,seqkit,gate_metadata,1,0,E00015,
+fq,sequali,gate_metadata,1,0,E00021,
+fq,toulligqc,gate_metadata,1,0,E00005,
+kraken2,krona,data_flow,1,1,E00027,
+kraken2,multiqc,data_flow,2,1,E00066,
+krona,multiqc,data_flow,2,1,E00067,
+picard,multiqc,data_flow,4,2,E00068,
+pip,multiqc,data_flow,2,2,E00045,
+riker,multiqc,data_flow,40,40,E00070,
+sample-sheet,multiqc,data_flow,2,1,E00044,
+samtools,picard,data_flow,4,4,E00034,
+samtools,riker,data_flow,2,2,E00041,
+seqfu,multiqc,data_flow,4,3,E00050,
+seqkit,multiqc,data_flow,2,1,E00055,
+seqtk,bbmap,data_flow,1,1,E00006,
+seqtk,bwa-mem2,data_flow,1,1,E00029,
+seqtk,chelae,data_flow,1,1,E00018,
+seqtk,fastp,data_flow,1,1,E00016,
+seqtk,fastq-screen,data_flow,1,1,E00022,
+seqtk,fastqc,data_flow,1,1,E00010,
+seqtk,fastqe,data_flow,1,1,E00012,
+seqtk,fq,data_flow,1,1,E00001,
+seqtk,kraken2,data_flow,1,1,E00024,
+seqtk,seqfu,data_flow,1,1,E00008,
+seqtk,seqkit,data_flow,1,1,E00014,
+seqtk,sequali,data_flow,1,1,E00020,
+seqtk,toulligqc,data_flow,1,1,E00004,
+sequali,multiqc,data_flow,4,2,E00061,
+toulligqc,multiqc,data_flow,6,4,E00046,
+untar,kraken2,data_flow,1,1,E00026,
+bbmap,bwa-mem2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00006, E00029); no directed path between any process of the two tools"
+bbmap,chelae,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00006, E00018); no directed path between any process of the two tools"
+bbmap,fastp,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00006, E00016); no directed path between any process of the two tools"
+bbmap,fastq-screen,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00006, E00022); no directed path between any process of the two tools"
+bbmap,fastqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00006, E00010); no directed path between any process of the two tools"
+bbmap,fastqe,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00006, E00012); no directed path between any process of the two tools"
+bbmap,kraken2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00006, E00024); no directed path between any process of the two tools"
+bbmap,seqfu,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00006, E00008); no directed path between any process of the two tools"
+bbmap,seqkit,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00006, E00014); no directed path between any process of the two tools"
+bbmap,sequali,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00006, E00020); no directed path between any process of the two tools"
+bbmap,toulligqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00006, E00004); no directed path between any process of the two tools"
+bwa-mem2,bbmap,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00029, E00006); no directed path between any process of the two tools"
+bwa-mem2,chelae,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00029, E00018); no directed path between any process of the two tools"
+bwa-mem2,fastp,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00029, E00016); no directed path between any process of the two tools"
+bwa-mem2,fastq-screen,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00029, E00022); no directed path between any process of the two tools"
+bwa-mem2,fastqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00029, E00010); no directed path between any process of the two tools"
+bwa-mem2,fastqe,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00029, E00012); no directed path between any process of the two tools"
+bwa-mem2,kraken2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00029, E00024); no directed path between any process of the two tools"
+bwa-mem2,seqfu,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00029, E00008); no directed path between any process of the two tools"
+bwa-mem2,seqkit,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00029, E00014); no directed path between any process of the two tools"
+bwa-mem2,sequali,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00029, E00020); no directed path between any process of the two tools"
+bwa-mem2,toulligqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00029, E00004); no directed path between any process of the two tools"
+chelae,bbmap,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00018, E00006); no directed path between any process of the two tools"
+chelae,bwa-mem2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00018, E00029); no directed path between any process of the two tools"
+chelae,fastp,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00018, E00016); no directed path between any process of the two tools"
+chelae,fastq-screen,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00018, E00022); no directed path between any process of the two tools"
+chelae,fastqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00018, E00010); no directed path between any process of the two tools"
+chelae,fastqe,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00018, E00012); no directed path between any process of the two tools"
+chelae,kraken2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00018, E00024); no directed path between any process of the two tools"
+chelae,seqfu,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00018, E00008); no directed path between any process of the two tools"
+chelae,seqkit,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00018, E00014); no directed path between any process of the two tools"
+chelae,sequali,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00018, E00020); no directed path between any process of the two tools"
+chelae,toulligqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00018, E00004); no directed path between any process of the two tools"
+fastp,bbmap,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00016, E00006); no directed path between any process of the two tools"
+fastp,bwa-mem2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00016, E00029); no directed path between any process of the two tools"
+fastp,chelae,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00016, E00018); no directed path between any process of the two tools"
+fastp,fastq-screen,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00016, E00022); no directed path between any process of the two tools"
+fastp,fastqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00016, E00010); no directed path between any process of the two tools"
+fastp,fastqe,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00016, E00012); no directed path between any process of the two tools"
+fastp,kraken2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00016, E00024); no directed path between any process of the two tools"
+fastp,seqfu,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00016, E00008); no directed path between any process of the two tools"
+fastp,seqkit,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00016, E00014); no directed path between any process of the two tools"
+fastp,sequali,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00016, E00020); no directed path between any process of the two tools"
+fastp,toulligqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00016, E00004); no directed path between any process of the two tools"
+fastq-screen,bbmap,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00022, E00006); no directed path between any process of the two tools"
+fastq-screen,bwa-mem2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00022, E00029); no directed path between any process of the two tools"
+fastq-screen,chelae,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00022, E00018); no directed path between any process of the two tools"
+fastq-screen,fastp,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00022, E00016); no directed path between any process of the two tools"
+fastq-screen,fastqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00022, E00010); no directed path between any process of the two tools"
+fastq-screen,fastqe,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00022, E00012); no directed path between any process of the two tools"
+fastq-screen,kraken2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00022, E00024); no directed path between any process of the two tools"
+fastq-screen,seqfu,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00022, E00008); no directed path between any process of the two tools"
+fastq-screen,seqkit,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00022, E00014); no directed path between any process of the two tools"
+fastq-screen,sequali,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00022, E00020); no directed path between any process of the two tools"
+fastq-screen,toulligqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00022, E00004); no directed path between any process of the two tools"
+fastqc,bbmap,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00010, E00006); no directed path between any process of the two tools"
+fastqc,bwa-mem2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00010, E00029); no directed path between any process of the two tools"
+fastqc,chelae,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00010, E00018); no directed path between any process of the two tools"
+fastqc,fastp,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00010, E00016); no directed path between any process of the two tools"
+fastqc,fastq-screen,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00010, E00022); no directed path between any process of the two tools"
+fastqc,fastqe,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00010, E00012); no directed path between any process of the two tools"
+fastqc,kraken2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00010, E00024); no directed path between any process of the two tools"
+fastqc,seqfu,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00010, E00008); no directed path between any process of the two tools"
+fastqc,seqkit,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00010, E00014); no directed path between any process of the two tools"
+fastqc,sequali,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00010, E00020); no directed path between any process of the two tools"
+fastqc,toulligqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00010, E00004); no directed path between any process of the two tools"
+fastqe,bbmap,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00012, E00006); no directed path between any process of the two tools"
+fastqe,bwa-mem2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00012, E00029); no directed path between any process of the two tools"
+fastqe,chelae,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00012, E00018); no directed path between any process of the two tools"
+fastqe,fastp,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00012, E00016); no directed path between any process of the two tools"
+fastqe,fastq-screen,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00012, E00022); no directed path between any process of the two tools"
+fastqe,fastqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00012, E00010); no directed path between any process of the two tools"
+fastqe,kraken2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00012, E00024); no directed path between any process of the two tools"
+fastqe,seqfu,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00012, E00008); no directed path between any process of the two tools"
+fastqe,seqkit,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00012, E00014); no directed path between any process of the two tools"
+fastqe,sequali,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00012, E00020); no directed path between any process of the two tools"
+fastqe,toulligqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00012, E00004); no directed path between any process of the two tools"
+kraken2,bbmap,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00024, E00006); no directed path between any process of the two tools"
+kraken2,bwa-mem2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00024, E00029); no directed path between any process of the two tools"
+kraken2,chelae,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00024, E00018); no directed path between any process of the two tools"
+kraken2,fastp,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00024, E00016); no directed path between any process of the two tools"
+kraken2,fastq-screen,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00024, E00022); no directed path between any process of the two tools"
+kraken2,fastqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00024, E00010); no directed path between any process of the two tools"
+kraken2,fastqe,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00024, E00012); no directed path between any process of the two tools"
+kraken2,seqfu,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00024, E00008); no directed path between any process of the two tools"
+kraken2,seqkit,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00024, E00014); no directed path between any process of the two tools"
+kraken2,sequali,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00024, E00020); no directed path between any process of the two tools"
+kraken2,toulligqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00024, E00004); no directed path between any process of the two tools"
+picard,riker,parallel_co_use,0,0,,"both consume BWAMEM2_MEM.bam (E00033, E00040); no directed path between any process of the two tools"
+riker,picard,parallel_co_use,0,0,,"both consume BWAMEM2_MEM.bam (E00040, E00033); no directed path between any process of the two tools"
+seqfu,bbmap,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00008, E00006); no directed path between any process of the two tools"
+seqfu,bwa-mem2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00008, E00029); no directed path between any process of the two tools"
+seqfu,chelae,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00008, E00018); no directed path between any process of the two tools"
+seqfu,fastp,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00008, E00016); no directed path between any process of the two tools"
+seqfu,fastq-screen,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00008, E00022); no directed path between any process of the two tools"
+seqfu,fastqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00008, E00010); no directed path between any process of the two tools"
+seqfu,fastqe,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00008, E00012); no directed path between any process of the two tools"
+seqfu,kraken2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00008, E00024); no directed path between any process of the two tools"
+seqfu,seqkit,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00008, E00014); no directed path between any process of the two tools"
+seqfu,sequali,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00008, E00020); no directed path between any process of the two tools"
+seqfu,toulligqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00008, E00004); no directed path between any process of the two tools"
+seqkit,bbmap,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00014, E00006); no directed path between any process of the two tools"
+seqkit,bwa-mem2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00014, E00029); no directed path between any process of the two tools"
+seqkit,chelae,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00014, E00018); no directed path between any process of the two tools"
+seqkit,fastp,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00014, E00016); no directed path between any process of the two tools"
+seqkit,fastq-screen,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00014, E00022); no directed path between any process of the two tools"
+seqkit,fastqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00014, E00010); no directed path between any process of the two tools"
+seqkit,fastqe,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00014, E00012); no directed path between any process of the two tools"
+seqkit,kraken2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00014, E00024); no directed path between any process of the two tools"
+seqkit,seqfu,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00014, E00008); no directed path between any process of the two tools"
+seqkit,sequali,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00014, E00020); no directed path between any process of the two tools"
+seqkit,toulligqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00014, E00004); no directed path between any process of the two tools"
+sequali,bbmap,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00020, E00006); no directed path between any process of the two tools"
+sequali,bwa-mem2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00020, E00029); no directed path between any process of the two tools"
+sequali,chelae,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00020, E00018); no directed path between any process of the two tools"
+sequali,fastp,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00020, E00016); no directed path between any process of the two tools"
+sequali,fastq-screen,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00020, E00022); no directed path between any process of the two tools"
+sequali,fastqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00020, E00010); no directed path between any process of the two tools"
+sequali,fastqe,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00020, E00012); no directed path between any process of the two tools"
+sequali,kraken2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00020, E00024); no directed path between any process of the two tools"
+sequali,seqfu,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00020, E00008); no directed path between any process of the two tools"
+sequali,seqkit,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00020, E00014); no directed path between any process of the two tools"
+sequali,toulligqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00020, E00004); no directed path between any process of the two tools"
+toulligqc,bbmap,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00004, E00006); no directed path between any process of the two tools"
+toulligqc,bwa-mem2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00004, E00029); no directed path between any process of the two tools"
+toulligqc,chelae,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00004, E00018); no directed path between any process of the two tools"
+toulligqc,fastp,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00004, E00016); no directed path between any process of the two tools"
+toulligqc,fastq-screen,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00004, E00022); no directed path between any process of the two tools"
+toulligqc,fastqc,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00004, E00010); no directed path between any process of the two tools"
+toulligqc,fastqe,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00004, E00012); no directed path between any process of the two tools"
+toulligqc,kraken2,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00004, E00024); no directed path between any process of the two tools"
+toulligqc,seqfu,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00004, E00008); no directed path between any process of the two tools"
+toulligqc,seqkit,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00004, E00014); no directed path between any process of the two tools"
+toulligqc,sequali,parallel_co_use,0,0,,"both consume SEQTK_SAMPLE.reads (E00004, E00020); no directed path between any process of the two tools"

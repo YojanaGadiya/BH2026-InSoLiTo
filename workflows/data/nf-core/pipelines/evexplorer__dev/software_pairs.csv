@@ -1,0 +1,14 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+batchcorrection,dre,data_flow,2,2,E00009,
+cutadapt,fastqc,data_flow,1,1,E00001,
+cutadapt,samtools,data_flow,1,1,E00002,
+fastqc,multiqc,data_flow,4,4,E00010,
+minimap2,r-optparse,data_flow,2,2,E00015,
+pychopper,fastqc,data_flow,1,1,E00012,
+pychopper,minimap2,data_flow,1,1,E00013,
+r-optparse,batchcorrection,data_flow,2,2,E00008,
+samtools,r-optparse,data_flow,2,2,E00006,
+fastqc,minimap2,parallel_co_use,0,0,,"both consume PYCHOPPER.fastq (E00012, E00013); no directed path between any process of the two tools"
+fastqc,samtools,parallel_co_use,0,0,,"both consume CUTADAPT.reads (E00001, E00002); no directed path between any process of the two tools"
+minimap2,fastqc,parallel_co_use,0,0,,"both consume PYCHOPPER.fastq (E00013, E00012); no directed path between any process of the two tools"
+samtools,fastqc,parallel_co_use,0,0,,"both consume CUTADAPT.reads (E00002, E00001); no directed path between any process of the two tools"

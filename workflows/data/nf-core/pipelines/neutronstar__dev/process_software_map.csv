@@ -1,0 +1,10 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+supernova_full,supernova_full,main.nf,238,supernova,,supernova,script and directives
+supernova,supernova,main.nf,256,supernova,,supernova;rsync,script and directives
+supernova_mkoutput,supernova_mkoutput,main.nf,283,supernova,,supernova,script and directives
+quast,quast,main.nf,302,quast,,quast,script and directives
+busco,busco,main.nf,320,run_busco,,run_busco,script and directives
+get_supernova_version,get_supernova_version,main.nf,339,supernova,,supernova,script and directives
+get_software_versions,get_software_versions,main.nf,351,quast,,quast;multiqc;run_busco;scrape_software_versions,script and directives
+multiqc,multiqc,main.nf,374,multiqc,,multiqc,script and directives
+output_documentation,output_documentation,main.nf,394,markdown_to_html,,markdown_to_html,script and directives

@@ -1,0 +1,26 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+ms2query_search,pyopenms_conctsv,data_flow,2,2,E00019,
+openms_featurefindermetabo,openms_metaboliteadductdecharger,data_flow,1,1,E00002,
+openms_featurefindermetabo,pyopenms_splitfeaturexml,data_flow,1,1,E00004,
+openms_fileconverter,pyopenms_generatesearchparams,gate_metadata,1,0,E00010,
+openms_peakpickerhires,openms_featurefindermetabo,data_flow,1,1,E00001,
+openms_peakpickerhires,openms_fileconverter,data_flow,1,1,E00008,
+openms_peakpickerhires,openms_metaboliteadductdecharger,data_flow,2,2,E00003,
+openms_peakpickerhires,pyopenms_generatesearchparams,gate_metadata,1,0,E00009,
+openms_peakpickerhires,pyopenms_splitfeaturexml,data_flow,2,2,E00005,
+pyopenms_generatesearchparams,ms2query_search,data_flow,1,1,E00018,
+pyopenms_generatesearchparams,pyopenms_splitmgf,data_flow,2,2,E00011,
+pyopenms_generatesearchparams,sirius_search,data_flow,1,1,E00012,
+sirius_search,pyopenms_conctsv,data_flow,4,4,E00013,
+ms2query_search,pyopenms_splitmgf,parallel_co_use,0,0,,"both consume PYOPENMS_GENERATESEARCHPARAMS.mgf (E00018, E00017); no directed path between any process of the two tools"
+openms_featurefindermetabo,openms_fileconverter,parallel_co_use,0,0,,"both consume OPENMS_PEAKPICKERHIRES.mzml (E00001, E00008); no directed path between any process of the two tools"
+openms_fileconverter,openms_featurefindermetabo,parallel_co_use,0,0,,"both consume OPENMS_PEAKPICKERHIRES.mzml (E00008, E00001); no directed path between any process of the two tools"
+openms_fileconverter,openms_metaboliteadductdecharger,parallel_co_use,0,0,,"both consume OPENMS_PEAKPICKERHIRES.mzml (E00008, E00003); no directed path between any process of the two tools"
+openms_fileconverter,pyopenms_splitfeaturexml,parallel_co_use,0,0,,"both consume OPENMS_PEAKPICKERHIRES.mzml (E00008, E00005); no directed path between any process of the two tools"
+openms_metaboliteadductdecharger,openms_fileconverter,parallel_co_use,0,0,,"both consume OPENMS_PEAKPICKERHIRES.mzml (E00003, E00008); no directed path between any process of the two tools"
+openms_metaboliteadductdecharger,pyopenms_splitfeaturexml,parallel_co_use,0,0,,"both consume OPENMS_FEATUREFINDERMETABO.featurexml (E00002, E00004); no directed path between any process of the two tools"
+pyopenms_splitfeaturexml,openms_fileconverter,parallel_co_use,0,0,,"both consume OPENMS_PEAKPICKERHIRES.mzml (E00005, E00008); no directed path between any process of the two tools"
+pyopenms_splitfeaturexml,openms_metaboliteadductdecharger,parallel_co_use,0,0,,"both consume OPENMS_FEATUREFINDERMETABO.featurexml (E00004, E00002); no directed path between any process of the two tools"
+pyopenms_splitmgf,ms2query_search,parallel_co_use,0,0,,"both consume PYOPENMS_GENERATESEARCHPARAMS.mgf (E00017, E00018); no directed path between any process of the two tools"
+pyopenms_splitmgf,sirius_search,parallel_co_use,0,0,,"both consume PYOPENMS_GENERATESEARCHPARAMS.ms (E00011, E00012); no directed path between any process of the two tools"
+sirius_search,pyopenms_splitmgf,parallel_co_use,0,0,,"both consume PYOPENMS_GENERATESEARCHPARAMS.ms (E00012, E00011); no directed path between any process of the two tools"

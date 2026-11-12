@@ -1,0 +1,150 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+aardvark,bcftools,data_flow,1,1,E00899,
+aardvark,multiqc,data_flow,1,1,E01258,
+aardvark,pip,gate_metadata,1,0,E01181,
+aardvark,xz,data_flow,1,1,E00904,
+bcftools,aardvark,data_flow,24,24,E00866,
+bcftools,gatk4,data_flow,12,12,E00337,
+bcftools,gawk,data_flow,45,45,E00118,
+bcftools,hap.py,data_flow,96,92,E00911,
+bcftools,multiqc,data_flow,1,1,E01241,
+bcftools,picard,data_flow,3,3,E00016,
+bcftools,pip,data_flow,78,78,E00435,
+bcftools,pybedtools,data_flow,12,12,E00316,
+bcftools,pysam,data_flow,1,1,E01164,
+bcftools,rtg-tools,data_flow,93,93,E00007,
+bcftools,survivor,data_flow,30,30,E00052,
+bcftools,svanalyzer,data_flow,24,24,E00400,
+bcftools,svtk,data_flow,14,14,E00004,
+bcftools,svync,data_flow,3,3,E00011,
+bcftools,truvari,data_flow,48,48,E00365,
+bcftools,variant-extractor,data_flow,1,1,E00002,
+bcftools,wittyer,data_flow,48,48,E00579,
+bcftools,xz,data_flow,153,153,E00045,
+bedops,pybedtools,data_flow,1,1,E00333,
+bedtools,aardvark,data_flow,1,1,E00898,
+bedtools,gatk4,data_flow,1,1,E00353,
+bedtools,hap.py,data_flow,4,4,E00943,
+bedtools,pip,data_flow,2,2,E00467,
+bedtools,pybedtools,data_flow,1,1,E00334,
+bedtools,rtg-tools,data_flow,3,3,E00646,
+bedtools,svanalyzer,data_flow,1,1,E00432,
+bedtools,truvari,data_flow,2,2,E00397,
+bedtools,wittyer,data_flow,2,2,E00611,
+bedtools,xz,data_flow,4,4,E00539,
+gatk4,bcftools,data_flow,4,4,E00355,
+gatk4,multiqc,data_flow,1,1,E01249,
+gatk4,pip,gate_metadata,1,0,E01172,
+gawk,bcftools,data_flow,1,1,E00169,
+gawk,datavzrd,data_flow,1,1,E01237,
+gawk,survivor,data_flow,1,1,E00167,
+gawk,xz,data_flow,6,6,E00021,
+gnu,bedtools,data_flow,2,2,E00025,
+hap.py,bcftools,data_flow,4,4,E00979,
+hap.py,ga4gh-happy-report,data_flow,1,1,E01239,
+hap.py,multiqc,data_flow,2,2,E01259,
+hap.py,pip,data_flow,3,1,E01063,
+picard,gatk4,data_flow,1,1,E00354,
+picard,gawk,data_flow,2,2,E00020,
+pip,datavzrd,data_flow,1,1,E01238,
+pip,gawk,data_flow,3,3,E01078,
+pip,multiqc,data_flow,4,4,E01244,
+pip,xz,data_flow,2,2,E01129,
+pybedtools,multiqc,data_flow,1,1,E01248,
+pybedtools,pip,gate_metadata,1,0,E01171,
+pysam,pip,data_flow,1,1,E01169,
+rtg-tools,aardvark,data_flow,4,4,E00868,
+rtg-tools,bcftools,data_flow,16,16,E00028,
+rtg-tools,gatk4,data_flow,2,2,E00339,
+rtg-tools,gawk,data_flow,8,8,E00120,
+rtg-tools,hap.py,data_flow,16,16,E00913,
+rtg-tools,multiqc,data_flow,3,3,E01253,
+rtg-tools,picard,data_flow,1,1,E00015,
+rtg-tools,pip,data_flow,17,14,E00437,
+rtg-tools,pybedtools,data_flow,2,2,E00318,
+rtg-tools,survivor,data_flow,4,4,E00213,
+rtg-tools,svanalyzer,data_flow,4,4,E00402,
+rtg-tools,svtk,data_flow,2,2,E00281,
+rtg-tools,svync,data_flow,1,1,E00010,
+rtg-tools,truvari,data_flow,8,8,E00367,
+rtg-tools,wittyer,data_flow,8,8,E00581,
+rtg-tools,xz,data_flow,24,24,E00299,
+survivor,bcftools,data_flow,1,1,E00058,
+survivor,gawk,data_flow,1,1,E00168,
+survivor,multiqc,data_flow,1,1,E01240,
+survivor,pysam,data_flow,1,1,E01165,
+survivor,xz,data_flow,1,1,E00066,
+svanalyzer,gawk,data_flow,2,2,E01076,
+svanalyzer,multiqc,data_flow,1,1,E01251,
+svanalyzer,pip,data_flow,5,4,E00468,
+svanalyzer,xz,data_flow,2,2,E01127,
+svtk,bcftools,data_flow,1,1,E00006,
+svtk,pybedtools,data_flow,1,1,E00332,
+svync,bcftools,data_flow,2,2,E00027,
+svync,picard,data_flow,1,1,E00014,
+truvari,gawk,data_flow,8,8,E01072,
+truvari,multiqc,data_flow,4,4,E01242,
+truvari,pip,data_flow,10,8,E01173,
+truvari,xz,data_flow,8,8,E01123,
+ucsc-liftover,gnu,data_flow,2,2,E00024,
+variant-extractor,bcftools,data_flow,1,1,E00003,
+wittyer,multiqc,data_flow,2,2,E01252,
+wittyer,pip,gate_metadata,2,0,E01175,
+xz,aardvark,data_flow,6,6,E00864,
+xz,bcftools,data_flow,28,28,E00022,
+xz,bedops,data_flow,1,1,E00313,
+xz,gatk4,data_flow,4,4,E00335,
+xz,gawk,data_flow,2,2,E00126,
+xz,hap.py,data_flow,24,18,E00909,
+xz,pip,data_flow,12,12,E00433,
+xz,pybedtools,data_flow,4,4,E00314,
+xz,rtg-tools,data_flow,20,20,E00096,
+xz,survivor,data_flow,9,9,E00051,
+xz,svanalyzer,data_flow,6,6,E00398,
+xz,svtk,data_flow,4,4,E00277,
+xz,truvari,data_flow,12,12,E00363,
+xz,wittyer,data_flow,16,16,E00575,
+aardvark,gatk4,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00871, E00342); no directed path between any process of the two tools"
+aardvark,hap.py,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00885, E00930); no directed path between any process of the two tools"
+aardvark,pybedtools,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00871, E00321); no directed path between any process of the two tools"
+aardvark,svanalyzer,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00885, E00419); no directed path between any process of the two tools"
+aardvark,truvari,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00885, E00670); no directed path between any process of the two tools"
+aardvark,wittyer,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00885, E00812); no directed path between any process of the two tools"
+datavzrd,multiqc,parallel_co_use,0,0,,"both consume MERGE_REPORTS.summary (E01238, E01247); no directed path between any process of the two tools"
+gatk4,aardvark,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00342, E00871); no directed path between any process of the two tools"
+gatk4,hap.py,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00342, E00916); no directed path between any process of the two tools"
+gatk4,pybedtools,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00342, E00321); no directed path between any process of the two tools"
+gatk4,svanalyzer,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00342, E00405); no directed path between any process of the two tools"
+gatk4,truvari,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00342, E00656); no directed path between any process of the two tools"
+gatk4,wittyer,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00342, E00798); no directed path between any process of the two tools"
+hap.py,aardvark,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00930, E00885); no directed path between any process of the two tools"
+hap.py,gatk4,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00916, E00342); no directed path between any process of the two tools"
+hap.py,pybedtools,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00916, E00321); no directed path between any process of the two tools"
+hap.py,svanalyzer,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00930, E00419); no directed path between any process of the two tools"
+hap.py,truvari,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00930, E00670); no directed path between any process of the two tools"
+hap.py,wittyer,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00930, E00812); no directed path between any process of the two tools"
+multiqc,datavzrd,parallel_co_use,0,0,,"both consume MERGE_REPORTS.summary (E01247, E01238); no directed path between any process of the two tools"
+pybedtools,aardvark,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00321, E00871); no directed path between any process of the two tools"
+pybedtools,gatk4,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00321, E00342); no directed path between any process of the two tools"
+pybedtools,hap.py,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00321, E00916); no directed path between any process of the two tools"
+pybedtools,svanalyzer,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00321, E00405); no directed path between any process of the two tools"
+pybedtools,truvari,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00321, E00656); no directed path between any process of the two tools"
+pybedtools,wittyer,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00321, E00798); no directed path between any process of the two tools"
+svanalyzer,aardvark,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00419, E00885); no directed path between any process of the two tools"
+svanalyzer,gatk4,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00405, E00342); no directed path between any process of the two tools"
+svanalyzer,hap.py,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00419, E00930); no directed path between any process of the two tools"
+svanalyzer,pybedtools,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00405, E00321); no directed path between any process of the two tools"
+svanalyzer,truvari,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00419, E00670); no directed path between any process of the two tools"
+svanalyzer,wittyer,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00419, E00812); no directed path between any process of the two tools"
+truvari,aardvark,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00670, E00885); no directed path between any process of the two tools"
+truvari,gatk4,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00656, E00342); no directed path between any process of the two tools"
+truvari,hap.py,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00670, E00930); no directed path between any process of the two tools"
+truvari,pybedtools,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00656, E00321); no directed path between any process of the two tools"
+truvari,svanalyzer,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00670, E00419); no directed path between any process of the two tools"
+truvari,wittyer,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00670, E00812); no directed path between any process of the two tools"
+wittyer,aardvark,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00812, E00885); no directed path between any process of the two tools"
+wittyer,gatk4,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00798, E00342); no directed path between any process of the two tools"
+wittyer,hap.py,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00812, E00930); no directed path between any process of the two tools"
+wittyer,pybedtools,parallel_co_use,0,0,,"both consume BCFTOOLS_NORM.tbi (E00798, E00321); no directed path between any process of the two tools"
+wittyer,svanalyzer,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00812, E00419); no directed path between any process of the two tools"
+wittyer,truvari,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SV.tbi (E00812, E00670); no directed path between any process of the two tools"

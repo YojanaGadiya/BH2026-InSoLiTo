@@ -1,0 +1,139 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+adapterremoval,bowtie2,data_flow,2,2,E00074,
+adapterremoval,bwa-mem2,data_flow,2,2,E00101,
+adapterremoval,cat,data_flow,6,6,E00004,
+adapterremoval,falco,data_flow,2,2,E00018,
+adapterremoval,fastq-scan,data_flow,2,2,E00036,
+adapterremoval,fastqc,data_flow,2,2,E00012,
+adapterremoval,minimap2,data_flow,2,2,E00159,
+adapterremoval,multiqc,data_flow,2,2,E00215,
+adapterremoval,rasusa,data_flow,2,2,E00061,
+bcftools,bedtools,data_flow,2,2,E00144,
+bcftools,multiqc,data_flow,2,2,E00227,
+bcftools,rename_fasta_header,data_flow,2,2,E00149,
+bedtools,bcftools,data_flow,2,2,E00147,
+biopython,seqtk,data_flow,2,2,E00151,
+biopython,snp-sites,data_flow,1,1,E00210,
+bowtie2,samtools,data_flow,1,1,E00082,
+bwa-mem2,samtools,data_flow,1,1,E00109,
+cat,bowtie2,data_flow,2,2,E00069,
+cat,bwa-mem2,data_flow,2,2,E00096,
+cat,falco,data_flow,1,1,E00017,
+cat,fastq-scan,data_flow,1,1,E00035,
+cat,fastqc,data_flow,1,1,E00011,
+cat,minimap2,data_flow,2,2,E00154,
+cat,rasusa,data_flow,2,2,E00056,
+clair3,bcftools,data_flow,1,1,E00184,
+falco,multiqc,data_flow,3,3,E00211,
+fastp,bowtie2,data_flow,3,3,E00070,
+fastp,bwa-mem2,data_flow,3,3,E00097,
+fastp,cat,data_flow,3,3,E00046,
+fastp,falco,data_flow,3,3,E00014,
+fastp,fastq-scan,data_flow,3,3,E00032,
+fastp,fastqc,data_flow,3,3,E00008,
+fastp,minimap2,data_flow,3,3,E00155,
+fastp,multiqc,data_flow,2,2,E00213,
+fastp,rasusa,data_flow,3,3,E00057,
+fastq-scan,pandas,data_flow,4,2,E00003,
+fastqc,multiqc,data_flow,3,3,E00212,
+filtlong,bowtie2,data_flow,1,1,E00078,
+filtlong,bwa-mem2,data_flow,1,1,E00105,
+filtlong,cat,data_flow,1,1,E00054,
+filtlong,falco,data_flow,1,1,E00030,
+filtlong,fastq-scan,data_flow,1,1,E00040,
+filtlong,fastqc,data_flow,1,1,E00026,
+filtlong,minimap2,data_flow,1,1,E00163,
+filtlong,multiqc,data_flow,1,1,E00221,
+filtlong,rasusa,data_flow,1,1,E00065,
+freebayes,bcftools,data_flow,1,1,E00130,
+gawk,rasusa,data_flow,1,1,E00067,
+gunzip,bcftools,data_flow,4,4,E00136,
+gunzip,biopython,data_flow,1,1,E00209,
+gunzip,bowtie2,data_flow,1,1,E00081,
+gunzip,bwa-mem2,data_flow,1,1,E00108,
+gunzip,clair3,data_flow,1,1,E00182,
+gunzip,freebayes,data_flow,2,2,E00126,
+gunzip,minimap2,data_flow,1,1,E00152,
+gunzip,samtools,data_flow,7,7,E00001,
+minimap2,samtools,data_flow,2,2,E00166,
+nanoq,bowtie2,data_flow,1,1,E00079,
+nanoq,bwa-mem2,data_flow,1,1,E00106,
+nanoq,cat,data_flow,1,1,E00055,
+nanoq,falco,data_flow,1,1,E00031,
+nanoq,fastq-scan,data_flow,1,1,E00041,
+nanoq,fastqc,data_flow,1,1,E00027,
+nanoq,minimap2,data_flow,1,1,E00164,
+nanoq,multiqc,data_flow,1,1,E00222,
+nanoq,rasusa,data_flow,1,1,E00066,
+porechop,bowtie2,data_flow,1,1,E00077,
+porechop,bwa-mem2,data_flow,1,1,E00104,
+porechop,cat,data_flow,1,1,E00053,
+porechop,falco,data_flow,1,1,E00029,
+porechop,fastq-scan,data_flow,1,1,E00039,
+porechop,fastqc,data_flow,1,1,E00025,
+porechop,filtlong,data_flow,1,1,E00021,
+porechop,minimap2,data_flow,1,1,E00162,
+porechop,multiqc,data_flow,1,1,E00220,
+porechop,nanoq,data_flow,1,1,E00023,
+porechop,rasusa,data_flow,1,1,E00064,
+porechop_abi,bowtie2,data_flow,1,1,E00076,
+porechop_abi,bwa-mem2,data_flow,1,1,E00103,
+porechop_abi,cat,data_flow,1,1,E00052,
+porechop_abi,falco,data_flow,1,1,E00028,
+porechop_abi,fastq-scan,data_flow,1,1,E00038,
+porechop_abi,fastqc,data_flow,1,1,E00024,
+porechop_abi,filtlong,data_flow,1,1,E00020,
+porechop_abi,minimap2,data_flow,1,1,E00161,
+porechop_abi,multiqc,data_flow,1,1,E00219,
+porechop_abi,nanoq,data_flow,1,1,E00022,
+porechop_abi,rasusa,data_flow,1,1,E00063,
+rasusa,bowtie2,data_flow,1,1,E00068,
+rasusa,bwa-mem2,data_flow,1,1,E00095,
+rasusa,minimap2,data_flow,1,1,E00153,
+rename_fasta_header,biopython,data_flow,2,2,E00150,
+samtools,bedtools,data_flow,3,3,E00141,
+samtools,clair3,data_flow,3,3,E00180,
+samtools,freebayes,data_flow,6,6,E00122,
+samtools,gawk,data_flow,1,1,E00002,
+samtools,multiqc,data_flow,3,3,E00225,
+seqtk,pandas,data_flow,2,2,E00205,
+bowtie2,clair3,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00081, E00182); no directed path between any process of the two tools"
+bowtie2,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00076, E00028); no directed path between any process of the two tools"
+bowtie2,fastq-scan,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00076, E00038); no directed path between any process of the two tools"
+bowtie2,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00076, E00024); no directed path between any process of the two tools"
+bowtie2,minimap2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00081, E00152); no directed path between any process of the two tools"
+bwa-mem2,clair3,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00108, E00182); no directed path between any process of the two tools"
+bwa-mem2,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00103, E00028); no directed path between any process of the two tools"
+bwa-mem2,fastq-scan,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00103, E00038); no directed path between any process of the two tools"
+bwa-mem2,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00103, E00024); no directed path between any process of the two tools"
+bwa-mem2,minimap2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00108, E00152); no directed path between any process of the two tools"
+clair3,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00182, E00081); no directed path between any process of the two tools"
+clair3,bwa-mem2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00182, E00108); no directed path between any process of the two tools"
+clair3,freebayes,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00182, E00126); no directed path between any process of the two tools"
+falco,bowtie2,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00028, E00076); no directed path between any process of the two tools"
+falco,bwa-mem2,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00028, E00103); no directed path between any process of the two tools"
+falco,fastq-scan,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00028, E00038); no directed path between any process of the two tools"
+falco,minimap2,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00028, E00161); no directed path between any process of the two tools"
+falco,rasusa,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00028, E00063); no directed path between any process of the two tools"
+fastq-scan,bowtie2,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00038, E00076); no directed path between any process of the two tools"
+fastq-scan,bwa-mem2,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00038, E00103); no directed path between any process of the two tools"
+fastq-scan,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00038, E00028); no directed path between any process of the two tools"
+fastq-scan,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00038, E00024); no directed path between any process of the two tools"
+fastq-scan,minimap2,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00038, E00161); no directed path between any process of the two tools"
+fastq-scan,rasusa,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00038, E00063); no directed path between any process of the two tools"
+fastqc,bowtie2,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00024, E00076); no directed path between any process of the two tools"
+fastqc,bwa-mem2,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00024, E00103); no directed path between any process of the two tools"
+fastqc,fastq-scan,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00024, E00038); no directed path between any process of the two tools"
+fastqc,minimap2,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00024, E00161); no directed path between any process of the two tools"
+fastqc,rasusa,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00024, E00063); no directed path between any process of the two tools"
+freebayes,clair3,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00126, E00182); no directed path between any process of the two tools"
+freebayes,minimap2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00126, E00152); no directed path between any process of the two tools"
+minimap2,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00152, E00081); no directed path between any process of the two tools"
+minimap2,bwa-mem2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00152, E00108); no directed path between any process of the two tools"
+minimap2,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00161, E00028); no directed path between any process of the two tools"
+minimap2,fastq-scan,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00161, E00038); no directed path between any process of the two tools"
+minimap2,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00161, E00024); no directed path between any process of the two tools"
+minimap2,freebayes,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00152, E00126); no directed path between any process of the two tools"
+rasusa,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00063, E00028); no directed path between any process of the two tools"
+rasusa,fastq-scan,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00063, E00038); no directed path between any process of the two tools"
+rasusa,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00063, E00024); no directed path between any process of the two tools"

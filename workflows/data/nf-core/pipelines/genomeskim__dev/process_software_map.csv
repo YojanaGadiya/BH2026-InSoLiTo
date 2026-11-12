@@ -1,0 +1,5 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_GENOMESKIM:GENOMESKIM:INPUT_CHECK:SAMPLESHEET_CHECK,SAMPLESHEET_CHECK,modules/local/samplesheet_check.nf,1,samplesheet_check,,,module name
+NFCORE_GENOMESKIM:GENOMESKIM:FASTQC,FASTQC,modules/nf-core/modules/fastqc/main.nf,1,fastqc,fastqc,,meta.yml
+NFCORE_GENOMESKIM:GENOMESKIM:CUSTOM_DUMPSOFTWAREVERSIONS,CUSTOM_DUMPSOFTWAREVERSIONS,modules/nf-core/modules/custom/dumpsoftwareversions/main.nf,1,custom,custom,,meta.yml
+NFCORE_GENOMESKIM:GENOMESKIM:MULTIQC,MULTIQC,modules/nf-core/modules/multiqc/main.nf,1,multiqc,multiqc,,meta.yml

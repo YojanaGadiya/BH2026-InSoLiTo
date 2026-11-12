@@ -1,0 +1,842 @@
+tool,tool_key,biotools_id,biotools_url,biotools_id_origin,reason_no_biotools_id,biotools_id_via_parent,other_ids_available,n_other_ids,n_pipelines
+multiqc,multiqc,multiqc,https://bio.tools/multiqc,meta.yml (nf-core module metadata),,,bioconda:multiqc ; doi:10.1093/bioinformatics/btw354 ; pmid:27312411,3,133
+fastqc,fastqc,fastqc,https://bio.tools/fastqc,meta.yml (nf-core module metadata),,,bioconda:fastqc ; doi:10.7490/f1000research.1114334.1 ; rrid:SCR_014583,3,88
+samtools,samtools,samtools,https://bio.tools/samtools,meta.yml (nf-core module metadata),,,bioconda:samtools ; doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; doi:10.1093/gigascience/giab008 ; pmid:33590861 ; doi:10.1093/bioinformatics/btr509 ; pmid:21903627,7,82
+fastp,fastp,fastp,https://bio.tools/fastp,meta.yml (nf-core module metadata),,,bioconda:fastp ; doi:10.1093/bioinformatics/bty560 ; pmid:30423086,3,32
+bedtools,bedtools,bedtools,https://bio.tools/bedtools,meta.yml (nf-core module metadata),,,bioconda:bedtools ; doi:10.1093/bioinformatics/btq033 ; pmid:20110278 ; rrid:SCR_006646,4,29
+bwa,bwa,bwa,https://bio.tools/bwa,meta.yml (nf-core module metadata),,,bioconda:bwa ; doi:10.1093/bioinformatics/btp324 ; pmid:19451168 ; doi:10.1186/1471-2105-14-184 ; pmid:23758764 ; doi:10.1016/j.ygeno.2017.03.001 ; pmid:28286147 ; doi:10.1186/1471-2164-15-264 ; pmid:24708189 ; doi:10.1093/bioinformatics/btu146 ; pmid:24626854 ; doi:10.1093/bioinformatics/btp698 ; pmid:20080505,13,28
+bowtie2,bowtie2,bowtie2,https://bio.tools/bowtie2,bio.tools API (exact-id),,,bioconda:bowtie2 ; doi:10.1038/nmeth.1923 ; doi:10.1186/gb-2009-10-3-r25 ; pmid:22388286 ; doi:10.1186/1471-2105-14-184 ; pmid:23758764 ; doi:10.1016/j.ygeno.2017.03.001 ; pmid:28286147 ; doi:10.1186/1471-2164-15-264 ; pmid:24708189 ; doi:10.1093/bioinformatics/btu146 ; pmid:24626854 ; doi:10.7490/f1000research.1114334.1 ; rrid:SCR_016368,14,26
+bcftools,bcftools,bcftools,https://bio.tools/bcftools,meta.yml (nf-core module metadata),,,bioconda:bcftools ; doi:10.1093/gigascience/giab008 ; doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; pmid:33590861,5,24
+picard,picard,picard_tools,https://bio.tools/picard_tools,meta.yml (nf-core module metadata),,,bioconda:picard,1,24
+star,star,star,https://bio.tools/star,meta.yml (nf-core module metadata),,,bioconda:star ; doi:10.1093/bioinformatics/bts635 ; pmid:23104886 ; doi:10.1038/nmeth.4106 ; pmid:27941783 ; doi:10.1093/bioinformatics/btu146 ; pmid:24626854,7,24
+pigz,pigz,MAFFT,https://bio.tools/MAFFT,meta.yml (nf-core module metadata),,,doi:10.1007/978-1-62703-646-7_8 ; pmid:24170399 ; doi:10.7490/f1000research.1114334.1 ; doi:10.1093/bioinformatics/bty121 ; pmid:29506019 ; doi:10.1093/bib/bbx108 ; pmid:28968734 ; doi:10.1093/molbev/mst010 ; pmid:23329690 ; doi:10.1093/nar/gki198 ; pmid:15661851,11,22
+seqkit,seqkit,seqkit,https://bio.tools/seqkit,meta.yml (nf-core module metadata),,,bioconda:seqkit ; doi:10.1371/journal.pone.0163962 ; doi:10.1371/journal.pone.016396 ; pmid:27706213,4,22
+trim-galore,trimgalore,trim_galore,https://bio.tools/trim_galore,meta.yml (nf-core module metadata),,,bioconda:trim-galore ; doi:10.5281/zenodo.7598955 ; rrid:SCR_011847,3,21
+gffread,gffread,gffread,https://bio.tools/gffread,meta.yml (nf-core module metadata),,,bioconda:gffread ; doi:10.12688/f1000research.23297.1,2,20
+pandas,pandas,pandas,https://bio.tools/pandas,meta.yml (nf-core module metadata),,,bioconda:pandas ; doi:10.5281/zenodo.3509134,2,20
+umi_tools,umitools,umi-tools,https://bio.tools/umi-tools,bio.tools API (exact-id),,,bioconda:umi_tools ; doi:10.1101/gr.209601.116 ; pmid:28100584,3,20
+minimap2,minimap2,minimap2,https://bio.tools/minimap2,bio.tools API (exact-id),,,bioconda:minimap2 ; doi:10.1093/bioinformatics/bty191 ; pmid:29750242,3,18
+seqtk,seqtk,seqtk,https://bio.tools/seqtk,meta.yml (nf-core module metadata),,,bioconda:seqtk ; doi:10.1186/s13104-017-2616-7 ; pmid:28701181 ; rrid:SCR_018927,4,18
+gatk4,gatk4,gatk,https://bio.tools/gatk,meta.yml (nf-core module metadata),,,bioconda:gatk4 ; doi:10.1158/1538-7445.AM2017-3590 ; doi:10.1101/gr.107524.110 ; pmid:20644199 ; rrid:SCR_001876 ; rrid:SCR_016663,6,17
+bbmap,bbmap,bbmap,https://bio.tools/bbmap,meta.yml (nf-core module metadata),,,bioconda:bbmap ; rrid:SCR_016968,2,16
+ucsc,ucsc,twobitinfo,https://bio.tools/twobitinfo,bio.tools dump (url),,,,0,16
+bwa-mem2,bwamem2,bwa-mem2,https://bio.tools/bwa-mem2,meta.yml (nf-core module metadata),,,bioconda:bwa-mem2 ; doi:10.1109/IPDPS.2019.00041,2,15
+sort,sort,bcftools,https://bio.tools/bcftools,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; doi:10.1093/gigascience/giab008 ; pmid:33590861,4,15
+view,view,bcftools,https://bio.tools/bcftools,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; doi:10.1093/gigascience/giab008 ; pmid:33590861,4,15
+cutadapt,cutadapt,cutadapt,https://bio.tools/cutadapt,meta.yml (nf-core module metadata),,,bioconda:cutadapt ; doi:10.14806/ej.17.1.200 ; doi:10.7490/f1000research.1114334.1,3,14
+norm,norm,bcftools,https://bio.tools/bcftools,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; doi:10.1093/gigascience/giab008 ; pmid:33590861,4,14
+biopython,biopython,biopython,https://bio.tools/biopython,meta.yml (nf-core module metadata),,,bioconda:biopython ; doi:10.1093/bioinformatics/btp163 ; pmid:19304878,3,13
+kraken2,kraken2,kraken2,https://bio.tools/kraken2,meta.yml (nf-core module metadata),,,bioconda:kraken2 ; doi:10.1186/s13059-019-1891-0 ; doi:10.1101/762302,3,13
+featurecounts,featurecounts,subread,https://bio.tools/subread,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btt656 ; doi:10.1093/nar/gkt214 ; pmid:23558742 ; doi:10.1038/nmeth.4106 ; pmid:27941783 ; rrid:SCR_009803,6,12
+gatk,gatk,gatk,https://bio.tools/gatk,meta.yml (nf-core module metadata),,,bioconda:gatk ; doi:10.1158/1538-7445.AM2017-3590 ; doi:10.1101/gr.107524.110 ; pmid:20644199 ; rrid:SCR_001876 ; rrid:SCR_016663,6,12
+htslib,htslib,htslib,https://bio.tools/htslib,meta.yml (nf-core module metadata),,,doi:10.1093/gigascience/giab007 ; pmid:33594436,2,12
+mosdepth,mosdepth,mosdepth,https://bio.tools/mosdepth,meta.yml (nf-core module metadata),,,bioconda:mosdepth ; doi:10.1093/bioinformatics/btx699 ; pmid:29096012,3,12
+stats,stats,bcftools,https://bio.tools/bcftools,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; doi:10.1093/gigascience/giab008 ; pmid:33590861,4,12
+gtf2bed,gtf2bed,bedops,https://bio.tools/bedops,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/bts277 ; pmid:22576172,2,11
+preseq,preseq,preseq,https://bio.tools/preseq,meta.yml (nf-core module metadata),,,bioconda:preseq ; doi:10.1093/bioinformatics/btu540 ; pmid:25107873 ; rrid:SCR_018664,4,11
+quast,quast,quast,https://bio.tools/quast,meta.yml (nf-core module metadata),,,bioconda:quast ; doi:10.1093/bioinformatics/btt086 ; pmid:23422339,3,10
+subread,subread,subread,https://bio.tools/subread,meta.yml (nf-core module metadata),,,bioconda:subread ; doi:10.1093/nar/gkz114 ; doi:10.1093/nar/gkt214 ; pmid:23558742 ; doi:10.1038/nmeth.4106 ; pmid:27941783 ; rrid:SCR_009803,7,10
+tabix,tabix,tabix,https://bio.tools/tabix,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btq671,1,10
+bgzip,bgzip,tabix,https://bio.tools/tabix,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btp352,1,9
+ensembl-vep,ensemblvep,ensemblvep,https://bio.tools/ensemblvep,bio.tools API (exact-id),,,bioconda:ensembl-vep ; doi:10.1186/s13059-016-0974-4 ; pmid:27268795,3,9
+hmmer,hmmer,hmmer,https://bio.tools/hmmer,meta.yml (nf-core module metadata),,,bioconda:hmmer ; doi:10.1371/journal.pcbi.1002195,2,9
+mafft,mafft,MAFFT,https://bio.tools/MAFFT,meta.yml (nf-core module metadata),,,bioconda:mafft ; doi:10.1093/nar/gkf436 ; doi:10.1007/978-1-62703-646-7_8 ; pmid:24170399 ; doi:10.7490/f1000research.1114334.1 ; doi:10.1093/bioinformatics/bty121 ; pmid:29506019 ; doi:10.1093/bib/bbx108 ; pmid:28968734 ; doi:10.1093/molbev/mst010 ; pmid:23329690 ; doi:10.1093/nar/gki198 ; pmid:15661851,13,9
+nanoplot,nanoplot,nanoplot,https://bio.tools/nanoplot,meta.yml (nf-core module metadata),,,bioconda:nanoplot ; doi:10.1093/bioinformatics/bty149 ; pmid:29547981,3,9
+rseqc,rseqc,rseqc,https://bio.tools/rseqc,meta.yml (nf-core module metadata),,,bioconda:rseqc ; doi:10.1093/bioinformatics/bts356 ; doi:10.1186/1471-2105-12-323 ; pmid:22743226 ; doi:10.1186/s12859-016-0922-z ; pmid:26842848,6,9
+annotate,annotate,bcftools,https://bio.tools/bcftools,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; doi:10.1093/gigascience/giab008 ; pmid:33590861,4,8
+concat,concat,bcftools,https://bio.tools/bcftools,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; doi:10.1093/gigascience/giab008 ; pmid:33590861,4,8
+filter,filter,bcftools,https://bio.tools/bcftools,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; doi:10.1093/gigascience/giab008 ; pmid:33590861,4,8
+hisat2,hisat2,hisat2,https://bio.tools/hisat2,meta.yml (nf-core module metadata),,,bioconda:hisat2 ; doi:10.1038/s41587-019-0201-4 ; doi:10.1038/nmeth.3317 ; doi:10.1093/bioinformatics/btu781 ; doi:10.1093/nar/gkq211 ; doi:10.1186/gb-2009-10-3-r25,6,8
+mmseqs,mmseqs,mmseqs,https://bio.tools/mmseqs,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btw006 ; pmid:26743509,2,8
+mmseqs2,mmseqs2,mmseqs2,https://bio.tools/mmseqs2,meta.yml (nf-core module metadata),,,bioconda:mmseqs2 ; doi:10.1038/nbt.3988 ; pmid:29035372 ; doi:10.1101/079681 ; doi:10.1038/s41467-018-04964-5 ; pmid:29959318 ; doi:10.1093/bioinformatics/bty1057 ; pmid:30615063 ; doi:10.1101/2020.11.27.401018 ; doi:10.1093/bioinformatics/btab184 ; pmid:33734313 ; doi:10.1101/2024.11.13.623350v1 ; doi:10.1038/s41592-025-02819-8,13,8
+numpy,numpy,numpy,https://bio.tools/numpy,bio.tools API (exact-id),,,bioconda:numpy ; doi:10.1038/s41586-020-2649-2,2,8
+pysam,pysam,pysam,https://bio.tools/pysam,bio.tools API (exact-id),,,bioconda:pysam ; doi:10.1093/bioinformatics/btp352 ; pmid:19505943,3,8
+salmon,salmon,salmon,https://bio.tools/salmon,meta.yml (nf-core module metadata),,,bioconda:salmon ; doi:10.1038/nmeth.4197 ; pmid:28263959,3,8
+deeptools,deeptools,deeptools,https://bio.tools/deeptools,meta.yml (nf-core module metadata),,,bioconda:deeptools ; doi:10.1093/nar/gku365 ; doi:10.1093/nar/gkw257 ; pmid:24799436,4,7
+deseq2,deseq2,deseq2,https://bio.tools/deseq2,meta.yml (nf-core module metadata),,,doi:10.1186/s13059-014-0550-8 ; doi:10.18129/B9.bioc.DESeq2 ; rrid:SCR_015687,3,7
+merge,merge,bcftools,https://bio.tools/bcftools,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; doi:10.1093/gigascience/giab008 ; pmid:33590861,4,7
+prokka,prokka,prokka,https://bio.tools/prokka,meta.yml (nf-core module metadata),,,bioconda:prokka ; doi:10.1093/bioinformatics/btu153 ; pmid:24642063,3,7
+r-base,rbase,r,https://bio.tools/r,meta.yml (nf-core module metadata),,,doi:10.11120/msor.2001.01010023 ; rrid:SCR_001905,2,7
+bakta,bakta,bakta,https://bio.tools/bakta,meta.yml (nf-core module metadata),,,bioconda:bakta ; doi:10.1099/mgen.0.000685 ; pmid:34739369 ; doi:10.1093/nar/gkaf335 ; pmid:40271661,5,6
+bioconductor-deseq2,bioconductordeseq2,deseq2,https://bio.tools/deseq2,bio.tools dump (doi+url+name),,,bioconda:bioconductor-deseq2 ; doi:10.1186/s13059-014-0550-8,2,6
+busco,busco,busco,https://bio.tools/busco,meta.yml (nf-core module metadata),,,bioconda:busco ; doi:10.1007/978-1-4939-9173-0_14 ; doi:10.1093/bioinformatics/btv351 ; pmid:26059717 ; doi:10.1002/cpz1.323 ; pmid:34936221 ; doi:10.1093/molbev/msx319 ; pmid:29220515 ; doi:10.1093/molbev/msab199 ; pmid:34320186,10,6
+clair3,clair3,clair3,https://bio.tools/clair3,meta.yml (nf-core module metadata),,,bioconda:clair3 ; doi:10.1038/s43588-022-00387-x,2,6
+cuatadapt,cuatadapt,cutadapt,https://bio.tools/cutadapt,meta.yml (nf-core module metadata),,,doi:10.14806/ej.17.1.200 ; doi:10.7490/f1000research.1114334.1,2,6
+deepvariant,deepvariant,deepvariant,https://bio.tools/deepvariant,meta.yml (nf-core module metadata),,,doi:10.1038/nbt.4235 ; doi:10.1093/bioinformatics/btaa1081 ; pmid:33399819,3,6
+diamond,diamond,diamond,https://bio.tools/diamond,meta.yml (nf-core module metadata),,,bioconda:diamond ; doi:10.1038/s41592-021-01101-x ; doi:10.1038/nmeth.3176 ; pmid:25402007 ; rrid:SCR_016071,5,6
+edger,edger,edger,https://bio.tools/edger,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btp616 ; doi:10.18129/B9.bioc.edgeR ; doi:10.1093/nar/gkaf018,3,6
+filtlong,filtlong,filtlong,https://bio.tools/filtlong,meta.yml (nf-core module metadata),,,bioconda:filtlong,1,6
+porechop,porechop,Porechop,https://bio.tools/Porechop,bio.tools API (exact-id),,,bioconda:porechop ; doi:10.1099/mgen.0.000132,2,6
+query,query,bcftools,https://bio.tools/bcftools,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; doi:10.1093/gigascience/giab008 ; pmid:33590861,4,6
+snpeff,snpeff,snpeff,https://bio.tools/snpeff,meta.yml (nf-core module metadata),,,bioconda:snpeff ; doi:10.4161/fly.19695 ; pmid:22728672,3,6
+spades,spades,spades,https://bio.tools/spades,bio.tools API (exact-id),,,bioconda:spades ; doi:10.1089/cmb.2012.0021 ; pmid:22506599 ; doi:10.7490/f1000research.1114334.1,4,6
+stringtie,stringtie,stringtie,https://bio.tools/stringtie,bio.tools API (exact-id),,,bioconda:stringtie ; doi:10.1038/nbt.3122 ; pmid:25690850,3,6
+stringtie2,stringtie2,stringtie,https://bio.tools/stringtie,meta.yml (nf-core module metadata),,,doi:10.1038/nbt.3122 ; pmid:25690850,2,6
+thermorawfileparser,thermorawfileparser,ThermoRawFileParser,https://bio.tools/ThermoRawFileParser,meta.yml (nf-core module metadata),,,bioconda:thermorawfileparser ; doi:10.1021/acs.jproteome.9b00328 ; doi:10.1101/622852,3,6
+trimmomatic,trimmomatic,trimmomatic,https://bio.tools/trimmomatic,meta.yml (nf-core module metadata),,,bioconda:trimmomatic ; doi:10.1093/bioinformatics/btu170 ; doi:10.1093/nar/gks540 ; pmid:22684630,4,6
+ucsc-bedgraphtobigwig,ucscbedgraphtobigwig,bedgraphtobigwig,https://bio.tools/bedgraphtobigwig,bio.tools dump (name),,,,0,6
+bamtools,bamtools,bamtools,https://bio.tools/bamtools,meta.yml (nf-core module metadata),,,bioconda:bamtools ; doi:10.1093/bioinformatics/btr174 ; pmid:21493652,3,5
+blast,blast,blast,https://bio.tools/blast,bio.tools API (exact-id),,,bioconda:blast ; doi:10.1016/S0022-2836(05)80360-2 ; pmid:2231712 ; doi:10.1093/bioinformatics/btw305 ; pmid:27256311 ; doi:10.1093/nar/gkn201 ; pmid:18440982 ; doi:10.1093/nar/gkt282 ; pmid:23609542,9,5
+bowtie,bowtie,bowtie,https://bio.tools/bowtie,meta.yml (nf-core module metadata),,,bioconda:bowtie ; doi:10.1093/nar/gkq211 ; doi:10.1186/gb-2009-10-3-r25 ; rrid:SCR_005476,4,5
+consensus,consensus,bcftools,https://bio.tools/bcftools,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; doi:10.1093/gigascience/giab008 ; pmid:33590861,4,5
+freebayes,freebayes,freebayes,https://bio.tools/freebayes,meta.yml (nf-core module metadata),,,bioconda:freebayes ; doi:10.48550/arXiv.1207.3907,2,5
+matplotlib,matplotlib,matplotlib,https://bio.tools/matplotlib,bio.tools API (exact-id),,,bioconda:matplotlib,1,5
+mpileup,mpileup,bcftools,https://bio.tools/bcftools,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; doi:10.1093/gigascience/giab008 ; pmid:33590861,4,5
+rsem,rsem,rsem,https://bio.tools/rsem,bio.tools API (exact-id),,,doi:10.1093/bioinformatics/btp692 ; pmid:20022975,2,5
+vsearch,vsearch,vsearch,https://bio.tools/vsearch,meta.yml (nf-core module metadata),,,bioconda:vsearch ; doi:10.7717/peerj.2584 ; pmid:27781170,3,5
+adapterremoval,adapterremoval,adapterremoval,https://bio.tools/adapterremoval,meta.yml (nf-core module metadata),,,bioconda:adapterremoval,1,4
+agat,agat,AGAT,https://bio.tools/AGAT,meta.yml (nf-core module metadata),,,bioconda:agat ; doi:10.5281/zenodo.3552717,2,4
+anndata,anndata,anndata,https://bio.tools/anndata,meta.yml (nf-core module metadata),,,bioconda:anndata ; doi:10.21105/joss.04371 ; doi:10.1101/2021.12.16.473007,3,4
+bioconductor-tximeta,bioconductortximeta,tximeta,https://bio.tools/tximeta,bio.tools dump (name),,,,0,4
+bracken,bracken,bracken,https://bio.tools/bracken,meta.yml (nf-core module metadata),,,bioconda:bracken ; doi:10.7717/peerj-cs.104,2,4
+cnvkit,cnvkit,cnvkit,https://bio.tools/cnvkit,meta.yml (nf-core module metadata),,,bioconda:cnvkit ; doi:10.1371/journal.pcbi.1004873 ; pmid:27100738,3,4
+duckdb,duckdb,duckdb,https://bio.tools/duckdb,meta.yml (nf-core module metadata),,,doi:10.2196/83487 ; pmid:41780922,2,4
+falco,falco,falco,https://bio.tools/falco,bio.tools API (exact-id),,,doi:10.12688/F1000RESEARCH.21142.1,1,4
+flye,flye,Flye,https://bio.tools/Flye,meta.yml (nf-core module metadata),,,bioconda:flye ; doi:10.1038/s41592-020-00971-x ; doi:10.1099/mgen.0.000294 ; pmid:31483244 ; doi:10.1038/s41587-019-0072-8 ; pmid:30936562 ; pmid:33020656,7,4
+homer,homer,homer,https://bio.tools/homer,meta.yml (nf-core module metadata),,,bioconda:homer ; doi:10.1016/j.molcel.2010.05.004,2,4
+iqtree,iqtree,iqtree,https://bio.tools/iqtree,meta.yml (nf-core module metadata),,,bioconda:iqtree ; doi:10.1093/molbev/msaa015 ; doi:10.1093/molbev/msu300 ; pmid:25371430,4,4
+kallisto,kallisto,kallisto,https://bio.tools/kallisto,meta.yml (nf-core module metadata),,,bioconda:kallisto ; doi:10.1038/nbt.3519 ; pmid:27043002,3,4
+krona,krona,krona,https://bio.tools/krona,meta.yml (nf-core module metadata),,,bioconda:krona ; doi:10.1186/1471-2105-12-385 ; pmid:21961884,3,4
+megahit,megahit,megahit,https://bio.tools/megahit,meta.yml (nf-core module metadata),,,bioconda:megahit ; doi:10.1093/bioinformatics/btv033 ; pmid:25609793 ; rrid:SCR_018551,4,4
+porechop_abi,porechopabi,porechop_abi,https://bio.tools/porechop_abi,bio.tools API (exact-id),,,bioconda:porechop_abi ; doi:10.1101/2022.07.07.499093 ; doi:10.1093/bioadv/vbac085 ; pmid:36698762,4,4
+prodigal,prodigal,prodigal,https://bio.tools/prodigal,meta.yml (nf-core module metadata),,,bioconda:prodigal ; doi:10.1186/1471-2105-11-119,2,4
+qualimap,qualimap,qualimap,https://bio.tools/qualimap,meta.yml (nf-core module metadata),,,bioconda:qualimap ; doi:10.1093/bioinformatics/bts503 ; pmid:22914218,3,4
+sortmerna,sortmerna,sortmerna,https://bio.tools/sortmerna,meta.yml (nf-core module metadata),,,bioconda:sortmerna ; doi:10.1093/bioinformatics/bts611 ; pmid:23071270,3,4
+toulligqc,toulligqc,ToulligQC,https://bio.tools/ToulligQC,meta.yml (nf-core module metadata),,,bioconda:toulligqc,1,4
+tximeta,tximeta,tximeta,https://bio.tools/tximeta,meta.yml (nf-core module metadata),,,doi:10.1371/journal.pcbi.1007664,1,4
+unicycler,unicycler,unicycler,https://bio.tools/unicycler,meta.yml (nf-core module metadata),,,bioconda:unicycler ; doi:10.1371/journal.pcbi.1005595 ; pmid:28594827,3,4
+bcftools plugin setGT,bcftoolspluginsetgt,bcftools,https://bio.tools/bcftools,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; doi:10.1093/gigascience/giab008 ; pmid:33590861,4,3
+bioconductor-biostrings,bioconductorbiostrings,biostrings,https://bio.tools/biostrings,bio.tools dump (url+name),,,bioconda:bioconductor-biostrings,1,3
+cd-hit,cdhit,cd-hit,https://bio.tools/cd-hit,meta.yml (nf-core module metadata),,,bioconda:cd-hit ; doi:10.1093/bioinformatics/btl158 ; doi:10.1093/bioinformatics/bts565 ; pmid:23060610 ; pmid:16731699 ; doi:10.1093/bioinformatics/17.3.282 ; pmid:11294794 ; doi:10.1093/bioinformatics/18.1.77 ; pmid:11836214 ; doi:10.1093/bioinformatics/btq003 ; pmid:20053844,11,3
+cellpose,cellpose,cellpose,https://bio.tools/cellpose,meta.yml (nf-core module metadata),,,doi:10.1038/s41592-022-01663-4 ; doi:10.1101/2020.02.02.931238,2,3
+chopper,chopper,chopper,https://bio.tools/chopper,bio.tools API (exact-id),,,bioconda:chopper ; doi:10.1093/bioinformatics/bty149 ; doi:10.1093/bioinformatics/btad311,3,3
+clustalo,clustalo,clustalo,https://bio.tools/clustalo,bio.tools API (exact-id),,,bioconda:clustalo ; doi:10.1038/msb.2011.75 ; pmid:21988835 ; doi:10.1002/pro.3290 ; pmid:28884485 ; doi:10.1002/0471250953.bi0313s48 ; pmid:25501942,7,3
+CometAdapter,cometadapter,openms,https://bio.tools/openms,bio.tools dump (url),,,,0,3
+fgbio,fgbio,fgbio,https://bio.tools/fgbio,meta.yml (nf-core module metadata),,,bioconda:fgbio,1,3
+ggplot2,ggplot2,ggplot2,https://bio.tools/ggplot2,bio.tools API (exact-id),,,doi:10.32614/CRAN.package.gplots ; doi:10.1007/978-3-319-24277-4,2,3
+glnexus,glnexus,GLnexus,https://bio.tools/GLnexus,bio.tools API (exact-id),,,bioconda:glnexus ; doi:10.1101/343970,2,3
+igv,igv,igv,https://bio.tools/igv,bio.tools API (exact-id),,,doi:10.1093/bib/bbs017 ; pmid:22517427 ; doi:10.1038/nbt.1754 ; pmid:21221095 ; doi:10.1093/bioinformatics/btac830 ; pmid:36562559,6,3
+ilastik,ilastik,ilastik,https://bio.tools/ilastik,meta.yml (nf-core module metadata),,,doi:10.1038/s41592-019-0582-9 ; pmid:31570887,2,3
+interproscan,interproscan,interproscan_4,https://bio.tools/interproscan_4,bio.tools API (exact-name),,,bioconda:interproscan ; doi:10.1093/bioinformatics/btu031 ; pmid:24451626 ; doi:10.1093/nar/gkac240 ; pmid:35412617 ; rrid:SCR_005829,6,3
+kaiju,kaiju,kaiju,https://bio.tools/kaiju,meta.yml (nf-core module metadata),,,bioconda:kaiju ; doi:10.1038/ncomms11257 ; pmid:27071849,3,3
+krakenuniq,krakenuniq,KrakenUniq,https://bio.tools/KrakenUniq,meta.yml (nf-core module metadata),,,bioconda:krakenuniq ; doi:10.1186/s13059-018-1568-0 ; doi:10.1371/JOURNAL.PCBI.1006863 ; pmid:31756192,4,3
+liftoff,liftoff,liftoff,https://bio.tools/liftoff,meta.yml (nf-core module metadata),,,bioconda:liftoff ; doi:10.1093/bioinformatics/bty191 ; doi:10.1101/2020.06.24.169680,3,3
+manta,manta,manta_sv,https://bio.tools/manta_sv,meta.yml (nf-core module metadata),,,bioconda:manta ; doi:10.1093/bioinformatics/btv710 ; pmid:26647377,3,3
+medaka,medaka,medaka,https://bio.tools/medaka,meta.yml (nf-core module metadata),,,bioconda:medaka,1,3
+metaphlan,metaphlan,metaphlan,https://bio.tools/metaphlan,meta.yml (nf-core module metadata),,,bioconda:metaphlan ; doi:10.1038/s41587-023-01688-w ; doi:10.1038/nmeth.2066 ; pmid:22688413,4,3
+pbmm2,pbmm2,pbmm2,https://bio.tools/pbmm2,meta.yml (nf-core module metadata),,,bioconda:pbmm2,1,3
+racon,racon,Racon,https://bio.tools/Racon,meta.yml (nf-core module metadata),,,bioconda:racon ; doi:10.1101/gr.214270.116 ; doi:10.3390/plants8080270 ; pmid:31390788,4,3
+reheader,reheader,bcftools,https://bio.tools/bcftools,meta.yml (nf-core module metadata),,,doi:10.1093/gigascience/giab008 ; doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; pmid:33590861,4,3
+sage,sage,Sage-proteomics,https://bio.tools/Sage-proteomics,meta.yml (nf-core module metadata),,,doi:10.1021/acs.jproteome.3c00486 ; pmid:37819886,2,3
+seqfu,seqfu,seqfu,https://bio.tools/seqfu,meta.yml (nf-core module metadata),,,bioconda:seqfu ; doi:10.3390/bioengineering8050059 ; pmid:34066939,3,3
+seurat,seurat,seurat,https://bio.tools/seurat,meta.yml (nf-core module metadata),,,doi:10.1016/j.cell.2021.04.048 ; pmid:34062119,2,3
+snpsift,snpsift,snpsift,https://bio.tools/snpsift,meta.yml (nf-core module metadata),,,bioconda:snpsift ; doi:10.3389/fgene.2012.00035 ; pmid:22435069 ; rrid:SCR_015624,4,3
+sourmash,sourmash,sourmash,https://bio.tools/sourmash,meta.yml (nf-core module metadata),,,bioconda:sourmash ; doi:10.21105/joss.00027 ; doi:10.12688/f1000research.19675.1 ; pmid:31508216,4,3
+spring,spring,spring,https://bio.tools/spring,meta.yml (nf-core module metadata),,,bioconda:spring ; doi:10.1093/bioinformatics/bty1015 ; doi:10.1093/bioinformatics/bti412 ; pmid:15814563 ; doi:10.1089/cmb.2005.12.102 ; pmid:15725736 ; doi:10.1093/nar/gkl169 ; pmid:16845100,8,3
+summarizedexperiment,summarizedexperiment,summarizedexperiment,https://bio.tools/summarizedexperiment,meta.yml (nf-core module metadata),,,doi:10.18129/B9.bioc.SummarizedExperiment,1,3
+sylph,sylph,sylph,https://bio.tools/sylph,meta.yml (nf-core module metadata),,,bioconda:sylph ; doi:10.1038/s41587-024-02412-y,2,3
+tar,tar,tar,https://bio.tools/tar,meta.yml (nf-core module metadata),,,,0,3
+trinity,trinity,trinity,https://bio.tools/trinity,meta.yml (nf-core module metadata),,,bioconda:trinity ; doi:10.1038/nbt.1883 ; pmid:21572440 ; doi:10.1038/nprot.2013.084 ; pmid:23845962,5,3
+ucsc-gtftogenepred,ucscgtftogenepred,gtftogenepred,https://bio.tools/gtftogenepred,bio.tools dump (name),,,,0,3
+vcflib,vcflib,vcflib,https://bio.tools/vcflib,meta.yml (nf-core module metadata),,,bioconda:vcflib ; doi:10.1371/journal.pcbi.1009123 ; doi:10.1101/2021.05.21.445151 ; doi:10.1101/023754,4,3
+vcftools,vcftools,vcftools,https://bio.tools/vcftools,meta.yml (nf-core module metadata),,,bioconda:vcftools ; doi:10.1093/bioinformatics/btr330 ; pmid:21653522,3,3
+amber,amber,amber,https://bio.tools/amber,bio.tools API (exact-id),,,doi:10.1002/jcc.20290 ; pmid:16200636 ; doi:10.1002/wcms.1121 ; rrid:SCR_014230,4,2
+annotsv,annotsv,AnnotSV,https://bio.tools/AnnotSV,meta.yml (nf-core module metadata),,,bioconda:annotsv ; doi:10.1093/bioinformatics/bty304 ; pmid:29669011 ; doi:10.1093/nar/gkab402 ; pmid:34023905,5,2
+bandage,bandage,bandage,https://bio.tools/bandage,meta.yml (nf-core module metadata),,,bioconda:bandage ; doi:10.1093/bioinformatics/btv383 ; pmid:26099265,3,2
+barrnap,barrnap,barrnap,https://bio.tools/barrnap,meta.yml (nf-core module metadata),,,bioconda:barrnap,1,2
+beagle,beagle,beagle,https://bio.tools/beagle,bio.tools API (exact-id),,,doi:10.1086/521987 ; pmid:17924348 ; doi:10.1016/j.ajhg.2015.11.020 ; pmid:26748515 ; doi:10.1016/j.ajhg.2021.08.005 ; pmid:34478634 ; doi:10.1016/j.ajhg.2018.07.015 ; pmid:30100085,8,2
+beagle5,beagle5,beagle,https://bio.tools/beagle,bio.tools dump (doi),,,doi:10.1016/j.ajhg.2021.08.005 ; doi:10.1016/j.ajhg.2018.07.015,2,2
+bedops,bedops,bedops,https://bio.tools/bedops,meta.yml (nf-core module metadata),,,bioconda:bedops ; doi:10.1093/bioinformatics/bts277 ; pmid:22576172,3,2
+bioconductor-anndatar,bioconductoranndatar,bioconductor-anndatar,https://bio.tools/bioconductor-anndatar,bio.tools API (exact-id),,,doi:10.1093/bioinformatics/btag288,1,2
+bioconductor-apeglm,bioconductorapeglm,apeglm,https://bio.tools/apeglm,bio.tools dump (name),,,,0,2
+bioconductor-edger,bioconductoredger,edger,https://bio.tools/edger,bio.tools dump (name),,,,0,2
+bioconductor-genomicranges,bioconductorgenomicranges,genomicranges,https://bio.tools/genomicranges,bio.tools dump (name),,,,0,2
+bioconductor-limma,bioconductorlimma,limma,https://bio.tools/limma,bio.tools dump (name),,,,0,2
+bioconductor-phyloseq,bioconductorphyloseq,phyloseq,https://bio.tools/phyloseq,bio.tools dump (name),,,,0,2
+bioconductor-rtracklayer,bioconductorrtracklayer,rtracklayer,https://bio.tools/rtracklayer,bio.tools dump (name),,,,0,2
+bioconductor-summarizedexperiment,bioconductorsummarizedexperiment,summarizedexperiment,https://bio.tools/summarizedexperiment,bio.tools dump (name),,,,0,2
+biostrings,biostrings,biostrings,https://bio.tools/biostrings,meta.yml (nf-core module metadata),,,doi:10.18129/B9.bioc.Biostrings,1,2
+catpack,catpack,cat_bins,https://bio.tools/cat_bins,bio.tools dump (doi),,,doi:10.1186/s13059-019-1817-x,1,2
+cellbender,cellbender,CellBender,https://bio.tools/CellBender,meta.yml (nf-core module metadata),,,bioconda:cellbender ; doi:10.1101/791699,2,2
+cellprofiler,cellprofiler,CellProfiler,https://bio.tools/CellProfiler,bio.tools API (exact-id),,,doi:10.2144/000112257 ; doi:10.1002/cpz1.89,2,2
+centrifuge,centrifuge,centrifuge,https://bio.tools/centrifuge,meta.yml (nf-core module metadata),,,bioconda:centrifuge ; doi:10.1101/gr.210641.116 ; pmid:27852649,3,2
+centrifuger,centrifuger,centrifuger,https://bio.tools/centrifuger,meta.yml (nf-core module metadata),,,bioconda:centrifuger ; doi:10.1186/s13059-024-03244-4 ; pmid:38664753,3,2
+checkm2,checkm2,checkm2,https://bio.tools/checkm2,bio.tools API (exact-id),,,bioconda:checkm2 ; doi:10.1038/s41592-023-01940-w,2,2
+checkv,checkv,checkv,https://bio.tools/checkv,meta.yml (nf-core module metadata),,,bioconda:checkv ; doi:10.1038/s41587-020-00774-7 ; doi:10.1101/2020.05.06.081778,3,2
+chord,chord,chord,https://bio.tools/chord,bio.tools API (exact-id),,,doi:10.1101/2021.05.07.442884,1,2
+circexplorer2,circexplorer2,CIRCexplorer2,https://bio.tools/CIRCexplorer2,meta.yml (nf-core module metadata),,,bioconda:circexplorer2 ; doi:10.1101/gr.202895.115 ; doi:10.1007/978-1-4939-8808-2_10 ; pmid:30539552,4,2
+Comet,comet,comet,https://bio.tools/comet,meta.yml (nf-core module metadata),,,doi:10.1002/pmic.201200439 ; pmid:23148064 ; doi:10.1007/s13361-015-1179-x ; pmid:26115965,4,2
+coverm,coverm,coverm,https://bio.tools/coverm,meta.yml (nf-core module metadata),,,bioconda:coverm ; doi:10.5281/zenodo.10531253 ; doi:10.5281/zenodo.10531254,3,2
+damageprofiler,damageprofiler,damageprofiler,https://bio.tools/damageprofiler,meta.yml (nf-core module metadata),,,bioconda:damageprofiler ; doi:10.1093/bioinformatics/btab190 ; doi:10.1101/2020.10.01.322206,3,2
+dbcan,dbcan,dbcan,https://bio.tools/dbcan,meta.yml (nf-core module metadata),,,bioconda:dbcan ; doi:10.1093/nar/gkad328 ; doi:10.1093/nar/gks479 ; pmid:22645317,4,2
+decoupler,decoupler,decoupler,https://bio.tools/decoupler,meta.yml (nf-core module metadata),,,doi:10.1093/bioadv/vbac016,1,2
+dedup,dedup,eager,https://bio.tools/eager,bio.tools dump (doi),,,bioconda:dedup ; doi:10.1186/s13059-016-0918-z,2,2
+deepsomatic,deepsomatic,deepsomatic,https://bio.tools/deepsomatic,meta.yml (nf-core module metadata),,,doi:10.1101/2024.08.16.608331,1,2
+dexseq,dexseq,dexseq,https://bio.tools/dexseq,meta.yml (nf-core module metadata),,,doi:10.1101/gr.133744.111 ; doi:10.1073/pnas.1307202110 ; rrid:SCR_012823,3,2
+dropletutils,dropletutils,dropletutils,https://bio.tools/dropletutils,meta.yml (nf-core module metadata),,,doi:10.1186/s13059-019-1662-y ; doi:10.1038/s41467-018-05083-x,2,2
+eggnog-mapper,eggnogmapper,eggnog-mapper-v2,https://bio.tools/eggnog-mapper-v2,meta.yml (nf-core module metadata),,,bioconda:eggnog-mapper ; doi:10.1093/molbev/msab293 ; pmid:34597405,3,2
+epa-ng,epang,EPA-ng,https://bio.tools/EPA-ng,bio.tools API (exact-id),,,bioconda:epa-ng ; doi:10.1093/sysbio/syy054 ; pmid:30165689,3,2
+famsa,famsa,famsa,https://bio.tools/famsa,meta.yml (nf-core module metadata),,,bioconda:famsa ; doi:10.1038/srep33964 ; pmid:27670777,3,2
+ganon,ganon,ganon,https://bio.tools/ganon,meta.yml (nf-core module metadata),,,bioconda:ganon ; doi:10.1093/bioinformatics/btaa458 ; doi:10.1093/nargab/lqaf094 ; pmid:40677913,4,2
+gappa,gappa,GAPPA,https://bio.tools/GAPPA,meta.yml (nf-core module metadata),,,bioconda:gappa ; doi:10.1093/bioinformatics/btaa070 ; doi:10.1101/647958,3,2
+genomad,genomad,genomad,https://bio.tools/genomad,meta.yml (nf-core module metadata),,,bioconda:genomad ; doi:10.1101/2023.03.05.531206 ; doi:10.1101/2023.03.05.531206v1,3,2
+genomicranges,genomicranges,genomicranges,https://bio.tools/genomicranges,bio.tools API (exact-id),,,doi:10.1371/journal.pcbi.1003118,1,2
+gffcompare,gffcompare,gffcompare,https://bio.tools/gffcompare,meta.yml (nf-core module metadata),,,bioconda:gffcompare ; doi:10.12688/f1000research.23297.1,2,2
+gffutils,gffutils,gffutils,https://bio.tools/gffutils,bio.tools API (exact-id),,,bioconda:gffutils,1,2
+gprofiler2,gprofiler2,gprofiler,https://bio.tools/gprofiler,bio.tools dump (url),,,doi:10.1093/nar/gkad347,1,2
+hiphase,hiphase,hiphase,https://bio.tools/hiphase,meta.yml (nf-core module metadata),,,bioconda:hiphase ; doi:10.1093/bioinformatics/btae042 ; pmid:38269623,3,2
+htseq,htseq,htseq,https://bio.tools/htseq,meta.yml (nf-core module metadata),,,bioconda:htseq ; doi:10.1093/bioinformatics/btu638 ; pmid:25260700,3,2
+htseq/count,htseqcount,htseq,https://bio.tools/htseq,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btu638 ; pmid:25260700,2,2
+isec,isec,bcftools,https://bio.tools/bcftools,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; doi:10.1093/gigascience/giab008 ; pmid:33590861,4,2
+ivar,ivar,andersen-lab_ivar,https://bio.tools/andersen-lab_ivar,meta.yml (nf-core module metadata),,,bioconda:ivar ; doi:10.1186/s13059-018-1618-7 ; pmid:30621750,3,2
+khmer,khmer,khmer,https://bio.tools/khmer,meta.yml (nf-core module metadata),,,bioconda:khmer ; doi:10.12688/f1000research.6924.1 ; doi:10.1073/pnas.1121464109 ; pmid:22847406 ; doi:10.1371/journal.pone.0101271 ; pmid:25062443 ; doi:10.7287/peerj.preprints.890v1,7,2
+kmcp,kmcp,kmcp,https://bio.tools/kmcp,bio.tools API (exact-id),,,bioconda:kmcp ; doi:10.1093/bioinformatics/btac845,2,2
+kofamscan,kofamscan,kofamscan,https://bio.tools/kofamscan,meta.yml (nf-core module metadata),,,bioconda:kofamscan ; doi:10.1093/bioinformatics/btz859,2,2
+kraken,kraken,kraken,https://bio.tools/kraken,bio.tools API (exact-id),,,doi:10.1186/gb-2014-15-3-r46 ; pmid:24580807,2,2
+krakentools,krakentools,krakentools,https://bio.tools/krakentools,meta.yml (nf-core module metadata),,,bioconda:krakentools,1,2
+last,last,last,https://bio.tools/last,bio.tools API (exact-id),,,bioconda:last ; doi:10.1093/nar/gkq010 ; pmid:20110255 ; rrid:SCR_006119,4,2
+lima,lima,isoseq3,https://bio.tools/isoseq3,bio.tools dump (url),,,bioconda:lima,1,2
+limma,limma,limma,https://bio.tools/limma,meta.yml (nf-core module metadata),,,doi:10.1093/nar/gkv007 ; doi:10.18129/B9.bioc.limma,2,2
+lofreq,lofreq,lofreq,https://bio.tools/lofreq,meta.yml (nf-core module metadata),,,bioconda:lofreq ; doi:10.1093/nar/gks918 ; pmid:23066108,3,2
+mash,mash,mash,https://bio.tools/mash,meta.yml (nf-core module metadata),,,bioconda:mash ; doi:10.1186/s13059-016-0997-x ; pmid:27323842,3,2
+megan,megan,megan,https://bio.tools/megan,meta.yml (nf-core module metadata),,,bioconda:megan ; doi:10.1371/journal.pcbi.1004957 ; doi:10.1101/gr.5969107 ; pmid:17255551,4,2
+merqury,merqury,merqury,https://bio.tools/merqury,meta.yml (nf-core module metadata),,,bioconda:merqury ; doi:10.1186/s13059-020-02134-9 ; doi:10.1101/2020.03.15.992941,3,2
+meryl,meryl,meryl,https://bio.tools/meryl,meta.yml (nf-core module metadata),,,bioconda:meryl ; doi:10.1186/s13059-020-02134-9 ; pmid:32928274,3,2
+mesmer,mesmer,deepcell,https://bio.tools/deepcell,meta.yml (nf-core module metadata),,,doi:10.1038/s41587-021-01094-0 ; doi:10.1101/803205 ; doi:10.1038/s41592-020-01023-0 ; pmid:33398191,4,2
+metaeuk,metaeuk,MetaEuk,https://bio.tools/MetaEuk,meta.yml (nf-core module metadata),,,bioconda:metaeuk ; doi:10.1186/s40168-020-00808-x ; doi:10.1186/s13059-020-02295-z ; pmid:32245390 ; doi:10.1101/851964,5,2
+mhcflurry,mhcflurry,mhcflurry,https://bio.tools/mhcflurry,bio.tools API (exact-id),,,doi:10.1016/j.cels.2018.05.014 ; pmid:29960884,2,2
+miniasm,miniasm,miniasm,https://bio.tools/miniasm,meta.yml (nf-core module metadata),,,bioconda:miniasm ; doi:10.1093/bioinformatics/btw152 ; pmid:27153593,3,2
+msisensor-pro,msisensorpro,msisensor-pro,https://bio.tools/msisensor-pro,bio.tools API (exact-id),,,bioconda:msisensor-pro ; doi:10.1016/j.gpb.2020.02.001 ; doi:10.1101/2020.01.08.899633,3,2
+MSstats,msstats,msstats,https://bio.tools/msstats,bio.tools API (exact-id),,,pmid:24794931,1,2
+openms,openms,openms,https://bio.tools/openms,meta.yml (nf-core module metadata),,,bioconda:openms ; doi:10.1038/s41592-024-02197-7 ; doi:10.1038/nmeth.3959 ; pmid:27575624 ; doi:10.1007/978-1-60761-987-1_23,5,2
+pairix,pairix,pairix,https://bio.tools/pairix,meta.yml (nf-core module metadata),,,bioconda:pairix ; doi:10.1093/bioinformatics/btab870 ; pmid:34978573,3,2
+pairtools,pairtools,pairtools,https://bio.tools/pairtools,bio.tools API (exact-id),,,bioconda:pairtools ; doi:10.1371/JOURNAL.PCBI.1012164 ; pmid:38809952,3,2
+percolator,percolator,percolator,https://bio.tools/percolator,meta.yml (nf-core module metadata),,,bioconda:percolator ; doi:10.1038/nmeth1113 ; pmid:17952086,3,2
+pilon,pilon,pilon,https://bio.tools/pilon,meta.yml (nf-core module metadata),,,bioconda:pilon ; doi:10.1371/journal.pone.0112963 ; pmid:25409509,3,2
+pybedtools,pybedtools,pybedtools,https://bio.tools/pybedtools,bio.tools API (exact-id),,,bioconda:pybedtools ; doi:10.1093/bioinformatics/btr539 ; pmid:21949271,3,2
+pycoqc,pycoqc,pycoqc,https://bio.tools/pycoqc,meta.yml (nf-core module metadata),,,bioconda:pycoqc ; doi:10.21105/joss.01236,2,2
+rasusa,rasusa,rasusa,https://bio.tools/rasusa,meta.yml (nf-core module metadata),,,bioconda:rasusa ; doi:10.5281/zenodo.3731394 ; doi:10.21105/joss.03941,3,2
+repeatmodeler,repeatmodeler,repeatmodeler,https://bio.tools/repeatmodeler,meta.yml (nf-core module metadata),,,bioconda:repeatmodeler ; rrid:SCR_015027,2,2
+r-ggplot2,rggplot2,ggplot2,https://bio.tools/ggplot2,bio.tools dump (name),,,,0,2
+rgi,rgi,CARD,https://bio.tools/CARD,bio.tools dump (doi+url),,,bioconda:rgi ; doi:10.1093/nar/gkz935,2,2
+ribodetector,ribodetector,ribodetector,https://bio.tools/ribodetector,meta.yml (nf-core module metadata),,,bioconda:ribodetector ; doi:10.1093/nar/gkac112 ; pmid:35188571,3,2
+rtracklayer,rtracklayer,rtracklayer,https://bio.tools/rtracklayer,bio.tools API (exact-id),,,doi:10.1093/bioinformatics/btp328,1,2
+run_dbcan,rundbcan,dbcan,https://bio.tools/dbcan,meta.yml (nf-core module metadata),,,doi:10.1093/nar/gkad328 ; doi:10.1093/nar/gks479 ; pmid:22645317,3,2
+samblaster,samblaster,samblaster,https://bio.tools/samblaster,meta.yml (nf-core module metadata),,,bioconda:samblaster ; doi:10.1093/bioinformatics/btu314 ; pmid:24812344,3,2
+scanpy,scanpy,scanpy,https://bio.tools/scanpy,meta.yml (nf-core module metadata),,,bioconda:scanpy ; doi:10.1186/s13059-017-1382-0 ; pmid:29409532,3,2
+sdrf-pipelines,sdrfpipelines,sdrf-pipelines,https://bio.tools/sdrf-pipelines,meta.yml (nf-core module metadata),,,bioconda:sdrf-pipelines ; doi:10.1021/acs.jproteome.1c00505 ; doi:10.1021/acs.jproteome.0c00376 ; pmid:32786688,4,2
+snpsites,snpsites,snp-sites,https://bio.tools/snp-sites,bio.tools dump (url+name),,,bioconda:snp-sites,1,2
+sopa,sopa,sopa,https://bio.tools/sopa,bio.tools API (exact-id),,,doi:10.1038/s41467-024-48981-z ; doi:10.1038/S41467-024-48981-Z ; pmid:38862483,3,2
+sra-tools,sratools,sra-tools,https://bio.tools/sra-tools,bio.tools API (exact-id),,,bioconda:sra-tools ; doi:10.1093/nar/gkj158 ; pmid:16381840,3,2
+strelka,strelka,strelka,https://bio.tools/strelka,meta.yml (nf-core module metadata),,,bioconda:strelka ; doi:10.1038/s41592-018-0051-x ; doi:10.1093/bioinformatics/bts271 ; pmid:22581179,4,2
+sv,sv,tiddit,https://bio.tools/tiddit,meta.yml (nf-core module metadata),,,doi:10.12688/f1000research.11168.1 ; doi:10.12688/f1000research.11168.2,2,2
+taxpasta,taxpasta,taxpasta,https://bio.tools/taxpasta,meta.yml (nf-core module metadata),,,bioconda:taxpasta,1,2
+tiara,tiara,tiara-metagenomics,https://bio.tools/tiara-metagenomics,meta.yml (nf-core module metadata),,,bioconda:tiara ; doi:10.1093/bioinformatics/btab672 ; doi:10.1101/2021.02.08.430199,3,2
+tiddit,tiddit,tiddit,https://bio.tools/tiddit,meta.yml (nf-core module metadata),,,bioconda:tiddit ; doi:10.12688/f1000research.11168.1 ; doi:10.12688/f1000research.11168.2,3,2
+3Dmol.js,3dmoljs,3dmol,https://bio.tools/3dmol,bio.tools API (exact-name),,,doi:10.1093/bioinformatics/btu829 ; pmid:25505090 ; doi:10.1021/acs.jchemed.0c00579 ; pmid:36035779,4,1
+aardvark,aardvark,aardvark,https://bio.tools/aardvark,meta.yml (nf-core module metadata),,,bioconda:aardvark ; doi:10.1101/2025.10.03.680257 ; doi:10.1093/bioinformatics/btad509 ; pmid:37584701,4,1
+abacas,abacas,abacas,https://bio.tools/abacas,meta.yml (nf-core module metadata),,,bioconda:abacas ; doi:10.1093/bioinformatics/btp347,2,1
+abricate,abricate,ABRicate,https://bio.tools/ABRicate,meta.yml (nf-core module metadata),,,bioconda:abricate,1,1
+affy,affy,affy,https://bio.tools/affy,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btg405,1,1
+ale,ale,ale,https://bio.tools/ale,bio.tools API (exact-id),,,bioconda:ale ; doi:10.1093/bioinformatics/bts723 ; doi:10.1186/s12859-017-1888-1 ; pmid:29297276,4,1
+alphafold2,alphafold2,alphafold2,https://bio.tools/alphafold2,bio.tools API (exact-id),,,doi:10.1038/s41586-021-03819-2 ; doi:10.3390/IJMS251810139 ; pmid:39337622 ; doi:10.1021/ACS.JCIM.4C01388 ; pmid:39227031 ; doi:10.1101/2024.09.06.611604,6,1
+altair,altair,altair,https://bio.tools/altair,bio.tools API (exact-id),,,bioconda:altair,1,1
+ampir,ampir,ampir,https://bio.tools/ampir,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btaa653 ; doi:10.1101/2020.05.07.082412,2,1
+amplify,amplify,amplify,https://bio.tools/amplify,meta.yml (nf-core module metadata),,,bioconda:amplify ; doi:10.1186/s12864-022-08310-4 ; doi:10.1186/S12864-022-08310-4 ; pmid:35078402,4,1
+amps,amps,amps,https://bio.tools/amps,bio.tools API (exact-id),,,doi:10.1186/s13059-019-1903-0 ; doi:10.1016/0076-6879(90)83027-7 ; pmid:2314284,3,1
+amrfinderplus,amrfinderplus,amrfinderplus,https://bio.tools/amrfinderplus,meta.yml (nf-core module metadata),,,doi:10.1038/s41598-021-91456-0,1,1
+angsd,angsd,angsd,https://bio.tools/angsd,bio.tools API (exact-id),,,bioconda:angsd ; doi:10.1186/s12859-014-0356-4 ; pmid:25420514,3,1
+anndata2ri,anndata2ri,anndata2ri,https://bio.tools/anndata2ri,bio.tools API (exact-id),,,bioconda:anndata2ri,1,1
+anndataR,anndatar,bioconductor-anndatar,https://bio.tools/bioconductor-anndatar,bio.tools API (exact-name),,,doi:10.1093/bioinformatics/btag288,1,1
+annotatr,annotatr,annotatr,https://bio.tools/annotatr,bio.tools API (exact-id),,,doi:10.1093/bioinformatics/btx183,1,1
+anota2seq,anota2seq,anota2seq,https://bio.tools/anota2seq,meta.yml (nf-core module metadata),,,doi:10.18129/B9.bioc.anota2seq ; doi:10.1093/nar/gkz223,2,1
+antismash,antismash,antismash,https://bio.tools/antismash,meta.yml (nf-core module metadata),,,bioconda:antismash ; doi:10.1093/nar/gkab335 ; doi:10.1093/nar/gkr466 ; pmid:21672958 ; doi:10.1093/nar/gkt449 ; pmid:23737449 ; doi:10.1093/nar/gkv437 ; pmid:25948579 ; doi:10.1093/nar/gkx319 ; pmid:28460038 ; doi:10.1093/nar/gkaa978 ; pmid:33152079,12,1
+argnorm,argnorm,argnorm,https://bio.tools/argnorm,meta.yml (nf-core module metadata),,,bioconda:argnorm,1,1
+arriba,arriba,Arriba,https://bio.tools/Arriba,meta.yml (nf-core module metadata),,,bioconda:arriba ; doi:10.1101/gr.257246.119,2,1
+art,art,art,https://bio.tools/art,bio.tools API (exact-id),,,doi:10.1093/bioinformatics/btr708 ; pmid:22199392,2,1
+artic,artic,artic,https://bio.tools/artic,meta.yml (nf-core module metadata),,,bioconda:artic,1,1
+ascat,ascat,ascat,https://bio.tools/ascat,meta.yml (nf-core module metadata),,,bioconda:ascat ; doi:10.1093/bioinformatics/btaa538 ; doi:10.1073/pnas.1009843107 ; pmid:20837533,4,1
+ashlar,ashlar,ASHLAR,https://bio.tools/ASHLAR,meta.yml (nf-core module metadata),,,bioconda:ashlar ; doi:10.1093/bioinformatics/btac544 ; doi:10.1038/s41597-019-0332-y ; pmid:31848351 ; pmid:35972352,5,1
+aspli,aspli,aspli,https://bio.tools/aspli,bio.tools API (exact-id),,,doi:10.1093/bioinformatics/btab141,1,1
+ataqv,ataqv,ataqv,https://bio.tools/ataqv,meta.yml (nf-core module metadata),,,bioconda:ataqv ; doi:10.1016/j.cels.2020.02.009 ; pmid:32213349,3,1
+autocycler,autocycler,autocycler,https://bio.tools/autocycler,bio.tools API (exact-id),,,bioconda:autocycler ; doi:10.1093/bioinformatics/btaf474 ; doi:10.1093/BIOINFORMATICS/BTAF474 ; pmid:40875535 ; doi:10.1101/2025.09.15.676237,5,1
+bacphlip,bacphlip,bacphlip,https://bio.tools/bacphlip,bio.tools API (exact-id),,,bioconda:bacphlip ; doi:10.7717/peerj.11396 ; doi:10.1101/2020.05.13.094805,3,1
+bambu,bambu,bioconductor-bambu,https://bio.tools/bioconductor-bambu,bio.tools API (exact-name),,,doi:10.1038/s41592-023-01908-w,1,1
+bamutil,bamutil,bamutil,https://bio.tools/bamutil,bio.tools API (exact-id),,,bioconda:bamutil ; doi:10.1101/gr.176552.114 ; pmid:25883319,3,1
+basicpy,basicpy,basic,https://bio.tools/basic,bio.tools dump (doi),,,doi:10.1038/ncomms14836,1,1
+bbknn,bbknn,bbknn,https://bio.tools/bbknn,bio.tools API (exact-id),,,bioconda:bbknn ; doi:10.1101/397042,2,1
+bcftools plugin fill-tags,bcftoolspluginfilltags,bcftools,https://bio.tools/bcftools,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; doi:10.1093/gigascience/giab008 ; pmid:33590861,4,1
+bcftools_view,bcftoolsview,bcftools_view,https://bio.tools/bcftools_view,bio.tools API (exact-id),,,doi:10.1534/genetics.112.144204 ; doi:10.1093/nar/gkw343 ; doi:10.7490/f1000research.1114334.1,3,1
+bff,bff,bff,https://bio.tools/bff,bio.tools API (exact-id),,,doi:10.5281/zenodo.6402477 ; doi:10.21203/RS.3.RS-9588034/V1 ; doi:10.1038/S41592-026-03130-W ; pmid:42298069,4,1
+bftools,bftools,bio-formats,https://bio.tools/bio-formats,meta.yml (nf-core module metadata),,,bioconda:bftools ; doi:10.1083/jcb.201004104,2,1
+bigslice,bigslice,big_slice,https://bio.tools/big_slice,bio.tools dump (url+name),,,bioconda:bigslice ; doi:10.1093/gigascience/giaa154,2,1
+bioconductor-adapt,bioconductoradapt,adapt,https://bio.tools/adapt,bio.tools dump (name),,,,0,1
+bioconductor-alabaster.base,bioconductoralabasterbase,bioconductor-alabaster.base,https://bio.tools/bioconductor-alabaster.base,bio.tools API (exact-id),,,doi:10.18129/B9.bioc.alabaster.base,1,1
+bioconductor-annotatr,bioconductorannotatr,annotatr,https://bio.tools/annotatr,bio.tools dump (name),,,,0,1
+bioconductor-anota2seq,bioconductoranota2seq,anota2seq,https://bio.tools/anota2seq,bio.tools dump (name),,,,0,1
+bioconductor-aspli,bioconductoraspli,aspli,https://bio.tools/aspli,bio.tools dump (name),,,,0,1
+bioconductor-biocparallel,bioconductorbiocparallel,biocparallel,https://bio.tools/biocparallel,bio.tools dump (name),,,,0,1
+bioconductor-bsgenome,bioconductorbsgenome,bsgenome,https://bio.tools/bsgenome,bio.tools dump (name),,,,0,1
+bioconductor-bsseq,bioconductorbsseq,bsseq,https://bio.tools/bsseq,bio.tools dump (name),,,,0,1
+bioconductor-cagefightr,bioconductorcagefightr,cagefightr,https://bio.tools/cagefightr,bio.tools dump (name),,,,0,1
+bioconductor-cager,bioconductorcager,cager,https://bio.tools/cager,bio.tools dump (name),,,,0,1
+bioconductor-cellhashr,bioconductorcellhashr,cellhashr,https://bio.tools/cellhashr,bio.tools dump (name),,,,0,1
+bioconductor-dada2,bioconductordada2,dada2,https://bio.tools/dada2,bio.tools dump (name),,,,0,1
+bioconductor-decontam,bioconductordecontam,decontam,https://bio.tools/decontam,bio.tools dump (name),,,,0,1
+bioconductor-dexseq,bioconductordexseq,dexseq,https://bio.tools/dexseq,bio.tools dump (name),,,,0,1
+bioconductor-dotseq,bioconductordotseq,bioconductor-dotseq,https://bio.tools/bioconductor-dotseq,bio.tools API (exact-id),,,doi:10.1101/2025.09.24.678201,1,1
+bioconductor-drimseq,bioconductordrimseq,drimseq,https://bio.tools/drimseq,bio.tools dump (name),,,,0,1
+bioconductor-dropletutils,bioconductordropletutils,dropletutils,https://bio.tools/dropletutils,bio.tools dump (name),,,,0,1
+bioconductor-dss,bioconductordss,dss,https://bio.tools/dss,bio.tools dump (name),,,,0,1
+bioconductor-dupradar,bioconductordupradar,dupradar,https://bio.tools/dupradar,bio.tools dump (name),,,,0,1
+bioconductor-fishpond,bioconductorfishpond,bioconductor-fishpond,https://bio.tools/bioconductor-fishpond,bio.tools API (exact-id),,,doi:10.1093/nar/gkz622,1,1
+bioconductor-genomicfeatures,bioconductorgenomicfeatures,genomicfeatures,https://bio.tools/genomicfeatures,bio.tools dump (name),,,,0,1
+bioconductor-ggtree,bioconductorggtree,ggtree,https://bio.tools/ggtree,bio.tools dump (name),,,,0,1
+bioconductor-isoformswitchanalyzer,bioconductorisoformswitchanalyzer,isoformswitchanalyzer,https://bio.tools/isoformswitchanalyzer,bio.tools dump (name),,,,0,1
+bioconductor-maaslin2,bioconductormaaslin2,maaslin2,https://bio.tools/maaslin2,bio.tools dump (name),,,,0,1
+bioconductor-metagenomeseq,bioconductormetagenomeseq,metagenomeseq,https://bio.tools/metagenomeseq,bio.tools dump (name),,,,0,1
+bioconductor-msnbase,bioconductormsnbase,msnbase,https://bio.tools/msnbase,bio.tools dump (name),,,,0,1
+bioconductor-outrider,bioconductoroutrider,bioconductor-outrider,https://bio.tools/bioconductor-outrider,bio.tools API (exact-id),,,doi:10.1016/j.ajhg.2018.10.025,1,1
+bioconductor-rhdf5,bioconductorrhdf5,bioconductor-rhdf5,https://bio.tools/bioconductor-rhdf5,bio.tools API (exact-id),,,doi:10.18129/B9.bioc.rhdf5,1,1
+bioconductor-scdblfinder,bioconductorscdblfinder,bioconductor-scdblfinder,https://bio.tools/bioconductor-scdblfinder,bio.tools API (exact-id),,,doi:10.12688/f1000research.73600.2,1,1
+bioconductor-scran,bioconductorscran,scran,https://bio.tools/scran,bio.tools dump (name),,,,0,1
+bioconductor-scry,bioconductorscry,bioconductor-scry,https://bio.tools/bioconductor-scry,bio.tools API (exact-id),,,doi:10.18129/B9.bioc.scry,1,1
+bioconductor-stager,bioconductorstager,stager,https://bio.tools/stager,bio.tools dump (name),,,,0,1
+bioconductor-treesummarizedexperiment,bioconductortreesummarizedexperiment,bioconductor-treesummarizedexperiment,https://bio.tools/bioconductor-treesummarizedexperiment,bio.tools API (exact-id),,,,0,1
+bioconductor-txdbmaker,bioconductortxdbmaker,bioconductor-txdbmaker,https://bio.tools/bioconductor-txdbmaker,bio.tools API (exact-id),,,doi:10.18129/B9.bioc.txdbmaker,1,1
+biopax_parser,biopaxparser,biopax-parser,https://bio.tools/biopax-parser,bio.tools API (exact-id),,,doi:10.1093/BIOINFORMATICS/BTAA529 ; pmid:32437515,2,1
+bismark,bismark,bismark,https://bio.tools/bismark,meta.yml (nf-core module metadata),,,bioconda:bismark ; doi:10.1093/bioinformatics/btr167 ; pmid:21493656,3,1
+blat,blat,blat,https://bio.tools/blat,meta.yml (nf-core module metadata),,,doi:10.1101/gr.229202 ; pmid:11932250 ; rrid:SCR_011919,3,1
+blaze,blaze,blaze,https://bio.tools/blaze,bio.tools API (exact-id),,,doi:10.1186/s13059-023-02907-y ; pmid:37024980,2,1
+boltz,boltz,boltz,https://bio.tools/boltz,bio.tools API (exact-id),,,doi:10.1101/2024.11.19.624167v1 ; doi:10.1101/2025.06.14.659707 ; doi:10.1101/2024.11.19.624167 ; doi:10.1038/s41592-022-01488-1 ; pmid:35637307,5,1
+BSgenome,bsgenome,bsgenome,https://bio.tools/bsgenome,bio.tools API (exact-id),,,doi:10.18129/B9.bioc.BSgenome,1,1
+bsgenome.hsapiens.1000genomes.hs37d5,bsgenomehsapiens1000genomeshs37d5,bsgenome.hsapiens.1000genomes.hs37d5,https://bio.tools/bsgenome.hsapiens.1000genomes.hs37d5,meta.yml (nf-core module metadata),,,doi:10.1038/s41467-022-29271-y,1,1
+bsgenome.hsapiens.ucsc.hg38,bsgenomehsapiensucschg38,bsgenome.hsapiens.ucsc.hg38,https://bio.tools/bsgenome.hsapiens.ucsc.hg38,meta.yml (nf-core module metadata),,,doi:10.18129/B9.bioc.BSgenome.Hsapiens.UCSC.hg38,1,1
+bsseq,bsseq,bsseq,https://bio.tools/bsseq,bio.tools API (exact-id),,,doi:10.1186/gb-2012-13-10-r83,1,1
+bwa-meme,bwameme,bwa-meme,https://bio.tools/bwa-meme,bio.tools API (exact-id),,,bioconda:bwa-meme ; doi:10.1093/bioinformatics/btac137 ; doi:10.1101/2021.09.01.457579,3,1
+bwameth,bwameth,bwa-meth,https://bio.tools/bwa-meth,bio.tools dump (url+name),,,bioconda:bwameth,1,1
+cadd,cadd,cadd_phred,https://bio.tools/cadd_phred,meta.yml (nf-core module metadata),,,doi:10.1093/nar/gky1016 ; doi:10.1038/ng.2892 ; pmid:24487276 ; pmid:30371827 ; doi:10.1186/s13073-021-00835-9 ; pmid:33618777,6,1
+CAGEfightR,cagefightr,cagefightr,https://bio.tools/cagefightr,bio.tools API (exact-id),,,doi:10.1186/s12859-019-3029-5,1,1
+CAGEr,cager,cager,https://bio.tools/cager,bio.tools API (exact-id),,,doi:10.18129/B9.bioc.CAGEr ; doi:10.1093/nar/gkv054,2,1
+canu,canu,canu,https://bio.tools/canu,meta.yml (nf-core module metadata),,,bioconda:canu ; doi:10.1101/gr.215087.116 ; pmid:28298431 ; rrid:SCR_015880,4,1
+carveme,carveme,carveme,https://bio.tools/carveme,meta.yml (nf-core module metadata),,,bioconda:carveme ; doi:10.1093/nar/gky537 ; pmid:30192979 ; doi:10.1038/s41559-022-01939-0 ; pmid:36471121,5,1
+celda,celda,celda,https://bio.tools/celda,meta.yml (nf-core module metadata),,,,0,1
+cell2cell,cell2cell,tensor-cell2cell,https://bio.tools/tensor-cell2cell,bio.tools API (exact-name),,,bioconda:cell2cell ; doi:10.1038/s41467-022-31369-2 ; doi:10.1093/BIOINFORMATICS/BTAF667 ; pmid:41719185,4,1
+celldex,celldex,celldex,https://bio.tools/celldex,meta.yml (nf-core module metadata),,,,0,1
+cellsnp,cellsnp,cellsnp-lite,https://bio.tools/cellsnp-lite,bio.tools dump (url),,,doi:10.1093/bioinformatics/btab358,1,1
+cellsnp-lite,cellsnplite,cellsnp-lite,https://bio.tools/cellsnp-lite,bio.tools API (exact-id),,,doi:10.1101/2020.12.31.424913,1,1
+celltypist,celltypist,celltypist,https://bio.tools/celltypist,meta.yml (nf-core module metadata),,,bioconda:celltypist,1,1
+checkm,checkm,checkm,https://bio.tools/checkm,meta.yml (nf-core module metadata),,,doi:10.1101/gr.186072.114 ; pmid:25977477,2,1
+ChIPseeker,chipseeker,chipseeker,https://bio.tools/chipseeker,bio.tools API (exact-id),,,doi:10.18129/B9.bioc.ChIPseeker ; doi:10.1002/cpz1.585 ; doi:10.1093/bioinformatics/btv145,3,1
+chromhmm,chromhmm,chromhmm,https://bio.tools/chromhmm,bio.tools API (exact-id),,,doi:10.1038/nmeth.1906 ; pmid:22373907,2,1
+cider,cider,cider,https://bio.tools/cider,bio.tools API (exact-id),,,doi:10.1016/j.bpj.2016.11.3200 ; pmid:28076807,2,1
+circminer,circminer,circminer,https://bio.tools/circminer,bio.tools API (exact-id),,,bioconda:circminer ; doi:10.1093/BIOINFORMATICS/BTAA232 ; pmid:32259207,3,1
+circos,circos,circos,https://bio.tools/circos,bio.tools API (exact-id),,,doi:10.1101/gr.092759.109 ; pmid:19541911 ; doi:10.7490/f1000research.1114334.1,3,1
+circtools,circtools,circtools,https://bio.tools/circtools,bio.tools API (exact-id),,,bioconda:circtools ; doi:10.1093/bioinformatics/bty948 ; pmid:30462173,3,1
+circularmapper,circularmapper,eager,https://bio.tools/eager,bio.tools dump (doi),,,bioconda:circularmapper ; doi:10.1186/s13059-016-0918-z,2,1
+ciri2,ciri2,CIRI-full,https://bio.tools/CIRI-full,bio.tools dump (url),,,,0,1
+ciri-as,cirias,CIRI-full,https://bio.tools/CIRI-full,bio.tools dump (url),,,,0,1
+ciri-full,cirifull,CIRI-full,https://bio.tools/CIRI-full,bio.tools API (exact-id),,,bioconda:ciri-full ; doi:10.1186/s13073-019-0614-1 ; pmid:30660194,3,1
+ciri-vis,cirivis,ciri-vis,https://bio.tools/ciri-vis,bio.tools API (exact-id),,,doi:10.1093/BIOINFORMATICS/BTAA033 ; pmid:31950978,2,1
+clipkit,clipkit,clipkit,https://bio.tools/clipkit,meta.yml (nf-core module metadata),,,bioconda:clipkit ; doi:10.1371/journal.pbio.3001007 ; doi:10.1093/NAR/GKAF325 ; pmid:40260744,4,1
+clusty,clusty,vclust,https://bio.tools/vclust,bio.tools dump (doi),,,bioconda:clusty ; doi:10.1038/s41592-025-02701-7,2,1
+cma,cma,cma,https://bio.tools/cma,bio.tools API (exact-id),,,doi:10.18129/B9.bioc.CMA,1,1
+cnaqc,cnaqc,cnaqc,https://bio.tools/cnaqc,meta.yml (nf-core module metadata),,,doi:10.1186/S13059-024-03170-5 ; pmid:38297376,2,1
+cnvnator,cnvnator,cnvnator,https://bio.tools/cnvnator,meta.yml (nf-core module metadata),,,bioconda:cnvnator ; doi:10.1101/gr.114876.110 ; pmid:21324876,3,1
+concoct,concoct,concoct,https://bio.tools/concoct,meta.yml (nf-core module metadata),,,bioconda:concoct ; doi:10.1038/nmeth.3103,2,1
+control-freec,controlfreec,control-freec,https://bio.tools/control-freec,bio.tools API (exact-id),,,bioconda:control-freec ; doi:10.1093/bioinformatics/btq635 ; doi:10.1093/bioinformatics/btr670 ; pmid:22155870,4,1
+controlfreec/assesssignificance,controlfreecassesssignificance,freec,https://bio.tools/freec,bio.tools dump (doi),,,doi:10.1093/bioinformatics/btq635,1,1
+controlfreec/freec,controlfreecfreec,freec,https://bio.tools/freec,bio.tools dump (doi),,,doi:10.1093/bioinformatics/btq635,1,1
+coreograph,coreograph,s3segmenter,https://bio.tools/s3segmenter,bio.tools dump (doi),,,doi:10.1038/s41592-021-01308-y,1,1
+crisprcleanr,crisprcleanr,crisprcleanr,https://bio.tools/crisprcleanr,bio.tools API (exact-id),,,doi:10.1186/s12864-018-4989-y ; doi:10.1016/j.crmeth.2022.100373 ; pmid:36814834,3,1
+cutesv,cutesv,cuteSV,https://bio.tools/cuteSV,meta.yml (nf-core module metadata),,,bioconda:cutesv ; doi:10.1101/780700 ; doi:10.1186/s13059-020-02107-y ; pmid:32746918,4,1
+cyvcf2,cyvcf2,cyvcf2,https://bio.tools/cyvcf2,bio.tools API (exact-id),,,doi:10.1093/bioinformatics/btx057 ; pmid:28165109,2,1
+dada2,dada2,dada2,https://bio.tools/dada2,meta.yml (nf-core module metadata),,,doi:10.1038/nmeth.3869,1,1
+danpos,danpos,danpos,https://bio.tools/danpos,bio.tools API (exact-id),,,doi:10.1038/ng.3385 ; pmid:26301496,2,1
+das_tool,dastool,dastool,https://bio.tools/dastool,meta.yml (nf-core module metadata),,,bioconda:das_tool ; doi:10.1038/s41564-018-0171-1 ; pmid:29807988,3,1
+dcifer,dcifer,dcifer,https://bio.tools/dcifer,bio.tools API (exact-id),,,doi:10.1093/genetics/iyac126 ; pmid:36000888,2,1
+deacon,deacon,deacon,https://bio.tools/deacon,meta.yml (nf-core module metadata),,,bioconda:deacon ; doi:10.1093/bioinformatics/btae004,2,1
+decont,decont,decont,https://bio.tools/decont,bio.tools API (exact-id),,,doi:10.1101/2020.05.09.086082,1,1
+decontam,decontam,decontam,https://bio.tools/decontam,meta.yml (nf-core module metadata),,,doi:10.1101/221499,1,1
+deeparg,deeparg,deeparg,https://bio.tools/deeparg,bio.tools API (exact-id),,,bioconda:deeparg ; doi:10.1186/s40168-018-0401-z ; pmid:29391044,3,1
+deepbgc,deepbgc,DeepBGC,https://bio.tools/DeepBGC,meta.yml (nf-core module metadata),,,bioconda:deepbgc ; doi:10.1093/nar/gkz654 ; doi:10.1093/NAR/GKZ654 ; pmid:31400112,4,1
+deepmased,deepmased,DeepMAsED,https://bio.tools/DeepMAsED,bio.tools API (exact-id),,,bioconda:deepmased ; doi:10.1093/bioinformatics/btaa386 ; doi:10.1101/763813,3,1
+delly,delly,delly2,https://bio.tools/delly2,bio.tools dump (doi+url),,,bioconda:delly ; doi:10.1093/bioinformatics/bts378,2,1
+dfam,dfam,dfam,https://bio.tools/dfam,bio.tools API (exact-id),,,doi:10.21203/RS.3.RS-76062/V1,1,1
+dfast,dfast,dfast,https://bio.tools/dfast,bio.tools API (exact-id),,,bioconda:dfast ; doi:10.1093/bioinformatics/btx713 ; pmid:29106469,3,1
+DIA-NN,diann,DIA-NN,https://bio.tools/DIA-NN,bio.tools API (exact-id),,,doi:10.1038/s41592-019-0638-x ; pmid:31768060,2,1
+diffhic,diffhic,diffhic,https://bio.tools/diffhic,bio.tools API (exact-id),,,,0,1
+digest,digest,digest,https://bio.tools/digest,bio.tools API (exact-id),,,doi:10.1093/bib/bbac247 ; pmid:35753693,2,1
+dimsum,dimsum,dimsum,https://bio.tools/dimsum,bio.tools API (exact-id),,,doi:10.1186/s12859-020-03709-3 ; doi:10.1101/2020.06.25.171421,2,1
+dotseq,dotseq,bioconductor-dotseq,https://bio.tools/bioconductor-dotseq,bio.tools API (exact-name),,,doi:10.1101/2025.09.24.678201,1,1
+doubletdetection,doubletdetection,DoubletDetection,https://bio.tools/DoubletDetection,meta.yml (nf-core module metadata),,,doi:10.5281/zenodo.6349517,1,1
+dream,dream,dream_database,https://bio.tools/dream_database,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btaa687 ; doi:10.1186/S12943-021-01436-1 ; pmid:34774049,3,1
+drevalpy,drevalpy,dreval,https://bio.tools/dreval,bio.tools dump (doi+url),,,doi:10.1101/2025.05.26.655288,1,1
+DRIMSeq,drimseq,drimseq,https://bio.tools/drimseq,meta.yml (nf-core module metadata),,,doi:10.12688/f1000research.8900.2,1,1
+drugz,drugz,drugZ,https://bio.tools/drugZ,bio.tools API (exact-id),,,doi:10.1186/S13073-019-0665-3 ; pmid:31439014,2,1
+dss,dss,dss,https://bio.tools/dss,bio.tools API (exact-id),,,doi:10.1093/nar/gku182 ; doi:10.1093/bioinformatics/btw026 ; doi:10.1093/biostatistics/kxs033 ; doi:10.1093/nar/gku154 ; doi:10.1093/nar/gkv715,5,1
+dupradar,dupradar,dupradar,https://bio.tools/dupradar,meta.yml (nf-core module metadata),,,doi:10.1186/s12859-016-1276-2,1,1
+emboss,emboss,emboss,https://bio.tools/emboss,bio.tools API (exact-id),,,bioconda:emboss ; doi:10.1016/s0168-9525(00)02024-2 ; pmid:10827456,3,1
+endorspy,endorspy,nf-core-eager,https://bio.tools/nf-core-eager,bio.tools dump (doi),,,bioconda:endorspy ; doi:10.7717/peerj.10947,2,1
+ensembl,ensembl,ensembl,https://bio.tools/ensembl,bio.tools API (exact-id),,,doi:10.1093/nar/gku1010 ; doi:10.1093/nar/30.1.38 ; pmid:11752248 ; doi:10.1093/nar/gkh038 ; pmid:14681459 ; doi:10.1093/nar/gkg083 ; pmid:12519943 ; doi:10.1093/nar/gki138 ; pmid:15608235 ; doi:10.1093/nar/gkj133 ; pmid:16381931 ; doi:10.1093/nar/gkl996 ; pmid:17148474 ; doi:10.1093/nar/gkm988 ; pmid:18000006 ; doi:10.1093/nar/gkn828 ; pmid:19033362 ; doi:10.1093/nar/gkp972 ; pmid:19906699 ; rrid:SCR_002344,20,1
+Epifany,epifany,EPIFANY,https://bio.tools/EPIFANY,bio.tools API (exact-id),,,doi:10.1101/734327 ; doi:10.1021/acs.jproteome.9b00566 ; pmid:31975601,3,1
+episegmix,episegmix,episegmix,https://bio.tools/episegmix,meta.yml (nf-core module metadata),,,doi:10.1093/nar/gkag591 ; doi:10.1093/bioinformatics/btae178 ; pmid:38565260,3,1
+expansionhunter,expansionhunter,ExpansionHunter,https://bio.tools/ExpansionHunter,meta.yml (nf-core module metadata),,,bioconda:expansionhunter ; doi:10.1093/bioinformatics/btz431 ; pmid:31134279,3,1
+famdb.py,famdbpy,repeatmasker,https://bio.tools/repeatmasker,bio.tools dump (url),,,,0,1
+fargene,fargene,fargene,https://bio.tools/fargene,meta.yml (nf-core module metadata),,,bioconda:fargene,1,1
+fastdup,fastdup,fastdup,https://bio.tools/fastdup,meta.yml (nf-core module metadata),,,bioconda:fastdup ; doi:10.1093/bioinformatics/btaf633,2,1
+fastplong,fastplong,fastplong,https://bio.tools/fastplong,meta.yml (nf-core module metadata),,,bioconda:fastplong ; doi:10.1002/imt2.107 ; pmid:38868435,3,1
+fastq-dl,fastqdl,fastq-dl,https://bio.tools/fastq-dl,meta.yml (nf-core module metadata),,,bioconda:fastq-dl ; doi:10.5281/zenodo.13957735,2,1
+fastqe,fastqe,fastqe,https://bio.tools/fastqe,meta.yml (nf-core module metadata),,,bioconda:fastqe ; doi:10.25334/Q4D172,2,1
+fastq-screen,fastqscreen,fastq_screen,https://bio.tools/fastq_screen,bio.tools API (exact-id),,,bioconda:fastq-screen ; doi:10.12688/f1000research.15931.2,2,1
+fasttree,fasttree,fasttree,https://bio.tools/fasttree,meta.yml (nf-core module metadata),,,bioconda:fasttree ; doi:10.1093/molbev/msp077 ; pmid:19377059 ; doi:10.1371/journal.pone.0009490 ; pmid:20224823,5,1
+fastx_toolkit,fastxtoolkit,fastx-toolkit,https://bio.tools/fastx-toolkit,bio.tools API (exact-id),,,doi:10.1006/geno.1997.4995 ; pmid:9403055 ; rrid:SCR_005534 ; rrid:SCR_019035,4,1
+fcs,fcs,FCS,https://bio.tools/FCS,bio.tools API (exact-id),,,doi:10.1101/805051,1,1
+fcsgx,fcsgx,ncbi_fcs,https://bio.tools/ncbi_fcs,meta.yml (nf-core module metadata),,,doi:10.1186/s13059-024-03198-7,1,1
+fishpond,fishpond,bioconductor-fishpond,https://bio.tools/bioconductor-fishpond,bio.tools API (exact-name),,,doi:10.1093/nar/gkz622,1,1
+fmh-funprofiler,fmhfunprofiler,fmh-funprofiler,https://bio.tools/fmh-funprofiler,bio.tools API (exact-id),,,bioconda:fmh-funprofiler ; doi:10.1093/bioinformatics/btae397 ; doi:10.1093/BIOINFORMATICS/BTAE397 ; pmid:39230701,4,1
+foldmason,foldmason,foldmason,https://bio.tools/foldmason,meta.yml (nf-core module metadata),,,bioconda:foldmason ; doi:10.1101/2024.08.01.606130 ; doi:10.1101/2024.08.01.606130v1,3,1
+foldseek,foldseek,foldseek,https://bio.tools/foldseek,meta.yml (nf-core module metadata),,,bioconda:foldseek ; doi:10.1038/s41587-023-01773-0 ; pmid:37156916 ; doi:10.1101/2022.02.07.479398 ; doi:10.1038/s41592-025-02593-7,5,1
+freyja,freyja,freyja,https://bio.tools/freyja,meta.yml (nf-core module metadata),,,bioconda:freyja ; doi:10.1038/s41586-022-05049-6,2,1
+fusioncatcher,fusioncatcher,fusioncatcher,https://bio.tools/fusioncatcher,meta.yml (nf-core module metadata),,,bioconda:fusioncatcher ; doi:10.1101/011650v1 ; doi:10.1101/011650,3,1
+fusion-report,fusionreport,fusioncatcher,https://bio.tools/fusioncatcher,bio.tools dump (doi),,,bioconda:fusion-report ; doi:10.1101/011650,2,1
+gapseq,gapseq,gapseq,https://bio.tools/gapseq,meta.yml (nf-core module metadata),,,bioconda:gapseq ; doi:10.1186/s13059-021-02295-1 ; doi:10.1101/2020.03.20.000737,3,1
+gcta,gcta,gcta,https://bio.tools/gcta,meta.yml (nf-core module metadata),,,bioconda:gcta ; doi:10.1016/j.ajhg.2010.11.011 ; pmid:21167468,3,1
+gedi,gedi,gedi,https://bio.tools/gedi,bio.tools API (exact-id),,,bioconda:gedi ; doi:10.1038/nmeth.4631 ; doi:10.1186/S12859-020-3367-3 ; pmid:32024475,4,1
+GenomicFeatures,genomicfeatures,genomicfeatures,https://bio.tools/genomicfeatures,bio.tools API (exact-id),,,doi:10.1371/journal.pcbi.1003118,1,1
+gens,gens,gens,https://bio.tools/gens,bio.tools API (exact-id),,,doi:10.1186/1471-2105-13-132 ; pmid:22698142,2,1
+geoquery,geoquery,geoquery,https://bio.tools/geoquery,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btm254,1,1
+ggseqlogo,ggseqlogo,ggseqlogo,https://bio.tools/ggseqlogo,bio.tools API (exact-id),,,doi:10.32614/CRAN.package.ggseqlogo ; doi:10.1093/bioinformatics/btx469 ; pmid:29036507,3,1
+ggvenndiagram,ggvenndiagram,ggvenndiagram,https://bio.tools/ggvenndiagram,bio.tools API (exact-id),,,doi:10.3389/FGENE.2021.706907 ; pmid:34557218,2,1
+glimpse,glimpse,glimpse2,https://bio.tools/glimpse2,bio.tools dump (doi+url),,,doi:10.1038/s41588-020-00756-0,1,1
+glimpse2,glimpse2,glimpse2,https://bio.tools/glimpse2,meta.yml (nf-core module metadata),,,doi:10.1038/s41588-020-00756-0 ; pmid:33414550 ; doi:10.1038/s41588-023-01438-3 ; pmid:37386250,4,1
+goleft,goleft,indexcov,https://bio.tools/indexcov,bio.tools dump (doi),,,bioconda:goleft ; doi:10.1093/gigascience/gix090,2,1
+graphmap,graphmap,graphmap,https://bio.tools/graphmap,bio.tools API (exact-id),,,doi:10.1038/ncomms11307 ; doi:10.1101/720458,2,1
+graphmap2,graphmap2,Graphmap2,https://bio.tools/Graphmap2,meta.yml (nf-core module metadata),,,doi:10.1101/720458,1,1
+graphtyper,graphtyper,Graphtyper,https://bio.tools/Graphtyper,meta.yml (nf-core module metadata),,,bioconda:graphtyper ; doi:10.1038/ng.3964 ; pmid:28945251,3,1
+grea,grea,propr,https://bio.tools/propr,meta.yml (nf-core module metadata),,,doi:10.2202/1544-6115.1175 ; doi:10.1038/s41598-017-16520-0 ; pmid:29176663,3,1
+gridss,gridss,gridss,https://bio.tools/gridss,bio.tools API (exact-id),,,bioconda:gridss ; doi:10.1101/110387,2,1
+gsea,gsea,gsea,https://bio.tools/gsea,meta.yml (nf-core module metadata),,,bioconda:gsea ; doi:10.1073/pnas.0506580102 ; pmid:16199517 ; doi:10.1038/ng1180 ; pmid:12808457 ; rrid:SCR_003199,6,1
+gtdbtk,gtdbtk,GTDB-Tk,https://bio.tools/GTDB-Tk,bio.tools dump (doi+name),,,bioconda:gtdbtk ; doi:10.1093/bioinformatics/btz848,2,1
+gunc,gunc,gunc,https://bio.tools/gunc,meta.yml (nf-core module metadata),,,bioconda:gunc ; doi:10.1186/s13059-021-02393-0 ; doi:10.1101/2020.12.16.422776,3,1
+hamronization,hamronization,hamronization,https://bio.tools/hamronization,meta.yml (nf-core module metadata),,,bioconda:hamronization,1,1
+haplocheck,haplocheck,haplocheck,https://bio.tools/haplocheck,bio.tools API (exact-id),,,doi:10.1101/gr.256545.119 ; doi:10.1101/2020.05.06.080952,2,1
+hap.py,happy,happy,https://bio.tools/happy,meta.yml (nf-core module metadata),,,bioconda:hap.py ; doi:10.1002/gepi.20061 ; pmid:15637718,3,1
+hhsuite,hhsuite,hh-suite,https://bio.tools/hh-suite,meta.yml (nf-core module metadata),,,bioconda:hhsuite ; doi:10.1371/journal.pone.0082138 ; doi:10.1186/s12859-019-3019-7 ; pmid:31521110 ; doi:10.1101/560029 ; doi:10.1371/journal.pcbi.1004343 ; pmid:26496371 ; doi:10.1093/nar/gkw1081 ; pmid:27899574 ; doi:10.1038/nmeth.1818 ; pmid:22198341 ; doi:10.1093/bioinformatics/bts622 ; pmid:23080114 ; doi:10.1093/bioinformatics/bti125 ; pmid:15531603,15,1
+hifiasm,hifiasm,hifiasm,https://bio.tools/hifiasm,meta.yml (nf-core module metadata),,,bioconda:hifiasm ; doi:10.1038/s41592-020-01056-5 ; pmid:33526886,3,1
+hite,hite,hite,https://bio.tools/hite,meta.yml (nf-core module metadata),,,doi:10.1186/s13059-024-03288-6 ; doi:10.1038/S41467-024-49912-8 ; pmid:38956036,3,1
+hops,hops,HOPS,https://bio.tools/HOPS,bio.tools API (exact-id),,,doi:10.1186/S13059-019-1844-7 ; pmid:31653226,2,1
+hostile,hostile,hostile,https://bio.tools/hostile,meta.yml (nf-core module metadata),,,bioconda:hostile ; doi:10.1093/bioinformatics/btad728 ; pmid:38039142,3,1
+humann,humann,humann,https://bio.tools/humann,bio.tools API (exact-id),,,bioconda:humann ; doi:10.7554/eLife.65088 ; doi:10.7554/elife.65088 ; pmid:33944776,4,1
+igblast,igblast,igblast,https://bio.tools/igblast,meta.yml (nf-core module metadata),,,bioconda:igblast ; doi:10.1093/nar/gkt382 ; pmid:23671333,3,1
+imagemagick,imagemagick,imagemagick,https://bio.tools/imagemagick,meta.yml (nf-core module metadata),,,bioconda:imagemagick,1,1
+insilicoseq,insilicoseq,insilicoseq_20,https://bio.tools/insilicoseq_20,bio.tools API (exact-name),,,doi:10.1101/2024.02.16.580469,1,1
+instrain,instrain,instrain,https://bio.tools/instrain,bio.tools API (exact-id),,,bioconda:instrain ; doi:10.1038/s41587-020-00797-0,2,1
+iphop,iphop,iphop,https://bio.tools/iphop,bio.tools API (exact-id),,,bioconda:iphop ; doi:10.1371/journal.pbio.3002083 ; pmid:37083735,3,1
+IsoformSwitchAnalyzeR,isoformswitchanalyzer,isoformswitchanalyzer,https://bio.tools/isoformswitchanalyzer,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btz247 ; doi:10.1158/1541-7786.MCR-16-0459,2,1
+isoseq,isoseq,isoseq3,https://bio.tools/isoseq3,bio.tools dump (url),,,bioconda:isoseq,1,1
+itsx,itsx,itsx,https://bio.tools/itsx,meta.yml (nf-core module metadata),,,bioconda:itsx ; doi:10.1111/2041-210X.12073,2,1
+jaffal,jaffal,jaffal,https://bio.tools/jaffal,bio.tools API (exact-id),,,doi:10.1101/2021.04.26.441398,1,1
+jasminesv,jasminesv,jasmine-sv,https://bio.tools/jasmine-sv,bio.tools dump (url+name),,,bioconda:jasminesv,1,1
+jccirc,jccirc,jccirc,https://bio.tools/jccirc,bio.tools API (exact-id),,,bioconda:jccirc ; doi:10.1093/bib/bbad363 ; pmid:37833842,3,1
+jellyfish,jellyfish,jellyfish,https://bio.tools/jellyfish,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btr011 ; pmid:21217122,2,1
+kalign,kalign,kalign,https://bio.tools/kalign,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btz795 ; doi:10.1093/nar/gkn1006 ; pmid:19103665 ; doi:10.1093/nar/gkae241 ; pmid:38597606 ; doi:10.1093/nar/gkac240 ; pmid:35412617,7,1
+kma,kma,kma,https://bio.tools/kma,bio.tools API (exact-id),,,doi:10.1186/s12859-018-2336-6 ; pmid:30157759,2,1
+kmerfinder,kmerfinder,kmerfinder,https://bio.tools/kmerfinder,meta.yml (nf-core module metadata),,,bioconda:kmerfinder ; doi:10.1128/JCM.02487-13 ; doi:10.1128/jcm.02452-13 ; pmid:24172157 ; doi:10.1128/jcm.02981-13 ; pmid:24574292,6,1
+leafcutter,leafcutter,leafcutter,https://bio.tools/leafcutter,meta.yml (nf-core module metadata),,,bioconda:leafcutter ; doi:10.1038/s41588-017-0004-9,2,1
+learnmsa,learnmsa,learnMSA,https://bio.tools/learnMSA,meta.yml (nf-core module metadata),,,doi:10.1093/gigascience/giac104,1,1
+liana,liana,liana,https://bio.tools/liana,meta.yml (nf-core module metadata),,,bioconda:liana ; doi:10.1038/s41556-024-01469-w ; pmid:39223377 ; doi:10.1038/s41467-022-30755-0 ; pmid:35680885,5,1
+links,links,links,https://bio.tools/links,bio.tools API (exact-id),,,bioconda:links ; doi:10.1186/s13742-015-0076-3 ; pmid:26244089,3,1
+linx,linx,LinX,https://bio.tools/LinX,bio.tools API (exact-id),,,doi:10.1021/ACS.JPROTEOME.0C00858 ; pmid:33657806,2,1
+longstitch,longstitch,longstitch,https://bio.tools/longstitch,meta.yml (nf-core module metadata),,,bioconda:longstitch ; doi:10.1186/s12859-021-04451-7 ; doi:10.1101/2021.06.17.448848,3,1
+macrel,macrel,macrel,https://bio.tools/macrel,meta.yml (nf-core module metadata),,,bioconda:macrel ; doi:10.7717/peerj.10555 ; doi:10.7717/PEERJ.10555 ; pmid:33384902,4,1
+macsyfinder,macsyfinder,macsyfinder,https://bio.tools/macsyfinder,meta.yml (nf-core module metadata),,,bioconda:macsyfinder ; doi:10.24072/pcjournal.250 ; doi:10.1371/journal.pone.0110726 ; pmid:25330359,4,1
+mageck,mageck,mageck,https://bio.tools/mageck,meta.yml (nf-core module metadata),,,bioconda:mageck ; doi:10.1186/s13059-015-0843-6 ; doi:10.1186/s13059-014-0554-4 ; pmid:26673418,4,1
+magus,magus,magus,https://bio.tools/magus,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btaa992 ; pmid:33252662,2,1
+maltextract,maltextract,hops_malt,https://bio.tools/hops_malt,bio.tools dump (doi+url),,,doi:10.1186/s13059-019-1903-0,1,1
+mapdamage2,mapdamage2,mapdamage,https://bio.tools/mapdamage,bio.tools dump (url),,,bioconda:mapdamage2 ; doi:10.1093/bioinformatics/btt193,2,1
+mapsplice,mapsplice,mapsplice,https://bio.tools/mapsplice,bio.tools API (exact-id),,,bioconda:mapsplice ; doi:10.1093/nar/gkq622 ; pmid:20802226 ; rrid:SCR_010844,4,1
+maxbin2,maxbin2,maxbin,https://bio.tools/maxbin,bio.tools dump (doi+url),,,bioconda:maxbin2 ; doi:10.1093/bioinformatics/btv638,2,1
+mcquant,mcquant,mcquant,https://bio.tools/mcquant,bio.tools API (exact-id),,,doi:10.1038/s41592-021-01308-y,1,1
+meme,meme,meme,https://bio.tools/meme,bio.tools API (exact-id),,,doi:10.1093/bioinformatics/btv750 ; pmid:26704599,2,1
+memote,memote,memote,https://bio.tools/memote,meta.yml (nf-core module metadata),,,bioconda:memote,1,1
+metabat2,metabat2,MetaBAT_2,https://bio.tools/MetaBAT_2,bio.tools API (exact-name),,,bioconda:metabat2 ; doi:10.7717/peerj.7359 ; pmid:31388474 ; doi:10.7717/peerj.1165 ; pmid:26336640,5,1
+metabinner,metabinner,metabinner,https://bio.tools/metabinner,bio.tools API (exact-id),,,doi:10.1101/2021.07.25.453671,1,1
+metamdbg,metamdbg,metamdbg,https://bio.tools/metamdbg,bio.tools API (exact-id),,,bioconda:metamdbg ; doi:10.1038/s41587-023-01983-6 ; pmid:38168989,3,1
+metaphlan4,metaphlan4,metaphlan,https://bio.tools/metaphlan,meta.yml (nf-core module metadata),,,doi:10.1038/s41587-023-01688-w ; doi:10.1038/nmeth.2066 ; pmid:22688413,3,1
+methyldackel,methyldackel,methyldackel,https://bio.tools/methyldackel,meta.yml (nf-core module metadata),,,bioconda:methyldackel,1,1
+mgikit,mgikit,mgikit,https://bio.tools/mgikit,bio.tools API (exact-id),,,doi:10.1093/BIOINFORMATICS/BTAE554 ; pmid:39259173,2,1
+mgikit demultiplex,mgikitdemultiplex,mgikit,https://bio.tools/mgikit,bio.tools dump (url),,,,0,1
+mgnifam,mgnifam,mgnifam,https://bio.tools/mgnifam,meta.yml (nf-core module metadata),,,bioconda:mgnifam,1,1
+minia,minia,minia,https://bio.tools/minia,meta.yml (nf-core module metadata),,,bioconda:minia ; doi:10.1186/1748-7188-9-2 ; pmid:24565280,3,1
+minibwa,minibwa,minibwa,https://bio.tools/minibwa,bio.tools API (exact-id),,,,0,1
+minimac4,minimac4,minimac4,https://bio.tools/minimac4,meta.yml (nf-core module metadata),,,bioconda:minimac4 ; doi:10.1038/ng.3656,2,1
+mirdeep2,mirdeep2,mirdeep2,https://bio.tools/mirdeep2,meta.yml (nf-core module metadata),,,bioconda:mirdeep2 ; doi:10.1093/nar/gkn491,2,1
+mirtop,mirtop,miRTop,https://bio.tools/miRTop,meta.yml (nf-core module metadata),,,bioconda:mirtop ; doi:10.7490/f1000research.1115724.1 ; doi:10.1093/bioinformatics/btz675 ; pmid:31504201,4,1
+mirtrace,mirtrace,miRTrace,https://bio.tools/miRTrace,meta.yml (nf-core module metadata),,,bioconda:mirtrace ; doi:10.1186/s13059-018-1588-9 ; pmid:30514392,3,1
+misopy,misopy,misopy,https://bio.tools/misopy,meta.yml (nf-core module metadata),,,bioconda:misopy ; doi:10.1038/nmeth.1528,2,1
+mobster,mobster,mobster-R,https://bio.tools/mobster-R,meta.yml (nf-core module metadata),,,doi:10.1038/s41588-020-0675-5 ; doi:10.1186/S12859-020-03863-1 ; pmid:33203356,3,1
+motus,motus,motus,https://bio.tools/motus,bio.tools API (exact-id),,,bioconda:motus ; doi:10.1186/s40168-022-01410-z ; pmid:36464731 ; doi:10.1093/nar/gkae1004 ; pmid:39526369,5,1
+ms2rescore,ms2rescore,ms2rescore,https://bio.tools/ms2rescore,meta.yml (nf-core module metadata),,,bioconda:ms2rescore ; doi:10.1021/acs.jproteome.3c00785 ; doi:10.1016/j.mcpro.2022.100266 ; pmid:35803561,4,1
+msgf_plus,msgfplus,msgfplus,https://bio.tools/msgfplus,bio.tools API (exact-id),,,doi:10.1021/pr400937n ; pmid:24344789,2,1
+msnbasexic,msnbasexic,nonpareil,https://bio.tools/nonpareil,bio.tools dump (doi),,,doi:10.1093/bioinformatics/btt584,1,1
+MSstatsTMT,msstatstmt,msstatstmt,https://bio.tools/msstatstmt,bio.tools API (exact-id),,,doi:10.1074/mcp.RA120.002105 ; pmid:32680918,2,1
+mtm-align,mtmalign,mtm-align,https://bio.tools/mtm-align,bio.tools API (exact-id),,,bioconda:mtm-align ; doi:10.1093/bioinformatics/btx828 ; doi:10.1093/nar/gky430 ; pmid:29788129,4,1
+mtnucratio,mtnucratio,eager,https://bio.tools/eager,bio.tools dump (doi),,,bioconda:mtnucratio ; doi:10.1186/s13059-016-0918-z,2,1
+mudata,mudata,muon,https://bio.tools/muon,bio.tools dump (doi),,,bioconda:mudata ; doi:10.1186/s13059-021-02577-8,2,1
+muscle,muscle,muscle,https://bio.tools/muscle,bio.tools API (exact-id),,,doi:10.1093/nar/gkh340,1,1
+mutationalpattern,mutationalpattern,mutationalpatterns,https://bio.tools/mutationalpatterns,bio.tools dump (url),,,doi:10.18129/B9.bioc.MutationalPatterns,1,1
+mutscan,mutscan,mutscan,https://bio.tools/mutscan,bio.tools API (exact-id),,,doi:10.1186/s13059-023-02967-0,1,1
+mygene,mygene,mygene,https://bio.tools/mygene,bio.tools API (exact-id),,,bioconda:mygene ; doi:10.18129/B9.bioc.mygene,2,1
+NACHO,nacho,NACHO,https://bio.tools/NACHO,bio.tools API (exact-id),,,doi:10.1093/bioinformatics/btz647 ; pmid:31504159,2,1
+nanocomp,nanocomp,nanocomp,https://bio.tools/nanocomp,meta.yml (nf-core module metadata),,,bioconda:nanocomp,1,1
+nanopolish,nanopolish,nanopolish,https://bio.tools/nanopolish,bio.tools API (exact-id),,,bioconda:nanopolish ; doi:10.1038/nmeth.4184 ; pmid:28218898,3,1
+networkx,networkx,NetworkX,https://bio.tools/NetworkX,bio.tools API (exact-id),,,doi:10.25080/TCWV9851,1,1
+nextclade,nextclade,nextclade,https://bio.tools/nextclade,meta.yml (nf-core module metadata),,,bioconda:nextclade ; doi:10.21105/joss.03773,2,1
+ngscheckmate,ngscheckmate,ngscheckmate,https://bio.tools/ngscheckmate,meta.yml (nf-core module metadata),,,bioconda:ngscheckmate ; doi:10.1093/nar/gkx193 ; pmid:28369524,3,1
+ngsrelate,ngsrelate,ngsrelate,https://bio.tools/ngsrelate,bio.tools API (exact-id),,,bioconda:ngsrelate ; doi:10.1093/gigascience/giz034 ; doi:10.1093/bioinformatics/btv509 ; pmid:26323718,4,1
+nonpareil,nonpareil,nonpareil,https://bio.tools/nonpareil,meta.yml (nf-core module metadata),,,bioconda:nonpareil ; doi:10.1128/msystems.00039- ; doi:10.1093/bioinformatics/btt584 ; pmid:24123672,4,1
+oarfish,oarfish,oarfish,https://bio.tools/oarfish,bio.tools API (exact-id),,,doi:10.1101/2024.02.28.582591,1,1
+odgi,odgi,odgi,https://bio.tools/odgi,meta.yml (nf-core module metadata),,,bioconda:odgi ; doi:10.1093/bioinformatics/btac308 ; doi:10.1101/2021.11.10.467921,3,1
+optitype,optitype,optitype,https://bio.tools/optitype,meta.yml (nf-core module metadata),,,bioconda:optitype ; doi:10.1093/bioinformatics/btu548,2,1
+orange,orange,orange,https://bio.tools/orange,bio.tools API (exact-id),,,doi:10.1093/bioinformatics/btm312 ; pmid:17586552 ; doi:10.1093/bioinformatics/bth474 ; pmid:15308546,4,1
+orthofinder,orthofinder,orthofinder,https://bio.tools/orthofinder,meta.yml (nf-core module metadata),,,bioconda:orthofinder ; doi:10.1186/s13059-019-1832-y ; doi:10.1186/s13059-015-0721-2 ; pmid:26243257 ; doi:10.1101/466201,5,1
+pairadise,pairadise,pairadise,https://bio.tools/pairadise,bio.tools API (exact-id),,,doi:10.1016/j.ajhg.2020.07.005 ; doi:10.1016/J.AJHG.2020.07.005 ; pmid:32781045,3,1
+pangolin,pangolin,pangolin_cov-lineages,https://bio.tools/pangolin_cov-lineages,meta.yml (nf-core module metadata),,,bioconda:pangolin ; doi:10.1093/ve/veab064 ; pmid:34527285,3,1
+pascal,pascal,pascal,https://bio.tools/pascal,bio.tools API (exact-id),,,doi:10.1186/S12920-019-0593-5 ; pmid:31651322,2,1
+pave,pave,pave,https://bio.tools/pave,bio.tools API (exact-id),,,doi:10.1101/2020.07.26.20162479,1,1
+pbccs,pbccs,isoseq3,https://bio.tools/isoseq3,bio.tools dump (url),,,bioconda:pbccs,1,1
+pcgr,pcgr,pcgr,https://bio.tools/pcgr,bio.tools API (exact-id),,,doi:10.1093/bioinformatics/btx817 ; pmid:29272339,2,1
+pear,pear,pear,https://bio.tools/pear,bio.tools API (exact-id),,,bioconda:pear ; doi:10.1093/bioinformatics/btt593 ; pmid:24142950,3,1
+perl-bioperl,perlbioperl,bioperl,https://bio.tools/bioperl,bio.tools dump (name),,,,0,1
+phantompeakqualtools,phantompeakqualtools,phantompeakqualtools,https://bio.tools/phantompeakqualtools,meta.yml (nf-core module metadata),,,bioconda:phantompeakqualtools ; doi:10.1101/gr.136184.111 ; doi:10.1534/g3.113.008680 ; pmid:24347632 ; doi:10.1038/nbt.1508 ; pmid:19029915 ; pmid:22955991,7,1
+pharokka,pharokka,pharokka,https://bio.tools/pharokka,bio.tools API (exact-id),,,bioconda:pharokka ; doi:10.1093/bioinformatics/btac776 ; doi:10.1093/BIOINFORMATICS/BTAC776 ; pmid:36453861,4,1
+phaser,phaser,phaser,https://bio.tools/phaser,bio.tools API (exact-id),,,doi:10.1107/s0021889807021206 ; pmid:19461840,2,1
+pheatmap,pheatmap,pheatmap,https://bio.tools/pheatmap,bio.tools API (exact-id),,,,0,1
+phyloseq,phyloseq,phyloseq,https://bio.tools/phyloseq,meta.yml (nf-core module metadata),,,doi:10.1371/journal.pone.0061217 ; pmid:23630581,2,1
+picard_collectalignmentsummarymetrics,picardcollectalignmentsummarymetrics,picard_collectalignmentsummarymetrics,https://bio.tools/picard_collectalignmentsummarymetrics,bio.tools API (exact-id),,,,0,1
+picrust2,picrust2,picrust2,https://bio.tools/picrust2,meta.yml (nf-core module metadata),,,bioconda:picrust2 ; doi:10.1038/s41587-020-0548-6 ; pmid:32483366,3,1
+pints,pints,pyPINTS,https://bio.tools/pyPINTS,meta.yml (nf-core module metadata),,,doi:10.1038/s41587-022-01211-7 ; pmid:35177836,2,1
+piranha,piranha,piranha,https://bio.tools/piranha,bio.tools API (exact-id),,,doi:10.1093/nar/gkq474 ; pmid:20507911 ; doi:10.1093/bioinformatics/btp257 ; pmid:19389733,4,1
+pirate,pirate,PIRATE,https://bio.tools/PIRATE,meta.yml (nf-core module metadata),,,bioconda:pirate ; doi:10.1093/gigascience/giz119 ; doi:10.1093/GIGASCIENCE/GIZ119 ; pmid:31598686,4,1
+plasmidid,plasmidid,plasmidid,https://bio.tools/plasmidid,meta.yml (nf-core module metadata),,,bioconda:plasmidid,1,1
+plastid,plastid,plastid,https://bio.tools/plastid,meta.yml (nf-core module metadata),,,bioconda:plastid ; doi:10.1186/s12864-016-3278-x ; doi:10.1186/S12864-016-3278-X ; pmid:27875984,4,1
+plink,plink,plink,https://bio.tools/plink,bio.tools API (exact-id),,,bioconda:plink ; doi:10.1086/519795 ; pmid:17701901,3,1
+pluginsplit,pluginsplit,bcftools,https://bio.tools/bcftools,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; doi:10.1093/gigascience/giab008 ; pmid:33590861,4,1
+pmultiqc,pmultiqc,pmultiqc,https://bio.tools/pmultiqc,bio.tools API (exact-id),,,,0,1
+popscle,popscle,demuxlet,https://bio.tools/demuxlet,bio.tools dump (doi),,,bioconda:popscle ; doi:10.1038/nbt.4042,2,1
+price,price,price,https://bio.tools/price,bio.tools API (exact-id),,,doi:10.1038/nmeth.4631 ; doi:10.1534/g3.113.005967 ; pmid:23550143 ; rrid:SCR_013063,4,1
+propr,propr,propr,https://bio.tools/propr,meta.yml (nf-core module metadata),,,doi:10.1038/s41598-017-16520-0 ; pmid:29176663,2,1
+proteus,proteus,proteus-engineering,https://bio.tools/proteus-engineering,meta.yml (nf-core module metadata),,,doi:10.1101/416511 ; doi:10.1186/S12859-020-03575-6 ; pmid:32611389,3,1
+ptxqc,ptxqc,ptxqc,https://bio.tools/ptxqc,bio.tools API (exact-id),,,doi:10.1021/acs.jproteome.5b00780 ; pmid:26653327,2,1
+pvactools,pvactools,pvactools,https://bio.tools/pvactools,bio.tools API (exact-id),,,doi:10.1158/2326-6066.CIR-19-0401 ; pmid:31907209,2,1
+pyclone-vi,pyclonevi,pyclone-vi,https://bio.tools/pyclone-vi,bio.tools API (exact-id),,,bioconda:pyclone-vi ; doi:10.1186/s12859-020-03919-2 ; doi:10.1101/2020.08.31.276212,3,1
+pygtftk,pygtftk,OLOGRAM,https://bio.tools/OLOGRAM,bio.tools dump (url),,,bioconda:pygtftk,1,1
+pyopenms,pyopenms,pyOpenMS,https://bio.tools/pyOpenMS,bio.tools API (exact-id),,,doi:10.7287/PEERJ.PREPRINTS.27736,1,1
+pyprophet,pyprophet,pyprophet,https://bio.tools/pyprophet,bio.tools API (exact-id),,,doi:10.1038/nmeth.1584 ; pmid:21423193 ; doi:10.1038/nmeth.4398 ; pmid:28825704,4,1
+qcatch,qcatch,qcatch,https://bio.tools/qcatch,bio.tools API (exact-id),,,doi:10.1101/2025.06.15.659779,1,1
+qiime2,qiime2,qiime2,https://bio.tools/qiime2,meta.yml (nf-core module metadata),,,doi:10.1038/s41587-019-0209-9 ; pmid:31341288,2,1
+r2dt,r2dt,r2dt,https://bio.tools/r2dt,meta.yml (nf-core module metadata),,,doi:10.1101/2020.09.10.290924,1,1
+ragtag,ragtag,ragtag,https://bio.tools/ragtag,meta.yml (nf-core module metadata),,,bioconda:ragtag ; doi:10.1186/s13059-022-02823-7 ; doi:10.1186/s13059-019-1829-6 ; pmid:31661016,4,1
+r-ampir,rampir,ampir,https://bio.tools/ampir,bio.tools dump (name),,,,0,1
+raven,raven,raven,https://bio.tools/raven,meta.yml (nf-core module metadata),,,doi:10.1038/s43588-021-00073-4 ; doi:10.1101/2020.08.07.242461,2,1
+raxml-ng,raxmlng,raxml-ng,https://bio.tools/raxml-ng,meta.yml (nf-core module metadata),,,bioconda:raxml-ng ; doi:10.1093/bioinformatics/btz305 ; pmid:31070718,3,1
+r-cnaqc,rcnaqc,cnaqc,https://bio.tools/cnaqc,bio.tools dump (name),,,,0,1
+r-crisprcleanr,rcrisprcleanr,crisprcleanr,https://bio.tools/crisprcleanr,bio.tools dump (name),,,,0,1
+r-dimsum,rdimsum,dimsum,https://bio.tools/dimsum,bio.tools dump (name),,,,0,1
+regenie,regenie,regenie,https://bio.tools/regenie,meta.yml (nf-core module metadata),,,bioconda:regenie ; doi:10.1038/s41588-021-00870-7 ; doi:10.1038/S41588-021-00870-7 ; pmid:34017140,4,1
+regtools,regtools,regtools,https://bio.tools/regtools,meta.yml (nf-core module metadata),,,bioconda:regtools,1,1
+repair,repair,bbmap,https://bio.tools/bbmap,meta.yml (nf-core module metadata),,,rrid:SCR_016968,1,1
+repeatmasker,repeatmasker,repeatmasker,https://bio.tools/repeatmasker,meta.yml (nf-core module metadata),,,bioconda:repeatmasker,1,1
+ribotricer,ribotricer,ribotricer,https://bio.tools/ribotricer,meta.yml (nf-core module metadata),,,bioconda:ribotricer ; doi:10.1093/bioinformatics/btz878 ; pmid:31750902,3,1
+ribowaltz,ribowaltz,ribowaltz,https://bio.tools/ribowaltz,meta.yml (nf-core module metadata),,,bioconda:ribowaltz ; doi:10.1371/journal.pcbi.1006169,2,1
+rmats,rmats,rmats,https://bio.tools/rmats,meta.yml (nf-core module metadata),,,bioconda:rmats ; doi:10.1038/s41596-023-00944-2 ; doi:10.1073/pnas.1419161111 ; pmid:25480548,4,1
+rnaquast,rnaquast,rnaQUAST,https://bio.tools/rnaQUAST,bio.tools API (exact-id),,,doi:10.1093/bioinformatics/btw218 ; pmid:27153654,2,1
+robust,robust,robust,https://bio.tools/robust,bio.tools API (exact-id),,,doi:10.1093/BIOINFORMATICS/BTAB876 ; pmid:34984440,2,1
+roh,roh,bcftools,https://bio.tools/bcftools,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; doi:10.1093/gigascience/giab008 ; pmid:33590861,4,1
+r-seurat,rseurat,seurat,https://bio.tools/seurat,bio.tools dump (name),,,,0,1
+sambamba,sambamba,sambamba,https://bio.tools/sambamba,meta.yml (nf-core module metadata),,,bioconda:sambamba ; doi:10.1093/bioinformatics/btv098 ; pmid:25697820,3,1
+samtoolscalmd,samtoolscalmd,samtools,https://bio.tools/samtools,meta.yml (nf-core module metadata),,,doi:10.1093/bioinformatics/btp352 ; pmid:19505943 ; doi:10.1093/gigascience/giab008 ; pmid:33590861 ; doi:10.1093/bioinformatics/btr509 ; pmid:21903627,6,1
+samtools_sort,samtoolssort,samtools_sort,https://bio.tools/samtools_sort,bio.tools API (exact-id),,,doi:10.1093/bioinformatics/btp352 ; doi:10.1093/nar/gkw343 ; doi:10.7490/f1000research.1114334.1,3,1
+sativa,sativa,biopython,https://bio.tools/biopython,meta.yml (nf-core module metadata),,,pmid:19304878,1,1
+sativaepang,sativaepang,sativa,https://bio.tools/sativa,bio.tools dump (doi),,,bioconda:sativa-epang ; doi:10.1093/nar/gkw396,2,1
+scar,scar,scar,https://bio.tools/scar,meta.yml (nf-core module metadata),,,doi:10.1093/nar/gkad753 ; pmid:37739405,2,1
+scarches,scarches,scarches,https://bio.tools/scarches,meta.yml (nf-core module metadata),,,doi:10.1101/2020.07.16.205997,1,1
+scdblfinder,scdblfinder,scdblfinder,https://bio.tools/scdblfinder,meta.yml (nf-core module metadata),,,doi:10.12688/f1000research.73600.2,1,1
+scikit-image,scikitimage,scikit-image,https://bio.tools/scikit-image,bio.tools API (exact-id),,,doi:10.7717/peerj.453 ; doi:10.7287/peerj.preprints.336v2,2,1
+scimap,scimap,SCIMAP,https://bio.tools/SCIMAP,meta.yml (nf-core module metadata),,,doi:10.1016/J.JENVMAN.2019.109366 ; pmid:31494409,2,1
+scimilarity,scimilarity,scimilarity,https://bio.tools/scimilarity,bio.tools API (exact-id),,,doi:10.1038/S41586-024-08411-Y ; pmid:39566551,2,1
+scran,scran,scran,https://bio.tools/scran,meta.yml (nf-core module metadata),,,doi:10.12688/f1000research.9501.2,1,1
+scry,scry,bioconductor-scry,https://bio.tools/bioconductor-scry,meta.yml (nf-core module metadata),,,doi:10.18129/B9.bioc.scry,1,1
+scvi-tools,scvitools,totalVI,https://bio.tools/totalVI,bio.tools dump (url),,,bioconda:scvi-tools,1,1
+seacr,seacr,SEACR,https://bio.tools/SEACR,bio.tools API (exact-id),,,doi:10.1186/s13072-019-0287-4 ; pmid:31300027,2,1
+segemehl,segemehl,segemehl,https://bio.tools/segemehl,meta.yml (nf-core module metadata),,,bioconda:segemehl ; doi:10.1186/gb-2014-15-2-r34 ; doi:10.1093/bioinformatics/btu146 ; pmid:24626854,4,1
+semibin,semibin,semibin,https://bio.tools/semibin,meta.yml (nf-core module metadata),,,bioconda:semibin ; doi:10.1038/s41467-022-29843-y ; doi:10.1101/2021.08.16.456517,3,1
+seq2hla,seq2hla,seq2HLA,https://bio.tools/seq2HLA,meta.yml (nf-core module metadata),,,bioconda:seq2hla ; doi:10.1186/s13073-015-0240-5 ; doi:10.1186/1471-2164-13-378 ; pmid:22866951,4,1
+seqcluster,seqcluster,seqcluster,https://bio.tools/seqcluster,meta.yml (nf-core module metadata),,,bioconda:seqcluster ; doi:10.1093/bioinformatics/btr527 ; doi:10.1093/bioinformatics/btv632 ; pmid:26530722 ; pmid:21976421,5,1
+seqtk_comp,seqtkcomp,seqtk,https://bio.tools/seqtk,meta.yml (nf-core module metadata),,,doi:10.1186/s13104-017-2616-7 ; pmid:28701181 ; rrid:SCR_018927,3,1
+sequali,sequali,sequali,https://bio.tools/sequali,meta.yml (nf-core module metadata),,,bioconda:sequali ; doi:10.1093/bioadv/vbaf010,2,1
+shapeit5,shapeit5,shapeit5,https://bio.tools/shapeit5,meta.yml (nf-core module metadata),,,bioconda:shapeit5 ; doi:10.1101/2022.10.19.512867 ; doi:10.1038/s41588-023-01415-w ; pmid:37386248,4,1
+sigprofilerextractor,sigprofilerextractor,sigprofilerextractor,https://bio.tools/sigprofilerextractor,meta.yml (nf-core module metadata),,,doi:10.1016/j.xgen.2022.100179,1,1
+sigprofilermatrixgenerator,sigprofilermatrixgenerator,sigprofilermatrixgenerator,https://bio.tools/sigprofilermatrixgenerator,meta.yml (nf-core module metadata),,,doi:10.1186/s12864-019-6041-2 ; doi:10.1101/653097,2,1
+singler,singler,singler,https://bio.tools/singler,meta.yml (nf-core module metadata),,,,0,1
+skewer,skewer,skewer,https://bio.tools/skewer,bio.tools API (exact-id),,,doi:10.1186/1471-2105-15-182 ; pmid:24925680,2,1
+slamdunk,slamdunk,SLAM-DUNK,https://bio.tools/SLAM-DUNK,bio.tools dump (name),,,,0,1
+sniffles,sniffles,sniffles,https://bio.tools/sniffles,meta.yml (nf-core module metadata),,,bioconda:sniffles ; doi:10.1038/s41592-018-0001-7 ; pmid:29713083 ; rrid:SCR_017619,4,1
+snpdists,snpdists,snp-dists,https://bio.tools/snp-dists,bio.tools dump (url+name),,,bioconda:snp-dists,1,1
+somalier,somalier,somalier,https://bio.tools/somalier,meta.yml (nf-core module metadata),,,bioconda:somalier ; doi:10.1186/s13073-020-00761-2 ; doi:10.1101/839944,3,1
+sompy,sompy,happy,https://bio.tools/happy,meta.yml (nf-core module metadata),,,doi:10.1002/gepi.20061 ; pmid:15637718,2,1
+souporcell,souporcell,souporcell,https://bio.tools/souporcell,meta.yml (nf-core module metadata),,,bioconda:souporcell ; doi:10.1101/699637v1 ; doi:10.1038/s41592-020-0820-1 ; pmid:32366989,4,1
+soupx,soupx,soupx,https://bio.tools/soupx,meta.yml (nf-core module metadata),,,rrid:SCR_019193,1,1
+sourcepredict,sourcepredict,sourcepredict,https://bio.tools/sourcepredict,meta.yml (nf-core module metadata),,,bioconda:sourcepredict ; doi:10.21105/joss.01540,2,1
+sparsesignatures,sparsesignatures,sparsesignatures,https://bio.tools/sparsesignatures,meta.yml (nf-core module metadata),,,doi:10.1371/journal.pcbi.1009119 ; doi:10.18129/B9.bioc.SparseSignatures,2,1
+spectre,spectre,spectre,https://bio.tools/spectre,bio.tools API (exact-id),,,doi:10.1101/2021.10.27.466189 ; doi:10.1186/s12859-016-1355-4 ; pmid:27884106,3,1
+spoqc,spoqc,spoqc,https://bio.tools/spoqc,bio.tools API (exact-id),,,,0,1
+stageR,stager,stager,https://bio.tools/stager,meta.yml (nf-core module metadata),,,doi:10.1186/s13059-017-1277-0 ; doi:10.18129/B9.bioc.stageR,2,1
+star-fusion,starfusion,star-fusion,https://bio.tools/star-fusion,bio.tools API (exact-id),,,bioconda:star-fusion ; doi:10.1101/120295v1 ; doi:10.1186/s13059-019-1842-9,3,1
+starsolo,starsolo,star,https://bio.tools/star,meta.yml (nf-core module metadata),,,doi:10.1101/2021.05.05.442755 ; doi:10.1093/bioinformatics/bts635 ; pmid:23104886 ; doi:10.1038/nmeth.4106 ; pmid:27941783 ; doi:10.1093/bioinformatics/btu146 ; pmid:24626854,7,1
+stitch,stitch,stitch-snijderlab,https://bio.tools/stitch-snijderlab,meta.yml (nf-core module metadata),,,doi:10.1038/ng.3594 ; doi:10.1021/acs.jproteome.4c00188 ; pmid:38932690,3,1
+straglr,straglr,straglr,https://bio.tools/straglr,bio.tools API (exact-id),,,doi:10.1186/S13059-021-02447-3 ; pmid:34389037,2,1
+strobealign,strobealign,strobealign,https://bio.tools/strobealign,meta.yml (nf-core module metadata),,,bioconda:strobealign ; doi:10.1186/s13059-022-02831-7 ; pmid:36522758,3,1
+supernova,supernova,supernova,https://bio.tools/supernova,bio.tools API (exact-id),,,doi:10.1101/gr.214874.116 ; pmid:28381613,2,1
+suppa,suppa,suppa,https://bio.tools/suppa,meta.yml (nf-core module metadata),,,bioconda:suppa ; doi:10.1186/s13059-018-1417-1 ; doi:10.1261/rna.051557.115 ; pmid:26179515,4,1
+svim,svim,svim,https://bio.tools/svim,meta.yml (nf-core module metadata),,,bioconda:svim ; doi:10.1093/bioinformatics/btz041,2,1
+tadpole,tadpole,tadpole,https://bio.tools/tadpole,bio.tools API (exact-id),,,doi:10.1093/NAR/GKAA087 ; pmid:32083658,2,1
+targetscan,targetscan,TargetScanHuman,https://bio.tools/TargetScanHuman,bio.tools dump (url),,,bioconda:targetscan,1,1
+taxonkit,taxonkit,taxonkit,https://bio.tools/taxonkit,meta.yml (nf-core module metadata),,,bioconda:taxonkit ; doi:10.1016/j.jgg.2021.03.006 ; doi:10.1016/J.JGG.2021.03.006 ; pmid:34001434,4,1
+tbprofiler,tbprofiler,tb-profiler,https://bio.tools/tb-profiler,bio.tools dump (url+name),,,bioconda:tb-profiler ; doi:10.1186/s13073-019-0650-x,2,1
+t-coffee,tcoffee,t_coffee,https://bio.tools/t_coffee,bio.tools API (exact-id),,,bioconda:t-coffee ; doi:10.1006/jmbi.2000.4042 ; doi:10.1038/s41587-019-0333-6,3,1
+tinc,tinc,r-tinc,https://bio.tools/r-tinc,meta.yml (nf-core module metadata),,,doi:10.1038/s41467-023-44158-2,1,1
+traitar,traitar,traitar,https://bio.tools/traitar,meta.yml (nf-core module metadata),,,doi:10.1128/mSystems.00101-16 ; pmid:28066816,2,1
+transdecoder,transdecoder,TransDecoder,https://bio.tools/TransDecoder,meta.yml (nf-core module metadata),,,bioconda:transdecoder,1,1
+treesummarizedexperiment,treesummarizedexperiment,bioconductor-treesummarizedexperiment,https://bio.tools/bioconductor-treesummarizedexperiment,bio.tools API (exact-name),,,,0,1
+trnascan-se,trnascanse,trnascan-se,https://bio.tools/trnascan-se,meta.yml (nf-core module metadata),,,bioconda:trnascan-se ; doi:10.1093/nar/gkab688 ; doi:10.1093/nar/gkw413 ; pmid:27174935 ; doi:10.1093/nar/25.5.955 ; pmid:9023104,6,1
+trust4,trust4,trust4,https://bio.tools/trust4,meta.yml (nf-core module metadata),,,bioconda:trust4 ; doi:10.1038/S41592-021-01142-2 ; pmid:33986545,3,1
+txdbmaker,txdbmaker,bioconductor-txdbmaker,https://bio.tools/bioconductor-txdbmaker,bio.tools API (exact-name),,,doi:10.18129/B9.bioc.txdbmaker,1,1
+tximport,tximport,tximport,https://bio.tools/tximport,bio.tools API (exact-id),,,doi:10.12688/f1000research.7563.1,1,1
+ucsc-blat,ucscblat,blat,https://bio.tools/blat,bio.tools dump (name),,,,0,1
+ucsc-liftover,ucscliftover,liftover,https://bio.tools/liftover,bio.tools dump (name),,,,0,1
+ultra,ultra,ULTRA,https://bio.tools/ULTRA,bio.tools API (exact-id),,,doi:10.1093/bioinformatics/btab540 ; doi:10.1145/3233547.3233604 ; pmid:31080962,3,1
+variant-extractor,variantextractor,variant_extractor,https://bio.tools/variant_extractor,meta.yml (nf-core module metadata),,,bioconda:variant-extractor ; doi:10.1016/j.xgen.2024.100639,2,1
+varlociraptor,varlociraptor,varlociraptor,https://bio.tools/varlociraptor,meta.yml (nf-core module metadata),,,bioconda:varlociraptor ; doi:10.1186/s13059-020-01993-6 ; doi:10.1101/741256,3,1
+vcfanno,vcfanno,vcfanno,https://bio.tools/vcfanno,meta.yml (nf-core module metadata),,,bioconda:vcfanno ; doi:10.1186/s13059-016-0973-5,2,1
+vcfR,vcfr,vcfr,https://bio.tools/vcfr,bio.tools API (exact-id),,,doi:10.1111/1755-0998.12549 ; doi:10.3389/fgene.2018.00123 ; pmid:29706990,3,1
+verifybamid2,verifybamid2,verifybamid,https://bio.tools/verifybamid,meta.yml (nf-core module metadata),,,bioconda:verifybamid2 ; doi:10.1101/gr.246934.118 ; doi:10.1016/j.ajhg.2012.09.004 ; pmid:23103226,4,1
+vg,vg,vg,https://bio.tools/vg,bio.tools API (exact-id),,,,0,1
+viennarna,viennarna,viennarna,https://bio.tools/viennarna,meta.yml (nf-core module metadata),,,bioconda:viennarna ; doi:10.1186/1748-7188-6-26 ; pmid:22115189,3,1
+vireo,vireo,Vireo,https://bio.tools/Vireo,meta.yml (nf-core module metadata),,,doi:10.1186/s13059-019-1865-2 ; doi:10.1186/S13059-019-1865-2 ; pmid:31836005,3,1
+vrhyme,vrhyme,vrhyme,https://bio.tools/vrhyme,meta.yml (nf-core module metadata),,,bioconda:vrhyme ; doi:10.1093/nar/gkac341 ; pmid:35544285,3,1
+vt,vt,vt,https://bio.tools/vt,bio.tools API (exact-id),,,bioconda:vt ; doi:10.1093/bioinformatics/btv112 ; pmid:25701572,3,1
+wgsim,wgsim,wgsim,https://bio.tools/wgsim,bio.tools API (exact-id),,,,0,1
+whatshap,whatshap,whatshap,https://bio.tools/whatshap,bio.tools API (exact-id),,,doi:10.1089/cmb.2014.0157 ; pmid:25658651 ; doi:10.1101/037101,3,1
+wtdbg2,wtdbg2,wtdbg2,https://bio.tools/wtdbg2,bio.tools API (exact-id),,,doi:10.1038/s41592-019-0669-3 ; pmid:31819265,2,1
+yahs,yahs,yahs,https://bio.tools/yahs,meta.yml (nf-core module metadata),,,bioconda:yahs ; doi:10.1093/bioinformatics/btac808 ; doi:10.1101/2022.06.09.495093,3,1
+yara,yara,yara,https://bio.tools/yara,meta.yml (nf-core module metadata),,,bioconda:yara ; doi:10.1093/nar/gkt005 ; pmid:23358824,3,1
+yarn,yarn,yarn,https://bio.tools/yarn,bio.tools API (exact-id),,,doi:10.18129/B9.bioc.yarn,1,1
+unzip,unzip,,,,"shell utility, deliberately not looked up on bio.tools (a name match would be a homonym)",,bioconda:unzip,1,19
+wget,wget,,,,"shell utility, deliberately not looked up on bio.tools (a name match would be a homonym)",,bioconda:wget,1,11
+csvtk,csvtk,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:csvtk,1,10
+pyyaml,pyyaml,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:pyyaml,1,8
+fq,fq,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:fq,1,7
+r-data.table,rdatatable,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:r-data.table,1,7
+dragmap,dragmap,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:dragmap,1,5
+papermill,papermill,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:papermill,1,5
+tidyverse,tidyverse,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.21105/joss.01686 ; doi:10.32614/CRAN.package.tidyverse,2,5
+aria2,aria2,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:aria2,1,4
+bioawk,bioawk,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:bioawk,1,4
+quarto,quarto,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:quarto,1,4
+umicollapse,umicollapse,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:umicollapse ; doi:10.7717/peerj.8275,2,4
+data.table,datatable,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.32614/CRAN.package.data.table,1,3
+dplyr,dplyr,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.32614/CRAN.package.dplyr,1,3
+gnu,gnu,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.581670,1,3
+malt,malt,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:malt ; doi:10.1038/s41559-017-0446-6,2,3
+mhcgnomes,mhcgnomes,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:mhcgnomes,1,3
+nanoq,nanoq,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:nanoq ; doi:10.21105/joss.02991,2,3
+pb_cpg_tools,pbcpgtools,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:pb-cpg-tools,1,3
+polars,polars,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:polars,1,3
+prinseq-plus-plus,prinseqplusplus,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:prinseq-plus-plus ; doi:10.7287/peerj.preprints.27553v1,2,3
+riker,riker,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:riker,1,3
+sentieon,sentieon,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:sentieon,1,3
+upsetplot,upsetplot,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:upsetplot,1,3
+checkqc,checkqc,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.21105/joss.00556,1,2
+chromap,chromap,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:chromap,1,2
+cooler,cooler,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:cooler ; doi:10.1093/bioinformatics/btz540,2,2
+curl,curl,,,,"shell utility, deliberately not looked up on bio.tools (a name match would be a homonym)",,bioconda:curl,1,2
+easypqp,easypqp,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:easypqp,1,2
+fibertools-rs,fibertoolsrs,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:fibertools-rs ; doi:10.5281/zenodo.14782951,2,2
+gtfparse,gtfparse,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:gtfparse,1,2
+hificnv,hificnv,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:hificnv ; doi:10.1093/bioinformatics/btac808,2,2
+macs2,macs2,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.1101/496521,1,2
+macs3,macs3,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:macs3 ; doi:10.1101/496521,2,2
+metacache,metacache,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:metacache ; doi:10.1093/bioinformatics/btx520,2,2
+nanolyse,nanolyse,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:nanolyse,1,2
+ncbi-datasets-cli,ncbidatasetscli,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:ncbi-datasets-cli,1,2
+ncbi-genome-download,ncbigenomedownload,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:ncbi-genome-download,1,2
+pbtk,pbtk,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:pbtk,1,2
+pydamage,pydamage,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:pydamage,1,2
+rmarkdown,rmarkdown,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.32614/CRAN.package.rmarkdowns,1,2
+rtg-tools,rtgtools,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:rtg-tools,1,2
+snap-aligner,snapaligner,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:snap-aligner ; doi:10.1101/2021.11.23.469039,2,2
+stardist,stardist,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:stardist ; doi:10.1109/ISBIC56247.2022.9854534,2,2
+stranger,stranger,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.4548873,1,2
+svdb,svdb,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:svdb,1,2
+sylph-tax,sylphtax,,,,name starts with the tool 'sylph' but 'tax' is not a known operation - needs review,,bioconda:sylph-tax,1,2
+tidyr,tidyr,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.32614/CRAN.package.tidyr,1,2
+trgt,trgt,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:trgt ; doi:10.1038/s41587-023-02057-3,2,2
+vcf2maf,vcf2maf,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:vcf2maf ; doi:10.5281/zenodo.593251,2,2
+amulety,amulety,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.1101/2025.03.21.644583,1,1
+aspera-cli,asperacli,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:aspera-cli,1,1
+assemblyscan,assemblyscan,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:assembly-scan,1,1
+assembly_uploader,assemblyuploader,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:assembly_uploader,1,1
+atlasgeneannotationmanipulation,atlasgeneannotationmanipulation,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:atlas-gene-annotation-manipulation,1,1
+baysor,baysor,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.1038/s41587-021-01044-w,1,1
+bwa-fastalign,bwafastalign,,,,name starts with the tool 'bwa' but 'fastalign' is not a known operation - needs review,,bioconda:bwa-fastalign ; doi:10.1145/3774934.3786421,2,1
+bwa-mem3,bwamem3,,,,name starts with the tool 'bwa' but 'mem3' is not a known operation - needs review,,bioconda:bwa-mem3,1,1
+calculate_cluster_distribution,calculateclusterdistribution,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.14881993,1,1
+calder2,calder2,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.1038/s41467-021-22666-3,1,1
+chelae,chelae,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:chelae,1,1
+chromograph,chromograph,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:chromograph,1,1
+chunk_clusters,chunkclusters,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.14881993,1,1
+circrna_finder,circrnafinder,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:circrna_finder,1,1
+ciri3,ciri3,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:ciri3,1,1
+cmaple,cmaple,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:cmaple ; doi:10.1093/molbev/msae134,2,1
+cobra-meta,cobrameta,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:cobra-meta ; doi:10.1038/s41564-023-01598-2,2,1
+comebin,comebin,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:comebin ; doi:10.1038/s41467-023-44290-z,2,1
+ComplexUpset,complexupset,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.3700590,1,1
+ctree,ctree,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.1038/s41592-018-0108-x,1,1
+curve_curator,curvecurator,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.1038/s41467-023-43696-z,1,1
+datavzrd,datavzrd,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:datavzrd,1,1
+demuxem,demuxem,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:demuxem ; doi:10.1038/s41467-019-10756-2,2,1
+dragonflye,dragonflye,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:dragonflye,1,1
+eigenstratdatabasetools,eigenstratdatabasetools,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:eigenstratdatabasetools,1,1
+evigene,evigene,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:evigene ; doi:10.7490/f1000research.1112594.1,2,1
+extract_family_members,extractfamilymembers,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.14881993,1,1
+extract_family_reps,extractfamilyreps,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.14881993,1,1
+extract_unassigned_seqs,extractunassignedseqs,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.14881993,1,1
+fa-lint,falint,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:fa-lint,1,1
+fasta_validate,fastavalidate,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.5002710,1,1
+fastq-scan,fastqscan,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:fastq-scan,1,1
+fastq_utils,fastqutils,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:fastq_utils,1,1
+fdrbench,fdrbench,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.1038/s41592-025-02719-x,1,1
+filter_non_redundant_fams,filternonredundantfams,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.14881993,1,1
+filter_recruited,filterrecruited,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.14881993,1,1
+find_circ,findcirc,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:find_circ,1,1
+fqtk,fqtk,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:fqtk,1,1
+fusion-inspector,fusioninspector,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,"bioconda:fusion-inspector ; doi:10.1101/2021.08.02.454639""",2,1
+galah,galah,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:galah ; doi:10.1111/NODOI,2,1
+gecco,gecco,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:gecco ; doi:10.1101/2021.05.03.442509,2,1
+genmap,genmap,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.1093/bioinformatics/btaa222,1,1
+genmod,genmod,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:genmod,1,1
+genomescope2,genomescope2,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:genomescope2 ; doi:10.1038/s41467-020-14998-3,2,1
+gfaffix,gfaffix,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:gfaffix,1,1
+gfatools,gfatools,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:gfatools,1,1
+gmm-demux,gmmdemux,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:gmm-demux ; doi:10.1186/s13059-020-02084-2,2,1
+gplots,gplots,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.32614/CRAN.package.gplots,1,1
+gs-tama,gstama,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:gs-tama ; doi:10.1186/s12864-020-07123-7,2,1
+gzrt,gzrt,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:gzrt,1,1
+hasheddrops,hasheddrops,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.18129/B9.bioc.DropletUtils,1,1
+hlahd,hlahd,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.1002/humu.23230,1,1
+hla-la,hlala,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:hla-la ; doi:10.1093/bioinformatics/btz235,2,1
+htodemux,htodemux,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.1186/s13059-018-1603-1,1,1
+humid,humid,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:humid,1,1
+identify_redundant_fams,identifyredundantfams,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.14881993,1,1
+immunotype,immunotype,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:immunotype,1,1
+ismapper,ismapper,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:ismapper ; doi:10.1186/s12864-015-1860-2,2,1
+itsxrust,itsxrust,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:itsxrust,1,1
+jq,jq,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:jq,1,1
+kb,kb,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.22002/D1.1876,1,1
+knotannotsv,knotannotsv,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:knotannotsv,1,1
+ldak6,ldak6,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:ldak6,1,1
+leidenalg,leidenalg,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:leidenalg,1,1
+longphase,longphase,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:longphase ; doi:10.1093/bioinformatics/btac058,2,1
+magrittr,magrittr,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.32614/CRAN.package.magrittr,1,1
+mapad,mapad,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:mapad,1,1
+mawk,mawk,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:mawk,1,1
+mccellpose,mccellpose,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.1038/s41592-022-01663-4,1,1
+mdust,mdust,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:mdust,1,1
+melon,melon,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:melon ; doi:10.1186/s13059-024-03363-y,2,1
+merge_seeds,mergeseeds,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.14881993,1,1
+methurator,methurator,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:methurator,1,1
+mgnify-pipelines-toolkit,mgnifypipelinestoolkit,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:mgnify-pipelines-toolkit,1,1
+mifaser,mifaser,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:mifaser ; doi:10.1093/nar/gkx1209,2,1
+mindagap,mindagap,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:mindagap,1,1
+miranda,miranda,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:miranda ; doi:10.1186/gb-2003-5-1-r1,2,1
+msisensor2,msisensor2,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:msisensor2,1,1
+multiqcsav,multiqcsav,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:multiqc_sav,1,1
+multiseqdemux,multiseqdemux,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.1038/s41592-019-0433-8,1,1
+multivcfanalyzer,multivcfanalyzer,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:multivcfanalyzer ; doi:10.1038/nature13591,2,1
+muscle -super5,musclesuper5,,,,name starts with the tool 'muscle' but 'super5' is not a known operation - needs review,,doi:10.1101/2021.06.20.449169,1,1
+muse,muse,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:muse ; doi:10.1101/gr.278456.123,2,1
+ngs-bits,ngsbits,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:ngs-bits,1,1
+pbjasmine,pbjasmine,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:pbjasmine,1,1
+pbsv,pbsv,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:pbsv,1,1
+peddy,peddy,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:peddy ; doi:10.1016/j.ajhg.2017.01.017,2,1
+pegasusio,pegasusio,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:pegasusio ; doi:10.1038/s41592-020-0905-x,2,1
+pixelator,pixelator,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:pixelator,1,1
+plotly,plotly,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:plotly,1,1
+pmdtools,pmdtools,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:pmdtools ; doi:10.1073/pnas.1318934111,2,1
+pmotools,pmotools,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:pmotools,1,1
+pool_existing_members,poolexistingmembers,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.14881993,1,1
+pool_similar_components,poolsimilarcomponents,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.14881993,1,1
+pridepy,pridepy,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:pridepy,1,1
+psirc,psirc,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:psirc,1,1
+purrr,purrr,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.32614/CRAN.package.purrr,1,1
+pychopper,pychopper,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:pychopper,1,1
+pydeseq2,pydeseq2,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:pydeseq2,1,1
+pypolca,pypolca,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:pypolca ; doi:10.1099/mgen.0.001254,2,1
+pyrodigal,pyrodigal,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:pyrodigal ; doi:10.21105/joss.04296,2,1
+qcat,qcat,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:qcat,1,1
+quilt,quilt,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.1038/s41467-025-67218-1 ; doi:10.1038/s41588-021-00877-0,2,1
+rastair,rastair,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:rastair,1,1
+raxtax,raxtax,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:raxtax ; doi:10.1093/bioinformatics/btaf620,2,1
+rclone,rclone,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:rclone,1,1
+r-dtplyr,rdtplyr,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:r-dtplyr,1,1
+recalculate_coordinates,recalculatecoordinates,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.14881993,1,1
+remove_redundant_seqs,removeredundantseqs,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.14881993,1,1
+retroseq,retroseq,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.1093/bioinformatics/bts697,1,1
+retry,retry,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:retry,1,1
+rhocall,rhocall,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:rhocall,1,1
+ribocode,ribocode,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:ribocode ; doi:10.1093/nar/gky179,2,1
+ribotish,ribotish,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:ribotish ; doi:10.1038/s41467-017-01981-8,2,1
+rlang,rlang,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.32614/CRAN.package.rlang,1,1
+rnaframework,rnaframework,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:rnaframework,1,1
+rpbp,rpbp,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:rpbp ; doi:10.1093/nar/gkw1350 ; doi:10.1093/nar/gkw1141,3,1
+rust-bio-tools,rustbiotools,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:rust-bio-tools,1,1
+rustqc,rustqc,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:rustqc,1,1
+s4pred,s4pred,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:s4pred ; doi:10.1093/bioinformatics/btab491,2,1
+sam2lca,sam2lca,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:sam2lca ; doi:10.21105/joss.04360,2,1
+samshee,samshee,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:samshee,1,1
+savont,savont,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:savont,1,1
+sawfish,sawfish,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:sawfish ; doi:10.1093/bioinformatics/btaf136,2,1
+scanorama,scanorama,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:scanorama,1,1
+seaborn,seaborn,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:seaborn,1,1
+sequencetools,sequencetools,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:sequencetools,1,1
+seqwish,seqwish,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:seqwish,1,1
+severus,severus,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:severus ; doi:10.1101/2024.03.22.24304756,2,1
+sexdeterrmine,sexdeterrmine,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.1038/s41467-018-07483-5,1,1
+sgdemux,sgdemux,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:sgdemux,1,1
+simpleaf,simpleaf,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:simpleaf,1,1
+smncopynumbercaller,smncopynumbercaller,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:smncopynumbercaller ; doi:10.1038/s41436-020-0754-0,2,1
+smoothxg,smoothxg,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:smoothxg,1,1
+spechla,spechla,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:spechla ; doi:10.1016/j.crmeth.2023.100589,2,1
+split_family_hits,splitfamilyhits,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.14881993,1,1
+split_hmms,splithmms,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.14881993,1,1
+stare,stare,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.1093/bioinformatics/btad062,1,1
+stringr,stringr,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.32614/CRAN.package.stringr,1,1
+survivor,survivor,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:survivor ; doi:10.1038/NCOMMS14061,2,1
+svanalyzer,svanalyzer,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:svanalyzer,1,1
+svtk,svtk,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:svtk,1,1
+svync,svync,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:svync,1,1
+tama_collapse.py,tamacollapsepy,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.1186/s12864-020-07123-7,1,1
+td2,td2,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:td2,1,1
+tibble,tibble,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.32614/CRAN.package.tibble,1,1
+tidk,tidk,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:tidk ; doi:10.5281/zenodo.10091385,2,1
+truvari,truvari,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:truvari ; doi:10.1186/s13059-022-02840-6,2,1
+upd,upd,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:upd,1,1
+upp,upp,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.1093/bioinformatics/btad007,1,1
+vcf2cytosure,vcf2cytosure,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:vcf2cytosure,1,1
+viber,viber,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.1038/s41588-020-0675-5,1,1
+viridis,viridis,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.32614/CRAN.package.viridis,1,1
+wfmash,wfmash,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,doi:10.5281/zenodo.6949373,1,1
+xlsxwriter,xlsxwriter,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:xlsxwriter,1,1
+yte,yte,,,,"no record in bio.tools matched this tool (searched by DOI, PubMed ID, RRID, link and name)",,bioconda:yte,1,1

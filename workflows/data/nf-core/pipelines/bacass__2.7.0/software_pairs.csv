@@ -1,0 +1,485 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+autocycler,bakta,data_flow,2,2,E00417,
+autocycler,busco,data_flow,2,2,E00348,
+autocycler,canu,data_flow,2,2,E00046,
+autocycler,dfast,data_flow,2,2,E00437,
+autocycler,dragonflye,data_flow,1,1,E00100,
+autocycler,flye,data_flow,1,1,E00114,
+autocycler,gunzip,data_flow,6,6,E00132,
+autocycler,liftoff,data_flow,6,6,E00454,
+autocycler,medaka,data_flow,2,2,E00147,
+autocycler,megahit,data_flow,1,1,E00039,
+autocycler,miniasm,data_flow,1,1,E00067,
+autocycler,minimap2,data_flow,7,7,E00060,
+autocycler,nanopolish,data_flow,2,2,E00194,
+autocycler,prokka,data_flow,2,2,E00382,
+autocycler,quast,data_flow,10,10,E00248,
+autocycler,racon,data_flow,1,1,E00091,
+autocycler,raven-assembler,data_flow,1,1,E00107,
+autocycler,requests,data_flow,2,2,E00230,
+autocycler,unicycler,data_flow,1,1,E00032,
+bakta,multiqc,data_flow,1,1,E00526,
+busco,multiqc,data_flow,1,1,E00524,
+canu,autocycler,data_flow,1,1,E00117,
+canu,bakta,data_flow,1,1,E00412,
+canu,busco,data_flow,1,1,E00343,
+canu,dfast,data_flow,1,1,E00432,
+canu,gunzip,data_flow,3,3,E00135,
+canu,liftoff,data_flow,3,3,E00449,
+canu,medaka,data_flow,1,1,E00150,
+canu,minimap2,data_flow,2,2,E00166,
+canu,nanopolish,data_flow,1,1,E00197,
+canu,prokka,data_flow,1,1,E00377,
+canu,quast,data_flow,5,5,E00243,
+canu,requests,data_flow,1,1,E00225,
+cat,autocycler,data_flow,2,2,E00016,
+cat,bakta,data_flow,1,1,E00422,
+cat,busco,data_flow,1,1,E00353,
+cat,canu,data_flow,2,2,E00042,
+cat,dfast,data_flow,1,1,E00442,
+cat,dragonflye,data_flow,1,1,E00096,
+cat,fastp,data_flow,1,1,E00002,
+cat,fastqc,data_flow,1,1,E00001,
+cat,filtlong,data_flow,2,2,E00010,
+cat,flye,data_flow,1,1,E00110,
+cat,gunzip,data_flow,3,3,E00128,
+cat,kmerfinder,data_flow,1,1,E00215,
+cat,kraken2,data_flow,1,1,E00207,
+cat,liftoff,data_flow,3,3,E00459,
+cat,medaka,data_flow,1,1,E00143,
+cat,megahit,data_flow,1,1,E00035,
+cat,miniasm,data_flow,1,1,E00063,
+cat,minimap2,data_flow,5,5,E00056,
+cat,nanoplot,data_flow,1,1,E00005,
+cat,nanopolish,data_flow,1,1,E00190,
+cat,porechop,data_flow,1,1,E00007,
+cat,prokka,data_flow,1,1,E00387,
+cat,quast,data_flow,5,5,E00253,
+cat,racon,data_flow,1,1,E00087,
+cat,raven-assembler,data_flow,1,1,E00103,
+cat,requests,data_flow,1,1,E00235,
+cat,toulligqc,data_flow,1,1,E00006,
+cat,unicycler,data_flow,1,1,E00028,
+dragonflye,autocycler,data_flow,1,1,E00119,
+dragonflye,bakta,data_flow,1,1,E00414,
+dragonflye,busco,data_flow,1,1,E00345,
+dragonflye,dfast,data_flow,1,1,E00434,
+dragonflye,gunzip,data_flow,3,3,E00137,
+dragonflye,liftoff,data_flow,3,3,E00451,
+dragonflye,medaka,data_flow,1,1,E00152,
+dragonflye,minimap2,data_flow,2,2,E00168,
+dragonflye,nanopolish,data_flow,1,1,E00199,
+dragonflye,prokka,data_flow,1,1,E00379,
+dragonflye,quast,data_flow,5,5,E00245,
+dragonflye,requests,data_flow,1,1,E00227,
+fastp,autocycler,data_flow,4,2,E00014,
+fastp,bakta,data_flow,2,1,E00420,
+fastp,busco,data_flow,2,1,E00351,
+fastp,canu,data_flow,4,2,E00040,
+fastp,dfast,data_flow,2,1,E00440,
+fastp,dragonflye,data_flow,2,1,E00094,
+fastp,fastqc,data_flow,2,1,E00003,
+fastp,filtlong,data_flow,2,1,E00008,
+fastp,flye,data_flow,2,1,E00108,
+fastp,gunzip,data_flow,6,3,E00126,
+fastp,kmerfinder,data_flow,2,1,E00213,
+fastp,kraken2,data_flow,2,1,E00205,
+fastp,liftoff,data_flow,6,3,E00457,
+fastp,medaka,data_flow,2,1,E00141,
+fastp,megahit,data_flow,2,1,E00033,
+fastp,miniasm,data_flow,2,1,E00061,
+fastp,minimap2,data_flow,10,5,E00054,
+fastp,multiqc,data_flow,1,1,E00515,
+fastp,nanopolish,data_flow,2,1,E00188,
+fastp,prokka,data_flow,2,1,E00385,
+fastp,quast,data_flow,10,5,E00251,
+fastp,racon,data_flow,2,1,E00085,
+fastp,raven-assembler,data_flow,2,1,E00101,
+fastp,requests,data_flow,2,1,E00233,
+fastp,unicycler,data_flow,2,1,E00026,
+fastqc,multiqc,data_flow,2,2,E00513,
+filtlong,autocycler,data_flow,2,2,E00018,
+filtlong,bakta,data_flow,1,1,E00424,
+filtlong,busco,data_flow,1,1,E00355,
+filtlong,canu,data_flow,2,2,E00044,
+filtlong,dfast,data_flow,1,1,E00444,
+filtlong,dragonflye,data_flow,1,1,E00098,
+filtlong,flye,data_flow,1,1,E00112,
+filtlong,gunzip,data_flow,3,3,E00130,
+filtlong,kmerfinder,data_flow,1,1,E00217,
+filtlong,kraken2,data_flow,1,1,E00210,
+filtlong,liftoff,data_flow,3,3,E00461,
+filtlong,medaka,data_flow,1,1,E00145,
+filtlong,megahit,data_flow,1,1,E00037,
+filtlong,miniasm,data_flow,1,1,E00065,
+filtlong,minimap2,data_flow,5,5,E00058,
+filtlong,multiqc,data_flow,1,1,E00518,
+filtlong,nanopolish,data_flow,1,1,E00192,
+filtlong,prokka,data_flow,1,1,E00389,
+filtlong,quast,data_flow,5,5,E00255,
+filtlong,racon,data_flow,1,1,E00089,
+filtlong,rasusa,data_flow,1,1,E00012,
+filtlong,raven-assembler,data_flow,1,1,E00105,
+filtlong,requests,data_flow,1,1,E00237,
+filtlong,unicycler,data_flow,1,1,E00030,
+flye,autocycler,data_flow,1,1,E00121,
+flye,bakta,data_flow,1,1,E00416,
+flye,busco,data_flow,1,1,E00347,
+flye,dfast,data_flow,1,1,E00436,
+flye,gunzip,data_flow,3,3,E00139,
+flye,liftoff,data_flow,3,3,E00453,
+flye,medaka,data_flow,1,1,E00154,
+flye,minimap2,data_flow,2,2,E00170,
+flye,nanopolish,data_flow,1,1,E00201,
+flye,prokka,data_flow,1,1,E00381,
+flye,quast,data_flow,5,5,E00247,
+flye,requests,data_flow,1,1,E00229,
+gunzip,bakta,data_flow,1,1,E00427,
+gunzip,medaka,data_flow,1,1,E00156,
+gunzip,prokka,data_flow,1,1,E00392,
+kmerfinder,liftoff,gate_metadata,6,0,E00464,
+kmerfinder,multiqc,data_flow,1,1,E00220,
+kmerfinder,quast,gate_metadata,6,0,E00275,
+kmerfinder,requests,gate_metadata,2,0,E00221,
+kraken2,multiqc,data_flow,2,2,E00520,
+medaka,bakta,data_flow,1,1,E00418,
+medaka,busco,data_flow,1,1,E00349,
+medaka,dfast,data_flow,1,1,E00438,
+medaka,gunzip,data_flow,2,2,E00366,
+medaka,liftoff,data_flow,3,3,E00455,
+medaka,prokka,data_flow,1,1,E00383,
+medaka,quast,data_flow,5,5,E00249,
+medaka,requests,data_flow,1,1,E00231,
+megahit,autocycler,data_flow,1,1,E00116,
+megahit,bakta,data_flow,1,1,E00411,
+megahit,busco,data_flow,1,1,E00342,
+megahit,dfast,data_flow,1,1,E00431,
+megahit,gunzip,data_flow,3,3,E00134,
+megahit,liftoff,data_flow,3,3,E00448,
+megahit,medaka,data_flow,1,1,E00149,
+megahit,minimap2,data_flow,2,2,E00165,
+megahit,nanopolish,data_flow,1,1,E00196,
+megahit,prokka,data_flow,1,1,E00376,
+megahit,quast,data_flow,5,5,E00242,
+megahit,requests,data_flow,1,1,E00224,
+miniasm,minimap2,data_flow,2,2,E00076,
+miniasm,racon,data_flow,1,1,E00092,
+minimap2,miniasm,data_flow,1,1,E00068,
+minimap2,nanopolish,data_flow,1,1,E00203,
+minimap2,racon,data_flow,1,1,E00093,
+minimap2,samtools,data_flow,1,1,E00187,
+nanoplot,multiqc,data_flow,1,1,E00516,
+nanopolish,bakta,data_flow,1,1,E00419,
+nanopolish,busco,data_flow,1,1,E00350,
+nanopolish,dfast,data_flow,1,1,E00439,
+nanopolish,gunzip,data_flow,2,2,E00367,
+nanopolish,liftoff,data_flow,3,3,E00456,
+nanopolish,prokka,data_flow,1,1,E00384,
+nanopolish,quast,data_flow,5,5,E00250,
+nanopolish,requests,data_flow,1,1,E00232,
+ncbi-datasets-cli,liftoff,data_flow,6,6,E00467,
+ncbi-datasets-cli,quast,data_flow,6,6,E00295,
+porechop,autocycler,data_flow,2,2,E00019,
+porechop,bakta,data_flow,1,1,E00425,
+porechop,busco,data_flow,1,1,E00356,
+porechop,canu,data_flow,2,2,E00045,
+porechop,dfast,data_flow,1,1,E00445,
+porechop,dragonflye,data_flow,1,1,E00099,
+porechop,flye,data_flow,1,1,E00113,
+porechop,gunzip,data_flow,3,3,E00131,
+porechop,kmerfinder,data_flow,1,1,E00218,
+porechop,kraken2,data_flow,1,1,E00211,
+porechop,liftoff,data_flow,3,3,E00462,
+porechop,medaka,data_flow,1,1,E00146,
+porechop,megahit,data_flow,1,1,E00038,
+porechop,miniasm,data_flow,1,1,E00066,
+porechop,minimap2,data_flow,5,5,E00059,
+porechop,multiqc,data_flow,1,1,E00517,
+porechop,nanopolish,data_flow,1,1,E00193,
+porechop,prokka,data_flow,1,1,E00390,
+porechop,quast,data_flow,5,5,E00256,
+porechop,racon,data_flow,1,1,E00090,
+porechop,rasusa,data_flow,1,1,E00013,
+porechop,raven-assembler,data_flow,1,1,E00106,
+porechop,requests,data_flow,1,1,E00238,
+porechop,unicycler,data_flow,1,1,E00031,
+prokka,multiqc,data_flow,1,1,E00525,
+pycoqc,multiqc,data_flow,1,1,E00519,
+quast,multiqc,data_flow,2,2,E00522,
+racon,autocycler,data_flow,1,1,E00118,
+racon,bakta,data_flow,1,1,E00413,
+racon,busco,data_flow,1,1,E00344,
+racon,dfast,data_flow,1,1,E00433,
+racon,gunzip,data_flow,3,3,E00136,
+racon,liftoff,data_flow,3,3,E00450,
+racon,medaka,data_flow,1,1,E00151,
+racon,minimap2,data_flow,2,2,E00167,
+racon,nanopolish,data_flow,1,1,E00198,
+racon,prokka,data_flow,1,1,E00378,
+racon,quast,data_flow,5,5,E00244,
+racon,requests,data_flow,1,1,E00226,
+rasusa,autocycler,data_flow,2,2,E00017,
+rasusa,bakta,data_flow,1,1,E00423,
+rasusa,busco,data_flow,1,1,E00354,
+rasusa,canu,data_flow,2,2,E00043,
+rasusa,dfast,data_flow,1,1,E00443,
+rasusa,dragonflye,data_flow,1,1,E00097,
+rasusa,flye,data_flow,1,1,E00111,
+rasusa,gunzip,data_flow,3,3,E00129,
+rasusa,kmerfinder,data_flow,1,1,E00216,
+rasusa,kraken2,data_flow,1,1,E00209,
+rasusa,liftoff,data_flow,3,3,E00460,
+rasusa,medaka,data_flow,1,1,E00144,
+rasusa,megahit,data_flow,1,1,E00036,
+rasusa,miniasm,data_flow,1,1,E00064,
+rasusa,minimap2,data_flow,5,5,E00057,
+rasusa,nanopolish,data_flow,1,1,E00191,
+rasusa,prokka,data_flow,1,1,E00388,
+rasusa,quast,data_flow,5,5,E00254,
+rasusa,racon,data_flow,1,1,E00088,
+rasusa,raven-assembler,data_flow,1,1,E00104,
+rasusa,requests,data_flow,1,1,E00236,
+rasusa,unicycler,data_flow,1,1,E00029,
+raven-assembler,autocycler,data_flow,1,1,E00120,
+raven-assembler,bakta,data_flow,1,1,E00415,
+raven-assembler,busco,data_flow,1,1,E00346,
+raven-assembler,dfast,data_flow,1,1,E00435,
+raven-assembler,gunzip,data_flow,3,3,E00138,
+raven-assembler,liftoff,data_flow,3,3,E00452,
+raven-assembler,medaka,data_flow,1,1,E00153,
+raven-assembler,minimap2,data_flow,2,2,E00169,
+raven-assembler,nanopolish,data_flow,1,1,E00200,
+raven-assembler,prokka,data_flow,1,1,E00380,
+raven-assembler,quast,data_flow,5,5,E00246,
+raven-assembler,requests,data_flow,1,1,E00228,
+requests,liftoff,data_flow,3,3,E00466,
+requests,ncbi-datasets-cli,data_flow,1,1,E00240,
+requests,quast,data_flow,3,3,E00294,
+samtools,nanopolish,data_flow,1,1,E00204,
+tar,kraken2,data_flow,2,2,E00208,
+unicycler,autocycler,data_flow,1,1,E00115,
+unicycler,bakta,data_flow,1,1,E00410,
+unicycler,busco,data_flow,1,1,E00341,
+unicycler,dfast,data_flow,1,1,E00430,
+unicycler,gunzip,data_flow,3,3,E00133,
+unicycler,liftoff,data_flow,3,3,E00447,
+unicycler,medaka,data_flow,1,1,E00148,
+unicycler,minimap2,data_flow,2,2,E00164,
+unicycler,nanopolish,data_flow,1,1,E00195,
+unicycler,prokka,data_flow,1,1,E00375,
+unicycler,quast,data_flow,5,5,E00241,
+unicycler,requests,data_flow,1,1,E00223,
+untar,bakta,data_flow,1,1,E00428,
+untar,kmerfinder,data_flow,1,1,E00219,
+autocycler,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00016, E00001); no directed path between any process of the two tools"
+autocycler,kmerfinder,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00016, E00215); no directed path between any process of the two tools"
+autocycler,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00016, E00207); no directed path between any process of the two tools"
+bakta,busco,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00426, E00357); no directed path between any process of the two tools"
+bakta,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00422, E00001); no directed path between any process of the two tools"
+bakta,kmerfinder,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00422, E00215); no directed path between any process of the two tools"
+bakta,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00422, E00207); no directed path between any process of the two tools"
+bakta,quast,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00426, E00257); no directed path between any process of the two tools"
+bakta,requests,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00426, E00239); no directed path between any process of the two tools"
+busco,bakta,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00357, E00426); no directed path between any process of the two tools"
+busco,dfast,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00357, E00446); no directed path between any process of the two tools"
+busco,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00353, E00001); no directed path between any process of the two tools"
+busco,kmerfinder,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00353, E00215); no directed path between any process of the two tools"
+busco,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00353, E00207); no directed path between any process of the two tools"
+busco,liftoff,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00357, E00463); no directed path between any process of the two tools"
+busco,prokka,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00357, E00391); no directed path between any process of the two tools"
+busco,quast,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00357, E00257); no directed path between any process of the two tools"
+busco,requests,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00357, E00239); no directed path between any process of the two tools"
+canu,dragonflye,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00046, E00100); no directed path between any process of the two tools"
+canu,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00042, E00001); no directed path between any process of the two tools"
+canu,flye,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00046, E00114); no directed path between any process of the two tools"
+canu,kmerfinder,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00042, E00215); no directed path between any process of the two tools"
+canu,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00042, E00207); no directed path between any process of the two tools"
+canu,megahit,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00046, E00039); no directed path between any process of the two tools"
+canu,miniasm,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00046, E00067); no directed path between any process of the two tools"
+canu,racon,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00046, E00091); no directed path between any process of the two tools"
+canu,raven-assembler,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00046, E00107); no directed path between any process of the two tools"
+canu,unicycler,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00046, E00032); no directed path between any process of the two tools"
+dfast,busco,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00446, E00357); no directed path between any process of the two tools"
+dfast,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00442, E00001); no directed path between any process of the two tools"
+dfast,kmerfinder,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00442, E00215); no directed path between any process of the two tools"
+dfast,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00442, E00207); no directed path between any process of the two tools"
+dfast,quast,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00446, E00257); no directed path between any process of the two tools"
+dfast,requests,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00446, E00239); no directed path between any process of the two tools"
+dragonflye,canu,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00100, E00046); no directed path between any process of the two tools"
+dragonflye,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00096, E00001); no directed path between any process of the two tools"
+dragonflye,flye,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00100, E00114); no directed path between any process of the two tools"
+dragonflye,kmerfinder,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00096, E00215); no directed path between any process of the two tools"
+dragonflye,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00096, E00207); no directed path between any process of the two tools"
+dragonflye,megahit,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00100, E00039); no directed path between any process of the two tools"
+dragonflye,miniasm,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00100, E00067); no directed path between any process of the two tools"
+dragonflye,racon,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00100, E00091); no directed path between any process of the two tools"
+dragonflye,raven-assembler,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00100, E00107); no directed path between any process of the two tools"
+dragonflye,unicycler,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00100, E00032); no directed path between any process of the two tools"
+fastqc,autocycler,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00016); no directed path between any process of the two tools"
+fastqc,bakta,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00422); no directed path between any process of the two tools"
+fastqc,busco,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00353); no directed path between any process of the two tools"
+fastqc,canu,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00042); no directed path between any process of the two tools"
+fastqc,dfast,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00442); no directed path between any process of the two tools"
+fastqc,dragonflye,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00096); no directed path between any process of the two tools"
+fastqc,filtlong,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00010); no directed path between any process of the two tools"
+fastqc,flye,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00110); no directed path between any process of the two tools"
+fastqc,gunzip,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00370); no directed path between any process of the two tools"
+fastqc,kmerfinder,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00215); no directed path between any process of the two tools"
+fastqc,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00207); no directed path between any process of the two tools"
+fastqc,liftoff,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00459); no directed path between any process of the two tools"
+fastqc,medaka,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00143); no directed path between any process of the two tools"
+fastqc,megahit,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00035); no directed path between any process of the two tools"
+fastqc,miniasm,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00063); no directed path between any process of the two tools"
+fastqc,minimap2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00056); no directed path between any process of the two tools"
+fastqc,nanopolish,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00190); no directed path between any process of the two tools"
+fastqc,prokka,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00387); no directed path between any process of the two tools"
+fastqc,quast,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00253); no directed path between any process of the two tools"
+fastqc,racon,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00087); no directed path between any process of the two tools"
+fastqc,raven-assembler,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00103); no directed path between any process of the two tools"
+fastqc,requests,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00235); no directed path between any process of the two tools"
+fastqc,unicycler,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00001, E00028); no directed path between any process of the two tools"
+filtlong,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00010, E00001); no directed path between any process of the two tools"
+filtlong,nanoplot,parallel_co_use,0,0,,"both consume CAT_FASTQ_LONG.reads (E00011, E00005); no directed path between any process of the two tools"
+filtlong,toulligqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_LONG.reads (E00011, E00006); no directed path between any process of the two tools"
+flye,canu,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00114, E00046); no directed path between any process of the two tools"
+flye,dragonflye,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00114, E00100); no directed path between any process of the two tools"
+flye,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00110, E00001); no directed path between any process of the two tools"
+flye,kmerfinder,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00110, E00215); no directed path between any process of the two tools"
+flye,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00110, E00207); no directed path between any process of the two tools"
+flye,megahit,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00114, E00039); no directed path between any process of the two tools"
+flye,miniasm,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00114, E00067); no directed path between any process of the two tools"
+flye,racon,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00114, E00091); no directed path between any process of the two tools"
+flye,raven-assembler,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00114, E00107); no directed path between any process of the two tools"
+flye,unicycler,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00114, E00032); no directed path between any process of the two tools"
+gunzip,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00370, E00001); no directed path between any process of the two tools"
+gunzip,kmerfinder,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00370, E00215); no directed path between any process of the two tools"
+gunzip,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00370, E00207); no directed path between any process of the two tools"
+kmerfinder,autocycler,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00215, E00016); no directed path between any process of the two tools"
+kmerfinder,bakta,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00215, E00422); no directed path between any process of the two tools"
+kmerfinder,busco,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00215, E00353); no directed path between any process of the two tools"
+kmerfinder,canu,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00215, E00042); no directed path between any process of the two tools"
+kmerfinder,dfast,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00215, E00442); no directed path between any process of the two tools"
+kmerfinder,dragonflye,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00215, E00096); no directed path between any process of the two tools"
+kmerfinder,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00215, E00001); no directed path between any process of the two tools"
+kmerfinder,flye,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00215, E00110); no directed path between any process of the two tools"
+kmerfinder,gunzip,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00215, E00370); no directed path between any process of the two tools"
+kmerfinder,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00215, E00207); no directed path between any process of the two tools"
+kmerfinder,medaka,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00215, E00143); no directed path between any process of the two tools"
+kmerfinder,megahit,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00215, E00035); no directed path between any process of the two tools"
+kmerfinder,miniasm,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00215, E00063); no directed path between any process of the two tools"
+kmerfinder,minimap2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00215, E00056); no directed path between any process of the two tools"
+kmerfinder,nanopolish,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00215, E00190); no directed path between any process of the two tools"
+kmerfinder,prokka,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00215, E00387); no directed path between any process of the two tools"
+kmerfinder,racon,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00215, E00087); no directed path between any process of the two tools"
+kmerfinder,raven-assembler,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00215, E00103); no directed path between any process of the two tools"
+kmerfinder,unicycler,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00215, E00028); no directed path between any process of the two tools"
+kraken2,autocycler,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00016); no directed path between any process of the two tools"
+kraken2,bakta,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00422); no directed path between any process of the two tools"
+kraken2,busco,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00353); no directed path between any process of the two tools"
+kraken2,canu,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00042); no directed path between any process of the two tools"
+kraken2,dfast,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00442); no directed path between any process of the two tools"
+kraken2,dragonflye,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00096); no directed path between any process of the two tools"
+kraken2,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00001); no directed path between any process of the two tools"
+kraken2,flye,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00110); no directed path between any process of the two tools"
+kraken2,gunzip,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00370); no directed path between any process of the two tools"
+kraken2,kmerfinder,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00215); no directed path between any process of the two tools"
+kraken2,liftoff,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00459); no directed path between any process of the two tools"
+kraken2,medaka,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00143); no directed path between any process of the two tools"
+kraken2,megahit,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00035); no directed path between any process of the two tools"
+kraken2,miniasm,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00063); no directed path between any process of the two tools"
+kraken2,minimap2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00056); no directed path between any process of the two tools"
+kraken2,nanopolish,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00190); no directed path between any process of the two tools"
+kraken2,prokka,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00387); no directed path between any process of the two tools"
+kraken2,quast,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00253); no directed path between any process of the two tools"
+kraken2,racon,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00087); no directed path between any process of the two tools"
+kraken2,raven-assembler,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00103); no directed path between any process of the two tools"
+kraken2,requests,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00235); no directed path between any process of the two tools"
+kraken2,unicycler,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00207, E00028); no directed path between any process of the two tools"
+liftoff,busco,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00463, E00357); no directed path between any process of the two tools"
+liftoff,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00459, E00001); no directed path between any process of the two tools"
+liftoff,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00459, E00207); no directed path between any process of the two tools"
+liftoff,quast,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00463, E00257); no directed path between any process of the two tools"
+medaka,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00143, E00001); no directed path between any process of the two tools"
+medaka,kmerfinder,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00143, E00215); no directed path between any process of the two tools"
+medaka,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00143, E00207); no directed path between any process of the two tools"
+megahit,canu,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00039, E00046); no directed path between any process of the two tools"
+megahit,dragonflye,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00039, E00100); no directed path between any process of the two tools"
+megahit,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00035, E00001); no directed path between any process of the two tools"
+megahit,flye,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00039, E00114); no directed path between any process of the two tools"
+megahit,kmerfinder,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00035, E00215); no directed path between any process of the two tools"
+megahit,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00035, E00207); no directed path between any process of the two tools"
+megahit,miniasm,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00039, E00067); no directed path between any process of the two tools"
+megahit,racon,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00039, E00091); no directed path between any process of the two tools"
+megahit,raven-assembler,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00039, E00107); no directed path between any process of the two tools"
+megahit,unicycler,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00039, E00032); no directed path between any process of the two tools"
+miniasm,canu,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00067, E00046); no directed path between any process of the two tools"
+miniasm,dragonflye,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00067, E00100); no directed path between any process of the two tools"
+miniasm,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00063, E00001); no directed path between any process of the two tools"
+miniasm,flye,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00067, E00114); no directed path between any process of the two tools"
+miniasm,kmerfinder,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00063, E00215); no directed path between any process of the two tools"
+miniasm,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00063, E00207); no directed path between any process of the two tools"
+miniasm,megahit,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00067, E00039); no directed path between any process of the two tools"
+miniasm,raven-assembler,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00067, E00107); no directed path between any process of the two tools"
+miniasm,unicycler,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00067, E00032); no directed path between any process of the two tools"
+minimap2,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00056, E00001); no directed path between any process of the two tools"
+minimap2,kmerfinder,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00056, E00215); no directed path between any process of the two tools"
+minimap2,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00056, E00207); no directed path between any process of the two tools"
+nanoplot,filtlong,parallel_co_use,0,0,,"both consume CAT_FASTQ_LONG.reads (E00005, E00011); no directed path between any process of the two tools"
+nanoplot,porechop,parallel_co_use,0,0,,"both consume CAT_FASTQ_LONG.reads (E00005, E00007); no directed path between any process of the two tools"
+nanoplot,toulligqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_LONG.reads (E00005, E00006); no directed path between any process of the two tools"
+nanopolish,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00190, E00001); no directed path between any process of the two tools"
+nanopolish,kmerfinder,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00190, E00215); no directed path between any process of the two tools"
+nanopolish,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00190, E00207); no directed path between any process of the two tools"
+porechop,nanoplot,parallel_co_use,0,0,,"both consume CAT_FASTQ_LONG.reads (E00007, E00005); no directed path between any process of the two tools"
+porechop,toulligqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_LONG.reads (E00007, E00006); no directed path between any process of the two tools"
+prokka,busco,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00391, E00357); no directed path between any process of the two tools"
+prokka,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00387, E00001); no directed path between any process of the two tools"
+prokka,kmerfinder,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00387, E00215); no directed path between any process of the two tools"
+prokka,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00387, E00207); no directed path between any process of the two tools"
+prokka,quast,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00391, E00257); no directed path between any process of the two tools"
+prokka,requests,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00391, E00239); no directed path between any process of the two tools"
+quast,bakta,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00257, E00426); no directed path between any process of the two tools"
+quast,busco,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00257, E00357); no directed path between any process of the two tools"
+quast,dfast,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00257, E00446); no directed path between any process of the two tools"
+quast,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00253, E00001); no directed path between any process of the two tools"
+quast,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00253, E00207); no directed path between any process of the two tools"
+quast,liftoff,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00257, E00463); no directed path between any process of the two tools"
+quast,prokka,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00257, E00391); no directed path between any process of the two tools"
+racon,canu,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00091, E00046); no directed path between any process of the two tools"
+racon,dragonflye,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00091, E00100); no directed path between any process of the two tools"
+racon,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00087, E00001); no directed path between any process of the two tools"
+racon,flye,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00091, E00114); no directed path between any process of the two tools"
+racon,kmerfinder,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00087, E00215); no directed path between any process of the two tools"
+racon,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00087, E00207); no directed path between any process of the two tools"
+racon,megahit,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00091, E00039); no directed path between any process of the two tools"
+racon,raven-assembler,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00091, E00107); no directed path between any process of the two tools"
+racon,unicycler,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00091, E00032); no directed path between any process of the two tools"
+raven-assembler,canu,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00107, E00046); no directed path between any process of the two tools"
+raven-assembler,dragonflye,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00107, E00100); no directed path between any process of the two tools"
+raven-assembler,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00103, E00001); no directed path between any process of the two tools"
+raven-assembler,flye,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00107, E00114); no directed path between any process of the two tools"
+raven-assembler,kmerfinder,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00103, E00215); no directed path between any process of the two tools"
+raven-assembler,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00103, E00207); no directed path between any process of the two tools"
+raven-assembler,megahit,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00107, E00039); no directed path between any process of the two tools"
+raven-assembler,miniasm,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00107, E00067); no directed path between any process of the two tools"
+raven-assembler,racon,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00107, E00091); no directed path between any process of the two tools"
+raven-assembler,unicycler,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00107, E00032); no directed path between any process of the two tools"
+requests,bakta,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00239, E00426); no directed path between any process of the two tools"
+requests,busco,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00239, E00357); no directed path between any process of the two tools"
+requests,dfast,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00239, E00446); no directed path between any process of the two tools"
+requests,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00235, E00001); no directed path between any process of the two tools"
+requests,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00235, E00207); no directed path between any process of the two tools"
+requests,prokka,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00239, E00391); no directed path between any process of the two tools"
+toulligqc,filtlong,parallel_co_use,0,0,,"both consume CAT_FASTQ_LONG.reads (E00006, E00011); no directed path between any process of the two tools"
+toulligqc,nanoplot,parallel_co_use,0,0,,"both consume CAT_FASTQ_LONG.reads (E00006, E00005); no directed path between any process of the two tools"
+toulligqc,porechop,parallel_co_use,0,0,,"both consume CAT_FASTQ_LONG.reads (E00006, E00007); no directed path between any process of the two tools"
+unicycler,canu,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00032, E00046); no directed path between any process of the two tools"
+unicycler,dragonflye,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00032, E00100); no directed path between any process of the two tools"
+unicycler,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00028, E00001); no directed path between any process of the two tools"
+unicycler,flye,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00032, E00114); no directed path between any process of the two tools"
+unicycler,kmerfinder,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00028, E00215); no directed path between any process of the two tools"
+unicycler,kraken2,parallel_co_use,0,0,,"both consume CAT_FASTQ_SHORT.reads (E00028, E00207); no directed path between any process of the two tools"
+unicycler,megahit,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00032, E00039); no directed path between any process of the two tools"
+unicycler,miniasm,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00032, E00067); no directed path between any process of the two tools"
+unicycler,racon,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00032, E00091); no directed path between any process of the two tools"
+unicycler,raven-assembler,parallel_co_use,0,0,,"both consume AUTOCYCLER_SUBSAMPLE.subsampled_reads (E00032, E00107); no directed path between any process of the two tools"

@@ -1,0 +1,10 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_FASTQREPAIR:FASTQREPAIR:FQ_LINT,FQ_LINT,modules/nf-core/fq/lint/main.nf,1,fq,fq,fq,environment.yml
+NFCORE_FASTQREPAIR:FASTQREPAIR:FASTQ_PASSTHROUGH,FASTQ_PASSTHROUGH,modules/local/fastq_passthrough/main.nf,1,fastq_passthrough,,coreutils;gzip,environment.yml
+NFCORE_FASTQREPAIR:FASTQREPAIR:GZRT,GZRT,modules/nf-core/gzrt/main.nf,1,gzrt,gzrt,gzrt,environment.yml
+NFCORE_FASTQREPAIR:FASTQREPAIR:FASTQ_REPAIR_WIPERTOOLS:WIPERTOOLS_FASTQSCATTER,WIPERTOOLS_FASTQSCATTER,modules/nf-core/wipertools/fastqscatter/main.nf,1,wipertools,fastqscatter,wipertools,environment.yml
+NFCORE_FASTQREPAIR:FASTQREPAIR:FASTQ_REPAIR_WIPERTOOLS:WIPERTOOLS_FASTQGATHER,WIPERTOOLS_FASTQGATHER,modules/nf-core/wipertools/fastqgather/main.nf,1,wipertools,fastqgather,wipertools,environment.yml
+NFCORE_FASTQREPAIR:FASTQREPAIR:FASTQ_REPAIR_WIPERTOOLS:WIPERTOOLS_REPORTGATHER,WIPERTOOLS_REPORTGATHER,modules/nf-core/wipertools/reportgather/main.nf,1,wipertools,reportgather,wipertools,environment.yml
+NFCORE_FASTQREPAIR:FASTQREPAIR:BBMAP_REPAIR,BBMAP_REPAIR,modules/nf-core/bbmap/repair/main.nf,1,bbmap,repair,bbmap;pigz,environment.yml
+NFCORE_FASTQREPAIR:FASTQREPAIR:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_FASTQREPAIR:FASTQREPAIR:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

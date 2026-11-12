@@ -1,0 +1,69 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+findutils,centrifuge,data_flow,1,1,E00006,
+findutils,centrifuger,data_flow,1,1,E00007,
+findutils,diamond,data_flow,1,1,E00008,
+findutils,ganon,data_flow,2,2,E00009,
+findutils,kaiju,data_flow,1,1,E00011,
+findutils,kmcp,data_flow,2,2,E00018,
+findutils,kraken2,data_flow,1,1,E00012,
+findutils,krakenuniq,data_flow,1,1,E00017,
+findutils,malt,data_flow,2,2,E00021,
+findutils,metacache,data_flow,1,1,E00024,
+findutils,seqkit,data_flow,2,2,E00003,
+findutils,sourmash,data_flow,2,2,E00025,
+findutils,sylph,data_flow,1,1,E00031,
+kraken2,bracken,data_flow,1,1,E00016,
+p7zip,malt,data_flow,1,1,E00023,
+seqkit,findutils,data_flow,1,1,E00005,
+centrifuge,centrifuger,parallel_co_use,0,0,,"both consume FIND_CONCATENATE_DNA.file_out (E00006, E00007); no directed path between any process of the two tools"
+centrifuge,kraken2,parallel_co_use,0,0,,"both consume FIND_CONCATENATE_DNA.file_out (E00006, E00012); no directed path between any process of the two tools"
+centrifuger,centrifuge,parallel_co_use,0,0,,"both consume FIND_CONCATENATE_DNA.file_out (E00007, E00006); no directed path between any process of the two tools"
+centrifuger,kraken2,parallel_co_use,0,0,,"both consume FIND_CONCATENATE_DNA.file_out (E00007, E00012); no directed path between any process of the two tools"
+ganon,kmcp,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00009, E00018); no directed path between any process of the two tools"
+ganon,krakenuniq,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00009, E00017); no directed path between any process of the two tools"
+ganon,malt,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00009, E00022); no directed path between any process of the two tools"
+ganon,metacache,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00009, E00024); no directed path between any process of the two tools"
+ganon,sourmash,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00009, E00025); no directed path between any process of the two tools"
+ganon,sylph,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00009, E00031); no directed path between any process of the two tools"
+kmcp,ganon,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00018, E00009); no directed path between any process of the two tools"
+kmcp,krakenuniq,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00018, E00017); no directed path between any process of the two tools"
+kmcp,malt,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00018, E00022); no directed path between any process of the two tools"
+kmcp,metacache,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00018, E00024); no directed path between any process of the two tools"
+kmcp,sourmash,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00018, E00025); no directed path between any process of the two tools"
+kmcp,sylph,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00018, E00031); no directed path between any process of the two tools"
+kraken2,centrifuge,parallel_co_use,0,0,,"both consume FIND_CONCATENATE_DNA.file_out (E00012, E00006); no directed path between any process of the two tools"
+kraken2,centrifuger,parallel_co_use,0,0,,"both consume FIND_CONCATENATE_DNA.file_out (E00012, E00007); no directed path between any process of the two tools"
+krakenuniq,ganon,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00017, E00009); no directed path between any process of the two tools"
+krakenuniq,kmcp,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00017, E00018); no directed path between any process of the two tools"
+krakenuniq,malt,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00017, E00022); no directed path between any process of the two tools"
+krakenuniq,metacache,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00017, E00024); no directed path between any process of the two tools"
+krakenuniq,sourmash,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00017, E00025); no directed path between any process of the two tools"
+krakenuniq,sylph,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00017, E00031); no directed path between any process of the two tools"
+malt,ganon,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00022, E00009); no directed path between any process of the two tools"
+malt,kmcp,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00022, E00018); no directed path between any process of the two tools"
+malt,krakenuniq,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00022, E00017); no directed path between any process of the two tools"
+malt,metacache,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00022, E00024); no directed path between any process of the two tools"
+malt,seqkit,parallel_co_use,0,0,,"both consume UNPIGZ_AA.file_out (E00021, E00003); no directed path between any process of the two tools"
+malt,sourmash,parallel_co_use,0,0,,"both consume UNPIGZ_AA.file_out (E00021, E00028); no directed path between any process of the two tools"
+malt,sylph,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00022, E00031); no directed path between any process of the two tools"
+metacache,ganon,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00024, E00009); no directed path between any process of the two tools"
+metacache,kmcp,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00024, E00018); no directed path between any process of the two tools"
+metacache,krakenuniq,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00024, E00017); no directed path between any process of the two tools"
+metacache,malt,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00024, E00022); no directed path between any process of the two tools"
+metacache,sourmash,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00024, E00025); no directed path between any process of the two tools"
+metacache,sylph,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00024, E00031); no directed path between any process of the two tools"
+seqkit,malt,parallel_co_use,0,0,,"both consume UNPIGZ_AA.file_out (E00003, E00021); no directed path between any process of the two tools"
+seqkit,sourmash,parallel_co_use,0,0,,"both consume UNPIGZ_AA.file_out (E00003, E00028); no directed path between any process of the two tools"
+sourmash,ganon,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00025, E00009); no directed path between any process of the two tools"
+sourmash,kmcp,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00025, E00018); no directed path between any process of the two tools"
+sourmash,krakenuniq,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00025, E00017); no directed path between any process of the two tools"
+sourmash,malt,parallel_co_use,0,0,,"both consume UNPIGZ_AA.file_out (E00028, E00021); no directed path between any process of the two tools"
+sourmash,metacache,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00025, E00024); no directed path between any process of the two tools"
+sourmash,seqkit,parallel_co_use,0,0,,"both consume UNPIGZ_AA.file_out (E00028, E00003); no directed path between any process of the two tools"
+sourmash,sylph,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00025, E00031); no directed path between any process of the two tools"
+sylph,ganon,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00031, E00009); no directed path between any process of the two tools"
+sylph,kmcp,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00031, E00018); no directed path between any process of the two tools"
+sylph,krakenuniq,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00031, E00017); no directed path between any process of the two tools"
+sylph,malt,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00031, E00022); no directed path between any process of the two tools"
+sylph,metacache,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00031, E00024); no directed path between any process of the two tools"
+sylph,sourmash,parallel_co_use,0,0,,"both consume UNPIGZ_DNA.file_out (E00031, E00025); no directed path between any process of the two tools"

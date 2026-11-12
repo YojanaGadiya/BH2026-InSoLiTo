@@ -1,0 +1,105 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_AIRRFLOW:AIRRFLOW:DATABASES:UNZIP_IGBLAST,UNZIP_DB,modules/local/unzip_db.nf,1,unzip_db,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:DATABASES:UNZIP_REFERENCE_FASTA,UNZIP_DB,modules/local/unzip_db.nf,1,unzip_db,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:DATABASES:VALIDATE_IGBLAST_DB,VALIDATE_IGBLAST_DB,modules/local/validate_igblast_db.nf,1,validate_igblast_db,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:DATABASES:FETCH_DATABASES,FETCH_DATABASES,modules/local/fetch_databases.nf,1,fetch_databases,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SC_RAW_INPUT:FASTQ_INPUT_CHECK:SAMPLESHEET_CHECK,SAMPLESHEET_CHECK,modules/local/samplesheet_check.nf,1,samplesheet_check,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SC_RAW_INPUT:FASTQ_INPUT_CHECK:CAT_FASTQ,CAT_FASTQ,modules/nf-core/cat/fastq/main.nf,1,cat,cat,sed,environment.yml
+NFCORE_AIRRFLOW:AIRRFLOW:SC_RAW_INPUT:UNZIP_CELLRANGERDB,UNZIP_CELLRANGERDB,modules/local/unzip_cellrangerdb.nf,1,unzip_cellrangerdb,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SC_RAW_INPUT:CELLRANGER_VDJ,CELLRANGER_VDJ,modules/nf-core/cellranger/vdj/main.nf,1,cellranger,cellranger,,meta.yml
+NFCORE_AIRRFLOW:AIRRFLOW:SC_RAW_INPUT:RENAME_FILE_TSV,RENAME_FILE,modules/local/rename_file.nf,1,rename_file,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SC_RAW_INPUT:CHANGEO_CONVERTDB_FASTA_FROM_AIRR,CHANGEO_CONVERTDB_FASTA,modules/local/changeo/changeo_convertdb_fasta.nf,1,changeo_convertdb_fasta,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:RNASEQ_INPUT:FASTQ_INPUT_CHECK:SAMPLESHEET_CHECK,SAMPLESHEET_CHECK,modules/local/samplesheet_check.nf,1,samplesheet_check,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:RNASEQ_INPUT:FASTQ_INPUT_CHECK:CAT_FASTQ,CAT_FASTQ,modules/nf-core/cat/fastq/main.nf,1,cat,cat,sed,environment.yml
+NFCORE_AIRRFLOW:AIRRFLOW:RNASEQ_INPUT:FASTP,FASTP,modules/nf-core/fastp/main.nf,1,fastp,fastp,fastp,environment.yml
+NFCORE_AIRRFLOW:AIRRFLOW:RNASEQ_INPUT:RENAME_FASTQ_TRUST4,RENAME_FASTQ,modules/local/rename_fastq.nf,1,rename_fastq,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:RNASEQ_INPUT:PREPARE_TRUST4_REFERENCE,PREPARE_TRUST4_REFERENCE,modules/local/prepare_trust4_reference.nf,1,prepare_trust4_reference,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:RNASEQ_INPUT:TRUST4,TRUST4,modules/nf-core/trust4/main.nf,1,trust4,trust4,trust4,environment.yml
+NFCORE_AIRRFLOW:AIRRFLOW:RNASEQ_INPUT:CHANGEO_PARSEDB_SELECT_LOCUS,CHANGEO_PARSEDB_SELECT_LOCUS,modules/local/changeo/changeo_parsedb_select_locus.nf,1,changeo_parsedb_select_locus,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:RNASEQ_INPUT:CHANGEO_CONVERTDB_FASTA_FROM_AIRR,CHANGEO_CONVERTDB_FASTA,modules/local/changeo/changeo_convertdb_fasta.nf,1,changeo_convertdb_fasta,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:FASTQ_INPUT_CHECK:SAMPLESHEET_CHECK,SAMPLESHEET_CHECK,modules/local/samplesheet_check.nf,1,samplesheet_check,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:FASTQ_INPUT_CHECK:CAT_FASTQ,CAT_FASTQ,modules/nf-core/cat/fastq/main.nf,1,cat,cat,sed,environment.yml
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_SANS_UMI:FASTP,FASTP,modules/nf-core/fastp/main.nf,1,fastp,fastp,fastp,environment.yml
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_SANS_UMI:GUNZIP_SANS_UMI,GUNZIP,modules/local/gunzip.nf,1,gunzip,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_SANS_UMI:PRESTO_ASSEMBLEPAIRS_SANS_UMI,PRESTO_ASSEMBLEPAIRS,modules/local/presto/presto_assemblepairs.nf,1,presto_assemblepairs,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_SANS_UMI:PRESTO_FILTERSEQ_POSTASSEMBLY_SANS_UMI,PRESTO_FILTERSEQ_POSTASSEMBLY,modules/local/presto/presto_filterseq_postassembly.nf,1,presto_filterseq_postassembly,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_SANS_UMI:PRESTO_MASKPRIMERS_ALIGN_SANSUMI_FWD,PRESTO_MASKPRIMERS_ALIGN,modules/local/presto/presto_maskprimers_align.nf,1,presto_maskprimers_align,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_SANS_UMI:PRESTO_MASKPRIMERS_ALIGN_SANSUMI_REV,PRESTO_MASKPRIMERS_ALIGN,modules/local/presto/presto_maskprimers_align.nf,1,presto_maskprimers_align,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_SANS_UMI:PRESTO_MASKPRIMERS_SCORE_SANSUMI_FWD,PRESTO_MASKPRIMERS_SCORE,modules/local/presto/presto_maskprimers_score.nf,1,presto_maskprimers_score,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_SANS_UMI:PRESTO_MASKPRIMERS_SCORE_SANSUMI_REV,PRESTO_MASKPRIMERS_SCORE,modules/local/presto/presto_maskprimers_score.nf,1,presto_maskprimers_score,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_SANS_UMI:FASTQC_POSTASSEMBLY_SANS_UMI,FASTQC_POSTASSEMBLY,modules/local/fastqc_postassembly.nf,1,fastqc_postassembly,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_SANS_UMI:PRESTO_PARSEHEADERS_PRIMERS_SANS_UMI,PRESTO_PARSEHEADERS_PRIMERS,modules/local/presto/presto_parseheaders_primers.nf,1,presto_parseheaders_primers,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_SANS_UMI:PRESTO_PARSEHEADERS_METADATA_SANS_UMI,PRESTO_PARSEHEADERS_METADATA,modules/local/presto/presto_parseheaders_metadata.nf,1,presto_parseheaders_metadata,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_SANS_UMI:PRESTO_COLLAPSESEQ_SANS_UMI,PRESTO_COLLAPSESEQ,modules/local/presto/presto_collapseseq.nf,1,presto_collapseseq,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_SANS_UMI:PRESTO_SPLITSEQ_SANS_UMI,PRESTO_SPLITSEQ,modules/local/presto/presto_splitseq.nf,1,presto_splitseq,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:FASTP,FASTP,modules/nf-core/fastp/main.nf,1,fastp,fastp,fastp,environment.yml
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:MERGE_UMI,MERGE_UMI,modules/local/merge_UMI.nf,1,merge_umi,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:RENAME_FASTQ_UMI,RENAME_FASTQ,modules/local/rename_fastq.nf,1,rename_fastq,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:GUNZIP_UMI,GUNZIP,modules/local/gunzip.nf,1,gunzip,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_FILTERSEQ_UMI,PRESTO_FILTERSEQ,modules/local/presto/presto_filterseq.nf,1,presto_filterseq,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_ALIGN_PRIMERS,PRESTO_MASKPRIMERS_ALIGN,modules/local/presto/presto_maskprimers_align.nf,1,presto_maskprimers_align,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_MASKPRIMERS_EXTRACT,PRESTO_MASKPRIMERS_EXTRACT,modules/local/presto/presto_maskprimers_extract.nf,1,presto_maskprimers_extract,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_PAIRSEQ_ALIGN,PRESTO_PAIRSEQ,modules/local/presto/presto_pairseq.nf,1,presto_pairseq,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_MASKPRIMERS_ALIGN_UMI_R1,PRESTO_MASKPRIMERS_ALIGN,modules/local/presto/presto_maskprimers_align.nf,1,presto_maskprimers_align,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_MASKPRIMERS_ALIGN_UMI_R2,PRESTO_MASKPRIMERS_ALIGN,modules/local/presto/presto_maskprimers_align.nf,1,presto_maskprimers_align,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_PAIRSEQ_UMI,PRESTO_PAIRSEQ,modules/local/presto/presto_pairseq.nf,1,presto_pairseq,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_MASKPRIMERS_EXTRACT_R1,PRESTO_MASKPRIMERS_EXTRACT,modules/local/presto/presto_maskprimers_extract.nf,1,presto_maskprimers_extract,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_MASKPRIMERS_EXTRACT_R2,PRESTO_MASKPRIMERS_EXTRACT,modules/local/presto/presto_maskprimers_extract.nf,1,presto_maskprimers_extract,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_PAIRSEQ_EXTRACT,PRESTO_PAIRSEQ,modules/local/presto/presto_pairseq.nf,1,presto_pairseq,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_MASKPRIMERS_SCORE_UMI_R1,PRESTO_MASKPRIMERS_SCORE,modules/local/presto/presto_maskprimers_score.nf,1,presto_maskprimers_score,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_MASKPRIMERS_SCORE_UMI_R2,PRESTO_MASKPRIMERS_SCORE,modules/local/presto/presto_maskprimers_score.nf,1,presto_maskprimers_score,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_CLUSTERSETS_UMI,PRESTO_CLUSTERSETS,modules/local/presto/presto_clustersets.nf,1,presto_clustersets,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_PARSE_CLUSTER_UMI,PRESTO_PARSE_CLUSTER,modules/local/presto/presto_parse_cluster.nf,1,presto_parse_cluster,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_PAIRSEQ_CLUSTERSETS,PRESTO_PAIRSEQ,modules/local/presto/presto_pairseq.nf,1,presto_pairseq,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_BUILDCONSENSUS_ALIGN_RACE,PRESTO_BUILDCONSENSUS,modules/local/presto/presto_buildconsensus.nf,1,presto_buildconsensus,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_BUILDCONSENSUS_EXTRACT,PRESTO_BUILDCONSENSUS,modules/local/presto/presto_buildconsensus.nf,1,presto_buildconsensus,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_BUILDCONSENSUS_UMI,PRESTO_BUILDCONSENSUS,modules/local/presto/presto_buildconsensus.nf,1,presto_buildconsensus,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_POSTCONSENSUS_PAIRSEQ_UMI,PRESTO_POSTCONSENSUS_PAIRSEQ,modules/local/presto/presto_postconsensus_pairseq.nf,1,presto_postconsensus_pairseq,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_ASSEMBLEPAIRS_SEQUENTIAL,PRESTO_ASSEMBLEPAIRS_SEQUENTIAL,modules/local/presto/presto_assemblepairs_sequential.nf,1,presto_assemblepairs_sequential,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_ASSEMBLEPAIRS_UMI,PRESTO_ASSEMBLEPAIRS,modules/local/presto/presto_assemblepairs.nf,1,presto_assemblepairs,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_ALIGN_CREGION,PRESTO_MASKPRIMERS_ALIGN,modules/local/presto/presto_maskprimers_align.nf,1,presto_maskprimers_align,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:FASTQC_POSTASSEMBLY_UMI,FASTQC_POSTASSEMBLY,modules/local/fastqc_postassembly.nf,1,fastqc_postassembly,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_PARSEHEADERS_COLLAPSE_UMI,PRESTO_PARSEHEADERS,modules/local/presto/presto_parseheaders.nf,1,presto_parseheaders,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_PARSEHEADERS_CREGION,PRESTO_PARSEHEADERS,modules/local/presto/presto_parseheaders.nf,1,presto_parseheaders,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_COLLAPSESEQ_ALIGN,PRESTO_COLLAPSESEQ,modules/local/presto/presto_collapseseq.nf,1,presto_collapseseq,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_COLLAPSESEQ_UMI,PRESTO_COLLAPSESEQ,modules/local/presto/presto_collapseseq.nf,1,presto_collapseseq,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_PARSEHEADERS_PRIMERS_UMI,PRESTO_PARSEHEADERS_PRIMERS,modules/local/presto/presto_parseheaders_primers.nf,1,presto_parseheaders_primers,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_COLLAPSESEQ_CREGION,PRESTO_COLLAPSESEQ,modules/local/presto/presto_collapseseq.nf,1,presto_collapseseq,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_PARSEHEADERS_METADATA_UMI,PRESTO_PARSEHEADERS_METADATA,modules/local/presto/presto_parseheaders_metadata.nf,1,presto_parseheaders_metadata,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SEQUENCE_ASSEMBLY:PRESTO_UMI:PRESTO_SPLITSEQ_UMI,PRESTO_SPLITSEQ,modules/local/presto/presto_splitseq.nf,1,presto_splitseq,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:ASSEMBLED_INPUT_CHECK:SAMPLESHEET_CHECK_ASSEMBLED,SAMPLESHEET_CHECK,modules/local/samplesheet_check.nf,1,samplesheet_check,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:ASSEMBLED_INPUT_CHECK:VALIDATE_INPUT,VALIDATE_INPUT,modules/local/enchantr/validate_input/main.nf,1,validate_input,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:ASSEMBLED_INPUT_CHECK:RENAME_FILE_FASTA,RENAME_FILE,modules/local/rename_file.nf,1,rename_file,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:ASSEMBLED_INPUT_CHECK:RENAME_FILE_TSV,RENAME_FILE,modules/local/rename_file.nf,1,rename_file,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:CHANGEO_CONVERTDB_FASTA_FROM_AIRR,CHANGEO_CONVERTDB_FASTA,modules/local/changeo/changeo_convertdb_fasta.nf,1,changeo_convertdb_fasta,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:VDJ_ANNOTATION:CHANGEO_ASSIGNGENES,CHANGEO_ASSIGNGENES,modules/local/changeo/changeo_assigngenes.nf,1,changeo_assigngenes,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:VDJ_ANNOTATION:CHANGEO_MAKEDB,CHANGEO_MAKEDB,modules/local/changeo/changeo_makedb.nf,1,changeo_makedb,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:VDJ_ANNOTATION:FILTER_QUALITY,FILTER_QUALITY,modules/local/reveal/filter_quality.nf,1,filter_quality,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:VDJ_ANNOTATION:CHANGEO_PARSEDB_SPLIT,CHANGEO_PARSEDB_SPLIT,modules/local/changeo/changeo_parsedb_split.nf,1,changeo_parsedb_split,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:VDJ_ANNOTATION:FILTER_JUNCTION_MOD3,FILTER_JUNCTION_MOD3,modules/local/reveal/filter_junction_mod3.nf,1,filter_junction_mod3,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:VDJ_ANNOTATION:ADD_META_TO_TAB,ADD_META_TO_TAB,modules/local/reveal/add_meta_to_tab.nf,1,add_meta_to_tab,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:BULK_QC_AND_FILTER:CHANGEO_CREATEGERMLINES,CHANGEO_CREATEGERMLINES,modules/local/changeo/changeo_creategermlines.nf,1,changeo_creategermlines,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:BULK_QC_AND_FILTER:REMOVE_CHIMERIC,REMOVE_CHIMERIC,modules/local/enchantr/remove_chimeric/main.nf,1,remove_chimeric,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:BULK_QC_AND_FILTER:DETECT_CONTAMINATION,DETECT_CONTAMINATION,modules/local/enchantr/detect_contamination/main.nf,8,detect_contamination,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:BULK_QC_AND_FILTER:COLLAPSE_DUPLICATES,COLLAPSE_DUPLICATES,modules/local/enchantr/collapse_duplicates/main.nf,8,collapse_duplicates,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:SINGLE_CELL_QC_AND_FILTERING:SINGLE_CELL_QC,SINGLE_CELL_QC,modules/local/enchantr/single_cell_qc/main.nf,8,single_cell_qc,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:NOVEL_ALLELES_AND_GENOTYPING:NOVEL_ALLELE_INFERENCE,NOVEL_ALLELE_INFERENCE,modules/local/enchantr/novel_allele_inference/main.nf,8,novel_allele_inference,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:NOVEL_ALLELES_AND_GENOTYPING:REASSIGN_ALLELES_NOVEL,REASSIGN_ALLELES,modules/local/enchantr/reassign_alleles/main.nf,8,reassign_alleles,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:NOVEL_ALLELES_AND_GENOTYPING:CLONAL_ASSIGNMENT_GENOTYPING,CLONAL_ASSIGNMENT,modules/local/enchantr/clonal_assignment/main.nf,8,clonal_assignment,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:NOVEL_ALLELES_AND_GENOTYPING:BAYESIAN_GENOTYPE_INFERENCE,BAYESIAN_GENOTYPE_INFERENCE,modules/local/enchantr/bayesian_genotype_inference/main.nf,8,bayesian_genotype_inference,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:NOVEL_ALLELES_AND_GENOTYPING:REASSIGN_ALLELES_GENOTYPE,REASSIGN_ALLELES,modules/local/enchantr/reassign_alleles/main.nf,8,reassign_alleles,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:CLONAL_ANALYSIS:FIND_CLONAL_THRESHOLD,FIND_THRESHOLD,modules/local/enchantr/find_threshold/main.nf,8,find_threshold,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:CLONAL_ANALYSIS:REPORT_THRESHOLD,FIND_THRESHOLD,modules/local/enchantr/find_threshold/main.nf,8,find_threshold,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:CLONAL_ANALYSIS:CLONAL_ASSIGNMENT,CLONAL_ASSIGNMENT,modules/local/enchantr/clonal_assignment/main.nf,8,clonal_assignment,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:CLONAL_ANALYSIS:REPERTOIRE_ANALYSIS,REPERTOIRE_ANALYSIS,modules/local/enchantr/repertoire_analysis/main.nf,8,repertoire_analysis,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:CLONAL_ANALYSIS:DOWSER_LINEAGES,DOWSER_LINEAGES,modules/local/enchantr/dowser_lineages/main.nf,8,dowser_lineages,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:TRANSLATE_EMBED:AMULETY_TRANSLATE,AMULETY_TRANSLATE,modules/nf-core/amulety/translate/main.nf,1,igblast,amulety;igblast,igblast;curl;pip;python;wget,environment.yml
+NFCORE_AIRRFLOW:AIRRFLOW:TRANSLATE_EMBED:AMULETY_EMBED_ANTIBERTY,AMULETY_EMBED,modules/nf-core/amulety/embed/main.nf,1,igblast,amulety,igblast;curl;pip;python;wget,environment.yml
+NFCORE_AIRRFLOW:AIRRFLOW:TRANSLATE_EMBED:AMULETY_EMBED_ANTIBERTA2,AMULETY_EMBED,modules/nf-core/amulety/embed/main.nf,1,igblast,amulety,igblast;curl;pip;python;wget,environment.yml
+NFCORE_AIRRFLOW:AIRRFLOW:TRANSLATE_EMBED:AMULETY_EMBED_ESM2,AMULETY_EMBED,modules/nf-core/amulety/embed/main.nf,1,igblast,amulety,igblast;curl;pip;python;wget,environment.yml
+NFCORE_AIRRFLOW:AIRRFLOW:TRANSLATE_EMBED:AMULETY_EMBED_BALMPAIRED,AMULETY_EMBED,modules/nf-core/amulety/embed/main.nf,1,igblast,amulety,igblast;curl;pip;python;wget,environment.yml
+NFCORE_AIRRFLOW:AIRRFLOW:REPERTOIRE_ANALYSIS_REPORTING:PARSE_LOGS,PARSE_LOGS,modules/local/parse_logs.nf,1,parse_logs,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:REPERTOIRE_ANALYSIS_REPORTING:GET_READS_PER_UMI,GET_READS_PER_UMI,modules/local/get_reads_per_umi.nf,1,get_reads_per_umi,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:REPERTOIRE_ANALYSIS_REPORTING:REPORT_FILE_SIZE,REPORT_FILE_SIZE,modules/local/enchantr/report_file_size/main.nf,1,report_file_size,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:REPERTOIRE_ANALYSIS_REPORTING:AIRRFLOW_REPORT,AIRRFLOW_REPORT,modules/local/airrflow_report/airrflow_report.nf,1,airrflow_report,,,module name
+NFCORE_AIRRFLOW:AIRRFLOW:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

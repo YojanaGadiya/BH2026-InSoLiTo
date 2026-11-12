@@ -1,0 +1,1004 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+assign_type,bedpe2bed,data_flow,1,1,E00178,
+assign_type,diff_hipeak,data_flow,1,1,E00179,
+atacqc,multiqc,data_flow,1,1,E00283,
+bedpe2bed,bioc_atacseqtfea,data_flow,2,2,E00216,
+bedpe2bed,ensembl_ucsc_convert,data_flow,2,2,E00204,
+bedpe2bed,homer_findmotifsgenome,data_flow,2,2,E00209,
+bedpe2bed,seqlevels_style,data_flow,2,2,E00199,
+bioc_enzymecut,custom,data_flow,1,1,E00269,
+bioc_enzymecut,maps_fend,data_flow,1,1,E00111,
+bioc_enzymecut,maps_merge,data_flow,1,1,E00119,
+bioc_pairs2hdf5,bioc_trackviewer,data_flow,1,1,E00243,
+bioc_pairs2hdf5,diff_hipeak,data_flow,1,1,E00183,
+bioc_pairs2hdf5,prepare_counts,data_flow,1,1,E00170,
+bioc_subsetloops,juicer_apa,data_flow,1,1,E00159,
+bwa,samtools,data_flow,1,1,E00013,
+call_hipeak,assign_type,data_flow,1,1,E00177,
+call_r1peak,bioc_atacseqtfea,data_flow,1,1,E00215,
+call_r1peak,diff_hipeak,data_flow,1,1,E00182,
+call_r1peak,ensembl_ucsc_convert,data_flow,1,1,E00203,
+call_r1peak,homer_findmotifsgenome,data_flow,1,1,E00208,
+call_r1peak,prepare_counts,data_flow,1,1,E00169,
+call_r1peak,seqlevels_style,data_flow,1,1,E00198,
+cat,homer,data_flow,1,1,E00068,
+chromsizes,bedgraph_trim,data_flow,1,1,E00081,
+chromsizes,bioc_enzymecut,data_flow,1,1,E00105,
+chromsizes,bioc_pairs2hdf5,data_flow,1,1,E00030,
+chromsizes,bioc_trackviewer,data_flow,1,1,E00246,
+chromsizes,circos_prepare,data_flow,1,1,E00261,
+chromsizes,cooler,data_flow,3,3,E00007,
+chromsizes,cooltools_eigscis,data_flow,1,1,E00072,
+chromsizes,genome_filter,data_flow,1,1,E00005,
+chromsizes,hicdcplus_call_loops,data_flow,1,1,E00145,
+chromsizes,hicdcplus_features,data_flow,1,1,E00140,
+chromsizes,hicexplorer_hicplottads,data_flow,1,1,E00095,
+chromsizes,homer_findhiccompartments,data_flow,1,1,E00078,
+chromsizes,homer_runhicpca,data_flow,1,1,E00075,
+chromsizes,juicer_eigenvector,data_flow,1,1,E00084,
+chromsizes,juicer_pre,data_flow,1,1,E00049,
+chromsizes,maps_cut,data_flow,1,1,E00109,
+chromsizes,maps_feature,data_flow,1,1,E00125,
+chromsizes,maps_fend,data_flow,1,1,E00101,
+chromsizes,pairsqc,data_flow,1,1,E00039,
+chromsizes,pairtools,data_flow,2,2,E00023,
+chromsizes,prepare_counts,data_flow,1,1,E00171,
+chromsizes,ucsc,data_flow,4,4,E00009,
+circos_prepare,circos,data_flow,1,1,E00262,
+circos_prepare,custom,data_flow,1,1,E00276,
+cooler,bioc_subsetloops,data_flow,2,2,E00235,
+cooler,bioc_trackviewer,data_flow,3,3,E00241,
+cooler,call_r1peak,data_flow,1,1,E00165,
+cooler,circos_prepare,data_flow,1,1,E00254,
+cooler,cooltools_eigscis,data_flow,2,2,E00071,
+cooler,cooltools_insulation,data_flow,1,1,E00091,
+cooler,cooltools_pileup,data_flow,1,1,E00161,
+cooler,custom,data_flow,1,1,E00268,
+cooler,hicexplorer_chicqualitycontrol,data_flow,1,1,E00062,
+cooler,hicexplorer_hicaggregatecontacts,data_flow,1,1,E00153,
+cooler,hicexplorer_hicfindtads,data_flow,1,1,E00092,
+cooler,hicexplorer_hicpca,data_flow,1,1,E00086,
+cooler,hicexplorer_hicplottads,data_flow,1,1,E00093,
+cooler,hicexplorer_hictransform,data_flow,1,1,E00087,
+cooler,juicer_apa,data_flow,1,1,E00158,
+cooler,pairtools,data_flow,1,1,E00029,
+cooler,peakachu_model,data_flow,1,1,E00147,
+cooler,peakachu_score,data_flow,1,1,E00148,
+cooler,post_counts,data_flow,1,1,E00175,
+cooler,virtual4c_by_cooltools,data_flow,1,1,E00239,
+cooltools_eigscis,circos_prepare,data_flow,1,1,E00249,
+cooltools_insulation,circos_prepare,data_flow,1,1,E00251,
+cooltools_pileup,plotnpz_by_cooltools,data_flow,1,1,E00163,
+cuatadapt,bwa,data_flow,1,1,E00011,
+cuatadapt,multiqc,data_flow,1,1,E00278,
+custom,multiqc,data_flow,2,2,E00284,
+diff_hipeak,bedpe2bed,data_flow,1,1,E00184,
+dump4homer,cat,data_flow,1,1,E00067,
+ensembl_ucsc_convert,homer_findmotifsgenome,data_flow,1,1,E00211,
+fastqc,multiqc,data_flow,1,1,E00277,
+get_scale,pairtools_sample,data_flow,1,1,E00027,
+gffread,atacqc,data_flow,1,1,E00057,
+gffread,bioc_atacseqtfea,data_flow,1,1,E00221,
+gffread,bioc_chippeakanno,data_flow,1,1,E00232,
+gffread,bioc_trackviewer,data_flow,1,1,E00245,
+gffread,circos_prepare,data_flow,1,1,E00260,
+gffread,gtf2bed,data_flow,1,1,E00003,
+gffread,homer_findmotifsgenome,data_flow,1,1,E00226,
+gunzip,atacqc,data_flow,1,1,E00056,
+gunzip,bedgraph_trim,data_flow,1,1,E00082,
+gunzip,bioc_atacseqtfea,data_flow,2,2,E00219,
+gunzip,bioc_chippeakanno,data_flow,1,1,E00231,
+gunzip,bioc_enzymecut,data_flow,1,1,E00104,
+gunzip,bioc_trackviewer,data_flow,1,1,E00244,
+gunzip,bwa,data_flow,1,1,E00010,
+gunzip,chromsizes,data_flow,1,1,E00004,
+gunzip,circos_prepare,data_flow,2,2,E00255,
+gunzip,cooler,data_flow,2,2,E00006,
+gunzip,cooltools_eigscis,data_flow,1,1,E00073,
+gunzip,genmap,data_flow,1,1,E00008,
+gunzip,gffread,data_flow,1,1,E00001,
+gunzip,gtf2bed,data_flow,1,1,E00002,
+gunzip,hicdcplus_call_loops,data_flow,1,1,E00144,
+gunzip,hicdcplus_features,data_flow,1,1,E00139,
+gunzip,hicexplorer_hicplottads,data_flow,1,1,E00098,
+gunzip,homer,data_flow,1,1,E00069,
+gunzip,homer_findhiccompartments,data_flow,1,1,E00079,
+gunzip,homer_findmotifsgenome,data_flow,2,2,E00212,
+gunzip,homer_runhicpca,data_flow,1,1,E00076,
+gunzip,juicer_eigenvector,data_flow,1,1,E00085,
+gunzip,macs2,data_flow,1,1,E00052,
+gunzip,maps_cut,data_flow,1,1,E00108,
+gunzip,maps_feature,data_flow,1,1,E00124,
+gunzip,maps_fend,data_flow,1,1,E00100,
+gunzip,post_counts,data_flow,1,1,E00174,
+gunzip,ucsc,data_flow,1,1,E00116,
+hicdcplus_call_loops,bioc_chippeakanno,data_flow,1,1,E00228,
+hicdcplus_call_loops,circos_prepare,data_flow,1,1,E00257,
+hicdcplus_call_loops,diffhic,data_flow,1,1,E00191,
+hicdcplus_call_loops,diffhicar,data_flow,1,1,E00188,
+hicdcplus_call_loops,diffset,data_flow,1,1,E00194,
+hicdcplus_call_loops,igv,data_flow,1,1,E00264,
+hicdcplus_call_loops,merge_interactions,data_flow,1,1,E00151,
+hicdcplus_features,custom,data_flow,1,1,E00272,
+hicdcplus_features,hicdcplus_call_loops,data_flow,1,1,E00142,
+hicexplorer_chicaggregatestatistic,hicexplorer_chicdifferentialtest,data_flow,1,1,E00186,
+hicexplorer_chicdifferentialtest,bioc_trackviewer,data_flow,1,1,E00234,
+hicexplorer_chicdifferentialtest,hicexplorer_chicplotviewpoint,data_flow,1,1,E00233,
+hicexplorer_chicqualitycontrol,hicexplorer_chicviewpoint,data_flow,1,1,E00065,
+hicexplorer_chicqualitycontrol,hicexplorer_chicviewpointbackgroundmodel,data_flow,1,1,E00064,
+hicexplorer_chicsignificantinteractions,hicexplorer_chicaggregatestatistic,data_flow,1,1,E00185,
+hicexplorer_chicviewpointbackgroundmodel,hicexplorer_chicviewpoint,data_flow,1,1,E00066,
+hicexplorer_hicfindtads,circos_prepare,data_flow,1,1,E00252,
+hicexplorer_hicfindtads,hicexplorer_hicplottads,data_flow,1,1,E00094,
+hicexplorer_hicpca,circos_prepare,data_flow,1,1,E00250,
+homer,circos_prepare,data_flow,1,1,E00253,
+homer,cooltools_eigscis,data_flow,1,1,E00089,
+homer,hicexplorer_hicfindtads,data_flow,1,1,E00096,
+homer,hicexplorer_hicplottads,data_flow,1,1,E00097,
+homer,homer_runhicpca,data_flow,1,1,E00074,
+homer_findhiccompartments,bedgraph_trim,data_flow,1,1,E00080,
+homer_runhicpca,homer_findhiccompartments,data_flow,1,1,E00077,
+juicer_addnorm,cooltools_eigscis,data_flow,1,1,E00088,
+juicer_addnorm,hicexplorer_hicaggregatecontacts,data_flow,1,1,E00164,
+juicer_addnorm,juicer_apa,data_flow,1,1,E00157,
+juicer_addnorm,juicer_eigenvector,data_flow,1,1,E00083,
+juicer_pre,juicer_addnorm,data_flow,1,1,E00070,
+macs2,atacqc,data_flow,1,1,E00054,
+macs2,bioc_atacseqtfea,data_flow,1,1,E00214,
+macs2,diff_hipeak,data_flow,1,1,E00181,
+macs2,ensembl_ucsc_convert,data_flow,1,1,E00202,
+macs2,homer_findmotifsgenome,data_flow,1,1,E00207,
+macs2,merge_peak,data_flow,1,1,E00053,
+macs2,prepare_counts,data_flow,1,1,E00168,
+macs2,seqlevels_style,data_flow,1,1,E00197,
+maps_callpeak,maps_raw2bg2,data_flow,1,1,E00130,
+maps_callpeak,maps_reformat,data_flow,1,1,E00137,
+maps_cut,custom,data_flow,1,1,E00270,
+maps_cut,maps_fend,data_flow,1,1,E00112,
+maps_cut,maps_merge,data_flow,1,1,E00120,
+maps_feature,maps_maps,data_flow,1,1,E00127,
+maps_fend,seqlevels_style,data_flow,1,1,E00113,
+maps_fend,ucsc,data_flow,1,1,E00114,
+maps_maps,custom,data_flow,1,1,E00271,
+maps_maps,maps_callpeak,data_flow,1,1,E00129,
+maps_merge,maps_feature,data_flow,1,1,E00122,
+maps_raw2bg2,cooler,data_flow,1,1,E00131,
+maps_reformat,bioc_chippeakanno,data_flow,1,1,E00227,
+maps_reformat,circos_prepare,data_flow,1,1,E00256,
+maps_reformat,diffhic,data_flow,1,1,E00190,
+maps_reformat,diffhicar,data_flow,1,1,E00187,
+maps_reformat,diffset,data_flow,1,1,E00193,
+maps_reformat,igv,data_flow,1,1,E00263,
+maps_reformat,merge_interactions,data_flow,1,1,E00150,
+merge_interactions,bioc_subsetloops,data_flow,1,1,E00156,
+merge_interactions,juicer_apa,data_flow,1,1,E00160,
+merge_peak,bioc_chippeakanno,data_flow,1,1,E00230,
+merge_peak,bioc_subsetloops,data_flow,3,3,E00155,
+merge_peak,bioc_trackviewer,data_flow,1,1,E00242,
+merge_peak,cooltools_pileup,data_flow,1,1,E00162,
+merge_peak,hicexplorer_hicaggregatecontacts,data_flow,1,1,E00154,
+merge_peak,maps_maps,data_flow,1,1,E00128,
+merge_peak,recenter_peak,data_flow,1,1,E00061,
+merge_peak,virtual4c_by_cooltools,data_flow,1,1,E00240,
+merge_reads,atacqc,data_flow,1,1,E00055,
+merge_reads,bioc_atacseqtfea,data_flow,1,1,E00213,
+merge_reads,diff_hipeak,data_flow,1,1,E00180,
+merge_reads,ensembl_ucsc_convert,data_flow,1,1,E00201,
+merge_reads,homer_findmotifsgenome,data_flow,1,1,E00206,
+merge_reads,macs2,data_flow,1,1,E00051,
+merge_reads,prepare_counts,data_flow,1,1,E00167,
+merge_reads,seqlevels_style,data_flow,1,1,E00196,
+pairix,cooler,data_flow,1,1,E00044,
+pairix,pairsqc,data_flow,1,1,E00038,
+pairsplot,reads_summary,data_flow,2,2,E00042,
+pairsqc,pairsplot,data_flow,1,1,E00040,
+pairtools,get_scale,data_flow,2,2,E00024,
+pairtools,pairix,data_flow,1,1,E00034,
+pairtools,pairtools_sample,data_flow,1,1,E00026,
+pairtools,reads_stat,data_flow,2,2,E00036,
+pairtools_sample,pairtools_stats,data_flow,1,1,E00028,
+pairtools_stats,reads_stat,data_flow,1,1,E00035,
+peakachu_model,custom,data_flow,1,1,E00273,
+peakachu_model,peakachu_score,data_flow,1,1,E00149,
+peakachu_score,bioc_chippeakanno,data_flow,1,1,E00229,
+peakachu_score,circos_prepare,data_flow,1,1,E00258,
+peakachu_score,diffhic,data_flow,1,1,E00192,
+peakachu_score,diffhicar,data_flow,1,1,E00189,
+peakachu_score,diffset,data_flow,1,1,E00195,
+peakachu_score,igv,data_flow,1,1,E00265,
+peakachu_score,merge_interactions,data_flow,1,1,E00152,
+post_counts,call_hipeak,data_flow,1,1,E00176,
+prepare_counts,custom,data_flow,1,1,E00275,
+prepare_counts,post_counts,data_flow,1,1,E00172,
+r1reads,custom,data_flow,1,1,E00274,
+re_cutsite,bioc_enzymecut,data_flow,1,1,E00103,
+re_cutsite,cooler,data_flow,1,1,E00132,
+re_cutsite,hicdcplus_call_loops,data_flow,1,1,E00143,
+re_cutsite,hicdcplus_features,data_flow,1,1,E00138,
+re_cutsite,maps_cut,data_flow,1,1,E00107,
+re_cutsite,maps_feature,data_flow,1,1,E00123,
+re_cutsite,maps_fend,data_flow,1,1,E00099,
+re_cutsite,ucsc,data_flow,1,1,E00115,
+reads_stat,reads_summary,data_flow,1,1,E00041,
+reads_summary,multiqc,data_flow,1,1,E00282,
+recenter_peak,hicexplorer_chicqualitycontrol,data_flow,1,1,E00063,
+samtools,bioc_atacseqtfea,data_flow,1,1,E00218,
+samtools,custom,data_flow,2,2,E00266,
+samtools,ensembl_ucsc_convert,data_flow,1,1,E00223,
+samtools,homer_findmotifsgenome,data_flow,1,1,E00224,
+samtools,multiqc,data_flow,3,3,E00279,
+samtools,pairtools,data_flow,1,1,E00022,
+samtools,seqlevels_style,data_flow,1,1,E00222,
+shift_reads,get_scale,data_flow,2,2,E00059,
+shift_reads,merge_reads,data_flow,1,1,E00050,
+ucsc,bioc_enzymecut,data_flow,1,1,E00106,
+ucsc,cooler,data_flow,1,1,E00135,
+ucsc,hicdcplus_call_loops,data_flow,1,1,E00146,
+ucsc,hicdcplus_features,data_flow,1,1,E00141,
+ucsc,maps_cut,data_flow,1,1,E00110,
+ucsc,maps_feature,data_flow,1,1,E00126,
+ucsc,maps_fend,data_flow,1,1,E00102,
+ucsc,maps_merge,data_flow,1,1,E00121,
+ucsc,post_counts,data_flow,1,1,E00173,
+atacqc,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00054, E00214); no directed path between any process of the two tools"
+atacqc,bioc_chippeakanno,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00057, E00232); no directed path between any process of the two tools"
+atacqc,circos_prepare,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00057, E00260); no directed path between any process of the two tools"
+atacqc,diff_hipeak,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00054, E00181); no directed path between any process of the two tools"
+atacqc,ensembl_ucsc_convert,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00054, E00202); no directed path between any process of the two tools"
+atacqc,gtf2bed,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00057, E00003); no directed path between any process of the two tools"
+atacqc,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00054, E00207); no directed path between any process of the two tools"
+atacqc,merge_peak,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00054, E00053); no directed path between any process of the two tools"
+atacqc,prepare_counts,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00054, E00168); no directed path between any process of the two tools"
+atacqc,seqlevels_style,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00054, E00197); no directed path between any process of the two tools"
+bedgraph_trim,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00082, E00219); no directed path between any process of the two tools"
+bedgraph_trim,bioc_enzymecut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00081, E00105); no directed path between any process of the two tools"
+bedgraph_trim,bioc_pairs2hdf5,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00081, E00030); no directed path between any process of the two tools"
+bedgraph_trim,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00082, E00010); no directed path between any process of the two tools"
+bedgraph_trim,circos_prepare,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00081, E00261); no directed path between any process of the two tools"
+bedgraph_trim,cooler,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00081, E00045); no directed path between any process of the two tools"
+bedgraph_trim,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00082, E00008); no directed path between any process of the two tools"
+bedgraph_trim,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00081, E00005); no directed path between any process of the two tools"
+bedgraph_trim,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00081, E00145); no directed path between any process of the two tools"
+bedgraph_trim,hicdcplus_features,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00081, E00140); no directed path between any process of the two tools"
+bedgraph_trim,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00081, E00095); no directed path between any process of the two tools"
+bedgraph_trim,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00082, E00212); no directed path between any process of the two tools"
+bedgraph_trim,juicer_pre,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00081, E00049); no directed path between any process of the two tools"
+bedgraph_trim,macs2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00082, E00052); no directed path between any process of the two tools"
+bedgraph_trim,maps_cut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00081, E00109); no directed path between any process of the two tools"
+bedgraph_trim,maps_feature,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00081, E00125); no directed path between any process of the two tools"
+bedgraph_trim,maps_fend,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00081, E00101); no directed path between any process of the two tools"
+bedgraph_trim,pairsqc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00081, E00039); no directed path between any process of the two tools"
+bedgraph_trim,pairtools,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00081, E00031); no directed path between any process of the two tools"
+bedgraph_trim,post_counts,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00082, E00174); no directed path between any process of the two tools"
+bedgraph_trim,prepare_counts,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00081, E00171); no directed path between any process of the two tools"
+bedgraph_trim,ucsc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00081, E00058); no directed path between any process of the two tools"
+bioc_atacseqtfea,atacqc,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00214, E00054); no directed path between any process of the two tools"
+bioc_atacseqtfea,bedgraph_trim,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00219, E00082); no directed path between any process of the two tools"
+bioc_atacseqtfea,bioc_chippeakanno,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00221, E00232); no directed path between any process of the two tools"
+bioc_atacseqtfea,bioc_enzymecut,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00219, E00104); no directed path between any process of the two tools"
+bioc_atacseqtfea,circos_prepare,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00221, E00260); no directed path between any process of the two tools"
+bioc_atacseqtfea,cooltools_eigscis,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00219, E00073); no directed path between any process of the two tools"
+bioc_atacseqtfea,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00219, E00008); no directed path between any process of the two tools"
+bioc_atacseqtfea,gtf2bed,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00221, E00003); no directed path between any process of the two tools"
+bioc_atacseqtfea,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00219, E00144); no directed path between any process of the two tools"
+bioc_atacseqtfea,hicdcplus_features,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00219, E00139); no directed path between any process of the two tools"
+bioc_atacseqtfea,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00219, E00098); no directed path between any process of the two tools"
+bioc_atacseqtfea,homer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00219, E00069); no directed path between any process of the two tools"
+bioc_atacseqtfea,homer_findhiccompartments,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00219, E00079); no directed path between any process of the two tools"
+bioc_atacseqtfea,homer_runhicpca,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00219, E00076); no directed path between any process of the two tools"
+bioc_atacseqtfea,juicer_eigenvector,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00219, E00085); no directed path between any process of the two tools"
+bioc_atacseqtfea,maps_cut,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00219, E00108); no directed path between any process of the two tools"
+bioc_atacseqtfea,maps_feature,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00219, E00124); no directed path between any process of the two tools"
+bioc_atacseqtfea,maps_fend,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00219, E00100); no directed path between any process of the two tools"
+bioc_atacseqtfea,merge_peak,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00214, E00053); no directed path between any process of the two tools"
+bioc_atacseqtfea,pairtools,parallel_co_use,0,0,,"both consume SAMTOOLS_MERGE.bam (E00218, E00022); no directed path between any process of the two tools"
+bioc_atacseqtfea,seqlevels_style,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00214, E00197); no directed path between any process of the two tools"
+bioc_chippeakanno,atacqc,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00232, E00057); no directed path between any process of the two tools"
+bioc_chippeakanno,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00232, E00221); no directed path between any process of the two tools"
+bioc_chippeakanno,bioc_subsetloops,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00230, E00155); no directed path between any process of the two tools"
+bioc_chippeakanno,circos_prepare,parallel_co_use,0,0,,"both consume HICDCPLUS_CALL_LOOPS.interactions (E00228, E00257); no directed path between any process of the two tools"
+bioc_chippeakanno,cooltools_pileup,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00230, E00162); no directed path between any process of the two tools"
+bioc_chippeakanno,gtf2bed,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00232, E00003); no directed path between any process of the two tools"
+bioc_chippeakanno,hicexplorer_hicaggregatecontacts,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00230, E00154); no directed path between any process of the two tools"
+bioc_chippeakanno,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00232, E00226); no directed path between any process of the two tools"
+bioc_chippeakanno,igv,parallel_co_use,0,0,,"both consume HICDCPLUS_CALL_LOOPS.interactions (E00228, E00264); no directed path between any process of the two tools"
+bioc_chippeakanno,merge_interactions,parallel_co_use,0,0,,"both consume HICDCPLUS_CALL_LOOPS.interactions (E00228, E00151); no directed path between any process of the two tools"
+bioc_chippeakanno,recenter_peak,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00230, E00061); no directed path between any process of the two tools"
+bioc_enzymecut,bedgraph_trim,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00105, E00081); no directed path between any process of the two tools"
+bioc_enzymecut,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00104, E00219); no directed path between any process of the two tools"
+bioc_enzymecut,bioc_pairs2hdf5,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00105, E00030); no directed path between any process of the two tools"
+bioc_enzymecut,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00104, E00010); no directed path between any process of the two tools"
+bioc_enzymecut,cooltools_eigscis,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00105, E00072); no directed path between any process of the two tools"
+bioc_enzymecut,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00104, E00008); no directed path between any process of the two tools"
+bioc_enzymecut,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00105, E00005); no directed path between any process of the two tools"
+bioc_enzymecut,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00105, E00095); no directed path between any process of the two tools"
+bioc_enzymecut,homer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00104, E00069); no directed path between any process of the two tools"
+bioc_enzymecut,homer_findhiccompartments,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00105, E00078); no directed path between any process of the two tools"
+bioc_enzymecut,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00104, E00212); no directed path between any process of the two tools"
+bioc_enzymecut,homer_runhicpca,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00105, E00075); no directed path between any process of the two tools"
+bioc_enzymecut,juicer_eigenvector,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00105, E00084); no directed path between any process of the two tools"
+bioc_enzymecut,juicer_pre,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00105, E00049); no directed path between any process of the two tools"
+bioc_enzymecut,macs2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00104, E00052); no directed path between any process of the two tools"
+bioc_enzymecut,maps_cut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00105, E00109); no directed path between any process of the two tools"
+bioc_enzymecut,pairsqc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00105, E00039); no directed path between any process of the two tools"
+bioc_enzymecut,pairtools,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00105, E00031); no directed path between any process of the two tools"
+bioc_enzymecut,post_counts,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00104, E00174); no directed path between any process of the two tools"
+bioc_enzymecut,prepare_counts,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00105, E00171); no directed path between any process of the two tools"
+bioc_pairs2hdf5,bedgraph_trim,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00030, E00081); no directed path between any process of the two tools"
+bioc_pairs2hdf5,bioc_enzymecut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00030, E00105); no directed path between any process of the two tools"
+bioc_pairs2hdf5,circos_prepare,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00030, E00261); no directed path between any process of the two tools"
+bioc_pairs2hdf5,cooler,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00030, E00045); no directed path between any process of the two tools"
+bioc_pairs2hdf5,cooltools_eigscis,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00030, E00072); no directed path between any process of the two tools"
+bioc_pairs2hdf5,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00030, E00005); no directed path between any process of the two tools"
+bioc_pairs2hdf5,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00030, E00145); no directed path between any process of the two tools"
+bioc_pairs2hdf5,hicdcplus_features,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00030, E00140); no directed path between any process of the two tools"
+bioc_pairs2hdf5,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00030, E00095); no directed path between any process of the two tools"
+bioc_pairs2hdf5,homer_findhiccompartments,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00030, E00078); no directed path between any process of the two tools"
+bioc_pairs2hdf5,homer_runhicpca,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00030, E00075); no directed path between any process of the two tools"
+bioc_pairs2hdf5,juicer_eigenvector,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00030, E00084); no directed path between any process of the two tools"
+bioc_pairs2hdf5,juicer_pre,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00030, E00049); no directed path between any process of the two tools"
+bioc_pairs2hdf5,maps_cut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00030, E00109); no directed path between any process of the two tools"
+bioc_pairs2hdf5,maps_feature,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00030, E00125); no directed path between any process of the two tools"
+bioc_pairs2hdf5,maps_fend,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00030, E00101); no directed path between any process of the two tools"
+bioc_pairs2hdf5,pairsqc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00030, E00039); no directed path between any process of the two tools"
+bioc_pairs2hdf5,pairtools,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00030, E00031); no directed path between any process of the two tools"
+bioc_pairs2hdf5,ucsc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00030, E00058); no directed path between any process of the two tools"
+bioc_subsetloops,bioc_chippeakanno,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00155, E00230); no directed path between any process of the two tools"
+bioc_subsetloops,circos_prepare,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00235, E00254); no directed path between any process of the two tools"
+bioc_subsetloops,cooltools_eigscis,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00235, E00090); no directed path between any process of the two tools"
+bioc_subsetloops,cooltools_insulation,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00235, E00091); no directed path between any process of the two tools"
+bioc_subsetloops,hicexplorer_chicqualitycontrol,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00235, E00062); no directed path between any process of the two tools"
+bioc_subsetloops,hicexplorer_hicfindtads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00235, E00092); no directed path between any process of the two tools"
+bioc_subsetloops,hicexplorer_hicpca,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00235, E00086); no directed path between any process of the two tools"
+bioc_subsetloops,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00235, E00093); no directed path between any process of the two tools"
+bioc_subsetloops,hicexplorer_hictransform,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00235, E00087); no directed path between any process of the two tools"
+bioc_subsetloops,recenter_peak,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00155, E00061); no directed path between any process of the two tools"
+bwa,bedgraph_trim,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00082); no directed path between any process of the two tools"
+bwa,bioc_enzymecut,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00104); no directed path between any process of the two tools"
+bwa,chromsizes,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00004); no directed path between any process of the two tools"
+bwa,circos_prepare,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00255); no directed path between any process of the two tools"
+bwa,cooler,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00133); no directed path between any process of the two tools"
+bwa,cooltools_eigscis,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00073); no directed path between any process of the two tools"
+bwa,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00008); no directed path between any process of the two tools"
+bwa,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00144); no directed path between any process of the two tools"
+bwa,hicdcplus_features,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00139); no directed path between any process of the two tools"
+bwa,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00098); no directed path between any process of the two tools"
+bwa,homer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00069); no directed path between any process of the two tools"
+bwa,homer_findhiccompartments,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00079); no directed path between any process of the two tools"
+bwa,homer_runhicpca,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00076); no directed path between any process of the two tools"
+bwa,juicer_eigenvector,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00085); no directed path between any process of the two tools"
+bwa,macs2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00052); no directed path between any process of the two tools"
+bwa,maps_cut,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00108); no directed path between any process of the two tools"
+bwa,maps_feature,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00124); no directed path between any process of the two tools"
+bwa,maps_fend,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00100); no directed path between any process of the two tools"
+bwa,post_counts,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00174); no directed path between any process of the two tools"
+bwa,ucsc,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00116); no directed path between any process of the two tools"
+call_r1peak,pairtools,parallel_co_use,0,0,,"both consume COOLER_DIGEST.bed (E00165, E00029); no directed path between any process of the two tools"
+chromsizes,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00004, E00010); no directed path between any process of the two tools"
+chromsizes,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00004, E00008); no directed path between any process of the two tools"
+chromsizes,homer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00004, E00069); no directed path between any process of the two tools"
+chromsizes,macs2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00004, E00052); no directed path between any process of the two tools"
+circos,custom,parallel_co_use,0,0,,"both consume CIRCOS_PREPARE.circos (E00262, E00276); no directed path between any process of the two tools"
+circos_prepare,atacqc,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00260, E00057); no directed path between any process of the two tools"
+circos_prepare,bedgraph_trim,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00261, E00081); no directed path between any process of the two tools"
+circos_prepare,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00260, E00221); no directed path between any process of the two tools"
+circos_prepare,bioc_chippeakanno,parallel_co_use,0,0,,"both consume HICDCPLUS_CALL_LOOPS.interactions (E00257, E00228); no directed path between any process of the two tools"
+circos_prepare,bioc_pairs2hdf5,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00261, E00030); no directed path between any process of the two tools"
+circos_prepare,bioc_subsetloops,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00254, E00235); no directed path between any process of the two tools"
+circos_prepare,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00255, E00010); no directed path between any process of the two tools"
+circos_prepare,cooltools_pileup,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00254, E00161); no directed path between any process of the two tools"
+circos_prepare,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00255, E00008); no directed path between any process of the two tools"
+circos_prepare,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00261, E00005); no directed path between any process of the two tools"
+circos_prepare,gtf2bed,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00260, E00003); no directed path between any process of the two tools"
+circos_prepare,hicexplorer_chicqualitycontrol,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00254, E00062); no directed path between any process of the two tools"
+circos_prepare,hicexplorer_hicaggregatecontacts,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00254, E00153); no directed path between any process of the two tools"
+circos_prepare,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00254, E00093); no directed path between any process of the two tools"
+circos_prepare,hicexplorer_hictransform,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00254, E00087); no directed path between any process of the two tools"
+circos_prepare,homer_findhiccompartments,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00261, E00078); no directed path between any process of the two tools"
+circos_prepare,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00260, E00226); no directed path between any process of the two tools"
+circos_prepare,homer_runhicpca,parallel_co_use,0,0,,"both consume HOMER_MAKETAGDIRECTORY.tagdir (E00253, E00074); no directed path between any process of the two tools"
+circos_prepare,igv,parallel_co_use,0,0,,"both consume HICDCPLUS_CALL_LOOPS.interactions (E00257, E00264); no directed path between any process of the two tools"
+circos_prepare,juicer_apa,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00254, E00158); no directed path between any process of the two tools"
+circos_prepare,juicer_eigenvector,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00261, E00084); no directed path between any process of the two tools"
+circos_prepare,merge_interactions,parallel_co_use,0,0,,"both consume HICDCPLUS_CALL_LOOPS.interactions (E00257, E00151); no directed path between any process of the two tools"
+circos_prepare,pairsqc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00261, E00039); no directed path between any process of the two tools"
+circos_prepare,post_counts,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00255, E00174); no directed path between any process of the two tools"
+circos_prepare,prepare_counts,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00261, E00171); no directed path between any process of the two tools"
+cooler,bedgraph_trim,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00045, E00081); no directed path between any process of the two tools"
+cooler,bioc_pairs2hdf5,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00045, E00030); no directed path between any process of the two tools"
+cooler,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00133, E00010); no directed path between any process of the two tools"
+cooler,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00133, E00008); no directed path between any process of the two tools"
+cooler,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00045, E00005); no directed path between any process of the two tools"
+cooler,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00045, E00145); no directed path between any process of the two tools"
+cooler,hicdcplus_features,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00045, E00140); no directed path between any process of the two tools"
+cooler,homer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00133, E00069); no directed path between any process of the two tools"
+cooler,homer_findhiccompartments,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00045, E00078); no directed path between any process of the two tools"
+cooler,homer_runhicpca,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00045, E00075); no directed path between any process of the two tools"
+cooler,juicer_eigenvector,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00045, E00084); no directed path between any process of the two tools"
+cooler,juicer_pre,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00045, E00049); no directed path between any process of the two tools"
+cooler,pairsqc,parallel_co_use,0,0,,"both consume PAIRIX.index (E00044, E00038); no directed path between any process of the two tools"
+cooltools_eigscis,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00073, E00219); no directed path between any process of the two tools"
+cooltools_eigscis,bioc_enzymecut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00072, E00105); no directed path between any process of the two tools"
+cooltools_eigscis,bioc_pairs2hdf5,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00072, E00030); no directed path between any process of the two tools"
+cooltools_eigscis,bioc_subsetloops,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00090, E00235); no directed path between any process of the two tools"
+cooltools_eigscis,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00073, E00010); no directed path between any process of the two tools"
+cooltools_eigscis,cooltools_insulation,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00090, E00091); no directed path between any process of the two tools"
+cooltools_eigscis,cooltools_pileup,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00090, E00161); no directed path between any process of the two tools"
+cooltools_eigscis,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00073, E00008); no directed path between any process of the two tools"
+cooltools_eigscis,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00072, E00005); no directed path between any process of the two tools"
+cooltools_eigscis,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00072, E00145); no directed path between any process of the two tools"
+cooltools_eigscis,hicdcplus_features,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00072, E00140); no directed path between any process of the two tools"
+cooltools_eigscis,hicexplorer_chicqualitycontrol,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00090, E00062); no directed path between any process of the two tools"
+cooltools_eigscis,hicexplorer_hicaggregatecontacts,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00090, E00153); no directed path between any process of the two tools"
+cooltools_eigscis,hicexplorer_hicfindtads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00090, E00092); no directed path between any process of the two tools"
+cooltools_eigscis,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00090, E00093); no directed path between any process of the two tools"
+cooltools_eigscis,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00073, E00212); no directed path between any process of the two tools"
+cooltools_eigscis,juicer_apa,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00090, E00158); no directed path between any process of the two tools"
+cooltools_eigscis,macs2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00073, E00052); no directed path between any process of the two tools"
+cooltools_eigscis,maps_cut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00072, E00109); no directed path between any process of the two tools"
+cooltools_eigscis,maps_feature,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00072, E00125); no directed path between any process of the two tools"
+cooltools_eigscis,maps_fend,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00072, E00101); no directed path between any process of the two tools"
+cooltools_eigscis,pairsqc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00072, E00039); no directed path between any process of the two tools"
+cooltools_eigscis,peakachu_model,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00090, E00147); no directed path between any process of the two tools"
+cooltools_eigscis,peakachu_score,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00090, E00148); no directed path between any process of the two tools"
+cooltools_eigscis,post_counts,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00073, E00174); no directed path between any process of the two tools"
+cooltools_eigscis,prepare_counts,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00072, E00171); no directed path between any process of the two tools"
+cooltools_eigscis,ucsc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00072, E00058); no directed path between any process of the two tools"
+cooltools_insulation,bioc_subsetloops,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00091, E00235); no directed path between any process of the two tools"
+cooltools_insulation,cooltools_eigscis,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00091, E00090); no directed path between any process of the two tools"
+cooltools_insulation,cooltools_pileup,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00091, E00161); no directed path between any process of the two tools"
+cooltools_insulation,hicexplorer_chicqualitycontrol,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00091, E00062); no directed path between any process of the two tools"
+cooltools_insulation,hicexplorer_hicaggregatecontacts,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00091, E00153); no directed path between any process of the two tools"
+cooltools_insulation,hicexplorer_hicpca,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00091, E00086); no directed path between any process of the two tools"
+cooltools_insulation,hicexplorer_hictransform,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00091, E00087); no directed path between any process of the two tools"
+cooltools_insulation,juicer_apa,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00091, E00158); no directed path between any process of the two tools"
+cooltools_insulation,peakachu_model,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00091, E00147); no directed path between any process of the two tools"
+cooltools_insulation,peakachu_score,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00091, E00148); no directed path between any process of the two tools"
+cooltools_pileup,bioc_chippeakanno,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00162, E00230); no directed path between any process of the two tools"
+cooltools_pileup,circos_prepare,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00161, E00254); no directed path between any process of the two tools"
+cooltools_pileup,cooltools_eigscis,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00161, E00090); no directed path between any process of the two tools"
+cooltools_pileup,cooltools_insulation,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00161, E00091); no directed path between any process of the two tools"
+cooltools_pileup,hicexplorer_chicqualitycontrol,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00161, E00062); no directed path between any process of the two tools"
+cooltools_pileup,hicexplorer_hicfindtads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00161, E00092); no directed path between any process of the two tools"
+cooltools_pileup,hicexplorer_hicpca,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00161, E00086); no directed path between any process of the two tools"
+cooltools_pileup,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00161, E00093); no directed path between any process of the two tools"
+cooltools_pileup,hicexplorer_hictransform,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00161, E00087); no directed path between any process of the two tools"
+cooltools_pileup,maps_maps,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00162, E00128); no directed path between any process of the two tools"
+cooltools_pileup,peakachu_model,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00161, E00147); no directed path between any process of the two tools"
+cooltools_pileup,peakachu_score,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00161, E00148); no directed path between any process of the two tools"
+cooltools_pileup,recenter_peak,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00162, E00061); no directed path between any process of the two tools"
+custom,circos,parallel_co_use,0,0,,"both consume CIRCOS_PREPARE.circos (E00276, E00262); no directed path between any process of the two tools"
+custom,post_counts,parallel_co_use,0,0,,"both consume PREPARE_COUNTS.counts (E00275, E00172); no directed path between any process of the two tools"
+diff_hipeak,atacqc,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00181, E00054); no directed path between any process of the two tools"
+diff_hipeak,merge_peak,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00181, E00053); no directed path between any process of the two tools"
+ensembl_ucsc_convert,atacqc,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00202, E00054); no directed path between any process of the two tools"
+ensembl_ucsc_convert,merge_peak,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00202, E00053); no directed path between any process of the two tools"
+ensembl_ucsc_convert,pairtools,parallel_co_use,0,0,,"both consume SAMTOOLS_MERGE.bam (E00223, E00022); no directed path between any process of the two tools"
+ensembl_ucsc_convert,seqlevels_style,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00202, E00197); no directed path between any process of the two tools"
+genmap,bedgraph_trim,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00082); no directed path between any process of the two tools"
+genmap,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00219); no directed path between any process of the two tools"
+genmap,bioc_enzymecut,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00104); no directed path between any process of the two tools"
+genmap,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00010); no directed path between any process of the two tools"
+genmap,chromsizes,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00004); no directed path between any process of the two tools"
+genmap,circos_prepare,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00255); no directed path between any process of the two tools"
+genmap,cooler,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00133); no directed path between any process of the two tools"
+genmap,cooltools_eigscis,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00073); no directed path between any process of the two tools"
+genmap,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00144); no directed path between any process of the two tools"
+genmap,hicdcplus_features,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00139); no directed path between any process of the two tools"
+genmap,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00098); no directed path between any process of the two tools"
+genmap,homer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00069); no directed path between any process of the two tools"
+genmap,homer_findhiccompartments,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00079); no directed path between any process of the two tools"
+genmap,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00212); no directed path between any process of the two tools"
+genmap,homer_runhicpca,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00076); no directed path between any process of the two tools"
+genmap,juicer_eigenvector,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00085); no directed path between any process of the two tools"
+genmap,macs2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00052); no directed path between any process of the two tools"
+genmap,maps_cut,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00108); no directed path between any process of the two tools"
+genmap,maps_feature,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00124); no directed path between any process of the two tools"
+genmap,maps_fend,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00100); no directed path between any process of the two tools"
+genmap,post_counts,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00174); no directed path between any process of the two tools"
+genmap,ucsc,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00008, E00116); no directed path between any process of the two tools"
+genome_filter,bedgraph_trim,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00081); no directed path between any process of the two tools"
+genome_filter,bioc_enzymecut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00105); no directed path between any process of the two tools"
+genome_filter,bioc_pairs2hdf5,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00030); no directed path between any process of the two tools"
+genome_filter,circos_prepare,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00261); no directed path between any process of the two tools"
+genome_filter,cooler,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00045); no directed path between any process of the two tools"
+genome_filter,cooltools_eigscis,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00072); no directed path between any process of the two tools"
+genome_filter,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00145); no directed path between any process of the two tools"
+genome_filter,hicdcplus_features,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00140); no directed path between any process of the two tools"
+genome_filter,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00095); no directed path between any process of the two tools"
+genome_filter,homer_findhiccompartments,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00078); no directed path between any process of the two tools"
+genome_filter,homer_runhicpca,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00075); no directed path between any process of the two tools"
+genome_filter,juicer_eigenvector,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00084); no directed path between any process of the two tools"
+genome_filter,juicer_pre,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00049); no directed path between any process of the two tools"
+genome_filter,maps_cut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00109); no directed path between any process of the two tools"
+genome_filter,maps_feature,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00125); no directed path between any process of the two tools"
+genome_filter,maps_fend,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00101); no directed path between any process of the two tools"
+genome_filter,pairsqc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00039); no directed path between any process of the two tools"
+genome_filter,pairtools,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00031); no directed path between any process of the two tools"
+genome_filter,prepare_counts,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00171); no directed path between any process of the two tools"
+genome_filter,ucsc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00005, E00058); no directed path between any process of the two tools"
+gtf2bed,atacqc,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00003, E00057); no directed path between any process of the two tools"
+gtf2bed,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00003, E00221); no directed path between any process of the two tools"
+gtf2bed,bioc_chippeakanno,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00003, E00232); no directed path between any process of the two tools"
+gtf2bed,circos_prepare,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00003, E00260); no directed path between any process of the two tools"
+gtf2bed,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00003, E00226); no directed path between any process of the two tools"
+hicdcplus_call_loops,bedgraph_trim,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00145, E00081); no directed path between any process of the two tools"
+hicdcplus_call_loops,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00144, E00219); no directed path between any process of the two tools"
+hicdcplus_call_loops,bioc_pairs2hdf5,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00145, E00030); no directed path between any process of the two tools"
+hicdcplus_call_loops,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00144, E00010); no directed path between any process of the two tools"
+hicdcplus_call_loops,cooler,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00145, E00045); no directed path between any process of the two tools"
+hicdcplus_call_loops,cooltools_eigscis,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00145, E00072); no directed path between any process of the two tools"
+hicdcplus_call_loops,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00144, E00008); no directed path between any process of the two tools"
+hicdcplus_call_loops,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00145, E00005); no directed path between any process of the two tools"
+hicdcplus_call_loops,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00145, E00095); no directed path between any process of the two tools"
+hicdcplus_call_loops,homer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00144, E00069); no directed path between any process of the two tools"
+hicdcplus_call_loops,homer_findhiccompartments,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00145, E00078); no directed path between any process of the two tools"
+hicdcplus_call_loops,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00144, E00212); no directed path between any process of the two tools"
+hicdcplus_call_loops,homer_runhicpca,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00145, E00075); no directed path between any process of the two tools"
+hicdcplus_call_loops,juicer_eigenvector,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00145, E00084); no directed path between any process of the two tools"
+hicdcplus_call_loops,juicer_pre,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00145, E00049); no directed path between any process of the two tools"
+hicdcplus_call_loops,macs2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00144, E00052); no directed path between any process of the two tools"
+hicdcplus_call_loops,pairsqc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00145, E00039); no directed path between any process of the two tools"
+hicdcplus_call_loops,pairtools,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00145, E00031); no directed path between any process of the two tools"
+hicdcplus_call_loops,post_counts,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00144, E00174); no directed path between any process of the two tools"
+hicdcplus_call_loops,prepare_counts,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00145, E00171); no directed path between any process of the two tools"
+hicdcplus_features,bedgraph_trim,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00140, E00081); no directed path between any process of the two tools"
+hicdcplus_features,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00139, E00219); no directed path between any process of the two tools"
+hicdcplus_features,bioc_pairs2hdf5,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00140, E00030); no directed path between any process of the two tools"
+hicdcplus_features,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00139, E00010); no directed path between any process of the two tools"
+hicdcplus_features,cooler,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00140, E00045); no directed path between any process of the two tools"
+hicdcplus_features,cooltools_eigscis,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00140, E00072); no directed path between any process of the two tools"
+hicdcplus_features,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00139, E00008); no directed path between any process of the two tools"
+hicdcplus_features,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00140, E00005); no directed path between any process of the two tools"
+hicdcplus_features,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00140, E00095); no directed path between any process of the two tools"
+hicdcplus_features,homer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00139, E00069); no directed path between any process of the two tools"
+hicdcplus_features,homer_findhiccompartments,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00140, E00078); no directed path between any process of the two tools"
+hicdcplus_features,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00139, E00212); no directed path between any process of the two tools"
+hicdcplus_features,homer_runhicpca,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00140, E00075); no directed path between any process of the two tools"
+hicdcplus_features,juicer_eigenvector,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00140, E00084); no directed path between any process of the two tools"
+hicdcplus_features,juicer_pre,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00140, E00049); no directed path between any process of the two tools"
+hicdcplus_features,macs2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00139, E00052); no directed path between any process of the two tools"
+hicdcplus_features,pairsqc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00140, E00039); no directed path between any process of the two tools"
+hicdcplus_features,pairtools,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00140, E00031); no directed path between any process of the two tools"
+hicdcplus_features,post_counts,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00139, E00174); no directed path between any process of the two tools"
+hicdcplus_features,prepare_counts,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00140, E00171); no directed path between any process of the two tools"
+hicexplorer_chicqualitycontrol,bioc_subsetloops,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00062, E00235); no directed path between any process of the two tools"
+hicexplorer_chicqualitycontrol,circos_prepare,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00062, E00254); no directed path between any process of the two tools"
+hicexplorer_chicqualitycontrol,cooltools_eigscis,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00062, E00090); no directed path between any process of the two tools"
+hicexplorer_chicqualitycontrol,cooltools_insulation,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00062, E00091); no directed path between any process of the two tools"
+hicexplorer_chicqualitycontrol,cooltools_pileup,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00062, E00161); no directed path between any process of the two tools"
+hicexplorer_chicqualitycontrol,hicexplorer_hicaggregatecontacts,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00062, E00153); no directed path between any process of the two tools"
+hicexplorer_chicqualitycontrol,hicexplorer_hicfindtads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00062, E00092); no directed path between any process of the two tools"
+hicexplorer_chicqualitycontrol,hicexplorer_hicpca,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00062, E00086); no directed path between any process of the two tools"
+hicexplorer_chicqualitycontrol,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00062, E00093); no directed path between any process of the two tools"
+hicexplorer_chicqualitycontrol,hicexplorer_hictransform,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00062, E00087); no directed path between any process of the two tools"
+hicexplorer_chicqualitycontrol,juicer_apa,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00062, E00158); no directed path between any process of the two tools"
+hicexplorer_chicqualitycontrol,peakachu_model,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00062, E00147); no directed path between any process of the two tools"
+hicexplorer_chicqualitycontrol,peakachu_score,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00062, E00148); no directed path between any process of the two tools"
+hicexplorer_hicaggregatecontacts,bioc_chippeakanno,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00154, E00230); no directed path between any process of the two tools"
+hicexplorer_hicaggregatecontacts,circos_prepare,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00153, E00254); no directed path between any process of the two tools"
+hicexplorer_hicaggregatecontacts,cooltools_eigscis,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00153, E00090); no directed path between any process of the two tools"
+hicexplorer_hicaggregatecontacts,cooltools_insulation,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00153, E00091); no directed path between any process of the two tools"
+hicexplorer_hicaggregatecontacts,hicexplorer_chicqualitycontrol,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00153, E00062); no directed path between any process of the two tools"
+hicexplorer_hicaggregatecontacts,hicexplorer_hicfindtads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00153, E00092); no directed path between any process of the two tools"
+hicexplorer_hicaggregatecontacts,hicexplorer_hicpca,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00153, E00086); no directed path between any process of the two tools"
+hicexplorer_hicaggregatecontacts,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00153, E00093); no directed path between any process of the two tools"
+hicexplorer_hicaggregatecontacts,hicexplorer_hictransform,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00153, E00087); no directed path between any process of the two tools"
+hicexplorer_hicaggregatecontacts,juicer_eigenvector,parallel_co_use,0,0,,"both consume JUICER_ADDNORM.hic (E00164, E00083); no directed path between any process of the two tools"
+hicexplorer_hicaggregatecontacts,maps_maps,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00154, E00128); no directed path between any process of the two tools"
+hicexplorer_hicaggregatecontacts,peakachu_model,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00153, E00147); no directed path between any process of the two tools"
+hicexplorer_hicaggregatecontacts,peakachu_score,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00153, E00148); no directed path between any process of the two tools"
+hicexplorer_hicaggregatecontacts,recenter_peak,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00154, E00061); no directed path between any process of the two tools"
+hicexplorer_hicfindtads,bioc_subsetloops,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00092, E00235); no directed path between any process of the two tools"
+hicexplorer_hicfindtads,cooltools_eigscis,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00092, E00090); no directed path between any process of the two tools"
+hicexplorer_hicfindtads,cooltools_pileup,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00092, E00161); no directed path between any process of the two tools"
+hicexplorer_hicfindtads,hicexplorer_chicqualitycontrol,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00092, E00062); no directed path between any process of the two tools"
+hicexplorer_hicfindtads,hicexplorer_hicaggregatecontacts,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00092, E00153); no directed path between any process of the two tools"
+hicexplorer_hicfindtads,hicexplorer_hicpca,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00092, E00086); no directed path between any process of the two tools"
+hicexplorer_hicfindtads,hicexplorer_hictransform,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00092, E00087); no directed path between any process of the two tools"
+hicexplorer_hicfindtads,homer_runhicpca,parallel_co_use,0,0,,"both consume HOMER_MAKETAGDIRECTORY.tagdir (E00096, E00074); no directed path between any process of the two tools"
+hicexplorer_hicfindtads,juicer_apa,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00092, E00158); no directed path between any process of the two tools"
+hicexplorer_hicfindtads,peakachu_model,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00092, E00147); no directed path between any process of the two tools"
+hicexplorer_hicfindtads,peakachu_score,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00092, E00148); no directed path between any process of the two tools"
+hicexplorer_hicpca,bioc_subsetloops,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00086, E00235); no directed path between any process of the two tools"
+hicexplorer_hicpca,cooltools_insulation,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00086, E00091); no directed path between any process of the two tools"
+hicexplorer_hicpca,cooltools_pileup,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00086, E00161); no directed path between any process of the two tools"
+hicexplorer_hicpca,hicexplorer_chicqualitycontrol,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00086, E00062); no directed path between any process of the two tools"
+hicexplorer_hicpca,hicexplorer_hicaggregatecontacts,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00086, E00153); no directed path between any process of the two tools"
+hicexplorer_hicpca,hicexplorer_hicfindtads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00086, E00092); no directed path between any process of the two tools"
+hicexplorer_hicpca,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00086, E00093); no directed path between any process of the two tools"
+hicexplorer_hicpca,hicexplorer_hictransform,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00086, E00087); no directed path between any process of the two tools"
+hicexplorer_hicpca,juicer_apa,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00086, E00158); no directed path between any process of the two tools"
+hicexplorer_hicpca,peakachu_model,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00086, E00147); no directed path between any process of the two tools"
+hicexplorer_hicpca,peakachu_score,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00086, E00148); no directed path between any process of the two tools"
+hicexplorer_hicplottads,bedgraph_trim,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00095, E00081); no directed path between any process of the two tools"
+hicexplorer_hicplottads,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00098, E00219); no directed path between any process of the two tools"
+hicexplorer_hicplottads,bioc_enzymecut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00095, E00105); no directed path between any process of the two tools"
+hicexplorer_hicplottads,bioc_pairs2hdf5,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00095, E00030); no directed path between any process of the two tools"
+hicexplorer_hicplottads,bioc_subsetloops,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00093, E00235); no directed path between any process of the two tools"
+hicexplorer_hicplottads,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00098, E00010); no directed path between any process of the two tools"
+hicexplorer_hicplottads,circos_prepare,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00093, E00254); no directed path between any process of the two tools"
+hicexplorer_hicplottads,cooltools_eigscis,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00093, E00090); no directed path between any process of the two tools"
+hicexplorer_hicplottads,cooltools_pileup,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00093, E00161); no directed path between any process of the two tools"
+hicexplorer_hicplottads,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00098, E00008); no directed path between any process of the two tools"
+hicexplorer_hicplottads,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00095, E00005); no directed path between any process of the two tools"
+hicexplorer_hicplottads,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00095, E00145); no directed path between any process of the two tools"
+hicexplorer_hicplottads,hicdcplus_features,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00095, E00140); no directed path between any process of the two tools"
+hicexplorer_hicplottads,hicexplorer_chicqualitycontrol,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00093, E00062); no directed path between any process of the two tools"
+hicexplorer_hicplottads,hicexplorer_hicaggregatecontacts,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00093, E00153); no directed path between any process of the two tools"
+hicexplorer_hicplottads,hicexplorer_hicpca,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00093, E00086); no directed path between any process of the two tools"
+hicexplorer_hicplottads,hicexplorer_hictransform,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00093, E00087); no directed path between any process of the two tools"
+hicexplorer_hicplottads,homer_findhiccompartments,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00095, E00078); no directed path between any process of the two tools"
+hicexplorer_hicplottads,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00098, E00212); no directed path between any process of the two tools"
+hicexplorer_hicplottads,homer_runhicpca,parallel_co_use,0,0,,"both consume HOMER_MAKETAGDIRECTORY.tagdir (E00097, E00074); no directed path between any process of the two tools"
+hicexplorer_hicplottads,juicer_apa,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00093, E00158); no directed path between any process of the two tools"
+hicexplorer_hicplottads,juicer_eigenvector,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00095, E00084); no directed path between any process of the two tools"
+hicexplorer_hicplottads,juicer_pre,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00095, E00049); no directed path between any process of the two tools"
+hicexplorer_hicplottads,macs2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00098, E00052); no directed path between any process of the two tools"
+hicexplorer_hicplottads,maps_cut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00095, E00109); no directed path between any process of the two tools"
+hicexplorer_hicplottads,maps_feature,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00095, E00125); no directed path between any process of the two tools"
+hicexplorer_hicplottads,maps_fend,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00095, E00101); no directed path between any process of the two tools"
+hicexplorer_hicplottads,pairsqc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00095, E00039); no directed path between any process of the two tools"
+hicexplorer_hicplottads,peakachu_model,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00093, E00147); no directed path between any process of the two tools"
+hicexplorer_hicplottads,peakachu_score,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00093, E00148); no directed path between any process of the two tools"
+hicexplorer_hicplottads,post_counts,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00098, E00174); no directed path between any process of the two tools"
+hicexplorer_hicplottads,prepare_counts,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00095, E00171); no directed path between any process of the two tools"
+hicexplorer_hicplottads,ucsc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00095, E00058); no directed path between any process of the two tools"
+hicexplorer_hictransform,bioc_subsetloops,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00087, E00235); no directed path between any process of the two tools"
+hicexplorer_hictransform,circos_prepare,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00087, E00254); no directed path between any process of the two tools"
+hicexplorer_hictransform,cooltools_insulation,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00087, E00091); no directed path between any process of the two tools"
+hicexplorer_hictransform,cooltools_pileup,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00087, E00161); no directed path between any process of the two tools"
+hicexplorer_hictransform,hicexplorer_chicqualitycontrol,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00087, E00062); no directed path between any process of the two tools"
+hicexplorer_hictransform,hicexplorer_hicaggregatecontacts,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00087, E00153); no directed path between any process of the two tools"
+hicexplorer_hictransform,hicexplorer_hicfindtads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00087, E00092); no directed path between any process of the two tools"
+hicexplorer_hictransform,hicexplorer_hicpca,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00087, E00086); no directed path between any process of the two tools"
+hicexplorer_hictransform,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00087, E00093); no directed path between any process of the two tools"
+hicexplorer_hictransform,juicer_apa,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00087, E00158); no directed path between any process of the two tools"
+hicexplorer_hictransform,peakachu_model,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00087, E00147); no directed path between any process of the two tools"
+hicexplorer_hictransform,peakachu_score,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00087, E00148); no directed path between any process of the two tools"
+homer,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00069, E00219); no directed path between any process of the two tools"
+homer,bioc_enzymecut,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00069, E00104); no directed path between any process of the two tools"
+homer,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00069, E00010); no directed path between any process of the two tools"
+homer,chromsizes,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00069, E00004); no directed path between any process of the two tools"
+homer,cooler,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00069, E00133); no directed path between any process of the two tools"
+homer,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00069, E00008); no directed path between any process of the two tools"
+homer,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00069, E00144); no directed path between any process of the two tools"
+homer,hicdcplus_features,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00069, E00139); no directed path between any process of the two tools"
+homer,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00069, E00212); no directed path between any process of the two tools"
+homer,juicer_eigenvector,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00069, E00085); no directed path between any process of the two tools"
+homer,macs2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00069, E00052); no directed path between any process of the two tools"
+homer,maps_cut,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00069, E00108); no directed path between any process of the two tools"
+homer,maps_feature,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00069, E00124); no directed path between any process of the two tools"
+homer,maps_fend,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00069, E00100); no directed path between any process of the two tools"
+homer,post_counts,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00069, E00174); no directed path between any process of the two tools"
+homer,ucsc,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00069, E00116); no directed path between any process of the two tools"
+homer_findhiccompartments,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00079, E00219); no directed path between any process of the two tools"
+homer_findhiccompartments,bioc_enzymecut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00078, E00105); no directed path between any process of the two tools"
+homer_findhiccompartments,bioc_pairs2hdf5,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00078, E00030); no directed path between any process of the two tools"
+homer_findhiccompartments,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00079, E00010); no directed path between any process of the two tools"
+homer_findhiccompartments,circos_prepare,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00078, E00261); no directed path between any process of the two tools"
+homer_findhiccompartments,cooler,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00078, E00045); no directed path between any process of the two tools"
+homer_findhiccompartments,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00079, E00008); no directed path between any process of the two tools"
+homer_findhiccompartments,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00078, E00005); no directed path between any process of the two tools"
+homer_findhiccompartments,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00078, E00145); no directed path between any process of the two tools"
+homer_findhiccompartments,hicdcplus_features,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00078, E00140); no directed path between any process of the two tools"
+homer_findhiccompartments,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00078, E00095); no directed path between any process of the two tools"
+homer_findhiccompartments,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00079, E00212); no directed path between any process of the two tools"
+homer_findhiccompartments,juicer_pre,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00078, E00049); no directed path between any process of the two tools"
+homer_findhiccompartments,macs2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00079, E00052); no directed path between any process of the two tools"
+homer_findhiccompartments,maps_cut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00078, E00109); no directed path between any process of the two tools"
+homer_findhiccompartments,maps_feature,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00078, E00125); no directed path between any process of the two tools"
+homer_findhiccompartments,maps_fend,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00078, E00101); no directed path between any process of the two tools"
+homer_findhiccompartments,pairsqc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00078, E00039); no directed path between any process of the two tools"
+homer_findhiccompartments,pairtools,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00078, E00031); no directed path between any process of the two tools"
+homer_findhiccompartments,post_counts,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00079, E00174); no directed path between any process of the two tools"
+homer_findhiccompartments,prepare_counts,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00078, E00171); no directed path between any process of the two tools"
+homer_findhiccompartments,ucsc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00078, E00058); no directed path between any process of the two tools"
+homer_findmotifsgenome,atacqc,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00207, E00054); no directed path between any process of the two tools"
+homer_findmotifsgenome,bedgraph_trim,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00212, E00082); no directed path between any process of the two tools"
+homer_findmotifsgenome,bioc_chippeakanno,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00226, E00232); no directed path between any process of the two tools"
+homer_findmotifsgenome,bioc_enzymecut,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00212, E00104); no directed path between any process of the two tools"
+homer_findmotifsgenome,circos_prepare,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00226, E00260); no directed path between any process of the two tools"
+homer_findmotifsgenome,cooltools_eigscis,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00212, E00073); no directed path between any process of the two tools"
+homer_findmotifsgenome,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00212, E00008); no directed path between any process of the two tools"
+homer_findmotifsgenome,gtf2bed,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00226, E00003); no directed path between any process of the two tools"
+homer_findmotifsgenome,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00212, E00144); no directed path between any process of the two tools"
+homer_findmotifsgenome,hicdcplus_features,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00212, E00139); no directed path between any process of the two tools"
+homer_findmotifsgenome,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00212, E00098); no directed path between any process of the two tools"
+homer_findmotifsgenome,homer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00212, E00069); no directed path between any process of the two tools"
+homer_findmotifsgenome,homer_findhiccompartments,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00212, E00079); no directed path between any process of the two tools"
+homer_findmotifsgenome,homer_runhicpca,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00212, E00076); no directed path between any process of the two tools"
+homer_findmotifsgenome,juicer_eigenvector,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00212, E00085); no directed path between any process of the two tools"
+homer_findmotifsgenome,maps_cut,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00212, E00108); no directed path between any process of the two tools"
+homer_findmotifsgenome,maps_feature,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00212, E00124); no directed path between any process of the two tools"
+homer_findmotifsgenome,maps_fend,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00212, E00100); no directed path between any process of the two tools"
+homer_findmotifsgenome,merge_peak,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00207, E00053); no directed path between any process of the two tools"
+homer_findmotifsgenome,pairtools,parallel_co_use,0,0,,"both consume SAMTOOLS_MERGE.bam (E00224, E00022); no directed path between any process of the two tools"
+homer_findmotifsgenome,seqlevels_style,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00207, E00197); no directed path between any process of the two tools"
+homer_runhicpca,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00076, E00219); no directed path between any process of the two tools"
+homer_runhicpca,bioc_enzymecut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00075, E00105); no directed path between any process of the two tools"
+homer_runhicpca,bioc_pairs2hdf5,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00075, E00030); no directed path between any process of the two tools"
+homer_runhicpca,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00076, E00010); no directed path between any process of the two tools"
+homer_runhicpca,circos_prepare,parallel_co_use,0,0,,"both consume HOMER_MAKETAGDIRECTORY.tagdir (E00074, E00253); no directed path between any process of the two tools"
+homer_runhicpca,cooler,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00075, E00045); no directed path between any process of the two tools"
+homer_runhicpca,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00076, E00008); no directed path between any process of the two tools"
+homer_runhicpca,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00075, E00005); no directed path between any process of the two tools"
+homer_runhicpca,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00075, E00145); no directed path between any process of the two tools"
+homer_runhicpca,hicdcplus_features,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00075, E00140); no directed path between any process of the two tools"
+homer_runhicpca,hicexplorer_hicfindtads,parallel_co_use,0,0,,"both consume HOMER_MAKETAGDIRECTORY.tagdir (E00074, E00096); no directed path between any process of the two tools"
+homer_runhicpca,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume HOMER_MAKETAGDIRECTORY.tagdir (E00074, E00097); no directed path between any process of the two tools"
+homer_runhicpca,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00076, E00212); no directed path between any process of the two tools"
+homer_runhicpca,juicer_pre,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00075, E00049); no directed path between any process of the two tools"
+homer_runhicpca,macs2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00076, E00052); no directed path between any process of the two tools"
+homer_runhicpca,maps_cut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00075, E00109); no directed path between any process of the two tools"
+homer_runhicpca,maps_feature,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00075, E00125); no directed path between any process of the two tools"
+homer_runhicpca,maps_fend,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00075, E00101); no directed path between any process of the two tools"
+homer_runhicpca,pairsqc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00075, E00039); no directed path between any process of the two tools"
+homer_runhicpca,pairtools,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00075, E00031); no directed path between any process of the two tools"
+homer_runhicpca,post_counts,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00076, E00174); no directed path between any process of the two tools"
+homer_runhicpca,prepare_counts,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00075, E00171); no directed path between any process of the two tools"
+homer_runhicpca,ucsc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00075, E00058); no directed path between any process of the two tools"
+igv,bioc_chippeakanno,parallel_co_use,0,0,,"both consume HICDCPLUS_CALL_LOOPS.interactions (E00264, E00228); no directed path between any process of the two tools"
+igv,circos_prepare,parallel_co_use,0,0,,"both consume HICDCPLUS_CALL_LOOPS.interactions (E00264, E00257); no directed path between any process of the two tools"
+igv,merge_interactions,parallel_co_use,0,0,,"both consume HICDCPLUS_CALL_LOOPS.interactions (E00264, E00151); no directed path between any process of the two tools"
+juicer_apa,circos_prepare,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00158, E00254); no directed path between any process of the two tools"
+juicer_apa,cooltools_eigscis,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00158, E00090); no directed path between any process of the two tools"
+juicer_apa,cooltools_insulation,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00158, E00091); no directed path between any process of the two tools"
+juicer_apa,hicexplorer_chicqualitycontrol,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00158, E00062); no directed path between any process of the two tools"
+juicer_apa,hicexplorer_hicfindtads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00158, E00092); no directed path between any process of the two tools"
+juicer_apa,hicexplorer_hicpca,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00158, E00086); no directed path between any process of the two tools"
+juicer_apa,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00158, E00093); no directed path between any process of the two tools"
+juicer_apa,hicexplorer_hictransform,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00158, E00087); no directed path between any process of the two tools"
+juicer_apa,juicer_eigenvector,parallel_co_use,0,0,,"both consume JUICER_ADDNORM.hic (E00157, E00083); no directed path between any process of the two tools"
+juicer_eigenvector,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00085, E00219); no directed path between any process of the two tools"
+juicer_eigenvector,bioc_enzymecut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00084, E00105); no directed path between any process of the two tools"
+juicer_eigenvector,bioc_pairs2hdf5,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00084, E00030); no directed path between any process of the two tools"
+juicer_eigenvector,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00085, E00010); no directed path between any process of the two tools"
+juicer_eigenvector,circos_prepare,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00084, E00261); no directed path between any process of the two tools"
+juicer_eigenvector,cooler,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00084, E00045); no directed path between any process of the two tools"
+juicer_eigenvector,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00085, E00008); no directed path between any process of the two tools"
+juicer_eigenvector,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00084, E00005); no directed path between any process of the two tools"
+juicer_eigenvector,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00084, E00145); no directed path between any process of the two tools"
+juicer_eigenvector,hicdcplus_features,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00084, E00140); no directed path between any process of the two tools"
+juicer_eigenvector,hicexplorer_hicaggregatecontacts,parallel_co_use,0,0,,"both consume JUICER_ADDNORM.hic (E00083, E00164); no directed path between any process of the two tools"
+juicer_eigenvector,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00084, E00095); no directed path between any process of the two tools"
+juicer_eigenvector,homer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00085, E00069); no directed path between any process of the two tools"
+juicer_eigenvector,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00085, E00212); no directed path between any process of the two tools"
+juicer_eigenvector,juicer_apa,parallel_co_use,0,0,,"both consume JUICER_ADDNORM.hic (E00083, E00157); no directed path between any process of the two tools"
+juicer_eigenvector,macs2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00085, E00052); no directed path between any process of the two tools"
+juicer_eigenvector,maps_cut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00084, E00109); no directed path between any process of the two tools"
+juicer_eigenvector,maps_feature,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00084, E00125); no directed path between any process of the two tools"
+juicer_eigenvector,maps_fend,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00084, E00101); no directed path between any process of the two tools"
+juicer_eigenvector,pairsqc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00084, E00039); no directed path between any process of the two tools"
+juicer_eigenvector,pairtools,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00084, E00031); no directed path between any process of the two tools"
+juicer_eigenvector,post_counts,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00085, E00174); no directed path between any process of the two tools"
+juicer_eigenvector,prepare_counts,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00084, E00171); no directed path between any process of the two tools"
+juicer_eigenvector,ucsc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00084, E00058); no directed path between any process of the two tools"
+juicer_pre,bedgraph_trim,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00049, E00081); no directed path between any process of the two tools"
+juicer_pre,bioc_enzymecut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00049, E00105); no directed path between any process of the two tools"
+juicer_pre,bioc_pairs2hdf5,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00049, E00030); no directed path between any process of the two tools"
+juicer_pre,cooler,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00049, E00045); no directed path between any process of the two tools"
+juicer_pre,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00049, E00005); no directed path between any process of the two tools"
+juicer_pre,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00049, E00145); no directed path between any process of the two tools"
+juicer_pre,hicdcplus_features,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00049, E00140); no directed path between any process of the two tools"
+juicer_pre,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00049, E00095); no directed path between any process of the two tools"
+juicer_pre,homer_findhiccompartments,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00049, E00078); no directed path between any process of the two tools"
+juicer_pre,homer_runhicpca,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00049, E00075); no directed path between any process of the two tools"
+juicer_pre,maps_cut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00049, E00109); no directed path between any process of the two tools"
+juicer_pre,maps_feature,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00049, E00125); no directed path between any process of the two tools"
+juicer_pre,maps_fend,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00049, E00101); no directed path between any process of the two tools"
+juicer_pre,pairsqc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00049, E00039); no directed path between any process of the two tools"
+juicer_pre,pairtools,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00049, E00031); no directed path between any process of the two tools"
+juicer_pre,prepare_counts,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00049, E00171); no directed path between any process of the two tools"
+juicer_pre,ucsc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00049, E00058); no directed path between any process of the two tools"
+macs2,bedgraph_trim,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00052, E00082); no directed path between any process of the two tools"
+macs2,bioc_enzymecut,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00052, E00104); no directed path between any process of the two tools"
+macs2,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00052, E00010); no directed path between any process of the two tools"
+macs2,chromsizes,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00052, E00004); no directed path between any process of the two tools"
+macs2,cooltools_eigscis,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00052, E00073); no directed path between any process of the two tools"
+macs2,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00052, E00008); no directed path between any process of the two tools"
+macs2,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00052, E00144); no directed path between any process of the two tools"
+macs2,hicdcplus_features,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00052, E00139); no directed path between any process of the two tools"
+macs2,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00052, E00098); no directed path between any process of the two tools"
+macs2,homer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00052, E00069); no directed path between any process of the two tools"
+macs2,homer_findhiccompartments,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00052, E00079); no directed path between any process of the two tools"
+macs2,homer_runhicpca,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00052, E00076); no directed path between any process of the two tools"
+macs2,juicer_eigenvector,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00052, E00085); no directed path between any process of the two tools"
+macs2,maps_cut,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00052, E00108); no directed path between any process of the two tools"
+macs2,maps_feature,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00052, E00124); no directed path between any process of the two tools"
+macs2,maps_fend,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00052, E00100); no directed path between any process of the two tools"
+macs2,ucsc,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00052, E00116); no directed path between any process of the two tools"
+maps_cut,bedgraph_trim,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00109, E00081); no directed path between any process of the two tools"
+maps_cut,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00108, E00219); no directed path between any process of the two tools"
+maps_cut,bioc_enzymecut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00109, E00105); no directed path between any process of the two tools"
+maps_cut,bioc_pairs2hdf5,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00109, E00030); no directed path between any process of the two tools"
+maps_cut,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00108, E00010); no directed path between any process of the two tools"
+maps_cut,cooltools_eigscis,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00109, E00072); no directed path between any process of the two tools"
+maps_cut,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00108, E00008); no directed path between any process of the two tools"
+maps_cut,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00109, E00005); no directed path between any process of the two tools"
+maps_cut,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00109, E00095); no directed path between any process of the two tools"
+maps_cut,homer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00108, E00069); no directed path between any process of the two tools"
+maps_cut,homer_findhiccompartments,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00109, E00078); no directed path between any process of the two tools"
+maps_cut,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00108, E00212); no directed path between any process of the two tools"
+maps_cut,homer_runhicpca,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00109, E00075); no directed path between any process of the two tools"
+maps_cut,juicer_eigenvector,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00109, E00084); no directed path between any process of the two tools"
+maps_cut,juicer_pre,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00109, E00049); no directed path between any process of the two tools"
+maps_cut,macs2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00108, E00052); no directed path between any process of the two tools"
+maps_cut,pairsqc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00109, E00039); no directed path between any process of the two tools"
+maps_cut,pairtools,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00109, E00031); no directed path between any process of the two tools"
+maps_cut,post_counts,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00108, E00174); no directed path between any process of the two tools"
+maps_cut,prepare_counts,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00109, E00171); no directed path between any process of the two tools"
+maps_feature,bedgraph_trim,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00125, E00081); no directed path between any process of the two tools"
+maps_feature,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00124, E00219); no directed path between any process of the two tools"
+maps_feature,bioc_pairs2hdf5,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00125, E00030); no directed path between any process of the two tools"
+maps_feature,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00124, E00010); no directed path between any process of the two tools"
+maps_feature,cooltools_eigscis,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00125, E00072); no directed path between any process of the two tools"
+maps_feature,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00124, E00008); no directed path between any process of the two tools"
+maps_feature,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00125, E00005); no directed path between any process of the two tools"
+maps_feature,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00125, E00095); no directed path between any process of the two tools"
+maps_feature,homer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00124, E00069); no directed path between any process of the two tools"
+maps_feature,homer_findhiccompartments,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00125, E00078); no directed path between any process of the two tools"
+maps_feature,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00124, E00212); no directed path between any process of the two tools"
+maps_feature,homer_runhicpca,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00125, E00075); no directed path between any process of the two tools"
+maps_feature,juicer_eigenvector,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00125, E00084); no directed path between any process of the two tools"
+maps_feature,juicer_pre,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00125, E00049); no directed path between any process of the two tools"
+maps_feature,macs2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00124, E00052); no directed path between any process of the two tools"
+maps_feature,pairsqc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00125, E00039); no directed path between any process of the two tools"
+maps_feature,pairtools,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00125, E00031); no directed path between any process of the two tools"
+maps_feature,post_counts,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00124, E00174); no directed path between any process of the two tools"
+maps_feature,prepare_counts,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00125, E00171); no directed path between any process of the two tools"
+maps_fend,bedgraph_trim,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00101, E00081); no directed path between any process of the two tools"
+maps_fend,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00100, E00219); no directed path between any process of the two tools"
+maps_fend,bioc_pairs2hdf5,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00101, E00030); no directed path between any process of the two tools"
+maps_fend,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00100, E00010); no directed path between any process of the two tools"
+maps_fend,cooltools_eigscis,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00101, E00072); no directed path between any process of the two tools"
+maps_fend,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00100, E00008); no directed path between any process of the two tools"
+maps_fend,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00101, E00005); no directed path between any process of the two tools"
+maps_fend,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00101, E00095); no directed path between any process of the two tools"
+maps_fend,homer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00100, E00069); no directed path between any process of the two tools"
+maps_fend,homer_findhiccompartments,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00101, E00078); no directed path between any process of the two tools"
+maps_fend,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00100, E00212); no directed path between any process of the two tools"
+maps_fend,homer_runhicpca,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00101, E00075); no directed path between any process of the two tools"
+maps_fend,juicer_eigenvector,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00101, E00084); no directed path between any process of the two tools"
+maps_fend,juicer_pre,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00101, E00049); no directed path between any process of the two tools"
+maps_fend,macs2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00100, E00052); no directed path between any process of the two tools"
+maps_fend,pairsqc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00101, E00039); no directed path between any process of the two tools"
+maps_fend,pairtools,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00101, E00031); no directed path between any process of the two tools"
+maps_fend,post_counts,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00100, E00174); no directed path between any process of the two tools"
+maps_fend,prepare_counts,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00101, E00171); no directed path between any process of the two tools"
+maps_maps,cooltools_pileup,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00128, E00162); no directed path between any process of the two tools"
+maps_maps,hicexplorer_hicaggregatecontacts,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00128, E00154); no directed path between any process of the two tools"
+maps_maps,recenter_peak,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00128, E00061); no directed path between any process of the two tools"
+merge_interactions,bioc_chippeakanno,parallel_co_use,0,0,,"both consume HICDCPLUS_CALL_LOOPS.interactions (E00151, E00228); no directed path between any process of the two tools"
+merge_interactions,circos_prepare,parallel_co_use,0,0,,"both consume HICDCPLUS_CALL_LOOPS.interactions (E00151, E00257); no directed path between any process of the two tools"
+merge_interactions,igv,parallel_co_use,0,0,,"both consume HICDCPLUS_CALL_LOOPS.interactions (E00151, E00264); no directed path between any process of the two tools"
+merge_peak,atacqc,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00053, E00054); no directed path between any process of the two tools"
+merge_peak,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00053, E00214); no directed path between any process of the two tools"
+merge_peak,diff_hipeak,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00053, E00181); no directed path between any process of the two tools"
+merge_peak,ensembl_ucsc_convert,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00053, E00202); no directed path between any process of the two tools"
+merge_peak,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00053, E00207); no directed path between any process of the two tools"
+merge_peak,prepare_counts,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00053, E00168); no directed path between any process of the two tools"
+merge_peak,seqlevels_style,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00053, E00197); no directed path between any process of the two tools"
+pairsqc,bedgraph_trim,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00039, E00081); no directed path between any process of the two tools"
+pairsqc,bioc_enzymecut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00039, E00105); no directed path between any process of the two tools"
+pairsqc,bioc_pairs2hdf5,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00039, E00030); no directed path between any process of the two tools"
+pairsqc,circos_prepare,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00039, E00261); no directed path between any process of the two tools"
+pairsqc,cooler,parallel_co_use,0,0,,"both consume PAIRIX.index (E00038, E00044); no directed path between any process of the two tools"
+pairsqc,cooltools_eigscis,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00039, E00072); no directed path between any process of the two tools"
+pairsqc,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00039, E00005); no directed path between any process of the two tools"
+pairsqc,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00039, E00145); no directed path between any process of the two tools"
+pairsqc,hicdcplus_features,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00039, E00140); no directed path between any process of the two tools"
+pairsqc,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00039, E00095); no directed path between any process of the two tools"
+pairsqc,homer_findhiccompartments,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00039, E00078); no directed path between any process of the two tools"
+pairsqc,homer_runhicpca,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00039, E00075); no directed path between any process of the two tools"
+pairsqc,juicer_eigenvector,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00039, E00084); no directed path between any process of the two tools"
+pairsqc,juicer_pre,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00039, E00049); no directed path between any process of the two tools"
+pairsqc,maps_cut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00039, E00109); no directed path between any process of the two tools"
+pairsqc,maps_feature,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00039, E00125); no directed path between any process of the two tools"
+pairsqc,maps_fend,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00039, E00101); no directed path between any process of the two tools"
+pairsqc,prepare_counts,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00039, E00171); no directed path between any process of the two tools"
+pairsqc,ucsc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00039, E00058); no directed path between any process of the two tools"
+pairtools,bedgraph_trim,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00031, E00081); no directed path between any process of the two tools"
+pairtools,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume SAMTOOLS_MERGE.bam (E00022, E00218); no directed path between any process of the two tools"
+pairtools,bioc_enzymecut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00031, E00105); no directed path between any process of the two tools"
+pairtools,bioc_pairs2hdf5,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00031, E00030); no directed path between any process of the two tools"
+pairtools,call_r1peak,parallel_co_use,0,0,,"both consume COOLER_DIGEST.bed (E00029, E00165); no directed path between any process of the two tools"
+pairtools,ensembl_ucsc_convert,parallel_co_use,0,0,,"both consume SAMTOOLS_MERGE.bam (E00022, E00223); no directed path between any process of the two tools"
+pairtools,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00031, E00005); no directed path between any process of the two tools"
+pairtools,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00031, E00145); no directed path between any process of the two tools"
+pairtools,hicdcplus_features,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00031, E00140); no directed path between any process of the two tools"
+pairtools,homer_findhiccompartments,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00031, E00078); no directed path between any process of the two tools"
+pairtools,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume SAMTOOLS_MERGE.bam (E00022, E00224); no directed path between any process of the two tools"
+pairtools,homer_runhicpca,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00031, E00075); no directed path between any process of the two tools"
+pairtools,juicer_eigenvector,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00031, E00084); no directed path between any process of the two tools"
+pairtools,juicer_pre,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00031, E00049); no directed path between any process of the two tools"
+pairtools,maps_cut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00031, E00109); no directed path between any process of the two tools"
+pairtools,maps_feature,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00031, E00125); no directed path between any process of the two tools"
+pairtools,maps_fend,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00031, E00101); no directed path between any process of the two tools"
+pairtools,post_counts,parallel_co_use,0,0,,"both consume COOLER_DIGEST.bed (E00029, E00175); no directed path between any process of the two tools"
+pairtools,prepare_counts,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00031, E00171); no directed path between any process of the two tools"
+pairtools,seqlevels_style,parallel_co_use,0,0,,"both consume SAMTOOLS_MERGE.bam (E00022, E00222); no directed path between any process of the two tools"
+pairtools,ucsc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00031, E00058); no directed path between any process of the two tools"
+peakachu_model,cooltools_eigscis,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00147, E00090); no directed path between any process of the two tools"
+peakachu_model,cooltools_insulation,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00147, E00091); no directed path between any process of the two tools"
+peakachu_model,cooltools_pileup,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00147, E00161); no directed path between any process of the two tools"
+peakachu_model,hicexplorer_chicqualitycontrol,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00147, E00062); no directed path between any process of the two tools"
+peakachu_model,hicexplorer_hicaggregatecontacts,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00147, E00153); no directed path between any process of the two tools"
+peakachu_model,hicexplorer_hicfindtads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00147, E00092); no directed path between any process of the two tools"
+peakachu_model,hicexplorer_hicpca,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00147, E00086); no directed path between any process of the two tools"
+peakachu_model,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00147, E00093); no directed path between any process of the two tools"
+peakachu_model,hicexplorer_hictransform,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00147, E00087); no directed path between any process of the two tools"
+peakachu_score,cooltools_eigscis,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00148, E00090); no directed path between any process of the two tools"
+peakachu_score,cooltools_insulation,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00148, E00091); no directed path between any process of the two tools"
+peakachu_score,cooltools_pileup,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00148, E00161); no directed path between any process of the two tools"
+peakachu_score,hicexplorer_chicqualitycontrol,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00148, E00062); no directed path between any process of the two tools"
+peakachu_score,hicexplorer_hicaggregatecontacts,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00148, E00153); no directed path between any process of the two tools"
+peakachu_score,hicexplorer_hicfindtads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00148, E00092); no directed path between any process of the two tools"
+peakachu_score,hicexplorer_hicpca,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00148, E00086); no directed path between any process of the two tools"
+peakachu_score,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00148, E00093); no directed path between any process of the two tools"
+peakachu_score,hicexplorer_hictransform,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00148, E00087); no directed path between any process of the two tools"
+post_counts,bedgraph_trim,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00174, E00082); no directed path between any process of the two tools"
+post_counts,bioc_enzymecut,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00174, E00104); no directed path between any process of the two tools"
+post_counts,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00174, E00010); no directed path between any process of the two tools"
+post_counts,circos_prepare,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00174, E00255); no directed path between any process of the two tools"
+post_counts,cooltools_eigscis,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00174, E00073); no directed path between any process of the two tools"
+post_counts,custom,parallel_co_use,0,0,,"both consume PREPARE_COUNTS.counts (E00172, E00275); no directed path between any process of the two tools"
+post_counts,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00174, E00008); no directed path between any process of the two tools"
+post_counts,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00174, E00144); no directed path between any process of the two tools"
+post_counts,hicdcplus_features,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00174, E00139); no directed path between any process of the two tools"
+post_counts,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00174, E00098); no directed path between any process of the two tools"
+post_counts,homer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00174, E00069); no directed path between any process of the two tools"
+post_counts,homer_findhiccompartments,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00174, E00079); no directed path between any process of the two tools"
+post_counts,homer_runhicpca,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00174, E00076); no directed path between any process of the two tools"
+post_counts,juicer_eigenvector,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00174, E00085); no directed path between any process of the two tools"
+post_counts,maps_cut,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00174, E00108); no directed path between any process of the two tools"
+post_counts,maps_feature,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00174, E00124); no directed path between any process of the two tools"
+post_counts,maps_fend,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00174, E00100); no directed path between any process of the two tools"
+post_counts,pairtools,parallel_co_use,0,0,,"both consume COOLER_DIGEST.bed (E00175, E00029); no directed path between any process of the two tools"
+prepare_counts,atacqc,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00168, E00054); no directed path between any process of the two tools"
+prepare_counts,bedgraph_trim,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00171, E00081); no directed path between any process of the two tools"
+prepare_counts,bioc_enzymecut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00171, E00105); no directed path between any process of the two tools"
+prepare_counts,circos_prepare,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00171, E00261); no directed path between any process of the two tools"
+prepare_counts,cooltools_eigscis,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00171, E00072); no directed path between any process of the two tools"
+prepare_counts,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00171, E00005); no directed path between any process of the two tools"
+prepare_counts,hicdcplus_call_loops,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00171, E00145); no directed path between any process of the two tools"
+prepare_counts,hicdcplus_features,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00171, E00140); no directed path between any process of the two tools"
+prepare_counts,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00171, E00095); no directed path between any process of the two tools"
+prepare_counts,homer_findhiccompartments,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00171, E00078); no directed path between any process of the two tools"
+prepare_counts,homer_runhicpca,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00171, E00075); no directed path between any process of the two tools"
+prepare_counts,juicer_eigenvector,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00171, E00084); no directed path between any process of the two tools"
+prepare_counts,juicer_pre,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00171, E00049); no directed path between any process of the two tools"
+prepare_counts,maps_cut,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00171, E00109); no directed path between any process of the two tools"
+prepare_counts,maps_feature,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00171, E00125); no directed path between any process of the two tools"
+prepare_counts,maps_fend,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00171, E00101); no directed path between any process of the two tools"
+prepare_counts,merge_peak,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00168, E00053); no directed path between any process of the two tools"
+prepare_counts,pairsqc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00171, E00039); no directed path between any process of the two tools"
+prepare_counts,pairtools,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00171, E00031); no directed path between any process of the two tools"
+prepare_counts,ucsc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00171, E00058); no directed path between any process of the two tools"
+recenter_peak,bioc_chippeakanno,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00061, E00230); no directed path between any process of the two tools"
+recenter_peak,bioc_subsetloops,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00061, E00155); no directed path between any process of the two tools"
+recenter_peak,cooltools_pileup,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00061, E00162); no directed path between any process of the two tools"
+recenter_peak,hicexplorer_hicaggregatecontacts,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00061, E00154); no directed path between any process of the two tools"
+recenter_peak,maps_maps,parallel_co_use,0,0,,"both consume MERGE_PEAK.peak (E00061, E00128); no directed path between any process of the two tools"
+seqlevels_style,atacqc,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00197, E00054); no directed path between any process of the two tools"
+seqlevels_style,bioc_atacseqtfea,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00197, E00214); no directed path between any process of the two tools"
+seqlevels_style,ensembl_ucsc_convert,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00197, E00202); no directed path between any process of the two tools"
+seqlevels_style,homer_findmotifsgenome,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00197, E00207); no directed path between any process of the two tools"
+seqlevels_style,merge_peak,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK.peak (E00197, E00053); no directed path between any process of the two tools"
+seqlevels_style,pairtools,parallel_co_use,0,0,,"both consume SAMTOOLS_MERGE.bam (E00222, E00022); no directed path between any process of the two tools"
+ucsc,bedgraph_trim,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00058, E00081); no directed path between any process of the two tools"
+ucsc,bioc_pairs2hdf5,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00058, E00030); no directed path between any process of the two tools"
+ucsc,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00116, E00010); no directed path between any process of the two tools"
+ucsc,cooltools_eigscis,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00058, E00072); no directed path between any process of the two tools"
+ucsc,genmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00116, E00008); no directed path between any process of the two tools"
+ucsc,genome_filter,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00058, E00005); no directed path between any process of the two tools"
+ucsc,hicexplorer_hicplottads,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00058, E00095); no directed path between any process of the two tools"
+ucsc,homer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00116, E00069); no directed path between any process of the two tools"
+ucsc,homer_findhiccompartments,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00058, E00078); no directed path between any process of the two tools"
+ucsc,homer_runhicpca,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00058, E00075); no directed path between any process of the two tools"
+ucsc,juicer_eigenvector,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00058, E00084); no directed path between any process of the two tools"
+ucsc,juicer_pre,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00058, E00049); no directed path between any process of the two tools"
+ucsc,macs2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00116, E00052); no directed path between any process of the two tools"
+ucsc,pairsqc,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00058, E00039); no directed path between any process of the two tools"
+ucsc,pairtools,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00058, E00031); no directed path between any process of the two tools"
+ucsc,prepare_counts,parallel_co_use,0,0,,"both consume CHROMSIZES.sizes (E00058, E00171); no directed path between any process of the two tools"

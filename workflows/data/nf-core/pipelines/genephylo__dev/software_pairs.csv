@@ -1,0 +1,9 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+blast,blast_extract,data_flow,2,2,E00005,
+blast,ete_filter,data_flow,2,2,E00012,
+blast,seqkit,data_flow,1,1,E00010,
+blast_extract,blast,data_flow,1,1,E00007,
+ete_filter,td2,data_flow,2,2,E00015,
+ete_taxdb,ete_filter,data_flow,1,1,E00014,
+seqkit,ete_filter,data_flow,1,1,E00011,
+td2,mafft,data_flow,4,4,E00018,

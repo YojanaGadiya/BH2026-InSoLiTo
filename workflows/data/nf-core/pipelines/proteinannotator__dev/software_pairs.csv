@@ -1,0 +1,33 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+aria2,gunzip,data_flow,1,1,E00016,
+aria2,hmmer,data_flow,4,4,E00005,
+aria2,untar,data_flow,2,2,E00012,
+gunzip,kofamscan,data_flow,1,1,E00019,
+seqfu,multiqc,data_flow,2,2,E00021,
+seqkit,hmmer,data_flow,4,4,E00004,
+seqkit,interproscan,data_flow,1,1,E00013,
+seqkit,kofamscan,data_flow,1,1,E00017,
+seqkit,s4pred,data_flow,1,1,E00020,
+seqkit,seqfu,data_flow,1,1,E00003,
+untar,interproscan,data_flow,1,1,E00014,
+untar,kofamscan,data_flow,1,1,E00018,
+hmmer,interproscan,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00006, E00013); no directed path between any process of the two tools"
+hmmer,kofamscan,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00006, E00017); no directed path between any process of the two tools"
+hmmer,s4pred,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00006, E00020); no directed path between any process of the two tools"
+hmmer,seqfu,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00006, E00003); no directed path between any process of the two tools"
+interproscan,hmmer,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00013, E00006); no directed path between any process of the two tools"
+interproscan,kofamscan,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00013, E00017); no directed path between any process of the two tools"
+interproscan,s4pred,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00013, E00020); no directed path between any process of the two tools"
+interproscan,seqfu,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00013, E00003); no directed path between any process of the two tools"
+kofamscan,hmmer,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00017, E00006); no directed path between any process of the two tools"
+kofamscan,interproscan,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00017, E00013); no directed path between any process of the two tools"
+kofamscan,s4pred,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00017, E00020); no directed path between any process of the two tools"
+kofamscan,seqfu,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00017, E00003); no directed path between any process of the two tools"
+s4pred,hmmer,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00020, E00006); no directed path between any process of the two tools"
+s4pred,interproscan,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00020, E00013); no directed path between any process of the two tools"
+s4pred,kofamscan,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00020, E00017); no directed path between any process of the two tools"
+s4pred,seqfu,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00020, E00003); no directed path between any process of the two tools"
+seqfu,hmmer,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00003, E00006); no directed path between any process of the two tools"
+seqfu,interproscan,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00003, E00013); no directed path between any process of the two tools"
+seqfu,kofamscan,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00003, E00017); no directed path between any process of the two tools"
+seqfu,s4pred,parallel_co_use,0,0,,"both consume SEQKIT_RMDUP.fastx (E00003, E00020); no directed path between any process of the two tools"

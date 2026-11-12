@@ -1,0 +1,72 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+cometadapter,peptideindexer,data_flow,1,1,E00019,
+consensusid,falsediscoveryrate,data_flow,1,1,E00030,
+decoydatabase,cometadapter,data_flow,1,1,E00016,
+decoydatabase,msgfplusadapter,data_flow,1,1,E00011,
+decoydatabase,peptideindexer,data_flow,1,1,E00020,
+decoydatabase,proteomicslfq,data_flow,1,1,E00052,
+expdesign_raw2mzml,multiqc,data_flow,1,1,E00057,
+expdesign_raw2mzml,proteomicslfq,data_flow,1,1,E00051,
+falsediscoveryrate,idfilter,data_flow,1,1,E00032,
+falsediscoveryrate,idposteriorerrorprobability,data_flow,1,1,E00024,
+fileconverter,cometadapter,data_flow,1,1,E00014,
+fileconverter,luciphoradapter,data_flow,1,1,E00036,
+fileconverter,msgfplusadapter,data_flow,1,1,E00009,
+fileconverter,multiqc,data_flow,2,2,E00060,
+fileconverter,peakpickerhires,data_flow,1,1,E00006,
+fileconverter,proteomicslfq,data_flow,2,2,E00040,
+idfilter,idscoreswitcher,data_flow,1,1,E00033,
+idfilter,multiqc,data_flow,2,2,E00062,
+idfilter,proteomicslfq,data_flow,2,2,E00042,
+idposteriorerrorprobability,consensusid,data_flow,1,1,E00028,
+idposteriorerrorprobability,idscoreswitcher,data_flow,1,1,E00026,
+idscoreswitcher,idfilter,data_flow,1,1,E00031,
+idscoreswitcher,luciphoradapter,data_flow,1,1,E00037,
+luciphoradapter,multiqc,data_flow,2,2,E00063,
+luciphoradapter,proteomicslfq,data_flow,2,2,E00043,
+msgfplusadapter,peptideindexer,data_flow,1,1,E00018,
+parse_sdrf,cometadapter,data_flow,1,1,E00012,
+parse_sdrf,decoydatabase,data_flow,1,1,E00003,
+parse_sdrf,fileconverter,data_flow,1,1,E00002,
+parse_sdrf,luciphoradapter,data_flow,1,1,E00034,
+parse_sdrf,msgfplusadapter,data_flow,1,1,E00007,
+parse_sdrf,multiqc,data_flow,3,3,E00056,
+parse_sdrf,peakpickerhires,data_flow,1,1,E00004,
+parse_sdrf,peptideindexer,data_flow,1,1,E00017,
+parse_sdrf,proteomicslfq,data_flow,3,3,E00038,
+parse_sdrf,thermorawfileparser,data_flow,1,1,E00001,
+peakpickerhires,cometadapter,data_flow,1,1,E00015,
+peakpickerhires,msgfplusadapter,data_flow,1,1,E00010,
+peakpickerhires,multiqc,data_flow,2,2,E00061,
+peakpickerhires,proteomicslfq,data_flow,2,2,E00041,
+peptideindexer,falsediscoveryrate,data_flow,1,1,E00023,
+peptideindexer,idposteriorerrorprobability,data_flow,1,1,E00025,
+peptideindexer,psmfeatureextractor,data_flow,1,1,E00021,
+percolatoradapter,consensusid,data_flow,1,1,E00029,
+percolatoradapter,idscoreswitcher,data_flow,1,1,E00027,
+proteomicslfq,msstats_plfq,data_flow,2,2,E00053,
+proteomicslfq,multiqc,data_flow,3,3,E00064,
+proteomicslfq,ptxqc,data_flow,1,1,E00055,
+psmfeatureextractor,percolatoradapter,data_flow,1,1,E00022,
+thermorawfileparser,cometadapter,data_flow,1,1,E00013,
+thermorawfileparser,luciphoradapter,data_flow,1,1,E00035,
+thermorawfileparser,msgfplusadapter,data_flow,1,1,E00008,
+thermorawfileparser,multiqc,data_flow,2,2,E00059,
+thermorawfileparser,peakpickerhires,data_flow,1,1,E00005,
+thermorawfileparser,proteomicslfq,data_flow,2,2,E00039,
+cometadapter,msgfplusadapter,parallel_co_use,0,0,,"both consume generate_decoy_database.searchengine_in_db_decoy_msgf (E00016, E00011); no directed path between any process of the two tools"
+decoydatabase,fileconverter,parallel_co_use,0,0,,"both consume sdrf_parsing.ch_sdrf_config_file (E00003, E00002); no directed path between any process of the two tools"
+decoydatabase,peakpickerhires,parallel_co_use,0,0,,"both consume sdrf_parsing.ch_sdrf_config_file (E00003, E00004); no directed path between any process of the two tools"
+decoydatabase,thermorawfileparser,parallel_co_use,0,0,,"both consume sdrf_parsing.ch_sdrf_config_file (E00003, E00001); no directed path between any process of the two tools"
+fileconverter,decoydatabase,parallel_co_use,0,0,,"both consume sdrf_parsing.ch_sdrf_config_file (E00002, E00003); no directed path between any process of the two tools"
+fileconverter,thermorawfileparser,parallel_co_use,0,0,,"both consume sdrf_parsing.ch_sdrf_config_file (E00002, E00001); no directed path between any process of the two tools"
+msgfplusadapter,cometadapter,parallel_co_use,0,0,,"both consume generate_decoy_database.searchengine_in_db_decoy_msgf (E00011, E00016); no directed path between any process of the two tools"
+msstats_plfq,multiqc,parallel_co_use,0,0,,"both consume proteomicslfq.out_msstats (E00053, E00066); no directed path between any process of the two tools"
+msstats_plfq,ptxqc,parallel_co_use,0,0,,"both consume proteomicslfq.out_mztab_plfq (E00054, E00055); no directed path between any process of the two tools"
+multiqc,msstats_plfq,parallel_co_use,0,0,,"both consume proteomicslfq.out_msstats (E00066, E00053); no directed path between any process of the two tools"
+multiqc,ptxqc,parallel_co_use,0,0,,"both consume proteomicslfq.out_mztab_plfq (E00064, E00055); no directed path between any process of the two tools"
+peakpickerhires,decoydatabase,parallel_co_use,0,0,,"both consume sdrf_parsing.ch_sdrf_config_file (E00004, E00003); no directed path between any process of the two tools"
+ptxqc,msstats_plfq,parallel_co_use,0,0,,"both consume proteomicslfq.out_mztab_plfq (E00055, E00054); no directed path between any process of the two tools"
+ptxqc,multiqc,parallel_co_use,0,0,,"both consume proteomicslfq.out_mztab_plfq (E00055, E00064); no directed path between any process of the two tools"
+thermorawfileparser,decoydatabase,parallel_co_use,0,0,,"both consume sdrf_parsing.ch_sdrf_config_file (E00001, E00003); no directed path between any process of the two tools"
+thermorawfileparser,fileconverter,parallel_co_use,0,0,,"both consume sdrf_parsing.ch_sdrf_config_file (E00001, E00002); no directed path between any process of the two tools"

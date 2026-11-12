@@ -1,0 +1,5 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_DEMO:DEMO:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_DEMO:DEMO:SEQTK_TRIM,SEQTK_TRIM,modules/nf-core/seqtk/trim/main.nf,1,seqtk,seqtk,seqtk,environment.yml
+NFCORE_DEMO:DEMO:COWPY,COWPY,modules/local/cowpy/main.nf,1,cowpy,,cowpy,environment.yml
+NFCORE_DEMO:DEMO:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

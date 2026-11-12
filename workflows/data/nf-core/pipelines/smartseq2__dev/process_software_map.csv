@@ -1,0 +1,17 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+makeSTARindex,makeSTARindex,main.nf,209,star,,star,script and directives
+make_rsem_reference,make_rsem_reference,main.nf,261,rsem-prepare-reference,,rsem-prepare-reference,script and directives
+fastqc,fastqc,main.nf,303,fastqc,,fastqc,script and directives
+STAR,STAR,main.nf,326,star,,star,script and directives
+featureCounts,featureCounts,main.nf,357,featurecounts,,featurecounts,script and directives
+summarize_FC,summarize_FC,main.nf,382,summarize_fc,,,module name
+make_matrices_fc,make_matrices_fc,main.nf,408,make_matrices_fc,,,module name
+rsem,rsem,main.nf,434,rsem-calculate-expression,,rsem-calculate-expression,script and directives
+summmarize_TPM,summmarize_TPM,main.nf,463,summmarize_tpm,,,module name
+make_matrices_tpm,make_matrices_tpm,main.nf,488,make_matrices_tpm,,,module name
+TraCeR,TraCeR,main.nf,522,tracer,,tracer,script and directives
+TCR_summary,TCR_summary,main.nf,543,tracer,,tracer,script and directives
+BraCeR,BraCeR,main.nf,569,bracer,,bracer,script and directives
+BCR_summary,BCR_summary,main.nf,590,bracer,,bracer,script and directives
+get_software_versions,get_software_versions,main.nf,620,fastqc,,fastqc;multiqc;scrape_software_versions;markdown_to_html,script and directives
+multiqc,multiqc,main.nf,648,multiqc,,multiqc,script and directives

@@ -1,0 +1,22 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:CUSTOM_GETCHROMSIZES,CUSTOM_GETCHROMSIZES,modules/nf-core/custom/getchromsizes/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:PREPROCESS_IBIS_BEDFILE_TO_STIMULUS:CENTER_AROUND_PEAK,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:PREPROCESS_IBIS_BEDFILE_TO_STIMULUS:EXTRACT_FOREGROUND,AWK_EXTRACT,modules/local/awk/extract/main.nf,1,gawk,,gawk,environment.yml
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:PREPROCESS_IBIS_BEDFILE_TO_STIMULUS:EXTRACT_BACKGROUND_ALIENS,AWK_EXTRACT,modules/local/awk/extract/main.nf,1,gawk,,gawk,environment.yml
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:PREPROCESS_IBIS_BEDFILE_TO_STIMULUS:EXTRACT_BACKGROUND_SHADE,BEDTOOLS_SHIFT,modules/nf-core/bedtools/shift/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:PREPROCESS_IBIS_BEDFILE_TO_STIMULUS:EXTRACT_BACKGROUND_SHUFFLE,BEDTOOLS_SHUFFLE,modules/nf-core/bedtools/shuffle/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:PREPROCESS_IBIS_BEDFILE_TO_STIMULUS:BEDTOOLS_SUBTRACT,BEDTOOLS_SUBTRACT,modules/nf-core/bedtools/subtract/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:PREPROCESS_IBIS_BEDFILE_TO_STIMULUS:BEDTOOLS_GETFASTA_FOREGROUND,BEDTOOLS_GETFASTA,modules/nf-core/bedtools/getfasta/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:PREPROCESS_IBIS_BEDFILE_TO_STIMULUS:BEDTOOLS_GETFASTA_BACKGROUND,BEDTOOLS_GETFASTA,modules/nf-core/bedtools/getfasta/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:PREPROCESS_IBIS_BEDFILE_TO_STIMULUS:BACKGROUND_FOREGROUND_TO_STIMULUS_CSV,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:SPLIT_DATA_CONFIG_UNIFIED_WF:STIMULUS_SPLIT_YAML,STIMULUS_SPLIT_YAML,modules/local/stimulus/split_yaml/main.nf,1,stimulus_split_yaml,,,module name
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:SPLIT_CSV_WF:STIMULUS_SPLIT_DATA,STIMULUS_SPLIT_DATA,modules/local/stimulus/split_csv/main.nf,1,stimulus_split_data,,,module name
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:TRANSFORM_CSV_WF:STIMULUS_TRANSFORM_CSV,STIMULUS_TRANSFORM_CSV,modules/local/stimulus/transform_csv/main.nf,1,stimulus_transform_csv,,,module name
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:TRANSFORM_CSV_WF:ENCODE_CSV,ENCODE_CSV,modules/local/stimulus/encode/main.nf,1,encode_csv,,,module name
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:CHECK_MODEL_WF:CHECK_MODEL,CHECK_MODEL,modules/local/stimulus/check_model/main.nf,1,check_model,,,module name
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:TUNE_WF:CUSTOM_MODIFY_MODEL_CONFIG,CUSTOM_MODIFY_MODEL_CONFIG,modules/local/custom/modify_model_config/main.nf,1,custom_modify_model_config,,,module name
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:TUNE_WF:STIMULUS_TUNE,STIMULUS_TUNE,modules/local/stimulus/tune/main.nf,1,stimulus_tune,,,module name
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:ENCODE_CSV,ENCODE_CSV,modules/local/stimulus/encode/main.nf,1,encode_csv,,,module name
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:EVALUATION_WF:STIMULUS_PREDICT,STIMULUS_PREDICT,modules/local/stimulus/predict/main.nf,1,stimulus_predict,,,module name
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:EVALUATION_WF:STIMULUS_COMPARE_TENSORS_COSINE,STIMULUS_COMPARE_TENSORS,modules/local/stimulus/compare_tensors/main.nf,1,stimulus_compare_tensors,,,module name
+NFCORE_DEEPMODELOPTIM:DEEPMODELOPTIM:EVALUATION_WF:CONCAT_COSINE,CSVTK_CONCAT,modules/nf-core/csvtk/concat/main.nf,1,csvtk,csvtk,csvtk,environment.yml

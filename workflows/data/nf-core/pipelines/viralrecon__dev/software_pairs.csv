@@ -1,0 +1,290 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+artic,freyja,data_flow,1,1,E00430,
+artic,kraken2,data_flow,1,1,E00340,
+artic,minimap2,data_flow,1,1,E00351,
+artic,mosdepth,data_flow,4,4,E00411,
+artic,multiqc,data_flow,2,2,E00491,
+artic,nanoplot,data_flow,1,1,E00343,
+artic,nextclade,data_flow,1,1,E00426,
+artic,pangolin-data,data_flow,1,1,E00422,
+artic,quast,data_flow,1,1,E00434,
+artic,samtools,data_flow,2,2,E00396,
+artic,vcflib,data_flow,2,2,E00347,
+bcftools,matplotlib,data_flow,3,3,E00206,
+bcftools,multiqc,data_flow,3,3,E00475,
+bcftools,rename_fasta_header,data_flow,2,2,E00191,
+bcftools,samtools,data_flow,2,2,E00183,
+bcftools,snpeff,data_flow,8,8,E00115,
+bcftools,xz,data_flow,2,2,E00112,
+bedtools,bcftools,data_flow,2,2,E00190,
+bedtools,cutadapt,data_flow,1,1,E00283,
+bedtools,prepare_primer_fasta,data_flow,1,1,E00276,
+blast,filter_blastn,data_flow,3,3,E00296,
+bowtie2,multiqc,data_flow,1,1,E00468,
+bowtie2,samtools,data_flow,1,1,E00030,
+cat,bowtie2,data_flow,1,1,E00025,
+cat,cutadapt,data_flow,1,1,E00280,
+cat,fastp,data_flow,1,1,E00014,
+cat,fastqc,data_flow,1,1,E00013,
+cat,kraken2,data_flow,1,1,E00019,
+cat,minia,data_flow,1,1,E00327,
+cat,multiqc,data_flow,1,1,E00466,
+cat,spades,data_flow,1,1,E00289,
+cat,unicycler,data_flow,1,1,E00308,
+clair3,bcftools,data_flow,2,2,E00373,
+collapse_primers,mosdepth,data_flow,2,2,E00100,
+cutadapt,fastqc,data_flow,1,1,E00284,
+cutadapt,minia,data_flow,1,1,E00323,
+cutadapt,multiqc,data_flow,1,1,E00486,
+cutadapt,spades,data_flow,1,1,E00285,
+cutadapt,unicycler,data_flow,1,1,E00304,
+fastp,bowtie2,data_flow,2,1,E00023,
+fastp,cutadapt,data_flow,2,1,E00278,
+fastp,fastqc,data_flow,2,1,E00015,
+fastp,kraken2,data_flow,2,1,E00017,
+fastp,minia,data_flow,2,1,E00325,
+fastp,multiqc,data_flow,2,2,E00464,
+fastp,spades,data_flow,2,1,E00287,
+fastp,unicycler,data_flow,2,1,E00306,
+fastqc,multiqc,data_flow,1,1,E00463,
+freyja,multiqc,data_flow,1,1,E00479,
+gunzip,abacas,data_flow,6,6,E00300,
+gunzip,artic,data_flow,2,2,E00345,
+gunzip,bandage,data_flow,2,2,E00292,
+gunzip,bcftools,data_flow,3,3,E00127,
+gunzip,bedtools,data_flow,4,4,E00003,
+gunzip,blast,data_flow,10,10,E00006,
+gunzip,bowtie2,data_flow,2,2,E00005,
+gunzip,clair3,data_flow,1,1,E00371,
+gunzip,collapse_primers,data_flow,2,2,E00002,
+gunzip,cutadapt,data_flow,1,1,E00282,
+gunzip,freyja,data_flow,2,2,E00150,
+gunzip,ivar,data_flow,4,4,E00045,
+gunzip,liftoff,data_flow,1,1,E00232,
+gunzip,matplotlib,data_flow,3,3,E00110,
+gunzip,minimap2,data_flow,1,1,E00350,
+gunzip,picard,data_flow,2,2,E00061,
+gunzip,prepare_primer_fasta,data_flow,1,1,E00275,
+gunzip,quast,data_flow,15,15,E00165,
+gunzip,samtools,data_flow,14,14,E00001,
+gunzip,snpeff,data_flow,14,14,E00007,
+ivar,jinja2,data_flow,1,1,E00273,
+ivar,liftoff,data_flow,1,1,E00264,
+ivar,matplotlib,gate_metadata,1,0,E00109,
+ivar,nextclade,data_flow,1,1,E00170,
+ivar,pangolin-data,data_flow,1,1,E00167,
+ivar,quast,data_flow,1,1,E00164,
+ivar,r-reshape2,data_flow,1,1,E00173,
+ivar,samtools,data_flow,1,1,E00046,
+ivar,sierra-local,data_flow,1,1,E00231,
+kraken2,bowtie2,data_flow,1,1,E00022,
+kraken2,cutadapt,data_flow,1,1,E00277,
+kraken2,minia,data_flow,1,1,E00324,
+kraken2,multiqc,data_flow,1,1,E00467,
+kraken2,spades,data_flow,1,1,E00286,
+kraken2,unicycler,data_flow,1,1,E00305,
+liftoff,jinja2,data_flow,1,1,E00274,
+liftoff,matplotlib,data_flow,1,1,E00234,
+liftoff,snpeff,data_flow,1,1,E00236,
+matplotlib,bcftools,data_flow,1,1,E00111,
+matplotlib,jinja2,data_flow,2,2,E00268,
+matplotlib,multiqc,data_flow,1,1,E00474,
+matplotlib,pysam,data_flow,1,1,E00262,
+minia,gunzip,data_flow,1,1,E00328,
+minimap2,samtools,data_flow,3,3,E00353,
+mosdepth,multiqc,data_flow,1,1,E00472,
+mosdepth,r-reshape2,data_flow,2,2,E00092,
+nextclade,jinja2,data_flow,2,2,E00270,
+nextclade,multiqc,data_flow,3,3,E00484,
+pangolin-data,matplotlib,data_flow,8,8,E00209,
+pangolin-data,multiqc,data_flow,3,3,E00480,
+picard,bcftools,data_flow,1,1,E00123,
+picard,freyja,data_flow,1,1,E00146,
+picard,ivar,data_flow,2,2,E00102,
+picard,mosdepth,data_flow,2,2,E00085,
+picard,pysam,data_flow,1,1,E00255,
+picard,samtools,data_flow,9,9,E00063,
+prepare_primer_fasta,cutadapt,data_flow,1,1,E00281,
+pycoqc,multiqc,data_flow,1,1,E00490,
+pysam,matplotlib,data_flow,1,1,E00266,
+quast,multiqc,data_flow,6,6,E00481,
+r-reshape2,multiqc,data_flow,1,1,E00473,
+rename_fasta_header,jinja2,data_flow,1,1,E00272,
+rename_fasta_header,liftoff,data_flow,1,1,E00263,
+rename_fasta_header,nextclade,data_flow,2,2,E00198,
+rename_fasta_header,pangolin-data,data_flow,2,2,E00195,
+rename_fasta_header,quast,data_flow,2,2,E00192,
+rename_fasta_header,r-reshape2,data_flow,1,1,E00201,
+rename_fasta_header,sierra-local,data_flow,1,1,E00230,
+samtools,bcftools,data_flow,5,3,E00124,
+samtools,bedtools,data_flow,2,2,E00185,
+samtools,bowtie2,rejected,1,0,E00029,every extracted edge is rejected
+samtools,clair3,data_flow,3,3,E00369,
+samtools,freyja,data_flow,5,3,E00147,
+samtools,ivar,data_flow,10,7,E00042,
+samtools,mosdepth,data_flow,18,14,E00086,
+samtools,multiqc,data_flow,7,7,E00469,
+samtools,picard,data_flow,11,9,E00058,
+samtools,pysam,data_flow,6,5,E00256,
+samtools,quast,gate_metadata,1,0,E00436,
+samtools,snpeff,rejected,1,0,E00141,every extracted edge is rejected
+sierra-local,jinja2,data_flow,1,1,E00267,
+sierra-local,matplotlib,data_flow,1,1,E00265,
+snpeff,multiqc,data_flow,3,3,E00476,
+snpeff,xz,data_flow,5,5,E00119,
+snpsift,matplotlib,data_flow,5,5,E00207,
+spades,gunzip,data_flow,2,2,E00290,
+unicycler,gunzip,data_flow,2,2,E00309,
+untar,blast,data_flow,3,3,E00294,
+untar,bowtie2,data_flow,1,1,E00026,
+untar,kraken2,data_flow,2,2,E00020,
+untar,nextclade,data_flow,3,3,E00171,
+untar,pangolin-data,data_flow,3,3,E00169,
+vcflib,bcftools,data_flow,4,4,E00349,
+vcflib,snpeff,data_flow,2,2,E00439,
+xz,bcftools,data_flow,22,22,E00113,
+xz,snpsift,data_flow,5,5,E00122,
+abacas,bcftools,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00337, E00127); no directed path between any process of the two tools"
+abacas,blast,parallel_co_use,0,0,,"both consume GUNZIP_CONTIGS.gunzip (E00336, E00329); no directed path between any process of the two tools"
+abacas,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00337, E00028); no directed path between any process of the two tools"
+abacas,freyja,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00337, E00150); no directed path between any process of the two tools"
+abacas,ivar,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00337, E00163); no directed path between any process of the two tools"
+abacas,liftoff,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00337, E00232); no directed path between any process of the two tools"
+abacas,matplotlib,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00337, E00233); no directed path between any process of the two tools"
+abacas,picard,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00337, E00061); no directed path between any process of the two tools"
+abacas,quast,parallel_co_use,0,0,,"both consume GUNZIP_CONTIGS.gunzip (E00336, E00333); no directed path between any process of the two tools"
+abacas,samtools,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00337, E00068); no directed path between any process of the two tools"
+abacas,snpeff,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00337, E00217); no directed path between any process of the two tools"
+artic,collapse_primers,parallel_co_use,0,0,,"both consume GUNZIP_PRIMER_BED.gunzip (E00346, E00010); no directed path between any process of the two tools"
+bcftools,abacas,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00127, E00337); no directed path between any process of the two tools"
+bcftools,blast,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00127, E00339); no directed path between any process of the two tools"
+bcftools,freyja,parallel_co_use,0,0,,"both consume PICARD_MARKDUPLICATES.bam (E00123, E00146); no directed path between any process of the two tools"
+bcftools,mosdepth,parallel_co_use,0,0,,"both consume PICARD_MARKDUPLICATES.bam (E00123, E00093); no directed path between any process of the two tools"
+bcftools,pysam,parallel_co_use,0,0,,"both consume PICARD_MARKDUPLICATES.bam (E00123, E00255); no directed path between any process of the two tools"
+bedtools,collapse_primers,parallel_co_use,0,0,,"both consume GUNZIP_PRIMER_BED.gunzip (E00003, E00002); no directed path between any process of the two tools"
+bedtools,freyja,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00187, E00150); no directed path between any process of the two tools"
+bedtools,snpeff,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00187, E00217); no directed path between any process of the two tools"
+blast,abacas,parallel_co_use,0,0,,"both consume GUNZIP_CONTIGS.gunzip (E00329, E00336); no directed path between any process of the two tools"
+blast,bcftools,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00339, E00127); no directed path between any process of the two tools"
+blast,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00339, E00028); no directed path between any process of the two tools"
+blast,freyja,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00339, E00150); no directed path between any process of the two tools"
+blast,ivar,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00339, E00163); no directed path between any process of the two tools"
+blast,liftoff,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00339, E00232); no directed path between any process of the two tools"
+blast,matplotlib,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00339, E00233); no directed path between any process of the two tools"
+blast,picard,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00339, E00061); no directed path between any process of the two tools"
+blast,quast,parallel_co_use,0,0,,"both consume GUNZIP_CONTIGS.gunzip (E00329, E00333); no directed path between any process of the two tools"
+blast,samtools,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00339, E00068); no directed path between any process of the two tools"
+blast,snpeff,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00339, E00217); no directed path between any process of the two tools"
+bowtie2,abacas,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00028, E00337); no directed path between any process of the two tools"
+bowtie2,blast,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00028, E00339); no directed path between any process of the two tools"
+bowtie2,cutadapt,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00025, E00280); no directed path between any process of the two tools"
+bowtie2,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00025, E00013); no directed path between any process of the two tools"
+bowtie2,minia,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00025, E00327); no directed path between any process of the two tools"
+bowtie2,spades,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00025, E00289); no directed path between any process of the two tools"
+bowtie2,unicycler,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00025, E00308); no directed path between any process of the two tools"
+collapse_primers,artic,parallel_co_use,0,0,,"both consume GUNZIP_PRIMER_BED.gunzip (E00010, E00346); no directed path between any process of the two tools"
+collapse_primers,bedtools,parallel_co_use,0,0,,"both consume GUNZIP_PRIMER_BED.gunzip (E00002, E00003); no directed path between any process of the two tools"
+collapse_primers,ivar,parallel_co_use,0,0,,"both consume GUNZIP_PRIMER_BED.gunzip (E00002, E00045); no directed path between any process of the two tools"
+collapse_primers,samtools,parallel_co_use,0,0,,"both consume GUNZIP_PRIMER_BED.gunzip (E00010, E00355); no directed path between any process of the two tools"
+cutadapt,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00280, E00025); no directed path between any process of the two tools"
+fastqc,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00013, E00025); no directed path between any process of the two tools"
+fastqc,minia,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00013, E00327); no directed path between any process of the two tools"
+fastqc,spades,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00013, E00289); no directed path between any process of the two tools"
+fastqc,unicycler,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00013, E00308); no directed path between any process of the two tools"
+freyja,abacas,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00150, E00337); no directed path between any process of the two tools"
+freyja,bcftools,parallel_co_use,0,0,,"both consume PICARD_MARKDUPLICATES.bam (E00146, E00123); no directed path between any process of the two tools"
+freyja,bedtools,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00150, E00187); no directed path between any process of the two tools"
+freyja,blast,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00150, E00339); no directed path between any process of the two tools"
+freyja,liftoff,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00150, E00232); no directed path between any process of the two tools"
+freyja,matplotlib,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00150, E00233); no directed path between any process of the two tools"
+freyja,mosdepth,parallel_co_use,0,0,,"both consume ARTIC_MINION.bam_primertrimmed (E00430, E00416); no directed path between any process of the two tools"
+freyja,pysam,parallel_co_use,0,0,,"both consume PICARD_MARKDUPLICATES.bam (E00146, E00255); no directed path between any process of the two tools"
+freyja,quast,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00150, E00334); no directed path between any process of the two tools"
+freyja,snpeff,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00150, E00217); no directed path between any process of the two tools"
+ivar,abacas,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00163, E00337); no directed path between any process of the two tools"
+ivar,blast,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00163, E00339); no directed path between any process of the two tools"
+ivar,collapse_primers,parallel_co_use,0,0,,"both consume GUNZIP_PRIMER_BED.gunzip (E00045, E00002); no directed path between any process of the two tools"
+jinja2,multiqc,parallel_co_use,0,0,,"both consume NEXTCLADE_RUN.csv (E00270, E00484); no directed path between any process of the two tools"
+jinja2,pangolin-data,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00272, E00195); no directed path between any process of the two tools"
+jinja2,quast,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00272, E00192); no directed path between any process of the two tools"
+jinja2,r-reshape2,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00272, E00201); no directed path between any process of the two tools"
+kraken2,minimap2,parallel_co_use,0,0,,"both consume ARTIC_GUPPYPLEX.fastq (E00340, E00351); no directed path between any process of the two tools"
+kraken2,nanoplot,parallel_co_use,0,0,,"both consume ARTIC_GUPPYPLEX.fastq (E00340, E00343); no directed path between any process of the two tools"
+liftoff,abacas,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00232, E00337); no directed path between any process of the two tools"
+liftoff,blast,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00232, E00339); no directed path between any process of the two tools"
+liftoff,freyja,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00232, E00150); no directed path between any process of the two tools"
+liftoff,nextclade,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00263, E00198); no directed path between any process of the two tools"
+liftoff,pangolin-data,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00263, E00195); no directed path between any process of the two tools"
+liftoff,quast,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00263, E00192); no directed path between any process of the two tools"
+liftoff,r-reshape2,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00263, E00201); no directed path between any process of the two tools"
+liftoff,sierra-local,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00263, E00230); no directed path between any process of the two tools"
+matplotlib,abacas,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00233, E00337); no directed path between any process of the two tools"
+matplotlib,blast,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00233, E00339); no directed path between any process of the two tools"
+matplotlib,freyja,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00233, E00150); no directed path between any process of the two tools"
+minia,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00327, E00025); no directed path between any process of the two tools"
+minia,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00327, E00013); no directed path between any process of the two tools"
+minia,spades,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00327, E00289); no directed path between any process of the two tools"
+minia,unicycler,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00327, E00308); no directed path between any process of the two tools"
+minimap2,kraken2,parallel_co_use,0,0,,"both consume ARTIC_GUPPYPLEX.fastq (E00351, E00340); no directed path between any process of the two tools"
+minimap2,nanoplot,parallel_co_use,0,0,,"both consume ARTIC_GUPPYPLEX.fastq (E00351, E00343); no directed path between any process of the two tools"
+mosdepth,bcftools,parallel_co_use,0,0,,"both consume PICARD_MARKDUPLICATES.bam (E00093, E00123); no directed path between any process of the two tools"
+mosdepth,freyja,parallel_co_use,0,0,,"both consume ARTIC_MINION.bam_primertrimmed (E00416, E00430); no directed path between any process of the two tools"
+mosdepth,pysam,parallel_co_use,0,0,,"both consume PICARD_MARKDUPLICATES.bam (E00093, E00255); no directed path between any process of the two tools"
+multiqc,jinja2,parallel_co_use,0,0,,"both consume NEXTCLADE_RUN.csv (E00484, E00270); no directed path between any process of the two tools"
+multiqc,nanoplot,parallel_co_use,0,0,,"both consume ARTIC_GUPPYPLEX.fastq (E00491, E00343); no directed path between any process of the two tools"
+nanoplot,kraken2,parallel_co_use,0,0,,"both consume ARTIC_GUPPYPLEX.fastq (E00343, E00340); no directed path between any process of the two tools"
+nanoplot,minimap2,parallel_co_use,0,0,,"both consume ARTIC_GUPPYPLEX.fastq (E00343, E00351); no directed path between any process of the two tools"
+nanoplot,multiqc,parallel_co_use,0,0,,"both consume ARTIC_GUPPYPLEX.fastq (E00343, E00491); no directed path between any process of the two tools"
+nextclade,liftoff,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00198, E00263); no directed path between any process of the two tools"
+nextclade,pangolin-data,parallel_co_use,0,0,,"both consume ARTIC_MINION.fasta (E00426, E00422); no directed path between any process of the two tools"
+nextclade,quast,parallel_co_use,0,0,,"both consume ARTIC_MINION.fasta (E00426, E00434); no directed path between any process of the two tools"
+nextclade,r-reshape2,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00198, E00201); no directed path between any process of the two tools"
+nextclade,sierra-local,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00198, E00230); no directed path between any process of the two tools"
+pangolin-data,jinja2,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00195, E00272); no directed path between any process of the two tools"
+pangolin-data,liftoff,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00195, E00263); no directed path between any process of the two tools"
+pangolin-data,nextclade,parallel_co_use,0,0,,"both consume ARTIC_MINION.fasta (E00422, E00426); no directed path between any process of the two tools"
+pangolin-data,quast,parallel_co_use,0,0,,"both consume ARTIC_MINION.fasta (E00422, E00434); no directed path between any process of the two tools"
+pangolin-data,r-reshape2,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00195, E00201); no directed path between any process of the two tools"
+pangolin-data,sierra-local,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00195, E00230); no directed path between any process of the two tools"
+picard,abacas,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00061, E00337); no directed path between any process of the two tools"
+picard,blast,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00061, E00339); no directed path between any process of the two tools"
+pysam,bcftools,parallel_co_use,0,0,,"both consume PICARD_MARKDUPLICATES.bam (E00255, E00123); no directed path between any process of the two tools"
+pysam,freyja,parallel_co_use,0,0,,"both consume PICARD_MARKDUPLICATES.bam (E00255, E00146); no directed path between any process of the two tools"
+pysam,mosdepth,parallel_co_use,0,0,,"both consume PICARD_MARKDUPLICATES.bam (E00255, E00093); no directed path between any process of the two tools"
+quast,abacas,parallel_co_use,0,0,,"both consume GUNZIP_CONTIGS.gunzip (E00333, E00336); no directed path between any process of the two tools"
+quast,blast,parallel_co_use,0,0,,"both consume GUNZIP_CONTIGS.gunzip (E00333, E00329); no directed path between any process of the two tools"
+quast,freyja,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00334, E00150); no directed path between any process of the two tools"
+quast,jinja2,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00192, E00272); no directed path between any process of the two tools"
+quast,liftoff,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00192, E00263); no directed path between any process of the two tools"
+quast,nextclade,parallel_co_use,0,0,,"both consume ARTIC_MINION.fasta (E00434, E00426); no directed path between any process of the two tools"
+quast,pangolin-data,parallel_co_use,0,0,,"both consume ARTIC_MINION.fasta (E00434, E00422); no directed path between any process of the two tools"
+quast,r-reshape2,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00192, E00201); no directed path between any process of the two tools"
+quast,sierra-local,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00192, E00230); no directed path between any process of the two tools"
+quast,snpeff,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00334, E00217); no directed path between any process of the two tools"
+r-reshape2,jinja2,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00201, E00272); no directed path between any process of the two tools"
+r-reshape2,liftoff,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00201, E00263); no directed path between any process of the two tools"
+r-reshape2,nextclade,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00201, E00198); no directed path between any process of the two tools"
+r-reshape2,pangolin-data,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00201, E00195); no directed path between any process of the two tools"
+r-reshape2,quast,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00201, E00192); no directed path between any process of the two tools"
+r-reshape2,sierra-local,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00201, E00230); no directed path between any process of the two tools"
+samtools,abacas,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00068, E00337); no directed path between any process of the two tools"
+samtools,blast,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00068, E00339); no directed path between any process of the two tools"
+samtools,collapse_primers,parallel_co_use,0,0,,"both consume GUNZIP_PRIMER_BED.gunzip (E00355, E00010); no directed path between any process of the two tools"
+sierra-local,liftoff,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00230, E00263); no directed path between any process of the two tools"
+sierra-local,nextclade,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00230, E00198); no directed path between any process of the two tools"
+sierra-local,pangolin-data,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00230, E00195); no directed path between any process of the two tools"
+sierra-local,quast,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00230, E00192); no directed path between any process of the two tools"
+sierra-local,r-reshape2,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER.fasta (E00230, E00201); no directed path between any process of the two tools"
+snpeff,abacas,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00217, E00337); no directed path between any process of the two tools"
+snpeff,bedtools,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00217, E00187); no directed path between any process of the two tools"
+snpeff,blast,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00217, E00339); no directed path between any process of the two tools"
+snpeff,freyja,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00217, E00150); no directed path between any process of the two tools"
+snpeff,quast,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00217, E00334); no directed path between any process of the two tools"
+spades,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00289, E00025); no directed path between any process of the two tools"
+spades,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00289, E00013); no directed path between any process of the two tools"
+spades,minia,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00289, E00327); no directed path between any process of the two tools"
+spades,unicycler,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00289, E00308); no directed path between any process of the two tools"
+unicycler,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00308, E00025); no directed path between any process of the two tools"
+unicycler,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00308, E00013); no directed path between any process of the two tools"
+unicycler,minia,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00308, E00327); no directed path between any process of the two tools"
+unicycler,spades,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00308, E00289); no directed path between any process of the two tools"

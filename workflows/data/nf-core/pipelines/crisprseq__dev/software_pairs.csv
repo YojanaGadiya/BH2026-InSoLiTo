@@ -1,0 +1,110 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+alignment_summary,cigar_parser,gate_metadata,1,0,E00052,
+bagel2_bf,bagel2_pr,data_flow,1,1,E00078,
+bagel2_bf,gpt_prepare_query,data_flow,1,1,E00099,
+bagel2_fc,bagel2_bf,data_flow,1,1,E00077,
+bagel2_pr,bagel2_graph,data_flow,1,1,E00079,
+bagel2_pr,hitselection,data_flow,1,1,E00080,
+bagel2_pr,venndiagram,data_flow,1,1,E00101,
+bowtie2,alignment_summary,data_flow,1,1,E00038,
+bowtie2,cigar_parser,data_flow,1,1,E00046,
+bowtie2,mageck,data_flow,1,1,E00067,
+bowtie2,samtools,data_flow,1,1,E00042,
+bwa,alignment_summary,data_flow,1,1,E00039,
+bwa,cigar_parser,data_flow,1,1,E00047,
+bwa,samtools,data_flow,1,1,E00043,
+cat,cutadapt,data_flow,1,1,E00007,
+cat,fastqc,data_flow,1,1,E00003,
+cat,pear,data_flow,1,1,E00001,
+cat,seqtk,data_flow,1,1,E00010,
+cigar_parser,clonality_classifier,data_flow,2,2,E00053,
+cigar_parser,crisprseq_plotter,data_flow,1,1,E00055,
+cigar_parser,multiqc,data_flow,3,3,E00058,
+clustering_summary,alignment_summary,data_flow,1,1,E00041,
+cutadapt,bowtie2,data_flow,2,2,E00063,
+cutadapt,mageck,data_flow,2,2,E00068,
+cutadapt,multiqc,data_flow,3,3,E00057,
+cutadapt,seqtk,data_flow,1,1,E00011,
+drugz,gpt_prepare_query,data_flow,1,1,E00097,
+drugz,hitselection,data_flow,1,1,E00096,
+drugz,venndiagram,data_flow,1,1,E00103,
+extract_umis,vsearch,data_flow,1,1,E00013,
+fastqc,find_adapters,data_flow,1,1,E00004,
+fastqc,multiqc,data_flow,2,2,E00056,
+find_adapters,cutadapt,data_flow,1,1,E00005,
+find_adapters,seqtk,data_flow,1,1,E00008,
+guides_to_fasta,bowtie2,data_flow,2,2,E00062,
+mageck,bagel2_fc,data_flow,1,1,E00076,
+mageck,drugz,data_flow,1,1,E00095,
+mageck,gpt_prepare_query,data_flow,2,2,E00098,
+mageck,hitselection,data_flow,2,2,E00074,
+mageck,mageck_flutemle,data_flow,3,3,E00083,
+mageck,mageck_graphrra,data_flow,1,1,E00073,
+mageck,matricescreation,data_flow,1,1,E00085,
+mageck,multiqc,data_flow,1,1,E00108,
+mageck,r-crisprcleanr,data_flow,1,1,E00070,
+mageck,venndiagram,data_flow,2,2,E00102,
+matricescreation,mageck,data_flow,1,1,E00086,
+medaka,seqtk,data_flow,1,1,E00027,
+minimap2,alignment_summary,data_flow,1,1,E00040,
+minimap2,cigar_parser,data_flow,2,2,E00048,
+minimap2,racon,data_flow,2,2,E00019,
+minimap2,samtools,data_flow,1,1,E00044,
+pear,cutadapt,data_flow,1,1,E00006,
+pear,fastqc,data_flow,1,1,E00002,
+pear,seqtk,data_flow,1,1,E00009,
+r-crisprcleanr,bagel2_fc,data_flow,1,1,E00075,
+r-crisprcleanr,drugz,data_flow,1,1,E00094,
+r-crisprcleanr,mageck,data_flow,4,4,E00071,
+r-crisprcleanr,matricescreation,data_flow,1,1,E00084,
+racon,medaka,data_flow,1,1,E00026,
+racon,minimap2,data_flow,1,1,E00021,
+samtools,cigar_parser,data_flow,1,1,E00049,
+seqtk,bowtie2,data_flow,2,2,E00035,
+seqtk,bwa,data_flow,2,2,E00032,
+seqtk,clustering_summary,data_flow,2,2,E00028,
+seqtk,extract_umis,data_flow,1,1,E00012,
+seqtk,minimap2,data_flow,2,2,E00030,
+template_reference,cigar_parser,data_flow,1,1,E00051,
+template_reference,minimap2,data_flow,1,1,E00045,
+vsearch,medaka,data_flow,1,1,E00025,
+vsearch,minimap2,data_flow,3,3,E00015,
+vsearch,racon,data_flow,3,3,E00017,
+alignment_summary,samtools,parallel_co_use,0,0,,"both consume BOWTIE2_ALIGN.bam (E00038, E00042); no directed path between any process of the two tools"
+bagel2_fc,drugz,parallel_co_use,0,0,,"both consume CRISPRCLEANR_NORMALIZE.norm_count_file (E00075, E00094); no directed path between any process of the two tools"
+bagel2_fc,matricescreation,parallel_co_use,0,0,,"both consume CRISPRCLEANR_NORMALIZE.norm_count_file (E00075, E00084); no directed path between any process of the two tools"
+bagel2_graph,hitselection,parallel_co_use,0,0,,"both consume BAGEL2_PR.pr (E00079, E00080); no directed path between any process of the two tools"
+bagel2_graph,venndiagram,parallel_co_use,0,0,,"both consume BAGEL2_PR.pr (E00079, E00101); no directed path between any process of the two tools"
+bagel2_pr,gpt_prepare_query,parallel_co_use,0,0,,"both consume BAGEL2_BF.bf (E00078, E00099); no directed path between any process of the two tools"
+bowtie2,clustering_summary,parallel_co_use,0,0,,"both consume SEQTK_SEQ_FATOFQ.fastx (E00035, E00028); no directed path between any process of the two tools"
+bwa,clustering_summary,parallel_co_use,0,0,,"both consume SEQTK_SEQ_FATOFQ.fastx (E00032, E00028); no directed path between any process of the two tools"
+clonality_classifier,crisprseq_plotter,parallel_co_use,0,0,,"both consume CIGAR_PARSER.indels (E00053, E00055); no directed path between any process of the two tools"
+clonality_classifier,multiqc,parallel_co_use,0,0,,"both consume CIGAR_PARSER.edition (E00054, E00059); no directed path between any process of the two tools"
+clustering_summary,bowtie2,parallel_co_use,0,0,,"both consume SEQTK_SEQ_FATOFQ.fastx (E00028, E00035); no directed path between any process of the two tools"
+clustering_summary,bwa,parallel_co_use,0,0,,"both consume SEQTK_SEQ_FATOFQ.fastx (E00028, E00032); no directed path between any process of the two tools"
+crisprseq_plotter,clonality_classifier,parallel_co_use,0,0,,"both consume CIGAR_PARSER.indels (E00055, E00053); no directed path between any process of the two tools"
+drugz,bagel2_fc,parallel_co_use,0,0,,"both consume CRISPRCLEANR_NORMALIZE.norm_count_file (E00094, E00075); no directed path between any process of the two tools"
+drugz,matricescreation,parallel_co_use,0,0,,"both consume CRISPRCLEANR_NORMALIZE.norm_count_file (E00094, E00084); no directed path between any process of the two tools"
+gpt_prepare_query,bagel2_pr,parallel_co_use,0,0,,"both consume BAGEL2_BF.bf (E00099, E00078); no directed path between any process of the two tools"
+gpt_prepare_query,hitselection,parallel_co_use,0,0,,"both consume DRUGZ.per_gene_results (E00097, E00096); no directed path between any process of the two tools"
+gpt_prepare_query,mageck_flutemle,parallel_co_use,0,0,,"both consume MAGECK_MLE.gene_summary (E00098, E00090); no directed path between any process of the two tools"
+gpt_prepare_query,mageck_graphrra,parallel_co_use,0,0,,"both consume MAGECK_TEST.gene_summary (E00100, E00073); no directed path between any process of the two tools"
+gpt_prepare_query,venndiagram,parallel_co_use,0,0,,"both consume DRUGZ.per_gene_results (E00097, E00103); no directed path between any process of the two tools"
+hitselection,bagel2_graph,parallel_co_use,0,0,,"both consume BAGEL2_PR.pr (E00080, E00079); no directed path between any process of the two tools"
+hitselection,gpt_prepare_query,parallel_co_use,0,0,,"both consume DRUGZ.per_gene_results (E00096, E00097); no directed path between any process of the two tools"
+hitselection,mageck_flutemle,parallel_co_use,0,0,,"both consume MAGECK_MLE.gene_summary (E00089, E00090); no directed path between any process of the two tools"
+hitselection,mageck_graphrra,parallel_co_use,0,0,,"both consume MAGECK_TEST.gene_summary (E00074, E00073); no directed path between any process of the two tools"
+hitselection,venndiagram,parallel_co_use,0,0,,"both consume BAGEL2_PR.pr (E00080, E00101); no directed path between any process of the two tools"
+mageck_flutemle,gpt_prepare_query,parallel_co_use,0,0,,"both consume MAGECK_MLE.gene_summary (E00090, E00098); no directed path between any process of the two tools"
+mageck_flutemle,hitselection,parallel_co_use,0,0,,"both consume MAGECK_MLE.gene_summary (E00090, E00089); no directed path between any process of the two tools"
+mageck_flutemle,venndiagram,parallel_co_use,0,0,,"both consume MAGECK_MLE.gene_summary (E00090, E00102); no directed path between any process of the two tools"
+mageck_graphrra,gpt_prepare_query,parallel_co_use,0,0,,"both consume MAGECK_TEST.gene_summary (E00073, E00100); no directed path between any process of the two tools"
+mageck_graphrra,hitselection,parallel_co_use,0,0,,"both consume MAGECK_TEST.gene_summary (E00073, E00074); no directed path between any process of the two tools"
+matricescreation,bagel2_fc,parallel_co_use,0,0,,"both consume CRISPRCLEANR_NORMALIZE.norm_count_file (E00084, E00075); no directed path between any process of the two tools"
+matricescreation,drugz,parallel_co_use,0,0,,"both consume CRISPRCLEANR_NORMALIZE.norm_count_file (E00084, E00094); no directed path between any process of the two tools"
+multiqc,clonality_classifier,parallel_co_use,0,0,,"both consume CIGAR_PARSER.edition (E00059, E00054); no directed path between any process of the two tools"
+samtools,alignment_summary,parallel_co_use,0,0,,"both consume BOWTIE2_ALIGN.bam (E00042, E00038); no directed path between any process of the two tools"
+venndiagram,bagel2_graph,parallel_co_use,0,0,,"both consume BAGEL2_PR.pr (E00101, E00079); no directed path between any process of the two tools"
+venndiagram,gpt_prepare_query,parallel_co_use,0,0,,"both consume DRUGZ.per_gene_results (E00103, E00097); no directed path between any process of the two tools"
+venndiagram,hitselection,parallel_co_use,0,0,,"both consume BAGEL2_PR.pr (E00101, E00080); no directed path between any process of the two tools"
+venndiagram,mageck_flutemle,parallel_co_use,0,0,,"both consume MAGECK_MLE.gene_summary (E00102, E00090); no directed path between any process of the two tools"

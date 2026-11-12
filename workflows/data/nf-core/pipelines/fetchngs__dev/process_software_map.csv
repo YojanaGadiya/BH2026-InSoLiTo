@@ -1,0 +1,10 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_FETCHNGS:FETCHNGS:SRA_FETCH_FASTQ:SRA_IDS_TO_RUNINFO,SRA_IDS_TO_RUNINFO,modules/local/sra_ids_to_runinfo/main.nf,1,python,python,python,environment.yml
+NFCORE_FETCHNGS:FETCHNGS:SRA_FETCH_FASTQ:SRA_RUNINFO_TO_FTP,SRA_RUNINFO_TO_FTP,modules/local/sra_runinfo_to_ftp/main.nf,1,python,python,python,environment.yml
+NFCORE_FETCHNGS:FETCHNGS:SRA_FETCH_FASTQ:SRA_FASTQ_FTP,SRA_FASTQ_FTP,modules/local/sra_fastq_ftp/main.nf,1,wget,wget,gzip;wget,environment.yml
+NFCORE_FETCHNGS:FETCHNGS:SRA_FETCH_FASTQ:FASTQ_DOWNLOAD_PREFETCH_FASTERQDUMP_SRATOOLS:CUSTOM_SRATOOLSNCBISETTINGS,CUSTOM_SRATOOLSNCBISETTINGS,modules/nf-core/custom/sratoolsncbisettings/main.nf,1,sra-tools,sratools,sra-tools,environment.yml
+NFCORE_FETCHNGS:FETCHNGS:SRA_FETCH_FASTQ:FASTQ_DOWNLOAD_PREFETCH_FASTERQDUMP_SRATOOLS:SRATOOLS_PREFETCH,SRATOOLS_PREFETCH,modules/nf-core/sratools/prefetch/main.nf,1,sra-tools,sratools,sra-tools;curl,environment.yml
+NFCORE_FETCHNGS:FETCHNGS:SRA_FETCH_FASTQ:FASTQ_DOWNLOAD_PREFETCH_FASTERQDUMP_SRATOOLS:SRATOOLS_FASTERQDUMP,SRATOOLS_FASTERQDUMP,modules/nf-core/sratools/fasterqdump/main.nf,1,sra-tools,sratools,sra-tools;pigz,environment.yml
+NFCORE_FETCHNGS:FETCHNGS:SRA_FETCH_FASTQ:ASPERA_CLI,ASPERA_CLI,modules/local/aspera_cli/main.nf,1,aspera-cli,aspera_cli,aspera-cli,environment.yml
+NFCORE_FETCHNGS:FETCHNGS:SRA_FETCH_FASTQ:FASTQDL,FASTQDL,modules/nf-core/fastqdl/main.nf,1,fastq-dl,fastqdl,fastq-dl,environment.yml
+NFCORE_FETCHNGS:FETCHNGS:MULTIQC_MAPPINGS_CONFIG,MULTIQC_MAPPINGS_CONFIG,modules/local/multiqc_mappings_config/main.nf,1,python,python,python,environment.yml

@@ -1,0 +1,219 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+annotsv,knotannotsv,data_flow,2,2,E00198,
+bcftools,annotsv,data_flow,7,7,E00191,
+bcftools,downsample_sv,data_flow,18,18,E00164,
+bcftools,gunzip,data_flow,5,5,E00282,
+bcftools,longphase,data_flow,1,1,E00118,
+bcftools,rtg_mendelian,data_flow,1,1,E00227,
+bcftools,rtg_violations,data_flow,1,1,E00230,
+bcftools,snpeff,data_flow,3,3,E00098,
+bcftools,spectre,data_flow,1,1,E00264,
+bcftools,svanna_prioritize,data_flow,4,4,E00209,
+bcftools,tabix,data_flow,3,3,E00161,
+bcftools,unifyvcf,data_flow,12,12,E00308,
+cat,minimap2,data_flow,2,2,E00002,
+cat,nanoplot,data_flow,1,1,E00060,
+cat,winnowmap_align,data_flow,1,1,E00001,
+clair3,bcftools,data_flow,1,1,E00223,
+clair3,clair3_fix,data_flow,2,2,E00084,
+clair3,hificnv,data_flow,1,1,E00260,
+clair3_fix,annotsv,data_flow,2,2,E00195,
+clair3_fix,bcftools,data_flow,2,2,E00086,
+clair3_fix,longphase,data_flow,1,1,E00119,
+clair3_fix,snpeff,data_flow,3,3,E00099,
+clair3_fix,spectre,data_flow,1,1,E00265,
+create_pedigree_file,rtg_mendelian,data_flow,2,2,E00219,
+create_pedigree_file,rtg_violations,data_flow,2,2,E00222,
+cutesv,fix_header_cutesv,data_flow,1,1,E00159,
+deepvariant,bcftools,data_flow,2,2,E00095,
+downsample_sv,annotsv,data_flow,2,2,E00190,
+downsample_sv,gunzip,data_flow,2,2,E00281,
+downsample_sv,svanna_prioritize,data_flow,2,2,E00208,
+downsample_sv,unifyvcf,data_flow,3,3,E00309,
+fix_header_cutesv,bcftools,data_flow,1,1,E00160,
+fix_header_jasmine,bcftools,data_flow,2,2,E00301,
+gunzip,jasminesv,data_flow,3,3,E00288,
+gunzip,sniffles_generate_plots,data_flow,1,1,E00141,
+hificnv,unifyvcf,data_flow,3,3,E00313,
+jasminesv,fix_header_jasmine,data_flow,1,1,E00300,
+longphase,cutesv,data_flow,1,1,E00151,
+longphase,hificnv,data_flow,1,1,E00252,
+longphase,jasminesv,data_flow,1,1,E00291,
+longphase,samtools,data_flow,1,1,E00131,
+longphase,sniffles,data_flow,1,1,E00132,
+longphase,straglr,data_flow,1,1,E00233,
+longphase,svim,data_flow,1,1,E00142,
+longphase,trgt,data_flow,1,1,E00243,
+minimap2,clair3,data_flow,2,2,E00079,
+minimap2,cutesv,data_flow,2,2,E00155,
+minimap2,deepvariant,data_flow,2,2,E00090,
+minimap2,hificnv,data_flow,2,2,E00256,
+minimap2,jasminesv,data_flow,2,2,E00295,
+minimap2,longphase,data_flow,4,4,E00114,
+minimap2,mosdepth,data_flow,4,4,E00064,
+minimap2,ont-modkit,data_flow,8,8,E00016,
+minimap2,samtools,data_flow,8,8,E00007,
+minimap2,sniffles,data_flow,4,4,E00108,
+minimap2,straglr,data_flow,2,2,E00237,
+minimap2,svim,data_flow,2,2,E00146,
+minimap2,trgt,data_flow,2,2,E00247,
+mosdepth,downsample_sv,data_flow,18,9,E00166,
+mosdepth,multiqc_mosdepth,data_flow,3,2,E00074,
+mosdepth,spectre,data_flow,3,2,E00261,
+nanoplot,multiqc,data_flow,1,1,E00340,
+rtg-tools,rtg_mendelian,data_flow,2,2,E00218,
+rtg-tools,rtg_violations,data_flow,2,2,E00221,
+samtools,bcftools,data_flow,1,1,E00306,
+samtools,clair3,data_flow,3,3,E00077,
+samtools,cutesv,data_flow,3,3,E00152,
+samtools,deepvariant,data_flow,3,3,E00088,
+samtools,hificnv,data_flow,3,3,E00253,
+samtools,jasminesv,data_flow,4,4,E00292,
+samtools,longphase,data_flow,6,6,E00112,
+samtools,minimap2,data_flow,2,2,E00012,
+samtools,mosdepth,data_flow,4,4,E00062,
+samtools,nanoplot,data_flow,1,1,E00061,
+samtools,ont-modkit,data_flow,12,12,E00014,
+samtools,sniffles,data_flow,5,5,E00106,
+samtools,straglr,data_flow,3,3,E00234,
+samtools,svim,data_flow,3,3,E00143,
+samtools,trgt,data_flow,4,4,E00244,
+samtools,winnowmap_align,data_flow,1,1,E00011,
+sniffles,annotsv,data_flow,1,1,E00193,
+sniffles,bcftools,data_flow,2,2,E00162,
+sniffles,gunzip,data_flow,1,1,E00140,
+sniffles,longphase,data_flow,1,1,E00120,
+sniffles,sniffles_trio,data_flow,1,1,E00216,
+sniffles,svanna_prioritize,data_flow,2,2,E00211,
+sniffles,unifyvcf,data_flow,3,3,E00312,
+sniffles_trio,rtg_mendelian,data_flow,1,1,E00217,
+sniffles_trio,rtg_violations,data_flow,1,1,E00220,
+spectre,bcftools,data_flow,1,1,E00266,
+straglr,bcftools,data_flow,1,1,E00241,
+svim,bcftools,data_flow,1,1,E00150,
+tabix,bcftools,data_flow,1,1,E00268,
+tabix,unifyvcf,data_flow,3,3,E00316,
+trgt,unifyvcf,data_flow,3,3,E00315,
+unifyvcf,snpeff,data_flow,3,3,E00335,
+untar,annotsv,data_flow,2,2,E00197,
+winnowmap_align,clair3,data_flow,2,2,E00078,
+winnowmap_align,cutesv,data_flow,2,2,E00154,
+winnowmap_align,deepvariant,data_flow,2,2,E00089,
+winnowmap_align,hificnv,data_flow,2,2,E00255,
+winnowmap_align,jasminesv,data_flow,2,2,E00294,
+winnowmap_align,longphase,data_flow,4,4,E00113,
+winnowmap_align,mosdepth,data_flow,4,4,E00063,
+winnowmap_align,ont-modkit,data_flow,8,8,E00015,
+winnowmap_align,samtools,data_flow,8,8,E00006,
+winnowmap_align,sniffles,data_flow,4,4,E00107,
+winnowmap_align,straglr,data_flow,2,2,E00236,
+winnowmap_align,svim,data_flow,2,2,E00145,
+winnowmap_align,trgt,data_flow,2,2,E00246,
+annotsv,gunzip,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SVIM.vcf (E00202, E00284); no directed path between any process of the two tools"
+annotsv,snpeff,parallel_co_use,0,0,,"both consume BCFTOOLS_FILTER_CLAIR3.vcf (E00194, E00098); no directed path between any process of the two tools"
+annotsv,spectre,parallel_co_use,0,0,,"both consume BCFTOOLS_FILTER_CLAIR3.vcf (E00194, E00264); no directed path between any process of the two tools"
+annotsv,svanna_prioritize,parallel_co_use,0,0,,"both consume SNIFFLES.vcf (E00193, E00211); no directed path between any process of the two tools"
+annotsv,unifyvcf,parallel_co_use,0,0,,"both consume SNIFFLES.vcf (E00193, E00312); no directed path between any process of the two tools"
+bcftools,ont-modkit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00306, E00034); no directed path between any process of the two tools"
+clair3,deepvariant,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00079, E00090); no directed path between any process of the two tools"
+clair3,mosdepth,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00079, E00064); no directed path between any process of the two tools"
+clair3,ont-modkit,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00079, E00030); no directed path between any process of the two tools"
+cutesv,deepvariant,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00155, E00090); no directed path between any process of the two tools"
+cutesv,hificnv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00155, E00256); no directed path between any process of the two tools"
+cutesv,mosdepth,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00155, E00064); no directed path between any process of the two tools"
+cutesv,ont-modkit,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00155, E00030); no directed path between any process of the two tools"
+cutesv,straglr,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00155, E00237); no directed path between any process of the two tools"
+cutesv,svim,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00155, E00146); no directed path between any process of the two tools"
+cutesv,trgt,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00155, E00247); no directed path between any process of the two tools"
+deepvariant,clair3,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00090, E00079); no directed path between any process of the two tools"
+deepvariant,cutesv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00090, E00155); no directed path between any process of the two tools"
+deepvariant,hificnv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00090, E00256); no directed path between any process of the two tools"
+deepvariant,jasminesv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00090, E00295); no directed path between any process of the two tools"
+deepvariant,longphase,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00090, E00124); no directed path between any process of the two tools"
+deepvariant,mosdepth,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00090, E00064); no directed path between any process of the two tools"
+deepvariant,ont-modkit,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00090, E00030); no directed path between any process of the two tools"
+deepvariant,sniffles,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00090, E00136); no directed path between any process of the two tools"
+deepvariant,straglr,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00090, E00237); no directed path between any process of the two tools"
+deepvariant,svim,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00090, E00146); no directed path between any process of the two tools"
+deepvariant,trgt,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00090, E00247); no directed path between any process of the two tools"
+gunzip,annotsv,parallel_co_use,0,0,,"both consume BCFTOOLS_SORT_SVIM.vcf (E00284, E00202); no directed path between any process of the two tools"
+gunzip,svanna_prioritize,parallel_co_use,0,0,,"both consume SNIFFLES.vcf (E00140, E00211); no directed path between any process of the two tools"
+hificnv,cutesv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00256, E00155); no directed path between any process of the two tools"
+hificnv,deepvariant,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00256, E00090); no directed path between any process of the two tools"
+hificnv,jasminesv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00256, E00295); no directed path between any process of the two tools"
+hificnv,mosdepth,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00256, E00064); no directed path between any process of the two tools"
+hificnv,ont-modkit,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00256, E00030); no directed path between any process of the two tools"
+hificnv,straglr,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00256, E00237); no directed path between any process of the two tools"
+hificnv,svim,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00256, E00146); no directed path between any process of the two tools"
+hificnv,trgt,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00256, E00247); no directed path between any process of the two tools"
+jasminesv,deepvariant,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00295, E00090); no directed path between any process of the two tools"
+jasminesv,hificnv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00295, E00256); no directed path between any process of the two tools"
+jasminesv,ont-modkit,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00295, E00030); no directed path between any process of the two tools"
+jasminesv,sniffles_generate_plots,parallel_co_use,0,0,,"both consume GUNZIP_SNIFFLES_PLOT.gunzip (E00288, E00141); no directed path between any process of the two tools"
+jasminesv,straglr,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00295, E00237); no directed path between any process of the two tools"
+jasminesv,trgt,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00295, E00247); no directed path between any process of the two tools"
+longphase,deepvariant,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00124, E00090); no directed path between any process of the two tools"
+longphase,mosdepth,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00124, E00064); no directed path between any process of the two tools"
+longphase,ont-modkit,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00124, E00030); no directed path between any process of the two tools"
+longphase,spectre,parallel_co_use,0,0,,"both consume BCFTOOLS_FILTER_CLAIR3.vcf (E00118, E00264); no directed path between any process of the two tools"
+minimap2,nanoplot,parallel_co_use,0,0,,"both consume SAMTOOLS_FASTQ.other (E00012, E00061); no directed path between any process of the two tools"
+mosdepth,clair3,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00064, E00079); no directed path between any process of the two tools"
+mosdepth,cutesv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00064, E00155); no directed path between any process of the two tools"
+mosdepth,deepvariant,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00064, E00090); no directed path between any process of the two tools"
+mosdepth,hificnv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00064, E00256); no directed path between any process of the two tools"
+mosdepth,longphase,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00064, E00124); no directed path between any process of the two tools"
+mosdepth,ont-modkit,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00064, E00030); no directed path between any process of the two tools"
+mosdepth,sniffles,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00064, E00136); no directed path between any process of the two tools"
+mosdepth,straglr,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00064, E00237); no directed path between any process of the two tools"
+mosdepth,svim,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00064, E00146); no directed path between any process of the two tools"
+mosdepth,trgt,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00064, E00247); no directed path between any process of the two tools"
+nanoplot,minimap2,parallel_co_use,0,0,,"both consume SAMTOOLS_FASTQ.other (E00061, E00012); no directed path between any process of the two tools"
+nanoplot,winnowmap_align,parallel_co_use,0,0,,"both consume SAMTOOLS_FASTQ.other (E00061, E00011); no directed path between any process of the two tools"
+ont-modkit,bcftools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00034, E00306); no directed path between any process of the two tools"
+ont-modkit,clair3,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00030, E00079); no directed path between any process of the two tools"
+ont-modkit,cutesv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00030, E00155); no directed path between any process of the two tools"
+ont-modkit,deepvariant,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00030, E00090); no directed path between any process of the two tools"
+ont-modkit,hificnv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00030, E00256); no directed path between any process of the two tools"
+ont-modkit,jasminesv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00030, E00295); no directed path between any process of the two tools"
+ont-modkit,longphase,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00030, E00124); no directed path between any process of the two tools"
+ont-modkit,mosdepth,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00030, E00064); no directed path between any process of the two tools"
+ont-modkit,sniffles,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00030, E00136); no directed path between any process of the two tools"
+ont-modkit,straglr,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00030, E00237); no directed path between any process of the two tools"
+ont-modkit,svim,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00030, E00146); no directed path between any process of the two tools"
+ont-modkit,trgt,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00030, E00247); no directed path between any process of the two tools"
+rtg_mendelian,rtg_violations,parallel_co_use,0,0,,"both consume CREATE_PEDIGREE_FILE.ped (E00229, E00232); no directed path between any process of the two tools"
+rtg_violations,rtg_mendelian,parallel_co_use,0,0,,"both consume CREATE_PEDIGREE_FILE.ped (E00232, E00229); no directed path between any process of the two tools"
+sniffles,deepvariant,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00136, E00090); no directed path between any process of the two tools"
+sniffles,mosdepth,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00136, E00064); no directed path between any process of the two tools"
+sniffles,ont-modkit,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00136, E00030); no directed path between any process of the two tools"
+sniffles_generate_plots,jasminesv,parallel_co_use,0,0,,"both consume GUNZIP_SNIFFLES_PLOT.gunzip (E00141, E00288); no directed path between any process of the two tools"
+snpeff,annotsv,parallel_co_use,0,0,,"both consume BCFTOOLS_FILTER_CLAIR3.vcf (E00098, E00194); no directed path between any process of the two tools"
+spectre,annotsv,parallel_co_use,0,0,,"both consume BCFTOOLS_FILTER_CLAIR3.vcf (E00264, E00194); no directed path between any process of the two tools"
+spectre,longphase,parallel_co_use,0,0,,"both consume BCFTOOLS_FILTER_CLAIR3.vcf (E00264, E00118); no directed path between any process of the two tools"
+straglr,cutesv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00237, E00155); no directed path between any process of the two tools"
+straglr,deepvariant,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00237, E00090); no directed path between any process of the two tools"
+straglr,hificnv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00237, E00256); no directed path between any process of the two tools"
+straglr,jasminesv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00237, E00295); no directed path between any process of the two tools"
+straglr,mosdepth,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00237, E00064); no directed path between any process of the two tools"
+straglr,ont-modkit,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00237, E00030); no directed path between any process of the two tools"
+straglr,svim,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00237, E00146); no directed path between any process of the two tools"
+svanna_prioritize,annotsv,parallel_co_use,0,0,,"both consume SNIFFLES.vcf (E00211, E00193); no directed path between any process of the two tools"
+svanna_prioritize,gunzip,parallel_co_use,0,0,,"both consume SNIFFLES.vcf (E00211, E00140); no directed path between any process of the two tools"
+svanna_prioritize,unifyvcf,parallel_co_use,0,0,,"both consume SNIFFLES.vcf (E00211, E00312); no directed path between any process of the two tools"
+svim,cutesv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00146, E00155); no directed path between any process of the two tools"
+svim,deepvariant,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00146, E00090); no directed path between any process of the two tools"
+svim,hificnv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00146, E00256); no directed path between any process of the two tools"
+svim,mosdepth,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00146, E00064); no directed path between any process of the two tools"
+svim,ont-modkit,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00146, E00030); no directed path between any process of the two tools"
+svim,straglr,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00146, E00237); no directed path between any process of the two tools"
+svim,trgt,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00146, E00247); no directed path between any process of the two tools"
+trgt,cutesv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00247, E00155); no directed path between any process of the two tools"
+trgt,deepvariant,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00247, E00090); no directed path between any process of the two tools"
+trgt,hificnv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00247, E00256); no directed path between any process of the two tools"
+trgt,jasminesv,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00247, E00295); no directed path between any process of the two tools"
+trgt,mosdepth,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00247, E00064); no directed path between any process of the two tools"
+trgt,ont-modkit,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00247, E00030); no directed path between any process of the two tools"
+trgt,svim,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00247, E00146); no directed path between any process of the two tools"
+unifyvcf,annotsv,parallel_co_use,0,0,,"both consume SNIFFLES.vcf (E00312, E00193); no directed path between any process of the two tools"
+unifyvcf,svanna_prioritize,parallel_co_use,0,0,,"both consume SNIFFLES.vcf (E00312, E00211); no directed path between any process of the two tools"
+winnowmap_align,nanoplot,parallel_co_use,0,0,,"both consume SAMTOOLS_FASTQ.other (E00011, E00061); no directed path between any process of the two tools"

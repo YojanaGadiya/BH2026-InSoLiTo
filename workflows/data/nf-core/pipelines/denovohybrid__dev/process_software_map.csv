@@ -1,0 +1,18 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+get_software_versions,get_software_versions,main.nf,137,bandage,,bandage;fastqc;filtlong;miniasm,script and directives
+porechop,porechop,main.nf,214,porechop,,porechop,script and directives
+filtlong,filtlong,main.nf,233,filtlong,,filtlong,script and directives
+nanoplot,nanoplot,main.nf,273,nanoplot,,nanoplot,script and directives
+fastqc,fastqc,main.nf,294,fastqc,,fastqc,script and directives
+seqpurge,seqpurge,main.nf,313,seqpurge,,seqpurge,script and directives
+sample_shortreads,sample_shortreads,main.nf,331,seqtk,,seqtk,script and directives
+miniasm,miniasm,main.nf,350,miniasm,,miniasm;minimap2;fold,script and directives
+unicycler,unicycler,main.nf,373,unicycler,,unicycler,script and directives
+wtdbg,wtdbg,main.nf,402,wtdbg2,,wtdbg2;wtpoa-cns,script and directives
+racon,racon,main.nf,423,racon,,racon;minimap2,script and directives
+pilon,pilon,main.nf,468,pilon,,pilon;samtools;bowtie2-build;bowtie2,script and directives
+draw_assembly_graph,draw_assembly_graph,main.nf,493,bandage,,bandage,script and directives
+quast,quast,main.nf,510,quast,,quast,script and directives
+format_final_output,format_final_output,main.nf,529,format_output,,format_output,script and directives
+multiqc,multiqc,main.nf,549,multiqc,,multiqc,script and directives
+output_documentation,output_documentation,main.nf,573,markdown_to_html,,markdown_to_html,script and directives
