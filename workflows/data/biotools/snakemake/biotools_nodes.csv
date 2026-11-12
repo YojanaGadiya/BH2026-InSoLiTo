@@ -12,8 +12,8 @@ bowtie2,Bowtie 2,181,true,2,0,178,3
 picard_tools,Picard,179,false,2,0,179,0
 minimap2,Minimap2,174,true,2,0,174,0
 gatk,GATK,162,true,2,0,160,2
+cutadapt,Cutadapt,157,true,2,0,154,3
 plot,plot,157,true,2,0,6,151
-cutadapt,Cutadapt,156,true,2,0,153,3
 numpy,NumPy,148,false,2,0,148,0
 tabix,tabix,134,false,2,0,131,3
 trimmomatic,Trimmomatic,120,true,2,0,120,0
@@ -25,12 +25,12 @@ matplotlib,Matplotlib,100,false,2,0,100,0
 seqtk,seqtk,82,true,2,0,82,0
 trim_galore,Trim Galore,81,true,2,0,81,0
 pysam,pysam,70,true,2,0,70,0
+blast,BLAST,69,true,1,9,52,8
 salmon,Salmon,68,true,2,0,63,5
 deeptools,DeepTools,67,true,1,30,31,6
 spades,SPAdes,62,true,2,0,61,1
 vep,Variant Effect Predictor (VEP),62,true,2,0,62,0
 bwa-mem2,Bwa-mem2,61,true,2,0,61,0
-blast,BLAST,60,true,2,0,52,8
 kraken2,kraken2,60,true,2,0,58,2
 quast,QUAST,59,true,2,0,59,0
 snpeff,snpEff,59,true,2,0,56,3

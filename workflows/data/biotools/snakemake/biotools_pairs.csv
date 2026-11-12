@@ -4692,7 +4692,10 @@ alandersbio/sn-mg-pipeline-for-della,spades,megahit,SPAdes,MEGAHIT,2
 alberdilab/greenland_mycorrhiza2,bowtie2,samtools,Bowtie 2,SAMtools,2
 alberdilab/greenland_mycorrhiza2,fastp,bowtie2,fastp,Bowtie 2,2
 alberdilab/greenland_mycorrhiza2,samtools,assign,SAMtools,ASSIGN,3
+aleixop/clean_amplicon_datasets,blast,process,BLAST,PROcess,3
+aleixop/clean_amplicon_datasets,process,blast,PROcess,BLAST,3
 aleixop/clean_amplicon_datasets,process,seqkit,PROcess,seqkit,3
+aleixop/clean_amplicon_datasets,seqkit,blast,seqkit,BLAST,2
 aleixop/clean_amplicon_datasets,seqkit,process,seqkit,PROcess,3
 aleksandra-ob/zarz-dzanie_procesami_analizy_danych,bwa,samtools,BWA,SAMtools,2
 aleksandra-ob/zarz-dzanie_procesami_analizy_danych,fastER,fastqc,fastER,FastQC,2
@@ -4891,6 +4894,7 @@ andrewgull/tga_detection,seqkit,blast,seqkit,BLAST,2
 anna5ch/masterthesis,DiscoverY,gffread,DiscoverY,gffread,3
 anna5ch/masterthesis,Scallop-LR,gffread,Scallop-LR,gffread,2
 anna5ch/masterthesis,bedtools,gffcompare,BEDTools,gffcompare,2
+anna5ch/masterthesis,blast,samtools,BLAST,SAMtools,2
 anna5ch/masterthesis,gffcompare,bedtools,gffcompare,BEDTools,2
 anna5ch/masterthesis,gffcompare,gffread,gffcompare,gffread,2
 anna5ch/masterthesis,gffcompare,plot,gffcompare,plot,3
@@ -6272,6 +6276,7 @@ dchebotarov/varcall-snakemake-test,trimmomatic,bwa,Trimmomatic,BWA,2
 dcmonti/svdss-somatic-pipeline,hifiasm,extract,Hifiasm,EXTRACT,3
 dcmonti/svdss-somatic-pipeline,hifiasm,minimap2,Hifiasm,Minimap2,3
 dcmonti/svdss-somatic-pipeline,minimap2,samtools,Minimap2,SAMtools,2
+deepalivasoya/MHCtyping_PacBio,cutadapt,blast,Cutadapt,BLAST,2
 deepalivasoya/MiAmp,fastqc,flash,FastQC,FLASH,2
 deepalivasoya/MiAmp,flash,fastqc,FLASH,FastQC,2
 deepalivasoya/MiAmp,sickle,fastqc,sickle,FastQC,2
@@ -6297,6 +6302,7 @@ dence/rnastar_dseq2_old_RNAseq,pandas,deseq2,Pandas,DESeq2,3
 dence/rnastar_dseq2_old_RNAseq,samtools,pandas,SAMtools,Pandas,2
 dence/rnastar_dseq2_old_RNAseq,star,pandas,STAR,Pandas,2
 dence/rnastar_dseq2_old_RNAseq,star,samtools,STAR,SAMtools,2
+dev-bio-emre/BenimGenomum-Hexamita_inflata,Flye,blast,Flye,BLAST,2
 dev-bio-emre/BenimGenomum-Hexamita_inflata,Flye,meryl,Flye,Meryl,2
 dev-bio-emre/BenimGenomum-Hexamita_inflata,Flye,prodigal,Flye,Prodigal,2
 dev-bio-emre/BenimGenomum-Hexamita_inflata,Flye,quast,Flye,QUAST,2
@@ -7916,6 +7922,7 @@ jlanga/smsk_snps,bwa,samtools,BWA,SAMtools,2
 jlanga/smsk_snps,samtools,bcftools,SAMtools,BCFtools,2
 jlanga/smsk_snps,trimmomatic,samtools,Trimmomatic,SAMtools,2
 jlanga/smsk_trinotate,TransDecoder,samtools,TransDecoder,SAMtools,3
+jlanga/smsk_trinotate,blast,samtools,BLAST,SAMtools,2
 jlanga/smsk_trinotate,samtools,TransDecoder,SAMtools,TransDecoder,3
 jlanga/smsk_trinotate,samtools,trinotate,SAMtools,Trinotate,3
 jlanga/smsk_trinotate,trinotate,samtools,Trinotate,SAMtools,3
@@ -8076,11 +8083,13 @@ k-hench/arcgaz_genome,busco,input,BUSCO,INPUT,3
 k-hench/arcgaz_genome,cactus,hal,Cactus,HAL,3
 k-hench/arcgaz_genome,collapse,bedtools,COLLAPSE,BEDTools,3
 k-hench/arcgaz_genome,gerp,bedtools,GERP++,BEDTools,3
+k-hench/arcgaz_genome,repeatmasker,blast,RepeatMasker,BLAST,2
 k-hench/arcgaz_genome,repeatmasker,bp,RepeatMasker,bp,3
 k-hench/arcgaz_genome,repeatmasker,busco,RepeatMasker,BUSCO,2
 k-hench/arcgaz_genome,repeatmasker,fatotwobit,RepeatMasker,fatotwobit,2
 k-hench/arcgaz_genome,repeatmasker,gap,RepeatMasker,GAP,3
 k-hench/arcgaz_genome,repeatmasker,seqkit,RepeatMasker,seqkit,2
+k-hench/arcgaz_genome,samtools,blast,SAMtools,BLAST,2
 k-hench/arcgaz_genome,samtools,bp,SAMtools,bp,3
 k-hench/arcgaz_genome,samtools,busco,SAMtools,BUSCO,2
 k-hench/arcgaz_genome,samtools,fatotwobit,SAMtools,fatotwobit,2
@@ -10475,6 +10484,7 @@ noureddineidali/alfalfa-salinity-metagenomics,seqkit,samtools,seqkit,SAMtools,2
 novapyth/BGC_marine_derived_Aspergillus_ruber,antismash,extract,antiSMASH,EXTRACT,3
 novapyth/BGC_marine_derived_Aspergillus_ruber,blobtools,diamond,BlobTools,Diamond,2
 novapyth/BGC_marine_derived_Aspergillus_ruber,extract,antismash,EXTRACT,antiSMASH,3
+novapyth/BGC_marine_derived_Aspergillus_ruber,extract,blast,EXTRACT,BLAST,3
 novapyth/BGC_marine_derived_Aspergillus_ruber,extract,blobtools,EXTRACT,BlobTools,3
 novapyth/BGC_marine_derived_Aspergillus_ruber,extract,busco,EXTRACT,BUSCO,3
 novapyth/BGC_marine_derived_Aspergillus_ruber,extract,pannzer2,EXTRACT,pannzer2,3
@@ -13730,6 +13740,7 @@ zavolanlab/zarp,star,UCSC_Genome_Browser_Utilities,STAR,UCSC Genome Browser Util
 zavolanlab/zarp,star,salmon,STAR,Salmon,2
 zavolanlab/zarp,star,samtools,STAR,SAMtools,2
 zeyak/barkhanus,Flye,barrnap,Flye,Barrnap,2
+zeyak/barkhanus,Flye,blast,Flye,BLAST,2
 zeyak/barkhanus,Flye,meryl,Flye,Meryl,2
 zeyak/barkhanus,Flye,prodigal,Flye,Prodigal,2
 zeyak/barkhanus,Flye,quast,Flye,QUAST,2
@@ -13851,6 +13862,7 @@ zwebbs/ATAC-Seq-pipeline,bwa,samtools,BWA,SAMtools,2
 zwebbs/ATAC-Seq-pipeline,macs,bedtools,MACS,BEDTools,2
 zwebbs/ATAC-Seq-pipeline,samtools,deeptools,SAMtools,DeepTools,2
 zwebbs/ATAC-Seq-pipeline,samtools,macs,SAMtools,MACS,2
+zzkhxyz/food-fraud,blast,seqkit,BLAST,seqkit,2
 zzkhxyz/food-fraud,chopper,seqkit,Chopper,seqkit,2
 zzkhxyz/food-fraud,fastp,chopper,fastp,Chopper,2
 zzkhxyz/food-fraud,fastp,vsearch,fastp,VSEARCH,2
