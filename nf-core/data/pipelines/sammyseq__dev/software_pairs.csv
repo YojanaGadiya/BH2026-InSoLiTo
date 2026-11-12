@@ -1,0 +1,61 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+awk,r-calder2,data_flow,1,1,E00123,
+bedtools,awk,data_flow,1,1,E00120,
+bedtools,r-calder2,data_flow,1,1,E00118,
+bwa,picard,data_flow,3,3,E00055,
+bwa,samtools,data_flow,2,2,E00045,
+cat,cutadapt,data_flow,2,2,E00011,
+cat,fastqc,data_flow,2,2,E00015,
+cat,trimmomatic,data_flow,2,2,E00009,
+coreutils,awk,data_flow,1,1,E00128,
+cutadapt,bowtie2,data_flow,1,1,E00052,
+cutadapt,bwa,data_flow,7,7,E00018,
+cutadapt,fastqc,data_flow,1,1,E00014,
+deeptools,awk,data_flow,1,1,E00129,
+deeptools,multiqc,data_flow,6,6,E00135,
+deeptools,r-calder2,data_flow,2,2,E00117,
+deeptools,r-rcpp,data_flow,1,1,E00111,
+fastqc,multiqc,data_flow,1,1,E00130,
+genomeblacklistregions,bedtools,data_flow,2,2,E00104,
+gunzip,awk,data_flow,1,1,E00121,
+gunzip,bedtools,data_flow,2,2,E00105,
+gunzip,bowtie2,data_flow,1,1,E00007,
+gunzip,bwa,data_flow,1,1,E00006,
+gunzip,deeptools,data_flow,4,4,E00090,
+gunzip,genomeblacklistregions,data_flow,2,2,E00003,
+gunzip,picard,data_flow,1,1,E00058,
+gunzip,r-calder2,data_flow,2,2,E00119,
+gunzip,r-rcpp,data_flow,1,1,E00112,
+gunzip,samtools,data_flow,2,2,E00001,
+picard,multiqc,data_flow,1,1,E00131,
+picard,samtools,data_flow,10,10,E00060,
+r-calder2,coreutils,data_flow,2,2,E00126,
+r-rcpp,r-calder2,data_flow,1,1,E00116,
+samtools,awk,data_flow,1,1,E00122,
+samtools,bedtools,data_flow,1,1,E00107,
+samtools,deeptools,data_flow,8,8,E00088,
+samtools,genomeblacklistregions,data_flow,1,1,E00004,
+samtools,multiqc,data_flow,3,3,E00132,
+samtools,picard,data_flow,1,1,E00059,
+samtools,r-rcpp,data_flow,2,2,E00110,
+trimmomatic,bowtie2,data_flow,1,1,E00051,
+trimmomatic,bwa,data_flow,7,7,E00017,
+trimmomatic,fastqc,data_flow,1,1,E00013,
+untar,bowtie2,data_flow,1,1,E00053,
+untar,bwa,data_flow,7,7,E00019,
+awk,r-rcpp,parallel_co_use,0,0,,"both consume DEEPTOOLS_BAMCOVERAGE.bigwig (E00129, E00111); no directed path between any process of the two tools"
+bedtools,r-rcpp,parallel_co_use,0,0,,"both consume GUNZIP_CHROM_SIZES.gunzip (E00106, E00112); no directed path between any process of the two tools"
+bowtie2,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00007, E00006); no directed path between any process of the two tools"
+bowtie2,fastqc,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00052, E00014); no directed path between any process of the two tools"
+bowtie2,samtools,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00007, E00002); no directed path between any process of the two tools"
+bwa,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00006, E00007); no directed path between any process of the two tools"
+bwa,fastqc,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00018, E00014); no directed path between any process of the two tools"
+deeptools,genomeblacklistregions,parallel_co_use,0,0,,"both consume GUNZIP_BLACKLIST.gunzip (E00092, E00005); no directed path between any process of the two tools"
+fastqc,bowtie2,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00014, E00052); no directed path between any process of the two tools"
+fastqc,bwa,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00014, E00018); no directed path between any process of the two tools"
+genomeblacklistregions,deeptools,parallel_co_use,0,0,,"both consume GUNZIP_BLACKLIST.gunzip (E00005, E00092); no directed path between any process of the two tools"
+genomeblacklistregions,r-rcpp,parallel_co_use,0,0,,"both consume GUNZIP_CHROM_SIZES.gunzip (E00003, E00112); no directed path between any process of the two tools"
+r-rcpp,awk,parallel_co_use,0,0,,"both consume DEEPTOOLS_BAMCOVERAGE.bigwig (E00111, E00129); no directed path between any process of the two tools"
+r-rcpp,bedtools,parallel_co_use,0,0,,"both consume GUNZIP_CHROM_SIZES.gunzip (E00112, E00106); no directed path between any process of the two tools"
+r-rcpp,genomeblacklistregions,parallel_co_use,0,0,,"both consume GUNZIP_CHROM_SIZES.gunzip (E00112, E00003); no directed path between any process of the two tools"
+samtools,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00002, E00007); no directed path between any process of the two tools"

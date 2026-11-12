@@ -1,0 +1,112 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bamtools,samtools,data_flow,2,2,E00116,
+blaze,correct_barcodes,data_flow,2,2,E00037,
+blaze,preextract_fastq,data_flow,1,1,E00035,
+blaze,split_file,data_flow,1,1,E00029,
+cat,blaze,data_flow,2,2,E00022,
+cat,chopper,data_flow,1,1,E00014,
+cat,fastqc,data_flow,3,3,E00003,
+cat,minimap2,data_flow,2,2,E00060,
+cat,nanocomp,data_flow,1,1,E00004,
+cat,nanoplot,data_flow,3,3,E00001,
+cat,preextract_fastq,data_flow,2,2,E00031,
+cat,read_counts,data_flow,1,1,E00056,
+cat,seqkit,data_flow,3,3,E00012,
+cat,tag_barcodes,data_flow,2,2,E00103,
+cat,toulligqc,data_flow,3,3,E00002,
+chopper,blaze,data_flow,1,1,E00024,
+chopper,cat,data_flow,1,1,E00015,
+chopper,fastqc,data_flow,1,1,E00021,
+chopper,nanoplot,data_flow,1,1,E00017,
+chopper,preextract_fastq,data_flow,1,1,E00033,
+chopper,seqkit,data_flow,1,1,E00028,
+chopper,toulligqc,data_flow,1,1,E00019,
+correct_barcodes,cat,data_flow,1,1,E00040,
+correct_barcodes,read_counts,data_flow,1,1,E00057,
+correct_barcodes,tag_barcodes,data_flow,2,2,E00104,
+csvtk,multiqc,data_flow,5,5,E00359,
+fastqc,multiqc,data_flow,6,6,E00348,
+fastqc,read_counts,gate_metadata,6,0,E00047,
+group_transcripts,split_bam,data_flow,2,2,E00115,
+isoquant,seurat,data_flow,12,12,E00191,
+minimap2,samtools,data_flow,2,2,E00065,
+nanocomp,multiqc,data_flow,3,3,E00351,
+nanoplot,multiqc,data_flow,1,1,E00350,
+nanoplot,read_counts,data_flow,3,3,E00049,
+oarfish,seurat,data_flow,6,6,E00173,
+p7zip,group_transcripts,data_flow,4,4,E00110,
+p7zip,isoquant,data_flow,4,4,E00187,
+p7zip,minimap2,data_flow,4,4,E00059,
+p7zip,picard,data_flow,2,2,E00139,
+p7zip,samtools,data_flow,20,20,E00006,
+p7zip,ucsc-gtftogenepred,data_flow,1,1,E00010,
+picard,isoquant,data_flow,2,2,E00181,
+picard,samtools,data_flow,10,10,E00143,
+pigz,blaze,data_flow,1,1,E00025,
+pigz,group_transcripts,data_flow,4,4,E00109,
+pigz,isoquant,data_flow,4,4,E00186,
+pigz,minimap2,data_flow,4,4,E00058,
+pigz,picard,data_flow,2,2,E00138,
+pigz,samtools,data_flow,20,20,E00005,
+pigz,ucsc-gtftogenepred,data_flow,1,1,E00009,
+preextract_fastq,cat,data_flow,1,1,E00039,
+preextract_fastq,correct_barcodes,data_flow,1,1,E00036,
+preextract_fastq,fastqc,data_flow,1,1,E00046,
+preextract_fastq,minimap2,data_flow,2,2,E00061,
+preextract_fastq,nanoplot,data_flow,1,1,E00042,
+preextract_fastq,toulligqc,data_flow,1,1,E00044,
+read_counts,multiqc,data_flow,1,1,E00358,
+rseqc,multiqc,data_flow,2,2,E00354,
+samtools,isoquant,data_flow,10,10,E00179,
+samtools,multiqc,data_flow,7,7,E00352,
+samtools,nanocomp,data_flow,2,2,E00100,
+samtools,oarfish,data_flow,2,2,E00172,
+samtools,picard,data_flow,4,4,E00136,
+samtools,rseqc,data_flow,4,4,E00097,
+samtools,seurat,data_flow,12,12,E00176,
+samtools,split_bam,data_flow,2,2,E00114,
+samtools,tag_barcodes,data_flow,4,4,E00101,
+samtools,umi_tools,data_flow,6,6,E00132,
+seqkit,chopper,data_flow,1,1,E00013,
+seqkit,preextract_fastq,data_flow,1,1,E00030,
+seurat,csvtk,data_flow,6,6,E00178,
+split_bam,samtools,data_flow,2,2,E00117,
+split_file,preextract_fastq,data_flow,1,1,E00034,
+tag_barcodes,bamtools,data_flow,2,2,E00108,
+tag_barcodes,isoquant,data_flow,2,2,E00182,
+tag_barcodes,picard,data_flow,2,2,E00137,
+tag_barcodes,samtools,data_flow,6,6,E00105,
+tag_barcodes,split_bam,data_flow,2,2,E00113,
+tag_barcodes,umi_tools,data_flow,2,2,E00133,
+ucsc-gtftogenepred,ucsc_genepredtobed,data_flow,1,1,E00011,
+ucsc_genepredtobed,rseqc,data_flow,2,2,E00099,
+umi_tools,isoquant,data_flow,2,2,E00180,
+umi_tools,samtools,data_flow,12,12,E00141,
+fastqc,minimap2,parallel_co_use,0,0,,"both consume CAT_CAT_PREEXTRACT.file_out (E00045, E00060); no directed path between any process of the two tools"
+fastqc,nanocomp,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00003, E00004); no directed path between any process of the two tools"
+fastqc,nanoplot,parallel_co_use,0,0,,"both consume CAT_CAT.file_out (E00020, E00016); no directed path between any process of the two tools"
+fastqc,toulligqc,parallel_co_use,0,0,,"both consume CAT_CAT.file_out (E00020, E00018); no directed path between any process of the two tools"
+group_transcripts,minimap2,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.file (E00109, E00063); no directed path between any process of the two tools"
+group_transcripts,ucsc-gtftogenepred,parallel_co_use,0,0,,"both consume GUNZIP_GTF.file (E00111, E00009); no directed path between any process of the two tools"
+isoquant,ucsc-gtftogenepred,parallel_co_use,0,0,,"both consume GUNZIP_GTF.file (E00189, E00009); no directed path between any process of the two tools"
+minimap2,fastqc,parallel_co_use,0,0,,"both consume CAT_CAT_PREEXTRACT.file_out (E00060, E00045); no directed path between any process of the two tools"
+minimap2,group_transcripts,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.file (E00063, E00109); no directed path between any process of the two tools"
+minimap2,nanoplot,parallel_co_use,0,0,,"both consume CAT_CAT_PREEXTRACT.file_out (E00060, E00041); no directed path between any process of the two tools"
+minimap2,toulligqc,parallel_co_use,0,0,,"both consume CAT_CAT_PREEXTRACT.file_out (E00060, E00043); no directed path between any process of the two tools"
+nanocomp,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00004, E00003); no directed path between any process of the two tools"
+nanocomp,nanoplot,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00004, E00001); no directed path between any process of the two tools"
+nanocomp,rseqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00100, E00097); no directed path between any process of the two tools"
+nanocomp,toulligqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00004, E00002); no directed path between any process of the two tools"
+nanoplot,fastqc,parallel_co_use,0,0,,"both consume CAT_CAT.file_out (E00016, E00020); no directed path between any process of the two tools"
+nanoplot,minimap2,parallel_co_use,0,0,,"both consume CAT_CAT_PREEXTRACT.file_out (E00041, E00060); no directed path between any process of the two tools"
+nanoplot,nanocomp,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00001, E00004); no directed path between any process of the two tools"
+nanoplot,toulligqc,parallel_co_use,0,0,,"both consume CAT_CAT.file_out (E00016, E00018); no directed path between any process of the two tools"
+read_counts,tag_barcodes,parallel_co_use,0,0,,"both consume CAT_CAT_BARCODE.file_out (E00056, E00103); no directed path between any process of the two tools"
+rseqc,nanocomp,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00097, E00100); no directed path between any process of the two tools"
+tag_barcodes,read_counts,parallel_co_use,0,0,,"both consume CAT_CAT_BARCODE.file_out (E00103, E00056); no directed path between any process of the two tools"
+toulligqc,fastqc,parallel_co_use,0,0,,"both consume CAT_CAT.file_out (E00018, E00020); no directed path between any process of the two tools"
+toulligqc,minimap2,parallel_co_use,0,0,,"both consume CAT_CAT_PREEXTRACT.file_out (E00043, E00060); no directed path between any process of the two tools"
+toulligqc,nanocomp,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00002, E00004); no directed path between any process of the two tools"
+toulligqc,nanoplot,parallel_co_use,0,0,,"both consume CAT_CAT.file_out (E00018, E00016); no directed path between any process of the two tools"
+ucsc-gtftogenepred,group_transcripts,parallel_co_use,0,0,,"both consume GUNZIP_GTF.file (E00009, E00111); no directed path between any process of the two tools"
+ucsc-gtftogenepred,isoquant,parallel_co_use,0,0,,"both consume GUNZIP_GTF.file (E00009, E00189); no directed path between any process of the two tools"

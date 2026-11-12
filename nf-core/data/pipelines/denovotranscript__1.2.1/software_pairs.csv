@@ -1,0 +1,49 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+busco,multiqc,data_flow,1,1,E00033,
+cat,evigene,data_flow,1,1,E00017,
+cat,orp_transrate,data_flow,1,1,E00022,
+cat,spades,data_flow,1,1,E00011,
+cat,trinity,data_flow,2,2,E00009,
+evigene,busco,data_flow,1,1,E00019,
+evigene,gawk,data_flow,1,1,E00018,
+evigene,orp_transrate,data_flow,1,1,E00021,
+evigene,rnaquast,data_flow,1,1,E00020,
+evigene,salmon,data_flow,2,2,E00023,
+fastp,cat,data_flow,2,1,E00007,
+fastp,fastqc,data_flow,2,1,E00001,
+fastp,salmon,data_flow,2,1,E00025,
+fastp,sortmerna,data_flow,2,1,E00003,
+fastqc,multiqc,data_flow,3,3,E00029,
+salmon,multiqc,data_flow,1,1,E00034,
+sortmerna,cat,data_flow,1,1,E00006,
+sortmerna,fastqc,data_flow,1,1,E00005,
+sortmerna,multiqc,data_flow,1,1,E00031,
+sortmerna,salmon,data_flow,1,1,E00024,
+spades,cat,data_flow,3,3,E00014,
+trinity,cat,data_flow,2,2,E00012,
+busco,gawk,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00019, E00018); no directed path between any process of the two tools"
+busco,orp_transrate,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00019, E00021); no directed path between any process of the two tools"
+busco,rnaquast,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00019, E00020); no directed path between any process of the two tools"
+busco,salmon,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00019, E00023); no directed path between any process of the two tools"
+cat,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E00001); no directed path between any process of the two tools"
+fastqc,cat,parallel_co_use,0,0,,"both consume FASTP.reads (E00001, E00007); no directed path between any process of the two tools"
+fastqc,salmon,parallel_co_use,0,0,,"both consume FASTP.reads (E00001, E00025); no directed path between any process of the two tools"
+gawk,busco,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00018, E00019); no directed path between any process of the two tools"
+gawk,orp_transrate,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00018, E00021); no directed path between any process of the two tools"
+gawk,rnaquast,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00018, E00020); no directed path between any process of the two tools"
+gawk,salmon,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00018, E00023); no directed path between any process of the two tools"
+orp_transrate,busco,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00021, E00019); no directed path between any process of the two tools"
+orp_transrate,gawk,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00021, E00018); no directed path between any process of the two tools"
+orp_transrate,rnaquast,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00021, E00020); no directed path between any process of the two tools"
+orp_transrate,salmon,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00021, E00023); no directed path between any process of the two tools"
+rnaquast,busco,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00020, E00019); no directed path between any process of the two tools"
+rnaquast,gawk,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00020, E00018); no directed path between any process of the two tools"
+rnaquast,orp_transrate,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00020, E00021); no directed path between any process of the two tools"
+rnaquast,salmon,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00020, E00023); no directed path between any process of the two tools"
+salmon,busco,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00023, E00019); no directed path between any process of the two tools"
+salmon,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E00025, E00001); no directed path between any process of the two tools"
+salmon,gawk,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00023, E00018); no directed path between any process of the two tools"
+salmon,orp_transrate,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00023, E00021); no directed path between any process of the two tools"
+salmon,rnaquast,parallel_co_use,0,0,,"both consume EVIGENE_TR2AACDS.okayset (E00023, E00020); no directed path between any process of the two tools"
+spades,trinity,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00011, E00009); no directed path between any process of the two tools"
+trinity,spades,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00009, E00011); no directed path between any process of the two tools"

@@ -1,0 +1,174 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+ccsmeth,clair3,data_flow,3,3,E00225,
+ccsmeth,fastqc,data_flow,1,1,E00001,
+ccsmeth,fibertools-rs,data_flow,1,1,E00112,
+ccsmeth,gunzip,data_flow,2,2,E00003,
+ccsmeth,minimap2,data_flow,2,2,E00005,
+ccsmeth,modkit_bedgraph,data_flow,1,1,E00109,
+ccsmeth,ont-modkit,data_flow,20,20,E00031,
+ccsmeth,pb_cpg_tools,data_flow,2,2,E00076,
+ccsmeth,pbmm2,data_flow,2,2,E00013,
+ccsmeth,samtools,data_flow,6,6,E00024,
+ccsmeth,samtools_split_strand,data_flow,1,1,E00065,
+ccsmeth,tabix,data_flow,1,1,E00108,
+ccsmeth,whatshap,data_flow,6,6,E00287,
+clair3,gunzip,data_flow,1,1,E00276,
+clair3,ont-modkit,data_flow,7,7,E00403,
+clair3,whatshap,data_flow,6,6,E00293,
+dorado_aligner,clair3,data_flow,6,6,E00221,
+dorado_aligner,gunzip,data_flow,2,1,E00266,
+dorado_aligner,ont-modkit,data_flow,42,31,E00160,
+dorado_aligner,samtools,data_flow,14,8,E00146,
+dorado_aligner,whatshap,data_flow,12,8,E00283,
+dorado_basecaller,clair3,data_flow,3,3,E00218,
+dorado_basecaller,dorado_aligner,data_flow,2,2,E00138,
+dorado_basecaller,fastqc,data_flow,1,1,E00118,
+dorado_basecaller,gunzip,data_flow,2,2,E00119,
+dorado_basecaller,minimap2,data_flow,2,2,E00130,
+dorado_basecaller,ont-modkit,data_flow,21,21,E00157,
+dorado_basecaller,samtools,data_flow,7,7,E00122,
+dorado_basecaller,samtools_reset,data_flow,2,2,E00120,
+dorado_basecaller,whatshap,data_flow,6,6,E00280,
+gawk,bioconductor-dss,data_flow,6,6,E00534,
+gawk,ont-modkit,data_flow,7,7,E00404,
+gawk,whatshap,data_flow,6,6,E00294,
+gunzip,ccsmeth,data_flow,2,2,E00099,
+gunzip,clair3,data_flow,6,6,E00219,
+gunzip,dorado_aligner,data_flow,2,2,E00139,
+gunzip,fibertools-rs,data_flow,1,1,E00114,
+gunzip,gawk,data_flow,1,1,E00277,
+gunzip,minimap2,data_flow,4,4,E00007,
+gunzip,ont-modkit,data_flow,41,41,E00033,
+gunzip,pb_cpg_tools,data_flow,2,2,E00078,
+gunzip,pbmm2,data_flow,2,2,E00015,
+gunzip,samtools,data_flow,13,13,E00026,
+gunzip,samtools_reset,data_flow,2,2,E00121,
+gunzip,samtools_split_strand,data_flow,1,1,E00067,
+gunzip,whatshap,data_flow,12,12,E00281,
+minimap2,ccsmeth,data_flow,4,3,E00096,
+minimap2,clair3,data_flow,12,12,E00216,
+minimap2,fibertools-rs,data_flow,2,1,E00110,
+minimap2,gunzip,data_flow,4,2,E00261,
+minimap2,ont-modkit,data_flow,82,61,E00029,
+minimap2,pb_cpg_tools,data_flow,4,2,E00074,
+minimap2,samtools,data_flow,28,16,E00011,
+minimap2,samtools_split_strand,data_flow,2,2,E00063,
+minimap2,whatshap,data_flow,24,16,E00278,
+ont-modkit,clair3,data_flow,3,3,E00220,
+ont-modkit,dorado_aligner,data_flow,2,2,E00142,
+ont-modkit,fibertools-rs,data_flow,1,1,E00200,
+ont-modkit,gawk,data_flow,4,4,E00532,
+ont-modkit,gunzip,data_flow,1,1,E00265,
+ont-modkit,minimap2,data_flow,2,2,E00132,
+ont-modkit,modkit_bedgraph,data_flow,3,3,E00090,
+ont-modkit,pbcpg_bedgraphs,data_flow,3,3,E00093,
+ont-modkit,samtools,data_flow,6,6,E00152,
+ont-modkit,tabix,data_flow,8,8,E00045,
+ont-modkit,whatshap,data_flow,6,6,E00282,
+pb_cpg_tools,modkit_bedgraph,data_flow,2,2,E00091,
+pb_cpg_tools,pbcpg_bedgraphs,data_flow,2,2,E00094,
+pbjasmine,clair3,data_flow,3,3,E00226,
+pbjasmine,fastqc,data_flow,1,1,E00002,
+pbjasmine,fibertools-rs,data_flow,1,1,E00113,
+pbjasmine,gunzip,data_flow,2,2,E00004,
+pbjasmine,minimap2,data_flow,2,2,E00006,
+pbjasmine,ont-modkit,data_flow,20,20,E00032,
+pbjasmine,pb_cpg_tools,data_flow,2,2,E00077,
+pbjasmine,pbmm2,data_flow,2,2,E00014,
+pbjasmine,samtools,data_flow,6,6,E00025,
+pbjasmine,samtools_split_strand,data_flow,1,1,E00066,
+pbjasmine,whatshap,data_flow,6,6,E00288,
+pbmm2,ccsmeth,data_flow,2,2,E00100,
+pbmm2,clair3,data_flow,3,3,E00228,
+pbmm2,fibertools-rs,data_flow,1,1,E00115,
+pbmm2,gunzip,data_flow,1,1,E00273,
+pbmm2,ont-modkit,data_flow,20,20,E00034,
+pbmm2,pb_cpg_tools,data_flow,2,2,E00079,
+pbmm2,samtools,data_flow,8,8,E00019,
+pbmm2,samtools_split_strand,data_flow,1,1,E00068,
+pbmm2,whatshap,data_flow,6,6,E00290,
+porechop,samtools,data_flow,1,1,E00127,
+rename_fastq,porechop,data_flow,1,1,E00126,
+samtools,ccsmeth,rejected,2,0,E00101,every extracted edge is rejected
+samtools,clair3,data_flow,6,6,E00229,
+samtools,fibertools-rs,rejected,1,0,E00116,every extracted edge is rejected
+samtools,gunzip,rejected,2,0,E00274,every extracted edge is rejected
+samtools,multiqc,data_flow,3,3,E00739,
+samtools,ont-modkit,data_flow,53,37,E00035,
+samtools,pb_cpg_tools,rejected,2,0,E00080,every extracted edge is rejected
+samtools,rename_fastq,data_flow,1,1,E00125,
+samtools,samtools_split_strand,data_flow,1,1,E00069,
+samtools,whatshap,data_flow,12,8,E00291,
+samtools_merge,pb_cpg_tools,data_flow,4,3,E00072,
+samtools_split_strand,samtools_merge,data_flow,2,2,E00070,
+tabix,ont-modkit,data_flow,8,2,E00429,
+tabix,whatshap,data_flow,3,1,E00348,
+whatshap,ont-modkit,data_flow,7,7,E00405,
+whatshap,samtools,data_flow,1,1,E00387,
+whatshap,tabix,data_flow,1,1,E00329,
+clair3,fastqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00218, E00118); no directed path between any process of the two tools"
+clair3,fibertools-rs,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00225, E00112); no directed path between any process of the two tools"
+clair3,pb_cpg_tools,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00225, E00076); no directed path between any process of the two tools"
+clair3,samtools_reset,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00218, E00136); no directed path between any process of the two tools"
+clair3,samtools_split_strand,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00225, E00065); no directed path between any process of the two tools"
+dorado_aligner,fastqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00138, E00118); no directed path between any process of the two tools"
+dorado_aligner,minimap2,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00138, E00130); no directed path between any process of the two tools"
+dorado_aligner,samtools_reset,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00138, E00136); no directed path between any process of the two tools"
+fastqc,clair3,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00118, E00218); no directed path between any process of the two tools"
+fastqc,dorado_aligner,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00118, E00138); no directed path between any process of the two tools"
+fastqc,fibertools-rs,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00001, E00112); no directed path between any process of the two tools"
+fastqc,gunzip,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00118, E00263); no directed path between any process of the two tools"
+fastqc,minimap2,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00118, E00130); no directed path between any process of the two tools"
+fastqc,ont-modkit,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00118, E00663); no directed path between any process of the two tools"
+fastqc,pb_cpg_tools,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00001, E00076); no directed path between any process of the two tools"
+fastqc,pbmm2,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00001, E00013); no directed path between any process of the two tools"
+fastqc,samtools,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00118, E00649); no directed path between any process of the two tools"
+fastqc,samtools_reset,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00118, E00136); no directed path between any process of the two tools"
+fastqc,samtools_split_strand,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00001, E00065); no directed path between any process of the two tools"
+fastqc,whatshap,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00118, E00332); no directed path between any process of the two tools"
+fibertools-rs,clair3,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00112, E00225); no directed path between any process of the two tools"
+fibertools-rs,fastqc,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00112, E00001); no directed path between any process of the two tools"
+fibertools-rs,pb_cpg_tools,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00112, E00076); no directed path between any process of the two tools"
+fibertools-rs,samtools_split_strand,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00112, E00065); no directed path between any process of the two tools"
+fibertools-rs,whatshap,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00112, E00339); no directed path between any process of the two tools"
+gunzip,fastqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00263, E00118); no directed path between any process of the two tools"
+minimap2,dorado_aligner,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00130, E00138); no directed path between any process of the two tools"
+minimap2,fastqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00130, E00118); no directed path between any process of the two tools"
+minimap2,pbmm2,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00005, E00013); no directed path between any process of the two tools"
+minimap2,samtools_reset,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00130, E00136); no directed path between any process of the two tools"
+modkit_bedgraph,pbcpg_bedgraphs,parallel_co_use,0,0,,"both consume MODKIT_PILEUP.bedgz (E00189, E00191); no directed path between any process of the two tools"
+modkit_bedgraph,tabix,parallel_co_use,0,0,,"both consume MODKIT_PILEUP.bedgz (E00189, E00188); no directed path between any process of the two tools"
+ont-modkit,fastqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00663, E00118); no directed path between any process of the two tools"
+ont-modkit,pb_cpg_tools,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00670, E00076); no directed path between any process of the two tools"
+ont-modkit,samtools_reset,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00663, E00136); no directed path between any process of the two tools"
+ont-modkit,samtools_split_strand,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00670, E00065); no directed path between any process of the two tools"
+pb_cpg_tools,clair3,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00076, E00225); no directed path between any process of the two tools"
+pb_cpg_tools,fastqc,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00076, E00001); no directed path between any process of the two tools"
+pb_cpg_tools,fibertools-rs,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00076, E00112); no directed path between any process of the two tools"
+pb_cpg_tools,ont-modkit,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00076, E00670); no directed path between any process of the two tools"
+pb_cpg_tools,whatshap,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00076, E00339); no directed path between any process of the two tools"
+pbcpg_bedgraphs,modkit_bedgraph,parallel_co_use,0,0,,"both consume MODKIT_PILEUP.bedgz (E00191, E00189); no directed path between any process of the two tools"
+pbcpg_bedgraphs,tabix,parallel_co_use,0,0,,"both consume MODKIT_PILEUP.bedgz (E00191, E00188); no directed path between any process of the two tools"
+pbmm2,fastqc,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00013, E00001); no directed path between any process of the two tools"
+pbmm2,minimap2,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00013, E00005); no directed path between any process of the two tools"
+samtools,fastqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00649, E00118); no directed path between any process of the two tools"
+samtools,samtools_reset,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00649, E00136); no directed path between any process of the two tools"
+samtools_reset,clair3,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00136, E00218); no directed path between any process of the two tools"
+samtools_reset,dorado_aligner,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00136, E00138); no directed path between any process of the two tools"
+samtools_reset,fastqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00136, E00118); no directed path between any process of the two tools"
+samtools_reset,minimap2,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00136, E00130); no directed path between any process of the two tools"
+samtools_reset,ont-modkit,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00136, E00663); no directed path between any process of the two tools"
+samtools_reset,samtools,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00136, E00649); no directed path between any process of the two tools"
+samtools_reset,whatshap,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00136, E00332); no directed path between any process of the two tools"
+samtools_split_strand,clair3,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00065, E00225); no directed path between any process of the two tools"
+samtools_split_strand,fastqc,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00065, E00001); no directed path between any process of the two tools"
+samtools_split_strand,fibertools-rs,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00065, E00112); no directed path between any process of the two tools"
+samtools_split_strand,ont-modkit,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00065, E00670); no directed path between any process of the two tools"
+samtools_split_strand,whatshap,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00065, E00339); no directed path between any process of the two tools"
+tabix,modkit_bedgraph,parallel_co_use,0,0,,"both consume MODKIT_PILEUP.bedgz (E00188, E00189); no directed path between any process of the two tools"
+tabix,pbcpg_bedgraphs,parallel_co_use,0,0,,"both consume MODKIT_PILEUP.bedgz (E00188, E00191); no directed path between any process of the two tools"
+whatshap,fastqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00332, E00118); no directed path between any process of the two tools"
+whatshap,fibertools-rs,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00339, E00112); no directed path between any process of the two tools"
+whatshap,pb_cpg_tools,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00339, E00076); no directed path between any process of the two tools"
+whatshap,samtools_reset,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.bam (E00332, E00136); no directed path between any process of the two tools"
+whatshap,samtools_split_strand,parallel_co_use,0,0,,"both consume CCSMETH_CALLMODS.modbam (E00339, E00065); no directed path between any process of the two tools"

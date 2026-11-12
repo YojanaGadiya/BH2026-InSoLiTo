@@ -1,0 +1,32 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:GENERATE_VARIANT_PEPTIDES:PVACSEQ_INSTALLVEPPLUGIN,PVACSEQ_INSTALLVEPPLUGIN,modules/local/pvacseq/installvepplugin/main.nf,1,pvactools,,pvactools,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:GENERATE_VARIANT_PEPTIDES:ENSEMBLVEP_DOWNLOAD,ENSEMBLVEP_DOWNLOAD,modules/nf-core/ensemblvep/download/main.nf,1,ensembl-vep,ensemblvep,ensembl-vep;perl-math-cdf;htslib;gzip;tar,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:GENERATE_VARIANT_PEPTIDES:DOWNLOAD_REF_FASTA,DOWNLOAD_REF_FASTA,modules/local/download_ref_fasta/main.nf,1,wget,,wget;gzip,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:GENERATE_VARIANT_PEPTIDES:UNTAR,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:GENERATE_VARIANT_PEPTIDES:BCFTOOLS_PLUGINSETGT,BCFTOOLS_PLUGINSETGT,modules/nf-core/bcftools/pluginsetgt/main.nf,1,bcftools,bcftools;bcftools plugin setGT,bcftools;htslib,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:GENERATE_VARIANT_PEPTIDES:BCFTOOLS_VIEW,BCFTOOLS_VIEW,modules/nf-core/bcftools/view/main.nf,1,bcftools,view,bcftools;htslib,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:GENERATE_VARIANT_PEPTIDES:BCFTOOLS_ANNOTATE,BCFTOOLS_ANNOTATE,modules/nf-core/bcftools/annotate/main.nf,1,bcftools,annotate,bcftools;htslib,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:GENERATE_VARIANT_PEPTIDES:BCFTOOLS_NORM,BCFTOOLS_NORM,modules/nf-core/bcftools/norm/main.nf,1,bcftools,norm,bcftools;htslib,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:GENERATE_VARIANT_PEPTIDES:BCFTOOLS_STATS,BCFTOOLS_STATS,modules/nf-core/bcftools/stats/main.nf,1,bcftools,stats,bcftools;htslib,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:GENERATE_VARIANT_PEPTIDES:ENSEMBLVEP_VEP,ENSEMBLVEP_VEP,modules/nf-core/ensemblvep/vep/main.nf,1,ensembl-vep,ensemblvep,ensembl-vep;perl-math-cdf;htslib;gzip;tar,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:GENERATE_VARIANT_PEPTIDES:PREP_GERMLINE_CONTEXT,PREP_GERMLINE_CONTEXT,modules/local/prep_germline_context/main.nf,1,bcftools,,bcftools;htslib,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:GENERATE_VARIANT_PEPTIDES:ENSEMBLVEP_VEP_CONTEXT,ENSEMBLVEP_VEP,modules/nf-core/ensemblvep/vep/main.nf,1,ensembl-vep,ensemblvep,ensembl-vep;perl-math-cdf;htslib;gzip;tar,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:GENERATE_VARIANT_PEPTIDES:PREP_PROXIMAL_VCF,PREP_PROXIMAL_VCF,modules/local/prep_proximal_vcf/main.nf,1,bcftools,,htslib;bcftools,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:GENERATE_VARIANT_PEPTIDES:PVACSEQ_GENERATEPROTEINFASTA,PVACSEQ_GENERATEPROTEINFASTA,modules/local/pvacseq/generateproteinfasta/main.nf,1,pvactools,,pvactools,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:GENERATE_VARIANT_PEPTIDES:FASTA2PEPTIDES_FROM_VARIANTS,FASTA2PEPTIDES,modules/local/fasta2peptides/main.nf,1,biopython,,biopython,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:FASTA2PEPTIDES,FASTA2PEPTIDES,modules/local/fasta2peptides/main.nf,1,biopython,,biopython,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:SPLIT_PEPTIDES,SPLIT_PEPTIDES,modules/local/split_peptides/main.nf,1,split_peptides,,python,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:MHC_BINDING_PREDICTION:PREPARE_PREDICTION_INPUT,PREPARE_PREDICTION_INPUT,modules/local/prepare_prediction_input/main.nf,1,mhcgnomes,,mhcgnomes;pandas,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:MHC_BINDING_PREDICTION:MHCFLURRY_DOWNLOAD_MODELS,MHCFLURRY_DOWNLOAD_MODELS,modules/local/mhcflurry_download_models/main.nf,1,mhcflurry,,mhcflurry,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:MHC_BINDING_PREDICTION:MHCFLURRY,MHCFLURRY,modules/local/mhcflurry/main.nf,1,mhcflurry,,mhcflurry,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:MHC_BINDING_PREDICTION:MHCNUGGETS,MHCNUGGETS,modules/local/mhcnuggets/main.nf,1,mhcnuggets,,mhcnuggets,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:MHC_BINDING_PREDICTION:MHCNUGGETSII,MHCNUGGETS,modules/local/mhcnuggets/main.nf,1,mhcnuggets,,mhcnuggets,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:MHC_BINDING_PREDICTION:NETMHCPAN_IMPORT,UNPACK_NETMHC_SOFTWARE,modules/local/unpack_netmhc_software/main.nf,1,unpack_netmhc_software,,coreutils,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:MHC_BINDING_PREDICTION:NETMHCPAN,NETMHCPAN,modules/local/netmhcpan/main.nf,1,bash,,bash;gawk;perl;tcsh,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:MHC_BINDING_PREDICTION:NETMHCIIPAN_IMPORT,UNPACK_NETMHC_SOFTWARE,modules/local/unpack_netmhc_software/main.nf,1,unpack_netmhc_software,,coreutils,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:MHC_BINDING_PREDICTION:NETMHCIIPAN,NETMHCIIPAN,modules/local/netmhciipan/main.nf,1,bash,,bash;gawk;perl;tcsh,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:MHC_BINDING_PREDICTION:MIXMHCPRED,MIXMHCPRED,modules/local/mixmhcpred/main.nf,1,mixmhcpred,,,module name
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:MHC_BINDING_PREDICTION:MIXMHCIIPRED,MIXMHCIIPRED,modules/local/mixmhciipred/main.nf,1,mixmhciipred,,,module name
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:MHC_BINDING_PREDICTION:MERGE_PREDICTIONS,MERGE_PREDICTIONS,modules/local/merge_predictions/main.nf,1,mhcgnomes,,mhcgnomes;pandas,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:SUMMARIZE_RESULTS,SUMMARIZE_RESULTS,modules/local/summarize_results/main.nf,1,mhcgnomes,,mhcgnomes;pandas,environment.yml
+NFCORE_EPITOPEPREDICTION:EPITOPEPREDICTION:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

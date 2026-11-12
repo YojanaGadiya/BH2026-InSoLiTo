@@ -1,0 +1,61 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bedtools,bowtie,data_flow,1,1,E00009,
+bedtools,bowtie2,data_flow,1,1,E00007,
+bedtools,bwa,data_flow,1,1,E00005,
+bedtools,bwa-mem2,data_flow,1,1,E00003,
+bedtools,callingcardstools,data_flow,1,1,E00020,
+bedtools,concatfasta,data_flow,1,1,E00001,
+bedtools,picard,data_flow,1,1,E00033,
+bedtools,samtools,data_flow,2,2,E00011,
+callingcardstools,concatfastq,data_flow,1,1,E00013,
+callingcardstools,picard,data_flow,2,2,E00030,
+callingcardstools,rseqc,data_flow,16,16,E00035,
+callingcardstools,samtools,data_flow,8,8,E00022,
+concatfasta,bowtie,data_flow,1,1,E00008,
+concatfasta,bowtie2,data_flow,1,1,E00006,
+concatfasta,bwa,data_flow,1,1,E00004,
+concatfasta,bwa-mem2,data_flow,1,1,E00002,
+concatfasta,callingcardstools,data_flow,1,1,E00019,
+concatfasta,picard,data_flow,1,1,E00032,
+concatfasta,samtools,data_flow,2,2,E00010,
+concatfastq,trimmomatic,data_flow,1,1,E00015,
+fastqc,multiqc,data_flow,3,3,E00096,
+perl,rseqc,data_flow,12,12,E00039,
+picard,multiqc,data_flow,2,2,E00105,
+rseqc,multiqc,data_flow,12,12,E00106,
+samtools,callingcardstools,data_flow,2,2,E00021,
+samtools,multiqc,data_flow,6,6,E00102,
+samtools,picard,data_flow,4,4,E00034,
+samtools,rseqc,data_flow,16,16,E00074,
+seqkit,callingcardstools,data_flow,1,1,E00012,
+seqkit,umi_tools,data_flow,1,1,E00017,
+trimmomatic,fastqc,data_flow,1,1,E00016,
+trimmomatic,multiqc,data_flow,2,2,E00097,
+umi_tools,multiqc,data_flow,1,1,E00101,
+umi_tools,trimmomatic,data_flow,1,1,E00018,
+bowtie,callingcardstools,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00009, E00020); no directed path between any process of the two tools"
+bowtie,picard,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00009, E00033); no directed path between any process of the two tools"
+bowtie,samtools,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00009, E00011); no directed path between any process of the two tools"
+bowtie2,callingcardstools,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00007, E00020); no directed path between any process of the two tools"
+bowtie2,picard,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00007, E00033); no directed path between any process of the two tools"
+bowtie2,samtools,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00007, E00011); no directed path between any process of the two tools"
+bwa,callingcardstools,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00005, E00020); no directed path between any process of the two tools"
+bwa,picard,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00005, E00033); no directed path between any process of the two tools"
+bwa,samtools,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00005, E00011); no directed path between any process of the two tools"
+bwa-mem2,callingcardstools,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00003, E00020); no directed path between any process of the two tools"
+bwa-mem2,picard,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00003, E00033); no directed path between any process of the two tools"
+bwa-mem2,samtools,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00003, E00011); no directed path between any process of the two tools"
+callingcardstools,bowtie,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00020, E00009); no directed path between any process of the two tools"
+callingcardstools,bowtie2,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00020, E00007); no directed path between any process of the two tools"
+callingcardstools,bwa,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00020, E00005); no directed path between any process of the two tools"
+callingcardstools,bwa-mem2,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00020, E00003); no directed path between any process of the two tools"
+picard,bowtie,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00033, E00009); no directed path between any process of the two tools"
+picard,bowtie2,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00033, E00007); no directed path between any process of the two tools"
+picard,bwa,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00033, E00005); no directed path between any process of the two tools"
+picard,bwa-mem2,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00033, E00003); no directed path between any process of the two tools"
+picard,rseqc,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00072, E00075); no directed path between any process of the two tools"
+rseqc,picard,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00075, E00072); no directed path between any process of the two tools"
+samtools,bowtie,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00011, E00009); no directed path between any process of the two tools"
+samtools,bowtie2,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00011, E00007); no directed path between any process of the two tools"
+samtools,bwa,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00011, E00005); no directed path between any process of the two tools"
+samtools,bwa-mem2,parallel_co_use,0,0,,"both consume BEDTOOLS_MASKFASTA.fasta (E00011, E00003); no directed path between any process of the two tools"

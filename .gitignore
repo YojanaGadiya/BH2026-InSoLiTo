@@ -10,8 +10,13 @@ DB/InSoLiToImport.zip
 DB/InSoLiToSupportFiles.zip
 directed-graph/europepmc/data/
 directed-graph/citation-order/data/
-directed-graph/workflowhub/data/
+directed-graph/workflowhub/data/biotools/nextflow/workflows
+directed-graph/workflowhub/data/galaxy/download
+directed-graph/workflowhub/data/nextflow/
 directed-graph/biotools/data/*.jsonl
+directed-graph/edges-processed/
+directed-graph/biotools/data/*.parquet
+directed-graph/edges_processed
 **.log
 **.python-version
 __pycache__/

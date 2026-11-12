@@ -1,0 +1,60 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bedtools_sortedbam2bed,circlefinder,data_flow,1,1,E00055,
+bedtools_splitbam2bed,circlefinder,data_flow,1,1,E00054,
+bwa,ampliconsuite,data_flow,1,1,E00045,
+bwa,bedtools_sortedbam2bed,data_flow,1,1,E00051,
+bwa,circexplorer2,data_flow,1,1,E00077,
+bwa,circlemap_realign,data_flow,1,1,E00070,
+bwa,picard,data_flow,1,1,E00017,
+bwa,samtools,data_flow,6,6,E00006,
+cat,bwa,data_flow,1,1,E00004,
+cat,fastqc,data_flow,1,1,E00001,
+cat,trim-galore,data_flow,1,1,E00002,
+cat,unicycler,data_flow,1,1,E00083,
+circlemap_readextractor,samtools,data_flow,1,1,E00061,
+fastqc,multiqc,data_flow,1,1,E00087,
+getcircularreads,minimap2,data_flow,1,1,E00086,
+picard,ampliconsuite,data_flow,1,1,E00044,
+picard,circexplorer2,data_flow,1,1,E00076,
+picard,circlemap_realign,data_flow,1,1,E00069,
+picard,multiqc,data_flow,1,1,E00096,
+picard,samtools,data_flow,10,10,E00024,
+samblaster,bedtools_splitbam2bed,data_flow,1,1,E00050,
+samtools,ampliconsuite,data_flow,2,2,E00043,
+samtools,bedtools_sortedbam2bed,data_flow,2,2,E00052,
+samtools,circexplorer2,data_flow,5,5,E00075,
+samtools,circlemap_readextractor,data_flow,1,1,E00060,
+samtools,circlemap_realign,data_flow,8,8,E00065,
+samtools,circlemap_repeats,data_flow,2,2,E00063,
+samtools,multiqc,data_flow,6,6,E00090,
+samtools,picard,data_flow,5,5,E00018,
+samtools,samblaster,data_flow,1,1,E00049,
+seqtk_seq,getcircularreads,data_flow,1,1,E00085,
+trim-galore,bwa,data_flow,1,1,E00003,
+trim-galore,multiqc,data_flow,2,2,E00088,
+trim-galore,unicycler,data_flow,1,1,E00082,
+unicycler,seqtk_seq,data_flow,1,1,E00084,
+ampliconsuite,bedtools_sortedbam2bed,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00045, E00051); no directed path between any process of the two tools"
+ampliconsuite,circexplorer2,parallel_co_use,0,0,,"both consume PICARD_MARKDUPLICATES.bam (E00044, E00076); no directed path between any process of the two tools"
+ampliconsuite,circlemap_realign,parallel_co_use,0,0,,"both consume PICARD_MARKDUPLICATES.bam (E00044, E00069); no directed path between any process of the two tools"
+bedtools_sortedbam2bed,ampliconsuite,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00051, E00045); no directed path between any process of the two tools"
+bedtools_sortedbam2bed,circexplorer2,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00051, E00077); no directed path between any process of the two tools"
+bedtools_sortedbam2bed,circlemap_realign,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00051, E00070); no directed path between any process of the two tools"
+bedtools_sortedbam2bed,picard,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00051, E00017); no directed path between any process of the two tools"
+bwa,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00004, E00001); no directed path between any process of the two tools"
+bwa,unicycler,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00004, E00083); no directed path between any process of the two tools"
+circexplorer2,ampliconsuite,parallel_co_use,0,0,,"both consume PICARD_MARKDUPLICATES.bam (E00076, E00044); no directed path between any process of the two tools"
+circexplorer2,bedtools_sortedbam2bed,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00077, E00051); no directed path between any process of the two tools"
+circexplorer2,circlemap_realign,parallel_co_use,0,0,,"both consume PICARD_MARKDUPLICATES.bam (E00076, E00069); no directed path between any process of the two tools"
+circlemap_realign,ampliconsuite,parallel_co_use,0,0,,"both consume PICARD_MARKDUPLICATES.bam (E00069, E00044); no directed path between any process of the two tools"
+circlemap_realign,bedtools_sortedbam2bed,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00070, E00051); no directed path between any process of the two tools"
+circlemap_realign,circexplorer2,parallel_co_use,0,0,,"both consume PICARD_MARKDUPLICATES.bam (E00069, E00076); no directed path between any process of the two tools"
+circlemap_realign,circlemap_repeats,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_RE.index (E00066, E00064); no directed path between any process of the two tools"
+circlemap_repeats,circlemap_realign,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_RE.index (E00064, E00066); no directed path between any process of the two tools"
+fastqc,bwa,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00001, E00004); no directed path between any process of the two tools"
+fastqc,trim-galore,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00001, E00002); no directed path between any process of the two tools"
+fastqc,unicycler,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00001, E00083); no directed path between any process of the two tools"
+picard,bedtools_sortedbam2bed,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00017, E00051); no directed path between any process of the two tools"
+trim-galore,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00002, E00001); no directed path between any process of the two tools"
+unicycler,bwa,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00083, E00004); no directed path between any process of the two tools"
+unicycler,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00083, E00001); no directed path between any process of the two tools"

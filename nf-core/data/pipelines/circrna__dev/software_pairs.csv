@@ -1,0 +1,382 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+agat,gffutils,data_flow,1,1,E00003,
+altair,multiqc,data_flow,1,1,E00402,
+bedtools,circexplorer2,data_flow,1,1,E00235,
+bedtools,fail_on_empty,data_flow,3,3,E00255,
+bedtools,gawk,data_flow,3,3,E00064,
+bedtools,matplotlib,data_flow,1,1,E00169,
+bedtools,polars,data_flow,1,1,E00289,
+bioawk,csvtk,data_flow,1,1,E00084,
+bioawk,miranda,data_flow,1,1,E00376,
+bioawk,targetscan,data_flow,2,2,E00373,
+bioconductor-deseq2,r-base,data_flow,1,1,E00370,
+bioconductor-rhdf5,bioconductor-rtracklayer,data_flow,1,1,E00340,
+bioconductor-rtracklayer,bioconductor-fishpond,data_flow,1,1,E00385,
+bioconductor-tximeta,csvtk,data_flow,4,4,E00334,
+bowtie,mapsplice,data_flow,1,1,E00134,
+bowtie2,bioawk,data_flow,1,1,E00083,
+bowtie2,csvtk,data_flow,1,1,E00085,
+bowtie2,samtools,data_flow,2,2,E00076,
+bwa,ciri-full,data_flow,3,3,E00088,
+bwa,ciri3,data_flow,2,2,E00091,
+bwa,ciriquant,data_flow,1,1,E00349,
+cat,bedtools,data_flow,1,1,E00021,
+cat,bowtie2,data_flow,1,1,E00074,
+cat,bwa,data_flow,1,1,E00041,
+cat,circminer,data_flow,1,1,E00153,
+cat,ciriquant,data_flow,2,2,E00346,
+cat,fastp,data_flow,1,1,E00035,
+cat,fastqc,data_flow,1,1,E00023,
+cat,jccirc,data_flow,1,1,E00303,
+cat,mapsplice,data_flow,1,1,E00133,
+cat,psirc,data_flow,3,3,E00142,
+cat,samtools,data_flow,6,6,E00046,
+cat,segemehl,data_flow,1,1,E00059,
+cat,seqkit,data_flow,1,1,E00030,
+cat,trim-galore,data_flow,1,1,E00026,
+cat,trinity,data_flow,1,1,E00286,
+cat,umi_tools,data_flow,1,1,E00024,
+circexplorer2,gawk,data_flow,5,5,E00066,
+circminer,gawk,data_flow,1,1,E00156,
+circrna_finder,gawk,data_flow,1,1,E00070,
+circtools,bedtools,data_flow,2,2,E00022,
+circtools,polars,data_flow,3,3,E00127,
+ciri-full,bwa,data_flow,1,1,E00262,
+ciri-full,gawk,data_flow,1,1,E00090,
+ciri-full,openjdk,data_flow,2,2,E00271,
+ciri-full,polars,data_flow,1,1,E00269,
+ciri3,gawk,data_flow,1,1,E00093,
+ciri3,polars,data_flow,2,2,E00364,
+ciriquant,gawk,data_flow,1,1,E00356,
+ciriquant,pygtftk,data_flow,1,1,E00355,
+ciriquant,stringtie,data_flow,2,2,E00394,
+csvtk,bioconductor-rtracklayer,data_flow,1,1,E00342,
+csvtk,gawk,data_flow,3,3,E00087,
+csvtk,r-base,data_flow,1,1,E00386,
+custom,bioconductor-tximeta,data_flow,1,1,E00333,
+fastp,bwa,data_flow,1,1,E00037,
+fastp,ciri-full,data_flow,1,1,E00261,
+find_circ,bowtie2,data_flow,2,2,E00080,
+gawk,altair,data_flow,1,1,E00206,
+gawk,bedtools,data_flow,20,20,E00159,
+gawk,bioconductor-rtracklayer,data_flow,1,1,E00341,
+gawk,bowtie,data_flow,1,1,E00006,
+gawk,bowtie2,data_flow,1,1,E00007,
+gawk,bwa,data_flow,1,1,E00008,
+gawk,circexplorer2,data_flow,10,10,E00210,
+gawk,circminer,data_flow,1,1,E00020,
+gawk,ciriquant,data_flow,1,1,E00347,
+gawk,custom,data_flow,1,1,E00329,
+gawk,fail_on_empty,data_flow,3,3,E00252,
+gawk,gffread,data_flow,1,1,E00319,
+gawk,gnu,data_flow,1,1,E00062,
+gawk,gtffilter,data_flow,1,1,E00001,
+gawk,hisat2,data_flow,1,1,E00010,
+gawk,matplotlib,data_flow,9,9,E00170,
+gawk,polars,data_flow,19,18,E00191,
+gawk,psirc,data_flow,3,3,E00018,
+gawk,pysam,data_flow,1,1,E00157,
+gawk,r-base,data_flow,1,1,E00388,
+gawk,samtools,data_flow,2,2,E00013,
+gawk,seqkit,data_flow,1,1,E00005,
+gffread,bioawk,data_flow,1,1,E00371,
+gffread,gawk,data_flow,1,1,E00320,
+gffutils,circminer,data_flow,1,1,E00155,
+gnu,bedtools,data_flow,1,1,E00063,
+gnu,gawk,data_flow,1,1,E00318,
+gtffilter,agat,data_flow,1,1,E00002,
+gtffilter,circtools,data_flow,1,1,E00123,
+gtffilter,ciri-full,data_flow,3,3,E00089,
+gtffilter,ciri3,data_flow,2,2,E00092,
+gtffilter,ciriquant,data_flow,1,1,E00348,
+gtffilter,gnu,data_flow,1,1,E00316,
+gtffilter,gtfparse,data_flow,1,1,E00307,
+gtffilter,hisat2,data_flow,2,2,E00009,
+gtffilter,jccirc,data_flow,1,1,E00306,
+gtffilter,mapsplice,data_flow,1,1,E00136,
+gtffilter,psirc,data_flow,1,1,E00017,
+gtffilter,samtools,data_flow,4,4,E00014,
+gtffilter,ucsc-gtftogenepred,data_flow,1,1,E00004,
+gtfparse,circtools,data_flow,1,1,E00314,
+hisat2,ciriquant,data_flow,1,1,E00350,
+mapsplice,circexplorer2,data_flow,1,1,E00137,
+matplotlib,bedtools,data_flow,2,2,E00207,
+matplotlib,circexplorer2,data_flow,2,2,E00209,
+matplotlib,circtools,data_flow,1,1,E00310,
+matplotlib,fail_on_empty,data_flow,1,1,E00251,
+matplotlib,multiqc,data_flow,1,1,E00401,
+matplotlib,polars,data_flow,1,1,E00288,
+mawk,samtools,data_flow,3,3,E00055,
+miranda,bedtools,gate_metadata,1,0,E00380,
+miranda,gawk,data_flow,1,1,E00378,
+openjdk,pandas,data_flow,1,1,E00274,
+polars,bedtools,data_flow,2,2,E00165,
+polars,bioconductor-fishpond,data_flow,1,1,E00383,
+polars,circexplorer2,data_flow,1,1,E00242,
+polars,ciri3,data_flow,1,1,E00362,
+polars,fastp,data_flow,1,1,E00036,
+polars,gawk,data_flow,2,2,E00187,
+polars,gnu,data_flow,1,1,E00317,
+polars,jccirc,data_flow,1,1,E00304,
+polars,matplotlib,data_flow,1,1,E00176,
+polars,openjdk,data_flow,1,1,E00273,
+polars,r-base,data_flow,3,3,E00387,
+psirc,bioconductor-rhdf5,data_flow,1,1,E00331,
+psirc,bioconductor-tximeta,data_flow,1,1,E00332,
+psirc,custom,data_flow,1,1,E00330,
+psirc,pandas,data_flow,1,1,E00282,
+psirc,python,data_flow,3,3,E00145,
+pygtftk,polars,data_flow,1,1,E00358,
+pysam,bedtools,data_flow,4,4,E00167,
+pysam,circexplorer2,data_flow,2,2,E00244,
+pysam,gawk,data_flow,4,4,E00189,
+pysam,matplotlib,data_flow,2,2,E00178,
+pysam,polars,data_flow,2,2,E00298,
+python,pysam,data_flow,1,1,E00148,
+r-base,bioawk,data_flow,1,1,E00372,
+r-base,bioconductor-fishpond,data_flow,1,1,E00384,
+r-base,miranda,data_flow,1,1,E00377,
+r-base,r-aod,data_flow,1,1,E00391,
+samtools,circexplorer2,data_flow,1,1,E00065,
+samtools,circrna_finder,data_flow,3,3,E00067,
+samtools,circtools,data_flow,9,9,E00120,
+samtools,find_circ,data_flow,1,1,E00079,
+samtools,mawk,data_flow,3,3,E00049,
+samtools,psirc,data_flow,1,1,E00328,
+samtools,pysam,data_flow,2,2,E00149,
+segemehl,gawk,data_flow,1,1,E00061,
+seqkit,mapsplice,data_flow,1,1,E00135,
+seqkit,polars,data_flow,1,1,E00031,
+stringtie,ciriquant,data_flow,1,1,E00398,
+targetscan,bedtools,gate_metadata,1,0,E00379,
+targetscan,gawk,data_flow,1,1,E00375,
+trim-galore,bowtie2,data_flow,2,1,E00071,
+trim-galore,bwa,data_flow,2,1,E00038,
+trim-galore,circminer,data_flow,2,1,E00150,
+trim-galore,ciriquant,data_flow,4,2,E00343,
+trim-galore,fastp,data_flow,2,1,E00032,
+trim-galore,jccirc,data_flow,2,1,E00300,
+trim-galore,mapsplice,data_flow,2,1,E00130,
+trim-galore,multiqc,data_flow,2,2,E00399,
+trim-galore,psirc,data_flow,6,3,E00139,
+trim-galore,samtools,data_flow,12,6,E00043,
+trim-galore,segemehl,data_flow,2,1,E00056,
+trim-galore,seqkit,data_flow,2,1,E00027,
+trim-galore,trinity,data_flow,2,1,E00283,
+trinity,jccirc,data_flow,1,1,E00305,
+ucsc-gtftogenepred,gawk,data_flow,1,1,E00016,
+umi_tools,bowtie2,data_flow,1,1,E00073,
+umi_tools,bwa,data_flow,1,1,E00040,
+umi_tools,circminer,data_flow,1,1,E00152,
+umi_tools,ciriquant,data_flow,2,2,E00345,
+umi_tools,fastp,data_flow,1,1,E00034,
+umi_tools,jccirc,data_flow,1,1,E00302,
+umi_tools,mapsplice,data_flow,1,1,E00132,
+umi_tools,psirc,data_flow,3,3,E00141,
+umi_tools,samtools,data_flow,6,6,E00045,
+umi_tools,segemehl,data_flow,1,1,E00058,
+umi_tools,seqkit,data_flow,1,1,E00029,
+umi_tools,trim-galore,data_flow,1,1,E00025,
+umi_tools,trinity,data_flow,1,1,E00285,
+agat,ciri-full,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00002, E00089); no directed path between any process of the two tools"
+agat,gtfparse,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00002, E00307); no directed path between any process of the two tools"
+agat,hisat2,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00002, E00011); no directed path between any process of the two tools"
+agat,mapsplice,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00002, E00136); no directed path between any process of the two tools"
+agat,samtools,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00002, E00099); no directed path between any process of the two tools"
+agat,ucsc-gtftogenepred,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00002, E00004); no directed path between any process of the two tools"
+altair,matplotlib,parallel_co_use,0,0,,"both consume BED_ADD_SAMPLE_TOOL.output (E00206, E00205); no directed path between any process of the two tools"
+bedtools,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00021, E00023); no directed path between any process of the two tools"
+bedtools,trinity,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00021, E00286); no directed path between any process of the two tools"
+bioconductor-rhdf5,bioconductor-tximeta,parallel_co_use,0,0,,"both consume QUANT.directory (E00331, E00332); no directed path between any process of the two tools"
+bioconductor-rhdf5,custom,parallel_co_use,0,0,,"both consume QUANT.directory (E00331, E00330); no directed path between any process of the two tools"
+bioconductor-tximeta,bioconductor-rhdf5,parallel_co_use,0,0,,"both consume QUANT.directory (E00332, E00331); no directed path between any process of the two tools"
+bowtie,bowtie2,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00006, E00007); no directed path between any process of the two tools"
+bowtie,bwa,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00006, E00008); no directed path between any process of the two tools"
+bowtie,circminer,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00006, E00020); no directed path between any process of the two tools"
+bowtie,gtffilter,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00006, E00001); no directed path between any process of the two tools"
+bowtie,hisat2,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00006, E00010); no directed path between any process of the two tools"
+bowtie,samtools,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00006, E00015); no directed path between any process of the two tools"
+bowtie,seqkit,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00006, E00005); no directed path between any process of the two tools"
+bowtie2,bowtie,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00007, E00006); no directed path between any process of the two tools"
+bowtie2,bwa,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00074, E00041); no directed path between any process of the two tools"
+bowtie2,circminer,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00074, E00153); no directed path between any process of the two tools"
+bowtie2,fastp,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00074, E00035); no directed path between any process of the two tools"
+bowtie2,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00074, E00023); no directed path between any process of the two tools"
+bowtie2,gtffilter,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00007, E00001); no directed path between any process of the two tools"
+bowtie2,hisat2,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00007, E00010); no directed path between any process of the two tools"
+bowtie2,mapsplice,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00074, E00133); no directed path between any process of the two tools"
+bowtie2,segemehl,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00074, E00059); no directed path between any process of the two tools"
+bowtie2,seqkit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00074, E00030); no directed path between any process of the two tools"
+bowtie2,trinity,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00074, E00286); no directed path between any process of the two tools"
+bwa,bowtie,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00008, E00006); no directed path between any process of the two tools"
+bwa,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00041, E00074); no directed path between any process of the two tools"
+bwa,circminer,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00041, E00153); no directed path between any process of the two tools"
+bwa,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00041, E00023); no directed path between any process of the two tools"
+bwa,gtffilter,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00008, E00001); no directed path between any process of the two tools"
+bwa,hisat2,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00008, E00010); no directed path between any process of the two tools"
+bwa,mapsplice,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00041, E00133); no directed path between any process of the two tools"
+bwa,samtools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00041, E00097); no directed path between any process of the two tools"
+bwa,segemehl,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00041, E00059); no directed path between any process of the two tools"
+bwa,trinity,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00041, E00286); no directed path between any process of the two tools"
+circminer,bowtie,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00020, E00006); no directed path between any process of the two tools"
+circminer,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00153, E00074); no directed path between any process of the two tools"
+circminer,bwa,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00153, E00041); no directed path between any process of the two tools"
+circminer,fastp,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00153, E00035); no directed path between any process of the two tools"
+circminer,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00153, E00023); no directed path between any process of the two tools"
+circminer,hisat2,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00020, E00010); no directed path between any process of the two tools"
+circminer,mapsplice,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00153, E00133); no directed path between any process of the two tools"
+circminer,samtools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00153, E00097); no directed path between any process of the two tools"
+circminer,segemehl,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00153, E00059); no directed path between any process of the two tools"
+circminer,seqkit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00153, E00030); no directed path between any process of the two tools"
+circminer,trinity,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00153, E00286); no directed path between any process of the two tools"
+circtools,hisat2,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00123, E00011); no directed path between any process of the two tools"
+circtools,ucsc-gtftogenepred,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00123, E00004); no directed path between any process of the two tools"
+ciri-full,agat,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00089, E00002); no directed path between any process of the two tools"
+ciri-full,gtfparse,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00089, E00307); no directed path between any process of the two tools"
+ciri-full,hisat2,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00089, E00011); no directed path between any process of the two tools"
+ciri-full,mapsplice,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00089, E00136); no directed path between any process of the two tools"
+ciri-full,samtools,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00089, E00099); no directed path between any process of the two tools"
+ciri-full,ucsc-gtftogenepred,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00089, E00004); no directed path between any process of the two tools"
+ciri3,gtfparse,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00092, E00307); no directed path between any process of the two tools"
+ciri3,hisat2,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00092, E00011); no directed path between any process of the two tools"
+ciriquant,fail_on_empty,parallel_co_use,0,0,,"both consume RENAME.output (E00347, E00252); no directed path between any process of the two tools"
+ciriquant,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00346, E00023); no directed path between any process of the two tools"
+ciriquant,gtfparse,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00348, E00307); no directed path between any process of the two tools"
+ciriquant,jccirc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00346, E00303); no directed path between any process of the two tools"
+ciriquant,trinity,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00346, E00286); no directed path between any process of the two tools"
+custom,bioconductor-rhdf5,parallel_co_use,0,0,,"both consume QUANT.directory (E00330, E00331); no directed path between any process of the two tools"
+fail_on_empty,ciriquant,parallel_co_use,0,0,,"both consume RENAME.output (E00252, E00347); no directed path between any process of the two tools"
+fastp,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00035, E00074); no directed path between any process of the two tools"
+fastp,circminer,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00035, E00153); no directed path between any process of the two tools"
+fastp,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00035, E00023); no directed path between any process of the two tools"
+fastp,mapsplice,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00035, E00133); no directed path between any process of the two tools"
+fastp,samtools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00035, E00097); no directed path between any process of the two tools"
+fastp,segemehl,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00035, E00059); no directed path between any process of the two tools"
+fastp,trinity,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00035, E00286); no directed path between any process of the two tools"
+fastqc,bedtools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00023, E00021); no directed path between any process of the two tools"
+fastqc,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00023, E00074); no directed path between any process of the two tools"
+fastqc,bwa,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00023, E00041); no directed path between any process of the two tools"
+fastqc,circminer,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00023, E00153); no directed path between any process of the two tools"
+fastqc,ciriquant,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00023, E00346); no directed path between any process of the two tools"
+fastqc,fastp,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00023, E00035); no directed path between any process of the two tools"
+fastqc,jccirc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00023, E00303); no directed path between any process of the two tools"
+fastqc,mapsplice,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00023, E00133); no directed path between any process of the two tools"
+fastqc,psirc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00023, E00142); no directed path between any process of the two tools"
+fastqc,samtools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00023, E00097); no directed path between any process of the two tools"
+fastqc,segemehl,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00023, E00059); no directed path between any process of the two tools"
+fastqc,seqkit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00023, E00030); no directed path between any process of the two tools"
+fastqc,trim-galore,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00023, E00026); no directed path between any process of the two tools"
+fastqc,trinity,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00023, E00286); no directed path between any process of the two tools"
+fastqc,umi_tools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00023, E00024); no directed path between any process of the two tools"
+gnu,gtfparse,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00316, E00307); no directed path between any process of the two tools"
+gnu,hisat2,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00316, E00011); no directed path between any process of the two tools"
+gtffilter,bowtie,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00001, E00006); no directed path between any process of the two tools"
+gtffilter,bowtie2,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00001, E00007); no directed path between any process of the two tools"
+gtffilter,bwa,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00001, E00008); no directed path between any process of the two tools"
+gtffilter,seqkit,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00001, E00005); no directed path between any process of the two tools"
+gtfparse,agat,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00307, E00002); no directed path between any process of the two tools"
+gtfparse,ciri-full,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00307, E00089); no directed path between any process of the two tools"
+gtfparse,ciri3,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00307, E00092); no directed path between any process of the two tools"
+gtfparse,ciriquant,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00307, E00348); no directed path between any process of the two tools"
+gtfparse,gnu,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00307, E00316); no directed path between any process of the two tools"
+gtfparse,hisat2,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00307, E00011); no directed path between any process of the two tools"
+gtfparse,jccirc,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00307, E00306); no directed path between any process of the two tools"
+gtfparse,mapsplice,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00307, E00136); no directed path between any process of the two tools"
+gtfparse,psirc,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00307, E00017); no directed path between any process of the two tools"
+gtfparse,samtools,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00307, E00099); no directed path between any process of the two tools"
+gtfparse,ucsc-gtftogenepred,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00307, E00004); no directed path between any process of the two tools"
+hisat2,agat,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00011, E00002); no directed path between any process of the two tools"
+hisat2,bowtie,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00010, E00006); no directed path between any process of the two tools"
+hisat2,bowtie2,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00010, E00007); no directed path between any process of the two tools"
+hisat2,bwa,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00010, E00008); no directed path between any process of the two tools"
+hisat2,circminer,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00010, E00020); no directed path between any process of the two tools"
+hisat2,circtools,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00011, E00123); no directed path between any process of the two tools"
+hisat2,ciri-full,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00011, E00089); no directed path between any process of the two tools"
+hisat2,ciri3,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00011, E00092); no directed path between any process of the two tools"
+hisat2,gnu,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00011, E00316); no directed path between any process of the two tools"
+hisat2,gtfparse,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00011, E00307); no directed path between any process of the two tools"
+hisat2,jccirc,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00011, E00306); no directed path between any process of the two tools"
+hisat2,mapsplice,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00011, E00136); no directed path between any process of the two tools"
+hisat2,psirc,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00010, E00018); no directed path between any process of the two tools"
+hisat2,samtools,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00010, E00015); no directed path between any process of the two tools"
+hisat2,seqkit,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00010, E00005); no directed path between any process of the two tools"
+hisat2,ucsc-gtftogenepred,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00011, E00004); no directed path between any process of the two tools"
+jccirc,ciriquant,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00303, E00346); no directed path between any process of the two tools"
+jccirc,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00303, E00023); no directed path between any process of the two tools"
+jccirc,gtfparse,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00306, E00307); no directed path between any process of the two tools"
+jccirc,hisat2,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00306, E00011); no directed path between any process of the two tools"
+mapsplice,agat,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00136, E00002); no directed path between any process of the two tools"
+mapsplice,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00133, E00074); no directed path between any process of the two tools"
+mapsplice,bwa,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00133, E00041); no directed path between any process of the two tools"
+mapsplice,circminer,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00133, E00153); no directed path between any process of the two tools"
+mapsplice,ciri-full,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00136, E00089); no directed path between any process of the two tools"
+mapsplice,fastp,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00133, E00035); no directed path between any process of the two tools"
+mapsplice,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00133, E00023); no directed path between any process of the two tools"
+mapsplice,gtfparse,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00136, E00307); no directed path between any process of the two tools"
+mapsplice,hisat2,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00136, E00011); no directed path between any process of the two tools"
+mapsplice,samtools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00133, E00097); no directed path between any process of the two tools"
+mapsplice,segemehl,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00133, E00059); no directed path between any process of the two tools"
+mapsplice,trinity,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00133, E00286); no directed path between any process of the two tools"
+mapsplice,ucsc-gtftogenepred,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00136, E00004); no directed path between any process of the two tools"
+matplotlib,altair,parallel_co_use,0,0,,"both consume BED_ADD_SAMPLE_TOOL.output (E00205, E00206); no directed path between any process of the two tools"
+miranda,targetscan,parallel_co_use,0,0,,"both consume ADD_BACKSPLICE.output (E00376, E00373); no directed path between any process of the two tools"
+psirc,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00142, E00023); no directed path between any process of the two tools"
+psirc,gtfparse,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00017, E00307); no directed path between any process of the two tools"
+psirc,hisat2,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00018, E00010); no directed path between any process of the two tools"
+psirc,trinity,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00142, E00286); no directed path between any process of the two tools"
+pygtftk,stringtie,parallel_co_use,0,0,,"both consume MAIN.gtf (E00355, E00394); no directed path between any process of the two tools"
+samtools,agat,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00099, E00002); no directed path between any process of the two tools"
+samtools,bowtie,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00015, E00006); no directed path between any process of the two tools"
+samtools,bwa,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00097, E00041); no directed path between any process of the two tools"
+samtools,circminer,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00097, E00153); no directed path between any process of the two tools"
+samtools,ciri-full,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00099, E00089); no directed path between any process of the two tools"
+samtools,fastp,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00097, E00035); no directed path between any process of the two tools"
+samtools,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00097, E00023); no directed path between any process of the two tools"
+samtools,gtfparse,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00099, E00307); no directed path between any process of the two tools"
+samtools,hisat2,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00015, E00010); no directed path between any process of the two tools"
+samtools,mapsplice,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00097, E00133); no directed path between any process of the two tools"
+samtools,segemehl,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00097, E00059); no directed path between any process of the two tools"
+samtools,seqkit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00097, E00030); no directed path between any process of the two tools"
+samtools,trinity,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00097, E00286); no directed path between any process of the two tools"
+samtools,ucsc-gtftogenepred,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00099, E00004); no directed path between any process of the two tools"
+segemehl,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00059, E00074); no directed path between any process of the two tools"
+segemehl,bwa,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00059, E00041); no directed path between any process of the two tools"
+segemehl,circminer,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00059, E00153); no directed path between any process of the two tools"
+segemehl,fastp,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00059, E00035); no directed path between any process of the two tools"
+segemehl,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00059, E00023); no directed path between any process of the two tools"
+segemehl,mapsplice,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00059, E00133); no directed path between any process of the two tools"
+segemehl,samtools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00059, E00097); no directed path between any process of the two tools"
+segemehl,seqkit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00059, E00030); no directed path between any process of the two tools"
+segemehl,trinity,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00059, E00286); no directed path between any process of the two tools"
+seqkit,bowtie,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00005, E00006); no directed path between any process of the two tools"
+seqkit,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00030, E00074); no directed path between any process of the two tools"
+seqkit,circminer,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00030, E00153); no directed path between any process of the two tools"
+seqkit,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00030, E00023); no directed path between any process of the two tools"
+seqkit,gtffilter,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00005, E00001); no directed path between any process of the two tools"
+seqkit,hisat2,parallel_co_use,0,0,,"both consume CLEAN_FASTA.output (E00005, E00010); no directed path between any process of the two tools"
+seqkit,samtools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00030, E00097); no directed path between any process of the two tools"
+seqkit,segemehl,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00030, E00059); no directed path between any process of the two tools"
+seqkit,trinity,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00030, E00286); no directed path between any process of the two tools"
+stringtie,pygtftk,parallel_co_use,0,0,,"both consume MAIN.gtf (E00394, E00355); no directed path between any process of the two tools"
+targetscan,miranda,parallel_co_use,0,0,,"both consume ADD_BACKSPLICE.output (E00373, E00376); no directed path between any process of the two tools"
+trim-galore,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00026, E00023); no directed path between any process of the two tools"
+trinity,bedtools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00286, E00021); no directed path between any process of the two tools"
+trinity,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00286, E00074); no directed path between any process of the two tools"
+trinity,bwa,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00286, E00041); no directed path between any process of the two tools"
+trinity,circminer,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00286, E00153); no directed path between any process of the two tools"
+trinity,ciriquant,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00286, E00346); no directed path between any process of the two tools"
+trinity,fastp,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00286, E00035); no directed path between any process of the two tools"
+trinity,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00286, E00023); no directed path between any process of the two tools"
+trinity,mapsplice,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00286, E00133); no directed path between any process of the two tools"
+trinity,psirc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00286, E00142); no directed path between any process of the two tools"
+trinity,samtools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00286, E00097); no directed path between any process of the two tools"
+trinity,segemehl,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00286, E00059); no directed path between any process of the two tools"
+trinity,seqkit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00286, E00030); no directed path between any process of the two tools"
+ucsc-gtftogenepred,agat,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00004, E00002); no directed path between any process of the two tools"
+ucsc-gtftogenepred,circtools,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00004, E00123); no directed path between any process of the two tools"
+ucsc-gtftogenepred,ciri-full,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00004, E00089); no directed path between any process of the two tools"
+ucsc-gtftogenepred,gtfparse,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00004, E00307); no directed path between any process of the two tools"
+ucsc-gtftogenepred,hisat2,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00004, E00011); no directed path between any process of the two tools"
+ucsc-gtftogenepred,mapsplice,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00004, E00136); no directed path between any process of the two tools"
+ucsc-gtftogenepred,samtools,parallel_co_use,0,0,,"both consume GTFFILTER.gtf (E00004, E00099); no directed path between any process of the two tools"
+umi_tools,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00024, E00023); no directed path between any process of the two tools"

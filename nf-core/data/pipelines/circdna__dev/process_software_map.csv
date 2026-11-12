@@ -1,0 +1,39 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_CIRCDNA:CIRCDNA:CAT_FASTQ,CAT_FASTQ,modules/nf-core/cat/fastq/main.nf,1,cat,cat,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:TRIMGALORE,TRIMGALORE,modules/nf-core/trimgalore/main.nf,1,trim-galore,trimgalore,trim-galore,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:BWA_INDEX,BWA_INDEX,modules/nf-core/bwa/index/main.nf,1,bwa,bwa,bwa;htslib;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:BWA_MEM,BWA_MEM,modules/nf-core/bwa/mem/main.nf,1,bwa,bwa,bwa;htslib;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:SAMTOOLS_INDEX_BAM,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:SAMTOOLS_SORT_BAM,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:PICARD_ADDORREPLACEREADGROUPS,PICARD_ADDORREPLACEREADGROUPS,modules/nf-core/picard/addorreplacereadgroups/main.nf,1,picard,picard,picard,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:BAM_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES,PICARD_MARKDUPLICATES,modules/nf-core/picard/markduplicates/main.nf,1,picard,picard,picard,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:BAM_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:BAM_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:BAM_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:BAM_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:SAMTOOLS_VIEW_FILTER,SAMTOOLS_VIEW,modules/nf-core/samtools/view/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:SAMTOOLS_SORT_FILTERED,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:SAMTOOLS_INDEX_FILTERED,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:AMPLICONSUITE,AMPLICONSUITE,modules/local/ampliconsuite/main.nf,1,ampliconsuite,,ampliconsuite;mosek,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:SAMTOOLS_SORT_QNAME_CF,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:SAMBLASTER,SAMBLASTER,modules/local/samblaster/main.nf,1,samblaster,,,module name
+NFCORE_CIRCDNA:CIRCDNA:BEDTOOLS_SPLITBAM2BED,BEDTOOLS_SPLITBAM2BED,modules/local/bedtools/splitbam2bed/main.nf,1,bedtools_splitbam2bed,,,module name
+NFCORE_CIRCDNA:CIRCDNA:BEDTOOLS_SORTEDBAM2BED,BEDTOOLS_SORTEDBAM2BED,modules/local/bedtools/sortedbam2bed/main.nf,1,bedtools_sortedbam2bed,,,module name
+NFCORE_CIRCDNA:CIRCDNA:CIRCLEFINDER,CIRCLEFINDER,modules/local/circlefinder/main.nf,1,circlefinder,,,module name
+NFCORE_CIRCDNA:CIRCDNA:SAMTOOLS_SORT_QNAME_CM,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:CIRCLEMAP_READEXTRACTOR,CIRCLEMAP_READEXTRACTOR,modules/local/circlemap/readextractor/main.nf,1,circlemap_readextractor,,,module name
+NFCORE_CIRCDNA:CIRCDNA:SAMTOOLS_SORT_RE,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:SAMTOOLS_INDEX_RE,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:CIRCLEMAP_REPEATS,CIRCLEMAP_REPEATS,modules/local/circlemap/repeats/main.nf,1,circlemap_repeats,,,module name
+NFCORE_CIRCDNA:CIRCDNA:CIRCLEMAP_REALIGN,CIRCLEMAP_REALIGN,modules/local/circlemap/realign/main.nf,1,circlemap_realign,,,module name
+NFCORE_CIRCDNA:CIRCDNA:CIRCEXPLORER2_PARSE,CIRCEXPLORER2_PARSE,modules/nf-core/circexplorer2/parse/main.nf,1,circexplorer2,circexplorer2,circexplorer2,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:UNICYCLER,UNICYCLER,modules/nf-core/unicycler/main.nf,1,unicycler,unicycler,unicycler,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:SEQTK_SEQ,SEQTK_SEQ,modules/local/seqtk/seq/main.nf,1,seqtk_seq,,,module name
+NFCORE_CIRCDNA:CIRCDNA:GETCIRCULARREADS,GETCIRCULARREADS,modules/local/getcircularreads/main.nf,1,getcircularreads,,,module name
+NFCORE_CIRCDNA:CIRCDNA:MINIMAP2_ALIGN,MINIMAP2_ALIGN,modules/nf-core/minimap2/align/main.nf,1,minimap2,minimap2,minimap2;samtools,environment.yml
+NFCORE_CIRCDNA:CIRCDNA:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

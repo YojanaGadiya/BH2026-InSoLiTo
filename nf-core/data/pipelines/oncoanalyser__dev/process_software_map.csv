@@ -1,0 +1,204 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:SAMTOOLS_DICT,SAMTOOLS_DICT,modules/nf-core/samtools/dict/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:GATK4_BWA_INDEX_IMAGE,GATK4_BWA_INDEX_IMAGE,modules/local/gatk4/bwaindeximage/main.nf,1,gatk4,gatk4,gatk4,environment.yml
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:BWAMEM2_INDEX,BWAMEM2_INDEX,modules/nf-core/bwamem2/index/main.nf,1,bwa-mem2,bwamem2,bwa-mem2,environment.yml
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:DECOMP_BWAMEM2_INDEX,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:BWA_INDEX,BWA_INDEX,modules/nf-core/bwa/index/main.nf,1,bwa,bwa,bwa,environment.yml
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:GRIDSS_INDEX,GRIDSS_INDEX,modules/local/gridss/index/main.nf,1,gridss,gridss,gridss,environment.yml
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:DECOMP_GRIDSS_INDEX,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:STAR_GENOMEGENERATE,STAR_GENOMEGENERATE,modules/nf-core/star/genomegenerate/main.nf,1,star,star,star,environment.yml
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:DECOMP_STAR_INDEX,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:DECOMP_HMF_DATA,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:DECOMP_PANEL_DATA,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:WRITE_FASTA,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:WRITE_FAI,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:WRITE_DICT,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:WRITE_IMG,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:WRITE_BWA_INDEX,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:WRITE_GRIDSS_INDEX,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:WRITE_STAR_INDEX,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:WRITE_HMF_DATA,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PREPARE_REFERENCE:STAGE_REFERENCE:WRITE_PANEL_DATA,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:SAMTOOLS_DICT,SAMTOOLS_DICT,modules/nf-core/samtools/dict/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:GATK4_BWA_INDEX_IMAGE,GATK4_BWA_INDEX_IMAGE,modules/local/gatk4/bwaindeximage/main.nf,1,gatk4,gatk4,gatk4,environment.yml
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:BWAMEM2_INDEX,BWAMEM2_INDEX,modules/nf-core/bwamem2/index/main.nf,1,bwa-mem2,bwamem2,bwa-mem2,environment.yml
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:DECOMP_BWAMEM2_INDEX,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:BWA_INDEX,BWA_INDEX,modules/nf-core/bwa/index/main.nf,1,bwa,bwa,bwa,environment.yml
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:GRIDSS_INDEX,GRIDSS_INDEX,modules/local/gridss/index/main.nf,1,gridss,gridss,gridss,environment.yml
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:DECOMP_GRIDSS_INDEX,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:STAR_GENOMEGENERATE,STAR_GENOMEGENERATE,modules/nf-core/star/genomegenerate/main.nf,1,star,star,star,environment.yml
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:DECOMP_STAR_INDEX,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:DECOMP_HMF_DATA,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:DECOMP_PANEL_DATA,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:WRITE_FASTA,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:WRITE_FAI,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:WRITE_DICT,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:WRITE_IMG,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:WRITE_BWA_INDEX,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:WRITE_GRIDSS_INDEX,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:WRITE_STAR_INDEX,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:WRITE_HMF_DATA,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:WGTS:PREPARE_REFERENCE:WRITE_PANEL_DATA,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:WGTS:READ_UMI_PROCESSING:FASTP_UMI,FASTP_UMI,modules/local/fastp/umi/main.nf,1,fastp,fastp,fastp,environment.yml
+NFCORE_ONCOANALYSER:WGTS:READ_UMI_PROCESSING:FASTQ_TOOLS,FASTQ_TOOLS,modules/local/fastqtools/main.nf,1,hmftools-fastq-tools,fastq-tools,hmftools-fastq-tools,environment.yml
+NFCORE_ONCOANALYSER:WGTS:READ_ALIGNMENT_DNA:FASTP_SPLIT,FASTP_SPLIT,modules/local/fastp/split/main.nf,1,fastp,fastp,fastp,environment.yml
+NFCORE_ONCOANALYSER:WGTS:READ_ALIGNMENT_DNA:BWAMEM2_ALIGN,BWAMEM2_ALIGN,modules/local/bwa-mem2/mem/main.nf,1,bwa-mem2,bwa-mem2,bwa-mem2;samtools;sambamba,environment.yml
+NFCORE_ONCOANALYSER:WGTS:READ_ALIGNMENT_RNA:STAR_ALIGN,STAR_ALIGN,modules/local/star/align/main.nf,1,star,star,star,environment.yml
+NFCORE_ONCOANALYSER:WGTS:READ_ALIGNMENT_RNA:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ONCOANALYSER:WGTS:READ_ALIGNMENT_RNA:GATK4_MARKDUPLICATES,GATK4_MARKDUPLICATES,modules/nf-core/gatk4/markduplicates/main.nf,1,gatk4,gatk4,gatk4,environment.yml
+NFCORE_ONCOANALYSER:WGTS:REDUX_PROCESSING:REDUX,REDUX,modules/local/redux/main.nf,1,hmftools-redux,REDUX,hmftools-redux,environment.yml
+NFCORE_ONCOANALYSER:WGTS:BAMTOOLS_METRICS:BAMTOOLS,BAMTOOLS,modules/local/bamtools/main.nf,1,hmftools-bam-tools,bamtools,hmftools-bam-tools,environment.yml
+NFCORE_ONCOANALYSER:WGTS:ISOFOX_QUANTIFICATION:ISOFOX,ISOFOX,modules/local/isofox/run/main.nf,1,hmftools-isofox,isofox,hmftools-isofox,environment.yml
+NFCORE_ONCOANALYSER:WGTS:AMBER_PROFILING:AMBER,AMBER,modules/local/amber/main.nf,1,hmftools-amber,amber,hmftools-amber,environment.yml
+NFCORE_ONCOANALYSER:WGTS:COBALT_PROFILING:COBALT,COBALT,modules/local/cobalt/run/main.nf,1,hmftools-cobalt,cobalt,hmftools-cobalt,environment.yml
+NFCORE_ONCOANALYSER:WGTS:ESVEE_CALLING:ESVEE,ESVEE,modules/local/esvee/main.nf,1,hmftools-esvee,esvee,hmftools-esvee,environment.yml
+NFCORE_ONCOANALYSER:WGTS:SAGE_CALLING:SAGE_GERMLINE,SAGE_GERMLINE,modules/local/sage/germline/main.nf,1,hmftools-sage,sage,hmftools-sage,environment.yml
+NFCORE_ONCOANALYSER:WGTS:SAGE_CALLING:SAGE_SOMATIC,SAGE_SOMATIC,modules/local/sage/somatic/main.nf,1,hmftools-sage,sage,hmftools-sage,environment.yml
+NFCORE_ONCOANALYSER:WGTS:PAVE_ANNOTATION:PAVE_GERMLINE,PAVE_GERMLINE,modules/local/pave/germline/main.nf,1,hmftools-pave,pave,hmftools-pave,environment.yml
+NFCORE_ONCOANALYSER:WGTS:PAVE_ANNOTATION:PAVE_SOMATIC,PAVE_SOMATIC,modules/local/pave/somatic/main.nf,1,hmftools-pave,pave,hmftools-pave,environment.yml
+NFCORE_ONCOANALYSER:WGTS:PURPLE_CALLING:PURPLE,PURPLE,modules/local/purple/main.nf,1,hmftools-purple,purple,hmftools-purple,environment.yml
+NFCORE_ONCOANALYSER:WGTS:QSEE_METRICS:QSEE,QSEE,modules/local/qsee/main.nf,1,hmftools-qsee,orange,hmftools-qsee,environment.yml
+NFCORE_ONCOANALYSER:WGTS:SAGE_APPEND:SAGE_APPEND_GERMLINE,SAGE_APPEND,modules/local/sage/append/main.nf,1,hmftools-sage,sage,hmftools-sage,environment.yml
+NFCORE_ONCOANALYSER:WGTS:SAGE_APPEND:SAGE_APPEND_SOMATIC,SAGE_APPEND,modules/local/sage/append/main.nf,1,hmftools-sage,sage,hmftools-sage,environment.yml
+NFCORE_ONCOANALYSER:WGTS:SAGE_PLOTTING:SAGE_VISUALISER,SAGE_VISUALISER,modules/local/sage/visualiser/main.nf,1,hmftools-sage,sage,hmftools-sage,environment.yml
+NFCORE_ONCOANALYSER:WGTS:LINX_ANNOTATION:LINX_GERMLINE,LINX_GERMLINE,modules/local/linx/germline/main.nf,1,hmftools-linx,linx,hmftools-linx,environment.yml
+NFCORE_ONCOANALYSER:WGTS:LINX_ANNOTATION:LINX_SOMATIC,LINX_SOMATIC,modules/local/linx/somatic/main.nf,1,hmftools-linx,linx,hmftools-linx,environment.yml
+NFCORE_ONCOANALYSER:WGTS:LINX_PLOTTING:LINX_VISUALISER,LINX_VISUALISER,modules/local/linx/visualiser/main.nf,1,hmftools-linx,linx,hmftools-linx,environment.yml
+NFCORE_ONCOANALYSER:WGTS:LINX_PLOTTING:LINXREPORT,LINXREPORT,modules/local/linxreport/main.nf,1,r-linxreport,linxreport,r-linxreport,environment.yml
+NFCORE_ONCOANALYSER:WGTS:CIDER_CALLING:CIDER,CIDER,modules/local/cider/main.nf,1,hmftools-cider,cider,hmftools-cider,environment.yml
+NFCORE_ONCOANALYSER:WGTS:SIGS_FITTING:SIGS,SIGS,modules/local/sigs/main.nf,1,hmftools-sigs,sigs,hmftools-sigs,environment.yml
+NFCORE_ONCOANALYSER:WGTS:CHORD_PREDICTION:CHORD,CHORD,modules/local/chord/main.nf,1,hmftools-chord,chord,hmftools-chord,environment.yml
+NFCORE_ONCOANALYSER:WGTS:LILAC_CALLING:LILAC,LILAC,modules/local/lilac/main.nf,1,hmftools-lilac,lilac,hmftools-lilac,environment.yml
+NFCORE_ONCOANALYSER:WGTS:TEAL_CHARACTERISATION:TEAL_PREP,TEAL_PREP,modules/local/teal/prep/main.nf,1,hmftools-teal,teal,hmftools-teal,environment.yml
+NFCORE_ONCOANALYSER:WGTS:TEAL_CHARACTERISATION:TEAL_PIPELINE,TEAL_PIPELINE,modules/local/teal/pipeline/main.nf,1,hmftools-teal,teal,hmftools-teal,environment.yml
+NFCORE_ONCOANALYSER:WGTS:VIRUSBREAKEND_CALLING:VIRUSBREAKEND,VIRUSBREAKEND,modules/local/virusbreakend/main.nf,1,gridss,virusbreakend,gridss;repeatmasker;grep,environment.yml
+NFCORE_ONCOANALYSER:WGTS:VIRUSBREAKEND_CALLING:VIRUSINTERPRETER,VIRUSINTERPRETER,modules/local/virusinterpreter/main.nf,1,hmftools-virus-interpreter,virusinterpreter,hmftools-virus-interpreter,environment.yml
+NFCORE_ONCOANALYSER:WGTS:PEACH_CALLING:PEACH,PEACH,modules/local/peach/main.nf,1,hmftools-peach,peach,hmftools-peach,environment.yml
+NFCORE_ONCOANALYSER:WGTS:NEO_PREDICTION:NEO_FINDER,NEO_FINDER,modules/local/neo/finder/main.nf,1,hmftools-neo,neo,hmftools-neo,environment.yml
+NFCORE_ONCOANALYSER:WGTS:NEO_PREDICTION:NEO_ANNOTATE_FUSIONS,NEO_ANNOTATE_FUSIONS,modules/local/neo/annotate_fusions/main.nf,1,hmftools-isofox,isofox,hmftools-isofox,environment.yml
+NFCORE_ONCOANALYSER:WGTS:NEO_PREDICTION:NEO_SCORER,NEO_SCORER,modules/local/neo/scorer/main.nf,1,hmftools-neo,neo,hmftools-neo,environment.yml
+NFCORE_ONCOANALYSER:WGTS:CUPPA_PREDICTION:CUPPA,CUPPA,modules/local/cuppa/main.nf,1,hmftools-cuppa,cuppa,hmftools-cuppa;r-stringr>;r-stringi>,environment.yml
+NFCORE_ONCOANALYSER:WGTS:ORANGE_REPORTING:ORANGE,ORANGE,modules/local/orange/main.nf,1,hmftools-orange,orange,hmftools-orange,environment.yml
+NFCORE_ONCOANALYSER:WGTS:MULTIQC_REPORTING:MULTIQC,MULTIQC,modules/local/multiqc/main.nf,1,multiqc,multiqc,multiqc;oncoanalyser-multiqc-plugin,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:SAMTOOLS_DICT,SAMTOOLS_DICT,modules/nf-core/samtools/dict/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:GATK4_BWA_INDEX_IMAGE,GATK4_BWA_INDEX_IMAGE,modules/local/gatk4/bwaindeximage/main.nf,1,gatk4,gatk4,gatk4,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:BWAMEM2_INDEX,BWAMEM2_INDEX,modules/nf-core/bwamem2/index/main.nf,1,bwa-mem2,bwamem2,bwa-mem2,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:DECOMP_BWAMEM2_INDEX,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:BWA_INDEX,BWA_INDEX,modules/nf-core/bwa/index/main.nf,1,bwa,bwa,bwa,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:GRIDSS_INDEX,GRIDSS_INDEX,modules/local/gridss/index/main.nf,1,gridss,gridss,gridss,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:DECOMP_GRIDSS_INDEX,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:STAR_GENOMEGENERATE,STAR_GENOMEGENERATE,modules/nf-core/star/genomegenerate/main.nf,1,star,star,star,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:DECOMP_STAR_INDEX,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:DECOMP_HMF_DATA,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:DECOMP_PANEL_DATA,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:WRITE_FASTA,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:WRITE_FAI,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:WRITE_DICT,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:WRITE_IMG,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:WRITE_BWA_INDEX,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:WRITE_GRIDSS_INDEX,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:WRITE_STAR_INDEX,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:WRITE_HMF_DATA,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:TARGETED:PREPARE_REFERENCE:WRITE_PANEL_DATA,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:TARGETED:READ_UMI_PROCESSING:FASTP_UMI,FASTP_UMI,modules/local/fastp/umi/main.nf,1,fastp,fastp,fastp,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:READ_UMI_PROCESSING:FASTQ_TOOLS,FASTQ_TOOLS,modules/local/fastqtools/main.nf,1,hmftools-fastq-tools,fastq-tools,hmftools-fastq-tools,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:READ_ALIGNMENT_DNA:FASTP_SPLIT,FASTP_SPLIT,modules/local/fastp/split/main.nf,1,fastp,fastp,fastp,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:READ_ALIGNMENT_DNA:BWAMEM2_ALIGN,BWAMEM2_ALIGN,modules/local/bwa-mem2/mem/main.nf,1,bwa-mem2,bwa-mem2,bwa-mem2;samtools;sambamba,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:READ_ALIGNMENT_RNA:STAR_ALIGN,STAR_ALIGN,modules/local/star/align/main.nf,1,star,star,star,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:READ_ALIGNMENT_RNA:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:READ_ALIGNMENT_RNA:GATK4_MARKDUPLICATES,GATK4_MARKDUPLICATES,modules/nf-core/gatk4/markduplicates/main.nf,1,gatk4,gatk4,gatk4,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:REDUX_PROCESSING:REDUX,REDUX,modules/local/redux/main.nf,1,hmftools-redux,REDUX,hmftools-redux,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:BAMTOOLS_METRICS:BAMTOOLS,BAMTOOLS,modules/local/bamtools/main.nf,1,hmftools-bam-tools,bamtools,hmftools-bam-tools,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:ISOFOX_QUANTIFICATION:ISOFOX,ISOFOX,modules/local/isofox/run/main.nf,1,hmftools-isofox,isofox,hmftools-isofox,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:AMBER_PROFILING:AMBER,AMBER,modules/local/amber/main.nf,1,hmftools-amber,amber,hmftools-amber,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:COBALT_PROFILING:COBALT,COBALT,modules/local/cobalt/run/main.nf,1,hmftools-cobalt,cobalt,hmftools-cobalt,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:ESVEE_CALLING:ESVEE,ESVEE,modules/local/esvee/main.nf,1,hmftools-esvee,esvee,hmftools-esvee,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:SAGE_CALLING:SAGE_GERMLINE,SAGE_GERMLINE,modules/local/sage/germline/main.nf,1,hmftools-sage,sage,hmftools-sage,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:SAGE_CALLING:SAGE_SOMATIC,SAGE_SOMATIC,modules/local/sage/somatic/main.nf,1,hmftools-sage,sage,hmftools-sage,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:PAVE_ANNOTATION:PAVE_GERMLINE,PAVE_GERMLINE,modules/local/pave/germline/main.nf,1,hmftools-pave,pave,hmftools-pave,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:PAVE_ANNOTATION:PAVE_SOMATIC,PAVE_SOMATIC,modules/local/pave/somatic/main.nf,1,hmftools-pave,pave,hmftools-pave,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:PURPLE_CALLING:PURPLE,PURPLE,modules/local/purple/main.nf,1,hmftools-purple,purple,hmftools-purple,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:QSEE_METRICS:QSEE,QSEE,modules/local/qsee/main.nf,1,hmftools-qsee,orange,hmftools-qsee,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:SAGE_APPEND:SAGE_APPEND_GERMLINE,SAGE_APPEND,modules/local/sage/append/main.nf,1,hmftools-sage,sage,hmftools-sage,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:SAGE_APPEND:SAGE_APPEND_SOMATIC,SAGE_APPEND,modules/local/sage/append/main.nf,1,hmftools-sage,sage,hmftools-sage,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:SAGE_PLOTTING:SAGE_VISUALISER,SAGE_VISUALISER,modules/local/sage/visualiser/main.nf,1,hmftools-sage,sage,hmftools-sage,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:LINX_ANNOTATION:LINX_GERMLINE,LINX_GERMLINE,modules/local/linx/germline/main.nf,1,hmftools-linx,linx,hmftools-linx,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:LINX_ANNOTATION:LINX_SOMATIC,LINX_SOMATIC,modules/local/linx/somatic/main.nf,1,hmftools-linx,linx,hmftools-linx,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:LINX_PLOTTING:LINX_VISUALISER,LINX_VISUALISER,modules/local/linx/visualiser/main.nf,1,hmftools-linx,linx,hmftools-linx,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:LINX_PLOTTING:LINXREPORT,LINXREPORT,modules/local/linxreport/main.nf,1,r-linxreport,linxreport,r-linxreport,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:CIDER_CALLING:CIDER,CIDER,modules/local/cider/main.nf,1,hmftools-cider,cider,hmftools-cider,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:LILAC_CALLING:LILAC,LILAC,modules/local/lilac/main.nf,1,hmftools-lilac,lilac,hmftools-lilac,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:PEACH_CALLING:PEACH,PEACH,modules/local/peach/main.nf,1,hmftools-peach,peach,hmftools-peach,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:ORANGE_REPORTING:ORANGE,ORANGE,modules/local/orange/main.nf,1,hmftools-orange,orange,hmftools-orange,environment.yml
+NFCORE_ONCOANALYSER:TARGETED:MULTIQC_REPORTING:MULTIQC,MULTIQC,modules/local/multiqc/main.nf,1,multiqc,multiqc,multiqc;oncoanalyser-multiqc-plugin,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:SAMTOOLS_DICT,SAMTOOLS_DICT,modules/nf-core/samtools/dict/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:GATK4_BWA_INDEX_IMAGE,GATK4_BWA_INDEX_IMAGE,modules/local/gatk4/bwaindeximage/main.nf,1,gatk4,gatk4,gatk4,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:BWAMEM2_INDEX,BWAMEM2_INDEX,modules/nf-core/bwamem2/index/main.nf,1,bwa-mem2,bwamem2,bwa-mem2,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:DECOMP_BWAMEM2_INDEX,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:BWA_INDEX,BWA_INDEX,modules/nf-core/bwa/index/main.nf,1,bwa,bwa,bwa,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:GRIDSS_INDEX,GRIDSS_INDEX,modules/local/gridss/index/main.nf,1,gridss,gridss,gridss,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:DECOMP_GRIDSS_INDEX,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:STAR_GENOMEGENERATE,STAR_GENOMEGENERATE,modules/nf-core/star/genomegenerate/main.nf,1,star,star,star,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:DECOMP_STAR_INDEX,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:DECOMP_HMF_DATA,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:DECOMP_PANEL_DATA,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:WRITE_FASTA,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:WRITE_FAI,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:WRITE_DICT,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:WRITE_IMG,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:WRITE_BWA_INDEX,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:WRITE_GRIDSS_INDEX,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:WRITE_STAR_INDEX,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:WRITE_HMF_DATA,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:PREPARE_REFERENCE:WRITE_PANEL_DATA,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:READ_UMI_PROCESSING:FASTP_UMI,FASTP_UMI,modules/local/fastp/umi/main.nf,1,fastp,fastp,fastp,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:READ_UMI_PROCESSING:FASTQ_TOOLS,FASTQ_TOOLS,modules/local/fastqtools/main.nf,1,hmftools-fastq-tools,fastq-tools,hmftools-fastq-tools,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:READ_ALIGNMENT_DNA:FASTP_SPLIT,FASTP_SPLIT,modules/local/fastp/split/main.nf,1,fastp,fastp,fastp,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:READ_ALIGNMENT_DNA:BWAMEM2_ALIGN,BWAMEM2_ALIGN,modules/local/bwa-mem2/mem/main.nf,1,bwa-mem2,bwa-mem2,bwa-mem2;samtools;sambamba,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:REDUX_PROCESSING:REDUX,REDUX,modules/local/redux/main.nf,1,hmftools-redux,REDUX,hmftools-redux,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:AMBER_PROFILING:AMBER,AMBER,modules/local/amber/main.nf,1,hmftools-amber,amber,hmftools-amber,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:COBALT_PROFILING:COBALT,COBALT,modules/local/cobalt/run/main.nf,1,hmftools-cobalt,cobalt,hmftools-cobalt,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:SAGE_APPEND:SAGE_APPEND_GERMLINE,SAGE_APPEND,modules/local/sage/append/main.nf,1,hmftools-sage,sage,hmftools-sage,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:SAGE_APPEND:SAGE_APPEND_SOMATIC,SAGE_APPEND,modules/local/sage/append/main.nf,1,hmftools-sage,sage,hmftools-sage,environment.yml
+NFCORE_ONCOANALYSER:PURITY_ESTIMATE:WISP_ANALYSIS:WISP,WISP,modules/local/wisp/main.nf,1,hmftools-wisp,wisp,hmftools-wisp,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:SAMTOOLS_DICT,SAMTOOLS_DICT,modules/nf-core/samtools/dict/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:GATK4_BWA_INDEX_IMAGE,GATK4_BWA_INDEX_IMAGE,modules/local/gatk4/bwaindeximage/main.nf,1,gatk4,gatk4,gatk4,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:BWAMEM2_INDEX,BWAMEM2_INDEX,modules/nf-core/bwamem2/index/main.nf,1,bwa-mem2,bwamem2,bwa-mem2,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:DECOMP_BWAMEM2_INDEX,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:BWA_INDEX,BWA_INDEX,modules/nf-core/bwa/index/main.nf,1,bwa,bwa,bwa,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:GRIDSS_INDEX,GRIDSS_INDEX,modules/local/gridss/index/main.nf,1,gridss,gridss,gridss,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:DECOMP_GRIDSS_INDEX,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:STAR_GENOMEGENERATE,STAR_GENOMEGENERATE,modules/nf-core/star/genomegenerate/main.nf,1,star,star,star,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:DECOMP_STAR_INDEX,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:DECOMP_HMF_DATA,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:DECOMP_PANEL_DATA,CUSTOM_EXTRACTTARBALL,modules/local/custom/extract_tarball/main.nf,1,custom_extracttarball,,tar,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:WRITE_FASTA,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:WRITE_FAI,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:WRITE_DICT,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:WRITE_IMG,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:WRITE_BWA_INDEX,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:WRITE_GRIDSS_INDEX,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:WRITE_STAR_INDEX,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:WRITE_HMF_DATA,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PREPARE_REFERENCE:WRITE_PANEL_DATA,WRITE_REFERENCE_DATA,modules/local/custom/write_reference_data/main.nf,1,write_reference_data,,,module name
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:READ_UMI_PROCESSING:FASTP_UMI,FASTP_UMI,modules/local/fastp/umi/main.nf,1,fastp,fastp,fastp,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:READ_UMI_PROCESSING:FASTQ_TOOLS,FASTQ_TOOLS,modules/local/fastqtools/main.nf,1,hmftools-fastq-tools,fastq-tools,hmftools-fastq-tools,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:READ_ALIGNMENT_DNA:FASTP_SPLIT,FASTP_SPLIT,modules/local/fastp/split/main.nf,1,fastp,fastp,fastp,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:READ_ALIGNMENT_DNA:BWAMEM2_ALIGN,BWAMEM2_ALIGN,modules/local/bwa-mem2/mem/main.nf,1,bwa-mem2,bwa-mem2,bwa-mem2;samtools;sambamba,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:READ_ALIGNMENT_RNA:STAR_ALIGN,STAR_ALIGN,modules/local/star/align/main.nf,1,star,star,star,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:READ_ALIGNMENT_RNA:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:READ_ALIGNMENT_RNA:GATK4_MARKDUPLICATES,GATK4_MARKDUPLICATES,modules/nf-core/gatk4/markduplicates/main.nf,1,gatk4,gatk4,gatk4,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:REDUX_PROCESSING:REDUX,REDUX,modules/local/redux/main.nf,1,hmftools-redux,REDUX,hmftools-redux,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:ISOFOX_QUANTIFICATION:ISOFOX,ISOFOX,modules/local/isofox/run/main.nf,1,hmftools-isofox,isofox,hmftools-isofox,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:AMBER_PROFILING:AMBER,AMBER,modules/local/amber/main.nf,1,hmftools-amber,amber,hmftools-amber,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:COBALT_PROFILING:COBALT,COBALT,modules/local/cobalt/run/main.nf,1,hmftools-cobalt,cobalt,hmftools-cobalt,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:SAGE_CALLING:SAGE_GERMLINE,SAGE_GERMLINE,modules/local/sage/germline/main.nf,1,hmftools-sage,sage,hmftools-sage,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:SAGE_CALLING:SAGE_SOMATIC,SAGE_SOMATIC,modules/local/sage/somatic/main.nf,1,hmftools-sage,sage,hmftools-sage,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:COBALT_NORMALISATION:COBALT_PANEL_NORMALISATION,COBALT_PANEL_NORMALISATION,modules/local/cobalt/panel_normalisation/main.nf,1,hmftools-cobalt,cobalt,hmftools-cobalt,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:PAVE_PON_CREATION:PAVE_PON_PANEL_CREATION,PAVE_PON_PANEL_CREATION,modules/local/pave/pon_creation/main.nf,1,hmftools-pave,pave,hmftools-pave,environment.yml
+NFCORE_ONCOANALYSER:PANEL_RESOURCE_CREATION:ISOFOX_NORMALISATION:ISOFOX_PANEL_NORMALISATION,ISOFOX_PANEL_NORMALISATION,modules/local/isofox/panel_normalisation/main.nf,1,hmftools-isofox,isofox,hmftools-isofox,environment.yml

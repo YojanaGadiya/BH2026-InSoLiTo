@@ -1,0 +1,395 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+agat,gffread,data_flow,1,1,E00014,
+bbmap,bowtie2,data_flow,4,4,E00134,
+bbmap,fastqc,data_flow,2,2,E00179,
+bbmap,fq,data_flow,6,6,E00082,
+bbmap,kallisto,data_flow,2,2,E01159,
+bbmap,multiqc,data_flow,2,2,E01417,
+bbmap,ribodetector,data_flow,4,4,E00108,
+bbmap,salmon,data_flow,4,4,E00197,
+bbmap,samtools,data_flow,6,6,E00507,
+bbmap,seqkit,data_flow,4,4,E00097,
+bbmap,sortmerna,data_flow,2,2,E00083,
+bbmap,trim-galore,data_flow,2,2,E00471,
+bedtools,gawk,data_flow,2,2,E00659,
+bedtools,pandas,data_flow,1,1,E01066,
+bedtools,seqkit,data_flow,1,1,E01017,
+bedtools,ucsc-bedgraphtobigwig,data_flow,1,1,E00823,
+bioconductor-genomicfeatures,multiqc,data_flow,1,1,E01465,
+bioconductor-tximeta,bioconductor-summarizedexperiment,data_flow,24,24,E01099,
+bioconductor-tximeta,gawk,data_flow,3,3,E01223,
+bioconductor-tximeta,pandas,data_flow,2,2,E01390,
+bowtie2,fastqc,data_flow,2,2,E00177,
+bowtie2,fq,data_flow,4,4,E00162,
+bowtie2,kallisto,data_flow,2,2,E01157,
+bowtie2,multiqc,data_flow,4,4,E01421,
+bowtie2,salmon,data_flow,4,4,E00195,
+bowtie2,samtools,data_flow,8,8,E00158,
+bowtie2,seqkit,data_flow,2,2,E00435,
+bowtie2,trim-galore,data_flow,2,2,E00469,
+cat,bbmap,data_flow,2,2,E00077,
+cat,bowtie2,data_flow,4,4,E00142,
+cat,fastp,data_flow,2,2,E00059,
+cat,fastqc,data_flow,6,6,E00047,
+cat,fq,data_flow,8,8,E00046,
+cat,kallisto,data_flow,2,2,E01167,
+cat,ribodetector,data_flow,4,4,E00116,
+cat,salmon,data_flow,4,4,E00205,
+cat,samtools,data_flow,6,6,E00515,
+cat,seqkit,data_flow,4,4,E00105,
+cat,sortmerna,data_flow,2,2,E00091,
+cat,trim-galore,data_flow,4,4,E00052,
+cat,umi_tools,data_flow,4,4,E00049,
+custom,agat,data_flow,1,1,E00010,
+custom,bbmap,data_flow,1,1,E00024,
+custom,bedtools,data_flow,1,1,E01015,
+custom,bioconductor-genomicfeatures,data_flow,2,2,E01032,
+custom,bioconductor-summarizedexperiment,data_flow,6,6,E01104,
+custom,bioconductor-tximeta,data_flow,3,3,E01098,
+custom,gawk,data_flow,4,4,E00663,
+custom,gedi,data_flow,2,2,E00960,
+custom,gffcompare,data_flow,1,1,E00653,
+custom,gffread,data_flow,3,3,E00670,
+custom,kallisto,data_flow,2,2,E01086,
+custom,plastid,data_flow,1,1,E01040,
+custom,ribocode,data_flow,2,2,E00977,
+custom,ribotish,data_flow,9,9,E00840,
+custom,ribotricer,data_flow,2,2,E00908,
+custom,rpbp,data_flow,4,4,E00924,
+custom,rsem,data_flow,2,2,E00016,
+custom,salmon,data_flow,7,5,E00038,
+custom,samtools,data_flow,17,17,E00022,
+custom,star_genomegenerate_igenomes,data_flow,2,2,E00026,
+custom,stringtie,data_flow,2,2,E00640,
+fastp,bbmap,data_flow,4,2,E00071,
+fastp,bowtie2,data_flow,8,4,E00136,
+fastp,fastqc,data_flow,8,4,E00061,
+fastp,fq,data_flow,12,6,E00063,
+fastp,kallisto,data_flow,4,2,E01161,
+fastp,multiqc,data_flow,4,4,E01409,
+fastp,ribodetector,data_flow,8,4,E00110,
+fastp,salmon,data_flow,8,4,E00199,
+fastp,samtools,data_flow,12,6,E00509,
+fastp,seqkit,data_flow,8,4,E00099,
+fastp,sortmerna,data_flow,4,2,E00085,
+fastp,trim-galore,data_flow,4,2,E00473,
+fastqc,multiqc,data_flow,8,8,E01407,
+fq,bbmap,gate_metadata,4,0,E00078,
+fq,bowtie2,gate_metadata,12,0,E00135,
+fq,fastp,gate_metadata,2,0,E00060,
+fq,fastqc,gate_metadata,12,0,E00048,
+fq,kallisto,gate_metadata,8,0,E01160,
+fq,ribodetector,gate_metadata,12,0,E00109,
+fq,salmon,data_flow,18,2,E00198,
+fq,samtools,gate_metadata,24,0,E00508,
+fq,seqkit,gate_metadata,14,0,E00098,
+fq,sortmerna,gate_metadata,6,0,E00084,
+fq,trim-galore,gate_metadata,10,0,E00053,
+fq,umi_tools,gate_metadata,4,0,E00050,
+gawk,bedtools,data_flow,2,2,E00658,
+gawk,bioconductor-anota2seq,data_flow,1,1,E01233,
+gawk,bioconductor-apeglm,data_flow,1,1,E01234,
+gawk,custom,data_flow,1,1,E01373,
+gawk,gedi,data_flow,1,1,E00962,
+gawk,gffread,data_flow,2,2,E00667,
+gawk,kallisto,data_flow,1,1,E01372,
+gawk,pyyaml,data_flow,1,1,E01011,
+gawk,ribocode,data_flow,1,1,E00974,
+gawk,ribotish,data_flow,4,4,E00853,
+gawk,ribotricer,data_flow,1,1,E00910,
+gawk,rpbp,data_flow,2,2,E00926,
+gawk,salmon,data_flow,1,1,E01367,
+gawk,samtools,data_flow,4,4,E00678,
+gedi,pyyaml,data_flow,1,1,E01010,
+gffcompare,gawk,data_flow,1,1,E00657,
+gffread,agat,data_flow,1,1,E00013,
+gffread,bioconductor-genomicfeatures,data_flow,1,1,E01035,
+gffread,custom,data_flow,3,3,E00008,
+gffread,gawk,data_flow,8,8,E00662,
+gffread,gedi,data_flow,1,1,E00966,
+gffread,gffcompare,data_flow,1,1,E00656,
+gffread,gtffilter,data_flow,1,1,E00003,
+gffread,kallisto,data_flow,2,2,E01089,
+gffread,plastid,data_flow,2,2,E01039,
+gffread,ribocode,data_flow,2,2,E00976,
+gffread,ribotish,data_flow,10,10,E00839,
+gffread,ribotricer,data_flow,2,2,E00912,
+gffread,rpbp,data_flow,2,2,E00930,
+gffread,rsem,data_flow,1,1,E00021,
+gffread,salmon,data_flow,5,5,E00235,
+gffread,samtools,data_flow,14,14,E00037,
+gffread,star_genomegenerate_igenomes,data_flow,1,1,E00031,
+gffread,stringtie,data_flow,2,2,E00643,
+gtffilter,agat,data_flow,1,1,E00011,
+gtffilter,bioconductor-genomicfeatures,data_flow,1,1,E01033,
+gtffilter,custom,data_flow,3,3,E00006,
+gtffilter,gawk,data_flow,4,4,E00664,
+gtffilter,gedi,data_flow,1,1,E00964,
+gtffilter,gffcompare,data_flow,1,1,E00654,
+gtffilter,gffread,data_flow,1,1,E00671,
+gtffilter,kallisto,data_flow,2,2,E01087,
+gtffilter,plastid,data_flow,1,1,E01041,
+gtffilter,ribocode,data_flow,1,1,E00978,
+gtffilter,ribotish,data_flow,5,5,E00841,
+gtffilter,ribotricer,data_flow,1,1,E00914,
+gtffilter,rpbp,data_flow,2,2,E00928,
+gtffilter,rsem,data_flow,1,1,E00019,
+gtffilter,salmon,data_flow,4,4,E00233,
+gtffilter,samtools,data_flow,4,4,E00035,
+gtffilter,star_genomegenerate_igenomes,data_flow,1,1,E00029,
+gtffilter,stringtie,data_flow,2,2,E00641,
+gunzip,agat,data_flow,1,1,E00012,
+gunzip,bbmap,data_flow,1,1,E00025,
+gunzip,bedtools,data_flow,1,1,E01016,
+gunzip,bioconductor-genomicfeatures,data_flow,2,2,E01034,
+gunzip,custom,data_flow,5,5,E00005,
+gunzip,gawk,data_flow,8,8,E00661,
+gunzip,gedi,data_flow,2,2,E00961,
+gunzip,gffcompare,data_flow,1,1,E00655,
+gunzip,gffread,data_flow,5,5,E00001,
+gunzip,gtffilter,data_flow,2,2,E00002,
+gunzip,kallisto,data_flow,3,3,E00044,
+gunzip,plastid,data_flow,2,2,E01038,
+gunzip,preprocess_transcripts_fasta_gencode,data_flow,1,1,E00015,
+gunzip,ribocode,data_flow,3,3,E00975,
+gunzip,ribotish,data_flow,14,14,E00838,
+gunzip,ribotricer,data_flow,3,3,E00909,
+gunzip,rpbp,data_flow,4,4,E00925,
+gunzip,rsem,data_flow,2,2,E00017,
+gunzip,salmon,data_flow,14,12,E00039,
+gunzip,samtools,data_flow,23,23,E00023,
+gunzip,star_genomegenerate_igenomes,data_flow,2,2,E00027,
+gunzip,stringtie,data_flow,2,2,E00642,
+kallisto,bioconductor-tximeta,data_flow,3,3,E01097,
+kallisto,custom,data_flow,3,3,E01095,
+kallisto,multiqc,data_flow,2,2,E01467,
+mmseqs2,pandas,data_flow,1,1,E01028,
+pandas,bedtools,data_flow,1,1,E01065,
+pandas,bioconductor-anota2seq,data_flow,1,1,E01398,
+pandas,bioconductor-apeglm,data_flow,1,1,E01399,
+pandas,bioconductor-dotseq,data_flow,2,2,E01400,
+pandas,multiqc,data_flow,1,1,E01459,
+plastid,bedtools,data_flow,2,2,E01064,
+preprocess_transcripts_fasta_gencode,kallisto,data_flow,1,1,E00043,
+preprocess_transcripts_fasta_gencode,salmon,data_flow,7,7,E00040,
+preprocess_transcripts_fasta_gencode,samtools,data_flow,4,4,E00558,
+pyyaml,bedtools,data_flow,1,1,E01014,
+pyyaml,bioconductor-dotseq,data_flow,4,4,E01402,
+pyyaml,mmseqs2,data_flow,4,4,E01018,
+pyyaml,multiqc,data_flow,4,4,E01460,
+pyyaml,pandas,data_flow,16,16,E01023,
+ribocode,pyyaml,data_flow,1,1,E01007,
+ribodetector,fastqc,data_flow,2,2,E00176,
+ribodetector,fq,data_flow,4,4,E00161,
+ribodetector,kallisto,data_flow,2,2,E01156,
+ribodetector,multiqc,data_flow,2,2,E01420,
+ribodetector,salmon,data_flow,4,4,E00194,
+ribodetector,samtools,data_flow,6,6,E00504,
+ribodetector,seqkit,data_flow,2,2,E00434,
+ribodetector,trim-galore,data_flow,2,2,E00468,
+ribotish,multiqc,data_flow,1,1,E01458,
+ribotish,pyyaml,data_flow,1,1,E01006,
+ribotricer,pyyaml,data_flow,1,1,E01008,
+rpbp,pyyaml,data_flow,1,1,E01009,
+rsem,kallisto,data_flow,1,1,E00045,
+rsem,salmon,data_flow,7,7,E00042,
+rsem,samtools,data_flow,4,4,E00560,
+salmon,bioconductor-tximeta,data_flow,3,3,E01096,
+salmon,custom,data_flow,3,3,E01094,
+salmon,kallisto,data_flow,3,1,E01154,
+salmon,multiqc,data_flow,2,2,E01466,
+salmon,samtools,gate_metadata,6,0,E00502,
+salmon,seqkit,gate_metadata,2,0,E00432,
+salmon,trim-galore,gate_metadata,2,0,E00466,
+samtools,bedtools,data_flow,3,3,E00818,
+samtools,bioconductor-genomicfeatures,data_flow,2,2,E01029,
+samtools,fastqc,data_flow,2,2,E00178,
+samtools,fq,data_flow,4,4,E00163,
+samtools,gedi,data_flow,4,4,E00969,
+samtools,gffcompare,data_flow,1,1,E00651,
+samtools,kallisto,data_flow,6,6,E01083,
+samtools,multiqc,data_flow,14,14,E01442,
+samtools,plastid,data_flow,8,8,E01046,
+samtools,ribocode,data_flow,12,12,E00984,
+samtools,ribotish,data_flow,20,8,E00834,
+samtools,ribotricer,data_flow,4,4,E00919,
+samtools,rpbp,data_flow,8,8,E00933,
+samtools,salmon,data_flow,8,8,E00196,
+samtools,seqkit,data_flow,2,2,E00436,
+samtools,stringtie,data_flow,1,1,E00639,
+samtools,trim-galore,data_flow,2,2,E00470,
+samtools,ucsc-bedgraphtobigwig,data_flow,1,1,E00824,
+samtools,umi_tools,data_flow,27,27,E00583,
+samtools,umicollapse,data_flow,12,12,E00571,
+seqkit,bioconductor-dotseq,data_flow,1,1,E01406,
+seqkit,bowtie2,data_flow,2,2,E00133,
+seqkit,mmseqs2,data_flow,1,1,E01022,
+seqkit,multiqc,data_flow,4,4,E01419,
+seqkit,pandas,data_flow,4,4,E01027,
+seqkit,ribodetector,gate_metadata,4,0,E00119,
+seqkit,trim-galore,gate_metadata,1,0,E00500,
+sortmerna,fastqc,data_flow,2,2,E00175,
+sortmerna,fq,data_flow,4,4,E00160,
+sortmerna,kallisto,data_flow,2,2,E01155,
+sortmerna,multiqc,data_flow,2,2,E01418,
+sortmerna,salmon,data_flow,4,4,E00193,
+sortmerna,samtools,data_flow,6,6,E00503,
+sortmerna,seqkit,data_flow,2,2,E00433,
+sortmerna,trim-galore,data_flow,2,2,E00467,
+star_genomegenerate_igenomes,samtools,data_flow,1,1,E00537,
+stringtie,gffcompare,data_flow,1,1,E00652,
+trim-galore,bbmap,data_flow,4,2,E00074,
+trim-galore,bowtie2,data_flow,8,4,E00139,
+trim-galore,fastqc,data_flow,4,2,E00184,
+trim-galore,fq,data_flow,12,6,E00066,
+trim-galore,kallisto,data_flow,5,3,E01153,
+trim-galore,multiqc,data_flow,6,6,E01412,
+trim-galore,ribodetector,data_flow,8,4,E00113,
+trim-galore,salmon,data_flow,9,5,E00202,
+trim-galore,samtools,data_flow,15,9,E00501,
+trim-galore,seqkit,data_flow,8,4,E00102,
+trim-galore,sortmerna,data_flow,4,2,E00088,
+umi_tools,bbmap,data_flow,4,4,E00073,
+umi_tools,bedtools,data_flow,1,1,E00820,
+umi_tools,bioconductor-genomicfeatures,data_flow,1,1,E01030,
+umi_tools,bowtie2,data_flow,8,8,E00138,
+umi_tools,fastp,data_flow,2,2,E00058,
+umi_tools,fastqc,data_flow,4,4,E00183,
+umi_tools,fq,data_flow,12,12,E00065,
+umi_tools,gedi,data_flow,1,1,E00968,
+umi_tools,gffcompare,data_flow,1,1,E00650,
+umi_tools,kallisto,data_flow,6,6,E01084,
+umi_tools,multiqc,data_flow,5,5,E01410,
+umi_tools,plastid,data_flow,2,2,E01045,
+umi_tools,ribocode,data_flow,6,6,E00985,
+umi_tools,ribodetector,data_flow,8,8,E00112,
+umi_tools,ribotish,data_flow,5,5,E00833,
+umi_tools,ribotricer,data_flow,1,1,E00918,
+umi_tools,rpbp,data_flow,2,2,E00932,
+umi_tools,salmon,data_flow,10,10,E00201,
+umi_tools,samtools,data_flow,40,40,E00511,
+umi_tools,seqkit,data_flow,8,8,E00101,
+umi_tools,sortmerna,data_flow,4,4,E00087,
+umi_tools,stringtie,data_flow,1,1,E00638,
+umi_tools,trim-galore,data_flow,6,6,E00051,
+umicollapse,bedtools,data_flow,1,1,E00819,
+umicollapse,gedi,data_flow,1,1,E00967,
+umicollapse,gffcompare,data_flow,1,1,E00649,
+umicollapse,multiqc,data_flow,1,1,E01446,
+umicollapse,plastid,data_flow,2,2,E01044,
+umicollapse,ribotish,data_flow,5,5,E00832,
+umicollapse,ribotricer,data_flow,1,1,E00917,
+umicollapse,rpbp,data_flow,2,2,E00931,
+umicollapse,samtools,data_flow,28,28,E00573,
+umicollapse,stringtie,data_flow,1,1,E00637,
+untar,bbmap,data_flow,2,2,E00080,
+untar,kallisto,data_flow,1,1,E01189,
+untar,salmon,data_flow,3,3,E00230,
+untar,samtools,data_flow,1,1,E00536,
+untar,sortmerna,data_flow,2,2,E00095,
+agat,bioconductor-genomicfeatures,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00010, E01032); no directed path between any process of the two tools"
+agat,gffcompare,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00010, E00653); no directed path between any process of the two tools"
+agat,rsem,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00010, E00018); no directed path between any process of the two tools"
+agat,star_genomegenerate_igenomes,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00010, E00028); no directed path between any process of the two tools"
+agat,stringtie,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00010, E00645); no directed path between any process of the two tools"
+bbmap,rsem,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00024, E00016); no directed path between any process of the two tools"
+bbmap,star_genomegenerate_igenomes,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00024, E00026); no directed path between any process of the two tools"
+bedtools,bioconductor-genomicfeatures,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E01015, E01036); no directed path between any process of the two tools"
+bioconductor-anota2seq,bioconductor-apeglm,parallel_co_use,0,0,,"both consume DTE_COUNTS_PREP.counts (E01398, E01399); no directed path between any process of the two tools"
+bioconductor-anota2seq,bioconductor-dotseq,parallel_co_use,0,0,,"both consume DTE_COUNTS_PREP.counts (E01398, E01400); no directed path between any process of the two tools"
+bioconductor-apeglm,bioconductor-anota2seq,parallel_co_use,0,0,,"both consume DTE_COUNTS_PREP.counts (E01399, E01398); no directed path between any process of the two tools"
+bioconductor-apeglm,bioconductor-dotseq,parallel_co_use,0,0,,"both consume DTE_COUNTS_PREP.counts (E01399, E01400); no directed path between any process of the two tools"
+bioconductor-dotseq,bioconductor-anota2seq,parallel_co_use,0,0,,"both consume DTE_COUNTS_PREP.counts (E01400, E01398); no directed path between any process of the two tools"
+bioconductor-dotseq,bioconductor-apeglm,parallel_co_use,0,0,,"both consume DTE_COUNTS_PREP.counts (E01400, E01399); no directed path between any process of the two tools"
+bioconductor-dotseq,multiqc,parallel_co_use,0,0,,"both consume CUSTOM_ORFMERGE.bed12 (E01402, E01460); no directed path between any process of the two tools"
+bioconductor-genomicfeatures,agat,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01032, E00010); no directed path between any process of the two tools"
+bioconductor-genomicfeatures,bedtools,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E01036, E01015); no directed path between any process of the two tools"
+bioconductor-genomicfeatures,gawk,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01032, E00825); no directed path between any process of the two tools"
+bioconductor-genomicfeatures,gedi,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E01036, E00960); no directed path between any process of the two tools"
+bioconductor-genomicfeatures,gffcompare,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01032, E00653); no directed path between any process of the two tools"
+bioconductor-genomicfeatures,kallisto,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01032, E01191); no directed path between any process of the two tools"
+bioconductor-genomicfeatures,plastid,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01032, E01040); no directed path between any process of the two tools"
+bioconductor-genomicfeatures,ribocode,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E01036, E00981); no directed path between any process of the two tools"
+bioconductor-genomicfeatures,ribotish,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E01036, E00883); no directed path between any process of the two tools"
+bioconductor-genomicfeatures,ribotricer,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E01036, E00908); no directed path between any process of the two tools"
+bioconductor-genomicfeatures,rpbp,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E01036, E00924); no directed path between any process of the two tools"
+bioconductor-genomicfeatures,stringtie,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01032, E00645); no directed path between any process of the two tools"
+bioconductor-summarizedexperiment,pandas,parallel_co_use,0,0,,"both consume TXIMETA_TXIMPORT.counts_gene_length_scaled (E01380, E01390); no directed path between any process of the two tools"
+bioconductor-tximeta,multiqc,parallel_co_use,0,0,,"both consume SALMON_QUANT.results (E01201, E01468); no directed path between any process of the two tools"
+bowtie2,sortmerna,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00327, E00276); no directed path between any process of the two tools"
+fastqc,kallisto,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00372, E01176); no directed path between any process of the two tools"
+fastqc,salmon,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00372, E00390); no directed path between any process of the two tools"
+gawk,bioconductor-genomicfeatures,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00825, E01032); no directed path between any process of the two tools"
+gedi,bioconductor-genomicfeatures,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00960, E01036); no directed path between any process of the two tools"
+gedi,kallisto,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00963, E01191); no directed path between any process of the two tools"
+gedi,plastid,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00963, E01040); no directed path between any process of the two tools"
+gedi,ribocode,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00960, E00981); no directed path between any process of the two tools"
+gedi,ribotish,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00960, E00883); no directed path between any process of the two tools"
+gedi,ribotricer,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00960, E00908); no directed path between any process of the two tools"
+gedi,rpbp,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00960, E00924); no directed path between any process of the two tools"
+gffcompare,agat,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00653, E00010); no directed path between any process of the two tools"
+gffcompare,bioconductor-genomicfeatures,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00653, E01032); no directed path between any process of the two tools"
+gffcompare,plastid,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00653, E01040); no directed path between any process of the two tools"
+kallisto,bioconductor-genomicfeatures,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01191, E01032); no directed path between any process of the two tools"
+kallisto,fastqc,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E01176, E00372); no directed path between any process of the two tools"
+kallisto,gedi,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01191, E00963); no directed path between any process of the two tools"
+kallisto,plastid,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01191, E01040); no directed path between any process of the two tools"
+kallisto,pyyaml,parallel_co_use,0,0,,"both consume BUILD_FULL_HYBRID_GTF.output (E01372, E01011); no directed path between any process of the two tools"
+kallisto,ribocode,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01191, E00977); no directed path between any process of the two tools"
+kallisto,ribotish,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01191, E00888); no directed path between any process of the two tools"
+kallisto,ribotricer,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01191, E00913); no directed path between any process of the two tools"
+kallisto,rpbp,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01191, E00927); no directed path between any process of the two tools"
+multiqc,bioconductor-dotseq,parallel_co_use,0,0,,"both consume CUSTOM_ORFMERGE.bed12 (E01460, E01402); no directed path between any process of the two tools"
+multiqc,bioconductor-tximeta,parallel_co_use,0,0,,"both consume SALMON_QUANT.results (E01468, E01201); no directed path between any process of the two tools"
+pandas,bioconductor-summarizedexperiment,parallel_co_use,0,0,,"both consume TXIMETA_TXIMPORT.counts_gene_length_scaled (E01390, E01380); no directed path between any process of the two tools"
+plastid,bioconductor-genomicfeatures,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01040, E01032); no directed path between any process of the two tools"
+plastid,gedi,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01040, E00963); no directed path between any process of the two tools"
+plastid,gffcompare,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01040, E00653); no directed path between any process of the two tools"
+plastid,kallisto,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01040, E01191); no directed path between any process of the two tools"
+plastid,ribocode,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01040, E00977); no directed path between any process of the two tools"
+plastid,ribotish,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01040, E00888); no directed path between any process of the two tools"
+plastid,ribotricer,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01040, E00913); no directed path between any process of the two tools"
+plastid,rpbp,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01040, E00927); no directed path between any process of the two tools"
+plastid,stringtie,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E01040, E00645); no directed path between any process of the two tools"
+pyyaml,kallisto,parallel_co_use,0,0,,"both consume BUILD_FULL_HYBRID_GTF.output (E01011, E01372); no directed path between any process of the two tools"
+ribocode,bioconductor-genomicfeatures,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00981, E01036); no directed path between any process of the two tools"
+ribocode,gedi,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00981, E00960); no directed path between any process of the two tools"
+ribocode,kallisto,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00977, E01191); no directed path between any process of the two tools"
+ribocode,plastid,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00977, E01040); no directed path between any process of the two tools"
+ribocode,ribotish,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00981, E00883); no directed path between any process of the two tools"
+ribocode,ribotricer,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00981, E00908); no directed path between any process of the two tools"
+ribocode,rpbp,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00981, E00924); no directed path between any process of the two tools"
+ribodetector,sortmerna,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00301, E00276); no directed path between any process of the two tools"
+ribotish,bioconductor-genomicfeatures,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00883, E01036); no directed path between any process of the two tools"
+ribotish,gedi,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00883, E00960); no directed path between any process of the two tools"
+ribotish,kallisto,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00888, E01191); no directed path between any process of the two tools"
+ribotish,plastid,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00888, E01040); no directed path between any process of the two tools"
+ribotish,ribocode,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00883, E00981); no directed path between any process of the two tools"
+ribotish,ribotricer,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00883, E00908); no directed path between any process of the two tools"
+ribotish,rpbp,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00883, E00924); no directed path between any process of the two tools"
+ribotricer,bioconductor-genomicfeatures,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00908, E01036); no directed path between any process of the two tools"
+ribotricer,gedi,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00908, E00960); no directed path between any process of the two tools"
+ribotricer,kallisto,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00913, E01191); no directed path between any process of the two tools"
+ribotricer,plastid,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00913, E01040); no directed path between any process of the two tools"
+ribotricer,ribocode,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00908, E00981); no directed path between any process of the two tools"
+ribotricer,ribotish,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00908, E00883); no directed path between any process of the two tools"
+ribotricer,rpbp,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00908, E00924); no directed path between any process of the two tools"
+rpbp,bioconductor-genomicfeatures,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00924, E01036); no directed path between any process of the two tools"
+rpbp,gedi,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00924, E00960); no directed path between any process of the two tools"
+rpbp,kallisto,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00927, E01191); no directed path between any process of the two tools"
+rpbp,plastid,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00927, E01040); no directed path between any process of the two tools"
+rpbp,ribocode,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00924, E00981); no directed path between any process of the two tools"
+rpbp,ribotish,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00924, E00883); no directed path between any process of the two tools"
+rpbp,ribotricer,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00924, E00908); no directed path between any process of the two tools"
+rsem,agat,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00018, E00010); no directed path between any process of the two tools"
+rsem,bbmap,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00016, E00024); no directed path between any process of the two tools"
+rsem,star_genomegenerate_igenomes,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00016, E00026); no directed path between any process of the two tools"
+salmon,fastqc,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00390, E00372); no directed path between any process of the two tools"
+sortmerna,bowtie2,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00276, E00327); no directed path between any process of the two tools"
+sortmerna,ribodetector,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00276, E00301); no directed path between any process of the two tools"
+star_genomegenerate_igenomes,agat,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00028, E00010); no directed path between any process of the two tools"
+star_genomegenerate_igenomes,bbmap,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00026, E00024); no directed path between any process of the two tools"
+star_genomegenerate_igenomes,rsem,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00026, E00016); no directed path between any process of the two tools"
+stringtie,agat,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00645, E00010); no directed path between any process of the two tools"
+stringtie,bioconductor-genomicfeatures,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00645, E01032); no directed path between any process of the two tools"
+stringtie,plastid,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00645, E01040); no directed path between any process of the two tools"

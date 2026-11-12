@@ -1,0 +1,10 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+preprocess_fai,preprocess_fai,main.nf,228,samtools,,samtools,script and directives
+preprocess_fastagz,preprocess_fastagz,main.nf,246,bgzip,,bgzip,script and directives
+preprocess_gzfai,preprocess_gzfai,main.nf,264,samtools,,samtools,script and directives
+preprocess_gzi,preprocess_gzi,main.nf,283,bgzip,,bgzip,script and directives
+preprocess_bam,preprocess_bam,main.nf,305,samtools,,samtools,script and directives
+make_examples,make_examples,main.nf,336,dv_make_examples,,dv_make_examples,script and directives
+call_variants,call_variants,main.nf,372,dv_call_variants,,dv_call_variants,script and directives
+postprocess_variants,postprocess_variants,main.nf,400,dv_postprocess_variants,,dv_postprocess_variants,script and directives
+get_software_versions,get_software_versions,main.nf,427,pip,,pip;samtools;lbzip2;bzip2,script and directives

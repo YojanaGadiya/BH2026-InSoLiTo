@@ -1,0 +1,39 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bcftools,gatk4,data_flow,7,7,E00047,
+bcftools,multiqc,data_flow,2,2,E00404,
+bcftools,ngsrelate,data_flow,1,1,E00393,
+bcftools,vcftools,data_flow,2,2,E00388,
+bwa-mem2,gatk4,data_flow,1,1,E00010,
+fastp,bwa-mem2,data_flow,1,1,E00007,
+fastp,multiqc,data_flow,2,2,E00394,
+gatk4,bcftools,data_flow,17,17,E00046,
+gatk4,mosdepth,data_flow,1,1,E00028,
+gatk4,multiqc,data_flow,1,1,E00396,
+gatk4,normalize_bam_names,data_flow,1,1,E00016,
+gatk4,preseq,data_flow,2,2,E00022,
+gatk4,samtools,data_flow,16,16,E00013,
+gawk,make_scaffold_bed,data_flow,2,2,E00386,
+gawk,python>,data_flow,1,1,E00005,
+gunzip,bcftools,data_flow,5,5,E00051,
+gunzip,bwa-mem2,data_flow,2,2,E00001,
+gunzip,gatk4,data_flow,27,27,E00002,
+gunzip,mosdepth,data_flow,1,1,E00030,
+gunzip,samtools,data_flow,8,8,E00003,
+make_scaffold_bed,vcftools,data_flow,2,2,E00389,
+mosdepth,multiqc,data_flow,2,2,E00402,
+normalize_bam_names,gatk4,data_flow,1,1,E00017,
+preseq,multiqc,data_flow,4,4,E00397,
+python>,bcftools,data_flow,2,2,E00374,
+python>,gatk4,data_flow,20,20,E00034,
+samtools,bcftools,gate_metadata,3,0,E00373,
+samtools,gatk4,data_flow,93,73,E00012,
+samtools,gawk,data_flow,1,1,E00004,
+samtools,mosdepth,data_flow,1,1,E00029,
+samtools,multiqc,data_flow,1,1,E00401,
+spring,fastp,data_flow,1,1,E00006,
+bcftools,mosdepth,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00051, E00030); no directed path between any process of the two tools"
+make_scaffold_bed,python>,parallel_co_use,0,0,,"both consume BUILD_INTERVALS.output (E00387, E00005); no directed path between any process of the two tools"
+mosdepth,bcftools,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00030, E00051); no directed path between any process of the two tools"
+mosdepth,preseq,parallel_co_use,0,0,,"both consume GATK4_MARKDUPLICATES.cram (E00028, E00022); no directed path between any process of the two tools"
+preseq,mosdepth,parallel_co_use,0,0,,"both consume GATK4_MARKDUPLICATES.cram (E00022, E00028); no directed path between any process of the two tools"
+python>,make_scaffold_bed,parallel_co_use,0,0,,"both consume BUILD_INTERVALS.output (E00005, E00387); no directed path between any process of the two tools"

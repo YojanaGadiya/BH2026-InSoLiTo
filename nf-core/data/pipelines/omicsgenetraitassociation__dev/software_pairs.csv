@@ -1,0 +1,10 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+cma,pandas,data_flow,1,1,E00006,
+go_analysis,pandas,data_flow,2,2,E00013,
+mmap,numpy,data_flow,1,1,E00002,
+numpy,pandas,data_flow,1,1,E00003,
+pandas,cma,data_flow,2,2,E00004,
+pandas,go_analysis,data_flow,2,2,E00011,
+pandas,run_pascal,data_flow,2,2,E00007,
+pascal,pandas,data_flow,1,1,E00001,
+run_pascal,pandas,data_flow,2,2,E00009,

@@ -1,0 +1,561 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+assign_context_references,bakta,data_flow,1,1,E00428,
+assign_context_references,busco,data_flow,1,1,E00506,
+assign_context_references,make_gff_with_fasta,data_flow,1,1,E00443,
+assign_context_references,perl-bioperl,data_flow,1,1,E00453,
+assign_context_references,prepare_report_input,data_flow,2,2,E00553,
+assign_context_references,subset_busco_genes,data_flow,1,1,E00520,
+assign_mapping_reference,bgzip,data_flow,1,1,E00292,
+assign_mapping_reference,bwa,data_flow,3,3,E00171,
+assign_mapping_reference,gatk4,data_flow,5,5,E00310,
+assign_mapping_reference,graphtyper,data_flow,4,4,E00226,
+assign_mapping_reference,picard,data_flow,1,1,E00149,
+assign_mapping_reference,picard_format,data_flow,1,1,E00211,
+assign_mapping_reference,prepare_report_input,data_flow,1,1,E00550,
+assign_mapping_reference,samtools,data_flow,1,1,E00160,
+assign_mapping_reference,seqkit,data_flow,1,1,E00139,
+assign_mapping_reference,vcf_to_snp_align,data_flow,1,1,E00406,
+bakta,perl-bioperl,data_flow,1,1,E00466,
+bbmap,assign_context_references,data_flow,2,2,E00422,
+bbmap,assign_mapping_reference,data_flow,1,1,E00133,
+bbmap,bakta,data_flow,1,1,E00432,
+bbmap,bgzip,data_flow,1,1,E00296,
+bbmap,busco,data_flow,1,1,E00497,
+bbmap,bwa,data_flow,3,3,E00175,
+bbmap,download_assemblies,data_flow,1,1,E00024,
+bbmap,fastp,data_flow,1,1,E00047,
+bbmap,fastqc,data_flow,1,1,E00114,
+bbmap,find_assemblies,data_flow,1,1,E00010,
+bbmap,flye,data_flow,2,2,E00058,
+bbmap,gatk4,data_flow,5,5,E00314,
+bbmap,graphtyper,data_flow,4,4,E00230,
+bbmap,initial_classification,data_flow,1,1,E00006,
+bbmap,make_gff_with_fasta,data_flow,1,1,E00447,
+bbmap,multiqc,data_flow,1,1,E00527,
+bbmap,nanoplot,data_flow,1,1,E00123,
+bbmap,perl-bioperl,data_flow,1,1,E00457,
+bbmap,picard,data_flow,1,1,E00153,
+bbmap,picard_format,data_flow,1,1,E00215,
+bbmap,pick_assemblies,data_flow,1,1,E00017,
+bbmap,prepare_report_input,data_flow,1,1,E00540,
+bbmap,samtools,data_flow,1,1,E00164,
+bbmap,seqkit,data_flow,3,3,E00030,
+bbmap,sourmash,data_flow,2,2,E00091,
+bbmap,subset_busco_genes,data_flow,1,1,E00511,
+bbmap,subset_core_genes,data_flow,1,1,E00476,
+bbmap,trim_and_sketch,data_flow,1,1,E00079,
+bbmap,vcf_to_snp_align,data_flow,1,1,E00410,
+bgzip,gatk4,data_flow,5,5,E00326,
+busco,subset_busco_genes,data_flow,1,1,E00521,
+bwa,bgzip,data_flow,1,1,E00304,
+bwa,gatk4,data_flow,5,5,E00322,
+bwa,graphtyper,data_flow,4,4,E00238,
+bwa,picard_format,data_flow,2,2,E00210,
+calculate_pocp,prepare_report_input,data_flow,1,1,E00554,
+download_assemblies,assign_context_references,data_flow,4,4,E00425,
+download_assemblies,assign_mapping_reference,data_flow,2,2,E00136,
+download_assemblies,bakta,data_flow,2,2,E00435,
+download_assemblies,bgzip,data_flow,2,2,E00299,
+download_assemblies,busco,data_flow,2,2,E00500,
+download_assemblies,bwa,data_flow,6,6,E00178,
+download_assemblies,fastp,data_flow,2,2,E00050,
+download_assemblies,fastqc,data_flow,2,2,E00117,
+download_assemblies,flye,data_flow,4,4,E00061,
+download_assemblies,gatk4,data_flow,10,10,E00317,
+download_assemblies,graphtyper,data_flow,8,8,E00233,
+download_assemblies,make_gff_with_fasta,data_flow,2,2,E00450,
+download_assemblies,multiqc,data_flow,2,2,E00530,
+download_assemblies,nanoplot,data_flow,2,2,E00126,
+download_assemblies,perl-bioperl,data_flow,2,2,E00460,
+download_assemblies,picard,data_flow,2,2,E00156,
+download_assemblies,picard_format,data_flow,2,2,E00218,
+download_assemblies,prepare_report_input,data_flow,2,2,E00543,
+download_assemblies,samtools,data_flow,2,2,E00167,
+download_assemblies,seqkit,data_flow,6,6,E00033,
+download_assemblies,sourmash,data_flow,4,4,E00094,
+download_assemblies,subset_busco_genes,data_flow,2,2,E00514,
+download_assemblies,subset_core_genes,data_flow,2,2,E00479,
+download_assemblies,trim_and_sketch,data_flow,2,2,E00082,
+download_assemblies,vcf_to_snp_align,data_flow,2,2,E00413,
+extract_feature_sequences,subset_core_genes,data_flow,1,1,E00472,
+fastp,multiqc,data_flow,1,1,E00534,
+fastp,prepare_report_input,data_flow,2,1,E00564,
+fastp,spades,data_flow,2,1,E00053,
+fastqc,multiqc,data_flow,1,1,E00533,
+find_assemblies,parse_assemblies,data_flow,1,1,E00013,
+flye,bakta,data_flow,2,2,E00439,
+flye,busco,data_flow,2,2,E00504,
+flye,perl-bioperl,data_flow,2,2,E00464,
+flye,quast,data_flow,2,2,E00074,
+flye,sourmash,data_flow,2,2,E00098,
+flye,subset_busco_genes,data_flow,2,2,E00518,
+flye,trim_and_sketch,data_flow,2,2,E00086,
+gatk4,vcflib,data_flow,2,2,E00403,
+graphtyper,gatk4,data_flow,5,5,E00308,
+graphtyper,tabix,data_flow,1,1,E00291,
+initial_classification,assign_context_references,data_flow,2,2,E00423,
+initial_classification,assign_mapping_reference,data_flow,1,1,E00134,
+initial_classification,bakta,data_flow,1,1,E00433,
+initial_classification,bgzip,data_flow,1,1,E00297,
+initial_classification,busco,data_flow,1,1,E00498,
+initial_classification,bwa,data_flow,3,3,E00176,
+initial_classification,download_assemblies,data_flow,1,1,E00025,
+initial_classification,fastp,data_flow,1,1,E00048,
+initial_classification,fastqc,data_flow,1,1,E00115,
+initial_classification,find_assemblies,data_flow,2,2,E00011,
+initial_classification,flye,data_flow,2,2,E00059,
+initial_classification,gatk4,data_flow,5,5,E00315,
+initial_classification,graphtyper,data_flow,4,4,E00231,
+initial_classification,make_gff_with_fasta,data_flow,1,1,E00448,
+initial_classification,multiqc,data_flow,1,1,E00528,
+initial_classification,nanoplot,data_flow,1,1,E00124,
+initial_classification,perl-bioperl,data_flow,1,1,E00458,
+initial_classification,picard,data_flow,1,1,E00154,
+initial_classification,picard_format,data_flow,1,1,E00216,
+initial_classification,pick_assemblies,data_flow,2,2,E00018,
+initial_classification,prepare_report_input,data_flow,2,2,E00541,
+initial_classification,samtools,data_flow,1,1,E00165,
+initial_classification,seqkit,data_flow,3,3,E00031,
+initial_classification,sourmash,data_flow,2,2,E00092,
+initial_classification,subset_busco_genes,data_flow,1,1,E00512,
+initial_classification,subset_core_genes,data_flow,1,1,E00477,
+initial_classification,trim_and_sketch,data_flow,1,1,E00080,
+initial_classification,vcf_to_snp_align,data_flow,1,1,E00411,
+iqtree,prepare_report_input,data_flow,3,3,E00552,
+mafft,iqtree,data_flow,2,2,E00483,
+make_gff_with_fasta,perl-bioperl,data_flow,1,1,E00467,
+multiqc,prepare_report_input,data_flow,3,2,E00559,
+nanoplot,multiqc,data_flow,1,1,E00535,
+parse_assemblies,pick_assemblies,gate_metadata,1,0,E00020,
+parse_assemblies,prepare_report_input,gate_metadata,1,0,E00547,
+perl-bioperl,extract_feature_sequences,data_flow,1,1,E00470,
+perl-bioperl,prepare_report_input,data_flow,1,1,E00555,
+perl-bioperl,reformat_pirate_results,data_flow,1,1,E00468,
+picard,bgzip,data_flow,1,1,E00305,
+picard,bwa,data_flow,2,2,E00195,
+picard,gatk4,data_flow,5,5,E00323,
+picard,graphtyper,data_flow,4,4,E00239,
+picard,picard_format,data_flow,1,1,E00224,
+picard_format,bgzip,data_flow,1,1,E00306,
+picard_format,gatk4,data_flow,5,5,E00324,
+picard_format,graphtyper,data_flow,4,4,E00240,
+picard_format,samtools,data_flow,1,1,E00225,
+pick_assemblies,assign_context_references,data_flow,2,2,E00424,
+pick_assemblies,assign_mapping_reference,data_flow,1,1,E00135,
+pick_assemblies,bakta,data_flow,1,1,E00434,
+pick_assemblies,bgzip,data_flow,1,1,E00298,
+pick_assemblies,busco,data_flow,1,1,E00499,
+pick_assemblies,bwa,data_flow,3,3,E00177,
+pick_assemblies,download_assemblies,data_flow,1,1,E00026,
+pick_assemblies,fastp,data_flow,1,1,E00049,
+pick_assemblies,fastqc,data_flow,1,1,E00116,
+pick_assemblies,flye,data_flow,2,2,E00060,
+pick_assemblies,gatk4,data_flow,5,5,E00316,
+pick_assemblies,graphtyper,data_flow,4,4,E00232,
+pick_assemblies,make_gff_with_fasta,data_flow,1,1,E00449,
+pick_assemblies,multiqc,data_flow,1,1,E00529,
+pick_assemblies,nanoplot,data_flow,1,1,E00125,
+pick_assemblies,perl-bioperl,data_flow,1,1,E00459,
+pick_assemblies,picard,data_flow,1,1,E00155,
+pick_assemblies,picard_format,data_flow,1,1,E00217,
+pick_assemblies,prepare_report_input,data_flow,3,3,E00542,
+pick_assemblies,samtools,data_flow,1,1,E00166,
+pick_assemblies,seqkit,data_flow,3,3,E00032,
+pick_assemblies,sourmash,data_flow,2,2,E00093,
+pick_assemblies,subset_busco_genes,data_flow,1,1,E00513,
+pick_assemblies,subset_core_genes,data_flow,1,1,E00478,
+pick_assemblies,trim_and_sketch,data_flow,1,1,E00081,
+pick_assemblies,vcf_to_snp_align,data_flow,1,1,E00412,
+prepare_report_input,main_report,data_flow,1,1,E00570,
+quast,multiqc,data_flow,1,1,E00536,
+reformat_pirate_results,calculate_pocp,data_flow,1,1,E00469,
+reformat_pirate_results,subset_core_genes,data_flow,1,1,E00471,
+samplesheet_check,assign_context_references,data_flow,4,4,E00420,
+samplesheet_check,assign_mapping_reference,data_flow,2,2,E00131,
+samplesheet_check,bakta,data_flow,2,2,E00430,
+samplesheet_check,bbmap,data_flow,2,2,E00004,
+samplesheet_check,bgzip,data_flow,2,2,E00294,
+samplesheet_check,busco,data_flow,2,2,E00495,
+samplesheet_check,bwa,data_flow,6,6,E00173,
+samplesheet_check,download_assemblies,data_flow,2,2,E00022,
+samplesheet_check,fastp,data_flow,2,2,E00045,
+samplesheet_check,fastqc,data_flow,2,2,E00112,
+samplesheet_check,find_assemblies,data_flow,2,2,E00008,
+samplesheet_check,flye,data_flow,4,4,E00056,
+samplesheet_check,gatk4,data_flow,10,10,E00312,
+samplesheet_check,graphtyper,data_flow,8,8,E00228,
+samplesheet_check,make_gff_with_fasta,data_flow,2,2,E00445,
+samplesheet_check,multiqc,data_flow,2,2,E00525,
+samplesheet_check,nanoplot,data_flow,2,2,E00121,
+samplesheet_check,perl-bioperl,data_flow,2,2,E00455,
+samplesheet_check,picard,data_flow,2,2,E00151,
+samplesheet_check,picard_format,data_flow,2,2,E00213,
+samplesheet_check,pick_assemblies,data_flow,2,2,E00015,
+samplesheet_check,prepare_report_input,data_flow,3,3,E00538,
+samplesheet_check,samtools,data_flow,2,2,E00162,
+samplesheet_check,seqkit,data_flow,6,6,E00028,
+samplesheet_check,sourmash,data_flow,4,4,E00089,
+samplesheet_check,sra-tools,data_flow,2,2,E00001,
+samplesheet_check,subset_busco_genes,data_flow,2,2,E00509,
+samplesheet_check,subset_core_genes,data_flow,2,2,E00474,
+samplesheet_check,trim_and_sketch,data_flow,2,2,E00077,
+samplesheet_check,vcf_to_snp_align,data_flow,2,2,E00408,
+samtools,bgzip,data_flow,2,2,E00303,
+samtools,bwa,data_flow,2,2,E00193,
+samtools,gatk4,data_flow,10,10,E00321,
+samtools,graphtyper,data_flow,8,8,E00237,
+samtools,picard_format,data_flow,1,1,E00222,
+seqkit,assign_context_references,data_flow,2,2,E00427,
+seqkit,assign_mapping_reference,data_flow,1,1,E00138,
+seqkit,bakta,data_flow,1,1,E00437,
+seqkit,bgzip,data_flow,2,2,E00301,
+seqkit,busco,data_flow,1,1,E00502,
+seqkit,bwa,data_flow,6,6,E00180,
+seqkit,fastp,data_flow,1,1,E00052,
+seqkit,fastqc,data_flow,1,1,E00119,
+seqkit,flye,data_flow,2,2,E00063,
+seqkit,gatk4,data_flow,10,10,E00319,
+seqkit,graphtyper,data_flow,8,8,E00235,
+seqkit,make_gff_with_fasta,data_flow,1,1,E00452,
+seqkit,multiqc,data_flow,1,1,E00532,
+seqkit,nanoplot,data_flow,1,1,E00128,
+seqkit,perl-bioperl,data_flow,1,1,E00462,
+seqkit,picard,data_flow,2,2,E00158,
+seqkit,picard_format,data_flow,2,2,E00220,
+seqkit,prepare_report_input,data_flow,1,1,E00545,
+seqkit,samtools,data_flow,2,2,E00169,
+seqkit,sourmash,data_flow,2,2,E00096,
+seqkit,subset_busco_genes,data_flow,1,1,E00516,
+seqkit,subset_core_genes,data_flow,1,1,E00481,
+seqkit,trim_and_sketch,data_flow,1,1,E00084,
+seqkit,vcf_to_snp_align,data_flow,1,1,E00415,
+sourmash,assign_context_references,data_flow,2,2,E00418,
+sourmash,assign_mapping_reference,data_flow,1,1,E00129,
+sourmash,prepare_report_input,data_flow,1,1,E00549,
+spades,bakta,data_flow,1,1,E00438,
+spades,busco,data_flow,1,1,E00503,
+spades,perl-bioperl,data_flow,1,1,E00463,
+spades,prepare_report_input,data_flow,1,1,E00566,
+spades,quast,data_flow,1,1,E00073,
+spades,sourmash,data_flow,1,1,E00097,
+spades,subset_busco_genes,data_flow,1,1,E00517,
+spades,trim_and_sketch,data_flow,1,1,E00085,
+sra-tools,assign_context_references,data_flow,2,2,E00419,
+sra-tools,assign_mapping_reference,data_flow,1,1,E00130,
+sra-tools,bakta,data_flow,1,1,E00429,
+sra-tools,bbmap,data_flow,1,1,E00003,
+sra-tools,bgzip,data_flow,1,1,E00293,
+sra-tools,busco,data_flow,1,1,E00494,
+sra-tools,bwa,data_flow,3,3,E00172,
+sra-tools,download_assemblies,data_flow,1,1,E00021,
+sra-tools,fastp,data_flow,1,1,E00044,
+sra-tools,fastqc,data_flow,1,1,E00111,
+sra-tools,find_assemblies,data_flow,1,1,E00007,
+sra-tools,flye,data_flow,2,2,E00055,
+sra-tools,gatk4,data_flow,5,5,E00311,
+sra-tools,graphtyper,data_flow,4,4,E00227,
+sra-tools,make_gff_with_fasta,data_flow,1,1,E00444,
+sra-tools,multiqc,data_flow,1,1,E00524,
+sra-tools,nanoplot,data_flow,1,1,E00120,
+sra-tools,perl-bioperl,data_flow,1,1,E00454,
+sra-tools,picard,data_flow,1,1,E00150,
+sra-tools,picard_format,data_flow,1,1,E00212,
+sra-tools,pick_assemblies,data_flow,1,1,E00014,
+sra-tools,prepare_report_input,data_flow,1,1,E00537,
+sra-tools,samtools,data_flow,1,1,E00161,
+sra-tools,seqkit,data_flow,3,3,E00027,
+sra-tools,sourmash,data_flow,2,2,E00088,
+sra-tools,subset_busco_genes,data_flow,1,1,E00508,
+sra-tools,subset_core_genes,data_flow,1,1,E00473,
+sra-tools,trim_and_sketch,data_flow,1,1,E00076,
+sra-tools,vcf_to_snp_align,data_flow,1,1,E00407,
+subset_busco_genes,mafft,data_flow,1,1,E00522,
+subset_busco_genes,prepare_report_input,data_flow,1,1,E00569,
+subset_core_genes,mafft,data_flow,1,1,E00482,
+subset_core_genes,prepare_report_input,data_flow,1,1,E00568,
+tabix,gatk4,data_flow,5,5,E00309,
+trim_and_sketch,sourmash,data_flow,1,1,E00109,
+untar,bakta,data_flow,1,1,E00441,
+vcf_to_snp_align,iqtree,data_flow,2,2,E00416,
+vcf_to_snp_align,prepare_report_input,data_flow,2,2,E00551,
+vcflib,vcf_to_snp_align,data_flow,1,1,E00405,
+assign_context_references,assign_mapping_reference,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00488, E00133); no directed path between any process of the two tools"
+assign_context_references,bgzip,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00488, E00296); no directed path between any process of the two tools"
+assign_context_references,bwa,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00488, E00186); no directed path between any process of the two tools"
+assign_context_references,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00488, E00114); no directed path between any process of the two tools"
+assign_context_references,gatk4,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00488, E00314); no directed path between any process of the two tools"
+assign_context_references,graphtyper,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00488, E00230); no directed path between any process of the two tools"
+assign_context_references,multiqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00488, E00527); no directed path between any process of the two tools"
+assign_context_references,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00488, E00123); no directed path between any process of the two tools"
+assign_context_references,picard,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00488, E00153); no directed path between any process of the two tools"
+assign_context_references,picard_format,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00488, E00215); no directed path between any process of the two tools"
+assign_context_references,samtools,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00488, E00164); no directed path between any process of the two tools"
+assign_context_references,vcf_to_snp_align,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00488, E00410); no directed path between any process of the two tools"
+assign_mapping_reference,assign_context_references,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00133, E00488); no directed path between any process of the two tools"
+assign_mapping_reference,bakta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00133, E00432); no directed path between any process of the two tools"
+assign_mapping_reference,busco,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00133, E00497); no directed path between any process of the two tools"
+assign_mapping_reference,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00133, E00114); no directed path between any process of the two tools"
+assign_mapping_reference,make_gff_with_fasta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00133, E00447); no directed path between any process of the two tools"
+assign_mapping_reference,multiqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00133, E00527); no directed path between any process of the two tools"
+assign_mapping_reference,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00133, E00123); no directed path between any process of the two tools"
+assign_mapping_reference,perl-bioperl,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00133, E00457); no directed path between any process of the two tools"
+assign_mapping_reference,subset_busco_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00133, E00511); no directed path between any process of the two tools"
+assign_mapping_reference,subset_core_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00133, E00476); no directed path between any process of the two tools"
+bakta,assign_mapping_reference,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00432, E00133); no directed path between any process of the two tools"
+bakta,bgzip,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00432, E00296); no directed path between any process of the two tools"
+bakta,busco,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00439, E00504); no directed path between any process of the two tools"
+bakta,bwa,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00432, E00186); no directed path between any process of the two tools"
+bakta,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00432, E00114); no directed path between any process of the two tools"
+bakta,gatk4,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00432, E00314); no directed path between any process of the two tools"
+bakta,graphtyper,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00432, E00230); no directed path between any process of the two tools"
+bakta,make_gff_with_fasta,parallel_co_use,0,0,,"both consume ASSIGN_CORE_REFERENCES.references (E00428, E00443); no directed path between any process of the two tools"
+bakta,multiqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00432, E00527); no directed path between any process of the two tools"
+bakta,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00432, E00123); no directed path between any process of the two tools"
+bakta,picard,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00432, E00153); no directed path between any process of the two tools"
+bakta,picard_format,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00432, E00215); no directed path between any process of the two tools"
+bakta,quast,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00439, E00074); no directed path between any process of the two tools"
+bakta,samtools,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00432, E00164); no directed path between any process of the two tools"
+bakta,subset_busco_genes,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00439, E00518); no directed path between any process of the two tools"
+bakta,vcf_to_snp_align,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00432, E00410); no directed path between any process of the two tools"
+bgzip,assign_context_references,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00296, E00488); no directed path between any process of the two tools"
+bgzip,bakta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00296, E00432); no directed path between any process of the two tools"
+bgzip,busco,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00296, E00497); no directed path between any process of the two tools"
+bgzip,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00296, E00114); no directed path between any process of the two tools"
+bgzip,graphtyper,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00296, E00230); no directed path between any process of the two tools"
+bgzip,make_gff_with_fasta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00296, E00447); no directed path between any process of the two tools"
+bgzip,multiqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00296, E00527); no directed path between any process of the two tools"
+bgzip,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00296, E00123); no directed path between any process of the two tools"
+bgzip,perl-bioperl,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00296, E00457); no directed path between any process of the two tools"
+bgzip,subset_busco_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00296, E00511); no directed path between any process of the two tools"
+bgzip,subset_core_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00296, E00476); no directed path between any process of the two tools"
+busco,assign_mapping_reference,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00497, E00133); no directed path between any process of the two tools"
+busco,bakta,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00504, E00439); no directed path between any process of the two tools"
+busco,bgzip,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00497, E00296); no directed path between any process of the two tools"
+busco,bwa,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00497, E00186); no directed path between any process of the two tools"
+busco,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00497, E00114); no directed path between any process of the two tools"
+busco,gatk4,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00497, E00314); no directed path between any process of the two tools"
+busco,graphtyper,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00497, E00230); no directed path between any process of the two tools"
+busco,make_gff_with_fasta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00497, E00447); no directed path between any process of the two tools"
+busco,multiqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00497, E00527); no directed path between any process of the two tools"
+busco,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00497, E00123); no directed path between any process of the two tools"
+busco,perl-bioperl,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00504, E00464); no directed path between any process of the two tools"
+busco,picard,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00497, E00153); no directed path between any process of the two tools"
+busco,picard_format,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00497, E00215); no directed path between any process of the two tools"
+busco,quast,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00504, E00074); no directed path between any process of the two tools"
+busco,samtools,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00497, E00164); no directed path between any process of the two tools"
+busco,subset_core_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00497, E00476); no directed path between any process of the two tools"
+busco,vcf_to_snp_align,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00497, E00410); no directed path between any process of the two tools"
+bwa,assign_context_references,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00186, E00488); no directed path between any process of the two tools"
+bwa,bakta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00186, E00432); no directed path between any process of the two tools"
+bwa,busco,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00186, E00497); no directed path between any process of the two tools"
+bwa,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00186, E00114); no directed path between any process of the two tools"
+bwa,make_gff_with_fasta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00186, E00447); no directed path between any process of the two tools"
+bwa,multiqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00186, E00527); no directed path between any process of the two tools"
+bwa,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00186, E00123); no directed path between any process of the two tools"
+bwa,perl-bioperl,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00186, E00457); no directed path between any process of the two tools"
+bwa,subset_busco_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00186, E00511); no directed path between any process of the two tools"
+bwa,subset_core_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00186, E00476); no directed path between any process of the two tools"
+extract_feature_sequences,reformat_pirate_results,parallel_co_use,0,0,,"both consume PIRATE.results (E00470, E00468); no directed path between any process of the two tools"
+fastp,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00047, E00114); no directed path between any process of the two tools"
+fastp,flye,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00047, E00058); no directed path between any process of the two tools"
+fastp,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00047, E00123); no directed path between any process of the two tools"
+fastqc,assign_context_references,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00488); no directed path between any process of the two tools"
+fastqc,assign_mapping_reference,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00133); no directed path between any process of the two tools"
+fastqc,bakta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00432); no directed path between any process of the two tools"
+fastqc,bgzip,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00296); no directed path between any process of the two tools"
+fastqc,busco,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00497); no directed path between any process of the two tools"
+fastqc,bwa,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00186); no directed path between any process of the two tools"
+fastqc,fastp,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00047); no directed path between any process of the two tools"
+fastqc,flye,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00058); no directed path between any process of the two tools"
+fastqc,gatk4,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00314); no directed path between any process of the two tools"
+fastqc,graphtyper,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00230); no directed path between any process of the two tools"
+fastqc,make_gff_with_fasta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00447); no directed path between any process of the two tools"
+fastqc,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00123); no directed path between any process of the two tools"
+fastqc,perl-bioperl,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00457); no directed path between any process of the two tools"
+fastqc,picard,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00153); no directed path between any process of the two tools"
+fastqc,picard_format,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00215); no directed path between any process of the two tools"
+fastqc,samtools,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00164); no directed path between any process of the two tools"
+fastqc,sourmash,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00103); no directed path between any process of the two tools"
+fastqc,subset_busco_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00511); no directed path between any process of the two tools"
+fastqc,subset_core_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00476); no directed path between any process of the two tools"
+fastqc,trim_and_sketch,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00079); no directed path between any process of the two tools"
+fastqc,vcf_to_snp_align,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00114, E00410); no directed path between any process of the two tools"
+flye,fastp,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00058, E00047); no directed path between any process of the two tools"
+flye,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00058, E00114); no directed path between any process of the two tools"
+flye,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00058, E00123); no directed path between any process of the two tools"
+gatk4,assign_context_references,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00314, E00488); no directed path between any process of the two tools"
+gatk4,bakta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00314, E00432); no directed path between any process of the two tools"
+gatk4,busco,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00314, E00497); no directed path between any process of the two tools"
+gatk4,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00314, E00114); no directed path between any process of the two tools"
+gatk4,make_gff_with_fasta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00314, E00447); no directed path between any process of the two tools"
+gatk4,multiqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00314, E00527); no directed path between any process of the two tools"
+gatk4,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00314, E00123); no directed path between any process of the two tools"
+gatk4,perl-bioperl,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00314, E00457); no directed path between any process of the two tools"
+gatk4,subset_busco_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00314, E00511); no directed path between any process of the two tools"
+gatk4,subset_core_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00314, E00476); no directed path between any process of the two tools"
+graphtyper,assign_context_references,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00230, E00488); no directed path between any process of the two tools"
+graphtyper,bakta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00230, E00432); no directed path between any process of the two tools"
+graphtyper,bgzip,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00230, E00296); no directed path between any process of the two tools"
+graphtyper,busco,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00230, E00497); no directed path between any process of the two tools"
+graphtyper,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00230, E00114); no directed path between any process of the two tools"
+graphtyper,make_gff_with_fasta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00230, E00447); no directed path between any process of the two tools"
+graphtyper,multiqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00230, E00527); no directed path between any process of the two tools"
+graphtyper,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00230, E00123); no directed path between any process of the two tools"
+graphtyper,perl-bioperl,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00230, E00457); no directed path between any process of the two tools"
+graphtyper,subset_busco_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00230, E00511); no directed path between any process of the two tools"
+graphtyper,subset_core_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00230, E00476); no directed path between any process of the two tools"
+make_gff_with_fasta,assign_mapping_reference,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00447, E00133); no directed path between any process of the two tools"
+make_gff_with_fasta,bakta,parallel_co_use,0,0,,"both consume ASSIGN_CORE_REFERENCES.references (E00443, E00428); no directed path between any process of the two tools"
+make_gff_with_fasta,bgzip,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00447, E00296); no directed path between any process of the two tools"
+make_gff_with_fasta,busco,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00447, E00497); no directed path between any process of the two tools"
+make_gff_with_fasta,bwa,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00447, E00186); no directed path between any process of the two tools"
+make_gff_with_fasta,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00447, E00114); no directed path between any process of the two tools"
+make_gff_with_fasta,gatk4,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00447, E00314); no directed path between any process of the two tools"
+make_gff_with_fasta,graphtyper,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00447, E00230); no directed path between any process of the two tools"
+make_gff_with_fasta,multiqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00447, E00527); no directed path between any process of the two tools"
+make_gff_with_fasta,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00447, E00123); no directed path between any process of the two tools"
+make_gff_with_fasta,picard,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00447, E00153); no directed path between any process of the two tools"
+make_gff_with_fasta,picard_format,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00447, E00215); no directed path between any process of the two tools"
+make_gff_with_fasta,samtools,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00447, E00164); no directed path between any process of the two tools"
+make_gff_with_fasta,subset_busco_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00447, E00511); no directed path between any process of the two tools"
+make_gff_with_fasta,vcf_to_snp_align,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00447, E00410); no directed path between any process of the two tools"
+multiqc,assign_context_references,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00527, E00488); no directed path between any process of the two tools"
+multiqc,assign_mapping_reference,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00527, E00133); no directed path between any process of the two tools"
+multiqc,bakta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00527, E00432); no directed path between any process of the two tools"
+multiqc,bgzip,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00527, E00296); no directed path between any process of the two tools"
+multiqc,busco,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00527, E00497); no directed path between any process of the two tools"
+multiqc,bwa,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00527, E00186); no directed path between any process of the two tools"
+multiqc,gatk4,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00527, E00314); no directed path between any process of the two tools"
+multiqc,graphtyper,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00527, E00230); no directed path between any process of the two tools"
+multiqc,make_gff_with_fasta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00527, E00447); no directed path between any process of the two tools"
+multiqc,perl-bioperl,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00527, E00457); no directed path between any process of the two tools"
+multiqc,picard,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00527, E00153); no directed path between any process of the two tools"
+multiqc,picard_format,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00527, E00215); no directed path between any process of the two tools"
+multiqc,samtools,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00527, E00164); no directed path between any process of the two tools"
+multiqc,sourmash,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00527, E00103); no directed path between any process of the two tools"
+multiqc,subset_busco_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00527, E00511); no directed path between any process of the two tools"
+multiqc,subset_core_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00527, E00476); no directed path between any process of the two tools"
+multiqc,trim_and_sketch,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00527, E00079); no directed path between any process of the two tools"
+multiqc,vcf_to_snp_align,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00527, E00410); no directed path between any process of the two tools"
+nanoplot,assign_context_references,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00488); no directed path between any process of the two tools"
+nanoplot,assign_mapping_reference,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00133); no directed path between any process of the two tools"
+nanoplot,bakta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00432); no directed path between any process of the two tools"
+nanoplot,bgzip,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00296); no directed path between any process of the two tools"
+nanoplot,busco,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00497); no directed path between any process of the two tools"
+nanoplot,bwa,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00186); no directed path between any process of the two tools"
+nanoplot,fastp,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00047); no directed path between any process of the two tools"
+nanoplot,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00114); no directed path between any process of the two tools"
+nanoplot,flye,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00058); no directed path between any process of the two tools"
+nanoplot,gatk4,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00314); no directed path between any process of the two tools"
+nanoplot,graphtyper,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00230); no directed path between any process of the two tools"
+nanoplot,make_gff_with_fasta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00447); no directed path between any process of the two tools"
+nanoplot,perl-bioperl,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00457); no directed path between any process of the two tools"
+nanoplot,picard,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00153); no directed path between any process of the two tools"
+nanoplot,picard_format,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00215); no directed path between any process of the two tools"
+nanoplot,samtools,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00164); no directed path between any process of the two tools"
+nanoplot,sourmash,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00103); no directed path between any process of the two tools"
+nanoplot,subset_busco_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00511); no directed path between any process of the two tools"
+nanoplot,subset_core_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00476); no directed path between any process of the two tools"
+nanoplot,trim_and_sketch,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00079); no directed path between any process of the two tools"
+nanoplot,vcf_to_snp_align,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00123, E00410); no directed path between any process of the two tools"
+perl-bioperl,assign_mapping_reference,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00457, E00133); no directed path between any process of the two tools"
+perl-bioperl,bgzip,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00457, E00296); no directed path between any process of the two tools"
+perl-bioperl,busco,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00464, E00504); no directed path between any process of the two tools"
+perl-bioperl,bwa,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00457, E00186); no directed path between any process of the two tools"
+perl-bioperl,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00457, E00114); no directed path between any process of the two tools"
+perl-bioperl,gatk4,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00457, E00314); no directed path between any process of the two tools"
+perl-bioperl,graphtyper,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00457, E00230); no directed path between any process of the two tools"
+perl-bioperl,multiqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00457, E00527); no directed path between any process of the two tools"
+perl-bioperl,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00457, E00123); no directed path between any process of the two tools"
+perl-bioperl,picard,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00457, E00153); no directed path between any process of the two tools"
+perl-bioperl,picard_format,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00457, E00215); no directed path between any process of the two tools"
+perl-bioperl,quast,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00464, E00074); no directed path between any process of the two tools"
+perl-bioperl,samtools,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00457, E00164); no directed path between any process of the two tools"
+perl-bioperl,subset_busco_genes,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00464, E00518); no directed path between any process of the two tools"
+perl-bioperl,vcf_to_snp_align,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00457, E00410); no directed path between any process of the two tools"
+picard,assign_context_references,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00153, E00488); no directed path between any process of the two tools"
+picard,bakta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00153, E00432); no directed path between any process of the two tools"
+picard,busco,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00153, E00497); no directed path between any process of the two tools"
+picard,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00153, E00114); no directed path between any process of the two tools"
+picard,make_gff_with_fasta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00153, E00447); no directed path between any process of the two tools"
+picard,multiqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00153, E00527); no directed path between any process of the two tools"
+picard,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00153, E00123); no directed path between any process of the two tools"
+picard,perl-bioperl,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00153, E00457); no directed path between any process of the two tools"
+picard,subset_busco_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00153, E00511); no directed path between any process of the two tools"
+picard,subset_core_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00153, E00476); no directed path between any process of the two tools"
+picard_format,assign_context_references,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00215, E00488); no directed path between any process of the two tools"
+picard_format,bakta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00215, E00432); no directed path between any process of the two tools"
+picard_format,busco,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00215, E00497); no directed path between any process of the two tools"
+picard_format,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00215, E00114); no directed path between any process of the two tools"
+picard_format,make_gff_with_fasta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00215, E00447); no directed path between any process of the two tools"
+picard_format,multiqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00215, E00527); no directed path between any process of the two tools"
+picard_format,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00215, E00123); no directed path between any process of the two tools"
+picard_format,perl-bioperl,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00215, E00457); no directed path between any process of the two tools"
+picard_format,subset_busco_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00215, E00511); no directed path between any process of the two tools"
+picard_format,subset_core_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00215, E00476); no directed path between any process of the two tools"
+quast,bakta,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00074, E00439); no directed path between any process of the two tools"
+quast,busco,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00074, E00504); no directed path between any process of the two tools"
+quast,perl-bioperl,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00074, E00464); no directed path between any process of the two tools"
+quast,sourmash,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00074, E00098); no directed path between any process of the two tools"
+quast,subset_busco_genes,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00074, E00518); no directed path between any process of the two tools"
+quast,trim_and_sketch,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00074, E00086); no directed path between any process of the two tools"
+reformat_pirate_results,extract_feature_sequences,parallel_co_use,0,0,,"both consume PIRATE.results (E00468, E00470); no directed path between any process of the two tools"
+samtools,assign_context_references,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00164, E00488); no directed path between any process of the two tools"
+samtools,bakta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00164, E00432); no directed path between any process of the two tools"
+samtools,busco,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00164, E00497); no directed path between any process of the two tools"
+samtools,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00164, E00114); no directed path between any process of the two tools"
+samtools,make_gff_with_fasta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00164, E00447); no directed path between any process of the two tools"
+samtools,multiqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00164, E00527); no directed path between any process of the two tools"
+samtools,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00164, E00123); no directed path between any process of the two tools"
+samtools,perl-bioperl,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00164, E00457); no directed path between any process of the two tools"
+samtools,subset_busco_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00164, E00511); no directed path between any process of the two tools"
+samtools,subset_core_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00164, E00476); no directed path between any process of the two tools"
+sourmash,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00103, E00114); no directed path between any process of the two tools"
+sourmash,multiqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00103, E00527); no directed path between any process of the two tools"
+sourmash,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00103, E00123); no directed path between any process of the two tools"
+sourmash,quast,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00098, E00074); no directed path between any process of the two tools"
+subset_busco_genes,assign_mapping_reference,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00511, E00133); no directed path between any process of the two tools"
+subset_busco_genes,bakta,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00518, E00439); no directed path between any process of the two tools"
+subset_busco_genes,bgzip,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00511, E00296); no directed path between any process of the two tools"
+subset_busco_genes,bwa,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00511, E00186); no directed path between any process of the two tools"
+subset_busco_genes,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00511, E00114); no directed path between any process of the two tools"
+subset_busco_genes,gatk4,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00511, E00314); no directed path between any process of the two tools"
+subset_busco_genes,graphtyper,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00511, E00230); no directed path between any process of the two tools"
+subset_busco_genes,make_gff_with_fasta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00511, E00447); no directed path between any process of the two tools"
+subset_busco_genes,multiqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00511, E00527); no directed path between any process of the two tools"
+subset_busco_genes,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00511, E00123); no directed path between any process of the two tools"
+subset_busco_genes,perl-bioperl,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00518, E00464); no directed path between any process of the two tools"
+subset_busco_genes,picard,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00511, E00153); no directed path between any process of the two tools"
+subset_busco_genes,picard_format,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00511, E00215); no directed path between any process of the two tools"
+subset_busco_genes,quast,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00518, E00074); no directed path between any process of the two tools"
+subset_busco_genes,samtools,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00511, E00164); no directed path between any process of the two tools"
+subset_busco_genes,subset_core_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00511, E00476); no directed path between any process of the two tools"
+subset_busco_genes,vcf_to_snp_align,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00511, E00410); no directed path between any process of the two tools"
+subset_core_genes,assign_mapping_reference,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00476, E00133); no directed path between any process of the two tools"
+subset_core_genes,bgzip,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00476, E00296); no directed path between any process of the two tools"
+subset_core_genes,busco,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00476, E00497); no directed path between any process of the two tools"
+subset_core_genes,bwa,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00476, E00186); no directed path between any process of the two tools"
+subset_core_genes,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00476, E00114); no directed path between any process of the two tools"
+subset_core_genes,gatk4,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00476, E00314); no directed path between any process of the two tools"
+subset_core_genes,graphtyper,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00476, E00230); no directed path between any process of the two tools"
+subset_core_genes,multiqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00476, E00527); no directed path between any process of the two tools"
+subset_core_genes,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00476, E00123); no directed path between any process of the two tools"
+subset_core_genes,picard,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00476, E00153); no directed path between any process of the two tools"
+subset_core_genes,picard_format,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00476, E00215); no directed path between any process of the two tools"
+subset_core_genes,samtools,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00476, E00164); no directed path between any process of the two tools"
+subset_core_genes,subset_busco_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00476, E00511); no directed path between any process of the two tools"
+subset_core_genes,vcf_to_snp_align,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00476, E00410); no directed path between any process of the two tools"
+trim_and_sketch,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00079, E00114); no directed path between any process of the two tools"
+trim_and_sketch,multiqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00079, E00527); no directed path between any process of the two tools"
+trim_and_sketch,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00079, E00123); no directed path between any process of the two tools"
+trim_and_sketch,quast,parallel_co_use,0,0,,"both consume FLYE_NANOPORE.fasta (E00086, E00074); no directed path between any process of the two tools"
+vcf_to_snp_align,assign_context_references,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00410, E00488); no directed path between any process of the two tools"
+vcf_to_snp_align,bakta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00410, E00432); no directed path between any process of the two tools"
+vcf_to_snp_align,busco,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00410, E00497); no directed path between any process of the two tools"
+vcf_to_snp_align,fastqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00410, E00114); no directed path between any process of the two tools"
+vcf_to_snp_align,make_gff_with_fasta,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00410, E00447); no directed path between any process of the two tools"
+vcf_to_snp_align,multiqc,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00410, E00527); no directed path between any process of the two tools"
+vcf_to_snp_align,nanoplot,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00410, E00123); no directed path between any process of the two tools"
+vcf_to_snp_align,perl-bioperl,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00410, E00457); no directed path between any process of the two tools"
+vcf_to_snp_align,subset_busco_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00410, E00511); no directed path between any process of the two tools"
+vcf_to_snp_align,subset_core_genes,parallel_co_use,0,0,,"both consume BBMAP_SENDSKETCH.hits (E00410, E00476); no directed path between any process of the two tools"

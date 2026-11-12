@@ -1,0 +1,51 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+art,create_samplesheet,data_flow,1,1,E00017,
+art,fastqc,data_flow,1,1,E00022,
+bedtools,bowtie2,data_flow,1,1,E00009,
+bowtie2,japsa_capsim,data_flow,1,1,E00013,
+bowtie2,samtools,data_flow,1,1,E00011,
+crabs,art,data_flow,1,1,E00004,
+create_samplesheet,merge_samplesheets,data_flow,1,1,E00021,
+fastqc,multiqc,data_flow,1,1,E00026,
+insilicoseq,create_samplesheet,data_flow,1,1,E00019,
+insilicoseq,fastqc,data_flow,1,1,E00024,
+japsa_capsim,create_samplesheet,data_flow,1,1,E00018,
+japsa_capsim,fastqc,data_flow,1,1,E00023,
+merge_fastas,bowtie2,data_flow,1,1,E00007,
+merge_fastas,crabs,data_flow,1,1,E00002,
+merge_fastas,insilicoseq,data_flow,1,1,E00015,
+merge_fastas,japsa_capsim,data_flow,1,1,E00012,
+merge_fastas,uncompress_fasta,data_flow,1,1,E00005,
+merge_fastas,wgsim,data_flow,1,1,E00016,
+ncbi-genome-download,merge_fastas,data_flow,1,1,E00001,
+samtools,japsa_capsim,data_flow,1,1,E00014,
+uncompress_fasta,bedtools,data_flow,1,1,E00006,
+unzip,bowtie2,data_flow,1,1,E00008,
+wgsim,create_samplesheet,data_flow,1,1,E00020,
+wgsim,fastqc,data_flow,1,1,E00025,
+bowtie2,crabs,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00007, E00002); no directed path between any process of the two tools"
+bowtie2,insilicoseq,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00007, E00015); no directed path between any process of the two tools"
+bowtie2,wgsim,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00007, E00016); no directed path between any process of the two tools"
+crabs,bowtie2,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00002, E00007); no directed path between any process of the two tools"
+crabs,insilicoseq,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00002, E00015); no directed path between any process of the two tools"
+crabs,japsa_capsim,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00002, E00012); no directed path between any process of the two tools"
+crabs,uncompress_fasta,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00002, E00005); no directed path between any process of the two tools"
+crabs,wgsim,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00002, E00016); no directed path between any process of the two tools"
+create_samplesheet,fastqc,parallel_co_use,0,0,,"both consume ART_ILLUMINA.fastq (E00017, E00022); no directed path between any process of the two tools"
+fastqc,create_samplesheet,parallel_co_use,0,0,,"both consume ART_ILLUMINA.fastq (E00022, E00017); no directed path between any process of the two tools"
+insilicoseq,bowtie2,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00015, E00007); no directed path between any process of the two tools"
+insilicoseq,crabs,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00015, E00002); no directed path between any process of the two tools"
+insilicoseq,japsa_capsim,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00015, E00012); no directed path between any process of the two tools"
+insilicoseq,uncompress_fasta,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00015, E00005); no directed path between any process of the two tools"
+insilicoseq,wgsim,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00015, E00016); no directed path between any process of the two tools"
+japsa_capsim,crabs,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00012, E00002); no directed path between any process of the two tools"
+japsa_capsim,insilicoseq,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00012, E00015); no directed path between any process of the two tools"
+japsa_capsim,wgsim,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00012, E00016); no directed path between any process of the two tools"
+uncompress_fasta,crabs,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00005, E00002); no directed path between any process of the two tools"
+uncompress_fasta,insilicoseq,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00005, E00015); no directed path between any process of the two tools"
+uncompress_fasta,wgsim,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00005, E00016); no directed path between any process of the two tools"
+wgsim,bowtie2,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00016, E00007); no directed path between any process of the two tools"
+wgsim,crabs,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00016, E00002); no directed path between any process of the two tools"
+wgsim,insilicoseq,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00016, E00015); no directed path between any process of the two tools"
+wgsim,japsa_capsim,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00016, E00012); no directed path between any process of the two tools"
+wgsim,uncompress_fasta,parallel_co_use,0,0,,"both consume MERGE_FASTAS.fasta (E00016, E00005); no directed path between any process of the two tools"

@@ -1,0 +1,39 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_SPATIALVI:SPATIALVI:INPUT_CHECK:UNTAR_SPACERANGER_INPUT,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_SPATIALVI:SPATIALVI:INPUT_CHECK:UNTAR_DOWNSTREAM_INPUT,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_SPATIALVI:SPATIALVI:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_SPATIALVI:SPATIALVI:SPACERANGER:SPACERANGER_UNTAR_REFERENCE,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_SPATIALVI:SPATIALVI:SPACERANGER:SPACERANGER_COUNT,SPACERANGER_COUNT,modules/nf-core/spaceranger/count/main.nf,1,spaceranger,spaceranger,,meta.yml
+NFCORE_SPATIALVI:SPATIALVI:SDATA_READ_VISIUM,SDATA_READ_VISIUM,modules/local/sdata/read_visium/main.nf,1,sdata_read_visium,,,module name
+NFCORE_SPATIALVI:SPATIALVI:SDATA_TO_LEGACY_ANNDATA,SDATA_TO_LEGACY_ANNDATA,modules/local/sdata/to_legacy_anndata/main.nf,1,sdata_to_legacy_anndata,,,module name
+NFCORE_SPATIALVI:SPATIALVI:SCANPY_CALCULATE_QC_METRICS,SCANPY_CALCULATE_QC_METRICS,modules/local/scanpy/calculate_qc_metrics/main.nf,1,scanpy_calculate_qc_metrics,,,module name
+NFCORE_SPATIALVI:SPATIALVI:SCANPY_FILTER,SCANPY_FILTER,modules/local/scanpy/filter/main.nf,1,scanpy_filter,,,module name
+NFCORE_SPATIALVI:SPATIALVI:PREPROCESSING:SCANPY_NORMALIZE_TOTAL,SCANPY_NORMALIZE_TOTAL,modules/local/scanpy/normalize_total/main.nf,1,scanpy_normalize_total,,,module name
+NFCORE_SPATIALVI:SPATIALVI:PREPROCESSING:SCANPY_LOG1P,SCANPY_LOG1P,modules/local/scanpy/log1p/main.nf,1,scanpy_log1p,,,module name
+NFCORE_SPATIALVI:SPATIALVI:PREPROCESSING:SCANPY_HIGHLY_VARIABLE_GENES,SCANPY_HIGHLY_VARIABLE_GENES,modules/local/scanpy/highly_variable_genes/main.nf,1,scanpy_highly_variable_genes,,,module name
+NFCORE_SPATIALVI:SPATIALVI:PREPROCESSING:SCANPY_PCA,SCANPY_PCA,modules/local/scanpy/pca/main.nf,1,scanpy_pca,,,module name
+NFCORE_SPATIALVI:SPATIALVI:CLUSTERING:SCANPY_NEIGHBORS,SCANPY_NEIGHBORS,modules/local/scanpy/neighbors/main.nf,1,scanpy_neighbors,,,module name
+NFCORE_SPATIALVI:SPATIALVI:CLUSTERING:SCANPY_UMAP,SCANPY_UMAP,modules/local/scanpy/umap/main.nf,1,scanpy_umap,,,module name
+NFCORE_SPATIALVI:SPATIALVI:CLUSTERING:SCANPY_LEIDEN,SCANPY_LEIDEN,modules/local/scanpy/leiden/main.nf,1,scanpy_leiden,,,module name
+NFCORE_SPATIALVI:SPATIALVI:SCANPY_RANK_GENES_GROUPS,SCANPY_RANK_GENES_GROUPS,modules/local/scanpy/rank_genes_groups/main.nf,1,scanpy_rank_genes_groups,,,module name
+NFCORE_SPATIALVI:SPATIALVI:SPATIAL:SQUIDPY_SPATIAL_NEIGHBORS,SQUIDPY_SPATIAL_NEIGHBORS,modules/local/squidpy/spatial_neighbors/main.nf,1,squidpy_spatial_neighbors,,,module name
+NFCORE_SPATIALVI:SPATIALVI:SPATIAL:SQUIDPY_NHOOD_ENRICHMENT,SQUIDPY_NHOOD_ENRICHMENT,modules/local/squidpy/nhood_enrichment/main.nf,1,squidpy_nhood_enrichment,,,module name
+NFCORE_SPATIALVI:SPATIALVI:SPATIAL:SQUIDPY_INTERACTION_MATRIX,SQUIDPY_INTERACTION_MATRIX,modules/local/squidpy/interaction_matrix/main.nf,1,squidpy_interaction_matrix,,,module name
+NFCORE_SPATIALVI:SPATIALVI:SPATIAL:SQUIDPY_SPATIAL_AUTOCORR,SQUIDPY_SPATIAL_AUTOCORR,modules/local/squidpy/spatial_autocorr/main.nf,1,squidpy_spatial_autocorr,,,module name
+NFCORE_SPATIALVI:SPATIALVI:ADATA_EXTEND,ADATA_EXTEND,modules/local/adata/extend/main.nf,1,adata_extend,,,module name
+NFCORE_SPATIALVI:SPATIALVI:SDATA_UPDATE_TABLE,SDATA_UPDATE_TABLE,modules/local/sdata/update_table/main.nf,1,sdata_update_table,,,module name
+NFCORE_SPATIALVI:SPATIALVI:REPORT,QUARTO_NOTEBOOK,modules/nf-core/quarto/notebook/main.nf,1,jupyter,quarto;papermill,jupyter;matplotlib;papermill;python;quarto;r-base;r-rmarkdown,environment.yml
+NFCORE_SPATIALVI:SPATIALVI:SDATA_MERGE,SDATA_MERGE,modules/local/sdata/merge/main.nf,1,sdata_merge,,,module name
+NFCORE_SPATIALVI:SPATIALVI:INTEGRATION:ADATA_MERGE,ADATA_MERGE,modules/local/adata/merge/main.nf,1,adata_merge,,,module name
+NFCORE_SPATIALVI:SPATIALVI:INTEGRATION:PREPROCESSING:SCANPY_NORMALIZE_TOTAL,SCANPY_NORMALIZE_TOTAL,modules/local/scanpy/normalize_total/main.nf,1,scanpy_normalize_total,,,module name
+NFCORE_SPATIALVI:SPATIALVI:INTEGRATION:PREPROCESSING:SCANPY_LOG1P,SCANPY_LOG1P,modules/local/scanpy/log1p/main.nf,1,scanpy_log1p,,,module name
+NFCORE_SPATIALVI:SPATIALVI:INTEGRATION:PREPROCESSING:SCANPY_HIGHLY_VARIABLE_GENES,SCANPY_HIGHLY_VARIABLE_GENES,modules/local/scanpy/highly_variable_genes/main.nf,1,scanpy_highly_variable_genes,,,module name
+NFCORE_SPATIALVI:SPATIALVI:INTEGRATION:PREPROCESSING:SCANPY_PCA,SCANPY_PCA,modules/local/scanpy/pca/main.nf,1,scanpy_pca,,,module name
+NFCORE_SPATIALVI:SPATIALVI:INTEGRATION:SCANPY_HARMONY,SCANPY_HARMONY,modules/local/scanpy/harmony/main.nf,1,scanpy_harmony,,,module name
+NFCORE_SPATIALVI:SPATIALVI:INTEGRATION:SCANPY_SCANORAMA,SCANPY_SCANORAMA,modules/local/scanpy/scanorama/main.nf,1,scanpy_scanorama,,,module name
+NFCORE_SPATIALVI:SPATIALVI:INTEGRATION:CLUSTERING:SCANPY_NEIGHBORS,SCANPY_NEIGHBORS,modules/local/scanpy/neighbors/main.nf,1,scanpy_neighbors,,,module name
+NFCORE_SPATIALVI:SPATIALVI:INTEGRATION:CLUSTERING:SCANPY_UMAP,SCANPY_UMAP,modules/local/scanpy/umap/main.nf,1,scanpy_umap,,,module name
+NFCORE_SPATIALVI:SPATIALVI:INTEGRATION:CLUSTERING:SCANPY_LEIDEN,SCANPY_LEIDEN,modules/local/scanpy/leiden/main.nf,1,scanpy_leiden,,,module name
+NFCORE_SPATIALVI:SPATIALVI:INTEGRATION:SDATA_UPDATE_TABLE_INTEGRATION,SDATA_UPDATE_TABLE,modules/local/sdata/update_table/main.nf,1,sdata_update_table,,,module name
+NFCORE_SPATIALVI:SPATIALVI:INTEGRATION:REPORT_INTEGRATED,QUARTO_NOTEBOOK,modules/nf-core/quarto/notebook/main.nf,1,jupyter,quarto;papermill,jupyter;matplotlib;papermill;python;quarto;r-base;r-rmarkdown,environment.yml
+NFCORE_SPATIALVI:SPATIALVI:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

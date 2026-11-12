@@ -1,0 +1,117 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_ATACSEQ:PREPARE_GENOME:GUNZIP_FASTA,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_ATACSEQ:PREPARE_GENOME:GUNZIP_GTF,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_ATACSEQ:PREPARE_GENOME:GUNZIP_GFF,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_ATACSEQ:PREPARE_GENOME:GFFREAD,GFFREAD,modules/nf-core/gffread/main.nf,1,gffread,gffread,gffread,environment.yml
+NFCORE_ATACSEQ:PREPARE_GENOME:GUNZIP_BLACKLIST,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_ATACSEQ:PREPARE_GENOME:GTF2BED,GTF2BED,modules/local/gtf2bed.nf,1,gtf2bed,,,module name
+NFCORE_ATACSEQ:PREPARE_GENOME:GUNZIP_GENE_BED,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_ATACSEQ:PREPARE_GENOME:TSS_EXTRACT,TSS_EXTRACT,modules/local/tss_extract.nf,1,tss_extract,,,module name
+NFCORE_ATACSEQ:PREPARE_GENOME:GUNZIP_TSS_BED,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_ATACSEQ:PREPARE_GENOME:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES,GET_AUTOSOMES,modules/local/get_autosomes.nf,1,get_autosomes,,,module name
+NFCORE_ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS,GENOME_BLACKLIST_REGIONS,modules/local/genome_blacklist_regions.nf,1,genome_blacklist_regions,,,module name
+NFCORE_ATACSEQ:PREPARE_GENOME:UNTAR_BWA_INDEX,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_ATACSEQ:PREPARE_GENOME:BWA_INDEX,BWA_INDEX,modules/nf-core/bwa/index/main.nf,1,bwa,bwa,bwa;htslib;samtools,environment.yml
+NFCORE_ATACSEQ:PREPARE_GENOME:UNTAR_BOWTIE2_INDEX,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_ATACSEQ:PREPARE_GENOME:BOWTIE2_BUILD,BOWTIE2_BUILD,modules/nf-core/bowtie2/build/main.nf,1,bowtie2,bowtie2,bowtie2;htslib;samtools;pigz,environment.yml
+NFCORE_ATACSEQ:PREPARE_GENOME:UNTAR_CHROMAP_INDEX,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_ATACSEQ:PREPARE_GENOME:CHROMAP_INDEX,CHROMAP_INDEX,modules/nf-core/chromap/index/main.nf,1,chromap,chromap,chromap,environment.yml
+NFCORE_ATACSEQ:PREPARE_GENOME:UNTAR_STAR_INDEX,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_ATACSEQ:PREPARE_GENOME:STAR_GENOMEGENERATE,STAR_GENOMEGENERATE,modules/local/star_genomegenerate.nf,1,star_genomegenerate,,,module name
+NFCORE_ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS,KHMER_UNIQUEKMERS,modules/nf-core/khmer/uniquekmers/main.nf,1,khmer,khmer,khmer,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK,SAMPLESHEET_CHECK,modules/local/samplesheet_check.nf,1,samplesheet_check,,,module name
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:UMITOOLS_EXTRACT,UMITOOLS_EXTRACT,modules/nf-core/umitools/extract/main.nf,1,umi_tools,umi_tools,umi_tools;future;matplotlib;numpy;pandas;python;regex;scipy;pybktree;pysam,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE,TRIMGALORE,modules/nf-core/trimgalore/main.nf,1,trim-galore,trimgalore,trim-galore,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BWA_MEM,BWA_MEM,modules/nf-core/bwa/mem/main.nf,1,bwa,bwa,bwa;htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BOWTIE2:BOWTIE2_ALIGN,BOWTIE2_ALIGN,modules/nf-core/bowtie2/align/main.nf,1,bowtie2,bowtie2,bowtie2;htslib;samtools;pigz,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BOWTIE2:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BOWTIE2:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BOWTIE2:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BOWTIE2:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BOWTIE2:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_CHROMAP:CHROMAP_CHROMAP,CHROMAP_CHROMAP,modules/nf-core/chromap/chromap/main.nf,1,chromap,chromap,chromap;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_CHROMAP:PICARD_ADDORREPLACEREADGROUPS,PICARD_ADDORREPLACEREADGROUPS,modules/nf-core/picard/addorreplacereadgroups/main.nf,1,picard,picard,picard,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_CHROMAP:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_CHROMAP:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_CHROMAP:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_CHROMAP:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_CHROMAP:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:ALIGN_STAR:STAR_ALIGN,STAR_ALIGN,modules/local/star_align.nf,1,star_align,,,module name
+NFCORE_ATACSEQ:ATACSEQ:ALIGN_STAR:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:ALIGN_STAR:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:ALIGN_STAR:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:ALIGN_STAR:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:ALIGN_STAR:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_LIBRARY,PICARD_MERGESAMFILES,modules/nf-core/picard/mergesamfiles/main.nf,1,picard,picard,picard,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES,PICARD_MARKDUPLICATES,modules/nf-core/picard/markduplicates/main.nf,1,picard,picard,picard,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAMTOOLS_FILTER,BAMTOOLS_FILTER,modules/local/bamtools_filter.nf,1,bamtools_filter,,,module name
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_REMOVE_ORPHANS,BAM_REMOVE_ORPHANS,modules/local/bam_remove_orphans.nf,1,bam_remove_orphans,,,module name
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_PRESEQ_LCEXTRAP,PRESEQ_LCEXTRAP,modules/nf-core/preseq/lcextrap/main.nf,1,preseq,preseq,preseq,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_PICARD_COLLECTMULTIPLEMETRICS,PICARD_COLLECTMULTIPLEMETRICS,modules/nf-core/picard/collectmultiplemetrics/main.nf,1,picard,picard,picard,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_SHIFT_READS:DEEPTOOLS_ALIGNMENTSIEVE,DEEPTOOLS_ALIGNMENTSIEVE,modules/nf-core/deeptools/alignmentsieve/main.nf,1,deeptools,deeptools,deeptools;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_SHIFT_READS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_SHIFT_READS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_SHIFT_READS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV,BEDTOOLS_GENOMECOV,modules/local/bedtools_genomecov.nf,1,bedtools_genomecov,,,module name
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG,UCSC_BEDGRAPHTOBIGWIG,modules/nf-core/ucsc/bedgraphtobigwig/main.nf,1,ucsc-bedgraphtobigwig,ucsc,ucsc-bedgraphtobigwig,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_SCALE_REGIONS,DEEPTOOLS_COMPUTEMATRIX,modules/nf-core/deeptools/computematrix/main.nf,1,deeptools,deeptools,deeptools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_REFERENCE_POINT,DEEPTOOLS_COMPUTEMATRIX,modules/nf-core/deeptools/computematrix/main.nf,1,deeptools,deeptools,deeptools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTPROFILE,DEEPTOOLS_PLOTPROFILE,modules/nf-core/deeptools/plotprofile/main.nf,1,deeptools,deeptools,deeptools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTHEATMAP,DEEPTOOLS_PLOTHEATMAP,modules/nf-core/deeptools/plotheatmap/main.nf,1,deeptools,deeptools,deeptools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_DEEPTOOLS_PLOTFINGERPRINT,DEEPTOOLS_PLOTFINGERPRINT,modules/nf-core/deeptools/plotfingerprint/main.nf,1,deeptools,deeptools,deeptools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MACS3_CALLPEAK,MACS3_CALLPEAK,modules/nf-core/macs3/callpeak/main.nf,1,macs3,macs3,macs3,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:FRIP_SCORE,FRIP_SCORE,modules/local/frip_score.nf,1,frip_score,,,module name
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS,MULTIQC_CUSTOM_PEAKS,modules/local/multiqc_custom_peaks.nf,1,multiqc_custom_peaks,,,module name
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS,HOMER_ANNOTATEPEAKS,modules/nf-core/homer/annotatepeaks/main.nf,1,bioconductor-deseq2,homer,bioconductor-deseq2;bioconductor-edger;homer;samtools;r-essentials;wget,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_MACS3_QC,PLOT_MACS3_QC,modules/local/plot_macs3_qc.nf,1,plot_macs3_qc,,,module name
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS,PLOT_HOMER_ANNOTATEPEAKS,modules/local/plot_homer_annotatepeaks.nf,1,plot_homer_annotatepeaks,,,module name
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:MACS3_CONSENSUS,MACS3_CONSENSUS,modules/local/macs3_consensus.nf,1,macs3_consensus,,,module name
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS,HOMER_ANNOTATEPEAKS,modules/nf-core/homer/annotatepeaks/main.nf,1,bioconductor-deseq2,homer,bioconductor-deseq2;bioconductor-edger;homer;samtools;r-essentials;wget,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS,SUBREAD_FEATURECOUNTS,modules/nf-core/subread/featurecounts/main.nf,1,subread,featurecounts,subread,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:DESEQ2_QC,DESEQ2_QC,modules/local/deseq2_qc.nf,1,deseq2_qc,,,module name
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_ATAQV,ATAQV_ATAQV,modules/nf-core/ataqv/ataqv/main.nf,1,ataqv,ataqv,ataqv,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_MKARV,ATAQV_MKARV,modules/nf-core/ataqv/mkarv/main.nf,1,ataqv,ataqv,ataqv,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_REPLICATE,PICARD_MERGESAMFILES,modules/nf-core/picard/mergesamfiles/main.nf,1,picard,picard,picard,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES,PICARD_MARKDUPLICATES,modules/nf-core/picard/markduplicates/main.nf,1,picard,picard,picard,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_SHIFT_READS:DEEPTOOLS_ALIGNMENTSIEVE,DEEPTOOLS_ALIGNMENTSIEVE,modules/nf-core/deeptools/alignmentsieve/main.nf,1,deeptools,deeptools,deeptools;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_SHIFT_READS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_SHIFT_READS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_SHIFT_READS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV,BEDTOOLS_GENOMECOV,modules/local/bedtools_genomecov.nf,1,bedtools_genomecov,,,module name
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG,UCSC_BEDGRAPHTOBIGWIG,modules/nf-core/ucsc/bedgraphtobigwig/main.nf,1,ucsc-bedgraphtobigwig,ucsc,ucsc-bedgraphtobigwig,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MACS3_CALLPEAK,MACS3_CALLPEAK,modules/nf-core/macs3/callpeak/main.nf,1,macs3,macs3,macs3,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:FRIP_SCORE,FRIP_SCORE,modules/local/frip_score.nf,1,frip_score,,,module name
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS,MULTIQC_CUSTOM_PEAKS,modules/local/multiqc_custom_peaks.nf,1,multiqc_custom_peaks,,,module name
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS,HOMER_ANNOTATEPEAKS,modules/nf-core/homer/annotatepeaks/main.nf,1,bioconductor-deseq2,homer,bioconductor-deseq2;bioconductor-edger;homer;samtools;r-essentials;wget,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_MACS3_QC,PLOT_MACS3_QC,modules/local/plot_macs3_qc.nf,1,plot_macs3_qc,,,module name
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS,PLOT_HOMER_ANNOTATEPEAKS,modules/local/plot_homer_annotatepeaks.nf,1,plot_homer_annotatepeaks,,,module name
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:MACS3_CONSENSUS,MACS3_CONSENSUS,modules/local/macs3_consensus.nf,1,macs3_consensus,,,module name
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS,HOMER_ANNOTATEPEAKS,modules/nf-core/homer/annotatepeaks/main.nf,1,bioconductor-deseq2,homer,bioconductor-deseq2;bioconductor-edger;homer;samtools;r-essentials;wget,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS,SUBREAD_FEATURECOUNTS,modules/nf-core/subread/featurecounts/main.nf,1,subread,featurecounts,subread,environment.yml
+NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:DESEQ2_QC,DESEQ2_QC,modules/local/deseq2_qc.nf,1,deseq2_qc,,,module name
+NFCORE_ATACSEQ:ATACSEQ:IGV,IGV,modules/local/igv.nf,1,igv,,,module name
+NFCORE_ATACSEQ:ATACSEQ:MULTIQC,MULTIQC,modules/local/multiqc.nf,1,multiqc,,,module name

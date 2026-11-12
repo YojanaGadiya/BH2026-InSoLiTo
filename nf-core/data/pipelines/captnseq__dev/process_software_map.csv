@@ -1,0 +1,20 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_CAPTNSEQ:CAPTNSEQ:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_CAPTNSEQ:CAPTNSEQ:CUTADAPT,CUTADAPT,modules/local/cutadapt.nf,1,cutadapt,,,module name
+NFCORE_CAPTNSEQ:CAPTNSEQ:FASTP,FASTP,modules/local/fastp.nf,1,fastp,,,module name
+NFCORE_CAPTNSEQ:CAPTNSEQ:BWA_INDEX,BWA_INDEX,modules/local/bwa_index.nf,1,bwa_index,,,module name
+NFCORE_CAPTNSEQ:CAPTNSEQ:BWA_MEM,BWA_MEM,modules/local/bwa_mem.nf,1,bwa_mem,,,module name
+NFCORE_CAPTNSEQ:CAPTNSEQ:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/local/samtools_sort.nf,1,samtools_sort,,,module name
+NFCORE_CAPTNSEQ:CAPTNSEQ:MARK_DUPLICATES,MARK_DUPLICATES,modules/local/mark_duplicates.nf,1,mark_duplicates,,,module name
+NFCORE_CAPTNSEQ:CAPTNSEQ:FLAGSTAT,FLAGSTAT,modules/local/flagstat.nf,1,flagstat,,,module name
+NFCORE_CAPTNSEQ:CAPTNSEQ:BAM2SAM,BAM2SAM,modules/local/bam2sam.nf,1,bam2sam,,,module name
+NFCORE_CAPTNSEQ:CAPTNSEQ:SAM2SITES,SAM2SITES,modules/local/sam2sites.nf,1,sam2sites,,,module name
+NFCORE_CAPTNSEQ:CAPTNSEQ:SAM2SITES_NOTDEDUP,SAM2SITES_NOTDEDUP,modules/local/sam2sites_notdedup.nf,1,sam2sites_notdedup,,,module name
+NFCORE_CAPTNSEQ:CAPTNSEQ:INTERSECT,INTERSECT,modules/local/intersect.nf,1,intersect,,,module name
+NFCORE_CAPTNSEQ:CAPTNSEQ:SITES2GENES,SITES2GENES,modules/local/sites2genes.nf,1,sites2genes,,,module name
+NFCORE_CAPTNSEQ:CAPTNSEQ:STATISTI_CALL,STATISTI_CALL,modules/local/statisti_call.nf,1,statisti_call,,,module name
+NFCORE_CAPTNSEQ:CAPTNSEQ:GREP_OTHER_CHROMOSOMES,GREP_OTHER_CHROMOSOMES,modules/local/grep_other_chromosomes.nf,1,grep_other_chromosomes,,,module name
+NFCORE_CAPTNSEQ:CAPTNSEQ:PRODUCE_MAPPED_READ_COUNTS,PRODUCE_MAPPED_READ_COUNTS,modules/local/produce_mapped_read_counts.nf,1,produce_mapped_read_counts,,,module name
+NFCORE_CAPTNSEQ:CAPTNSEQ:PRODUCE_INSERTION_COUNTS,PRODUCE_INSERTION_COUNTS,modules/local/produce_insertion_counts.nf,1,produce_insertion_counts,,,module name
+NFCORE_CAPTNSEQ:CAPTNSEQ:PRODUCE_CHR_COUNTS,PRODUCE_CHR_COUNTS,modules/local/produce_chr_counts.nf,1,produce_chr_counts,,,module name
+NFCORE_CAPTNSEQ:CAPTNSEQ:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

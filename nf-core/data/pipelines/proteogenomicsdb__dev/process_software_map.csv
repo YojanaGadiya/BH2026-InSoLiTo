@@ -1,0 +1,27 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+get_software_versions,get_software_versions,main.nf,126,scrape_software_versions,,scrape_software_versions,script and directives
+ensembl_fasta_download,ensembl_fasta_download,main.nf,148,pypgatk_cli,,pypgatk_cli,script and directives
+add_reference_proteome,add_reference_proteome,main.nf,172,add_reference_proteome,,,module name
+merge_cdnas,merge_cdnas,main.nf,193,merge_cdnas,,,module name
+add_ncrna,add_ncrna,main.nf,212,pypgatk_cli,,pypgatk_cli,script and directives
+add_pseudogenes,add_pseudogenes,main.nf,240,pypgatk_cli,,pypgatk_cli,script and directives
+add_altorfs,add_altorfs,main.nf,269,pypgatk_cli,,pypgatk_cli,script and directives
+cosmic_download,cosmic_download,main.nf,300,pypgatk_cli,,pypgatk_cli,script and directives
+cosmic_proteindb,cosmic_proteindb,main.nf,326,pypgatk_cli,,pypgatk_cli,script and directives
+cosmic_celllines_proteindb,cosmic_celllines_proteindb,main.nf,355,pypgatk_cli,,pypgatk_cli,script and directives
+ensembl_vcf_download,ensembl_vcf_download,main.nf,385,pypgatk_cli,,pypgatk_cli,script and directives
+check_ensembl_vcf,check_ensembl_vcf,main.nf,405,check_ensembl_vcf,,,module name
+ensembl_vcf_proteinDB,ensembl_vcf_proteinDB,main.nf,428,pypgatk_cli,,pypgatk_cli,script and directives
+gtf_to_fasta,gtf_to_fasta,main.nf,469,gffread,,gffread,script and directives
+vcf_proteinDB,vcf_proteinDB,main.nf,489,pypgatk_cli,,pypgatk_cli,script and directives
+gencode_download,gencode_download,main.nf,527,wget,,wget,script and directives
+gnomad_download,gnomad_download,main.nf,550,gsutil,,gsutil,script and directives
+extract_gnomad_vcf,extract_gnomad_vcf,main.nf,570,extract_gnomad_vcf,,,module name
+gnomad_proteindb,gnomad_proteindb,main.nf,590,pypgatk_cli,,pypgatk_cli,script and directives
+cds_GRCh37_download,cds_GRCh37_download,main.nf,629,wget,,wget,script and directives
+download_all_cbioportal,download_all_cbioportal,main.nf,647,git,,git;pypgatk_cli,script and directives
+cbioportal_proteindb,cbioportal_proteindb,main.nf,702,pypgatk_cli,,pypgatk_cli,script and directives
+merge_proteindbs,merge_proteindbs,main.nf,734,merge_proteindbs,,,module name
+clean_protein_database,clean_protein_database,main.nf,757,pypgatk_cli,,pypgatk_cli,script and directives
+decoy,decoy,main.nf,797,pypgatk_cli,,pypgatk_cli,script and directives
+output_documentation,output_documentation,main.nf,828,markdown_to_html,,markdown_to_html,script and directives

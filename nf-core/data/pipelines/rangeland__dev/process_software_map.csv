@@ -1,0 +1,13 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_RANGELAND:RANGELAND:UNTAR_INPUT,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,grep;sed;tar,environment.yml
+NFCORE_RANGELAND:RANGELAND:UNTAR_DEM,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,grep;sed;tar,environment.yml
+NFCORE_RANGELAND:RANGELAND:UNTAR_WVDB,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,grep;sed;tar,environment.yml
+NFCORE_RANGELAND:RANGELAND:PREPROCESSING:FORCE_GENERATE_TILE_ALLOW_LIST,FORCE_GENERATE_TILE_ALLOW_LIST,modules/local/force-generate_tile_allow_list/main.nf,1,force_generate_tile_allow_list,,,module name
+NFCORE_RANGELAND:RANGELAND:PREPROCESSING:FORCE_GENERATE_ANALYSIS_MASK,FORCE_GENERATE_ANALYSIS_MASK,modules/local/force-generate_analysis_mask/main.nf,1,force_generate_analysis_mask,,,module name
+NFCORE_RANGELAND:RANGELAND:PREPROCESSING:FORCE_PREPROCESS,FORCE_PREPROCESS,modules/local/force-preprocess/main.nf,1,force_preprocess,,,module name
+NFCORE_RANGELAND:RANGELAND:PREPROCESSING:MERGE_BOA,MERGE,modules/local/merge/main.nf,1,merge,,,module name
+NFCORE_RANGELAND:RANGELAND:PREPROCESSING:MERGE_QAI,MERGE,modules/local/merge/main.nf,1,merge,,,module name
+NFCORE_RANGELAND:RANGELAND:HIGHER_LEVEL:FORCE_HIGHER_LEVEL,FORCE_HIGHER_LEVEL,modules/local/force-higher_level/main.nf,1,force_higher_level,,,module name
+NFCORE_RANGELAND:RANGELAND:HIGHER_LEVEL:FORCE_MOSAIC,FORCE_MOSAIC,modules/local/force-mosaic/main.nf,1,force_mosaic,,,module name
+NFCORE_RANGELAND:RANGELAND:HIGHER_LEVEL:FORCE_PYRAMID,FORCE_PYRAMID,modules/local/force-pyramid/main.nf,1,force_pyramid,,,module name
+NFCORE_RANGELAND:RANGELAND:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

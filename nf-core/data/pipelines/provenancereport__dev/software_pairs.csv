@@ -1,0 +1,6 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+jupyter,md5sum,data_flow,2,1,E00003,
+jupyter,multiqc,data_flow,1,1,E00008,
+jupyter,reportenvironment,data_flow,1,1,E00002,
+md5sum,multiqc,data_flow,1,1,E00005,
+reportenvironment,multiqc,data_flow,2,2,E00006,
