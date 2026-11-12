@@ -114,7 +114,7 @@ To read how two tools are cited together, `pair_contexts.py` takes two bio.tools
 ```
 ## Workflows
 
-Tool pairs (tool A feeds tool B) from registered workflows, to compare with the citation order. Galaxy and Nextflow workflows come from WorkflowHub, and nf-core ones from nf-core (TODO:Xenie, is this correct?). Tool names are mapped to bio.tools IDs. See [`workflows/README.md`](workflows/README.md) for the run order.
+Tool pairs (tool A feeds tool B) from registered workflows, to compare with the citation order. Galaxy and Nextflow workflows come from WorkflowHub, and nf-core ones from nf-core. Tool names are mapped to bio.tools IDs. See [`workflows/README.md`](workflows/README.md) for the run order.
 
 The notebooks in [`analysis/`](analysis/README.md) compare these pairs with the directed citation edges.
 
@@ -126,7 +126,7 @@ The notebooks in [`analysis/`](analysis/README.md) compare these pairs with the 
 - [Europe PMC](https://europepmc.org/): Open Access full text, for citation order
 - [bio.tools](https://bio.tools/): tool publications
 - [WorkflowHub](https://workflowhub.eu/): Galaxy and Nextflow workflows
-- [nf-core](https://nf-co.re/): Nextflow pipelines TODO: Xenie, is this right? 
+- [nf-core](https://nf-co.re/): Nextflow pipelines
 - [Galaxy Codex](https://github.com/galaxyproject/galaxy_codex): Galaxy tool → bio.tools mapping
 
 Supporting files of the current InSoLiTo: [10.5281/zenodo.13740843](https://doi.org/10.5281/zenodo.13740843).

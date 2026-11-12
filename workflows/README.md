@@ -22,22 +22,23 @@ From the repository root:
 .venv/bin/python workflows/scripts/galaxy/map_galaxy_tools.py               # ToolShed names tranlsated to bio.tools IDs
 
 # Nextflow
-.venv/bin/python workflows/scripts/nextflow/download_workflowhub_nextflow.py
-.venv/bin/python workflows/scripts/nextflow/extract_nextflow_dags.py        # TODO: julian add description
-.venv/bin/python workflows/scripts/nextflow/map_nextflow_tools.py           # TODO: julian add description
+.venv/bin/python workflows/scripts/nextflow/download_workflowhub_nextflow.py  # downloads nextflow files from WorkflowHub
+.venv/bin/python workflows/scripts/nextflow/extract_nextflow_dags.py          # extracts graphs from each workflow
+.venv/bin/python workflows/scripts/nextflow/map_nextflow_tools.py             # Mapping the tools to bio.tools and creating pairs and edges
 
 # nf-core
-TODO: Xenie add scripts
+.venv/bin/python workflows/scripts/nf-core/1_download/downloader.py.    # downloads the pipeline files from GitHub.
+.venv/bin/python workflows/scripts/nf-core/2_pairs/run.py all           # the analysis, in five files
 
 # Combine outputs from all sources
-.venv/bin/python workflows/scripts/combine_workflow_edges.py
+.venv/bin/python workflows/scripts/combine_workflow_edges.py      # combines the workflows from the three sources and the citation data
 ```
 
 ## Data
 
-- `data/galaxy/`    downloaded Galaxy workflows and their tool pairs (ToolShed names)
+- `data/galaxy/`    Data related fo downloading Galaxy workflows and their tool pairs (ToolShed names)
 - `data/nextflow/`  tsv? TODO: Julian add descritpion
-- `data/nf-core/`  TODO: Xenie - add if you have any msc data files
+- `data/nf-core/`   Data related fo downloading nf-core workflows and their tool pairs
 - `data/mapping/`   tool name -> bio.tools ID maps, per source
 - `data/biotools/`  tool pairs with bio.tools IDs, 
   -  per source:
