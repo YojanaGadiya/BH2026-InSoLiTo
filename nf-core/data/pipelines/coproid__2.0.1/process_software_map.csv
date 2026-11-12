@@ -1,0 +1,26 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_COPROID:COPROID:PREPARE_GENOMES:BOWTIE2_BUILD,BOWTIE2_BUILD,modules/nf-core/bowtie2/build/main.nf,1,bowtie2,bowtie2,bowtie2,environment.yml
+NFCORE_COPROID:COPROID:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_COPROID:COPROID:FASTP,FASTP,modules/nf-core/fastp/main.nf,1,fastp,fastp,fastp,environment.yml
+NFCORE_COPROID:COPROID:ALIGN_INDEX:BOWTIE2_ALIGN,BOWTIE2_ALIGN,modules/nf-core/bowtie2/align/main.nf,1,bowtie2,bowtie2,bowtie2;samtools;pigz,environment.yml
+NFCORE_COPROID:COPROID:ALIGN_INDEX:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_COPROID:COPROID:DAMAGEPROFILER,DAMAGEPROFILER,modules/nf-core/damageprofiler/main.nf,1,damageprofiler,damageprofiler,damageprofiler,environment.yml
+NFCORE_COPROID:COPROID:DAMAGEPROFILER_MERGE,DAMAGEPROFILER_MERGE,modules/local/damageprofiler/merge/main.nf,1,damageprofiler_merge,,,module name
+NFCORE_COPROID:COPROID:PYDAMAGE_ANALYZE,PYDAMAGE_ANALYZE,modules/nf-core/pydamage/analyze/main.nf,1,pydamage,pydamage,pydamage,environment.yml
+NFCORE_COPROID:COPROID:PYDAMAGE_MERGE,PYDAMAGE_MERGE,modules/local/pydamage/merge/main.nf,1,pydamage_merge,,,module name
+NFCORE_COPROID:COPROID:MERGE_SORT_INDEX_SAMTOOLS:SAMTOOLS_MERGE,SAMTOOLS_MERGE,modules/nf-core/samtools/merge/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_COPROID:COPROID:MERGE_SORT_INDEX_SAMTOOLS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_COPROID:COPROID:MERGE_SORT_INDEX_SAMTOOLS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_COPROID:COPROID:SAM2LCA_DB:CREATE_ACC2TAX,CREATE_ACC2TAX,modules/local/create_acc2tax/main.nf,1,sam2lca,,sam2lca,environment.yml
+NFCORE_COPROID:COPROID:SAM2LCA_DB:SAM2LCA_PREPDB,SAM2LCA_PREPDB,modules/local/sam2lca/prep_db/main.nf,1,sam2lca,,sam2lca,environment.yml
+NFCORE_COPROID:COPROID:SAM2LCA_DB:SAM2LCA_UPDATEDB,SAM2LCA_UPDATEDB,modules/local/sam2lca/updatedb/main.nf,1,sam2lca,sam2lca,sam2lca,environment.yml
+NFCORE_COPROID:COPROID:SAM2LCA_ANALYZE,SAM2LCA_ANALYZE,modules/nf-core/sam2lca/analyze/main.nf,1,sam2lca,sam2lca,sam2lca;setuptools,environment.yml
+NFCORE_COPROID:COPROID:SAM2LCA_MERGE,SAM2LCA_MERGE,modules/local/sam2lca/merge/main.nf,1,sam2lca_merge,,,module name
+NFCORE_COPROID:COPROID:KRAKEN2_CLASSIFICATION:UNTAR,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_COPROID:COPROID:KRAKEN2_CLASSIFICATION:KRAKEN2_KRAKEN2,KRAKEN2_KRAKEN2,modules/nf-core/kraken2/kraken2/main.nf,1,kraken2,kraken2,kraken2;coreutils;pigz,environment.yml
+NFCORE_COPROID:COPROID:KRAKEN2_CLASSIFICATION:KRAKEN_PARSE,KRAKEN_PARSE,modules/local/kraken/parse/main.nf,1,kraken_parse,,,module name
+NFCORE_COPROID:COPROID:KRAKEN2_CLASSIFICATION:KRAKEN_MERGE,KRAKEN_MERGE,modules/local/kraken/merge/main.nf,1,kraken_merge,,,module name
+NFCORE_COPROID:COPROID:KRAKEN2_CLASSIFICATION:XZ_DECOMPRESS,XZ_DECOMPRESS,modules/nf-core/xz/decompress/main.nf,1,xz,xz,xz,environment.yml
+NFCORE_COPROID:COPROID:KRAKEN2_CLASSIFICATION:SOURCEPREDICT,SOURCEPREDICT,modules/nf-core/sourcepredict/main.nf,1,sourcepredict,sourcepredict,sourcepredict;python;scikit-learn,environment.yml
+NFCORE_COPROID:COPROID:QUARTO_REPORTING:QUARTONOTEBOOK,QUARTONOTEBOOK,modules/nf-core/quartonotebook/main.nf,2,jupyter,quartonotebook;papermill,jupyter;matplotlib;papermill;quarto;r-rmarkdown,environment.yml
+NFCORE_COPROID:COPROID:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

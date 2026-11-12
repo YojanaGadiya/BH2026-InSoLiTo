@@ -1,0 +1,70 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bcftools,beagle,data_flow,11,11,E00391,
+bcftools,gawk,data_flow,9,7,E00067,
+bcftools,glimpse-bio,data_flow,70,70,E00069,
+bcftools,minimac4,data_flow,20,16,E00421,
+bcftools,multiqc,data_flow,4,4,E00649,
+bcftools,r-quilt,data_flow,15,14,E00317,
+bcftools,r-stitch,data_flow,2,2,E00291,
+bcftools,samtools,data_flow,8,8,E00006,
+bcftools,shapeit5,data_flow,7,7,E00095,
+bcftools,xz,data_flow,47,33,E00161,
+beagle,bcftools,data_flow,1,1,E00406,
+beagle,glimpse-bio,data_flow,1,1,E00407,
+gawk,bcftools,data_flow,2,2,E00528,
+gawk,glimpse-bio,gate_metadata,1,0,E00256,
+gawk,multiqc,data_flow,4,4,E00647,
+gawk,r-quilt,gate_metadata,2,0,E00319,
+gawk,r-stitch,gate_metadata,1,0,E00293,
+gawk,xz,data_flow,2,2,E00068,
+glimpse-bio,bcftools,data_flow,23,23,E00210,
+glimpse-bio,gawk,data_flow,2,2,E00642,
+glimpse-bio,gunzip,data_flow,1,1,E00644,
+glimpse-bio,multiqc,data_flow,4,4,E00653,
+glimpse-bio,shapeit5,data_flow,1,1,E00104,
+glimpse-bio,xz,data_flow,7,7,E00220,
+gunzip,gawk,data_flow,1,1,E00645,
+minimac4,bcftools,data_flow,1,1,E00456,
+minimac4,glimpse-bio,data_flow,1,1,E00457,
+r-data.table,beagle,data_flow,1,1,E00405,
+r-data.table,glimpse-bio,data_flow,6,6,E00085,
+r-data.table,minimac4,data_flow,1,1,E00455,
+r-data.table,r-quilt,data_flow,2,2,E00326,
+r-data.table,r-stitch,data_flow,1,1,E00295,
+r-data.table,shapeit5,data_flow,1,1,E00103,
+r-quilt,glimpse-bio,data_flow,4,4,E00327,
+r-stitch,bcftools,data_flow,1,1,E00296,
+r-stitch,glimpse-bio,data_flow,1,1,E00297,
+samtools,bcftools,data_flow,48,48,E00039,
+samtools,beagle,data_flow,10,10,E00383,
+samtools,gawk,data_flow,10,6,E00018,
+samtools,glimpse-bio,data_flow,34,34,E00073,
+samtools,minimac4,data_flow,12,11,E00419,
+samtools,r-quilt,data_flow,18,18,E00309,
+samtools,r-stitch,data_flow,8,8,E00283,
+samtools,shapeit5,data_flow,2,2,E00099,
+shapeit5,bcftools,data_flow,2,2,E00105,
+shapeit5,beagle,data_flow,1,1,E00399,
+shapeit5,glimpse-bio,data_flow,5,5,E00178,
+shapeit5,minimac4,data_flow,2,2,E00423,
+shapeit5,r-quilt,data_flow,1,1,E00354,
+xz,bcftools,data_flow,60,59,E00139,
+xz,gawk,data_flow,1,1,E00113,
+xz,glimpse-bio,data_flow,4,4,E00196,
+xz,minimac4,data_flow,1,1,E00454,
+xz,r-quilt,data_flow,2,2,E00324,
+xz,r-stitch,data_flow,1,1,E00294,
+beagle,minimac4,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00390, E00436); no directed path between any process of the two tools"
+beagle,r-quilt,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00390, E00346); no directed path between any process of the two tools"
+beagle,r-stitch,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00390, E00290); no directed path between any process of the two tools"
+gunzip,multiqc,parallel_co_use,0,0,,"both consume GLIMPSE2_CONCORDANCE.errors_grp (E00644, E00654); no directed path between any process of the two tools"
+minimac4,beagle,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00436, E00390); no directed path between any process of the two tools"
+minimac4,r-quilt,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00436, E00346); no directed path between any process of the two tools"
+minimac4,r-stitch,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00436, E00290); no directed path between any process of the two tools"
+multiqc,gunzip,parallel_co_use,0,0,,"both consume GLIMPSE2_CONCORDANCE.errors_grp (E00654, E00644); no directed path between any process of the two tools"
+r-quilt,beagle,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00346, E00390); no directed path between any process of the two tools"
+r-quilt,minimac4,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00346, E00436); no directed path between any process of the two tools"
+r-quilt,r-stitch,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00346, E00290); no directed path between any process of the two tools"
+r-stitch,beagle,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00290, E00390); no directed path between any process of the two tools"
+r-stitch,minimac4,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00290, E00436); no directed path between any process of the two tools"
+r-stitch,r-quilt,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00290, E00346); no directed path between any process of the two tools"

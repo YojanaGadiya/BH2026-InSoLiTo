@@ -1,0 +1,158 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+agat,fusionreport,gate_metadata,1,0,E00148,
+agat,gatk4,data_flow,1,1,E00005,
+arriba,fusion-report,data_flow,1,1,E00119,
+arriba,multiqc,data_flow,1,1,E00183,
+bioawk,agat,data_flow,1,1,E00004,
+cat,fastp,data_flow,2,2,E00027,
+cat,fastqc,data_flow,1,1,E00022,
+cat,fusion-inspector,data_flow,2,2,E00139,
+cat,fusion-report,data_flow,1,1,E00125,
+cat,fusioncatcher,data_flow,1,1,E00106,
+cat,salmon,data_flow,1,1,E00034,
+cat,samtools,data_flow,3,3,E00041,
+cat,umi_tools,data_flow,1,1,E00024,
+ctatsplicing,dfam,data_flow,1,1,E00095,
+ctatsplicing,fusion-inspector,data_flow,1,1,E00144,
+dfam,ctatsplicing,data_flow,2,2,E00016,
+dfam,fusion-inspector,data_flow,1,1,E00145,
+dfam,fusion-report,data_flow,1,1,E00121,
+fastp,cat,data_flow,2,1,E00130,
+fastp,fastqc,data_flow,2,1,E00029,
+fastp,fusion-inspector,data_flow,2,1,E00136,
+fastp,fusion-report,data_flow,2,1,E00122,
+fastp,fusioncatcher,data_flow,3,2,E00102,
+fastp,multiqc,data_flow,2,2,E00178,
+fastp,salmon,data_flow,2,1,E00031,
+fastp,samtools,data_flow,6,3,E00038,
+fastqc,multiqc,data_flow,2,2,E00176,
+fusion-inspector,agat,data_flow,1,1,E00146,
+fusion-inspector,arriba,gate_metadata,1,0,E00157,
+fusion-inspector,fusionreport,data_flow,1,1,E00147,
+fusion-report,cat,data_flow,2,2,E00129,
+fusion-report,fusion-inspector,data_flow,2,2,E00142,
+fusion-report,fusionreport,data_flow,2,1,E00149,
+fusioncatcher,fusion-report,data_flow,1,1,E00127,
+gatk4,multiqc,data_flow,1,1,E00185,
+gatk4,picard,data_flow,1,1,E00165,
+gencode_download,arriba,data_flow,3,3,E00092,
+gencode_download,bioawk,data_flow,1,1,E00003,
+gencode_download,dfam,data_flow,2,2,E00014,
+gencode_download,gatk4,data_flow,2,2,E00002,
+gencode_download,gffread,data_flow,2,2,E00008,
+gencode_download,picard,data_flow,1,1,E00164,
+gencode_download,salmon,data_flow,2,2,E00010,
+gencode_download,samtools,data_flow,10,10,E00001,
+gencode_download,stringtie,data_flow,2,2,E00112,
+gencode_download,ucsc-gtftogenepred,data_flow,1,1,E00007,
+gffread,salmon,data_flow,1,1,E00011,
+hgnc_download,fusionreport,data_flow,2,2,E00151,
+picard,multiqc,data_flow,2,2,E00184,
+salmon,multiqc,data_flow,1,1,E00180,
+samtools,arriba,data_flow,8,6,E00088,
+samtools,cat,data_flow,2,2,E00021,
+samtools,ctatsplicing,data_flow,6,6,E00080,
+samtools,dfam,data_flow,1,1,E00094,
+samtools,fastp,data_flow,2,2,E00028,
+samtools,fastqc,data_flow,1,1,E00023,
+samtools,fusion-inspector,data_flow,1,1,E00140,
+samtools,fusion-report,data_flow,6,2,E00115,
+samtools,fusioncatcher,data_flow,1,1,E00107,
+samtools,gatk4,data_flow,5,5,E00166,
+samtools,multiqc,data_flow,2,2,E00181,
+samtools,picard,data_flow,8,8,E00159,
+samtools,salmon,data_flow,1,1,E00035,
+samtools,stringtie,data_flow,4,4,E00108,
+samtools,umi_tools,data_flow,1,1,E00025,
+ucsc-gtftogenepred,picard,data_flow,1,1,E00163,
+umi_tools,cat,data_flow,1,1,E00132,
+umi_tools,fastp,data_flow,2,2,E00026,
+umi_tools,fusion-inspector,data_flow,1,1,E00138,
+umi_tools,fusion-report,data_flow,1,1,E00124,
+umi_tools,fusioncatcher,data_flow,1,1,E00105,
+umi_tools,salmon,data_flow,1,1,E00033,
+umi_tools,samtools,data_flow,3,3,E00040,
+arriba,bioawk,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00093, E00003); no directed path between any process of the two tools"
+arriba,gatk4,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00092, E00002); no directed path between any process of the two tools"
+arriba,gffread,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00092, E00009); no directed path between any process of the two tools"
+arriba,picard,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00092, E00164); no directed path between any process of the two tools"
+arriba,salmon,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00092, E00010); no directed path between any process of the two tools"
+arriba,stringtie,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00093, E00114); no directed path between any process of the two tools"
+arriba,ucsc-gtftogenepred,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00093, E00007); no directed path between any process of the two tools"
+bioawk,arriba,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00003, E00093); no directed path between any process of the two tools"
+bioawk,dfam,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00003, E00015); no directed path between any process of the two tools"
+bioawk,gffread,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00003, E00008); no directed path between any process of the two tools"
+bioawk,salmon,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00003, E00037); no directed path between any process of the two tools"
+bioawk,samtools,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00003, E00013); no directed path between any process of the two tools"
+bioawk,stringtie,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00003, E00114); no directed path between any process of the two tools"
+bioawk,ucsc-gtftogenepred,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00003, E00007); no directed path between any process of the two tools"
+ctatsplicing,gatk4,parallel_co_use,0,0,,"both consume STAR_ALIGN.bam_sorted_aligned (E00084, E00168); no directed path between any process of the two tools"
+ctatsplicing,picard,parallel_co_use,0,0,,"both consume STAR_ALIGN.bam_sorted_aligned (E00084, E00174); no directed path between any process of the two tools"
+ctatsplicing,stringtie,parallel_co_use,0,0,,"both consume STAR_ALIGN.bam_sorted_aligned (E00084, E00110); no directed path between any process of the two tools"
+dfam,bioawk,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00015, E00003); no directed path between any process of the two tools"
+dfam,gatk4,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00014, E00002); no directed path between any process of the two tools"
+dfam,gffread,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00014, E00009); no directed path between any process of the two tools"
+dfam,picard,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00014, E00164); no directed path between any process of the two tools"
+dfam,salmon,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00014, E00010); no directed path between any process of the two tools"
+dfam,stringtie,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00015, E00114); no directed path between any process of the two tools"
+dfam,ucsc-gtftogenepred,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00015, E00007); no directed path between any process of the two tools"
+fastqc,fusion-inspector,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00022, E00139); no directed path between any process of the two tools"
+fastqc,fusion-report,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00022, E00125); no directed path between any process of the two tools"
+fastqc,fusioncatcher,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00022, E00106); no directed path between any process of the two tools"
+fastqc,salmon,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00022, E00034); no directed path between any process of the two tools"
+fusion-inspector,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00139, E00022); no directed path between any process of the two tools"
+fusion-inspector,salmon,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00139, E00034); no directed path between any process of the two tools"
+fusion-report,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00125, E00022); no directed path between any process of the two tools"
+fusion-report,salmon,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00125, E00034); no directed path between any process of the two tools"
+fusioncatcher,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00106, E00022); no directed path between any process of the two tools"
+fusioncatcher,salmon,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00106, E00034); no directed path between any process of the two tools"
+gatk4,arriba,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00002, E00092); no directed path between any process of the two tools"
+gatk4,ctatsplicing,parallel_co_use,0,0,,"both consume STAR_ALIGN.bam_sorted_aligned (E00168, E00084); no directed path between any process of the two tools"
+gatk4,dfam,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00002, E00014); no directed path between any process of the two tools"
+gatk4,gffread,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00002, E00009); no directed path between any process of the two tools"
+gatk4,salmon,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00002, E00010); no directed path between any process of the two tools"
+gatk4,stringtie,parallel_co_use,0,0,,"both consume STAR_ALIGN.bam_sorted_aligned (E00168, E00110); no directed path between any process of the two tools"
+gffread,arriba,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00009, E00092); no directed path between any process of the two tools"
+gffread,bioawk,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00008, E00003); no directed path between any process of the two tools"
+gffread,dfam,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00009, E00014); no directed path between any process of the two tools"
+gffread,gatk4,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00009, E00002); no directed path between any process of the two tools"
+gffread,picard,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00009, E00164); no directed path between any process of the two tools"
+gffread,samtools,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00009, E00001); no directed path between any process of the two tools"
+gffread,stringtie,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00008, E00114); no directed path between any process of the two tools"
+gffread,ucsc-gtftogenepred,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00008, E00007); no directed path between any process of the two tools"
+picard,arriba,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00164, E00092); no directed path between any process of the two tools"
+picard,ctatsplicing,parallel_co_use,0,0,,"both consume STAR_ALIGN.bam_sorted_aligned (E00174, E00084); no directed path between any process of the two tools"
+picard,dfam,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00164, E00014); no directed path between any process of the two tools"
+picard,gffread,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00164, E00009); no directed path between any process of the two tools"
+picard,salmon,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00164, E00010); no directed path between any process of the two tools"
+picard,stringtie,parallel_co_use,0,0,,"both consume STAR_ALIGN.bam_sorted_aligned (E00174, E00110); no directed path between any process of the two tools"
+salmon,arriba,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00010, E00092); no directed path between any process of the two tools"
+salmon,bioawk,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00037, E00003); no directed path between any process of the two tools"
+salmon,dfam,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00010, E00014); no directed path between any process of the two tools"
+salmon,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00034, E00022); no directed path between any process of the two tools"
+salmon,fusion-inspector,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00034, E00139); no directed path between any process of the two tools"
+salmon,fusion-report,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00034, E00125); no directed path between any process of the two tools"
+salmon,fusioncatcher,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00034, E00106); no directed path between any process of the two tools"
+salmon,gatk4,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00010, E00002); no directed path between any process of the two tools"
+salmon,picard,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00010, E00164); no directed path between any process of the two tools"
+salmon,stringtie,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00037, E00114); no directed path between any process of the two tools"
+salmon,ucsc-gtftogenepred,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00037, E00007); no directed path between any process of the two tools"
+samtools,bioawk,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00013, E00003); no directed path between any process of the two tools"
+samtools,gffread,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.fasta (E00001, E00009); no directed path between any process of the two tools"
+samtools,ucsc-gtftogenepred,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00013, E00007); no directed path between any process of the two tools"
+stringtie,arriba,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00114, E00093); no directed path between any process of the two tools"
+stringtie,bioawk,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00114, E00003); no directed path between any process of the two tools"
+stringtie,ctatsplicing,parallel_co_use,0,0,,"both consume STAR_ALIGN.bam_sorted_aligned (E00110, E00084); no directed path between any process of the two tools"
+stringtie,dfam,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00114, E00015); no directed path between any process of the two tools"
+stringtie,gatk4,parallel_co_use,0,0,,"both consume STAR_ALIGN.bam_sorted_aligned (E00110, E00168); no directed path between any process of the two tools"
+stringtie,gffread,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00114, E00008); no directed path between any process of the two tools"
+stringtie,picard,parallel_co_use,0,0,,"both consume STAR_ALIGN.bam_sorted_aligned (E00110, E00174); no directed path between any process of the two tools"
+stringtie,salmon,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00114, E00037); no directed path between any process of the two tools"
+stringtie,ucsc-gtftogenepred,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00114, E00007); no directed path between any process of the two tools"
+ucsc-gtftogenepred,arriba,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00007, E00093); no directed path between any process of the two tools"
+ucsc-gtftogenepred,bioawk,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00007, E00003); no directed path between any process of the two tools"
+ucsc-gtftogenepred,dfam,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00007, E00015); no directed path between any process of the two tools"
+ucsc-gtftogenepred,gffread,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00007, E00008); no directed path between any process of the two tools"
+ucsc-gtftogenepred,salmon,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00007, E00037); no directed path between any process of the two tools"
+ucsc-gtftogenepred,samtools,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00007, E00013); no directed path between any process of the two tools"
+ucsc-gtftogenepred,stringtie,parallel_co_use,0,0,,"both consume GENCODE_DOWNLOAD.gtf (E00007, E00114); no directed path between any process of the two tools"

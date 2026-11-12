@@ -1,0 +1,77 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_TFACTIVITY:PREPARE_GENOME:GUNZIP_FASTA,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_TFACTIVITY:PREPARE_GENOME:GUNZIP_GTF,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_TFACTIVITY:PREPARE_GENOME:EXTRACT_ID_SYMBOL_MAP,EXTRACT_ID_SYMBOL_MAP,modules/local/extract_id_symbol_map/main.nf,1,bcbio-gff,,bcbio-gff;pyyaml,environment.yml
+NFCORE_TFACTIVITY:PREPARE_GENOME:GTFTOOLS_LENGTH,GTFTOOLS_LENGTH,modules/local/gtftools/length/main.nf,1,gtftools_length,,,module name
+NFCORE_TFACTIVITY:PREPARE_GENOME:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:COUNTS:COMBINE_COUNTS,COMBINE_COUNTS,modules/local/counts/combine/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:COUNTS:CALCULATE_TPM,CALCULATE_TPM,modules/local/counts/calculate_tpm/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:COUNTS:FILTER_GENES,FILTER_GENES,modules/local/counts/filter_genes/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:COUNTS:FILTER_TFS,FILTER_GENES,modules/local/counts/filter_genes/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:COUNTS:PREPARE_DESIGN,PREPARE_DESIGN,modules/local/counts/prepare_design/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:COUNTS:DESEQ2_DIFFERENTIAL,DESEQ2_DIFFERENTIAL,modules/nf-core/deseq2/differential/main.nf,1,bioconductor-deseq2,deseq2,bioconductor-deseq2,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:MOTIFS:FETCH_JASPAR,FETCH_JASPAR,modules/local/motifs/fetch_jaspar/main.nf,1,fetch_jaspar,,,module name
+NFCORE_TFACTIVITY:TFACTIVITY:MOTIFS:CONVERT_TO_UNIVERSAL,CONVERT_MOTIFS,modules/local/motifs/convert_motifs/main.nf,1,convert_motifs,,,module name
+NFCORE_TFACTIVITY:TFACTIVITY:MOTIFS:FILTER_MOTIFS,FILTER_MOTIFS,modules/local/motifs/filter_motifs/main.nf,1,filter_motifs,,,module name
+NFCORE_TFACTIVITY:TFACTIVITY:MOTIFS:CONVERT_TO_MEME,CONVERT_MOTIFS,modules/local/motifs/convert_motifs/main.nf,1,convert_motifs,,,module name
+NFCORE_TFACTIVITY:TFACTIVITY:MOTIFS:CONVERT_TO_TRANSFAC,CONVERT_MOTIFS,modules/local/motifs/convert_motifs/main.nf,1,convert_motifs,,,module name
+NFCORE_TFACTIVITY:TFACTIVITY:MOTIFS:TRANSFAC_TO_PSEM,TRANSFAC_TO_PSEM,modules/local/motifs/transfac_to_psem/main.nf,1,transfac_to_psem,,,module name
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:CLEAN_BED,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:FOOTPRINTING:BEDTOOLS_MERGE,BEDTOOLS_MERGE,modules/nf-core/bedtools/merge/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:FOOTPRINTING:BEDTOOLS_SUBTRACT,BEDTOOLS_SUBTRACT,modules/nf-core/bedtools/subtract/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:MERGE_SAMPLES:ANNOTATE_SAMPLES,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:MERGE_SAMPLES:CONCAT_SAMPLES,CAT_CAT,modules/nf-core/cat/cat/main.nf,1,cat,cat,pigz,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:MERGE_SAMPLES:BEDTOOLS_SORT,BEDTOOLS_SORT,modules/nf-core/bedtools/sort/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:MERGE_SAMPLES:BEDTOOLS_MERGE,BEDTOOLS_MERGE,modules/nf-core/bedtools/merge/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:MERGE_SAMPLES:FILTER_MIN_OCCURRENCE,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:MERGE_SAMPLES:CLEAN_BED,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:SORT_PEAKS,BEDTOOLS_SORT,modules/nf-core/bedtools/sort/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:CHROMHMM:BINARIZE_BAMS,BINARIZE_BAMS,modules/local/chromhmm/binarize_bams/main.nf,1,chromhmm,,chromhmm,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:CHROMHMM:LEARN_MODEL,LEARN_MODEL,modules/local/chromhmm/learn_model/main.nf,1,chromhmm,,chromhmm,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:CHROMHMM:GET_ENHANCER_RESULTS,GET_RESULTS,modules/local/chromhmm/get_results/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:CHROMHMM:GET_PROMOTER_RESULTS,GET_RESULTS,modules/local/chromhmm/get_results/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:ROSE:FILTER_CONVERT_GTF,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:ROSE:SORT_BED,GNU_SORT,modules/nf-core/gnu/sort/main.nf,1,sort,sort,coreutils,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:ROSE:SORT_CHROM_SIZES,GNU_SORT,modules/nf-core/gnu/sort/main.nf,1,sort,sort,coreutils,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:ROSE:CONSTRUCT_TSS,BEDTOOLS_SLOP,modules/nf-core/bedtools/slop/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:ROSE:INVERT_TSS,BEDTOOLS_COMPLEMENT,modules/nf-core/bedtools/complement/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:ROSE:FILTER_PREDICTIONS,BEDTOOLS_SUBTRACT,modules/nf-core/bedtools/subtract/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:ROSE:STITCHING,BEDTOOLS_MERGE,modules/nf-core/bedtools/merge/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:ROSE:TSS_OVERLAP,BEDTOOLS_INTERSECT,modules/nf-core/bedtools/intersect/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:ROSE:FILTER_OVERLAPS,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:ROSE:SUBTRACT_OVERLAPS,BEDTOOLS_SUBTRACT,modules/nf-core/bedtools/subtract/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:ROSE:UNSTITCHED_REGIONS,BEDTOOLS_INTERSECT,modules/nf-core/bedtools/intersect/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:ROSE:CONCAT_AND_SORT,GNU_SORT,modules/nf-core/gnu/sort/main.nf,1,sort,sort,coreutils,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:STARE,STARE,modules/nf-core/stare/main.nf,1,stare-abc,stare,stare-abc,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:AFFINITY_MEAN,COMBINE_TABLES,modules/local/combine_tables/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:AGGREGATE_SYNONYMS,AGGREGATE_SYNONYMS,modules/local/peaks/aggregate_synonyms/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:AFFINITY_RATIO,COMBINE_TABLES,modules/local/combine_tables/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:PEAKS:AFFINITY_SUM,COMBINE_TABLES,modules/local/combine_tables/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:DYNAMITE:PREPROCESS,DYNAMITE_PREPROCESS,modules/local/dynamite/preprocess/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:DYNAMITE:RUN_DYNAMITE,DYNAMITE_DYNAMITE,modules/local/dynamite/dynamite/main.nf,1,r-domc,,r-domc;r-ggplot2;r-glmnet;r-gplots,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:DYNAMITE:FILTER,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:RANKING:TF_TG_SCORE,TF_TG_SCORE,modules/local/ranking/tf_tg_score/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:RANKING:CREATE_RANKING,RANKING,modules/local/ranking/ranking/main.nf,1,pandas,,pandas;pyyaml;scipy,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:RANKING:COMBINE_TFS_PER_ASSAY,COMBINE_TABLES,modules/local/combine_tables/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:RANKING:COMBINE_TFS_ACROSS_ASSAYS,COMBINE_TABLES,modules/local/combine_tables/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:RANKING:COMBINE_TGS_PER_ASSAY,COMBINE_TABLES,modules/local/combine_tables/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:RANKING:COMBINE_TGS_ACROSS_ASSAYS,COMBINE_TABLES,modules/local/combine_tables/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:TFLINK_ANNOTATE,TFLINK_ANNOTATE,modules/local/tflink/annotate/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:FIMO:FILTER_MOTIFS,FILTER_MOTIFS,modules/local/fimo/filter_motifs/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:FIMO:EXTRACT_SEQUENCE,BEDTOOLS_GETFASTA,modules/nf-core/bedtools/getfasta/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:FIMO:RUN_FIMO,RUN_FIMO,modules/local/fimo/run_fimo/main.nf,1,meme,,meme,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:FIMO:CONCAT_FILTER_GFF,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:FIMO:SORT_GFF,GNU_SORT,modules/nf-core/gnu/sort/main.nf,1,sort,sort,coreutils,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:FIMO:CONCAT_FILTER_TSV,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:FIMO:SORT_TSV,CSVTK_SORT,modules/nf-core/csvtk/sort/main.nf,1,csvtk,csvtk,csvtk,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:FIMO:SELECT_SIGNIFICANT,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:SNEEP:FILTER_SCALES_MOTIFS,FILTER_SCALES_MOTIFS,modules/local/sneep/filter_scales_motifs/main.nf,1,pandas,,pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:SNEEP:GFF_TO_BED,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:SNEEP:SORT_BED,GNU_SORT,modules/nf-core/gnu/sort/main.nf,1,sort,sort,coreutils,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:SNEEP:MERGE_DUPLICATE_REGIONS,BEDTOOLS_MERGE,modules/nf-core/bedtools/merge/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:SNEEP:FILTER_SNPS_BY_REGION,BEDTOOLS_INTERSECT,modules/nf-core/bedtools/intersect/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:SNEEP:RUN_SNEEP,RUN_SNEEP,modules/local/sneep/run_sneep/main.nf,1,sneep,,sneep,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:REPORT:UNTAR,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:REPORT:PREPROCESS,REPORT_PREPROCESS,modules/local/report/preprocess/main.nf,1,gtfparse,,gtfparse;pandas;pyyaml,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:REPORT:CREATE,REPORT_CREATE,modules/local/report/create/main.nf,1,nodejs,,nodejs,environment.yml
+NFCORE_TFACTIVITY:TFACTIVITY:REPORT:ZIP,ZIP,modules/nf-core/zip/main.nf,1,p7zip,unzip,p7zip,environment.yml

@@ -1,0 +1,8 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_CELLPAINTING:CELLPAINTING:CELLPROFILER_ILLUMINATIONCORRECTION,CELLPROFILER_ILLUMINATIONCORRECTION,modules/local/cellprofiler/illuminationcorrection/main.nf,1,cellprofiler,,cellprofiler,environment.yml
+NFCORE_CELLPAINTING:CELLPAINTING:CELLPROFILER_ASSAYDEVELOPMENT,CELLPROFILER_ASSAYDEVELOPMENT,modules/local/cellprofiler/assaydevelopment/main.nf,1,cellprofiler,,cellprofiler,environment.yml
+NFCORE_CELLPAINTING:CELLPAINTING:IMAGEMAGICK_MONTAGE,IMAGEMAGICK_MONTAGE,modules/local/imagemagick/montage/main.nf,1,imagemagick,imagemagick,imagemagick,environment.yml
+NFCORE_CELLPAINTING:CELLPAINTING:PLATEVIEWER,PLATEVIEWER,modules/local/plateviewer/main.nf,1,plateviewer,,,module name
+NFCORE_CELLPAINTING:CELLPAINTING:CELLPROFILER_ANALYSIS,CELLPROFILER_ANALYSIS,modules/local/cellprofiler/analysis/main.nf,1,cellprofiler,,cellprofiler,environment.yml
+NFCORE_CELLPAINTING:CELLPAINTING:CYTOTABLE,CYTOTABLE,modules/local/cytotable/main.nf,1,cytotable,cytotable,,meta.yml
+NFCORE_CELLPAINTING:CELLPAINTING:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

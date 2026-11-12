@@ -1,0 +1,8 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bcftools,numpy,data_flow,3,3,E00009,
+bcftools,pcgr,data_flow,2,2,E00017,
+curl,pcgr,data_flow,2,2,E00014,
+numpy,pcgr,data_flow,1,1,E00012,
+pysam,pcgr,data_flow,1,1,E00013,
+untar,pcgr,data_flow,4,4,E00015,
+xz,bcftools,data_flow,2,2,E00001,

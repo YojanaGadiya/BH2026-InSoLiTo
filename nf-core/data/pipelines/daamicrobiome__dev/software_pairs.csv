@@ -1,0 +1,45 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bioconductor-adapt,r-tidyverse,data_flow,2,2,E00003,
+bioconductor-maaslin2,r-tidyverse,data_flow,2,2,E00006,
+bioconductor-metagenomeseq,r-tidyverse,data_flow,2,2,E00002,
+bioconductor-phyloseq,r-midasim,data_flow,1,1,E00007,
+r-corncob,r-tidyverse,data_flow,2,2,E00004,
+r-locom2,r-tidyverse,data_flow,2,2,E00001,
+r-microbiomestat,r-tidyverse,data_flow,2,2,E00005,
+r-midasim,bioconductor-adapt,data_flow,1,1,E00008,
+r-midasim,bioconductor-maaslin2,data_flow,1,1,E00012,
+r-midasim,bioconductor-metagenomeseq,data_flow,1,1,E00013,
+r-midasim,r-corncob,data_flow,1,1,E00009,
+r-midasim,r-locom2,data_flow,1,1,E00011,
+r-midasim,r-microbiomestat,data_flow,1,1,E00010,
+r-midasim,r-tidyverse,data_flow,1,1,E00020,
+bioconductor-adapt,bioconductor-maaslin2,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00008, E00012); no directed path between any process of the two tools"
+bioconductor-adapt,bioconductor-metagenomeseq,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00008, E00013); no directed path between any process of the two tools"
+bioconductor-adapt,r-corncob,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00008, E00009); no directed path between any process of the two tools"
+bioconductor-adapt,r-locom2,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00008, E00011); no directed path between any process of the two tools"
+bioconductor-adapt,r-microbiomestat,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00008, E00010); no directed path between any process of the two tools"
+bioconductor-maaslin2,bioconductor-adapt,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00012, E00008); no directed path between any process of the two tools"
+bioconductor-maaslin2,bioconductor-metagenomeseq,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00012, E00013); no directed path between any process of the two tools"
+bioconductor-maaslin2,r-corncob,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00012, E00009); no directed path between any process of the two tools"
+bioconductor-maaslin2,r-locom2,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00012, E00011); no directed path between any process of the two tools"
+bioconductor-maaslin2,r-microbiomestat,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00012, E00010); no directed path between any process of the two tools"
+bioconductor-metagenomeseq,bioconductor-adapt,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00013, E00008); no directed path between any process of the two tools"
+bioconductor-metagenomeseq,bioconductor-maaslin2,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00013, E00012); no directed path between any process of the two tools"
+bioconductor-metagenomeseq,r-corncob,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00013, E00009); no directed path between any process of the two tools"
+bioconductor-metagenomeseq,r-locom2,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00013, E00011); no directed path between any process of the two tools"
+bioconductor-metagenomeseq,r-microbiomestat,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00013, E00010); no directed path between any process of the two tools"
+r-corncob,bioconductor-adapt,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00009, E00008); no directed path between any process of the two tools"
+r-corncob,bioconductor-maaslin2,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00009, E00012); no directed path between any process of the two tools"
+r-corncob,bioconductor-metagenomeseq,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00009, E00013); no directed path between any process of the two tools"
+r-corncob,r-locom2,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00009, E00011); no directed path between any process of the two tools"
+r-corncob,r-microbiomestat,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00009, E00010); no directed path between any process of the two tools"
+r-locom2,bioconductor-adapt,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00011, E00008); no directed path between any process of the two tools"
+r-locom2,bioconductor-maaslin2,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00011, E00012); no directed path between any process of the two tools"
+r-locom2,bioconductor-metagenomeseq,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00011, E00013); no directed path between any process of the two tools"
+r-locom2,r-corncob,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00011, E00009); no directed path between any process of the two tools"
+r-locom2,r-microbiomestat,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00011, E00010); no directed path between any process of the two tools"
+r-microbiomestat,bioconductor-adapt,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00010, E00008); no directed path between any process of the two tools"
+r-microbiomestat,bioconductor-maaslin2,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00010, E00012); no directed path between any process of the two tools"
+r-microbiomestat,bioconductor-metagenomeseq,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00010, E00013); no directed path between any process of the two tools"
+r-microbiomestat,r-corncob,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00010, E00009); no directed path between any process of the two tools"
+r-microbiomestat,r-locom2,parallel_co_use,0,0,,"both consume SIMULATE_MIDASIM.rds_files (E00010, E00011); no directed path between any process of the two tools"

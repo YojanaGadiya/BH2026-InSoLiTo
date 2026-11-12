@@ -1,0 +1,22 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+scflow_checkinputs,scflow_qc,data_flow,1,1,E00001,
+scflow_cluster,scflow_mapcelltypes,data_flow,1,1,E00008,
+scflow_cluster,scflow_plotreddimgenes,data_flow,1,1,E00014,
+scflow_cluster,scflow_reportintegrated,data_flow,1,1,E00007,
+scflow_dge,scflow_ipa,data_flow,1,1,E00012,
+scflow_finalize,scflow_dge,data_flow,2,2,E00010,
+scflow_finalize,scflow_dirichlet,data_flow,1,1,E00013,
+scflow_integrate,scflow_reducedims,data_flow,1,1,E00005,
+scflow_mapcelltypes,scflow_finalize,data_flow,1,1,E00009,
+scflow_merge,scflow_integrate,data_flow,1,1,E00004,
+scflow_qc,scflow_merge,data_flow,1,1,E00003,
+scflow_qc,scflow_mergeqctables,data_flow,1,1,E00002,
+scflow_reducedims,scflow_cluster,data_flow,1,1,E00006,
+scflow_dge,scflow_dirichlet,parallel_co_use,0,0,,"both consume SCFLOW_FINALIZE.final_sce (E00010, E00013); no directed path between any process of the two tools"
+scflow_dirichlet,scflow_dge,parallel_co_use,0,0,,"both consume SCFLOW_FINALIZE.final_sce (E00013, E00010); no directed path between any process of the two tools"
+scflow_mapcelltypes,scflow_plotreddimgenes,parallel_co_use,0,0,,"both consume SCFLOW_CLUSTER.clustered_sce (E00008, E00014); no directed path between any process of the two tools"
+scflow_mapcelltypes,scflow_reportintegrated,parallel_co_use,0,0,,"both consume SCFLOW_CLUSTER.clustered_sce (E00008, E00007); no directed path between any process of the two tools"
+scflow_plotreddimgenes,scflow_mapcelltypes,parallel_co_use,0,0,,"both consume SCFLOW_CLUSTER.clustered_sce (E00014, E00008); no directed path between any process of the two tools"
+scflow_plotreddimgenes,scflow_reportintegrated,parallel_co_use,0,0,,"both consume SCFLOW_CLUSTER.clustered_sce (E00014, E00007); no directed path between any process of the two tools"
+scflow_reportintegrated,scflow_mapcelltypes,parallel_co_use,0,0,,"both consume SCFLOW_CLUSTER.clustered_sce (E00007, E00008); no directed path between any process of the two tools"
+scflow_reportintegrated,scflow_plotreddimgenes,parallel_co_use,0,0,,"both consume SCFLOW_CLUSTER.clustered_sce (E00007, E00014); no directed path between any process of the two tools"

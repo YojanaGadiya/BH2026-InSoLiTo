@@ -1,0 +1,16 @@
+{
+ "pipeline_kind": "dsl2",
+ "process_instances": 65,
+ "unresolved_statements": 0,
+ "status": "OK",
+ "process_edges": {
+  "data_flow": 218,
+  "gate_metadata": 2
+ },
+ "software_pairs": {
+  "data_flow": 97,
+  "gate_metadata": 1,
+  "parallel_co_use": 252
+ },
+ "warnings": []
+}

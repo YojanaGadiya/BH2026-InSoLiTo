@@ -1,0 +1,29 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bam2sam,sam2sites,data_flow,1,1,E00009,
+bam2sam,sam2sites_notdedup,data_flow,1,1,E00010,
+bwa_index,bwa_mem,data_flow,1,1,E00003,
+bwa_mem,samtools_sort,data_flow,1,1,E00004,
+cutadapt,fastp,data_flow,1,1,E00001,
+cutadapt,multiqc,data_flow,1,1,E00019,
+fastp,bwa_mem,data_flow,1,1,E00002,
+fastp,multiqc,data_flow,1,1,E00020,
+fastqc,multiqc,data_flow,1,1,E00018,
+flagstat,multiqc,data_flow,1,1,E00021,
+flagstat,produce_mapped_read_counts,data_flow,1,1,E00015,
+grep_other_chromosomes,produce_chr_counts,data_flow,1,1,E00017,
+intersect,sites2genes,data_flow,1,1,E00012,
+mark_duplicates,bam2sam,data_flow,2,2,E00007,
+mark_duplicates,flagstat,data_flow,1,1,E00006,
+mark_duplicates,grep_other_chromosomes,data_flow,1,1,E00014,
+sam2sites,intersect,data_flow,1,1,E00011,
+sam2sites,produce_insertion_counts,data_flow,1,1,E00016,
+samtools_sort,mark_duplicates,data_flow,1,1,E00005,
+sites2genes,statisti_call,data_flow,1,1,E00013,
+bam2sam,flagstat,parallel_co_use,0,0,,"both consume MARK_DUPLICATES.markeddup (E00007, E00006); no directed path between any process of the two tools"
+bam2sam,grep_other_chromosomes,parallel_co_use,0,0,,"both consume MARK_DUPLICATES.dedup (E00008, E00014); no directed path between any process of the two tools"
+flagstat,bam2sam,parallel_co_use,0,0,,"both consume MARK_DUPLICATES.markeddup (E00006, E00007); no directed path between any process of the two tools"
+grep_other_chromosomes,bam2sam,parallel_co_use,0,0,,"both consume MARK_DUPLICATES.dedup (E00014, E00008); no directed path between any process of the two tools"
+intersect,produce_insertion_counts,parallel_co_use,0,0,,"both consume SAM2SITES.unstranded_unnormalized (E00011, E00016); no directed path between any process of the two tools"
+multiqc,produce_mapped_read_counts,parallel_co_use,0,0,,"both consume FLAGSTAT.flagstat (E00021, E00015); no directed path between any process of the two tools"
+produce_insertion_counts,intersect,parallel_co_use,0,0,,"both consume SAM2SITES.unstranded_unnormalized (E00016, E00011); no directed path between any process of the two tools"
+produce_mapped_read_counts,multiqc,parallel_co_use,0,0,,"both consume FLAGSTAT.flagstat (E00015, E00021); no directed path between any process of the two tools"

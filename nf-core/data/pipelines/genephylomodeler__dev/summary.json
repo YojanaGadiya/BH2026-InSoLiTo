@@ -1,0 +1,9 @@
+{
+ "pipeline_kind": "dsl2",
+ "process_instances": 11,
+ "unresolved_statements": 0,
+ "status": "NO_EDGES",
+ "process_edges": {},
+ "software_pairs": {},
+ "warnings": []
+}

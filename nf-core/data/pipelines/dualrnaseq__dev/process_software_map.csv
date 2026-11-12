@@ -1,0 +1,49 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_DUALRNASEQ:DUALRNASEQ:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_DUALRNASEQ:DUALRNASEQ:CUTADAPT,CUTADAPT,modules/nf-core/cutadapt/main.nf,1,cuatadapt,cuatadapt,,meta.yml
+NFCORE_DUALRNASEQ:DUALRNASEQ:FASTQC_AFTER_TRIMMING,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:UNCOMPRESS_PATHOGEN_FASTA_GENOME,UNZIPFILES,modules/nf-core/unzipfiles/main.nf,1,unzip,unzip,,meta.yml
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:UNCOMPRESS_PATHOGEN_GFF,UNZIPFILES,modules/nf-core/unzipfiles/main.nf,1,unzip,unzip,,meta.yml
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:UNCOMPRESS_HOST_FASTA_GENOME,UNZIPFILES,modules/nf-core/unzipfiles/main.nf,1,unzip,unzip,,meta.yml
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:UNCOMPRESS_HOST_GFF,UNZIPFILES,modules/nf-core/unzipfiles/main.nf,1,unzip,unzip,,meta.yml
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:COMBINE_FILES_FASTA,COMBINE_FILES,modules/local/combine_files/main.nf,1,combine_files,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:UNCOMPRESS_HOST_TRANSCRIPTOME,UNZIPFILES,modules/nf-core/unzipfiles/main.nf,1,unzip,unzip,,meta.yml
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:PREPARE_HOST_TRANSCRIPTOME:CREATE_TRANSCRIPTOME_FASTA_GFFREAD,CREATE_TRANSCRIPTOME_FASTA_GFFREAD,modules/local/create_transcriptome_fasta_gffread/main.nf,1,create_transcriptome_fasta_gffread,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:UNCOMPRESS_PATHOGEN_TRANSCRIPTOME,UNZIPFILES,modules/nf-core/unzipfiles/main.nf,1,unzip,unzip,,meta.yml
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:PREPARE_PATHOGEN_TRANSCRIPTOME:CREATE_TRANSCRIPTOME_FASTA,CREATE_TRANSCRIPTOME_FASTA,modules/local/create_transcriptome_fasta/main.nf,1,create_transcriptome_fasta,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:COMBINE_FILES_TRANSCRIPTOME_FILES,COMBINE_FILES,modules/local/combine_files/main.nf,1,combine_files,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:REPLACE_ATTRIBUTE_GFF_STAR_SALMON_HOST,REPLACE_ATTRIBUTE_GFF,modules/local/replace_attribute/main.nf,1,replace_attribute_gff,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:REPLACE_GENE_FEATURE_GFF_HOST_SALMON,REPLACE_GENE_FEATURE_GFF,modules/local/replace_gene_feature/main.nf,1,replace_gene_feature_gff,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:REPLACE_ATTRIBUTE_GFF_STAR_SALMON_PATHOGEN,REPLACE_ATTRIBUTE_GFF,modules/local/replace_attribute/main.nf,1,replace_attribute_gff,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:REPLACE_GENE_FEATURE_GFF_PATHOGEN_SALMON,REPLACE_GENE_FEATURE_GFF,modules/local/replace_gene_feature/main.nf,1,replace_gene_feature_gff,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:COMBINE_FILES_PATHOGEN_HOST_GFF,COMBINE_FILES,modules/local/combine_files/main.nf,1,combine_files,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:EXTRACT_ANNOTATIONS_HOST_SALMON,EXTRACT_ANNOTATIONS,modules/local/extract_annotations/main.nf,1,extract_annotations,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:EXTRACT_ANNOTATIONS_PATHOGEN_SALMON,EXTRACT_ANNOTATIONS,modules/local/extract_annotations/main.nf,1,extract_annotations,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:REPLACE_GENE_FEATURE_GFF_HOST_HTSEQ,REPLACE_GENE_FEATURE_GFF,modules/local/replace_gene_feature/main.nf,1,replace_gene_feature_gff,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:REPLACE_ATTRIBUTE_GFF_HTSEQ_HOST,REPLACE_ATTRIBUTE_GFF,modules/local/replace_attribute/main.nf,1,replace_attribute_gff,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:REPLACE_GENE_FEATURE_GFF_PATHOGEN_HTSEQ,REPLACE_GENE_FEATURE_GFF,modules/local/replace_gene_feature/main.nf,1,replace_gene_feature_gff,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:COMBINE_PATHOGEN_HOST_GFF_FILES_HTSEQ,COMBINE_FILES,modules/local/combine_files/main.nf,1,combine_files,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:EXTRACT_ANNOTATIONS_HOST_HTSEQ,EXTRACT_ANNOTATIONS,modules/local/extract_annotations/main.nf,1,extract_annotations,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:PREPARE_REFERENCE_FILES:EXTRACT_ANNOTATIONS_PATHOGEN_HTSEQ,EXTRACT_ANNOTATIONS,modules/local/extract_annotations/main.nf,1,extract_annotations,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:SALMON_SELECTIVE_ALIGNMENT:SALMON_INDEX,SALMON_INDEX,modules/nf-core/salmon/index/main.nf,1,salmon,salmon,,meta.yml
+NFCORE_DUALRNASEQ:DUALRNASEQ:SALMON_SELECTIVE_ALIGNMENT:SALMON_QUANT,SALMON_QUANT,modules/nf-core/salmon/quant/main.nf,1,salmon,salmon,,meta.yml
+NFCORE_DUALRNASEQ:DUALRNASEQ:SALMON_SELECTIVE_ALIGNMENT:SALMON_SPLIT_TABLE_EACH,SALMON_SPLIT_TABLE,modules/local/salmon_split_table/main.nf,1,salmon_split_table,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:SALMON_SELECTIVE_ALIGNMENT:COMBINE_QUANTIFICATION_RESULTS_SALMON,COMBINE_QUANTIFICATION_RESULTS_SALMON,modules/local/combine_quantification_results_salmon/main.nf,1,combine_quantification_results_salmon,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:SALMON_SELECTIVE_ALIGNMENT:SALMON_SPLIT_TABLE_COMBINED,SALMON_SPLIT_TABLE,modules/local/salmon_split_table/main.nf,1,salmon_split_table,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:SALMON_SELECTIVE_ALIGNMENT:EXTRACT_PROCESSED_READS,EXTRACT_PROCESSED_READS,modules/local/extract_processed_reads/main.nf,2,extract_processed_reads,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:SALMON_SELECTIVE_ALIGNMENT:COLLATE_PROCESSED_READS,COLLATE_PROCESSED_READS,modules/local/collate_processed_reads/main.nf,1,collate_processed_reads,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:SALMON_SELECTIVE_ALIGNMENT:TXIMPORT,TXIMPORT,modules/local/tximport/main.nf,1,tximport,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:SALMON_ALIGNMENT_BASED:STAR_GENOMEGENERATE,STAR_GENOMEGENERATE,modules/nf-core/star/genomegenerate/main.nf,1,star,star,,meta.yml
+NFCORE_DUALRNASEQ:DUALRNASEQ:SALMON_ALIGNMENT_BASED:STAR_ALIGN,STAR_ALIGN,modules/local/star_align_transcripts/main.nf,1,star_align,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:SALMON_ALIGNMENT_BASED:SALMON_QUANT,SALMON_QUANT,modules/nf-core/salmon/quant/main.nf,1,salmon,salmon,,meta.yml
+NFCORE_DUALRNASEQ:DUALRNASEQ:SALMON_ALIGNMENT_BASED:SALMON_SPLIT_TABLE_EACH,SALMON_SPLIT_TABLE,modules/local/salmon_split_table/main.nf,1,salmon_split_table,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:SALMON_ALIGNMENT_BASED:COMBINE_QUANTIFICATION_RESULTS_SALMON,COMBINE_QUANTIFICATION_RESULTS_SALMON,modules/local/combine_quantification_results_salmon/main.nf,1,combine_quantification_results_salmon,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:SALMON_ALIGNMENT_BASED:SALMON_SPLIT_TABLE_COMBINED,SALMON_SPLIT_TABLE,modules/local/salmon_split_table/main.nf,1,salmon_split_table,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:SALMON_ALIGNMENT_BASED:EXTRACT_PROCESSED_READS,EXTRACT_PROCESSED_READS,modules/local/extract_processed_reads/main.nf,2,extract_processed_reads,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:SALMON_ALIGNMENT_BASED:COLLATE_PROCESSED_READS,COLLATE_PROCESSED_READS,modules/local/collate_processed_reads/main.nf,1,collate_processed_reads,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:SALMON_ALIGNMENT_BASED:TXIMPORT,TXIMPORT,modules/local/tximport/main.nf,1,tximport,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:STAR_ALIGNMENT:STAR_GENOMEGENERATE,STAR_GENOMEGENERATE,modules/nf-core/star/genomegenerate/main.nf,1,star,star,,meta.yml
+NFCORE_DUALRNASEQ:DUALRNASEQ:STAR_ALIGNMENT:STAR_ALIGN,STAR_ALIGN,modules/local/star_align_genome/main.nf,1,star_align,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:STAR_ALIGNMENT:HTSEQ_COUNT,HTSEQ_COUNT,modules/local/htseq_count/main.nf,1,htseq_count,,,module name
+NFCORE_DUALRNASEQ:DUALRNASEQ:CUSTOM_DUMPSOFTWAREVERSIONS,CUSTOM_DUMPSOFTWAREVERSIONS,modules/nf-core/custom/dumpsoftwareversions/main.nf,1,custom,custom,,meta.yml
+NFCORE_DUALRNASEQ:DUALRNASEQ:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

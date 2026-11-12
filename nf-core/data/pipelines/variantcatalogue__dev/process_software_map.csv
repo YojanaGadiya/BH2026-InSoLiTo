@@ -1,0 +1,49 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:INPUT_CHECK:SAMPLESHEET_CHECK,SAMPLESHEET_CHECK,modules/local/samplesheet_check.nf,1,samplesheet_check,,,module name
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:TRIMMOMATIC,TRIMMOMATIC,modules/nf-core/trimmomatic/main.nf,1,trimmomatic,trimmomatic,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:BWA_INDEX,BWA_INDEX,modules/nf-core/bwa/index/main.nf,1,bwa,bwa,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:BWA_MEM,BWA_MEM,modules/local/bwa/mem/main.nf,1,bwa,bwa,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:MOSDEPTH,MOSDEPTH,modules/nf-core/mosdepth/main.nf,1,mosdepth,mosdepth,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:PICARD_COLLECTWGSMETRICS,PICARD_COLLECTWGSMETRICS,modules/nf-core/picard/collectwgsmetrics/main.nf,1,picard,picard,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:Picard_CollectAlignmentSummaryMetrics,Picard_CollectAlignmentSummaryMetrics,modules/local/Picard_CollectAlignmentSummaryMetrics.nf,1,picard_collectalignmentsummarymetrics,,,module name
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:Picard_QualityScoreDistribution,Picard_QualityScoreDistribution,modules/local/Picard_QualityScoreDistribution.nf,1,picard_qualityscoredistribution,,,module name
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:DEEPVARIANT,DEEPVARIANT,modules/local/deepvariant/main.nf,1,deepvariant,deepvariant,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:GLNEXUS,GLNEXUS,modules/nf-core/glnexus/main.nf,1,glnexus,glnexus,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:TABIX_TABIX,TABIX_TABIX,modules/nf-core/tabix/tabix/main.nf,1,tabix,tabix,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:BCFTOOLS_NORM,BCFTOOLS_NORM,modules/local/bcftools/norm/main.nf,1,norm,norm,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:BCFTOOLS_ANNOTATE,BCFTOOLS_ANNOTATE,modules/nf-core/bcftools/annotate/main.nf,1,annotate,annotate,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:Hail_sample_QC,Hail_sample_QC,modules/local/Hail_sample_QC.nf,1,hail_sample_qc,,,module name
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:Hail_variant_QC,Hail_variant_QC,modules/local/Hail_variant_QC.nf,1,hail_variant_qc,,,module name
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:BWA_INDEX_MT,BWA_INDEX,modules/nf-core/bwa/index/main.nf,1,bwa,bwa,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:BWA_INDEX_MT_shifted,BWA_INDEX,modules/nf-core/bwa/index/main.nf,1,bwa,bwa,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:GATK4_PRINTREADS,GATK4_PRINTREADS,modules/local/gatk4/printreads/main.nf,1,gatk4,gatk4,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:GATK4_SAMTOFASTQ,GATK4_SAMTOFASTQ,modules/nf-core/gatk4/samtofastq/main.nf,1,gatk4,gatk4,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:BWA_MEM_MT,BWA_MEM,modules/local/bwa/mem/main.nf,1,bwa,bwa,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:BWA_MEM_MT_shifted,BWA_MEM,modules/local/bwa/mem/main.nf,1,bwa,bwa,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:SAMTOOLS_INDEX_MT,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:SAMTOOLS_INDEX_MT_shifted,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:GATK4_MARKDUPLICATES_MT,GATK4_MARKDUPLICATES,modules/nf-core/gatk4/markduplicates/main.nf,1,gatk4,gatk4,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:GATK4_MARKDUPLICATES_MT_shifted,GATK4_MARKDUPLICATES,modules/nf-core/gatk4/markduplicates/main.nf,1,gatk4,gatk4,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:PICARD_COLLECTHSMETRICS_MT,PICARD_COLLECTHSMETRICS,modules/local/collecthsmetrics/main.nf,1,picard,picard,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:PICARD_COLLECTHSMETRICS_MT_shifted,PICARD_COLLECTHSMETRICS,modules/local/collecthsmetrics/main.nf,1,picard,picard,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:GATK4_MUTECT2,GATK4_MUTECT2,modules/nf-core/gatk4/mutect2/main.nf,1,gatk4,gatk4,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:GATK4_MUTECT2_shifted,GATK4_MUTECT2,modules/nf-core/gatk4/mutect2/main.nf,1,gatk4,gatk4,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:MT_Liftover,MT_Liftover,modules/local/MT_Liftover.nf,1,mt_liftover,,,module name
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:GATK4_MERGEVCFS,GATK4_MERGEVCFS,modules/nf-core/gatk4/mergevcfs/main.nf,1,gatk4,gatk4,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:TABIX_TABIX_MT,TABIX_TABIX,modules/nf-core/tabix/tabix/main.nf,1,tabix,tabix,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:BCFTOOLS_NORM_MT,BCFTOOLS_NORM,modules/local/bcftools/norm/main.nf,1,norm,norm,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:TABIX_TABIX_MT2,TABIX_TABIX,modules/nf-core/tabix/tabix/main.nf,1,tabix,tabix,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:GATK4_MERGEMUTECTSTATS,GATK4_MERGEMUTECTSTATS,modules/local/gatk4/mergemutectstats/main.nf,1,gatk4,gatk4,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:GATK4_LEFTALIGNANDTRIMVARIANTS,GATK4_LEFTALIGNANDTRIMVARIANTS,modules/local/gatk4/leftalignandtrimvariants/main.nf,1,gatk4,gatk4,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:GATK4_VARIANTFILTRATION,GATK4_VARIANTFILTRATION,modules/local/variantfiltration/main.nf,1,gatk4,gatk4,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:HAPLOCHECK,HAPLOCHECK,modules/local/haplocheck/main.nf,1,haplocheck,haplocheck,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:shift_back,shift_back,modules/local/shift_back.nf,1,shift_back,,,module name
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:MT_Step1_input_tsv,MT_Step1_input_tsv,modules/local/MT_Step1_input_tsv.nf,1,mt_step1_input_tsv,,,module name
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:MT_Step2_participant_data,MT_Step2_participant_data,modules/local/MT_Step2_participant_data.nf,1,mt_step2_participant_data,,,module name
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:MT_Step3_metadata_sample,MT_Step3_metadata_sample,modules/local/MT_Step3_metadata_sample.nf,1,mt_step3_metadata_sample,,,module name
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:MT_Step3_metadata,MT_Step3_metadata,modules/local/MT_Step3_metadata.nf,1,mt_step3_metadata,,,module name
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:Hail_variant_MT_QC,Hail_variant_MT_QC,modules/local/Hail_variant_MT_QC.nf,1,hail_variant_mt_qc,,,module name
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:CUSTOM_DUMPSOFTWAREVERSIONS,CUSTOM_DUMPSOFTWAREVERSIONS,modules/nf-core/custom/dumpsoftwareversions/main.nf,1,custom,custom,,meta.yml
+NFCORE_VARIANTCATALOGUE:VARIANTCATALOGUE:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,,meta.yml

@@ -1,0 +1,6 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_PROVENANCEREPORT:PROVENANCEREPORT:RENDER_QUARTO_WITH_PROVENANCE:QUARTO_PREPARE,QUARTO_PREPARE,modules/local/quarto_prepare/main.nf,1,jupyter,quarto_prepare,jupyter;matplotlib;papermill;python;pyyaml;quarto;r-base;r-rmarkdown,environment.yml
+NFCORE_PROVENANCEREPORT:PROVENANCEREPORT:RENDER_QUARTO_WITH_PROVENANCE:QUARTO_NOTEBOOK,QUARTO_NOTEBOOK,modules/nf-core/quarto/notebook/main.nf,1,jupyter,quarto;papermill,jupyter;matplotlib;papermill;python;quarto;r-base;r-rmarkdown,environment.yml
+NFCORE_PROVENANCEREPORT:PROVENANCEREPORT:REPORTENVIRONMENT,REPORTENVIRONMENT,modules/local/reportenvironment/main.nf,1,reportenvironment,reportenvironment,,meta.yml
+NFCORE_PROVENANCEREPORT:PROVENANCEREPORT:MD5SUM,MD5SUM,modules/nf-core/md5sum/main.nf,1,md5sum,md5sum,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_PROVENANCEREPORT:PROVENANCEREPORT:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

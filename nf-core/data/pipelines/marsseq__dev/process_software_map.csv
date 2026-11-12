@@ -1,0 +1,24 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_MARSSEQ:PREPARE_GENOME:GUNZIP_FASTA,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,grep;sed;tar,environment.yml
+NFCORE_MARSSEQ:PREPARE_GENOME:GUNZIP_GTF,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,grep;sed;tar,environment.yml
+NFCORE_MARSSEQ:PREPARE_GENOME:ERCC_CREATE,ERCC_CREATE,modules/local/ercc/main.nf,1,ercc_create,,,module name
+NFCORE_MARSSEQ:PREPARE_GENOME:CAT_FASTA,CAT_CAT,modules/nf-core/cat/cat/main.nf,1,cat,cat,pigz,environment.yml
+NFCORE_MARSSEQ:PREPARE_GENOME:BOWTIE2_BUILD,BOWTIE2_BUILD,modules/nf-core/bowtie2/build/main.nf,1,bowtie2,bowtie2,bowtie2,environment.yml
+NFCORE_MARSSEQ:PREPARE_GENOME:STAR_GENOMEGENERATE,STAR_GENOMEGENERATE,modules/nf-core/star/genomegenerate/main.nf,1,samtools,star,htslib;samtools;star;gawk,environment.yml
+NFCORE_MARSSEQ:MARSSEQ:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_MARSSEQ:MARSSEQ:PREPARE_PIPELINE:PREPARE,PREPARE,modules/local/prepare/main.nf,1,prepare,,,module name
+NFCORE_MARSSEQ:MARSSEQ:PREPARE_PIPELINE:FASTP_SPLIT,FASTP_SPLIT,modules/local/fastp/split/main.nf,1,fastp,fastp,,meta.yml
+NFCORE_MARSSEQ:MARSSEQ:LABEL_READS:EXTRACT_LABELS,EXTRACT_LABELS,modules/local/extract/main.nf,1,extract_labels,,,module name
+NFCORE_MARSSEQ:MARSSEQ:ALIGN_READS:BOWTIE2_ALIGN,BOWTIE2_ALIGN,modules/nf-core/bowtie2/align/main.nf,1,bowtie2,bowtie2,bowtie2;samtools;pigz,environment.yml
+NFCORE_MARSSEQ:MARSSEQ:ALIGN_READS:QC_ALIGNED,QC_ALIGNED,modules/local/qc/align/main.nf,1,qc_aligned,,,module name
+NFCORE_MARSSEQ:MARSSEQ:ALIGN_READS:CUT_SAM,CUT_SAM,modules/local/cut/sam/main.nf,1,cut_sam,,,module name
+NFCORE_MARSSEQ:MARSSEQ:MERGE_READS,CAT_CAT,modules/nf-core/cat/cat/main.nf,1,cat,cat,pigz,environment.yml
+NFCORE_MARSSEQ:MARSSEQ:DEMULTIPLEX_READS:DEMULTIPLEX,DEMULTIPLEX,modules/local/demultiplex/main.nf,1,demultiplex,,,module name
+NFCORE_MARSSEQ:MARSSEQ:DEMULTIPLEX_READS:QC_BATCH,QC_BATCH,modules/local/qc/batch/main.nf,1,qc_batch,,,module name
+NFCORE_MARSSEQ:MARSSEQ:QC_REPORT,QC_REPORT,modules/local/qc/report/main.nf,1,qc_report,,,module name
+NFCORE_MARSSEQ:MARSSEQ:VELOCITY:VELOCITY_CONVERT,VELOCITY_CONVERT,modules/local/velocity/convert/main.nf,1,velocity_convert,,,module name
+NFCORE_MARSSEQ:MARSSEQ:VELOCITY:CAT_FASTQ,CAT_FASTQ,modules/nf-core/cat/fastq/main.nf,1,cat,cat,coreutils,environment.yml
+NFCORE_MARSSEQ:MARSSEQ:VELOCITY:VELOCITY_WHITELIST,VELOCITY_WHITELIST,modules/local/velocity/whitelist/main.nf,1,velocity_whitelist,,,module name
+NFCORE_MARSSEQ:MARSSEQ:VELOCITY:VELOCITY_TRIM,CUTADAPT,modules/nf-core/cutadapt/main.nf,1,cutadapt,cuatadapt,cutadapt,environment.yml
+NFCORE_MARSSEQ:MARSSEQ:VELOCITY:STARSOLO,STARSOLO,modules/nf-core/star/starsolo/main.nf,1,star,starsolo,star,environment.yml
+NFCORE_MARSSEQ:MARSSEQ:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

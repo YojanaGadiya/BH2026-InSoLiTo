@@ -1,0 +1,22 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+numorph,numorphalign,data_flow,2,2,E00015,
+numorph,numorphregister,data_flow,1,1,E00037,
+numorph,numorphstitch,data_flow,2,2,E00008,
+numorphalign,numorphstitch,data_flow,2,2,E00019,
+numorphregister,mat2json,data_flow,2,2,E00038,
+numorphstitch,mat2json,data_flow,3,3,E00003,
+numorphstitch,numorph,data_flow,3,3,E00029,
+numorphstitch,numorph_3dunet,data_flow,3,3,E00024,
+numorphstitch,numorphregister,data_flow,3,3,E00034,
+p7zip,numorph,data_flow,3,3,E00004,
+p7zip,numorph_3dunet,data_flow,1,1,E00022,
+p7zip,numorphalign,data_flow,1,1,E00013,
+p7zip,numorphregister,data_flow,1,1,E00032,
+p7zip,numorphstitch,data_flow,3,3,E00001,
+stagefiles,numorph,data_flow,3,3,E00005,
+stagefiles,numorph_3dunet,data_flow,1,1,E00023,
+stagefiles,numorphalign,data_flow,1,1,E00014,
+stagefiles,numorphregister,data_flow,1,1,E00033,
+stagefiles,numorphstitch,data_flow,3,3,E00002,
+numorph_3dunet,numorphregister,parallel_co_use,0,0,,"both consume NUMORPHSTITCH.stitched (E00026, E00036); no directed path between any process of the two tools"
+numorphregister,numorph_3dunet,parallel_co_use,0,0,,"both consume NUMORPHSTITCH.stitched (E00036, E00026); no directed path between any process of the two tools"

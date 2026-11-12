@@ -1,0 +1,554 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bbmap,bcftools,data_flow,30,30,E01438,
+bbmap,bedtools,data_flow,10,10,E01683,
+bbmap,biopython,data_flow,3,3,E00786,
+bbmap,blast,data_flow,1,1,E00703,
+bbmap,bowtie2,data_flow,32,32,E00251,
+bbmap,bwa-mem2,data_flow,32,32,E00188,
+bbmap,cd-hit,data_flow,1,1,E00853,
+bbmap,findutils,data_flow,1,1,E04126,
+bbmap,ivar,data_flow,20,20,E01526,
+bbmap,kaiju,data_flow,2,2,E00076,
+bbmap,kraken2,data_flow,3,3,E00038,
+bbmap,mafft,data_flow,2,2,E05102,
+bbmap,mash,data_flow,2,2,E00924,
+bbmap,megahit,data_flow,2,2,E00503,
+bbmap,mmseqs2,data_flow,1,1,E00868,
+bbmap,mosdepth,data_flow,10,10,E01312,
+bbmap,pandas,data_flow,9,9,E00718,
+bbmap,picard,data_flow,20,20,E01190,
+bbmap,pip,gate_metadata,1,0,E05140,
+bbmap,pysam,data_flow,5,5,E01250,
+bbmap,samtools,data_flow,51,51,E00838,
+bbmap,snpeff,data_flow,4,4,E04999,
+bbmap,spades,data_flow,2,2,E00112,
+bbmap,sspace_basic,data_flow,12,12,E00131,
+bbmap,trinity,data_flow,2,2,E00314,
+bbmap,umi_tools,data_flow,5,5,E01170,
+bbmap,vrhyme,data_flow,2,2,E00894,
+bbmap,xz,data_flow,5,5,E01591,
+bcftools,pip,gate_metadata,5,0,E05160,
+bcftools,rename_fasta_header,data_flow,5,5,E01758,
+bcftools,samtools,data_flow,10,10,E01669,
+bcftools,snpeff,data_flow,8,8,E04993,
+bcftools,xz,data_flow,20,20,E01579,
+bedtools,bcftools,data_flow,5,5,E01717,
+biopython,cd-hit,data_flow,1,1,E00848,
+biopython,mash,data_flow,1,1,E00919,
+biopython,mmseqs2,data_flow,1,1,E00863,
+biopython,pandas,data_flow,1,1,E00937,
+biopython,samtools,data_flow,1,1,E00833,
+biopython,vrhyme,data_flow,2,2,E00889,
+blast,pandas,gate_metadata,2,0,E00714,
+blast,pip,data_flow,1,1,E05204,
+bowtie2,bcftools,data_flow,30,30,E01433,
+bowtie2,bedtools,data_flow,10,10,E01678,
+bowtie2,ivar,data_flow,20,20,E01521,
+bowtie2,mosdepth,data_flow,10,10,E01307,
+bowtie2,pandas,data_flow,5,5,E01562,
+bowtie2,picard,data_flow,20,20,E01185,
+bowtie2,pip,gate_metadata,5,0,E05151,
+bowtie2,pysam,data_flow,5,5,E01245,
+bowtie2,samtools,data_flow,61,61,E00310,
+bowtie2,umi_tools,data_flow,5,5,E01165,
+bowtie2,xz,data_flow,5,5,E01586,
+bracken,krakentools,data_flow,1,1,E00072,
+bracken,pip,gate_metadata,1,0,E05145,
+bwa-mem2,bcftools,data_flow,30,30,E01432,
+bwa-mem2,bedtools,data_flow,10,10,E01677,
+bwa-mem2,ivar,data_flow,20,20,E01520,
+bwa-mem2,mosdepth,data_flow,10,10,E01306,
+bwa-mem2,pandas,data_flow,5,5,E01561,
+bwa-mem2,picard,data_flow,20,20,E01184,
+bwa-mem2,pysam,data_flow,5,5,E01244,
+bwa-mem2,samtools,data_flow,61,61,E00309,
+bwa-mem2,umi_tools,data_flow,5,5,E01164,
+bwa-mem2,xz,data_flow,5,5,E01585,
+cat,bbmap,data_flow,2,2,E00022,
+cat,bcftools,data_flow,30,30,E01440,
+cat,bedtools,data_flow,10,10,E01685,
+cat,biopython,data_flow,3,3,E00788,
+cat,blast,data_flow,1,1,E00705,
+cat,bowtie2,data_flow,32,32,E00253,
+cat,bwa-mem2,data_flow,32,32,E00190,
+cat,cd-hit,data_flow,1,1,E00855,
+cat,findutils,data_flow,1,1,E04128,
+cat,ivar,data_flow,20,20,E01528,
+cat,kaiju,data_flow,2,2,E00078,
+cat,kraken2,data_flow,3,3,E00040,
+cat,mafft,data_flow,2,2,E05104,
+cat,mash,data_flow,2,2,E00926,
+cat,megahit,data_flow,1,1,E00508,
+cat,mmseqs2,data_flow,1,1,E00870,
+cat,mosdepth,data_flow,10,10,E01314,
+cat,pandas,data_flow,9,9,E00720,
+cat,picard,data_flow,20,20,E01192,
+cat,prinseq-plus-plus,data_flow,1,1,E00030,
+cat,pysam,data_flow,5,5,E01252,
+cat,samtools,data_flow,51,51,E00840,
+cat,snpeff,data_flow,4,4,E05001,
+cat,spades,data_flow,1,1,E00117,
+cat,sspace_basic,data_flow,12,12,E00133,
+cat,trinity,data_flow,1,1,E00319,
+cat,umi_tools,data_flow,5,5,E01172,
+cat,vrhyme,data_flow,2,2,E00896,
+cat,xz,data_flow,5,5,E01593,
+cd-hit,pandas,data_flow,1,1,E00936,
+checkv,pip,data_flow,1,1,E05202,
+clusty,pandas,data_flow,1,1,E00955,
+fastp,bbmap,data_flow,4,3,E00027,
+fastp,bcftools,data_flow,60,30,E01445,
+fastp,bedtools,data_flow,20,10,E01690,
+fastp,biopython,data_flow,6,3,E00793,
+fastp,blast,data_flow,2,1,E00710,
+fastp,bowtie2,data_flow,64,32,E00258,
+fastp,bwa-mem2,data_flow,64,32,E00195,
+fastp,cat,data_flow,2,1,E00019,
+fastp,cd-hit,data_flow,2,1,E00860,
+fastp,fastqc,data_flow,2,1,E00007,
+fastp,findutils,data_flow,2,1,E04133,
+fastp,humid,data_flow,2,1,E00012,
+fastp,ivar,data_flow,40,20,E01533,
+fastp,kaiju,data_flow,4,3,E00083,
+fastp,kraken2,data_flow,6,4,E00045,
+fastp,mafft,data_flow,4,2,E05109,
+fastp,mash,data_flow,4,2,E00931,
+fastp,megahit,data_flow,2,1,E00513,
+fastp,mmseqs2,data_flow,2,1,E00875,
+fastp,mosdepth,data_flow,20,10,E01319,
+fastp,pandas,data_flow,18,9,E00725,
+fastp,picard,data_flow,40,20,E01197,
+fastp,pip,gate_metadata,1,0,E05137,
+fastp,prinseq-plus-plus,data_flow,2,1,E00035,
+fastp,pysam,data_flow,10,5,E01257,
+fastp,samtools,data_flow,102,51,E00845,
+fastp,snpeff,data_flow,8,4,E05006,
+fastp,spades,data_flow,2,2,E00122,
+fastp,sspace_basic,data_flow,24,12,E00138,
+fastp,trinity,data_flow,2,2,E00324,
+fastp,umi_tools,data_flow,10,5,E01177,
+fastp,vrhyme,data_flow,4,2,E00901,
+fastp,xz,data_flow,10,5,E01598,
+fastqc,pip,gate_metadata,6,0,E05131,
+findutils,biopython,data_flow,3,3,E00783,
+findutils,blast,data_flow,1,1,E00700,
+findutils,cd-hit,data_flow,1,1,E00850,
+findutils,kaiju,data_flow,1,1,E00746,
+findutils,kraken2,data_flow,1,1,E00763,
+findutils,mafft,data_flow,2,2,E05099,
+findutils,mash,data_flow,3,3,E00921,
+findutils,minimap2,data_flow,2,2,E00963,
+findutils,mmseqs2,data_flow,1,1,E00865,
+findutils,pandas,data_flow,3,3,E00715,
+findutils,prinseq-plus-plus,data_flow,1,1,E00699,
+findutils,samtools,data_flow,1,1,E00835,
+findutils,vrhyme,data_flow,2,2,E00891,
+gunzip,biopython,data_flow,1,1,E00831,
+gunzip,blast,data_flow,1,1,E00002,
+gunzip,bracken,data_flow,1,1,E00070,
+gunzip,checkv,data_flow,1,1,E05090,
+gunzip,kaiju,data_flow,4,4,E00087,
+gunzip,kraken2,data_flow,3,3,E00049,
+gunzip,mmseqs2,data_flow,1,1,E05073,
+gunzip,pandas,data_flow,1,1,E00743,
+gunzip,prokka,data_flow,1,1,E05083,
+humid,bbmap,data_flow,2,2,E00023,
+humid,bcftools,data_flow,30,30,E01441,
+humid,bedtools,data_flow,10,10,E01686,
+humid,biopython,data_flow,3,3,E00789,
+humid,blast,data_flow,1,1,E00706,
+humid,bowtie2,data_flow,32,32,E00254,
+humid,bwa-mem2,data_flow,32,32,E00191,
+humid,cat,data_flow,1,1,E00015,
+humid,cd-hit,data_flow,1,1,E00856,
+humid,findutils,data_flow,1,1,E04129,
+humid,ivar,data_flow,20,20,E01529,
+humid,kaiju,data_flow,2,2,E00079,
+humid,kraken2,data_flow,3,3,E00041,
+humid,mafft,data_flow,2,2,E05105,
+humid,mash,data_flow,2,2,E00927,
+humid,megahit,data_flow,1,1,E00509,
+humid,mmseqs2,data_flow,1,1,E00871,
+humid,mosdepth,data_flow,10,10,E01315,
+humid,pandas,data_flow,9,9,E00721,
+humid,picard,data_flow,20,20,E01193,
+humid,pip,gate_metadata,1,0,E05139,
+humid,prinseq-plus-plus,data_flow,1,1,E00031,
+humid,pysam,data_flow,5,5,E01253,
+humid,samtools,data_flow,51,51,E00841,
+humid,snpeff,data_flow,4,4,E05002,
+humid,spades,data_flow,1,1,E00118,
+humid,sspace_basic,data_flow,12,12,E00134,
+humid,trinity,data_flow,1,1,E00320,
+humid,umi_tools,data_flow,5,5,E01173,
+humid,vrhyme,data_flow,2,2,E00897,
+humid,xz,data_flow,5,5,E01594,
+ivar,pandas,data_flow,5,5,E01556,
+ivar,rename_fasta_header,data_flow,6,6,E00971,
+kaiju,biopython,data_flow,3,3,E00779,
+kaiju,krona_cleanup,gate_metadata,1,0,E00098,
+kaiju,pip,gate_metadata,1,0,E05147,
+kraken2,bbmap,data_flow,2,1,E00100,
+kraken2,bcftools,data_flow,60,30,E01436,
+kraken2,bedtools,data_flow,20,10,E01681,
+kraken2,biopython,data_flow,12,6,E00780,
+kraken2,blast,data_flow,2,1,E00701,
+kraken2,bowtie2,data_flow,64,32,E00249,
+kraken2,bracken,data_flow,1,1,E00068,
+kraken2,bwa-mem2,data_flow,64,32,E00186,
+kraken2,cd-hit,data_flow,2,1,E00851,
+kraken2,fastqc,data_flow,2,1,E00051,
+kraken2,findutils,data_flow,2,1,E04124,
+kraken2,ivar,data_flow,40,20,E01524,
+kraken2,kaiju,data_flow,4,2,E00074,
+kraken2,krakentools,data_flow,1,1,E00073,
+kraken2,mafft,data_flow,4,2,E05100,
+kraken2,mash,data_flow,4,2,E00922,
+kraken2,megahit,data_flow,2,1,E00504,
+kraken2,mmseqs2,data_flow,2,1,E00866,
+kraken2,mosdepth,data_flow,20,10,E01310,
+kraken2,pandas,data_flow,18,9,E00716,
+kraken2,picard,data_flow,40,20,E01188,
+kraken2,pip,gate_metadata,2,0,E05142,
+kraken2,pysam,data_flow,10,5,E01248,
+kraken2,samtools,data_flow,102,51,E00836,
+kraken2,snpeff,data_flow,8,4,E04997,
+kraken2,spades,data_flow,2,1,E00113,
+kraken2,sspace_basic,data_flow,24,12,E00129,
+kraken2,trinity,data_flow,2,1,E00315,
+kraken2,umi_tools,data_flow,10,5,E01168,
+kraken2,vrhyme,data_flow,4,2,E00892,
+kraken2,xz,data_flow,10,5,E01589,
+krakentools,krona_cleanup,gate_metadata,1,0,E00097,
+krona_cleanup,krona,data_flow,1,1,E00099,
+mash,clusty,data_flow,1,1,E00934,
+mash,pandas,data_flow,2,2,E00954,
+megahit,bowtie2,data_flow,4,4,E00629,
+megahit,bwa-mem2,data_flow,4,4,E00570,
+megahit,findutils,data_flow,1,1,E00698,
+megahit,quast,data_flow,1,1,E00516,
+megahit,sspace_basic,data_flow,4,4,E00517,
+minimap2,ivar,data_flow,2,2,E00968,
+mmseqs2,pandas,gate_metadata,1,0,E00952,
+mmseqs2,pip,data_flow,1,1,E05205,
+mosdepth,pip,data_flow,10,5,E05155,
+pandas,bcftools,data_flow,11,11,E01577,
+pandas,bedtools,data_flow,2,2,E04922,
+pandas,biopython,data_flow,3,3,E00782,
+pandas,bowtie2,data_flow,4,4,E04242,
+pandas,bwa-mem2,data_flow,4,4,E04179,
+pandas,cd-hit,data_flow,1,1,E00849,
+pandas,findutils,data_flow,1,1,E00959,
+pandas,ivar,data_flow,6,6,E00967,
+pandas,kaiju,data_flow,1,1,E00745,
+pandas,kraken2,data_flow,1,1,E00762,
+pandas,mafft,data_flow,2,2,E05112,
+pandas,mash,data_flow,1,1,E00920,
+pandas,minimap2,data_flow,3,3,E00960,
+pandas,mmseqs2,data_flow,1,1,E00864,
+pandas,mosdepth,data_flow,2,2,E04534,
+pandas,picard,data_flow,4,4,E04406,
+pandas,pip,data_flow,8,3,E05159,
+pandas,pysam,data_flow,1,1,E04469,
+pandas,samtools,data_flow,11,11,E00834,
+pandas,snpeff,data_flow,4,4,E05009,
+pandas,umi_tools,data_flow,1,1,E04385,
+pandas,vrhyme,data_flow,2,2,E00890,
+pandas,xz,data_flow,1,1,E04826,
+picard,bcftools,data_flow,30,30,E01429,
+picard,bedtools,data_flow,10,10,E01674,
+picard,ivar,data_flow,20,20,E01517,
+picard,mosdepth,data_flow,10,10,E01303,
+picard,pandas,data_flow,5,5,E01558,
+picard,pip,gate_metadata,5,0,E05154,
+picard,pysam,data_flow,5,5,E01241,
+picard,samtools,data_flow,30,30,E01221,
+picard,xz,data_flow,5,5,E01582,
+prinseq-plus-plus,bbmap,data_flow,1,1,E00103,
+prinseq-plus-plus,bcftools,data_flow,30,30,E01439,
+prinseq-plus-plus,bedtools,data_flow,10,10,E01684,
+prinseq-plus-plus,biopython,data_flow,3,3,E00787,
+prinseq-plus-plus,blast,data_flow,1,1,E00704,
+prinseq-plus-plus,bowtie2,data_flow,32,32,E00252,
+prinseq-plus-plus,bwa-mem2,data_flow,32,32,E00189,
+prinseq-plus-plus,cd-hit,data_flow,1,1,E00854,
+prinseq-plus-plus,findutils,data_flow,1,1,E04127,
+prinseq-plus-plus,ivar,data_flow,20,20,E01527,
+prinseq-plus-plus,kaiju,data_flow,2,2,E00077,
+prinseq-plus-plus,kraken2,data_flow,3,3,E00039,
+prinseq-plus-plus,mafft,data_flow,2,2,E05103,
+prinseq-plus-plus,mash,data_flow,2,2,E00925,
+prinseq-plus-plus,megahit,data_flow,1,1,E00507,
+prinseq-plus-plus,mmseqs2,data_flow,1,1,E00869,
+prinseq-plus-plus,mosdepth,data_flow,10,10,E01313,
+prinseq-plus-plus,pandas,data_flow,9,9,E00719,
+prinseq-plus-plus,picard,data_flow,20,20,E01191,
+prinseq-plus-plus,pip,gate_metadata,1,0,E05141,
+prinseq-plus-plus,pysam,data_flow,5,5,E01251,
+prinseq-plus-plus,samtools,data_flow,51,51,E00839,
+prinseq-plus-plus,snpeff,data_flow,4,4,E05000,
+prinseq-plus-plus,spades,data_flow,1,1,E00116,
+prinseq-plus-plus,sspace_basic,data_flow,12,12,E00132,
+prinseq-plus-plus,trinity,data_flow,1,1,E00318,
+prinseq-plus-plus,umi_tools,data_flow,5,5,E01171,
+prinseq-plus-plus,vrhyme,data_flow,2,2,E00895,
+prinseq-plus-plus,xz,data_flow,5,5,E01592,
+quast,pip,data_flow,4,1,E05148,
+rename_fasta_header,bcftools,data_flow,60,60,E01434,
+rename_fasta_header,bedtools,data_flow,20,20,E01679,
+rename_fasta_header,blast,data_flow,3,3,E05068,
+rename_fasta_header,bowtie2,data_flow,40,40,E01031,
+rename_fasta_header,bwa-mem2,data_flow,40,40,E00972,
+rename_fasta_header,checkv,data_flow,3,3,E05085,
+rename_fasta_header,ivar,data_flow,40,40,E01522,
+rename_fasta_header,mafft,data_flow,9,9,E05092,
+rename_fasta_header,mmseqs2,data_flow,3,3,E05075,
+rename_fasta_header,mosdepth,data_flow,20,20,E01308,
+rename_fasta_header,pandas,data_flow,10,10,E01563,
+rename_fasta_header,picard,data_flow,40,40,E01186,
+rename_fasta_header,prokka,data_flow,3,3,E05079,
+rename_fasta_header,pysam,data_flow,10,10,E01246,
+rename_fasta_header,quast,data_flow,3,3,E05065,
+rename_fasta_header,samtools,data_flow,100,100,E01090,
+rename_fasta_header,snpeff,data_flow,8,8,E04995,
+rename_fasta_header,umi_tools,data_flow,10,10,E01166,
+rename_fasta_header,xz,data_flow,10,10,E01587,
+samtools,bcftools,data_flow,60,30,E01430,
+samtools,bedtools,data_flow,25,15,E01671,
+samtools,ivar,data_flow,40,20,E01518,
+samtools,mosdepth,data_flow,30,15,E01304,
+samtools,pandas,data_flow,14,6,E00935,
+samtools,picard,data_flow,60,30,E01182,
+samtools,pip,gate_metadata,15,0,E05152,
+samtools,pysam,data_flow,10,5,E01242,
+samtools,umi_tools,data_flow,20,10,E01162,
+samtools,xz,data_flow,10,5,E01583,
+snpeff,snpsift,data_flow,1,1,E05064,
+spades,bowtie2,data_flow,8,8,E00247,
+spades,bwa-mem2,data_flow,8,8,E00184,
+spades,findutils,data_flow,2,2,E00693,
+spades,quast,data_flow,2,2,E00125,
+spades,sspace_basic,data_flow,8,8,E00127,
+sspace_basic,bowtie2,data_flow,12,12,E00246,
+sspace_basic,bwa-mem2,data_flow,12,12,E00183,
+sspace_basic,findutils,data_flow,3,3,E00692,
+trimmomatic,bbmap,data_flow,4,3,E00024,
+trimmomatic,bcftools,data_flow,60,30,E01442,
+trimmomatic,bedtools,data_flow,20,10,E01687,
+trimmomatic,biopython,data_flow,6,3,E00790,
+trimmomatic,blast,data_flow,2,1,E00707,
+trimmomatic,bowtie2,data_flow,64,32,E00255,
+trimmomatic,bwa-mem2,data_flow,64,32,E00192,
+trimmomatic,cat,data_flow,2,1,E00016,
+trimmomatic,cd-hit,data_flow,2,1,E00857,
+trimmomatic,fastqc,data_flow,2,1,E00004,
+trimmomatic,findutils,data_flow,2,1,E04130,
+trimmomatic,humid,data_flow,2,1,E00009,
+trimmomatic,ivar,data_flow,40,20,E01530,
+trimmomatic,kaiju,data_flow,4,3,E00080,
+trimmomatic,kraken2,data_flow,6,4,E00042,
+trimmomatic,mafft,data_flow,4,2,E05106,
+trimmomatic,mash,data_flow,4,2,E00928,
+trimmomatic,megahit,data_flow,2,1,E00510,
+trimmomatic,mmseqs2,data_flow,2,1,E00872,
+trimmomatic,mosdepth,data_flow,20,10,E01316,
+trimmomatic,pandas,data_flow,18,9,E00722,
+trimmomatic,picard,data_flow,40,20,E01194,
+trimmomatic,pip,data_flow,1,1,E05133,
+trimmomatic,prinseq-plus-plus,data_flow,2,1,E00032,
+trimmomatic,pysam,data_flow,10,5,E01254,
+trimmomatic,samtools,data_flow,102,51,E00842,
+trimmomatic,snpeff,data_flow,8,4,E05003,
+trimmomatic,spades,data_flow,2,2,E00119,
+trimmomatic,sspace_basic,data_flow,24,12,E00135,
+trimmomatic,trinity,data_flow,2,2,E00321,
+trimmomatic,umi_tools,data_flow,10,5,E01174,
+trimmomatic,vrhyme,data_flow,4,2,E00898,
+trimmomatic,xz,data_flow,10,5,E01595,
+trinity,bowtie2,data_flow,4,4,E00440,
+trinity,bwa-mem2,data_flow,4,4,E00381,
+trinity,findutils,data_flow,1,1,E00696,
+trinity,quast,data_flow,1,1,E00327,
+trinity,sspace_basic,data_flow,4,4,E00328,
+umi_tools,bbmap,data_flow,4,4,E00026,
+umi_tools,bcftools,data_flow,90,90,E01428,
+umi_tools,bedtools,data_flow,30,30,E01673,
+umi_tools,biopython,data_flow,6,6,E00792,
+umi_tools,blast,data_flow,2,2,E00709,
+umi_tools,bowtie2,data_flow,64,64,E00257,
+umi_tools,bwa-mem2,data_flow,64,64,E00194,
+umi_tools,cat,data_flow,2,2,E00018,
+umi_tools,cd-hit,data_flow,2,2,E00859,
+umi_tools,fastp,data_flow,1,1,E00006,
+umi_tools,findutils,data_flow,2,2,E04132,
+umi_tools,humid,data_flow,2,2,E00011,
+umi_tools,ivar,data_flow,60,60,E01516,
+umi_tools,kaiju,data_flow,4,4,E00082,
+umi_tools,kraken2,data_flow,6,6,E00044,
+umi_tools,mafft,data_flow,4,4,E05108,
+umi_tools,mash,data_flow,4,4,E00930,
+umi_tools,megahit,data_flow,2,2,E00512,
+umi_tools,mmseqs2,data_flow,2,2,E00874,
+umi_tools,mosdepth,data_flow,30,30,E01302,
+umi_tools,pandas,data_flow,23,23,E00724,
+umi_tools,picard,data_flow,50,50,E01196,
+umi_tools,pip,gate_metadata,7,0,E05134,
+umi_tools,prinseq-plus-plus,data_flow,2,2,E00034,
+umi_tools,pysam,data_flow,15,15,E01240,
+umi_tools,samtools,data_flow,132,132,E00844,
+umi_tools,snpeff,data_flow,8,8,E05005,
+umi_tools,spades,data_flow,2,2,E00121,
+umi_tools,sspace_basic,data_flow,24,24,E00137,
+umi_tools,trinity,data_flow,2,2,E00323,
+umi_tools,vrhyme,data_flow,4,4,E00900,
+umi_tools,xz,data_flow,15,15,E01581,
+untar,biopython,data_flow,1,1,E00830,
+untar,blast,data_flow,1,1,E00001,
+untar,bracken,data_flow,1,1,E00069,
+untar,checkv,data_flow,1,1,E05089,
+untar,kaiju,data_flow,4,4,E00086,
+untar,kraken2,data_flow,3,3,E00048,
+untar,mmseqs2,data_flow,1,1,E05072,
+untar,pandas,data_flow,1,1,E00742,
+untar,prokka,data_flow,1,1,E05082,
+vrhyme,pandas,data_flow,1,1,E00953,
+xz,bcftools,data_flow,15,5,E01623,
+xz,biopython,data_flow,1,1,E00832,
+xz,blast,data_flow,1,1,E00003,
+xz,bracken,data_flow,1,1,E00071,
+xz,checkv,data_flow,1,1,E05091,
+xz,kaiju,data_flow,4,4,E00088,
+xz,kraken2,data_flow,3,3,E00050,
+xz,mmseqs2,data_flow,1,1,E05074,
+xz,pandas,data_flow,1,1,E00744,
+xz,prokka,data_flow,1,1,E05084,
+bcftools,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E01445, E00007); no directed path between any process of the two tools"
+bcftools,mosdepth,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01434, E01308); no directed path between any process of the two tools"
+bcftools,pysam,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01434, E01246); no directed path between any process of the two tools"
+bedtools,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E01690, E00007); no directed path between any process of the two tools"
+bedtools,mosdepth,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01679, E01308); no directed path between any process of the two tools"
+bedtools,pysam,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01679, E01246); no directed path between any process of the two tools"
+bedtools,snpeff,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01679, E04995); no directed path between any process of the two tools"
+biopython,bracken,parallel_co_use,0,0,,"both consume GUNZIP_DB.gunzip (E00831, E00070); no directed path between any process of the two tools"
+biopython,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E00793, E00007); no directed path between any process of the two tools"
+blast,bracken,parallel_co_use,0,0,,"both consume GUNZIP_DB.gunzip (E00002, E00070); no directed path between any process of the two tools"
+blast,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E00710, E00007); no directed path between any process of the two tools"
+bowtie2,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E00653, E00007); no directed path between any process of the two tools"
+bracken,biopython,parallel_co_use,0,0,,"both consume GUNZIP_DB.gunzip (E00070, E00831); no directed path between any process of the two tools"
+bracken,blast,parallel_co_use,0,0,,"both consume GUNZIP_DB.gunzip (E00070, E00002); no directed path between any process of the two tools"
+bracken,checkv,parallel_co_use,0,0,,"both consume GUNZIP_DB.gunzip (E00070, E05090); no directed path between any process of the two tools"
+bracken,kaiju,parallel_co_use,0,0,,"both consume GUNZIP_DB.gunzip (E00070, E00760); no directed path between any process of the two tools"
+bracken,mmseqs2,parallel_co_use,0,0,,"both consume GUNZIP_DB.gunzip (E00070, E05073); no directed path between any process of the two tools"
+bracken,pandas,parallel_co_use,0,0,,"both consume GUNZIP_DB.gunzip (E00070, E00743); no directed path between any process of the two tools"
+bracken,prokka,parallel_co_use,0,0,,"both consume GUNZIP_DB.gunzip (E00070, E05083); no directed path between any process of the two tools"
+bwa-mem2,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E00580, E00007); no directed path between any process of the two tools"
+cd-hit,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E00860, E00007); no directed path between any process of the two tools"
+cd-hit,mash,parallel_co_use,0,0,,"both consume BLAST_FILTER.sequence (E00849, E00920); no directed path between any process of the two tools"
+checkv,bracken,parallel_co_use,0,0,,"both consume GUNZIP_DB.gunzip (E05090, E00070); no directed path between any process of the two tools"
+checkv,mafft,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05085, E05092); no directed path between any process of the two tools"
+checkv,mosdepth,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05085, E01308); no directed path between any process of the two tools"
+checkv,prokka,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05085, E05079); no directed path between any process of the two tools"
+checkv,pysam,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05085, E01246); no directed path between any process of the two tools"
+checkv,quast,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05085, E05065); no directed path between any process of the two tools"
+checkv,snpeff,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05085, E04995); no directed path between any process of the two tools"
+fastqc,bcftools,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E01445); no directed path between any process of the two tools"
+fastqc,bedtools,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E01690); no directed path between any process of the two tools"
+fastqc,biopython,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E00793); no directed path between any process of the two tools"
+fastqc,blast,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E00710); no directed path between any process of the two tools"
+fastqc,bowtie2,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E00653); no directed path between any process of the two tools"
+fastqc,bwa-mem2,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E00580); no directed path between any process of the two tools"
+fastqc,cd-hit,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E00860); no directed path between any process of the two tools"
+fastqc,findutils,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E04133); no directed path between any process of the two tools"
+fastqc,ivar,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E01735); no directed path between any process of the two tools"
+fastqc,kaiju,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E00756); no directed path between any process of the two tools"
+fastqc,mafft,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E05109); no directed path between any process of the two tools"
+fastqc,mash,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E00931); no directed path between any process of the two tools"
+fastqc,megahit,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E00513); no directed path between any process of the two tools"
+fastqc,mmseqs2,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E00875); no directed path between any process of the two tools"
+fastqc,mosdepth,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E01319); no directed path between any process of the two tools"
+fastqc,pandas,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E00949); no directed path between any process of the two tools"
+fastqc,picard,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E01197); no directed path between any process of the two tools"
+fastqc,pysam,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E01257); no directed path between any process of the two tools"
+fastqc,samtools,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E00845); no directed path between any process of the two tools"
+fastqc,snpeff,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E05006); no directed path between any process of the two tools"
+fastqc,spades,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E00122); no directed path between any process of the two tools"
+fastqc,sspace_basic,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E00527); no directed path between any process of the two tools"
+fastqc,trinity,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E00324); no directed path between any process of the two tools"
+fastqc,vrhyme,parallel_co_use,0,0,,"both consume FASTP.reads (E00007, E00901); no directed path between any process of the two tools"
+findutils,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E04133, E00007); no directed path between any process of the two tools"
+ivar,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E01735, E00007); no directed path between any process of the two tools"
+kaiju,bracken,parallel_co_use,0,0,,"both consume GUNZIP_DB.gunzip (E00760, E00070); no directed path between any process of the two tools"
+kaiju,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E00756, E00007); no directed path between any process of the two tools"
+mafft,checkv,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05092, E05085); no directed path between any process of the two tools"
+mafft,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E05109, E00007); no directed path between any process of the two tools"
+mafft,mosdepth,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05092, E01308); no directed path between any process of the two tools"
+mafft,pip,parallel_co_use,0,0,,"both consume SELECT_REFERENCE.fasta_reads (E05112, E05207); no directed path between any process of the two tools"
+mafft,prokka,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05092, E05079); no directed path between any process of the two tools"
+mafft,pysam,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05092, E01246); no directed path between any process of the two tools"
+mafft,quast,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05092, E05065); no directed path between any process of the two tools"
+mafft,snpeff,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05092, E04995); no directed path between any process of the two tools"
+mash,cd-hit,parallel_co_use,0,0,,"both consume BLAST_FILTER.sequence (E00920, E00849); no directed path between any process of the two tools"
+mash,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E00931, E00007); no directed path between any process of the two tools"
+mash,vrhyme,parallel_co_use,0,0,,"both consume BLAST_FILTER.sequence (E00920, E00890); no directed path between any process of the two tools"
+megahit,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E00513, E00007); no directed path between any process of the two tools"
+megahit,spades,parallel_co_use,0,0,,"both consume BBMAP_BBNORM.fastq (E00503, E00112); no directed path between any process of the two tools"
+megahit,trinity,parallel_co_use,0,0,,"both consume BBMAP_BBNORM.fastq (E00503, E00314); no directed path between any process of the two tools"
+mmseqs2,bracken,parallel_co_use,0,0,,"both consume GUNZIP_DB.gunzip (E05073, E00070); no directed path between any process of the two tools"
+mmseqs2,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E00875, E00007); no directed path between any process of the two tools"
+mosdepth,bcftools,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01308, E01434); no directed path between any process of the two tools"
+mosdepth,bedtools,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01308, E01679); no directed path between any process of the two tools"
+mosdepth,checkv,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01308, E05085); no directed path between any process of the two tools"
+mosdepth,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E01319, E00007); no directed path between any process of the two tools"
+mosdepth,mafft,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01308, E05092); no directed path between any process of the two tools"
+mosdepth,prokka,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01308, E05079); no directed path between any process of the two tools"
+mosdepth,pysam,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01308, E01246); no directed path between any process of the two tools"
+mosdepth,quast,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01308, E05065); no directed path between any process of the two tools"
+mosdepth,snpeff,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01308, E04995); no directed path between any process of the two tools"
+pandas,bracken,parallel_co_use,0,0,,"both consume GUNZIP_DB.gunzip (E00743, E00070); no directed path between any process of the two tools"
+pandas,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E00949, E00007); no directed path between any process of the two tools"
+picard,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E01197, E00007); no directed path between any process of the two tools"
+pip,mafft,parallel_co_use,0,0,,"both consume SELECT_REFERENCE.fasta_reads (E05207, E05112); no directed path between any process of the two tools"
+pip,pysam,parallel_co_use,0,0,,"both consume SELECT_REFERENCE.fasta_reads (E05207, E04469); no directed path between any process of the two tools"
+pip,snpeff,parallel_co_use,0,0,,"both consume SELECT_REFERENCE.fasta_reads (E05207, E05009); no directed path between any process of the two tools"
+prokka,bracken,parallel_co_use,0,0,,"both consume GUNZIP_DB.gunzip (E05083, E00070); no directed path between any process of the two tools"
+prokka,checkv,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05079, E05085); no directed path between any process of the two tools"
+prokka,mafft,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05079, E05092); no directed path between any process of the two tools"
+prokka,mosdepth,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05079, E01308); no directed path between any process of the two tools"
+prokka,pysam,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05079, E01246); no directed path between any process of the two tools"
+prokka,quast,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05079, E05065); no directed path between any process of the two tools"
+prokka,snpeff,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05079, E04995); no directed path between any process of the two tools"
+pysam,bcftools,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01246, E01434); no directed path between any process of the two tools"
+pysam,bedtools,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01246, E01679); no directed path between any process of the two tools"
+pysam,checkv,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01246, E05085); no directed path between any process of the two tools"
+pysam,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E01257, E00007); no directed path between any process of the two tools"
+pysam,mafft,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01246, E05092); no directed path between any process of the two tools"
+pysam,mosdepth,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01246, E01308); no directed path between any process of the two tools"
+pysam,pip,parallel_co_use,0,0,,"both consume SELECT_REFERENCE.fasta_reads (E04469, E05207); no directed path between any process of the two tools"
+pysam,prokka,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01246, E05079); no directed path between any process of the two tools"
+pysam,quast,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01246, E05065); no directed path between any process of the two tools"
+pysam,snpeff,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E01246, E04995); no directed path between any process of the two tools"
+quast,checkv,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05065, E05085); no directed path between any process of the two tools"
+quast,mafft,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05065, E05092); no directed path between any process of the two tools"
+quast,mosdepth,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05065, E01308); no directed path between any process of the two tools"
+quast,prokka,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05065, E05079); no directed path between any process of the two tools"
+quast,pysam,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05065, E01246); no directed path between any process of the two tools"
+quast,snpeff,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E05065, E04995); no directed path between any process of the two tools"
+samtools,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E00845, E00007); no directed path between any process of the two tools"
+snpeff,bedtools,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E04995, E01679); no directed path between any process of the two tools"
+snpeff,checkv,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E04995, E05085); no directed path between any process of the two tools"
+snpeff,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E05006, E00007); no directed path between any process of the two tools"
+snpeff,mafft,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E04995, E05092); no directed path between any process of the two tools"
+snpeff,mosdepth,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E04995, E01308); no directed path between any process of the two tools"
+snpeff,pip,parallel_co_use,0,0,,"both consume SELECT_REFERENCE.fasta_reads (E05009, E05207); no directed path between any process of the two tools"
+snpeff,prokka,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E04995, E05079); no directed path between any process of the two tools"
+snpeff,pysam,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E04995, E01246); no directed path between any process of the two tools"
+snpeff,quast,parallel_co_use,0,0,,"both consume RENAME_FASTA_HEADER_CONTIG_CONSENSUS.fasta (E04995, E05065); no directed path between any process of the two tools"
+spades,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E00122, E00007); no directed path between any process of the two tools"
+spades,megahit,parallel_co_use,0,0,,"both consume BBMAP_BBNORM.fastq (E00112, E00503); no directed path between any process of the two tools"
+spades,trinity,parallel_co_use,0,0,,"both consume BBMAP_BBNORM.fastq (E00112, E00314); no directed path between any process of the two tools"
+sspace_basic,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E00527, E00007); no directed path between any process of the two tools"
+trinity,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E00324, E00007); no directed path between any process of the two tools"
+trinity,megahit,parallel_co_use,0,0,,"both consume BBMAP_BBNORM.fastq (E00314, E00503); no directed path between any process of the two tools"
+trinity,spades,parallel_co_use,0,0,,"both consume BBMAP_BBNORM.fastq (E00314, E00112); no directed path between any process of the two tools"
+vrhyme,fastqc,parallel_co_use,0,0,,"both consume FASTP.reads (E00901, E00007); no directed path between any process of the two tools"
+vrhyme,mash,parallel_co_use,0,0,,"both consume BLAST_FILTER.sequence (E00890, E00920); no directed path between any process of the two tools"

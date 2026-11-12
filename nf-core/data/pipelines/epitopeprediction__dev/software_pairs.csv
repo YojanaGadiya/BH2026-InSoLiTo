@@ -1,0 +1,43 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bcftools,ensembl-vep,data_flow,2,2,E00006,
+bcftools,multiqc,data_flow,1,1,E00044,
+bcftools,pvactools,data_flow,1,1,E00023,
+biopython,split_peptides,gate_metadata,2,0,E00025,
+ensembl-vep,bcftools,data_flow,4,4,E00017,
+ensembl-vep,pvactools,data_flow,2,2,E00021,
+mhcgnomes,bash,data_flow,2,2,E00032,
+mhcgnomes,mhcflurry,data_flow,1,1,E00028,
+mhcgnomes,mhcnuggets,data_flow,2,2,E00030,
+mhcgnomes,mixmhciipred,data_flow,1,1,E00037,
+mhcgnomes,mixmhcpred,data_flow,1,1,E00036,
+mhcgnomes,multiqc,data_flow,1,1,E00045,
+mhcnuggets,mhcgnomes,data_flow,2,2,E00038,
+mixmhciipred,mhcgnomes,data_flow,1,1,E00041,
+mixmhcpred,mhcgnomes,data_flow,1,1,E00040,
+pvactools,biopython,data_flow,1,1,E00024,
+pvactools,ensembl-vep,data_flow,2,2,E00010,
+split_peptides,mhcgnomes,data_flow,2,2,E00027,
+unpack_netmhc_software,bash,data_flow,2,2,E00033,
+untar,ensembl-vep,data_flow,2,2,E00008,
+wget,bcftools,data_flow,1,1,E00004,
+wget,ensembl-vep,data_flow,2,2,E00009,
+bash,mhcflurry,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00034, E00028); no directed path between any process of the two tools"
+bash,mhcnuggets,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00034, E00030); no directed path between any process of the two tools"
+bash,mixmhciipred,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00034, E00037); no directed path between any process of the two tools"
+bash,mixmhcpred,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00034, E00036); no directed path between any process of the two tools"
+mhcflurry,bash,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00028, E00034); no directed path between any process of the two tools"
+mhcflurry,mhcnuggets,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00028, E00030); no directed path between any process of the two tools"
+mhcflurry,mixmhciipred,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00028, E00037); no directed path between any process of the two tools"
+mhcflurry,mixmhcpred,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00028, E00036); no directed path between any process of the two tools"
+mhcnuggets,bash,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00030, E00034); no directed path between any process of the two tools"
+mhcnuggets,mhcflurry,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00030, E00028); no directed path between any process of the two tools"
+mhcnuggets,mixmhciipred,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00030, E00037); no directed path between any process of the two tools"
+mhcnuggets,mixmhcpred,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00030, E00036); no directed path between any process of the two tools"
+mixmhciipred,bash,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00037, E00034); no directed path between any process of the two tools"
+mixmhciipred,mhcflurry,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00037, E00028); no directed path between any process of the two tools"
+mixmhciipred,mhcnuggets,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00037, E00030); no directed path between any process of the two tools"
+mixmhciipred,mixmhcpred,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00037, E00036); no directed path between any process of the two tools"
+mixmhcpred,bash,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00036, E00034); no directed path between any process of the two tools"
+mixmhcpred,mhcflurry,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00036, E00028); no directed path between any process of the two tools"
+mixmhcpred,mhcnuggets,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00036, E00030); no directed path between any process of the two tools"
+mixmhcpred,mixmhciipred,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00036, E00037); no directed path between any process of the two tools"

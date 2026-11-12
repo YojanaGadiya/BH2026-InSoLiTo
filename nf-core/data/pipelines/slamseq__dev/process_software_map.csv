@@ -1,0 +1,19 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+gunzipFasta,gunzipFasta,main.nf,94,gunzipfasta,,,module name
+gtf2bed,gtf2bed,main.nf,139,gtf2bed,,gtf2bed,script and directives
+get_software_versions,get_software_versions,main.nf,285,fastqc,,fastqc;trim_galore;slamdunk;multiqc,script and directives
+checkDesign,checkDesign,main.nf,313,check_design,,check_design,script and directives
+trim,trim,main.nf,356,trim_galore,,trim_galore,script and directives
+map,map,main.nf,384,slamdunk,,slamdunk,script and directives
+filter,filter,main.nf,418,slamdunk,,slamdunk,script and directives
+snp,snp,main.nf,452,slamdunk,,slamdunk,script and directives
+count,count,main.nf,494,slamdunk,,slamdunk,script and directives
+collapse,collapse,main.nf,532,alleyoop,,alleyoop,script and directives
+rates,rates,main.nf,562,alleyoop,,alleyoop,script and directives
+utrrates,utrrates,main.nf,590,alleyoop,,alleyoop,script and directives
+tcperreadpos,tcperreadpos,main.nf,621,alleyoop,,alleyoop,script and directives
+tcperutrpos,tcperutrpos,main.nf,652,alleyoop,,alleyoop,script and directives
+summary,summary,main.nf,698,alleyoop,,alleyoop,script and directives
+deseq2,deseq2,main.nf,727,deseq2_slamdunk,,deseq2_slamdunk,script and directives
+multiqc,multiqc,main.nf,751,multiqc,,multiqc,script and directives
+output_documentation,output_documentation,main.nf,784,markdown_to_html,,markdown_to_html,script and directives

@@ -1,0 +1,160 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+busco,ca-certificates,data_flow,8,8,E00844,
+bwa-mem2,picard,data_flow,1,1,E00728,
+collect_reads,fastplong,data_flow,2,2,E00006,
+dorado_aligner,dorado_polish,data_flow,2,2,E00371,
+dorado_polish,busco,data_flow,3,3,E00396,
+dorado_polish,bwa-mem2,data_flow,1,1,E00707,
+dorado_polish,liftoff,data_flow,1,1,E00401,
+dorado_polish,links,data_flow,2,2,E00519,
+dorado_polish,longstitch,data_flow,6,6,E00581,
+dorado_polish,merqury,data_flow,1,1,E00373,
+dorado_polish,minimap2,data_flow,3,3,E00375,
+dorado_polish,quast,data_flow,5,5,E00386,
+dorado_polish,ragtag,data_flow,2,2,E00778,
+dorado_polish,samtools,data_flow,4,4,E00376,
+dorado_polish,xz,data_flow,1,1,E00455,
+fastp,busco,data_flow,6,6,E00262,
+fastp,bwa-mem2,data_flow,2,2,E00694,
+fastp,dorado_aligner,data_flow,2,2,E00359,
+fastp,flye,data_flow,8,8,E00029,
+fastp,hifiasm,data_flow,4,4,E00059,
+fastp,kmer-jellyfish,data_flow,6,6,E00008,
+fastp,liftoff,data_flow,2,2,E00303,
+fastp,links,data_flow,4,4,E00506,
+fastp,longstitch,data_flow,12,12,E00568,
+fastp,medaka,data_flow,2,2,E00316,
+fastp,merqury,data_flow,2,2,E00131,
+fastp,meryl,data_flow,4,4,E00001,
+fastp,minimap2,data_flow,8,8,E00086,
+fastp,quast,data_flow,10,10,E00192,
+fastp,ragtag,data_flow,4,4,E00765,
+fastp,samtools,data_flow,10,10,E00113,
+fastp,xz,data_flow,4,4,E00098,
+fastplong,busco,data_flow,12,6,E00264,
+fastplong,bwa-mem2,data_flow,4,2,E00696,
+fastplong,ca-certificates,gate_metadata,2,0,E00832,
+fastplong,dorado_aligner,data_flow,4,2,E00361,
+fastplong,flye,data_flow,16,8,E00031,
+fastplong,hifiasm,data_flow,8,4,E00061,
+fastplong,kmer-jellyfish,data_flow,12,6,E00010,
+fastplong,liftoff,data_flow,4,2,E00305,
+fastplong,links,data_flow,8,4,E00508,
+fastplong,longstitch,data_flow,24,12,E00570,
+fastplong,medaka,data_flow,4,2,E00318,
+fastplong,merqury,data_flow,4,2,E00133,
+fastplong,minimap2,data_flow,16,8,E00088,
+fastplong,quast,data_flow,20,10,E00194,
+fastplong,ragtag,data_flow,8,4,E00767,
+fastplong,samtools,data_flow,20,10,E00115,
+fastplong,xz,data_flow,8,4,E00100,
+flye,xz,data_flow,2,2,E00043,
+genomescope,busco,data_flow,3,3,E00268,
+genomescope,bwa-mem2,data_flow,1,1,E00700,
+genomescope,ca-certificates,data_flow,2,1,E00834,
+genomescope,dorado_aligner,data_flow,1,1,E00365,
+genomescope,flye,data_flow,4,4,E00035,
+genomescope,hifiasm,data_flow,2,2,E00065,
+genomescope,liftoff,data_flow,1,1,E00309,
+genomescope,links,data_flow,2,2,E00512,
+genomescope,longstitch,data_flow,6,6,E00574,
+genomescope,medaka,data_flow,1,1,E00322,
+genomescope,merqury,data_flow,1,1,E00137,
+genomescope,minimap2,data_flow,4,4,E00092,
+genomescope,quast,data_flow,5,5,E00198,
+genomescope,ragtag,data_flow,2,2,E00771,
+genomescope,samtools,data_flow,5,5,E00119,
+genomescope,xz,data_flow,2,2,E00104,
+gfatools,xz,data_flow,2,2,E00067,
+hifiasm,gfatools,data_flow,2,2,E00066,
+kmer-jellyfish,genomescope,data_flow,1,1,E00028,
+links,xz,data_flow,1,1,E00537,
+longstitch,xz,data_flow,1,1,E00663,
+medaka,xz,data_flow,1,1,E00328,
+merqury,ca-certificates,data_flow,32,24,E00852,
+meryl,merqury,data_flow,8,8,E00143,
+minimap2,busco,data_flow,27,27,E00260,
+minimap2,bwa-mem2,data_flow,1,1,E00693,
+minimap2,dorado_aligner,data_flow,1,1,E00358,
+minimap2,liftoff,data_flow,1,1,E00302,
+minimap2,links,data_flow,2,2,E00505,
+minimap2,longstitch,data_flow,6,6,E00567,
+minimap2,medaka,data_flow,1,1,E00315,
+minimap2,merqury,data_flow,1,1,E00130,
+minimap2,picard,data_flow,1,1,E00729,
+minimap2,pilon,data_flow,4,3,E00470,
+minimap2,quast,data_flow,45,45,E00190,
+minimap2,ragtag,data_flow,2,2,E00764,
+minimap2,samtools,data_flow,64,64,E00111,
+minimap2,xz,data_flow,1,1,E00456,
+picard,samtools,data_flow,2,2,E00731,
+pilon,xz,data_flow,1,1,E00475,
+quast,ca-certificates,gate_metadata,8,0,E00836,
+ragtag,xz,data_flow,2,2,E00085,
+samtools,yahs,data_flow,1,1,E00733,
+xz,busco,data_flow,33,33,E00269,
+xz,bwa-mem2,data_flow,7,7,E00701,
+xz,dorado_aligner,data_flow,5,5,E00366,
+xz,liftoff,data_flow,11,11,E00310,
+xz,links,data_flow,14,14,E00513,
+xz,longstitch,data_flow,42,42,E00575,
+xz,medaka,data_flow,5,5,E00323,
+xz,merqury,data_flow,11,11,E00138,
+xz,minimap2,data_flow,29,29,E00093,
+xz,pilon,data_flow,2,2,E00469,
+xz,quast,data_flow,55,55,E00199,
+xz,ragtag,data_flow,28,28,E00077,
+xz,samtools,data_flow,40,40,E00110,
+yahs,xz,data_flow,1,1,E00734,
+busco,liftoff,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00270, E00311); no directed path between any process of the two tools"
+busco,merqury,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00270, E00139); no directed path between any process of the two tools"
+busco,meryl,parallel_co_use,0,0,,"both consume FASTP.reads (E00262, E00001); no directed path between any process of the two tools"
+busco,quast,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00270, E00200); no directed path between any process of the two tools"
+bwa-mem2,links,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00702, E00514); no directed path between any process of the two tools"
+bwa-mem2,longstitch,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00702, E00576); no directed path between any process of the two tools"
+bwa-mem2,meryl,parallel_co_use,0,0,,"both consume FASTP.reads (E00694, E00001); no directed path between any process of the two tools"
+dorado_aligner,medaka,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00367, E00324); no directed path between any process of the two tools"
+dorado_aligner,meryl,parallel_co_use,0,0,,"both consume FASTP.reads (E00359, E00001); no directed path between any process of the two tools"
+flye,hifiasm,parallel_co_use,0,0,,"both consume FASTPLONG_HIFI.reads (E00047, E00062); no directed path between any process of the two tools"
+flye,meryl,parallel_co_use,0,0,,"both consume FASTP.reads (E00044, E00001); no directed path between any process of the two tools"
+hifiasm,flye,parallel_co_use,0,0,,"both consume FASTPLONG_HIFI.reads (E00062, E00047); no directed path between any process of the two tools"
+hifiasm,meryl,parallel_co_use,0,0,,"both consume FASTP.reads (E00059, E00001); no directed path between any process of the two tools"
+kmer-jellyfish,meryl,parallel_co_use,0,0,,"both consume FASTP.reads (E00008, E00001); no directed path between any process of the two tools"
+liftoff,busco,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00311, E00270); no directed path between any process of the two tools"
+liftoff,merqury,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00311, E00139); no directed path between any process of the two tools"
+liftoff,meryl,parallel_co_use,0,0,,"both consume FASTP.reads (E00303, E00001); no directed path between any process of the two tools"
+liftoff,quast,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00311, E00200); no directed path between any process of the two tools"
+links,bwa-mem2,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00514, E00702); no directed path between any process of the two tools"
+links,longstitch,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00514, E00576); no directed path between any process of the two tools"
+links,meryl,parallel_co_use,0,0,,"both consume FASTP.reads (E00506, E00001); no directed path between any process of the two tools"
+longstitch,bwa-mem2,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00576, E00702); no directed path between any process of the two tools"
+longstitch,links,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00576, E00514); no directed path between any process of the two tools"
+longstitch,meryl,parallel_co_use,0,0,,"both consume FASTP.reads (E00568, E00001); no directed path between any process of the two tools"
+medaka,dorado_aligner,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00324, E00367); no directed path between any process of the two tools"
+medaka,meryl,parallel_co_use,0,0,,"both consume FASTP.reads (E00316, E00001); no directed path between any process of the two tools"
+merqury,busco,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00139, E00270); no directed path between any process of the two tools"
+merqury,liftoff,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00139, E00311); no directed path between any process of the two tools"
+merqury,quast,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00139, E00200); no directed path between any process of the two tools"
+meryl,busco,parallel_co_use,0,0,,"both consume FASTP.reads (E00001, E00262); no directed path between any process of the two tools"
+meryl,bwa-mem2,parallel_co_use,0,0,,"both consume FASTP.reads (E00001, E00694); no directed path between any process of the two tools"
+meryl,dorado_aligner,parallel_co_use,0,0,,"both consume FASTP.reads (E00001, E00359); no directed path between any process of the two tools"
+meryl,flye,parallel_co_use,0,0,,"both consume FASTP.reads (E00001, E00044); no directed path between any process of the two tools"
+meryl,hifiasm,parallel_co_use,0,0,,"both consume FASTP.reads (E00001, E00059); no directed path between any process of the two tools"
+meryl,kmer-jellyfish,parallel_co_use,0,0,,"both consume FASTP.reads (E00001, E00008); no directed path between any process of the two tools"
+meryl,liftoff,parallel_co_use,0,0,,"both consume FASTP.reads (E00001, E00303); no directed path between any process of the two tools"
+meryl,links,parallel_co_use,0,0,,"both consume FASTP.reads (E00001, E00506); no directed path between any process of the two tools"
+meryl,longstitch,parallel_co_use,0,0,,"both consume FASTP.reads (E00001, E00568); no directed path between any process of the two tools"
+meryl,medaka,parallel_co_use,0,0,,"both consume FASTP.reads (E00001, E00316); no directed path between any process of the two tools"
+meryl,minimap2,parallel_co_use,0,0,,"both consume FASTP.reads (E00001, E00086); no directed path between any process of the two tools"
+meryl,quast,parallel_co_use,0,0,,"both consume FASTP.reads (E00001, E00192); no directed path between any process of the two tools"
+meryl,ragtag,parallel_co_use,0,0,,"both consume FASTP.reads (E00001, E00765); no directed path between any process of the two tools"
+meryl,samtools,parallel_co_use,0,0,,"both consume FASTP.reads (E00001, E00113); no directed path between any process of the two tools"
+meryl,xz,parallel_co_use,0,0,,"both consume FASTP.reads (E00001, E00098); no directed path between any process of the two tools"
+minimap2,meryl,parallel_co_use,0,0,,"both consume FASTP.reads (E00086, E00001); no directed path between any process of the two tools"
+quast,busco,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00200, E00270); no directed path between any process of the two tools"
+quast,liftoff,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00200, E00311); no directed path between any process of the two tools"
+quast,merqury,parallel_co_use,0,0,,"both consume BGZIP_FLYE_HIFI.bgzipped (E00200, E00139); no directed path between any process of the two tools"
+quast,meryl,parallel_co_use,0,0,,"both consume FASTP.reads (E00192, E00001); no directed path between any process of the two tools"
+ragtag,meryl,parallel_co_use,0,0,,"both consume FASTP.reads (E00765, E00001); no directed path between any process of the two tools"
+samtools,meryl,parallel_co_use,0,0,,"both consume FASTP.reads (E00113, E00001); no directed path between any process of the two tools"
+xz,meryl,parallel_co_use,0,0,,"both consume FASTP.reads (E00098, E00001); no directed path between any process of the two tools"

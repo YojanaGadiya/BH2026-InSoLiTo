@@ -1,0 +1,33 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_SCRNASEQ:SCRNASEQ:FASTQC_CHECK:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_SCRNASEQ:SCRNASEQ:PREPARE_GENOME:GUNZIP_FASTA,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_SCRNASEQ:SCRNASEQ:PREPARE_GENOME:GUNZIP_GTF,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_SCRNASEQ:SCRNASEQ:PREPARE_GENOME:GUNZIP_GFF,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_SCRNASEQ:SCRNASEQ:PREPARE_GENOME:GFFREAD,GFFREAD,modules/nf-core/gffread/main.nf,1,gffread,gffread,gffread,environment.yml
+NFCORE_SCRNASEQ:SCRNASEQ:PREPARE_GENOME:GTF_GENE_FILTER,CUSTOM_GTFFILTER,modules/nf-core/custom/gtffilter/main.nf,1,gtffilter,gtffilter,python,environment.yml
+NFCORE_SCRNASEQ:SCRNASEQ:PREPARE_GENOME:GTF_SOURCE_FIX,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_SCRNASEQ:SCRNASEQ:KALLISTO_BUSTOOLS:KALLISTOBUSTOOLS_REF,KALLISTOBUSTOOLS_REF,modules/nf-core/kallistobustools/ref/main.nf,1,kb-python,kb,kb-python;requests,environment.yml
+NFCORE_SCRNASEQ:SCRNASEQ:KALLISTO_BUSTOOLS:KALLISTOBUSTOOLS_COUNT,KALLISTOBUSTOOLS_COUNT,modules/nf-core/kallistobustools/count/main.nf,1,kb-python,kb,kb-python,environment.yml
+NFCORE_SCRNASEQ:SCRNASEQ:SIMPLEAF:SIMPLEAF_INDEX,SIMPLEAF_INDEX,modules/nf-core/simpleaf/index/main.nf,1,piscem,simpleaf,piscem;simpleaf,environment.yml
+NFCORE_SCRNASEQ:SCRNASEQ:SIMPLEAF:SIMPLEAF_QUANT,SIMPLEAF_QUANT,modules/nf-core/simpleaf/quant/main.nf,1,piscem,simpleaf,piscem;simpleaf,environment.yml
+NFCORE_SCRNASEQ:SCRNASEQ:SIMPLEAF:QCATCH,QCATCH,modules/nf-core/qcatch/main.nf,1,pip,qcatch,pip;python,environment.yml
+NFCORE_SCRNASEQ:SCRNASEQ:STARSOLO:STAR_GENOMEGENERATE,STAR_GENOMEGENERATE,modules/nf-core/star/genomegenerate/main.nf,1,samtools,star,htslib;samtools;star;gawk,environment.yml
+NFCORE_SCRNASEQ:SCRNASEQ:STARSOLO:STAR_GENOMEPARAMS_UPGRADE,STAR_GENOMEPARAMS_UPGRADE,modules/local/star_genomeparams_upgrade/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_SCRNASEQ:SCRNASEQ:STARSOLO:STAR_ALIGN,STAR_ALIGN,modules/local/star_align/main.nf,1,star_align,,,module name
+NFCORE_SCRNASEQ:SCRNASEQ:CELLRANGER_ALIGN:CELLRANGER_MKGTF,CELLRANGER_MKGTF,modules/nf-core/cellranger/mkgtf/main.nf,1,cellranger,cellranger,,meta.yml
+NFCORE_SCRNASEQ:SCRNASEQ:CELLRANGER_ALIGN:CELLRANGER_MKREF,CELLRANGER_MKREF,modules/nf-core/cellranger/mkref/main.nf,1,cellranger,cellranger,,meta.yml
+NFCORE_SCRNASEQ:SCRNASEQ:CELLRANGER_ALIGN:CELLRANGER_COUNT,CELLRANGER_COUNT,modules/nf-core/cellranger/count/main.nf,1,cellranger,cellranger,,meta.yml
+NFCORE_SCRNASEQ:SCRNASEQ:CELLRANGERARC_ALIGN:CELLRANGERARC_MKGTF,CELLRANGERARC_MKGTF,modules/nf-core/cellrangerarc/mkgtf/main.nf,1,cellrangerarc,cellrangerarc,,meta.yml
+NFCORE_SCRNASEQ:SCRNASEQ:CELLRANGERARC_ALIGN:CELLRANGERARC_MKREF,CELLRANGERARC_MKREF,modules/nf-core/cellrangerarc/mkref/main.nf,1,cellrangerarc,cellrangerarc,,meta.yml
+NFCORE_SCRNASEQ:SCRNASEQ:CELLRANGERARC_ALIGN:CELLRANGERARC_COUNT,CELLRANGERARC_COUNT,modules/nf-core/cellrangerarc/count/main.nf,1,cellrangerarc,cellrangerarc,,meta.yml
+NFCORE_SCRNASEQ:SCRNASEQ:CELLRANGER_MULTI_ALIGN:PARSE_CELLRANGERMULTI_SAMPLESHEET,PARSE_CELLRANGERMULTI_SAMPLESHEET,modules/local/parse_cellrangermulti_samplesheet/main.nf,1,parse_cellrangermulti_samplesheet,,,module name
+NFCORE_SCRNASEQ:SCRNASEQ:CELLRANGER_MULTI_ALIGN:CELLRANGER_MKGTF,CELLRANGER_MKGTF,modules/nf-core/cellranger/mkgtf/main.nf,1,cellranger,cellranger,,meta.yml
+NFCORE_SCRNASEQ:SCRNASEQ:CELLRANGER_MULTI_ALIGN:CELLRANGER_MKREF,CELLRANGER_MKREF,modules/nf-core/cellranger/mkref/main.nf,1,cellranger,cellranger,,meta.yml
+NFCORE_SCRNASEQ:SCRNASEQ:CELLRANGER_MULTI_ALIGN:CELLRANGER_MKVDJREF,CELLRANGER_MKVDJREF,modules/nf-core/cellranger/mkvdjref/main.nf,1,cellranger,cellranger,,meta.yml
+NFCORE_SCRNASEQ:SCRNASEQ:CELLRANGER_MULTI_ALIGN:CELLRANGER_MULTI,CELLRANGER_MULTI,modules/nf-core/cellranger/multi/main.nf,1,cellranger,cellranger,,meta.yml
+NFCORE_SCRNASEQ:SCRNASEQ:MTX_TO_H5AD,MTX_TO_H5AD,modules/local/mtx_to_h5ad/main.nf,1,mtx_to_h5ad,,,module name
+NFCORE_SCRNASEQ:SCRNASEQ:H5AD_REMOVEBACKGROUND_BARCODES_CELLBENDER_ANNDATA:CELLBENDER_REMOVEBACKGROUND,CELLBENDER_REMOVEBACKGROUND,modules/nf-core/cellbender/removebackground/main.nf,1,cellbender,cellbender,cellbender;webcolors,environment.yml
+NFCORE_SCRNASEQ:SCRNASEQ:H5AD_REMOVEBACKGROUND_BARCODES_CELLBENDER_ANNDATA:ANNDATA_BARCODES,ANNDATA_BARCODES,modules/nf-core/anndata/barcodes/main.nf,1,anndata,anndata,anndata;pandas;python;pyyaml,environment.yml
+NFCORE_SCRNASEQ:SCRNASEQ:H5AD_CONVERSION:CONCAT_H5AD,CONCAT_H5AD,modules/local/concat_h5ad/main.nf,1,concat_h5ad,,,module name
+NFCORE_SCRNASEQ:SCRNASEQ:H5AD_CONVERSION:ANNDATA_CONVERT,ANNDATA_CONVERT,modules/nf-core/anndata/convert/main.nf,1,bioconductor-anndatar,anndata,bioconductor-anndatar;bioconductor-rhdf5;bioconductor-singlecellexperiment;r-seurat,environment.yml
+NFCORE_SCRNASEQ:SCRNASEQ:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

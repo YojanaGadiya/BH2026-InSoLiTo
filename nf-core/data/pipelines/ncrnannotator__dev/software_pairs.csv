@@ -1,0 +1,6 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+cmsearch,parse_rfam,data_flow,1,1,E00003,
+filter_rfam_cm,cmsearch,data_flow,1,1,E00002,
+filter_rfam_cm,parse_rfam,data_flow,1,1,E00004,
+genome_chunk,cmsearch,data_flow,1,1,E00001,
+parse_rfam,rfam_to_formats,data_flow,1,1,E00005,

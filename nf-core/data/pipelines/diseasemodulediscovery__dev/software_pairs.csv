@@ -1,0 +1,176 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+biopax_parser,biopax_validator,data_flow,1,1,E00041,
+diamond,moduleparser,data_flow,3,3,E00022,
+digest,multiqc,data_flow,2,2,E00176,
+domino_domino,moduleparser,data_flow,3,3,E00023,
+domino_slicer,domino_domino,data_flow,3,3,E00010,
+drugpredictions,visualizemodulesdrugs,data_flow,1,1,E00164,
+drugstoneexport,multiqc,data_flow,1,1,E00171,
+firstneighbor,networkannotation,data_flow,1,1,E00033,
+firstneighbor,networkperturbationevaluation,data_flow,2,2,E00157,
+firstneighbor,seedperturbationevaluation,data_flow,5,5,E00089,
+firstneighbor,topology,data_flow,1,1,E00030,
+graphtoolparser,diamond,data_flow,3,3,E00004,
+graphtoolparser,digest,data_flow,4,4,E00051,
+graphtoolparser,domino_domino,data_flow,3,3,E00009,
+graphtoolparser,domino_slicer,data_flow,3,3,E00007,
+graphtoolparser,firstneighbor,data_flow,3,3,E00018,
+graphtoolparser,gt2tsv,data_flow,1,1,E00043,
+graphtoolparser,inputcheck,data_flow,1,1,E00001,
+graphtoolparser,moduleparser,data_flow,3,3,E00028,
+graphtoolparser,multiqc,data_flow,1,1,E00167,
+graphtoolparser,multiqcformatter,data_flow,1,1,E00166,
+graphtoolparser,networkannotation,data_flow,1,1,E00036,
+graphtoolparser,networkperturbation,data_flow,1,1,E00121,
+graphtoolparser,robust,data_flow,3,3,E00013,
+graphtoolparser,robustbiasaware,data_flow,3,3,E00016,
+graphtoolparser,rwr,data_flow,3,3,E00021,
+graphtoolparser,seedperturbationevaluation,data_flow,5,5,E00092,
+gt2tsv,r-ggplot2,data_flow,4,4,E00046,
+inputcheck,diamond,data_flow,2,2,E00003,
+inputcheck,firstneighbor,data_flow,2,2,E00017,
+inputcheck,moduleparser,data_flow,2,2,E00027,
+inputcheck,multiqc,data_flow,1,1,E00168,
+inputcheck,networkannotation,data_flow,1,1,E00032,
+inputcheck,prefixlines,data_flow,2,2,E00005,
+inputcheck,robust,data_flow,2,2,E00012,
+inputcheck,robustbiasaware,data_flow,2,2,E00015,
+inputcheck,rwr,data_flow,2,2,E00020,
+inputcheck,seedperturbation,data_flow,1,1,E00059,
+inputcheck,seedperturbationevaluation,data_flow,5,5,E00088,
+inputcheck,topology,data_flow,1,1,E00029,
+moduleoverlap,multiqc,data_flow,4,4,E00172,
+moduleparser,networkannotation,data_flow,1,1,E00034,
+moduleparser,networkperturbationevaluation,data_flow,2,2,E00158,
+moduleparser,seedperturbationevaluation,data_flow,5,5,E00090,
+moduleparser,topology,data_flow,1,1,E00031,
+multiqcformatter,multiqc,data_flow,1,1,E00182,
+networkannotation,biopax_parser,data_flow,1,1,E00040,
+networkannotation,drugstoneexport,data_flow,1,1,E00039,
+networkannotation,gt2tsv,data_flow,1,1,E00042,
+networkannotation,multiqc,data_flow,1,1,E00170,
+networkannotation,networkperturbationevaluation,data_flow,2,2,E00156,
+networkannotation,savemodules,data_flow,1,1,E00037,
+networkannotation,seedperturbation,data_flow,1,1,E00058,
+networkannotation,seedperturbationevaluation,data_flow,5,5,E00087,
+networkannotation,visualizemodules,data_flow,1,1,E00038,
+networkannotation,visualizemodulesdrugs,data_flow,1,1,E00165,
+networkperturbation,firstneighbor,data_flow,1,1,E00143,
+networkperturbation,graphtoolparser,data_flow,5,5,E00123,
+networkperturbation,moduleparser,data_flow,1,1,E00155,
+networkperturbationevaluation,multiqc,data_flow,2,2,E00180,
+prefixlines,domino_domino,data_flow,3,3,E00008,
+robust,moduleparser,data_flow,3,3,E00024,
+robustbiasaware,moduleparser,data_flow,3,3,E00025,
+rwr,moduleparser,data_flow,3,3,E00026,
+savemodules,digest,data_flow,4,4,E00050,
+savemodules,drugpredictions,data_flow,2,2,E00162,
+savemodules,moduleoverlap,data_flow,2,2,E00044,
+seedperturbation,diamond,data_flow,1,1,E00061,
+seedperturbation,firstneighbor,data_flow,1,1,E00075,
+seedperturbation,moduleparser,data_flow,1,1,E00085,
+seedperturbation,prefixlines,data_flow,1,1,E00063,
+seedperturbation,robust,data_flow,1,1,E00070,
+seedperturbation,robustbiasaware,data_flow,1,1,E00073,
+seedperturbation,rwr,data_flow,1,1,E00078,
+seedperturbation,seedperturbationevaluation,data_flow,5,5,E00091,
+seedperturbationevaluation,multiqc,data_flow,2,2,E00178,
+seedperturbationevaluation,seedperturbationvisualization,data_flow,4,4,E00117,
+topology,multiqc,data_flow,1,1,E00169,
+topology,networkannotation,data_flow,1,1,E00035,
+biopax_parser,drugstoneexport,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00040, E00039); no directed path between any process of the two tools"
+biopax_parser,gt2tsv,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00040, E00042); no directed path between any process of the two tools"
+biopax_parser,multiqc,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00040, E00170); no directed path between any process of the two tools"
+biopax_parser,networkperturbationevaluation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00040, E00156); no directed path between any process of the two tools"
+biopax_parser,savemodules,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00040, E00037); no directed path between any process of the two tools"
+biopax_parser,seedperturbation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00040, E00058); no directed path between any process of the two tools"
+biopax_parser,seedperturbationevaluation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00040, E00087); no directed path between any process of the two tools"
+biopax_parser,visualizemodules,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00040, E00038); no directed path between any process of the two tools"
+biopax_parser,visualizemodulesdrugs,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00040, E00165); no directed path between any process of the two tools"
+digest,drugpredictions,parallel_co_use,0,0,,"both consume SAVEMODULES.nodes_tsv (E00054, E00162); no directed path between any process of the two tools"
+digest,gt2tsv,parallel_co_use,0,0,,"both consume GRAPHTOOLPARSER.network (E00055, E00043); no directed path between any process of the two tools"
+digest,moduleoverlap,parallel_co_use,0,0,,"both consume SAVEMODULES.nodes_tsv (E00054, E00044); no directed path between any process of the two tools"
+digest,networkperturbation,parallel_co_use,0,0,,"both consume GRAPHTOOLPARSER.network (E00055, E00121); no directed path between any process of the two tools"
+digest,seedperturbationevaluation,parallel_co_use,0,0,,"both consume GRAPHTOOLPARSER.network (E00055, E00092); no directed path between any process of the two tools"
+drugpredictions,digest,parallel_co_use,0,0,,"both consume SAVEMODULES.nodes_tsv (E00162, E00054); no directed path between any process of the two tools"
+drugpredictions,moduleoverlap,parallel_co_use,0,0,,"both consume SAVEMODULES.nodes_tsv (E00162, E00044); no directed path between any process of the two tools"
+drugstoneexport,biopax_parser,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00039, E00040); no directed path between any process of the two tools"
+drugstoneexport,gt2tsv,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00039, E00042); no directed path between any process of the two tools"
+drugstoneexport,networkperturbationevaluation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00039, E00156); no directed path between any process of the two tools"
+drugstoneexport,savemodules,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00039, E00037); no directed path between any process of the two tools"
+drugstoneexport,seedperturbation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00039, E00058); no directed path between any process of the two tools"
+drugstoneexport,seedperturbationevaluation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00039, E00087); no directed path between any process of the two tools"
+drugstoneexport,visualizemodules,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00039, E00038); no directed path between any process of the two tools"
+drugstoneexport,visualizemodulesdrugs,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00039, E00165); no directed path between any process of the two tools"
+gt2tsv,biopax_parser,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00042, E00040); no directed path between any process of the two tools"
+gt2tsv,digest,parallel_co_use,0,0,,"both consume GRAPHTOOLPARSER.network (E00043, E00055); no directed path between any process of the two tools"
+gt2tsv,drugstoneexport,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00042, E00039); no directed path between any process of the two tools"
+gt2tsv,multiqc,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00042, E00170); no directed path between any process of the two tools"
+gt2tsv,networkperturbation,parallel_co_use,0,0,,"both consume GRAPHTOOLPARSER.network (E00043, E00121); no directed path between any process of the two tools"
+gt2tsv,networkperturbationevaluation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00042, E00156); no directed path between any process of the two tools"
+gt2tsv,savemodules,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00042, E00037); no directed path between any process of the two tools"
+gt2tsv,seedperturbation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00042, E00058); no directed path between any process of the two tools"
+gt2tsv,seedperturbationevaluation,parallel_co_use,0,0,,"both consume GRAPHTOOLPARSER.network (E00043, E00092); no directed path between any process of the two tools"
+gt2tsv,visualizemodules,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00042, E00038); no directed path between any process of the two tools"
+gt2tsv,visualizemodulesdrugs,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00042, E00165); no directed path between any process of the two tools"
+inputcheck,networkperturbation,parallel_co_use,0,0,,"both consume GRAPHTOOLPARSER.network (E00001, E00121); no directed path between any process of the two tools"
+moduleoverlap,digest,parallel_co_use,0,0,,"both consume SAVEMODULES.nodes_tsv (E00044, E00054); no directed path between any process of the two tools"
+moduleoverlap,drugpredictions,parallel_co_use,0,0,,"both consume SAVEMODULES.nodes_tsv (E00044, E00162); no directed path between any process of the two tools"
+multiqc,biopax_parser,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00170, E00040); no directed path between any process of the two tools"
+multiqc,gt2tsv,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00170, E00042); no directed path between any process of the two tools"
+multiqc,visualizemodules,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00170, E00038); no directed path between any process of the two tools"
+multiqc,visualizemodulesdrugs,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00170, E00165); no directed path between any process of the two tools"
+networkannotation,networkperturbation,parallel_co_use,0,0,,"both consume GRAPHTOOLPARSER.network (E00036, E00121); no directed path between any process of the two tools"
+networkperturbation,digest,parallel_co_use,0,0,,"both consume GRAPHTOOLPARSER.network (E00121, E00055); no directed path between any process of the two tools"
+networkperturbation,gt2tsv,parallel_co_use,0,0,,"both consume GRAPHTOOLPARSER.network (E00121, E00043); no directed path between any process of the two tools"
+networkperturbation,inputcheck,parallel_co_use,0,0,,"both consume GRAPHTOOLPARSER.network (E00121, E00001); no directed path between any process of the two tools"
+networkperturbation,networkannotation,parallel_co_use,0,0,,"both consume GRAPHTOOLPARSER.network (E00121, E00036); no directed path between any process of the two tools"
+networkperturbation,seedperturbationevaluation,parallel_co_use,0,0,,"both consume GRAPHTOOLPARSER.network (E00121, E00092); no directed path between any process of the two tools"
+networkperturbationevaluation,biopax_parser,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00156, E00040); no directed path between any process of the two tools"
+networkperturbationevaluation,drugstoneexport,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00156, E00039); no directed path between any process of the two tools"
+networkperturbationevaluation,gt2tsv,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00156, E00042); no directed path between any process of the two tools"
+networkperturbationevaluation,savemodules,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00156, E00037); no directed path between any process of the two tools"
+networkperturbationevaluation,seedperturbation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00156, E00058); no directed path between any process of the two tools"
+networkperturbationevaluation,seedperturbationevaluation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00156, E00087); no directed path between any process of the two tools"
+networkperturbationevaluation,visualizemodules,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00156, E00038); no directed path between any process of the two tools"
+networkperturbationevaluation,visualizemodulesdrugs,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00156, E00165); no directed path between any process of the two tools"
+savemodules,biopax_parser,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00037, E00040); no directed path between any process of the two tools"
+savemodules,drugstoneexport,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00037, E00039); no directed path between any process of the two tools"
+savemodules,gt2tsv,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00037, E00042); no directed path between any process of the two tools"
+savemodules,networkperturbationevaluation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00037, E00156); no directed path between any process of the two tools"
+savemodules,seedperturbation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00037, E00058); no directed path between any process of the two tools"
+savemodules,seedperturbationevaluation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00037, E00087); no directed path between any process of the two tools"
+savemodules,visualizemodules,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00037, E00038); no directed path between any process of the two tools"
+seedperturbation,biopax_parser,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00058, E00040); no directed path between any process of the two tools"
+seedperturbation,drugstoneexport,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00058, E00039); no directed path between any process of the two tools"
+seedperturbation,gt2tsv,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00058, E00042); no directed path between any process of the two tools"
+seedperturbation,networkperturbationevaluation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00058, E00156); no directed path between any process of the two tools"
+seedperturbation,savemodules,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00058, E00037); no directed path between any process of the two tools"
+seedperturbation,visualizemodules,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00058, E00038); no directed path between any process of the two tools"
+seedperturbation,visualizemodulesdrugs,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00058, E00165); no directed path between any process of the two tools"
+seedperturbationevaluation,biopax_parser,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00087, E00040); no directed path between any process of the two tools"
+seedperturbationevaluation,digest,parallel_co_use,0,0,,"both consume GRAPHTOOLPARSER.network (E00092, E00055); no directed path between any process of the two tools"
+seedperturbationevaluation,drugstoneexport,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00087, E00039); no directed path between any process of the two tools"
+seedperturbationevaluation,gt2tsv,parallel_co_use,0,0,,"both consume GRAPHTOOLPARSER.network (E00092, E00043); no directed path between any process of the two tools"
+seedperturbationevaluation,networkperturbation,parallel_co_use,0,0,,"both consume GRAPHTOOLPARSER.network (E00092, E00121); no directed path between any process of the two tools"
+seedperturbationevaluation,networkperturbationevaluation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00087, E00156); no directed path between any process of the two tools"
+seedperturbationevaluation,savemodules,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00087, E00037); no directed path between any process of the two tools"
+seedperturbationevaluation,visualizemodules,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00087, E00038); no directed path between any process of the two tools"
+seedperturbationevaluation,visualizemodulesdrugs,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00087, E00165); no directed path between any process of the two tools"
+visualizemodules,biopax_parser,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00038, E00040); no directed path between any process of the two tools"
+visualizemodules,drugstoneexport,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00038, E00039); no directed path between any process of the two tools"
+visualizemodules,gt2tsv,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00038, E00042); no directed path between any process of the two tools"
+visualizemodules,multiqc,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00038, E00170); no directed path between any process of the two tools"
+visualizemodules,networkperturbationevaluation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00038, E00156); no directed path between any process of the two tools"
+visualizemodules,savemodules,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00038, E00037); no directed path between any process of the two tools"
+visualizemodules,seedperturbation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00038, E00058); no directed path between any process of the two tools"
+visualizemodules,seedperturbationevaluation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00038, E00087); no directed path between any process of the two tools"
+visualizemodules,visualizemodulesdrugs,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00038, E00165); no directed path between any process of the two tools"
+visualizemodulesdrugs,biopax_parser,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00165, E00040); no directed path between any process of the two tools"
+visualizemodulesdrugs,drugstoneexport,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00165, E00039); no directed path between any process of the two tools"
+visualizemodulesdrugs,gt2tsv,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00165, E00042); no directed path between any process of the two tools"
+visualizemodulesdrugs,multiqc,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00165, E00170); no directed path between any process of the two tools"
+visualizemodulesdrugs,networkperturbationevaluation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00165, E00156); no directed path between any process of the two tools"
+visualizemodulesdrugs,seedperturbation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00165, E00058); no directed path between any process of the two tools"
+visualizemodulesdrugs,seedperturbationevaluation,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00165, E00087); no directed path between any process of the two tools"
+visualizemodulesdrugs,visualizemodules,parallel_co_use,0,0,,"both consume NETWORKANNOTATION.module (E00165, E00038); no directed path between any process of the two tools"

@@ -1,0 +1,19 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_MOLKART:MOLKART:MINDAGAP_MINDAGAP,MINDAGAP_MINDAGAP,modules/nf-core/mindagap/mindagap/main.nf,1,mindagap,mindagap,mindagap,environment.yml
+NFCORE_MOLKART:MOLKART:CLAHE,CLAHE,modules/local/clahe/main.nf,1,clahe,,,module name
+NFCORE_MOLKART:MOLKART:CREATE_STACK,CREATE_STACK,modules/local/createstack/main.nf,1,create_stack,,,module name
+NFCORE_MOLKART:MOLKART:CROPHDF5,CROPHDF5,modules/local/crophdf5/main.nf,1,crophdf5,,,module name
+NFCORE_MOLKART:MOLKART:CROPTIFF,CROPTIFF,modules/local/croptiff/main.nf,1,croptiff,,,module name
+NFCORE_MOLKART:MOLKART:MOLKARTQCPNG,MOLKARTQCPNG,modules/local/molkartqcpng/main.nf,1,molkartqcpng,,,module name
+NFCORE_MOLKART:MOLKART:MINDAGAP_DUPLICATEFINDER,MINDAGAP_DUPLICATEFINDER,modules/nf-core/mindagap/duplicatefinder/main.nf,1,numpy,mindagap,numpy;mindagap,environment.yml
+NFCORE_MOLKART:MOLKART:DEEPCELL_MESMER,DEEPCELL_MESMER,modules/nf-core/deepcell/mesmer/main.nf,1,mesmer,mesmer,,meta.yml
+NFCORE_MOLKART:MOLKART:STARDIST,STARDIST,modules/nf-core/stardist/main.nf,1,stardist,stardist,python;stardist;tensorflow;tifffile<2022.4.22,environment.yml
+NFCORE_MOLKART:MOLKART:CELLPOSE,CELLPOSE,modules/nf-core/cellpose/main.nf,1,cellpose,cellpose,,meta.yml
+NFCORE_MOLKART:MOLKART:TIFFH5CONVERT,TIFFH5CONVERT,modules/local/tiffh5convert/main.nf,1,tiffh5convert,,,module name
+NFCORE_MOLKART:MOLKART:ILASTIK_PIXELCLASSIFICATION,ILASTIK_PIXELCLASSIFICATION,modules/nf-core/ilastik/pixelclassification/main.nf,1,ilastik,ilastik,,meta.yml
+NFCORE_MOLKART:MOLKART:ILASTIK_MULTICUT,ILASTIK_MULTICUT,modules/nf-core/ilastik/multicut/main.nf,1,ilastik,ilastik,,meta.yml
+NFCORE_MOLKART:MOLKART:MASKFILTER,MASKFILTER,modules/local/maskfilter/main.nf,1,maskfilter,,,module name
+NFCORE_MOLKART:MOLKART:SPOT2CELL,SPOT2CELL,modules/local/spot2cell/main.nf,1,spot2cell,,,module name
+NFCORE_MOLKART:MOLKART:CREATE_ANNDATA,CREATE_ANNDATA,modules/local/createanndata/main.nf,1,create_anndata,,,module name
+NFCORE_MOLKART:MOLKART:MOLKARTQC,MOLKARTQC,modules/local/molkartqc/main.nf,1,molkartqc,,,module name
+NFCORE_MOLKART:MOLKART:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

@@ -1,0 +1,22 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+biopython,coreutils,data_flow,1,1,E00058,
+biopython,node,data_flow,1,1,E00060,
+biopython,pip,data_flow,1,1,E00003,
+biopython,python,data_flow,6,6,E00001,
+coreutils,node,data_flow,1,1,E00069,
+csvtk,multiqc,data_flow,3,3,E00070,
+csvtk,python,data_flow,3,3,E00019,
+diamond,findutils,data_flow,1,1,E00040,
+findutils,gawk,data_flow,2,2,E00041,
+gawk,diamond,data_flow,1,1,E00039,
+gawk,findutils,data_flow,2,2,E00043,
+pip,csvtk,data_flow,1,1,E00014,
+python,coreutils,data_flow,1,1,E00059,
+python,csvtk,data_flow,8,8,E00013,
+python,findutils,data_flow,13,13,E00025,
+python,node,data_flow,5,4,E00061,
+python,pip,data_flow,1,1,E00004,
+python,r-base,data_flow,1,1,E00050,
+r-base,node,data_flow,3,3,E00064,
+coreutils,pip,parallel_co_use,0,0,,"both consume IDENTIFY_SEQ_ONLINE.seqinfo (E00058, E00003); no directed path between any process of the two tools"
+pip,coreutils,parallel_co_use,0,0,,"both consume IDENTIFY_SEQ_ONLINE.seqinfo (E00003, E00058); no directed path between any process of the two tools"

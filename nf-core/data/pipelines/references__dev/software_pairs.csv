@@ -1,0 +1,208 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+gffread,hisat2,data_flow,2,2,E00030,
+gffread,rsem,data_flow,2,2,E00043,
+gffread,samtools,data_flow,1,1,E00061,
+gunzip,bowtie,data_flow,1,1,E00001,
+gunzip,bowtie2,data_flow,1,1,E00005,
+gunzip,bwa,data_flow,1,1,E00009,
+gunzip,bwa-mem2,data_flow,1,1,E00013,
+gunzip,dragmap,data_flow,1,1,E00017,
+gunzip,gatk4-main,data_flow,1,1,E00062,
+gunzip,gffread,data_flow,1,1,E00021,
+gunzip,hisat2,data_flow,2,2,E00026,
+gunzip,msisensor-pro,data_flow,1,1,E00071,
+gunzip,rsem,data_flow,2,2,E00038,
+gunzip,salmon,data_flow,1,1,E00046,
+gunzip,samtools,data_flow,2,2,E00056,
+gunzip,snap-aligner,data_flow,1,1,E00075,
+ncbi-datasets-cli,bowtie,data_flow,1,1,E00004,
+ncbi-datasets-cli,bowtie2,data_flow,1,1,E00008,
+ncbi-datasets-cli,bwa,data_flow,1,1,E00012,
+ncbi-datasets-cli,bwa-mem2,data_flow,1,1,E00016,
+ncbi-datasets-cli,dragmap,data_flow,1,1,E00020,
+ncbi-datasets-cli,gatk4-main,data_flow,1,1,E00065,
+ncbi-datasets-cli,gffread,data_flow,2,2,E00024,
+ncbi-datasets-cli,hisat2,data_flow,3,3,E00029,
+ncbi-datasets-cli,msisensor-pro,data_flow,1,1,E00074,
+ncbi-datasets-cli,rsem,data_flow,4,4,E00041,
+ncbi-datasets-cli,salmon,data_flow,1,1,E00049,
+ncbi-datasets-cli,samtools,data_flow,3,3,E00059,
+ncbi-datasets-cli,snap-aligner,data_flow,1,1,E00078,
+p7zip,bowtie,data_flow,1,1,E00003,
+p7zip,bowtie2,data_flow,1,1,E00007,
+p7zip,bwa,data_flow,1,1,E00011,
+p7zip,bwa-mem2,data_flow,1,1,E00015,
+p7zip,dragmap,data_flow,1,1,E00019,
+p7zip,gatk4-main,data_flow,1,1,E00064,
+p7zip,gffread,data_flow,1,1,E00023,
+p7zip,hisat2,data_flow,2,2,E00028,
+p7zip,msisensor-pro,data_flow,1,1,E00073,
+p7zip,rsem,data_flow,2,2,E00040,
+p7zip,salmon,data_flow,1,1,E00048,
+p7zip,samtools,data_flow,2,2,E00058,
+p7zip,snap-aligner,data_flow,1,1,E00077,
+rsem,kallisto,data_flow,1,1,E00044,
+rsem,salmon,data_flow,1,1,E00045,
+samtools,gawk,rejected,1,0,E00070,every extracted edge is rejected
+untar,bowtie,data_flow,1,1,E00002,
+untar,bowtie2,data_flow,1,1,E00006,
+untar,bwa,data_flow,1,1,E00010,
+untar,bwa-mem2,data_flow,1,1,E00014,
+untar,dragmap,data_flow,1,1,E00018,
+untar,gatk4-main,data_flow,1,1,E00063,
+untar,gffread,data_flow,1,1,E00022,
+untar,hisat2,data_flow,2,2,E00027,
+untar,msisensor-pro,data_flow,1,1,E00072,
+untar,rsem,data_flow,2,2,E00039,
+untar,salmon,data_flow,1,1,E00047,
+untar,samtools,data_flow,2,2,E00057,
+untar,snap-aligner,data_flow,1,1,E00076,
+write-file,multiqc,data_flow,1,1,E00079,
+bowtie,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00001, E00005); no directed path between any process of the two tools"
+bowtie,bwa,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00001, E00009); no directed path between any process of the two tools"
+bowtie,bwa-mem2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00001, E00013); no directed path between any process of the two tools"
+bowtie,dragmap,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00001, E00017); no directed path between any process of the two tools"
+bowtie,gatk4-main,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00001, E00062); no directed path between any process of the two tools"
+bowtie,gffread,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00001, E00021); no directed path between any process of the two tools"
+bowtie,hisat2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00001, E00031); no directed path between any process of the two tools"
+bowtie,msisensor-pro,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00001, E00071); no directed path between any process of the two tools"
+bowtie,rsem,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00001, E00038); no directed path between any process of the two tools"
+bowtie,salmon,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00001, E00046); no directed path between any process of the two tools"
+bowtie,samtools,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00001, E00066); no directed path between any process of the two tools"
+bowtie,snap-aligner,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00001, E00075); no directed path between any process of the two tools"
+bowtie2,bowtie,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00005, E00001); no directed path between any process of the two tools"
+bowtie2,bwa,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00005, E00009); no directed path between any process of the two tools"
+bowtie2,bwa-mem2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00005, E00013); no directed path between any process of the two tools"
+bowtie2,dragmap,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00005, E00017); no directed path between any process of the two tools"
+bowtie2,gatk4-main,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00005, E00062); no directed path between any process of the two tools"
+bowtie2,gffread,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00005, E00021); no directed path between any process of the two tools"
+bowtie2,hisat2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00005, E00031); no directed path between any process of the two tools"
+bowtie2,msisensor-pro,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00005, E00071); no directed path between any process of the two tools"
+bowtie2,rsem,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00005, E00038); no directed path between any process of the two tools"
+bowtie2,salmon,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00005, E00046); no directed path between any process of the two tools"
+bowtie2,samtools,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00005, E00066); no directed path between any process of the two tools"
+bowtie2,snap-aligner,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00005, E00075); no directed path between any process of the two tools"
+bwa,bowtie,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00009, E00001); no directed path between any process of the two tools"
+bwa,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00009, E00005); no directed path between any process of the two tools"
+bwa,bwa-mem2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00009, E00013); no directed path between any process of the two tools"
+bwa,dragmap,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00009, E00017); no directed path between any process of the two tools"
+bwa,gatk4-main,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00009, E00062); no directed path between any process of the two tools"
+bwa,gffread,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00009, E00021); no directed path between any process of the two tools"
+bwa,hisat2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00009, E00031); no directed path between any process of the two tools"
+bwa,msisensor-pro,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00009, E00071); no directed path between any process of the two tools"
+bwa,rsem,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00009, E00038); no directed path between any process of the two tools"
+bwa,salmon,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00009, E00046); no directed path between any process of the two tools"
+bwa,samtools,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00009, E00066); no directed path between any process of the two tools"
+bwa,snap-aligner,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00009, E00075); no directed path between any process of the two tools"
+bwa-mem2,bowtie,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00013, E00001); no directed path between any process of the two tools"
+bwa-mem2,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00013, E00005); no directed path between any process of the two tools"
+bwa-mem2,bwa,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00013, E00009); no directed path between any process of the two tools"
+bwa-mem2,dragmap,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00013, E00017); no directed path between any process of the two tools"
+bwa-mem2,gatk4-main,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00013, E00062); no directed path between any process of the two tools"
+bwa-mem2,gffread,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00013, E00021); no directed path between any process of the two tools"
+bwa-mem2,hisat2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00013, E00031); no directed path between any process of the two tools"
+bwa-mem2,msisensor-pro,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00013, E00071); no directed path between any process of the two tools"
+bwa-mem2,rsem,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00013, E00038); no directed path between any process of the two tools"
+bwa-mem2,salmon,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00013, E00046); no directed path between any process of the two tools"
+bwa-mem2,samtools,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00013, E00066); no directed path between any process of the two tools"
+bwa-mem2,snap-aligner,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00013, E00075); no directed path between any process of the two tools"
+dragmap,bowtie,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00017, E00001); no directed path between any process of the two tools"
+dragmap,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00017, E00005); no directed path between any process of the two tools"
+dragmap,bwa,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00017, E00009); no directed path between any process of the two tools"
+dragmap,bwa-mem2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00017, E00013); no directed path between any process of the two tools"
+dragmap,gatk4-main,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00017, E00062); no directed path between any process of the two tools"
+dragmap,gffread,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00017, E00021); no directed path between any process of the two tools"
+dragmap,hisat2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00017, E00031); no directed path between any process of the two tools"
+dragmap,msisensor-pro,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00017, E00071); no directed path between any process of the two tools"
+dragmap,rsem,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00017, E00038); no directed path between any process of the two tools"
+dragmap,salmon,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00017, E00046); no directed path between any process of the two tools"
+dragmap,samtools,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00017, E00066); no directed path between any process of the two tools"
+dragmap,snap-aligner,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00017, E00075); no directed path between any process of the two tools"
+gatk4-main,bowtie,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00062, E00001); no directed path between any process of the two tools"
+gatk4-main,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00062, E00005); no directed path between any process of the two tools"
+gatk4-main,bwa,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00062, E00009); no directed path between any process of the two tools"
+gatk4-main,bwa-mem2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00062, E00013); no directed path between any process of the two tools"
+gatk4-main,dragmap,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00062, E00017); no directed path between any process of the two tools"
+gatk4-main,gffread,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00062, E00021); no directed path between any process of the two tools"
+gatk4-main,hisat2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00062, E00031); no directed path between any process of the two tools"
+gatk4-main,msisensor-pro,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00062, E00071); no directed path between any process of the two tools"
+gatk4-main,rsem,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00062, E00038); no directed path between any process of the two tools"
+gatk4-main,salmon,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00062, E00046); no directed path between any process of the two tools"
+gatk4-main,samtools,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00062, E00066); no directed path between any process of the two tools"
+gatk4-main,snap-aligner,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00062, E00075); no directed path between any process of the two tools"
+gffread,bowtie,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00021, E00001); no directed path between any process of the two tools"
+gffread,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00021, E00005); no directed path between any process of the two tools"
+gffread,bwa,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00021, E00009); no directed path between any process of the two tools"
+gffread,bwa-mem2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00021, E00013); no directed path between any process of the two tools"
+gffread,dragmap,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00021, E00017); no directed path between any process of the two tools"
+gffread,gatk4-main,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00021, E00062); no directed path between any process of the two tools"
+gffread,msisensor-pro,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00021, E00071); no directed path between any process of the two tools"
+gffread,snap-aligner,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00021, E00075); no directed path between any process of the two tools"
+hisat2,bowtie,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00031, E00001); no directed path between any process of the two tools"
+hisat2,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00031, E00005); no directed path between any process of the two tools"
+hisat2,bwa,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00031, E00009); no directed path between any process of the two tools"
+hisat2,bwa-mem2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00031, E00013); no directed path between any process of the two tools"
+hisat2,dragmap,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00031, E00017); no directed path between any process of the two tools"
+hisat2,gatk4-main,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00031, E00062); no directed path between any process of the two tools"
+hisat2,msisensor-pro,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00031, E00071); no directed path between any process of the two tools"
+hisat2,rsem,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00031, E00038); no directed path between any process of the two tools"
+hisat2,salmon,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00031, E00046); no directed path between any process of the two tools"
+hisat2,samtools,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00031, E00066); no directed path between any process of the two tools"
+hisat2,snap-aligner,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00031, E00075); no directed path between any process of the two tools"
+kallisto,salmon,parallel_co_use,0,0,,"both consume MAKE_TRANSCRIPTS_FASTA.transcript_fasta (E00044, E00045); no directed path between any process of the two tools"
+msisensor-pro,bowtie,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00071, E00001); no directed path between any process of the two tools"
+msisensor-pro,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00071, E00005); no directed path between any process of the two tools"
+msisensor-pro,bwa,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00071, E00009); no directed path between any process of the two tools"
+msisensor-pro,bwa-mem2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00071, E00013); no directed path between any process of the two tools"
+msisensor-pro,dragmap,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00071, E00017); no directed path between any process of the two tools"
+msisensor-pro,gatk4-main,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00071, E00062); no directed path between any process of the two tools"
+msisensor-pro,gffread,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00071, E00021); no directed path between any process of the two tools"
+msisensor-pro,hisat2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00071, E00031); no directed path between any process of the two tools"
+msisensor-pro,rsem,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00071, E00038); no directed path between any process of the two tools"
+msisensor-pro,salmon,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00071, E00046); no directed path between any process of the two tools"
+msisensor-pro,samtools,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00071, E00066); no directed path between any process of the two tools"
+msisensor-pro,snap-aligner,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00071, E00075); no directed path between any process of the two tools"
+rsem,bowtie,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00038, E00001); no directed path between any process of the two tools"
+rsem,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00038, E00005); no directed path between any process of the two tools"
+rsem,bwa,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00038, E00009); no directed path between any process of the two tools"
+rsem,bwa-mem2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00038, E00013); no directed path between any process of the two tools"
+rsem,dragmap,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00038, E00017); no directed path between any process of the two tools"
+rsem,gatk4-main,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00038, E00062); no directed path between any process of the two tools"
+rsem,hisat2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00038, E00031); no directed path between any process of the two tools"
+rsem,msisensor-pro,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00038, E00071); no directed path between any process of the two tools"
+rsem,samtools,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00038, E00066); no directed path between any process of the two tools"
+rsem,snap-aligner,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00038, E00075); no directed path between any process of the two tools"
+salmon,bowtie,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00046, E00001); no directed path between any process of the two tools"
+salmon,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00046, E00005); no directed path between any process of the two tools"
+salmon,bwa,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00046, E00009); no directed path between any process of the two tools"
+salmon,bwa-mem2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00046, E00013); no directed path between any process of the two tools"
+salmon,dragmap,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00046, E00017); no directed path between any process of the two tools"
+salmon,gatk4-main,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00046, E00062); no directed path between any process of the two tools"
+salmon,hisat2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00046, E00031); no directed path between any process of the two tools"
+salmon,kallisto,parallel_co_use,0,0,,"both consume MAKE_TRANSCRIPTS_FASTA.transcript_fasta (E00045, E00044); no directed path between any process of the two tools"
+salmon,msisensor-pro,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00046, E00071); no directed path between any process of the two tools"
+salmon,samtools,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00046, E00066); no directed path between any process of the two tools"
+salmon,snap-aligner,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00046, E00075); no directed path between any process of the two tools"
+samtools,bowtie,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00066, E00001); no directed path between any process of the two tools"
+samtools,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00066, E00005); no directed path between any process of the two tools"
+samtools,bwa,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00066, E00009); no directed path between any process of the two tools"
+samtools,bwa-mem2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00066, E00013); no directed path between any process of the two tools"
+samtools,dragmap,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00066, E00017); no directed path between any process of the two tools"
+samtools,gatk4-main,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00066, E00062); no directed path between any process of the two tools"
+samtools,hisat2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00066, E00031); no directed path between any process of the two tools"
+samtools,msisensor-pro,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00066, E00071); no directed path between any process of the two tools"
+samtools,rsem,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00066, E00038); no directed path between any process of the two tools"
+samtools,salmon,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00066, E00046); no directed path between any process of the two tools"
+samtools,snap-aligner,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00066, E00075); no directed path between any process of the two tools"
+snap-aligner,bowtie,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00075, E00001); no directed path between any process of the two tools"
+snap-aligner,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00075, E00005); no directed path between any process of the two tools"
+snap-aligner,bwa,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00075, E00009); no directed path between any process of the two tools"
+snap-aligner,bwa-mem2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00075, E00013); no directed path between any process of the two tools"
+snap-aligner,dragmap,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00075, E00017); no directed path between any process of the two tools"
+snap-aligner,gatk4-main,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00075, E00062); no directed path between any process of the two tools"
+snap-aligner,gffread,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00075, E00021); no directed path between any process of the two tools"
+snap-aligner,hisat2,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00075, E00031); no directed path between any process of the two tools"
+snap-aligner,msisensor-pro,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00075, E00071); no directed path between any process of the two tools"
+snap-aligner,rsem,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00075, E00038); no directed path between any process of the two tools"
+snap-aligner,salmon,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00075, E00046); no directed path between any process of the two tools"
+snap-aligner,samtools,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00075, E00066); no directed path between any process of the two tools"

@@ -1,0 +1,16 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+findutils,gatk4-main,data_flow,1,1,E00025,
+gatk4-lite,gatk4-main,data_flow,8,5,E00023,
+gatk4-lite,gawk,data_flow,1,1,E00015,
+gawk,findutils,data_flow,2,2,E00021,
+gawk,gatk4-lite,data_flow,2,2,E00004,
+gawk,mosdepth,data_flow,1,1,E00017,
+mosdepth,gawk,data_flow,1,1,E00020,
+samtools,cnvkit,data_flow,2,2,E00008,
+samtools,gatk4-lite,data_flow,11,11,E00001,
+samtools,gawk,data_flow,2,2,E00003,
+samtools,mosdepth,data_flow,1,1,E00016,
+cnvkit,gatk4-lite,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00008, E00053); no directed path between any process of the two tools"
+cnvkit,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00008, E00016); no directed path between any process of the two tools"
+gatk4-lite,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00053, E00008); no directed path between any process of the two tools"
+mosdepth,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00016, E00008); no directed path between any process of the two tools"

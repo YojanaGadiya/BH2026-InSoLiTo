@@ -1,0 +1,171 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bamtools,bedtools,data_flow,2,2,E00142,
+bamtools,deeptools,data_flow,1,1,E00153,
+bamtools,macs3,data_flow,1,1,E00157,
+bamtools,multiqc_custom_peaks,data_flow,1,1,E00167,
+bamtools,phantompeakqualtools,data_flow,1,1,E00138,
+bamtools,picard,data_flow,1,1,E00134,
+bamtools,samtools,data_flow,5,5,E00111,
+bamtools,subread,data_flow,1,1,E00187,
+bedtools,bamtools,data_flow,1,1,E00110,
+bedtools,multiqc_custom_peaks,gate_metadata,1,0,E00171,
+bedtools,ucsc-bedgraphtobigwig,data_flow,1,1,E00145,
+bioconductor-biostrings,multiqc,data_flow,1,1,E00231,
+bioconductor-deseq2,annotate_boolean_peaks,data_flow,1,1,E00184,
+bioconductor-deseq2,bioconductor-biostrings,data_flow,1,1,E00177,
+biopython,annotate_boolean_peaks,data_flow,1,1,E00183,
+biopython,bioconductor-deseq2,data_flow,1,1,E00179,
+biopython,igv,data_flow,2,2,E00194,
+biopython,subread,data_flow,1,1,E00185,
+bowtie2,samtools,data_flow,1,1,E00042,
+bwa,samtools,data_flow,1,1,E00025,
+chromap,picard,data_flow,1,1,E00059,
+chromap,samtools,data_flow,1,1,E00062,
+deeptools,multiqc,data_flow,2,2,E00223,
+fastqc,multiqc,data_flow,1,1,E00196,
+gffread,bioconductor-deseq2,data_flow,2,2,E00175,
+gffread,perl,data_flow,1,1,E00003,
+gffread,star,data_flow,1,1,E00012,
+gunzip,bedtools,data_flow,1,1,E00006,
+gunzip,bioconductor-deseq2,data_flow,4,4,E00173,
+gunzip,bowtie2,data_flow,2,2,E00008,
+gunzip,bwa,data_flow,2,2,E00007,
+gunzip,chromap,data_flow,2,2,E00009,
+gunzip,deeptools,data_flow,1,1,E00149,
+gunzip,gffread,data_flow,1,1,E00001,
+gunzip,igv,data_flow,1,1,E00191,
+gunzip,khmer,data_flow,1,1,E00013,
+gunzip,perl,data_flow,1,1,E00002,
+gunzip,picard,data_flow,3,3,E00060,
+gunzip,samtools,data_flow,14,14,E00004,
+gunzip,star,data_flow,2,2,E00010,
+khmer,macs3,data_flow,1,1,E00160,
+macs3,bedtools,data_flow,1,1,E00165,
+macs3,bioconductor-biostrings,data_flow,1,1,E00176,
+macs3,bioconductor-deseq2,data_flow,1,1,E00172,
+macs3,biopython,data_flow,1,1,E00178,
+macs3,igv,data_flow,1,1,E00193,
+macs3,multiqc_custom_peaks,data_flow,1,1,E00170,
+multiqc_custom_peaks,multiqc,data_flow,2,2,E00229,
+multiqc_custom_phantompeakqualtools,multiqc,data_flow,3,3,E00226,
+perl,deeptools,data_flow,1,1,E00148,
+phantompeakqualtools,multiqc,data_flow,1,1,E00225,
+phantompeakqualtools,multiqc_custom_phantompeakqualtools,data_flow,2,2,E00139,
+picard,bamtools,data_flow,1,1,E00108,
+picard,multiqc,data_flow,2,2,E00214,
+picard,preseq,data_flow,1,1,E00132,
+picard,samtools,data_flow,9,9,E00061,
+preseq,multiqc,data_flow,1,1,E00222,
+pysam,samtools,data_flow,1,1,E00122,
+r-base ,multiqc,data_flow,2,2,E00233,
+samplesheet_check,bowtie2,data_flow,1,1,E00037,
+samplesheet_check,bwa,data_flow,1,1,E00020,
+samplesheet_check,chromap,data_flow,1,1,E00054,
+samplesheet_check,fastqc,data_flow,1,1,E00014,
+samplesheet_check,star,data_flow,1,1,E00074,
+samplesheet_check,trim-galore,data_flow,1,1,E00017,
+samplesheet_check,umi_tools,data_flow,1,1,E00015,
+samtools,bamtools,data_flow,1,1,E00109,
+samtools,bedtools,data_flow,7,5,E00005,
+samtools,deeptools,data_flow,3,3,E00152,
+samtools,macs3,data_flow,3,3,E00156,
+samtools,multiqc,data_flow,21,21,E00199,
+samtools,multiqc_custom_peaks,data_flow,3,3,E00166,
+samtools,phantompeakqualtools,data_flow,1,1,E00137,
+samtools,picard,data_flow,7,7,E00088,
+samtools,pysam,data_flow,1,1,E00121,
+samtools,subread,data_flow,3,3,E00186,
+samtools,ucsc-bedgraphtobigwig,data_flow,1,1,E00146,
+star,samtools,data_flow,1,1,E00078,
+subread,multiqc,data_flow,1,1,E00232,
+subread,r-base ,data_flow,1,1,E00190,
+trim-galore,bowtie2,data_flow,2,1,E00035,
+trim-galore,bwa,data_flow,2,1,E00018,
+trim-galore,chromap,data_flow,2,1,E00052,
+trim-galore,multiqc,data_flow,2,2,E00197,
+trim-galore,star,data_flow,2,1,E00072,
+ucsc-bedgraphtobigwig,deeptools,data_flow,1,1,E00147,
+ucsc-bedgraphtobigwig,igv,data_flow,1,1,E00192,
+umi_tools,bowtie2,data_flow,1,1,E00038,
+umi_tools,bwa,data_flow,1,1,E00021,
+umi_tools,chromap,data_flow,1,1,E00055,
+umi_tools,star,data_flow,1,1,E00075,
+umi_tools,trim-galore,data_flow,1,1,E00016,
+untar,bowtie2,data_flow,1,1,E00039,
+untar,bwa,data_flow,1,1,E00022,
+untar,chromap,data_flow,1,1,E00057,
+untar,star,data_flow,1,1,E00076,
+bamtools,preseq,parallel_co_use,0,0,,"both consume PICARD_MARKDUPLICATES.bam (E00108, E00132); no directed path between any process of the two tools"
+bioconductor-biostrings,biopython,parallel_co_use,0,0,,"both consume MACS3_CALLPEAK.peak (E00176, E00178); no directed path between any process of the two tools"
+bioconductor-biostrings,igv,parallel_co_use,0,0,,"both consume MACS3_CALLPEAK.peak (E00176, E00193); no directed path between any process of the two tools"
+bioconductor-biostrings,multiqc_custom_peaks,parallel_co_use,0,0,,"both consume MACS3_CALLPEAK.peak (E00176, E00170); no directed path between any process of the two tools"
+bioconductor-deseq2,igv,parallel_co_use,0,0,,"both consume MACS3_CALLPEAK.peak (E00172, E00193); no directed path between any process of the two tools"
+bioconductor-deseq2,multiqc_custom_peaks,parallel_co_use,0,0,,"both consume MACS3_CALLPEAK.peak (E00172, E00170); no directed path between any process of the two tools"
+bioconductor-deseq2,perl,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00175, E00003); no directed path between any process of the two tools"
+biopython,bioconductor-biostrings,parallel_co_use,0,0,,"both consume MACS3_CALLPEAK.peak (E00178, E00176); no directed path between any process of the two tools"
+biopython,multiqc_custom_peaks,parallel_co_use,0,0,,"both consume MACS3_CALLPEAK.peak (E00178, E00170); no directed path between any process of the two tools"
+bowtie2,bwa,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00035, E00018); no directed path between any process of the two tools"
+bowtie2,chromap,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00035, E00052); no directed path between any process of the two tools"
+bowtie2,fastqc,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00037, E00014); no directed path between any process of the two tools"
+bowtie2,khmer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00041, E00013); no directed path between any process of the two tools"
+bowtie2,star,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00035, E00072); no directed path between any process of the two tools"
+bwa,bowtie2,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00018, E00035); no directed path between any process of the two tools"
+bwa,chromap,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00018, E00052); no directed path between any process of the two tools"
+bwa,fastqc,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00020, E00014); no directed path between any process of the two tools"
+bwa,khmer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00024, E00013); no directed path between any process of the two tools"
+bwa,star,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00018, E00072); no directed path between any process of the two tools"
+chromap,bowtie2,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00052, E00035); no directed path between any process of the two tools"
+chromap,bwa,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00052, E00018); no directed path between any process of the two tools"
+chromap,fastqc,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00054, E00014); no directed path between any process of the two tools"
+chromap,khmer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00056, E00013); no directed path between any process of the two tools"
+chromap,star,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00052, E00072); no directed path between any process of the two tools"
+deeptools,igv,parallel_co_use,0,0,,"both consume UCSC_BEDGRAPHTOBIGWIG.bigwig (E00147, E00192); no directed path between any process of the two tools"
+deeptools,macs3,parallel_co_use,0,0,,"both consume BAMTOOLS_FILTER.bam (E00153, E00157); no directed path between any process of the two tools"
+deeptools,multiqc_custom_peaks,parallel_co_use,0,0,,"both consume BAMTOOLS_FILTER.bam (E00153, E00167); no directed path between any process of the two tools"
+deeptools,phantompeakqualtools,parallel_co_use,0,0,,"both consume BAMTOOLS_FILTER.bam (E00153, E00138); no directed path between any process of the two tools"
+deeptools,subread,parallel_co_use,0,0,,"both consume BAMTOOLS_FILTER.bam (E00153, E00187); no directed path between any process of the two tools"
+fastqc,bowtie2,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00014, E00037); no directed path between any process of the two tools"
+fastqc,bwa,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00014, E00020); no directed path between any process of the two tools"
+fastqc,chromap,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00014, E00054); no directed path between any process of the two tools"
+fastqc,star,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00014, E00074); no directed path between any process of the two tools"
+fastqc,trim-galore,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00014, E00017); no directed path between any process of the two tools"
+fastqc,umi_tools,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00014, E00015); no directed path between any process of the two tools"
+igv,bioconductor-biostrings,parallel_co_use,0,0,,"both consume MACS3_CALLPEAK.peak (E00193, E00176); no directed path between any process of the two tools"
+igv,bioconductor-deseq2,parallel_co_use,0,0,,"both consume MACS3_CALLPEAK.peak (E00193, E00172); no directed path between any process of the two tools"
+igv,deeptools,parallel_co_use,0,0,,"both consume UCSC_BEDGRAPHTOBIGWIG.bigwig (E00192, E00147); no directed path between any process of the two tools"
+igv,multiqc_custom_peaks,parallel_co_use,0,0,,"both consume MACS3_CALLPEAK.peak (E00193, E00170); no directed path between any process of the two tools"
+khmer,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00013, E00041); no directed path between any process of the two tools"
+khmer,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00013, E00024); no directed path between any process of the two tools"
+khmer,chromap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00013, E00056); no directed path between any process of the two tools"
+khmer,picard,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00013, E00093); no directed path between any process of the two tools"
+khmer,samtools,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00013, E00083); no directed path between any process of the two tools"
+khmer,star,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00013, E00010); no directed path between any process of the two tools"
+macs3,deeptools,parallel_co_use,0,0,,"both consume BAMTOOLS_FILTER.bam (E00157, E00153); no directed path between any process of the two tools"
+macs3,phantompeakqualtools,parallel_co_use,0,0,,"both consume BAMTOOLS_FILTER.bam (E00157, E00138); no directed path between any process of the two tools"
+multiqc_custom_peaks,bioconductor-biostrings,parallel_co_use,0,0,,"both consume MACS3_CALLPEAK.peak (E00170, E00176); no directed path between any process of the two tools"
+multiqc_custom_peaks,bioconductor-deseq2,parallel_co_use,0,0,,"both consume MACS3_CALLPEAK.peak (E00170, E00172); no directed path between any process of the two tools"
+multiqc_custom_peaks,biopython,parallel_co_use,0,0,,"both consume MACS3_CALLPEAK.peak (E00170, E00178); no directed path between any process of the two tools"
+multiqc_custom_peaks,deeptools,parallel_co_use,0,0,,"both consume BAMTOOLS_FILTER.bam (E00167, E00153); no directed path between any process of the two tools"
+multiqc_custom_peaks,igv,parallel_co_use,0,0,,"both consume MACS3_CALLPEAK.peak (E00170, E00193); no directed path between any process of the two tools"
+multiqc_custom_peaks,phantompeakqualtools,parallel_co_use,0,0,,"both consume BAMTOOLS_FILTER.bam (E00167, E00138); no directed path between any process of the two tools"
+multiqc_custom_peaks,subread,parallel_co_use,0,0,,"both consume BAMTOOLS_FILTER.bam (E00167, E00187); no directed path between any process of the two tools"
+perl,bioconductor-deseq2,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00003, E00175); no directed path between any process of the two tools"
+perl,star,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00003, E00012); no directed path between any process of the two tools"
+phantompeakqualtools,deeptools,parallel_co_use,0,0,,"both consume BAMTOOLS_FILTER.bam (E00138, E00153); no directed path between any process of the two tools"
+phantompeakqualtools,macs3,parallel_co_use,0,0,,"both consume BAMTOOLS_FILTER.bam (E00138, E00157); no directed path between any process of the two tools"
+phantompeakqualtools,multiqc_custom_peaks,parallel_co_use,0,0,,"both consume BAMTOOLS_FILTER.bam (E00138, E00167); no directed path between any process of the two tools"
+phantompeakqualtools,subread,parallel_co_use,0,0,,"both consume BAMTOOLS_FILTER.bam (E00138, E00187); no directed path between any process of the two tools"
+picard,khmer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00093, E00013); no directed path between any process of the two tools"
+preseq,bamtools,parallel_co_use,0,0,,"both consume PICARD_MARKDUPLICATES.bam (E00132, E00108); no directed path between any process of the two tools"
+samtools,khmer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00083, E00013); no directed path between any process of the two tools"
+star,bowtie2,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00072, E00035); no directed path between any process of the two tools"
+star,bwa,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00072, E00018); no directed path between any process of the two tools"
+star,chromap,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00072, E00052); no directed path between any process of the two tools"
+star,fastqc,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00074, E00014); no directed path between any process of the two tools"
+star,khmer,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00010, E00013); no directed path between any process of the two tools"
+star,perl,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00012, E00003); no directed path between any process of the two tools"
+subread,deeptools,parallel_co_use,0,0,,"both consume BAMTOOLS_FILTER.bam (E00187, E00153); no directed path between any process of the two tools"
+subread,multiqc_custom_peaks,parallel_co_use,0,0,,"both consume BAMTOOLS_FILTER.bam (E00187, E00167); no directed path between any process of the two tools"
+subread,phantompeakqualtools,parallel_co_use,0,0,,"both consume BAMTOOLS_FILTER.bam (E00187, E00138); no directed path between any process of the two tools"
+trim-galore,fastqc,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00017, E00014); no directed path between any process of the two tools"
+umi_tools,fastqc,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00015, E00014); no directed path between any process of the two tools"

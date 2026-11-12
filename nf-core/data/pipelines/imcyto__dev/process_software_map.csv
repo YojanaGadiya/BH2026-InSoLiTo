@@ -1,0 +1,7 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_IMCYTO:IMCYTO:IMCTOOLS,IMCTOOLS,modules/local/imctools.nf,1,imctools,,,module name
+NFCORE_IMCYTO:IMCYTO:CELLPROFILER_FULL_STACK,CELLPROFILER,modules/local/cellprofiler.nf,1,cellprofiler,,,module name
+NFCORE_IMCYTO:IMCYTO:CELLPROFILER_ILASTIK_STACK,CELLPROFILER,modules/local/cellprofiler.nf,1,cellprofiler,,,module name
+NFCORE_IMCYTO:IMCYTO:ILASTIK,ILASTIK,modules/local/ilastik.nf,1,ilastik,,,module name
+NFCORE_IMCYTO:IMCYTO:CELLPROFILER_SEGMENTATION,CELLPROFILER,modules/local/cellprofiler.nf,1,cellprofiler,,,module name
+NFCORE_IMCYTO:IMCYTO:CUSTOM_DUMPSOFTWAREVERSIONS,CUSTOM_DUMPSOFTWAREVERSIONS,modules/nf-core/modules/custom/dumpsoftwareversions/main.nf,1,custom,custom,,meta.yml

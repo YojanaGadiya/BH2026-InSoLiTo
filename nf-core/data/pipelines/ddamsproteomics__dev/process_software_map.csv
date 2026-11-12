@@ -1,0 +1,20 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+get_software_versions,get_software_versions,main.nf,229,msgf_plus,,msgf_plus;hardklor;kronik;percolator,script and directives
+quantifySpectra,quantifySpectra,main.nf,299,hardklor,,hardklor;kronik,script and directives
+createSpectraLookup,createSpectraLookup,main.nf,332,msslookup,,msslookup,script and directives
+quantLookup,quantLookup,main.nf,381,msslookup,,msslookup,script and directives
+countMS2perFile,countMS2perFile,main.nf,422,sqlite3,,sqlite3,script and directives
+countMS2sPerPlate,countMS2sPerPlate,main.nf,446,with,,with,script and directives
+createTargetDecoyFasta,createTargetDecoyFasta,main.nf,482,tryprev,,tryprev,script and directives
+msgfPlus,msgfPlus,main.nf,499,msgf_plus,,msgf_plus,script and directives
+percolator,percolator,main.nf,525,percolator,,,module name
+svmToTSV,svmToTSV,main.nf,549,perco_to_tsv,,perco_to_tsv,script and directives
+createPSMTable,createPSMTable,main.nf,587,msspsmtable,,msspsmtable;msslookup,script and directives
+psm2Peptides,psm2Peptides,main.nf,635,msspeptable,,msspeptable,script and directives
+prepProteinGeneSymbolTable,prepProteinGeneSymbolTable,main.nf,704,mssprottable,,mssprottable;msspsmtable,script and directives
+proteinFDR,proteinFDR,main.nf,736,mssprottable,,mssprottable,script and directives
+proteinPeptideSetMerge,proteinPeptideSetMerge,main.nf,784,msslookup,,msslookup,script and directives
+psmQC,psmQC,main.nf,814,qc_psms,,qc_psms,script and directives
+featQC,featQC,main.nf,858,qc_protein,,qc_protein,script and directives
+collectQC,collectQC,main.nf,886,qc_collect,,qc_collect,script and directives
+output_documentation,output_documentation,main.nf,908,markdown_to_html,,markdown_to_html,script and directives

@@ -1,0 +1,534 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bbmap,bowtie2,data_flow,3,3,E00193,
+bbmap,fastqc,data_flow,1,1,E00240,
+bbmap,fq,data_flow,3,3,E00138,
+bbmap,hisat2,data_flow,1,1,E00432,
+bbmap,kallisto,data_flow,1,1,E01198,
+bbmap,kraken2,data_flow,1,1,E01129,
+bbmap,multiqc,data_flow,2,2,E01246,
+bbmap,parabricks,data_flow,1,1,E00335,
+bbmap,ribodetector,data_flow,2,2,E00166,
+bbmap,salmon,data_flow,2,1,E00264,
+bbmap,sample_check_failed,data_flow,1,1,E01033,
+bbmap,samtools,data_flow,1,1,E00359,
+bbmap,sentieon,data_flow,1,1,E00310,
+bbmap,seqkit,data_flow,1,1,E00155,
+bbmap,sortmerna,data_flow,1,1,E00140,
+bbmap,sylph,data_flow,1,1,E01153,
+bedtools,ucsc-bedclip,data_flow,3,3,E01112,
+bioconductor-dupradar,multiqc,data_flow,1,1,E01290,
+bioconductor-tximeta,bioconductor-summarizedexperiment,data_flow,27,27,E00590,
+bioconductor-tximeta,r-optparse,data_flow,3,3,E00600,
+bowtie2,bedtools,gate_metadata,3,0,E01076,
+bowtie2,bioconductor-dupradar,gate_metadata,1,0,E00859,
+bowtie2,fastqc,data_flow,1,1,E00238,
+bowtie2,fq,data_flow,2,2,E00223,
+bowtie2,hisat2,data_flow,1,1,E00430,
+bowtie2,kallisto,data_flow,3,2,E00637,
+bowtie2,kraken2,data_flow,1,1,E01127,
+bowtie2,multiqc,data_flow,4,4,E01250,
+bowtie2,parabricks,data_flow,1,1,E00333,
+bowtie2,picard,gate_metadata,1,0,E00688,
+bowtie2,preseq,gate_metadata,1,0,E00792,
+bowtie2,rseqc,gate_metadata,8,0,E00881,
+bowtie2,rustqc,gate_metadata,1,0,E00770,
+bowtie2,salmon,data_flow,4,2,E00262,
+bowtie2,sample_check_failed,data_flow,2,1,E01031,
+bowtie2,samtools,data_flow,5,4,E00219,
+bowtie2,sentieon,data_flow,1,1,E00308,
+bowtie2,stringtie,gate_metadata,2,0,E00722,
+bowtie2,subread,gate_metadata,1,0,E00810,
+bowtie2,sylph,data_flow,1,1,E01151,
+bracken,multiqc,data_flow,1,1,E01300,
+cat,bbmap,data_flow,1,1,E00133,
+cat,bowtie2,data_flow,3,3,E00201,
+cat,fastp,data_flow,1,1,E00115,
+cat,fastqc,data_flow,3,3,E00103,
+cat,fq,data_flow,4,4,E00102,
+cat,hisat2,data_flow,1,1,E00440,
+cat,kallisto,data_flow,1,1,E01206,
+cat,kraken2,data_flow,1,1,E01137,
+cat,multiqc,data_flow,1,1,E01326,
+cat,parabricks,data_flow,1,1,E00343,
+cat,ribodetector,data_flow,2,2,E00174,
+cat,salmon,data_flow,2,1,E00272,
+cat,sample_check_failed,data_flow,1,1,E01041,
+cat,samtools,data_flow,1,1,E00367,
+cat,sentieon,data_flow,1,1,E00318,
+cat,seqkit,data_flow,1,1,E00163,
+cat,sortmerna,data_flow,1,1,E00148,
+cat,sylph,data_flow,1,1,E01161,
+cat,trim-galore,data_flow,1,1,E00108,
+cat,umi_tools,data_flow,2,2,E00105,
+custom,bbmap,data_flow,1,1,E00039,
+custom,bioconductor-dupradar,data_flow,1,1,E00862,
+custom,bioconductor-summarizedexperiment,data_flow,3,3,E00595,
+custom,bioconductor-tximeta,data_flow,3,3,E00589,
+custom,gffread,data_flow,3,3,E00010,
+custom,hisat2,data_flow,3,3,E00072,
+custom,kallisto,data_flow,2,2,E00654,
+custom,multiqc,data_flow,1,1,E01288,
+custom,parabricks,data_flow,1,1,E00347,
+custom,perl,data_flow,1,1,E00014,
+custom,picard,data_flow,1,1,E00690,
+custom,qualimap,data_flow,1,1,E00840,
+custom,rsem,data_flow,8,8,E00025,
+custom,rustqc,data_flow,1,1,E00773,
+custom,salmon,data_flow,5,3,E00094,
+custom,samtools,data_flow,15,15,E00037,
+custom,sentieon,data_flow,1,1,E00326,
+custom,stringtie,data_flow,3,3,E00724,
+custom,subread,data_flow,1,1,E00813,
+fastp,bbmap,data_flow,2,1,E00127,
+fastp,bowtie2,data_flow,6,3,E00195,
+fastp,fastqc,data_flow,4,2,E00117,
+fastp,fq,data_flow,6,3,E00119,
+fastp,hisat2,data_flow,2,1,E00434,
+fastp,kallisto,data_flow,2,1,E01200,
+fastp,kraken2,data_flow,2,1,E01131,
+fastp,multiqc,data_flow,3,3,E01240,
+fastp,parabricks,data_flow,2,1,E00337,
+fastp,ribodetector,data_flow,4,2,E00168,
+fastp,salmon,data_flow,4,1,E00266,
+fastp,sample_check_failed,data_flow,2,1,E01035,
+fastp,samtools,data_flow,2,1,E00361,
+fastp,sentieon,data_flow,2,1,E00312,
+fastp,seqkit,data_flow,2,1,E00157,
+fastp,sortmerna,data_flow,2,1,E00142,
+fastp,sylph,data_flow,2,1,E01155,
+fastqc,multiqc,data_flow,4,4,E01236,
+fq,bbmap,gate_metadata,2,0,E00134,
+fq,bowtie2,gate_metadata,10,0,E00194,
+fq,fastp,gate_metadata,1,0,E00116,
+fq,fastqc,gate_metadata,6,0,E00104,
+fq,hisat2,gate_metadata,4,0,E00433,
+fq,kallisto,gate_metadata,4,0,E01199,
+fq,kraken2,gate_metadata,4,0,E01130,
+fq,multiqc,data_flow,4,4,E01323,
+fq,parabricks,gate_metadata,4,0,E00336,
+fq,ribodetector,gate_metadata,6,0,E00167,
+fq,salmon,data_flow,9,1,E00265,
+fq,sample_check_failed,gate_metadata,4,0,E01034,
+fq,samtools,gate_metadata,4,0,E00360,
+fq,sentieon,gate_metadata,4,0,E00311,
+fq,seqkit,gate_metadata,3,0,E00156,
+fq,sortmerna,gate_metadata,3,0,E00141,
+fq,sylph,gate_metadata,4,0,E01154,
+fq,trim-galore,gate_metadata,1,0,E00109,
+fq,umi_tools,gate_metadata,2,0,E00106,
+gawk,parabricks,data_flow,1,1,E00351,
+gawk,samtools,data_flow,1,1,E00371,
+gawk,sentieon,data_flow,1,1,E00323,
+gffread,bioconductor-dupradar,data_flow,1,1,E00865,
+gffread,bowtie2,data_flow,1,1,E00086,
+gffread,custom,data_flow,4,4,E00008,
+gffread,gtffilter,data_flow,1,1,E00003,
+gffread,hisat2,data_flow,2,2,E00075,
+gffread,kallisto,data_flow,3,3,E00099,
+gffread,perl,data_flow,1,1,E00017,
+gffread,qualimap,data_flow,1,1,E00843,
+gffread,rsem,data_flow,4,4,E00030,
+gffread,rseqc,data_flow,6,6,E00903,
+gffread,rustqc,data_flow,1,1,E00776,
+gffread,salmon,data_flow,7,7,E00091,
+gffread,samtools,data_flow,5,5,E00049,
+gffread,sentieon,data_flow,1,1,E00329,
+gffread,stringtie,data_flow,3,3,E00727,
+gffread,subread,data_flow,1,1,E00816,
+gtffilter,bioconductor-dupradar,data_flow,1,1,E00863,
+gtffilter,custom,data_flow,4,4,E00006,
+gtffilter,gffread,data_flow,2,2,E00011,
+gtffilter,hisat2,data_flow,2,2,E00073,
+gtffilter,kallisto,data_flow,2,2,E00655,
+gtffilter,perl,data_flow,1,1,E00015,
+gtffilter,qualimap,data_flow,1,1,E00841,
+gtffilter,rsem,data_flow,4,4,E00028,
+gtffilter,rustqc,data_flow,1,1,E00774,
+gtffilter,salmon,data_flow,3,3,E00297,
+gtffilter,samtools,data_flow,3,3,E00047,
+gtffilter,sentieon,data_flow,1,1,E00327,
+gtffilter,stringtie,data_flow,3,3,E00725,
+gtffilter,subread,data_flow,1,1,E00814,
+gunzip,bbmap,data_flow,1,1,E00040,
+gunzip,bioconductor-dupradar,data_flow,1,1,E00864,
+gunzip,bowtie2,data_flow,1,1,E00085,
+gunzip,custom,data_flow,6,6,E00005,
+gunzip,gffread,data_flow,4,4,E00001,
+gunzip,gtffilter,data_flow,2,2,E00002,
+gunzip,hisat2,data_flow,3,3,E00074,
+gunzip,kallisto,data_flow,3,3,E00098,
+gunzip,parabricks,data_flow,1,1,E00348,
+gunzip,perl,data_flow,1,1,E00016,
+gunzip,picard,data_flow,1,1,E00691,
+gunzip,qualimap,data_flow,1,1,E00842,
+gunzip,rsem,data_flow,8,8,E00026,
+gunzip,rseqc,data_flow,6,6,E00902,
+gunzip,rustqc,data_flow,1,1,E00775,
+gunzip,salmon,data_flow,9,7,E00090,
+gunzip,samtools,data_flow,17,17,E00038,
+gunzip,sed,data_flow,1,1,E00018,
+gunzip,sentieon,data_flow,1,1,E00328,
+gunzip,seqkit,data_flow,1,1,E00190,
+gunzip,sortmerna,data_flow,3,3,E00042,
+gunzip,stringtie,data_flow,3,3,E00726,
+gunzip,subread,data_flow,1,1,E00815,
+hisat2,bedtools,gate_metadata,3,0,E01077,
+hisat2,bioconductor-dupradar,gate_metadata,1,0,E00860,
+hisat2,kallisto,gate_metadata,1,0,E00653,
+hisat2,kraken2,data_flow,1,1,E01141,
+hisat2,multiqc,data_flow,1,1,E01263,
+hisat2,picard,gate_metadata,1,0,E00689,
+hisat2,preseq,gate_metadata,1,0,E00793,
+hisat2,rseqc,gate_metadata,8,0,E00882,
+hisat2,rustqc,gate_metadata,1,0,E00771,
+hisat2,salmon,gate_metadata,1,0,E00622,
+hisat2,sample_check_failed,gate_metadata,1,0,E01060,
+hisat2,samtools,data_flow,2,1,E00447,
+hisat2,stringtie,gate_metadata,2,0,E00723,
+hisat2,subread,gate_metadata,1,0,E00811,
+hisat2,sylph,data_flow,1,1,E01165,
+kallisto,bioconductor-tximeta,data_flow,2,2,E00665,
+kallisto,custom,data_flow,2,2,E00663,
+kallisto,multiqc,data_flow,1,1,E01303,
+kraken2,bracken,data_flow,1,1,E01146,
+kraken2,multiqc,data_flow,1,1,E01299,
+parabricks,bedtools,gate_metadata,3,0,E01074,
+parabricks,bioconductor-dupradar,gate_metadata,1,0,E00857,
+parabricks,kallisto,data_flow,2,1,E00635,
+parabricks,kraken2,data_flow,1,1,E01143,
+parabricks,multiqc,data_flow,1,1,E01254,
+parabricks,picard,gate_metadata,1,0,E00686,
+parabricks,preseq,gate_metadata,1,0,E00790,
+parabricks,rsem,data_flow,2,1,E00564,
+parabricks,rseqc,gate_metadata,8,0,E00879,
+parabricks,rustqc,gate_metadata,1,0,E00768,
+parabricks,salmon,data_flow,2,1,E00604,
+parabricks,sample_check_failed,gate_metadata,1,0,E01057,
+parabricks,samtools,data_flow,3,2,E00379,
+parabricks,stringtie,gate_metadata,2,0,E00720,
+parabricks,subread,gate_metadata,1,0,E00808,
+parabricks,sylph,data_flow,1,1,E01167,
+perl,rseqc,data_flow,6,6,E00904,
+picard,bedtools,data_flow,3,3,E01061,
+picard,bioconductor-dupradar,data_flow,1,1,E00844,
+picard,multiqc,data_flow,1,1,E01280,
+picard,preseq,data_flow,1,1,E00777,
+picard,rseqc,data_flow,8,8,E00866,
+picard,rustqc,data_flow,1,1,E00755,
+picard,samtools,data_flow,9,9,E00693,
+picard,stringtie,data_flow,2,2,E00707,
+picard,subread,data_flow,1,1,E00795,
+preseq,multiqc,data_flow,1,1,E01287,
+qualimap,multiqc,data_flow,1,1,E01289,
+r-optparse,multiqc,data_flow,6,6,E01330,
+ribodetector,bowtie2,data_flow,1,1,E00396,
+ribodetector,fastqc,data_flow,1,1,E00237,
+ribodetector,fq,data_flow,2,2,E00222,
+ribodetector,hisat2,data_flow,1,1,E00429,
+ribodetector,kallisto,data_flow,1,1,E01195,
+ribodetector,kraken2,data_flow,1,1,E01126,
+ribodetector,multiqc,data_flow,2,2,E01248,
+ribodetector,parabricks,data_flow,1,1,E00332,
+ribodetector,salmon,data_flow,2,1,E00261,
+ribodetector,sample_check_failed,data_flow,1,1,E01030,
+ribodetector,samtools,data_flow,1,1,E00356,
+ribodetector,sentieon,data_flow,1,1,E00307,
+ribodetector,sylph,data_flow,1,1,E01150,
+rsem,bioconductor-tximeta,data_flow,2,2,E00587,
+rsem,bowtie2,data_flow,2,2,E00087,
+rsem,custom,data_flow,6,6,E00577,
+rsem,kallisto,data_flow,2,2,E00100,
+rsem,multiqc,data_flow,2,2,E01275,
+rsem,salmon,data_flow,8,8,E00092,
+rsem,samtools,data_flow,4,4,E00506,
+rseqc,multiqc,data_flow,8,8,E01291,
+rustqc,multiqc,data_flow,6,6,E01281,
+salmon,bioconductor-tximeta,data_flow,2,2,E00664,
+salmon,bowtie2,gate_metadata,1,0,E00394,
+salmon,custom,data_flow,2,2,E00662,
+salmon,hisat2,gate_metadata,1,0,E00427,
+salmon,kallisto,gate_metadata,1,0,E01193,
+salmon,kraken2,gate_metadata,1,0,E01124,
+salmon,multiqc,data_flow,2,2,E01302,
+salmon,parabricks,gate_metadata,1,0,E00330,
+salmon,sample_check_failed,gate_metadata,1,0,E01028,
+salmon,samtools,gate_metadata,1,0,E00354,
+salmon,sentieon,gate_metadata,1,0,E00305,
+salmon,sylph,gate_metadata,1,0,E01148,
+samtools,bbmap,rejected,1,0,E00041,every extracted edge is rejected
+samtools,bedtools,data_flow,30,9,E01064,
+samtools,bioconductor-dupradar,data_flow,11,3,E00847,
+samtools,bowtie2,data_flow,1,1,E00398,
+samtools,fastqc,data_flow,1,1,E00239,
+samtools,fq,data_flow,2,2,E00224,
+samtools,hisat2,data_flow,2,1,E00078,
+samtools,kallisto,data_flow,13,6,E00632,
+samtools,kraken2,data_flow,2,2,E01128,
+samtools,multiqc,data_flow,29,29,E01255,
+samtools,parabricks,data_flow,4,3,E00334,
+samtools,picard,data_flow,9,4,E00678,
+samtools,preseq,data_flow,11,3,E00780,
+samtools,qualimap,data_flow,1,1,E00839,
+samtools,rsem,data_flow,16,5,E00060,
+samtools,rseqc,data_flow,88,80,E00869,
+samtools,rustqc,data_flow,11,10,E00758,
+samtools,salmon,data_flow,16,6,E00096,
+samtools,sample_check_failed,data_flow,11,4,E01032,
+samtools,sentieon,data_flow,3,3,E00309,
+samtools,stringtie,data_flow,20,6,E00710,
+samtools,subread,data_flow,11,3,E00798,
+samtools,sylph,data_flow,2,2,E01152,
+samtools,ucsc-bedclip,data_flow,3,3,E01113,
+samtools,ucsc-bedgraphtobigwig,data_flow,3,3,E01115,
+samtools,umi_tools,data_flow,14,14,E00483,
+samtools,umicollapse,data_flow,9,9,E00461,
+sed,bowtie2,data_flow,1,1,E00084,
+sed,kallisto,data_flow,1,1,E00097,
+sed,salmon,data_flow,4,4,E00089,
+sed,samtools,data_flow,2,2,E00503,
+sentieon,bedtools,gate_metadata,3,0,E01073,
+sentieon,bioconductor-dupradar,gate_metadata,1,0,E00856,
+sentieon,kallisto,data_flow,2,1,E00634,
+sentieon,kraken2,data_flow,1,1,E01142,
+sentieon,multiqc,data_flow,1,1,E01253,
+sentieon,picard,gate_metadata,1,0,E00685,
+sentieon,preseq,gate_metadata,1,0,E00789,
+sentieon,rsem,data_flow,2,1,E00551,
+sentieon,rseqc,gate_metadata,8,0,E00878,
+sentieon,rustqc,gate_metadata,1,0,E00767,
+sentieon,salmon,data_flow,2,1,E00603,
+sentieon,sample_check_failed,gate_metadata,1,0,E01056,
+sentieon,samtools,data_flow,3,2,E00378,
+sentieon,stringtie,gate_metadata,2,0,E00719,
+sentieon,subread,gate_metadata,1,0,E00807,
+sentieon,sylph,data_flow,1,1,E01166,
+seqkit,bowtie2,data_flow,1,1,E00192,
+seqkit,multiqc,data_flow,1,1,E01249,
+seqkit,ribodetector,gate_metadata,2,0,E00177,
+sortmerna,bowtie2,data_flow,1,1,E00395,
+sortmerna,fastqc,data_flow,1,1,E00236,
+sortmerna,fq,data_flow,2,2,E00221,
+sortmerna,hisat2,data_flow,1,1,E00428,
+sortmerna,kallisto,data_flow,1,1,E01194,
+sortmerna,kraken2,data_flow,1,1,E01125,
+sortmerna,multiqc,data_flow,2,2,E01247,
+sortmerna,parabricks,data_flow,1,1,E00331,
+sortmerna,salmon,data_flow,2,1,E00260,
+sortmerna,sample_check_failed,data_flow,1,1,E01029,
+sortmerna,samtools,data_flow,1,1,E00355,
+sortmerna,sentieon,data_flow,1,1,E00306,
+sortmerna,sylph,data_flow,1,1,E01149,
+subread,custom,data_flow,1,1,E00817,
+sylph,sylph-tax,data_flow,1,1,E01169,
+sylph-tax,multiqc,data_flow,1,1,E01301,
+trim-galore,bbmap,data_flow,2,1,E00130,
+trim-galore,bowtie2,data_flow,6,3,E00198,
+trim-galore,fastqc,data_flow,2,1,E00245,
+trim-galore,fq,data_flow,6,3,E00122,
+trim-galore,hisat2,data_flow,2,1,E00437,
+trim-galore,kallisto,data_flow,2,1,E01203,
+trim-galore,kraken2,data_flow,2,1,E01134,
+trim-galore,multiqc,data_flow,4,4,E01239,
+trim-galore,parabricks,data_flow,2,1,E00340,
+trim-galore,ribodetector,data_flow,4,2,E00171,
+trim-galore,salmon,data_flow,4,1,E00269,
+trim-galore,sample_check_failed,data_flow,2,1,E01038,
+trim-galore,samtools,data_flow,2,1,E00364,
+trim-galore,sentieon,data_flow,2,1,E00315,
+trim-galore,seqkit,data_flow,2,1,E00160,
+trim-galore,sortmerna,data_flow,2,1,E00145,
+trim-galore,sylph,data_flow,2,1,E01158,
+ucsc-bedclip,ucsc-bedgraphtobigwig,data_flow,3,3,E01114,
+umi_tools,bbmap,data_flow,2,2,E00129,
+umi_tools,bedtools,data_flow,3,3,E01063,
+umi_tools,bioconductor-dupradar,data_flow,1,1,E00846,
+umi_tools,bowtie2,data_flow,6,6,E00197,
+umi_tools,fastp,data_flow,1,1,E00114,
+umi_tools,fastqc,data_flow,2,2,E00244,
+umi_tools,fq,data_flow,6,6,E00121,
+umi_tools,hisat2,data_flow,2,2,E00436,
+umi_tools,kallisto,data_flow,4,4,E00633,
+umi_tools,kraken2,data_flow,2,2,E01133,
+umi_tools,multiqc,data_flow,6,6,E01244,
+umi_tools,parabricks,data_flow,2,2,E00339,
+umi_tools,preseq,data_flow,1,1,E00779,
+umi_tools,ribodetector,data_flow,4,4,E00170,
+umi_tools,rsem,data_flow,4,4,E00550,
+umi_tools,rseqc,data_flow,8,8,E00868,
+umi_tools,rustqc,data_flow,1,1,E00757,
+umi_tools,salmon,data_flow,6,4,E00268,
+umi_tools,sample_check_failed,data_flow,3,3,E01037,
+umi_tools,samtools,data_flow,12,12,E00363,
+umi_tools,sentieon,data_flow,2,2,E00314,
+umi_tools,seqkit,data_flow,2,2,E00159,
+umi_tools,sortmerna,data_flow,2,2,E00144,
+umi_tools,stringtie,data_flow,2,2,E00709,
+umi_tools,subread,data_flow,1,1,E00797,
+umi_tools,sylph,data_flow,2,2,E01157,
+umi_tools,trim-galore,data_flow,1,1,E00107,
+umicollapse,bedtools,data_flow,3,3,E01062,
+umicollapse,bioconductor-dupradar,data_flow,1,1,E00845,
+umicollapse,kallisto,data_flow,1,1,E00638,
+umicollapse,multiqc,data_flow,2,2,E01267,
+umicollapse,preseq,data_flow,1,1,E00778,
+umicollapse,rsem,data_flow,2,2,E00552,
+umicollapse,rseqc,data_flow,8,8,E00867,
+umicollapse,rustqc,data_flow,1,1,E00756,
+umicollapse,salmon,data_flow,1,1,E00607,
+umicollapse,sample_check_failed,data_flow,1,1,E01045,
+umicollapse,samtools,data_flow,10,10,E00468,
+umicollapse,stringtie,data_flow,2,2,E00708,
+umicollapse,subread,data_flow,1,1,E00796,
+untar,bbmap,data_flow,1,1,E00136,
+untar,bowtie2,data_flow,3,3,E00205,
+untar,bracken,data_flow,1,1,E01147,
+untar,gawk,data_flow,1,1,E00050,
+untar,hisat2,data_flow,1,1,E00444,
+untar,kallisto,data_flow,1,1,E01210,
+untar,kraken2,data_flow,1,1,E01145,
+untar,parabricks,data_flow,1,1,E00352,
+untar,rsem,data_flow,2,2,E00560,
+untar,salmon,data_flow,2,2,E00294,
+untar,samtools,data_flow,1,1,E00372,
+untar,sentieon,data_flow,1,1,E00324,
+untar,sortmerna,data_flow,1,1,E00153,
+bedtools,bioconductor-dupradar,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01099, E00848); no directed path between any process of the two tools"
+bedtools,kallisto,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01099, E00641); no directed path between any process of the two tools"
+bedtools,multiqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01099, E01309); no directed path between any process of the two tools"
+bedtools,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01099, E00781); no directed path between any process of the two tools"
+bedtools,rseqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01099, E00870); no directed path between any process of the two tools"
+bedtools,rustqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01099, E00759); no directed path between any process of the two tools"
+bedtools,sample_check_failed,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01099, E01048); no directed path between any process of the two tools"
+bedtools,stringtie,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01099, E00711); no directed path between any process of the two tools"
+bedtools,subread,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01099, E00799); no directed path between any process of the two tools"
+bioconductor-dupradar,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00848, E01099); no directed path between any process of the two tools"
+bioconductor-dupradar,kallisto,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00862, E00654); no directed path between any process of the two tools"
+bioconductor-dupradar,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00862, E00014); no directed path between any process of the two tools"
+bioconductor-dupradar,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00848, E00781); no directed path between any process of the two tools"
+bioconductor-dupradar,qualimap,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00862, E00840); no directed path between any process of the two tools"
+bioconductor-dupradar,rseqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00848, E00870); no directed path between any process of the two tools"
+bioconductor-dupradar,sample_check_failed,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00848, E01048); no directed path between any process of the two tools"
+bioconductor-dupradar,stringtie,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00862, E00729); no directed path between any process of the two tools"
+bioconductor-dupradar,subread,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00862, E00813); no directed path between any process of the two tools"
+bioconductor-summarizedexperiment,r-optparse,parallel_co_use,0,0,,"both consume TXIMETA_TXIMPORT.counts_gene_length_scaled (E00668, E00677); no directed path between any process of the two tools"
+fastqc,hisat2,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00240, E00432); no directed path between any process of the two tools"
+fastqc,kallisto,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00240, E01198); no directed path between any process of the two tools"
+fastqc,kraken2,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00240, E01129); no directed path between any process of the two tools"
+fastqc,parabricks,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00240, E00335); no directed path between any process of the two tools"
+fastqc,salmon,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00240, E01175); no directed path between any process of the two tools"
+fastqc,sample_check_failed,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00240, E01033); no directed path between any process of the two tools"
+fastqc,sentieon,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00240, E00310); no directed path between any process of the two tools"
+fastqc,sylph,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00240, E01153); no directed path between any process of the two tools"
+hisat2,fastqc,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00432, E00240); no directed path between any process of the two tools"
+hisat2,parabricks,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00076, E00347); no directed path between any process of the two tools"
+hisat2,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00079, E00014); no directed path between any process of the two tools"
+hisat2,sentieon,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00079, E00326); no directed path between any process of the two tools"
+kallisto,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00641, E01099); no directed path between any process of the two tools"
+kallisto,bioconductor-dupradar,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00654, E00862); no directed path between any process of the two tools"
+kallisto,fastqc,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E01198, E00240); no directed path between any process of the two tools"
+kallisto,kraken2,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E01198, E01129); no directed path between any process of the two tools"
+kallisto,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00654, E00014); no directed path between any process of the two tools"
+kallisto,picard,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00641, E00679); no directed path between any process of the two tools"
+kallisto,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00641, E00781); no directed path between any process of the two tools"
+kallisto,qualimap,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00654, E00840); no directed path between any process of the two tools"
+kallisto,rseqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00641, E00870); no directed path between any process of the two tools"
+kallisto,rustqc,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00654, E00773); no directed path between any process of the two tools"
+kallisto,sample_check_failed,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00641, E01048); no directed path between any process of the two tools"
+kallisto,stringtie,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00654, E00729); no directed path between any process of the two tools"
+kallisto,subread,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00654, E00813); no directed path between any process of the two tools"
+kallisto,sylph,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E01198, E01153); no directed path between any process of the two tools"
+kraken2,fastqc,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E01129, E00240); no directed path between any process of the two tools"
+kraken2,kallisto,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E01129, E01198); no directed path between any process of the two tools"
+kraken2,sample_check_failed,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E01129, E01033); no directed path between any process of the two tools"
+kraken2,sylph,parallel_co_use,0,0,,"both consume PARABRICKS_RNA_FQ2BAM.fastq (E01143, E01167); no directed path between any process of the two tools"
+multiqc,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01309, E01099); no directed path between any process of the two tools"
+multiqc,sample_check_failed,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01309, E01048); no directed path between any process of the two tools"
+multiqc,stringtie,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01309, E00711); no directed path between any process of the two tools"
+parabricks,fastqc,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00335, E00240); no directed path between any process of the two tools"
+parabricks,hisat2,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00347, E00076); no directed path between any process of the two tools"
+perl,bioconductor-dupradar,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00014, E00862); no directed path between any process of the two tools"
+perl,hisat2,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00014, E00079); no directed path between any process of the two tools"
+perl,kallisto,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00014, E00654); no directed path between any process of the two tools"
+perl,qualimap,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00014, E00840); no directed path between any process of the two tools"
+perl,rsem,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00014, E00068); no directed path between any process of the two tools"
+perl,rustqc,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00014, E00773); no directed path between any process of the two tools"
+perl,salmon,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00014, E00296); no directed path between any process of the two tools"
+perl,samtools,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00014, E00046); no directed path between any process of the two tools"
+perl,sentieon,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00014, E00326); no directed path between any process of the two tools"
+perl,stringtie,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00014, E00729); no directed path between any process of the two tools"
+perl,subread,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00014, E00813); no directed path between any process of the two tools"
+picard,kallisto,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00679, E00641); no directed path between any process of the two tools"
+picard,sample_check_failed,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00679, E01048); no directed path between any process of the two tools"
+preseq,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00781, E01099); no directed path between any process of the two tools"
+preseq,bioconductor-dupradar,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00781, E00848); no directed path between any process of the two tools"
+preseq,kallisto,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00781, E00641); no directed path between any process of the two tools"
+preseq,rseqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00781, E00870); no directed path between any process of the two tools"
+preseq,sample_check_failed,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00781, E01048); no directed path between any process of the two tools"
+preseq,stringtie,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00781, E00711); no directed path between any process of the two tools"
+preseq,subread,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00781, E00799); no directed path between any process of the two tools"
+qualimap,bioconductor-dupradar,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00840, E00862); no directed path between any process of the two tools"
+qualimap,kallisto,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00840, E00654); no directed path between any process of the two tools"
+qualimap,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00840, E00014); no directed path between any process of the two tools"
+qualimap,stringtie,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00840, E00729); no directed path between any process of the two tools"
+qualimap,subread,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00840, E00813); no directed path between any process of the two tools"
+r-optparse,bioconductor-summarizedexperiment,parallel_co_use,0,0,,"both consume TXIMETA_TXIMPORT.counts_gene_length_scaled (E00677, E00668); no directed path between any process of the two tools"
+ribodetector,sortmerna,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00166, E00140); no directed path between any process of the two tools"
+rsem,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00068, E00014); no directed path between any process of the two tools"
+rseqc,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00870, E01099); no directed path between any process of the two tools"
+rseqc,bioconductor-dupradar,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00870, E00848); no directed path between any process of the two tools"
+rseqc,kallisto,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00870, E00641); no directed path between any process of the two tools"
+rseqc,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00870, E00781); no directed path between any process of the two tools"
+rseqc,sample_check_failed,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00870, E01048); no directed path between any process of the two tools"
+rseqc,stringtie,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00870, E00711); no directed path between any process of the two tools"
+rseqc,subread,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00870, E00799); no directed path between any process of the two tools"
+rustqc,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00759, E01099); no directed path between any process of the two tools"
+rustqc,kallisto,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00773, E00654); no directed path between any process of the two tools"
+rustqc,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00773, E00014); no directed path between any process of the two tools"
+rustqc,sample_check_failed,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00759, E01048); no directed path between any process of the two tools"
+rustqc,stringtie,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00773, E00729); no directed path between any process of the two tools"
+salmon,fastqc,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E01175, E00240); no directed path between any process of the two tools"
+salmon,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00296, E00014); no directed path between any process of the two tools"
+sample_check_failed,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01048, E01099); no directed path between any process of the two tools"
+sample_check_failed,bioconductor-dupradar,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01048, E00848); no directed path between any process of the two tools"
+sample_check_failed,fastqc,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E01033, E00240); no directed path between any process of the two tools"
+sample_check_failed,kallisto,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01048, E00641); no directed path between any process of the two tools"
+sample_check_failed,kraken2,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E01033, E01129); no directed path between any process of the two tools"
+sample_check_failed,multiqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01048, E01309); no directed path between any process of the two tools"
+sample_check_failed,picard,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01048, E00679); no directed path between any process of the two tools"
+sample_check_failed,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01048, E00781); no directed path between any process of the two tools"
+sample_check_failed,rseqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01048, E00870); no directed path between any process of the two tools"
+sample_check_failed,rustqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01048, E00759); no directed path between any process of the two tools"
+sample_check_failed,stringtie,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01048, E00711); no directed path between any process of the two tools"
+sample_check_failed,subread,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E01048, E00799); no directed path between any process of the two tools"
+sample_check_failed,sylph,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E01033, E01153); no directed path between any process of the two tools"
+samtools,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00046, E00014); no directed path between any process of the two tools"
+sentieon,fastqc,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00310, E00240); no directed path between any process of the two tools"
+sentieon,hisat2,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00326, E00079); no directed path between any process of the two tools"
+sentieon,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00326, E00014); no directed path between any process of the two tools"
+seqkit,sortmerna,parallel_co_use,0,0,,"both consume GUNZIP_RRNA_FASTAS.gunzip (E00190, E00042); no directed path between any process of the two tools"
+sortmerna,ribodetector,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E00140, E00166); no directed path between any process of the two tools"
+sortmerna,seqkit,parallel_co_use,0,0,,"both consume GUNZIP_RRNA_FASTAS.gunzip (E00042, E00190); no directed path between any process of the two tools"
+stringtie,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00711, E01099); no directed path between any process of the two tools"
+stringtie,bioconductor-dupradar,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00729, E00862); no directed path between any process of the two tools"
+stringtie,kallisto,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00729, E00654); no directed path between any process of the two tools"
+stringtie,multiqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00711, E01309); no directed path between any process of the two tools"
+stringtie,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00729, E00014); no directed path between any process of the two tools"
+stringtie,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00711, E00781); no directed path between any process of the two tools"
+stringtie,qualimap,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00729, E00840); no directed path between any process of the two tools"
+stringtie,rseqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00711, E00870); no directed path between any process of the two tools"
+stringtie,rustqc,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00729, E00773); no directed path between any process of the two tools"
+stringtie,sample_check_failed,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00711, E01048); no directed path between any process of the two tools"
+stringtie,subread,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00729, E00813); no directed path between any process of the two tools"
+subread,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00799, E01099); no directed path between any process of the two tools"
+subread,bioconductor-dupradar,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00813, E00862); no directed path between any process of the two tools"
+subread,kallisto,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00813, E00654); no directed path between any process of the two tools"
+subread,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00813, E00014); no directed path between any process of the two tools"
+subread,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00799, E00781); no directed path between any process of the two tools"
+subread,qualimap,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00813, E00840); no directed path between any process of the two tools"
+subread,rseqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00799, E00870); no directed path between any process of the two tools"
+subread,sample_check_failed,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00799, E01048); no directed path between any process of the two tools"
+subread,stringtie,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00813, E00729); no directed path between any process of the two tools"
+sylph,fastqc,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E01153, E00240); no directed path between any process of the two tools"
+sylph,kallisto,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E01153, E01198); no directed path between any process of the two tools"
+sylph,kraken2,parallel_co_use,0,0,,"both consume PARABRICKS_RNA_FQ2BAM.fastq (E01167, E01143); no directed path between any process of the two tools"
+sylph,sample_check_failed,parallel_co_use,0,0,,"both consume BBMAP_BBSPLIT.primary_fastq (E01153, E01033); no directed path between any process of the two tools"
