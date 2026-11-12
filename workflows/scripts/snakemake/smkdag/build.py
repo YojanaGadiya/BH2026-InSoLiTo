@@ -64,19 +64,61 @@ def _normalise(pattern: str) -> str:
     return re.sub(r"/{2,}", "/", pattern.strip()).removeprefix("./")
 
 
-def _regex(pattern: str) -> re.Pattern[str]:
-    """An output pattern as a regex: {sample} -> .+, {x,[^/]+} -> [^/]+."""
-    out, last = [], 0
-    for m in _WILDCARD.finditer(pattern):
-        out.append(re.escape(pattern[last : m.start()]))
-        name, _, constraint = m.group(1).partition(",")
+class Matcher:
+    """A path pattern with wildcards, to test file names against.
+
+    Unconstrained wildcards ({sample}: any text, at least one character) are matched without a regex: the literal
+    parts must occur in order. As a regex (`.+` per wildcard), a pattern with many wildcards next to each other
+    (`{a}{b}{c}...`, 25 of them in one workflow) backtracks exponentially on a name it does not match.
+    Wildcards with a constraint ({x,[^/]+}) use a regex, if the pattern has few wildcards."""
+
+    MAX_REGEX_WILDCARDS: Final = 8
+
+    def __init__(self, pattern: str) -> None:
+        parts = _WILDCARD.split(pattern)  # literal, wildcard, literal, wildcard, ..., literal
+        literals, wildcards = parts[0::2], parts[1::2]
+        self.regex: re.Pattern[str] | None = None
+        constrained = any("," in w and not w.startswith("*") for w in wildcards)
+        if constrained and len(wildcards) <= self.MAX_REGEX_WILDCARDS:
+            self.regex = _regex(literals, wildcards)
+        # merge wildcards next to each other: one gap of at least as many characters
+        self.literals, self.gaps = [literals[0]], []
+        for wildcard_literal in literals[1:]:
+            if self.gaps and not self.literals[-1] and len(self.literals) > 1:
+                self.gaps[-1] += 1
+                self.literals[-1] = wildcard_literal
+            else:
+                self.gaps.append(1)
+                self.literals.append(wildcard_literal)
+
+    def match(self, text: str) -> bool:
+        if self.regex is not None:
+            return self.regex.fullmatch(text) is not None
+        first, last = self.literals[0], self.literals[-1]
+        if not self.gaps:
+            return text == first
+        if not text.startswith(first) or not text.endswith(last):
+            return False
+        pos = len(first)
+        for literal, gap in zip(self.literals[1:-1], self.gaps[:-1], strict=True):
+            found = text.find(literal, pos + gap)  # the leftmost place is always the best choice
+            if found < 0:
+                return False
+            pos = found + len(literal)
+        return len(text) - len(last) >= pos + self.gaps[-1]
+
+
+def _regex(literals: list[str], wildcards: list[str]) -> re.Pattern[str] | None:
+    """{sample} -> .+, {x,[^/]+} -> [^/]+; None if a constraint is no valid regex."""
+    out = [re.escape(literals[0])]
+    for wildcard, literal in zip(wildcards, literals[1:], strict=True):
+        name, _, constraint = wildcard.partition(",")
         out.append(f"(?:{constraint})" if constraint and name != "*" else ".+")
-        last = m.end()
-    out.append(re.escape(pattern[last:]))
+        out.append(re.escape(literal))
     try:
         return re.compile("".join(out))
     except re.error:
-        return re.compile(_WILDCARD.sub(".+", re.escape(pattern).replace(r"\{", "{").replace(r"\}", "}")))
+        return None
 
 
 def _literal_length(pattern: str) -> int:
@@ -87,7 +129,7 @@ def _literal_length(pattern: str) -> int:
 class _Output:
     rule: str
     pattern: str
-    regex: re.Pattern[str]
+    matcher: Matcher
     specificity: int
 
 
@@ -97,15 +139,15 @@ def _producers(path: str, outputs: list[_Output], consumer: str) -> list[str]:
     wildcards may stand for values filled in at run time (expand("results/{tool}/x.bam", tool=config[...])
     is produced by a rule writing results/bwa/x.bam)."""
     probe = _WILDCARD.sub(PROBE, path)
-    matched = [o for o in outputs if o.rule != consumer and o.regex.fullmatch(probe)]
+    matched = [o for o in outputs if o.rule != consumer and o.matcher.match(probe)]
     if matched:
         best = max(o.specificity for o in matched)
         return list(dict.fromkeys(o.rule for o in matched if o.specificity == best))
     if not (_WILDCARD.search(path) or UNKNOWN in path):
         return []
     # every rule that can write a file of this pattern: the value is a run-time choice (all branches count)
-    input_regex = _regex(path)
-    reverse = [o for o in outputs if o.rule != consumer and input_regex.fullmatch(_WILDCARD.sub(PROBE, o.pattern))]
+    pattern = Matcher(path)
+    reverse = [o for o in outputs if o.rule != consumer and pattern.match(_WILDCARD.sub(PROBE, o.pattern))]
     return list(dict.fromkeys(o.rule for o in reverse))
 
 
@@ -137,7 +179,7 @@ def build(repo: Path, wrappers_dir: Path, excluded: frozenset[str]) -> Result:
 
 def _link(result: Result) -> None:
     outputs = [
-        _Output(name, p, _regex(p), _literal_length(p))
+        _Output(name, p, Matcher(p), _literal_length(p))
         for name, node in result.rules.items()
         for p in dict.fromkeys(_normalise(r.pattern) for r in node.outputs.refs if r.pattern)
     ]

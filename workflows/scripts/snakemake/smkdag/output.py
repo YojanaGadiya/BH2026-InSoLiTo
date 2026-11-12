@@ -52,6 +52,7 @@ class OverviewRow:
     catalog_extra: int | None = None
     recall: float | None = None
     precision: float | None = None
+    seconds: float | None = None  # time to read the workflow and write its DAG
 
     @classmethod
     def of(cls, workflow: str, standardized: str, result: Result, check: Check | None) -> Self:
