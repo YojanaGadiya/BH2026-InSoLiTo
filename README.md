@@ -17,9 +17,11 @@ directed-graph/        Directed edges from citation order
 ├── europepmc/         Download and parse the full-text corpus from Europe PMC
 ├── biotools/          Publications of each bio.tools tool
 └── citation-order/    Build the directed edges (steps 01 → 05b)
+workflows/             Tool pairs from Galaxy, Nextflow and nf-core workflows, mapped to bio.tools
+analysis/              Notebooks comparing workflow tool pairs with the directed citation edges
 deploy/                Apache config, and the web app config for a local Neo4j
 docker-compose.yml     Web app build + Neo4j + Apache
-requirements.txt       Python packages for DB/pipeline/ and directed-graph/citation-order/
+requirements.txt       Python packages for DB/pipeline/, directed-graph/citation-order/ and workflows/
 ```
 
 ## Run locally with Docker
@@ -110,6 +112,11 @@ To read how two tools are cited together, `pair_contexts.py` takes two bio.tools
 ```bash
 .venv/bin/python directed-graph/citation-order/pair_contexts.py star deseq2
 ```
+## Workflows
+
+Tool pairs (tool A feeds tool B) from registered workflows, to compare with the citation order. Galaxy and Nextflow workflows come from WorkflowHub, and nf-core ones from nf-core (TODO:Xenie, is this correct?). Tool names are mapped to bio.tools IDs. See [`workflows/README.md`](workflows/README.md) for the run order.
+
+The notebooks in [`analysis/`](analysis/README.md) compare these pairs with the directed citation edges.
 
 ## Data sources
 
@@ -118,6 +125,9 @@ To read how two tools are cited together, `pair_contexts.py` takes two bio.tools
 - [EDAM ontology](https://edamontology.org/): topics and operations
 - [Europe PMC](https://europepmc.org/): Open Access full text, for citation order
 - [bio.tools](https://bio.tools/): tool publications
+- [WorkflowHub](https://workflowhub.eu/): Galaxy and Nextflow workflows
+- [nf-core](https://nf-co.re/): Nextflow pipelines TODO: Xenie, is this right? 
+- [Galaxy Codex](https://github.com/galaxyproject/galaxy_codex): Galaxy tool → bio.tools mapping
 
 Supporting files of the current InSoLiTo: [10.5281/zenodo.13740843](https://doi.org/10.5281/zenodo.13740843).
 
