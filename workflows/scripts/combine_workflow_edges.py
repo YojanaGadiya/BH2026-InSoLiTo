@@ -32,7 +32,7 @@ INPUTS = {
     "nfcore": DATA / "nf-core" / edge_filename,  # written by nf-core/3_nodes_edges/build_tables.py
     "snakemake": DATA / "snakemake" / edge_filename,
 }
-CITATIONS = REPO / "directed-graph" / "edges-processed" / "directed_edges_delta1.csv"
+CITATIONS = REPO / "directed-graph" / "edges-processed" / "directed_edges.csv"
 OUT_FILE = DATA / "combined" / "combined_edges.csv"
 
 MAX_CONFIDENCE = 3  # only for galaxy: 1 = codex mapping only, 2 = codex + name match, 3 = all
