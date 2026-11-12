@@ -148,8 +148,8 @@ const TYPE_ENTRIES = [
 
 const EDGE_ENTRIES = [
     { value: 'cocitation', label: 'Co-citation', title: 'Both tools are cited together in the reference lists of articles' },
-    { value: 'direction', label: 'Literature workflows', title: 'Order in which both tools are cited, one right after the other, in articles. Filled arrowhead = more common direction' },
-    { value: 'workflow', label: 'Registered workflows', title: 'One tool runs right after the other in registered workflows (WorkflowHub: Galaxy, Nextflow, nf-core). Filled arrowhead = more common direction' }
+    { value: 'direction', label: 'Citation order', title: 'One tool is cited right after the other in articles. Wider arrow = more common direction' },
+    { value: 'workflow', label: 'Registered workflows', title: 'One tool runs right after the other in registered workflows (WorkflowHub: Galaxy, Nextflow, nf-core). Wider arrow = more common direction' }
 ]
 
 // Colors come from clusterPalette's buildClusterColorMap (same helper Network.vue uses)
@@ -409,8 +409,8 @@ const topicEntries = computed(() => {
 }
 
 .legend-toggle-cocitation {
-    background: var(--insolito-node-primary);
-    border-color: var(--insolito-primary);
+    background: var(--insolito-edge-cocitation);
+    border-color: var(--insolito-edge-cocitation-dark);
 }
 
 .legend-toggle-direction {

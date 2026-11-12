@@ -643,8 +643,10 @@ onMounted(() => {
                     selector: 'edge',
                     style: {
                         width: (el) => resolveEdgeWidth(el),
-                        'line-fill': 'linear-gradient',
-                        'line-gradient-stop-colors': (el) => `${resolveNodeFillColor(el.source().data())} ${resolveNodeFillColor(el.target().data())}`,
+                        // Co-citation: plain solid gray, so the colors are left for the
+                        // directed layers (citation order, registered workflows).
+                        'line-fill': 'solid',
+                        'line-color': cssVar('--insolito-edge-cocitation'),
                         // 'straight', not 'bezier': in a hub-and-spoke graph, bezier's default
                         // curvature makes edges toward nearby-clustered targets bow through the
                         // same corridor for most of their length, reading as several lines
@@ -667,7 +669,7 @@ onMounted(() => {
                     }
                 },
                 {
-                    // Literature workflows (CITED_BEFORE): one arrow per direction, each
+                    // Citation order (CITED_BEFORE): one arrow per direction, each
                     // as wide as its own articles (resolveEdgeWidth); the arrowhead grows
                     // with the width, so the main direction stands out. Curved to one
                     // side of the straight co-citation line, registered workflows to the
@@ -688,7 +690,7 @@ onMounted(() => {
                 },
                 {
                     // Registered workflows (WORKFLOW_NEXT): same idea, own color, curved
-                    // to the opposite side of literature workflows.
+                    // to the opposite side of citation order.
                     selector: 'edge[type = "WORKFLOW_NEXT"]',
                     style: {
                         'line-fill': 'solid',

@@ -28,7 +28,7 @@
 
       <!-- Direction: only between Tool/Database nodes (never with a Publication). -->
       <template v-if="showDirection">
-        <p class="selection-info-section">Literature workflows</p>
+        <p class="selection-info-section">Citation order</p>
         <ul v-if="directions.length" class="edge-direction-list">
           <li v-for="entry in directions" :key="entry.key">
             <strong>{{ entry.from }} → {{ entry.to }}</strong>:
