@@ -35,3 +35,4 @@ workflows/data/nf-core/pipelines/*/pairs.log
 **.python-version
 __pycache__/
 .DS_Store
+workflows/data/nf-core/download/nfcore_pipelines_catalogue.json
