@@ -1,13 +1,13 @@
 biotoolsID,biotools_name,n_workflows,has_publication,confidence,confidence1,confidence2,confidence3
-samtools,SAMtools,184,true,2,0,182,2
+samtools,SAMtools,185,true,2,0,183,2
 multiqc,MultiQC,107,true,2,0,107,0
 fastqc,FastQC,101,true,2,0,98,3
-pandas,Pandas,78,false,2,0,78,0
+pandas,Pandas,80,false,2,0,80,0
 bcftools,BCFtools,66,true,2,0,66,0
 fastp,fastp,60,true,2,0,59,1
 bedtools,BEDTools,53,true,2,0,53,0
-bwa,BWA,50,true,2,0,48,2
-picard_tools,Picard,45,false,2,0,45,0
+bwa,BWA,51,true,2,0,49,2
+picard_tools,Picard,42,false,2,0,42,0
 minimap2,Minimap2,39,true,2,0,39,0
 bowtie2,Bowtie 2,36,true,2,0,35,1
 star,STAR,31,true,2,0,31,0
@@ -18,16 +18,16 @@ numpy,NumPy,27,false,2,0,27,0
 pysam,pysam,26,true,2,0,26,0
 biopython,Biopython,25,true,2,0,25,0
 plot,plot,25,true,3,0,0,25
-matplotlib,Matplotlib,19,false,2,0,19,0
+matplotlib,Matplotlib,20,false,2,0,20,0
 seqkit,seqkit,19,true,2,0,19,0
 bwa-mem2,Bwa-mem2,18,true,2,0,18,0
 deseq2,DESeq2,18,true,2,0,18,0
-trim_galore,Trim Galore,17,true,2,0,17,0
+trim_galore,Trim Galore,16,true,2,0,16,0
 deeptools,DeepTools,15,true,1,3,9,3
-extract,EXTRACT,15,true,3,0,0,15
 htslib,HTSlib,15,true,2,0,15,0
 seqtk,seqtk,15,true,2,0,15,0
 count,Count,14,true,2,0,1,13
+extract,EXTRACT,14,true,3,0,0,14
 gffread,gffread,14,false,2,0,14,0
 rust-bio,Rust-Bio,14,true,1,14,0,0
 salmon,Salmon,14,true,2,0,14,0
@@ -46,6 +46,7 @@ consensus,Consensus,9,true,2,0,2,7
 genomicfeatures,GenomicFeatures,9,true,2,0,9,0
 macs,MACS,9,true,2,0,9,0
 vcftools,VCFtools,9,true,2,0,9,0
+gffutils,GFFutils,8,false,2,0,8,0
 limma,limma,8,true,2,0,8,0
 megahit,MEGAHIT,8,true,2,0,8,0
 snpeff,snpEff,8,true,2,0,8,0
@@ -55,31 +56,29 @@ subread,Subread,8,true,2,0,8,0
 UCSC_Genome_Browser_Utilities,UCSC Genome Browser Utilities,7,false,2,0,7,0
 clean,CLEAN,7,true,3,0,0,7
 genomicranges,GenomicRanges,7,true,2,0,7,0
-gffutils,GFFutils,7,false,2,0,7,0
 kallisto,kallisto,7,true,2,0,7,0
-process,PROcess,7,true,3,0,0,7
+ncbi_datasets,NCBI Datasets,7,false,2,0,7,0
+repeatmasker,RepeatMasker,7,false,2,0,7,0
 sample,SAMPLE,7,true,3,0,0,7
 trimmomatic,Trimmomatic,7,true,2,0,7,0
 AGAT,AGAT,6,true,2,0,6,0
 MAFFT,MAFFT,6,true,2,0,6,0
 MAP,MAP,6,true,3,0,0,6
+altair,AltaiR,6,false,2,0,6,0
 bedops,Bedops,6,true,2,0,6,0
 bioconductor-chipseeker,ChIPseeker,6,true,2,0,6,0
 biomart,biomaRt,6,true,2,0,6,0
 freebayes,FreeBayes,6,false,2,0,6,0
 hisat2,HISAT2,6,true,2,0,5,1
-ncbi_datasets,NCBI Datasets,6,false,2,0,6,0
 pbmm2,pbmm2,6,false,2,0,6,0
+process,PROcess,6,true,3,0,0,6
 prodigal,Prodigal,6,true,2,0,6,0
 quast,QUAST,6,true,2,0,6,0
-repeatmasker,RepeatMasker,6,false,2,0,6,0
 varlociraptor,varlociraptor,6,true,2,0,6,0
 CAT,Cosolvent Analysis Toolkit (CAT),5,true,2,0,2,3
-altair,AltaiR,5,false,2,0,5,0
 bakta,Bakta,5,true,2,0,5,0
 bedgraphtobigwig,bedGraphToBigWig,5,true,2,0,5,0
 biostrings,Biostrings,5,true,2,0,5,0
-bowtie,Bowtie,5,true,2,0,4,1
 busco,BUSCO,5,true,2,0,5,0
 coverm,CoverM,5,true,2,0,5,0
 delly2,Delly2,5,true,2,0,5,0
@@ -94,6 +93,7 @@ align,ALIGN,4,true,3,0,0,4
 annotationdbi,AnnotationDbi,4,true,2,0,4,0
 bbmap,BBMap,4,false,2,0,4,0
 bioconductor-rhdf5,rhdf5,4,true,2,0,4,0
+bowtie,Bowtie,4,true,2,0,4,0
 checkm2,CheckM2,4,true,2,0,4,0
 coverage,CoVerage,4,true,2,0,1,3
 edger,edgeR,4,true,2,0,4,0
@@ -111,6 +111,7 @@ tximport,tximport,4,true,2,0,4,0
 usearch,USEARCH,4,true,2,0,3,1
 Arriba,Arriba,3,false,2,0,3,0
 FAIR,FAIR,3,true,3,0,0,3
+MetaBAT_2,MetaBAT 2,3,true,2,0,3,0
 anndata,anndata,3,true,2,0,3,0
 assign,ASSIGN,3,true,3,0,0,3
 bamtools,BamTools,3,true,2,0,3,0
@@ -136,7 +137,6 @@ pairtools,pairtools,3,true,2,0,3,0
 pangolin,Pangolin,3,true,2,0,3,0
 parallel,GNU Parallel,3,false,2,0,3,0
 plink,PLINK,3,true,2,0,2,1
-post,POST,3,false,3,0,0,3
 prep,PreP,3,true,3,0,0,3
 samblaster,SAMBLASTER,3,true,2,0,3,0
 spia,SPIA,3,false,2,0,3,0
@@ -148,7 +148,6 @@ whatshap,WhatsHap,3,true,2,0,3,0
 Augur,Augur,2,true,2,0,2,0
 BUStools,BUStools,2,true,2,0,2,0
 Flye,Flye,2,true,2,0,2,0
-MetaBAT_2,MetaBAT 2,2,true,2,0,2,0
 Open_Targets_Platform,Open Targets Platform,2,true,2,0,2,0
 PyRanges,PyRanges,2,true,2,0,2,0
 RAxML-NG,RAxML-NG,2,true,2,0,2,0
@@ -168,7 +167,6 @@ checkm,CheckM,2,true,2,0,2,0
 cnvkit,CNVkit,2,true,2,0,2,0
 cuteSV,cuteSV,2,true,2,0,2,0
 decipher,DECIPHER,2,false,2,0,2,0
-decompress,DeCompress,2,true,3,0,0,2
 drep,dRep,2,true,2,0,2,0
 falco,Falco,2,true,2,0,2,0
 fastplong,fastplong,2,true,2,0,2,0
@@ -179,7 +177,6 @@ find,FIND,2,true,3,0,0,2
 hmmer3,HMMER3,2,true,2,0,2,0
 humann,humann,2,true,2,0,2,0
 ihw,IHW,2,true,2,0,2,0
-impute,impute,2,true,2,0,1,1
 isoseq3,IsoSeq3,2,false,2,0,2,0
 kaiju,Kaiju,2,true,2,0,2,0
 kmc,KMC,2,true,2,0,2,0
@@ -189,11 +186,13 @@ lfc,LFC,2,true,3,0,0,2
 mageck,MAGeCK,2,true,2,0,1,1
 manta,manta,2,true,2,0,1,1
 metaphlan,MetaPhlAn,2,true,2,0,2,0
+metawrap,MetaWRAP,2,true,2,0,2,0
 motifmatchr,motifmatchr,2,true,2,0,2,0
 mpileup,mpileup,2,true,3,0,0,2
 nanoplot,NanoPlot,2,true,2,0,1,1
 nanosim,NanoSim,2,true,2,0,2,0
 oligo,oligo,2,true,2,0,2,0
+post,POST,2,false,3,0,0,2
 proteinortho,Proteinortho,2,true,2,0,2,0
 purge_dups,purge_dups,2,true,2,0,2,0
 quality,QUALITY,2,true,3,0,0,2
@@ -216,8 +215,8 @@ tximeta,tximeta,2,true,2,0,2,0
 yahs,YaHS,2,true,2,0,2,0
 Annot,Annot,1,true,3,0,0,1
 AnnotSV,AnnotSV,1,true,2,0,1,0
-BigStitcher,BigStitcher,1,true,2,0,1,0
 Circle-Map,Circle-Map,1,true,2,0,1,0
+DNA_Chisel,DNA Chisel,1,true,2,0,1,0
 EvidenceModeler,EvidenceModeler,1,false,2,0,1,0
 FCS,Frequency Conservation Score  (FCS),1,true,3,0,0,1
 FRASER,FRASER,1,true,2,0,1,0
@@ -265,7 +264,6 @@ bioconductor-rarr,Rarr,1,true,2,0,1,0
 bioconductor-singler,SingleR,1,true,2,0,1,0
 bioconductor-txdbmaker,txdbmaker,1,true,2,0,1,0
 bioperl,BioPerl,1,true,2,0,1,0
-blaze,BLAZE,1,true,3,0,0,1
 bracken,Bracken,1,true,2,0,1,0
 bwa-meth,bwa-meth,1,true,2,0,1,0
 bx-python,bx-python,1,false,2,0,1,0
@@ -304,15 +302,14 @@ drummer,DRUMMER,1,true,2,0,1,0
 enrichment,enrichment,1,true,2,0,1,0
 enrichplot,enrichplot,1,true,2,0,1,0
 epinano,EpiNano,1,true,2,0,1,0
-eviann,EviAnn,1,true,3,0,0,1
+eviann,EviAnn,1,true,2,0,1,0
 export,export,1,true,3,0,0,1
 f5c,f5c,1,true,2,0,1,0
 fastER,fastER,1,true,1,1,0,0
 fastk,FASTK,1,false,2,0,1,0
 fatotwobit,fatotwobit,1,false,2,0,1,0
 ffpe,ffpe,1,true,3,0,0,1
-focus,FOCUS,1,true,3,0,0,1
-foldseek,Foldseek,1,true,3,0,0,1
+fgenesh,FGENESH,1,true,2,0,1,0
 freyja,Freyja,1,false,2,0,1,0
 gdsfmt,gdsfmt,1,true,2,0,1,0
 gene,Gene,1,true,3,0,0,1
@@ -335,6 +332,7 @@ hipstr,hipSTR,1,true,2,0,1,0
 hmmcopy,HMMcopy,1,true,2,0,1,0
 ibs,IBS,1,true,2,0,1,0
 imagemagick,ImageMagick,1,false,2,0,1,0
+impute,impute,1,true,3,0,0,1
 indexcov,Indexcov,1,true,2,0,1,0
 infernal,Infernal,1,true,2,0,1,0
 input,INPUT,1,true,3,0,0,1
@@ -358,16 +356,16 @@ longshot,Longshot,1,true,2,0,1,0
 longstitch,LongStitch,1,true,2,0,1,0
 maftools,maftools,1,true,2,0,1,0
 masurca,MaSuRCA,1,true,2,0,1,0
+memote,memote,1,false,2,0,1,0
 merqury,Merqury,1,true,2,0,1,0
 metacoag,MetaCoAG,1,true,2,0,1,0
 metagenomeseq,metagenomeSeq,1,true,2,0,1,0
 metaquast,MetaQUAST,1,true,2,0,1,0
 metaspades,metaspades,1,true,2,0,1,0
-metawrap,MetaWRAP,1,true,2,0,1,0
 metaxa,Metaxa,1,true,2,0,1,0
 microbeannotator,MicrobeAnnotator,1,true,2,0,1,0
 minia,Minia,1,true,2,0,1,0
-miniprot,miniprot,1,true,3,0,0,1
+miniprot,miniprot,1,true,2,0,1,0
 mix,Mix,1,true,3,0,0,1
 mmseqs,MMseqs,1,true,2,0,1,0
 monocle,monocle,1,false,2,0,1,0
@@ -396,7 +394,6 @@ panaroo,Panaroo,1,true,2,0,1,0
 paralyzer,PARalyzer,1,true,2,0,1,0
 phantom,Phantom,1,true,3,0,0,1
 phantompeakqualtools,phantompeakqualtools,1,true,2,0,1,0
-pharokka,Pharokka,1,true,2,0,1,0
 phyloseq,phyloseq,1,true,3,0,0,1
 pilon,pilon,1,true,2,0,1,0
 predicthaplo,PredictHaplo,1,true,2,0,1,0
@@ -429,6 +426,7 @@ simulate,SIMULATE,1,true,3,0,0,1
 singlem,SingleM,1,true,2,0,1,0
 sinto,sinto,1,false,2,0,1,0
 slivar,slivar,1,true,2,0,1,0
+snap,SNAP,1,true,2,0,1,0
 snp-dists,snp-dists,1,false,2,0,1,0
 snp-sites,SNP-sites,1,true,2,0,1,0
 snprelate,SNPRelate,1,true,2,0,1,0
@@ -439,7 +437,6 @@ sra,SRA,1,true,2,0,1,0
 string,STRING,1,true,3,0,0,1
 sweep,sweep,1,false,3,0,0,1
 taxonkit,TaxonKit,1,true,2,0,1,0
-temp,TEMP,1,true,3,0,0,1
 tensorflow,TensorFlow,1,true,2,0,1,0
 tetranscripts,TEtranscripts,1,true,2,0,1,0
 tiddit,TIDDIT,1,true,2,0,1,0
@@ -461,4 +458,3 @@ velvet,Velvet,1,true,2,0,1,0
 verifybamid,verifyBamID,1,true,2,0,1,0
 xpore,xPore,1,true,2,0,1,0
 yara,yara,1,true,2,0,1,0
-zarr,bio2zarr,1,true,3,0,0,1

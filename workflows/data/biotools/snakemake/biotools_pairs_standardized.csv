@@ -55,6 +55,7 @@ Albinam1/bioinformatics_school,trimmomatic,bwa,Trimmomatic,BWA,2
 Albinam1/bioinformatics_school,vep,rust-bio,Variant Effect Predictor (VEP),Rust-Bio,2
 AllenInstitute/Bulk-RNA-Snakeline,cutadapt,fastqc,Cutadapt,FastQC,2
 AllenInstitute/Bulk-RNA-Snakeline,cutadapt,star,Cutadapt,STAR,2
+AllenInstitute/Bulk-RNA-Snakeline,fastqc,multiqc,FastQC,MultiQC,2
 AllenInstitute/Bulk-RNA-Snakeline,star,multiqc,STAR,MultiQC,2
 AllenInstitute/Bulk-RNA-Snakeline,star,stringtie,STAR,StringTie,2
 AllenInstitute/Bulk-RNA-Snakeline,stringtie,multiqc,StringTie,MultiQC,2
@@ -97,9 +98,9 @@ CVUA-RRW/FooDMe,pandas,scikit-learn,Pandas,scikit-learn,2
 CVUA-RRW/FooDMe,scikit-learn,biopython,scikit-learn,Biopython,2
 CVUA-RRW/FooDMe,seqtk,cutadapt,seqtk,Cutadapt,2
 Cesconlab/ExomeSeq,bwa,samtools,BWA,SAMtools,2
-Cesconlab/ExomeSeq,samtools,picard_tools,SAMtools,Picard,2
 Cesconlab/ExomeSeq,samtools,varscan,SAMtools,VarScan,2
 Cesconlab/ExomeSeq,samtools,vcftools,SAMtools,VCFtools,2
+Cesconlab/ExomeSeq,tabix,varscan,tabix,VarScan,2
 Cesconlab/ExomeSeq,varscan,samtools,VarScan,SAMtools,2
 Cesconlab/ExomeSeq,vcftools,tabix,VCFtools,tabix,2
 ChaissonLab/SegDupAnnotation2,minimap2,bedtools,Minimap2,BEDTools,2
@@ -107,7 +108,6 @@ ChaissonLab/SegDupAnnotation2,minimap2,samtools,Minimap2,SAMtools,2
 ChaissonLab/SegDupAnnotation2,samtools,bedtools,SAMtools,BEDTools,2
 ChaissonLab/SegDupAnnotation2,samtools,minimap2,SAMtools,Minimap2,2
 ChaissonLab/SegDupAnnotation2,samtools,tabix,SAMtools,tabix,2
-ChaissonLab/SegDupAnnotation2,samtools,temp,SAMtools,TEMP,3
 ChaissonLab/SegDupAnnotation2,tabix,bedtools,tabix,BEDTools,2
 ClavelLab/genome-assembly,bakta,pandas,Bakta,Pandas,2
 ClavelLab/genome-assembly,bbtools,bwa,BBTools,BWA,2
@@ -227,14 +227,17 @@ IKIM-Essen/RiboSnake,multiqc,snakemake,MultiQC,Snakemake,3
 IKIM-Essen/RiboSnake,samtools,qiime,SAMtools,QIIME,2
 IKIM-Essen/uncovar,CAT,kallisto,Cosolvent Analysis Toolkit (CAT),kallisto,3
 IKIM-Essen/uncovar,CAT,samtools,Cosolvent Analysis Toolkit (CAT),SAMtools,3
+IKIM-Essen/uncovar,DNA_Chisel,gffutils,DNA Chisel,GFFutils,2
 IKIM-Essen/uncovar,bcftools,pangolin,BCFtools,Pangolin,2
 IKIM-Essen/uncovar,bcftools,plot,BCFtools,plot,3
+IKIM-Essen/uncovar,bcftools,pysam,BCFtools,pysam,2
 IKIM-Essen/uncovar,bcftools,samtools,BCFtools,SAMtools,2
 IKIM-Essen/uncovar,bcftools,varlociraptor,BCFtools,varlociraptor,2
 IKIM-Essen/uncovar,bcftools,vep,BCFtools,Variant Effect Predictor (VEP),2
 IKIM-Essen/uncovar,bowtie2,samtools,Bowtie 2,SAMtools,2
 IKIM-Essen/uncovar,bwa,extract,BWA,EXTRACT,3
 IKIM-Essen/uncovar,bwa,picard_tools,BWA,Picard,2
+IKIM-Essen/uncovar,bwa,pysam,BWA,pysam,2
 IKIM-Essen/uncovar,bwa,samtools,BWA,SAMtools,2
 IKIM-Essen/uncovar,canu,kraken2,CANU,kraken2,2
 IKIM-Essen/uncovar,canu,samtools,CANU,SAMtools,2
@@ -246,6 +249,15 @@ IKIM-Essen/uncovar,extract,samtools,EXTRACT,SAMtools,3
 IKIM-Essen/uncovar,fastp,tabix,fastp,tabix,2
 IKIM-Essen/uncovar,fgbio,samtools,fgbio,SAMtools,2
 IKIM-Essen/uncovar,freebayes,bcftools,FreeBayes,BCFtools,2
+IKIM-Essen/uncovar,gffutils,bcftools,GFFutils,BCFtools,2
+IKIM-Essen/uncovar,gffutils,minimap2,GFFutils,Minimap2,2
+IKIM-Essen/uncovar,gffutils,pangolin,GFFutils,Pangolin,2
+IKIM-Essen/uncovar,gffutils,pysam,GFFutils,pysam,2
+IKIM-Essen/uncovar,gffutils,quality,GFFutils,QUALITY,3
+IKIM-Essen/uncovar,gffutils,quast,GFFutils,QUAST,2
+IKIM-Essen/uncovar,gffutils,rust-bio,GFFutils,Rust-Bio,2
+IKIM-Essen/uncovar,gffutils,samtools,GFFutils,SAMtools,2
+IKIM-Essen/uncovar,gffutils,snakemake,GFFutils,Snakemake,3
 IKIM-Essen/uncovar,kallisto,rust-bio,kallisto,Rust-Bio,3
 IKIM-Essen/uncovar,kallisto,snakemake,kallisto,Snakemake,3
 IKIM-Essen/uncovar,kraken2,krona,kraken2,Krona,2
@@ -257,25 +269,30 @@ IKIM-Essen/uncovar,medaka,bcftools,Medaka,BCFtools,2
 IKIM-Essen/uncovar,medaka,samtools,Medaka,SAMtools,2
 IKIM-Essen/uncovar,medaka,tensorflow,Medaka,TensorFlow,2
 IKIM-Essen/uncovar,megahit,samtools,MEGAHIT,SAMtools,2
+IKIM-Essen/uncovar,minimap2,pysam,Minimap2,pysam,2
 IKIM-Essen/uncovar,minimap2,quast,Minimap2,QUAST,2
 IKIM-Essen/uncovar,minimap2,samtools,Minimap2,SAMtools,2
 IKIM-Essen/uncovar,mix,tabix,Mix,tabix,3
 IKIM-Essen/uncovar,multiqc,snakemake,MultiQC,Snakemake,3
 IKIM-Essen/uncovar,pangolin,bcftools,Pangolin,BCFtools,2
 IKIM-Essen/uncovar,pangolin,plot,Pangolin,plot,3
+IKIM-Essen/uncovar,pangolin,pysam,Pangolin,pysam,2
 IKIM-Essen/uncovar,pangolin,rust-bio,Pangolin,Rust-Bio,3
 IKIM-Essen/uncovar,pangolin,snakemake,Pangolin,Snakemake,3
 IKIM-Essen/uncovar,picard_tools,samtools,Picard,SAMtools,2
 IKIM-Essen/uncovar,plot,snakemake,plot,Snakemake,3
 IKIM-Essen/uncovar,pysam,bcftools,pysam,BCFtools,2
+IKIM-Essen/uncovar,pysam,pandas,pysam,Pandas,2
 IKIM-Essen/uncovar,quality,bcftools,QUALITY,BCFtools,3
 IKIM-Essen/uncovar,quality,kraken2,QUALITY,kraken2,3
 IKIM-Essen/uncovar,quality,multiqc,QUALITY,MultiQC,3
 IKIM-Essen/uncovar,quality,pangolin,QUALITY,Pangolin,3
 IKIM-Essen/uncovar,quality,plot,QUALITY,plot,3
+IKIM-Essen/uncovar,quality,pysam,QUALITY,pysam,3
 IKIM-Essen/uncovar,quality,rust-bio,QUALITY,Rust-Bio,3
 IKIM-Essen/uncovar,quality,snakemake,QUALITY,Snakemake,3
 IKIM-Essen/uncovar,quast,quality,QUAST,QUALITY,3
+IKIM-Essen/uncovar,ragtag,pysam,ragtag,pysam,2
 IKIM-Essen/uncovar,ragtag,samtools,ragtag,SAMtools,2
 IKIM-Essen/uncovar,rust-bio,snakemake,Rust-Bio,Snakemake,3
 IKIM-Essen/uncovar,samtools,count,SAMtools,Count,3
@@ -284,6 +301,7 @@ IKIM-Essen/uncovar,samtools,freebayes,SAMtools,FreeBayes,2
 IKIM-Essen/uncovar,samtools,kallisto,SAMtools,kallisto,2
 IKIM-Essen/uncovar,samtools,longshot,SAMtools,Longshot,2
 IKIM-Essen/uncovar,samtools,megahit,SAMtools,MEGAHIT,2
+IKIM-Essen/uncovar,samtools,pysam,SAMtools,pysam,2
 IKIM-Essen/uncovar,samtools,rust-bio,SAMtools,Rust-Bio,2
 IKIM-Essen/uncovar,samtools,spades,SAMtools,SPAdes,2
 IKIM-Essen/uncovar,samtools,tabix,SAMtools,tabix,2
@@ -294,6 +312,7 @@ IKIM-Essen/uncovar,spades,minimap2,SPAdes,Minimap2,2
 IKIM-Essen/uncovar,spades,quast,SPAdes,QUAST,2
 IKIM-Essen/uncovar,spades,ragtag,SPAdes,ragtag,2
 IKIM-Essen/uncovar,spades,samtools,SPAdes,SAMtools,2
+IKIM-Essen/uncovar,tabix,pysam,tabix,pysam,2
 IKIM-Essen/uncovar,tabix,vep,tabix,Variant Effect Predictor (VEP),2
 IKIM-Essen/uncovar,trinity,bowtie2,Trinity,Bowtie 2,2
 IKIM-Essen/uncovar,varlociraptor,bcftools,varlociraptor,BCFtools,2
@@ -454,6 +473,7 @@ MPUSP/snakemake-assembly-postprocessing,bakta,numpy,Bakta,NumPy,2
 MPUSP/snakemake-assembly-postprocessing,bcftools,snpeff,BCFtools,snpEff,2
 MPUSP/snakemake-assembly-postprocessing,biopython,panaroo,Biopython,Panaroo,2
 MPUSP/snakemake-assembly-postprocessing,minimap2,bcftools,Minimap2,BCFtools,2
+MPUSP/snakemake-assembly-postprocessing,pandas,numpy,Pandas,NumPy,2
 MPUSP/snakemake-assembly-postprocessing,prokka,numpy,Prokka,NumPy,2
 MPUSP/snakemake-assembly-postprocessing,snpeff,snippy,snpEff,snippy,2
 MPUSP/snakemake-bacterial-riboseq,biostrings,genomicfeatures,Biostrings,GenomicFeatures,2
@@ -527,6 +547,7 @@ MPUSP/snakemake-ont-bacterial-variants,sniffles,vcftools,Sniffles,VCFtools,2
 MPUSP/snakemake-ont-bacterial-variants,vcftools,bcftools,VCFtools,BCFtools,2
 MPUSP/snakemake-ont-basecalling,dorado,htslib,Dorado,HTSlib,3
 MPUSP/snakemake-ont-basecalling,dorado,samtools,Dorado,SAMtools,3
+MPUSP/snakemake-simple-mapping,bcftools,biostrings,BCFtools,Biostrings,2
 MPUSP/snakemake-simple-mapping,bcftools,multiqc,BCFtools,MultiQC,2
 MPUSP/snakemake-simple-mapping,bcftools,snpeff,BCFtools,snpEff,2
 MPUSP/snakemake-simple-mapping,bcftools,vep,BCFtools,Variant Effect Predictor (VEP),2
@@ -745,7 +766,6 @@ TLenfers/multispecies_mitochondrial_variant_analysis,bwa,bcftools,BWA,BCFtools,2
 TLenfers/multispecies_mitochondrial_variant_analysis,bwa,samtools,BWA,SAMtools,2
 TLenfers/multispecies_mitochondrial_variant_analysis,samtools,bcftools,SAMtools,BCFtools,2
 TLenfers/multispecies_mitochondrial_variant_analysis,vcftools,bcftools,VCFtools,BCFtools,2
-TMs-code/phagefactor,pharokka,foldseek,Pharokka,Foldseek,3
 TRON-Bioinformatics/neorasp,bowtie2,pysam,Bowtie 2,pysam,2
 TRON-Bioinformatics/neorasp,gffcompare,extract,gffcompare,EXTRACT,3
 TRON-Bioinformatics/neorasp,pysam,bowtie2,pysam,Bowtie 2,2
@@ -976,8 +996,6 @@ cbg-ethz/V-pipe,haploclique,msa,HaploClique,msa,2
 cbg-ethz/V-pipe,haploclique,samtools,HaploClique,SAMtools,3
 cbg-ethz/V-pipe,lofreq,Augur,lofreq,Augur,2
 cbg-ethz/V-pipe,msa,Augur,msa,Augur,2
-cbg-ethz/V-pipe,msa,bowtie,msa,Bowtie,3
-cbg-ethz/V-pipe,msa,bwa,msa,BWA,3
 cbg-ethz/V-pipe,msa,lofreq,msa,lofreq,2
 cbg-ethz/V-pipe,msa,samtools,msa,SAMtools,3
 cbg-ethz/V-pipe,predicthaplo,msa,PredictHaplo,msa,2
@@ -1049,15 +1067,15 @@ dlaehnemann/rna-seq-conservative-fold-change-without-replicates,clean,gseapy,CLE
 dlaehnemann/rna-seq-conservative-fold-change-without-replicates,clean,spia,CLEAN,SPIA,3
 dlaehnemann/wgs-mosdepth-maftools-copy-numbers,mosdepth,maftools,mosdepth,maftools,2
 elsamah/ExomeSeq,bwa,samtools,BWA,SAMtools,2
-elsamah/ExomeSeq,samtools,picard_tools,SAMtools,Picard,2
 elsamah/ExomeSeq,samtools,varscan,SAMtools,VarScan,2
 elsamah/ExomeSeq,samtools,vcftools,SAMtools,VCFtools,2
+elsamah/ExomeSeq,tabix,varscan,tabix,VarScan,2
 elsamah/ExomeSeq,varscan,samtools,VarScan,SAMtools,2
 elsamah/ExomeSeq,vcftools,tabix,VCFtools,tabix,2
 elsamah/ExomeSeq_wNorm,bwa,samtools,BWA,SAMtools,2
-elsamah/ExomeSeq_wNorm,samtools,picard_tools,SAMtools,Picard,2
 elsamah/ExomeSeq_wNorm,samtools,varscan,SAMtools,VarScan,2
 elsamah/ExomeSeq_wNorm,samtools,vcftools,SAMtools,VCFtools,2
+elsamah/ExomeSeq_wNorm,tabix,varscan,tabix,VarScan,2
 elsamah/ExomeSeq_wNorm,varscan,samtools,VarScan,SAMtools,2
 elsamah/ExomeSeq_wNorm,vcftools,tabix,VCFtools,tabix,2
 emilymlayton/variant_calling_snakemake,fastqc,multiqc,FastQC,MultiQC,2
@@ -1138,6 +1156,11 @@ fischuu/Snakebite-Holoruminant-MetaG,samtools,featurecounts,SAMtools,FeatureCoun
 fischuu/Snakebite-Holoruminant-MetaG,seqtk,bowtie2,seqtk,Bowtie 2,2
 fischuu/Snakebite-Holoruminant-MetaG,seqtk,prodigal,seqtk,Prodigal,2
 fischuu/Snakebite-Holoruminant-MetaG,seqtk,samtools,seqtk,SAMtools,2
+franciscozorrilla/metaGEM,MetaBAT_2,metawrap,MetaBAT 2,MetaWRAP,2
+franciscozorrilla/metaGEM,bwa,samtools,BWA,SAMtools,2
+franciscozorrilla/metaGEM,diamond,memote,Diamond,memote,2
+franciscozorrilla/metaGEM,megahit,MetaBAT_2,MEGAHIT,MetaBAT 2,2
+franciscozorrilla/metaGEM,megahit,bwa,MEGAHIT,BWA,2
 franciscozorrilla/metaGEM,megahit,prodigal,MEGAHIT,Prodigal,2
 franciscozorrilla/metaGEM,prodigal,diamond,Prodigal,Diamond,2
 franciscozorrilla/metaGEM,prodigal,prokka,Prodigal,Prokka,2
@@ -1279,7 +1302,6 @@ gynecoloji/snakemake_RNAseq,samtools,rseqc,SAMtools,RSeQC,3
 gynecoloji/snakemake_debug,bowtie2,samtools,Bowtie 2,SAMtools,2
 gynecoloji/snakemake_debug,extract,kraken2,EXTRACT,kraken2,3
 gynecoloji/snakemake_debug,samtools,bowtie2,SAMtools,Bowtie 2,2
-gynecoloji/snakemake_scstseq,process,impute,PROcess,impute,3
 harrymatthews50/sankemake-containerisation-test,fastqc,multiqc,FastQC,MultiQC,2
 hreypar/containers_test,NetworkX,pandas,NetworkX,Pandas,2
 hreypar/containers_test,matplotlib,NetworkX,Matplotlib,NetworkX,2
@@ -1398,8 +1420,6 @@ kevinrue/snakemake-cncb-2024,samtools,gatk,SAMtools,GATK,2
 kevinrue/snakemake-cncb-ensembl-2024,Scan,bioconductor-scdblfinder,Scan,scDblFinder,3
 kevinrue/snakemake-cncb-ensembl-2024,bioconductor-biocsingular,bioconductor-isee,BiocSingular,iSEE,2
 kevinrue/snakemake-cncb-ensembl-2024,scran,bioconductor-biocsingular,scran,BiocSingular,3
-khanlab/SPIMprep,extract,blaze,EXTRACT,BLAZE,3
-khanlab/SPIMprep,zarr,BigStitcher,bio2zarr,BigStitcher,3
 kircherlab/MPRAsnakeflow,bbmap,samtools,BBMap,SAMtools,2
 kircherlab/MPRAsnakeflow,biopython,htslib,Biopython,HTSlib,2
 kircherlab/MPRAsnakeflow,biopython,mpralib,Biopython,MPRAlib,2
@@ -1409,7 +1429,10 @@ kircherlab/MPRAsnakeflow,cutadapt,htslib,Cutadapt,HTSlib,2
 kircherlab/MPRAsnakeflow,htslib,bbmap,HTSlib,BBMap,2
 kircherlab/MPRAsnakeflow,htslib,biopython,HTSlib,Biopython,2
 kircherlab/MPRAsnakeflow,htslib,bwa,HTSlib,BWA,2
+kircherlab/MPRAsnakeflow,htslib,pandas,HTSlib,Pandas,2
 kircherlab/MPRAsnakeflow,htslib,pysam,HTSlib,pysam,2
+kircherlab/MPRAsnakeflow,mpralib,pandas,MPRAlib,Pandas,2
+kircherlab/MPRAsnakeflow,pandas,matplotlib,Pandas,Matplotlib,2
 kircherlab/MPRAsnakeflow,pbmm2,pysam,pbmm2,pysam,2
 kircherlab/MPRAsnakeflow,picard_tools,bwa,Picard,BWA,2
 kircherlab/MPRAsnakeflow,pysam,biopython,pysam,Biopython,2
@@ -1541,7 +1564,6 @@ martykardos/asacphus_fire_frogs,bamutil,qualimap,Bamutil,QualiMap,2
 martykardos/asacphus_fire_frogs,bamutil,samtools,Bamutil,SAMtools,2
 martykardos/asacphus_fire_frogs,bcftools,bowtie2,BCFtools,Bowtie 2,2
 martykardos/asacphus_fire_frogs,bcftools,bwa,BCFtools,BWA,2
-martykardos/asacphus_fire_frogs,bcftools,decompress,BCFtools,DeCompress,3
 martykardos/asacphus_fire_frogs,bcftools,gatk,BCFtools,GATK,2
 martykardos/asacphus_fire_frogs,bcftools,multiqc,BCFtools,MultiQC,2
 martykardos/asacphus_fire_frogs,bcftools,pandas,BCFtools,Pandas,2
@@ -1569,7 +1591,6 @@ martykardos/asacphus_fire_frogs,gatk,bcftools,GATK,BCFtools,2
 martykardos/asacphus_fire_frogs,gatk,picard_tools,GATK,Picard,2
 martykardos/asacphus_fire_frogs,gatk,qualimap,GATK,QualiMap,2
 martykardos/asacphus_fire_frogs,gatk,samtools,GATK,SAMtools,2
-martykardos/asacphus_fire_frogs,htslib,decompress,HTSlib,DeCompress,3
 martykardos/asacphus_fire_frogs,htslib,picard_tools,HTSlib,Picard,2
 martykardos/asacphus_fire_frogs,htslib,tabix,HTSlib,tabix,2
 martykardos/asacphus_fire_frogs,mapdamage,multiqc,MapDamage,MultiQC,3
@@ -1828,7 +1849,6 @@ moiexpositoalonsolab/grenepipe,bamutil,qualimap,Bamutil,QualiMap,2
 moiexpositoalonsolab/grenepipe,bamutil,samtools,Bamutil,SAMtools,2
 moiexpositoalonsolab/grenepipe,bcftools,bowtie2,BCFtools,Bowtie 2,2
 moiexpositoalonsolab/grenepipe,bcftools,bwa,BCFtools,BWA,2
-moiexpositoalonsolab/grenepipe,bcftools,decompress,BCFtools,DeCompress,3
 moiexpositoalonsolab/grenepipe,bcftools,gatk,BCFtools,GATK,2
 moiexpositoalonsolab/grenepipe,bcftools,multiqc,BCFtools,MultiQC,2
 moiexpositoalonsolab/grenepipe,bcftools,pandas,BCFtools,Pandas,2
@@ -1856,7 +1876,6 @@ moiexpositoalonsolab/grenepipe,gatk,bcftools,GATK,BCFtools,2
 moiexpositoalonsolab/grenepipe,gatk,picard_tools,GATK,Picard,2
 moiexpositoalonsolab/grenepipe,gatk,qualimap,GATK,QualiMap,2
 moiexpositoalonsolab/grenepipe,gatk,samtools,GATK,SAMtools,2
-moiexpositoalonsolab/grenepipe,htslib,decompress,HTSlib,DeCompress,3
 moiexpositoalonsolab/grenepipe,htslib,picard_tools,HTSlib,Picard,2
 moiexpositoalonsolab/grenepipe,htslib,tabix,HTSlib,tabix,2
 moiexpositoalonsolab/grenepipe,mapdamage,multiqc,MapDamage,MultiQC,3
@@ -1934,10 +1953,12 @@ mynameisdidit/UTS_Bioinformatika_SV-Callers,delly2,bcftools,Delly2,BCFtools,2
 mynameisdidit/UTS_Bioinformatika_SV-Callers,gridss,bcftools,GRIDSS,BCFtools,2
 nate-d-olson/adotto-smk,bedtools,htslib,BEDTools,HTSlib,2
 nate-d-olson/adotto-smk,bedtools,samtools,BEDTools,SAMtools,2
+nate-d-olson/adotto-smk,bedtools,trf,BEDTools,TRF,3
 nate-d-olson/adotto-smk,htslib,bedtools,HTSlib,BEDTools,2
 nate-d-olson/adotto-smk,htslib,tabix,HTSlib,tabix,2
 nate-d-olson/adotto-smk,pandas,bedtools,Pandas,BEDTools,2
 nate-d-olson/adotto-smk,pandas,htslib,Pandas,HTSlib,2
+nate-d-olson/adotto-smk,pandas,trf,Pandas,TRF,3
 nate-d-olson/adotto-smk,pysam,repeatmasker,pysam,RepeatMasker,2
 nate-d-olson/adotto-smk,samtools,bedtools,SAMtools,BEDTools,2
 nate-d-olson/adotto-smk,samtools,pysam,SAMtools,pysam,2
@@ -2158,6 +2179,7 @@ niekwit/smallRNA-seq,deseq2,biostrings,DESeq2,Biostrings,2
 niekwit/smallRNA-seq,pandas,deeptools,Pandas,DeepTools,2
 niekwit/smallRNA-seq,pybigwig,biopython,pyBigWig,Biopython,2
 niekwit/smallRNA-seq,pygenometracks,pybigwig,pyGenomeTracks,pyBigWig,2
+niekwit/smallRNA-seq,rsamtools,deseq2,Rsamtools,DESeq2,2
 niekwit/smallRNA-seq,samtools,bowtie,SAMtools,Bowtie,2
 niekwit/smallRNA-seq,samtools,deeptools,SAMtools,DeepTools,2
 niekwit/smallRNA-seq,samtools,deseq2,SAMtools,DESeq2,2
@@ -2246,6 +2268,12 @@ r1cheu/gnnotator,CAT,EvidenceModeler,Cosolvent Analysis Toolkit (CAT),EvidenceMo
 r1cheu/gnnotator,EvidenceModeler,emboss,EvidenceModeler,EMBOSS,2
 r1cheu/gnnotator,hisat2,samtools,HISAT2,SAMtools,2
 r1cheu/gnnotator,miniprot,EvidenceModeler,miniprot,EvidenceModeler,3
+r1cheu/gnnotator,repeatmasker,EvidenceModeler,RepeatMasker,EvidenceModeler,2
+r1cheu/gnnotator,repeatmasker,eviann,RepeatMasker,EviAnn,2
+r1cheu/gnnotator,repeatmasker,fgenesh,RepeatMasker,FGENESH,2
+r1cheu/gnnotator,repeatmasker,hisat2,RepeatMasker,HISAT2,2
+r1cheu/gnnotator,repeatmasker,miniprot,RepeatMasker,miniprot,2
+r1cheu/gnnotator,repeatmasker,snap,RepeatMasker,SNAP,2
 r1cheu/gnnotator,samtools,eviann,SAMtools,EviAnn,3
 r1cheu/gnnotator,samtools,stringtie,SAMtools,StringTie,2
 r1cheu/gnnotator,samtools,trinity,SAMtools,Trinity,2
@@ -2634,8 +2662,6 @@ sneuensc/mapache,seqtk,samtools,seqtk,SAMtools,2
 solida-core/astra,bcftools,tabix,BCFtools,tabix,2
 solida-core/astra,samtools,gatk,SAMtools,GATK,2
 solida-core/dima,bwa,samtools,BWA,SAMtools,2
-solida-core/dima,post,bwa,POST,BWA,3
-solida-core/dima,trim_galore,post,Trim Galore,POST,3
 spjuhel/BoARIO-Sensitivity,numpy,pandas,NumPy,Pandas,2
 spraeger/mutational-patterns-analysis,fastqc,multiqc,FastQC,MultiQC,2
 tavareshugo/smk-indexer,gffread,salmon,gffread,Salmon,2
@@ -2688,6 +2714,7 @@ thomasbtf/sars-cov-2-wbe,fastqc,multiqc,FastQC,MultiQC,2
 thomasbtf/sars-cov-2-wbe,kallisto,pandas,kallisto,Pandas,2
 thomasbtf/sars-cov-2-wbe,multiqc,snakemake,MultiQC,Snakemake,3
 thomasbtf/sars-cov-2-wbe,pandas,CAT,Pandas,Cosolvent Analysis Toolkit (CAT),3
+thomasbtf/sars-cov-2-wbe,pandas,altair,Pandas,AltaiR,2
 thomasbtf/sars-cov-2-wbe,pysam,pandas,pysam,Pandas,2
 thomasbtf/sars-cov-2-wbe,pysam,snakemake,pysam,Snakemake,3
 thomasmulvaney/snakemake-gromacs-workflow,fastqc,multiqc,FastQC,MultiQC,2
@@ -2714,6 +2741,8 @@ tucca-cellag/tucca-rna-seq,clusterprofiler,annotationdbi,clusterProfiler,Annotat
 tucca-cellag/tucca-rna-seq,deseq2,clusterprofiler,DESeq2,clusterProfiler,2
 tucca-cellag/tucca-rna-seq,deseq2,tximeta,DESeq2,tximeta,2
 tucca-cellag/tucca-rna-seq,fastqc,multiqc,FastQC,MultiQC,2
+tucca-cellag/tucca-rna-seq,ncbi_datasets,annotationforge,NCBI Datasets,AnnotationForge,2
+tucca-cellag/tucca-rna-seq,ncbi_datasets,tximeta,NCBI Datasets,tximeta,2
 tucca-cellag/tucca-rna-seq,qualimap,multiqc,QualiMap,MultiQC,2
 tucca-cellag/tucca-rna-seq,salmon,multiqc,Salmon,MultiQC,2
 tucca-cellag/tucca-rna-seq,salmon,tximeta,Salmon,tximeta,2
@@ -2764,7 +2793,6 @@ usnistgov/giab-defrabb,samtools,bcftools,SAMtools,BCFtools,2
 usnistgov/giab-defrabb,seqtk,bedtools,seqtk,BEDTools,2
 usnistgov/giab-defrabb,trf,MAFFT,TRF,MAFFT,2
 varlociraptor/varlociraptor-methylation-evaluation,CAT,samtools,Cosolvent Analysis Toolkit (CAT),SAMtools,2
-varlociraptor/varlociraptor-methylation-evaluation,bcftools,focus,BCFtools,FOCUS,3
 varlociraptor/varlociraptor-methylation-evaluation,bcftools,mason,BCFtools,Mason,3
 varlociraptor/varlociraptor-methylation-evaluation,bcftools,mosdepth,BCFtools,mosdepth,2
 varlociraptor/varlociraptor-methylation-evaluation,bcftools,pysam,BCFtools,pysam,2
@@ -2775,7 +2803,6 @@ varlociraptor/varlociraptor-methylation-evaluation,bismark,samtools,Bismark,SAMt
 varlociraptor/varlociraptor-methylation-evaluation,bwa-meth,samtools,bwa-meth,SAMtools,2
 varlociraptor/varlociraptor-methylation-evaluation,fastp,bismark,fastp,Bismark,2
 varlociraptor/varlociraptor-methylation-evaluation,fastp,bwa-meth,fastp,bwa-meth,2
-varlociraptor/varlociraptor-methylation-evaluation,focus,mosdepth,FOCUS,mosdepth,3
 varlociraptor/varlociraptor-methylation-evaluation,mason,bismark,Mason,Bismark,2
 varlociraptor/varlociraptor-methylation-evaluation,mason,bwa-meth,Mason,bwa-meth,2
 varlociraptor/varlociraptor-methylation-evaluation,mosdepth,bcftools,mosdepth,BCFtools,2
@@ -2831,11 +2858,9 @@ westerdijk-wm/snakemake-mlsa-ani,samtools,pandas,SAMtools,Pandas,2
 wharvey31/denovo_sv_validation,decipher,process,DECIPHER,PROcess,3
 xin-huang/selscape,annotate,bcftools,annotate,BCFtools,3
 xin-huang/selscape,bcftools,annotate,BCFtools,annotate,3
-xin-huang/selscape,bcftools,pandas,BCFtools,Pandas,2
 xin-huang/selscape,bcftools,plink,BCFtools,PLINK,2
 xin-huang/selscape,bcftools,plot,BCFtools,plot,3
 xin-huang/selscape,bcftools,selscan,BCFtools,selscan,3
-xin-huang/selscape,dadi,bcftools,dadi,BCFtools,2
 xin-huang/selscape,dadi,plot,dadi,plot,3
 xin-huang/selscape,plink,bcftools,PLINK,BCFtools,2
 xin-huang/selscape,plot,annotate,plot,annotate,3

@@ -41,3 +41,4 @@ genomecoveragebed	map	bedtools_genomecoveragebed_histogram	Weird name/ID in biot
 git	drop		mostly used for download, not an analysis step
 cram_filter	map	cramtools	CRAMTools
 sentieon	map	Sentieon_DNASeq	Sentieon DNASeq
+makeblastdb    map	blast	Part of BLAST suite

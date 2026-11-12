@@ -1,6 +1,6 @@
 source,target,n_workflows,workflow_ids,source_biotools_name,target_biotools_name,confidence,confidence1,confidence2,confidence3
-fastqc,multiqc,82,Albinam1/bioinformatics_school;DavideBrex/SpikeFlow;EloiseIsobelPearce/snakemake-example;IKIM-Essen/QC_pre_NextSeq;IKIM-Essen/ResMAG;IKIM-Essen/RiboSnake;IMS-Bio2Core-Facility/polya_liftover;IMS-Bio2Core-Facility/single_snake_sequencing;JAlvarezJarreta/community_gff3_validation;JeremyTournayre/Pipeline-Holoruminant-Meta;KonstantinBurkin/cbai;Kratzcomycete/Fungal-Genome-Processing-Snakemake;MPUSP/snakemake-bacterial-riboseq;MPUSP/snakemake-bacterial-rnaseq-processing;MPUSP/snakemake-simple-mapping;MethyleneBlues/Snake;SichongP/atac-seq;SilvanCodes/ag-wiehe-ndm;SveTho/base;TidballLab/SNP-Cas13d-Selector;abrahanhernandez/scWGA;akcorut/kGWASflow;aryazand/fastq-process-align;b-brankovics/bwa-gatk-fasttree-smkwf;babasaraki/NSIB;babasaraki/snakemake-workshop-NBIS;boulardlab/3t-seq;delpropo/TidballLab-SNP-Cas13d-Selector;emilymlayton/variant_calling_snakemake;friendsofstrandseq/ashleys-qc-pipeline;gabrielfranco89/fastq_to_ucram;gynecoloji/snakemake_ATACseq;gynecoloji/snakemake_ATACseq_spikein;gynecoloji/snakemake_ChIPseq;gynecoloji/snakemake_CutandRunseq;gynecoloji/snakemake_RNAseq;harrymatthews50/sankemake-containerisation-test;jianhong/pairedtag;jjjoelle/learn_rna;johnne/mytestworkflow;joyling93/sc10x_wf;kevinrue/snakemake-cncb-2024;lparsons/pf15-smallrna-rseto;ltalignani/evo-shave;markschl/uvsnake;martykardos/asacphus_fire_frogs;mdondrup/gromacs_workflow;mdondrup/mytemplate_wf;mdondrup/sealice_assemblies;metagenome-atlas/metagenome_instrain;moiexpositoalonsolab/grenepipe;niekwit/atac-seq;niekwit/chip-seq;niekwit/crispr-screens;niekwit/cut_and_run;niekwit/damid-seq;niekwit/eCLIP;niekwit/gps-orfeome;niekwit/methyl-seq;niekwit/partridge-workflow;niekwit/rna-seq-salmon-deseq2;niekwit/rna-seq-star-deseq2;niekwit/rna-seq-star-rmats;niekwit/rna-seq-star-tetranscripts;nikostr/dna-seq-deepvariant-glnexus-variant-calling;nikostr/read-mapping;odcambc/dumpling;petroskilp/clustromics;rglez/bflow-smk;sgallegosperez8/practice;snakemake-workflows/dna-seq-gatk-variant-calling;snakemake-workflows/dna-seq-varlociraptor;snakemake-workflows/snakemake-workflow-template;spraeger/mutational-patterns-analysis;tdayris/fair_fastqc_multiqc;thomasbtf/sars-cov-2-wbe;thomasmulvaney/snakemake-gromacs-workflow;tucca-cellag/tucca-rna-seq;vjcitn/rnaseqSnake;vkpat/short-read-mapping-and-QC-snakemake-pipeline;zhuakexi/dna-seq-gatk-variant-calling;ziyaipek/snakemake,FastQC,MultiQC,2,0,77,5
-bwa,samtools,37,Albinam1/bioinformatics_school;Cesconlab/ExomeSeq;ClavelLab/genome-assembly;DSiB-G2/G2-CovPipeline;GooglingTheCancerGenome/sv-gen;IKIM-Essen/uncovar;Jain-Joyce-Labs/snakemake-chipseq;JoyceS13/BEP_pipeline;KonstantinBurkin/cbai;LiaOb21/colora;TLenfers/multispecies_mitochondrial_variant_analysis;b-brankovics/bwa-gatk-fasttree-smkwf;cbg-ethz/V-pipe;dbespiatykh/RDscan;elsamah/ExomeSeq;elsamah/ExomeSeq_wNorm;friendsofstrandseq/ashleys-qc-pipeline;friendsofstrandseq/mosaicatcher-pipeline;hzi-bifo/snakemake-workflow-univec-removal;kircherlab/MPRAsnakeflow;lacklab/MuSTARRd;lacklab/epens-snakemake;martykardos/asacphus_fire_frogs;mdondrup/yeast_variantcalling;moiexpositoalonsolab/grenepipe;nikostr/read-mapping;snakemake-workflows/dna-seq-gatk-variant-calling;snakemake-workflows/dna-seq-short-read-circle-map;snakemake-workflows/dna-seq-varlociraptor;snakemake-workflows/read-alignment-pangenome;snakemake-workflows/rna-seq-kallisto-sleuth;sneuensc/mapache;solida-core/dima;tbenavi1/RetroDetector;vkpat/short-read-mapping-and-QC-snakemake-pipeline;ylab-hi/ScanNeo2;zjnolen/PopGLen,BWA,SAMtools,2,0,36,1
+fastqc,multiqc,83,Albinam1/bioinformatics_school;AllenInstitute/Bulk-RNA-Snakeline;DavideBrex/SpikeFlow;EloiseIsobelPearce/snakemake-example;IKIM-Essen/QC_pre_NextSeq;IKIM-Essen/ResMAG;IKIM-Essen/RiboSnake;IMS-Bio2Core-Facility/polya_liftover;IMS-Bio2Core-Facility/single_snake_sequencing;JAlvarezJarreta/community_gff3_validation;JeremyTournayre/Pipeline-Holoruminant-Meta;KonstantinBurkin/cbai;Kratzcomycete/Fungal-Genome-Processing-Snakemake;MPUSP/snakemake-bacterial-riboseq;MPUSP/snakemake-bacterial-rnaseq-processing;MPUSP/snakemake-simple-mapping;MethyleneBlues/Snake;SichongP/atac-seq;SilvanCodes/ag-wiehe-ndm;SveTho/base;TidballLab/SNP-Cas13d-Selector;abrahanhernandez/scWGA;akcorut/kGWASflow;aryazand/fastq-process-align;b-brankovics/bwa-gatk-fasttree-smkwf;babasaraki/NSIB;babasaraki/snakemake-workshop-NBIS;boulardlab/3t-seq;delpropo/TidballLab-SNP-Cas13d-Selector;emilymlayton/variant_calling_snakemake;friendsofstrandseq/ashleys-qc-pipeline;gabrielfranco89/fastq_to_ucram;gynecoloji/snakemake_ATACseq;gynecoloji/snakemake_ATACseq_spikein;gynecoloji/snakemake_ChIPseq;gynecoloji/snakemake_CutandRunseq;gynecoloji/snakemake_RNAseq;harrymatthews50/sankemake-containerisation-test;jianhong/pairedtag;jjjoelle/learn_rna;johnne/mytestworkflow;joyling93/sc10x_wf;kevinrue/snakemake-cncb-2024;lparsons/pf15-smallrna-rseto;ltalignani/evo-shave;markschl/uvsnake;martykardos/asacphus_fire_frogs;mdondrup/gromacs_workflow;mdondrup/mytemplate_wf;mdondrup/sealice_assemblies;metagenome-atlas/metagenome_instrain;moiexpositoalonsolab/grenepipe;niekwit/atac-seq;niekwit/chip-seq;niekwit/crispr-screens;niekwit/cut_and_run;niekwit/damid-seq;niekwit/eCLIP;niekwit/gps-orfeome;niekwit/methyl-seq;niekwit/partridge-workflow;niekwit/rna-seq-salmon-deseq2;niekwit/rna-seq-star-deseq2;niekwit/rna-seq-star-rmats;niekwit/rna-seq-star-tetranscripts;nikostr/dna-seq-deepvariant-glnexus-variant-calling;nikostr/read-mapping;odcambc/dumpling;petroskilp/clustromics;rglez/bflow-smk;sgallegosperez8/practice;snakemake-workflows/dna-seq-gatk-variant-calling;snakemake-workflows/dna-seq-varlociraptor;snakemake-workflows/snakemake-workflow-template;spraeger/mutational-patterns-analysis;tdayris/fair_fastqc_multiqc;thomasbtf/sars-cov-2-wbe;thomasmulvaney/snakemake-gromacs-workflow;tucca-cellag/tucca-rna-seq;vjcitn/rnaseqSnake;vkpat/short-read-mapping-and-QC-snakemake-pipeline;zhuakexi/dna-seq-gatk-variant-calling;ziyaipek/snakemake,FastQC,MultiQC,2,0,78,5
+bwa,samtools,38,Albinam1/bioinformatics_school;Cesconlab/ExomeSeq;ClavelLab/genome-assembly;DSiB-G2/G2-CovPipeline;GooglingTheCancerGenome/sv-gen;IKIM-Essen/uncovar;Jain-Joyce-Labs/snakemake-chipseq;JoyceS13/BEP_pipeline;KonstantinBurkin/cbai;LiaOb21/colora;TLenfers/multispecies_mitochondrial_variant_analysis;b-brankovics/bwa-gatk-fasttree-smkwf;cbg-ethz/V-pipe;dbespiatykh/RDscan;elsamah/ExomeSeq;elsamah/ExomeSeq_wNorm;franciscozorrilla/metaGEM;friendsofstrandseq/ashleys-qc-pipeline;friendsofstrandseq/mosaicatcher-pipeline;hzi-bifo/snakemake-workflow-univec-removal;kircherlab/MPRAsnakeflow;lacklab/MuSTARRd;lacklab/epens-snakemake;martykardos/asacphus_fire_frogs;mdondrup/yeast_variantcalling;moiexpositoalonsolab/grenepipe;nikostr/read-mapping;snakemake-workflows/dna-seq-gatk-variant-calling;snakemake-workflows/dna-seq-short-read-circle-map;snakemake-workflows/dna-seq-varlociraptor;snakemake-workflows/read-alignment-pangenome;snakemake-workflows/rna-seq-kallisto-sleuth;sneuensc/mapache;solida-core/dima;tbenavi1/RetroDetector;vkpat/short-read-mapping-and-QC-snakemake-pipeline;ylab-hi/ScanNeo2;zjnolen/PopGLen,BWA,SAMtools,2,0,37,1
 minimap2,samtools,34,Bioinflows-Bioversity-CIAT/ont-target-dna-variant-calling;ChaissonLab/SegDupAnnotation2;EichlerLab/ONT_pipelines;Gmidtg21/bt7-9gmidtg;IKIM-Essen/QC_pre_NextSeq;IKIM-Essen/uncovar;KonstantinBurkin/cbai;MPUSP/snakemake-simple-mapping;MathiasEskildsen/ONT-AmpSeq;MathiasEskildsen/ONT_RNA-seq_wf;SarahSaadain/Single_Copy_Gene_Selector;SiYangming/isoseq.smk;SiYangming/nanoseq.smk;WHops/triopull-asm;Xavster838/coreDupGraph;Xavster838/downstream_isoseq_process;aryazand/fastq-process-align;cmc-aau/nanopore_16Samp;cmc-aau/snakemake_project_template;daspacio9/pooledpremiumpcrpipeline2;dlaehnemann/create-ecdna-testing-data;loganylchen/NanoInsight;loganylchen/NanoRNAMod;merfre/Adaptive_Sequencing_Analysis_Workflow;merfre/MMCAW;metagenome-atlas/metagenome-assembly;mkrg01/genome_assembly_pipeline;nikostr/read-mapping;odcambc/dumpling;richardstoeckl/QCforSeqCode;snakemake-workflows/cyrcular-calling;snakemake-workflows/rna-longseq-de-isoform;tbenavi1/RetroDetector;westerdijk-wm/snakemake-mlsa-ani,Minimap2,SAMtools,2,0,34,0
 samtools,bedtools,31,ChaissonLab/SegDupAnnotation2;MPUSP/snakemake-ont-bacterial-variants;MathiasEskildsen/ONT_RNA-seq_wf;Xavster838/downstream_isoseq_process;aekrylova/scPASU;akcorut/kGWASflow;aryazand/call_tss;baerlachlan/smk-rnaseq-counts;dbespiatykh/RDscan;fiberseq/fiberseq-smk;friendsofstrandseq/mosaicatcher-pipeline;gynecoloji/snakemake_ATACseq;gynecoloji/snakemake_ATACseq_spikein;gynecoloji/snakemake_ChIPseq;gynecoloji/snakemake_CutandRunseq;hzi-bifo/phylogeny-of-single-cells;isaacvock/PROseq_etal;lacklab/epens-snakemake;loganylchen/NanoRNAMod;lparsons/pf15-smallrna-rseto;mukherjeelab/CLIPs4U;nate-d-olson/adotto-smk;niekwit/atac-seq;niekwit/cut_and_run;snakemake-workflows/dna-seq-benchmark;snakemake-workflows/dna-seq-varlociraptor;sneuensc/mapache;tmweiskittel/tmw_align_emseq;usnistgov/defrabb;zavolanlab/mirflowz;zhongmicai/mosaicatcher-pipeline,SAMtools,BEDTools,2,0,31,0
 bowtie2,samtools,28,CBIbigA/hicstuff_pipeline;GuttmanLab/chipdip-pipeline;IKIM-Essen/RiboSnake;IKIM-Essen/uncovar;Jain-Joyce-Labs/snakemake-chipseq;JeremyTournayre/Pipeline-Holoruminant-Meta;Kratzcomycete/Fungal-Genome-Processing-Snakemake;MPUSP/snakemake-simple-mapping;SiYangming/riboseq.smk;akcorut/kGWASflow;aryazand/fastq-process-align;bheimbu/annoSnake;fischuu/Snakebite-Holoruminant-MetaG;gynecoloji/snakemake_ATACseq;gynecoloji/snakemake_ATACseq_spikein;gynecoloji/snakemake_ChIPseq;gynecoloji/snakemake_CutandRunseq;gynecoloji/snakemake_debug;isaacvock/PROseq_etal;johnne/map_metaT;martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;niekwit/atac-seq;niekwit/cut_and_run;niekwit/damid-seq;regulatory-genomics/hic_sm;sneuensc/mapache;ylab-hi/ScanNeo2,Bowtie 2,SAMtools,2,0,28,0
@@ -8,23 +8,23 @@ samtools,gatk,27,Albinam1/bioinformatics_school;ArsenaultResearch/RNAseq_Pipelin
 picard_tools,samtools,25,3d-omics/hg_genotype;Albinam1/bioinformatics_school;IKIM-Essen/uncovar;Jain-Joyce-Labs/snakemake-chipseq;KonstantinBurkin/cbai;abbyevewilliams/map-pipeline;aekrylova/scPASU;b-brankovics/bwa-gatk-fasttree-smkwf;baerlachlan/smk-rnaseq-gatk-variants;gynecoloji/snakemake_ATACseq_spikein;hzi-bifo/phylogeny-of-single-cells;kevinrue/snakemake-cncb-2024;ltalignani/evo-shave;martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;niekwit/atac-seq;niekwit/cut_and_run;sims-lab/snakemake-cncb-genetic-demultiplexing;snakemake-workflows/dna-seq-benchmark;snakemake-workflows/dna-seq-gatk-variant-calling;snakemake-workflows/dna-seq-varlociraptor;snakemake-workflows/read-alignment-pangenome;sneuensc/mapache;varlociraptor/varlociraptor-methylation-evaluation;zjnolen/PopGLen,Picard,SAMtools,2,0,25,0
 samtools,bcftools,24,Bioinflows-Bioversity-CIAT/ont-target-dna-variant-calling;DSiB-G2/G2-CovPipeline;KonstantinBurkin/cbai;MPUSP/snakemake-simple-mapping;TLenfers/multispecies_mitochondrial_variant_analysis;baerlachlan/smk-rnaseq-gatk-variants;friendsofstrandseq/mosaicatcher-pipeline;hzi-bifo/phylogeny-of-single-cells;loganylchen/NanoRNAMod;martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;omidalam/can_vac;r1cheu/imputation;snakemake-workflows/dna-seq-benchmark;snakemake-workflows/dna-seq-gatk-variant-calling;snakemake-workflows/dna-seq-short-read-circle-map;snakemake-workflows/dna-seq-varlociraptor;snakemake-workflows/read-alignment-pangenome;sneuensc/mapache;usnistgov/defrabb;usnistgov/giab-defrabb;varlociraptor/varlociraptor-methylation-evaluation;ylab-hi/ScanNeo2;zhongmicai/mosaicatcher-pipeline,SAMtools,BCFtools,2,0,24,0
 samtools,multiqc,24,3d-omics/hg_genotype;Albinam1/bioinformatics_school;KonstantinBurkin/cbai;MPUSP/snakemake-bacterial-riboseq;MPUSP/snakemake-bacterial-rnaseq-processing;b-brankovics/bwa-gatk-fasttree-smkwf;epigen/atacseq_pipeline;epigen/rnaseq_pipeline;friendsofstrandseq/ashleys-qc-pipeline;gynecoloji/snakemake_RNAseq;lparsons/pf15-smallrna-rseto;ltalignani/evo-shave;martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;niekwit/atac-seq;niekwit/cut_and_run;niekwit/partridge-workflow;nikostr/dna-seq-deepvariant-glnexus-variant-calling;odcambc/dumpling;sims-lab/snakemake-cncb-genetic-demultiplexing;snakemake-workflows/dna-seq-gatk-variant-calling;snakemake-workflows/dna-seq-varlociraptor;tdayris/fair_bowtie2_mapping;zhuakexi/dna-seq-gatk-variant-calling,SAMtools,MultiQC,2,0,20,4
-samtools,picard_tools,20,Cesconlab/ExomeSeq;Jain-Joyce-Labs/snakemake-chipseq;aekrylova/scPASU;baerlachlan/smk-rnaseq-gatk-variants;elsamah/ExomeSeq;elsamah/ExomeSeq_wNorm;gynecoloji/snakemake_ATACseq_spikein;jsquaredosquared/novocraft-sv-benchmarking;kircherlab/MPRAsnakeflow;martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;mpitz123/RNA_seq_alignment;niekwit/cut_and_run;poloarol/snakemake-methylseq;snakemake-workflows/dna-seq-varlociraptor;snakemake-workflows/read-alignment-pangenome;sneuensc/mapache;varlociraptor/varlociraptor-methylation-evaluation;vkpat/short-read-mapping-and-QC-snakemake-pipeline;zjnolen/PopGLen,SAMtools,Picard,2,0,20,0
 star,samtools,20,MPUSP/snakemake-bacterial-riboseq;MPUSP/snakemake-bacterial-rnaseq-processing;MPUSP/snakemake-simple-mapping;SiYangming/riboseq.smk;TRON-Bioinformatics/neorasp;aryazand/fastq-process-align;baerlachlan/smk-rnaseq-counts;epigen/rnaseq_pipeline;lparsons/pf15-smallrna-rseto;mukherjeelab/CLIPs4U;niekwit/eCLIP;niekwit/rna-seq-star-deseq2;niekwit/rna-seq-star-rmats;niekwit/rna-seq-star-tetranscripts;nixonlab/HERV_um_mets;petroskilp/clustromics;rochevin/RNA-seq-from-SRR-single;snakemake-workflows/star-arriba-fusion-calling;ylab-hi/ScanNeo2;zavolanlab/zarp,STAR,SAMtools,2,0,20,0
 bcftools,tabix,19,Albinam1/bioinformatics_school;EichlerLab/ONT_pipelines;KonstantinBurkin/cbai;NCI-CGR/TriosCompass_v2;TRON-Bioinformatics/oblx;baerlachlan/smk-rnaseq-gatk-variants;hzi-bifo/phylogeny-of-single-cells;jsquaredosquared/novocraft-sv-benchmarking;martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;rabiafidan/pure-faf;snakemake-workflows/dna-seq-gatk-variant-calling;snakemake-workflows/dna-seq-short-read-circle-map;snakemake-workflows/dna-seq-varlociraptor;snakemake-workflows/read-alignment-pangenome;solida-core/astra;tdayris/fair_genome_indexer;zhongmicai/mosaicatcher-pipeline;zhuakexi/dna-seq-gatk-variant-calling,BCFtools,tabix,2,0,18,1
 bedtools,samtools,18,GuttmanLab/chipdip-pipeline;Jain-Joyce-Labs/snakemake-chipseq;Xavster838/downstream_isoseq_process;aekrylova/scPASU;dbespiatykh/RDscan;gynecoloji/snakemake_ATACseq;gynecoloji/snakemake_ATACseq_spikein;gynecoloji/snakemake_ChIPseq;gynecoloji/snakemake_CutandRunseq;hzi-bifo/phylogeny-of-single-cells;mukherjeelab/CLIPs4U;nate-d-olson/adotto-smk;niekwit/cut_and_run;niekwit/eCLIP;snakemake-workflows/dna-seq-varlociraptor;tmweiskittel/tmw_align_emseq;zavolanlab/mirflowz;zhongmicai/mosaicatcher-pipeline,BEDTools,SAMtools,2,0,18,0
 fastp,multiqc,18,IKIM-Essen/QC_pre_NextSeq;IKIM-Essen/ResMAG;JeremyTournayre/Pipeline-Holoruminant-Meta;MPUSP/snakemake-bacterial-rnaseq-processing;MPUSP/snakemake-simple-mapping;SichongP/atac-seq;SilasK/Metagenome-QC;SilasK/Snakebread;aryazand/fastq-process-align;epigen/rnaseq_pipeline;gynecoloji/snakemake_RNAseq;mdondrup/ras_meta_transcriptomics;nikostr/dna-seq-deepvariant-glnexus-variant-calling;nikostr/read-mapping;snakemake-workflows/dna-seq-varlociraptor;tdayris/fair_bowtie2_mapping;thomasbtf/sars-cov-2-wbe;zjnolen/PopGLen,fastp,MultiQC,2,0,18,0
 picard_tools,gatk,18,3d-omics/hg_genotype;Albinam1/bioinformatics_school;ArsenaultResearch/RNAseq_Pipeline;Bioinflows-Bioversity-CIAT/ont-target-dna-variant-calling;KonstantinBurkin/cbai;b-brankovics/bwa-gatk-fasttree-smkwf;baerlachlan/smk-rnaseq-gatk-variants;dbespiatykh/TBvar;fcaretti/SNPs_from_RNA;ltalignani/evo-shave;martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;snakemake-workflows/dna-seq-gatk-variant-calling;snakemake-workflows/dna-seq-varlociraptor;snakemake-workflows/read-alignment-pangenome;sneuensc/mapache;ylab-hi/ScanNeo2;zjnolen/PopGLen,Picard,GATK,2,0,18,0
+samtools,picard_tools,17,Jain-Joyce-Labs/snakemake-chipseq;aekrylova/scPASU;baerlachlan/smk-rnaseq-gatk-variants;gynecoloji/snakemake_ATACseq_spikein;jsquaredosquared/novocraft-sv-benchmarking;kircherlab/MPRAsnakeflow;martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;mpitz123/RNA_seq_alignment;niekwit/cut_and_run;poloarol/snakemake-methylseq;snakemake-workflows/dna-seq-varlociraptor;snakemake-workflows/read-alignment-pangenome;sneuensc/mapache;varlociraptor/varlociraptor-methylation-evaluation;vkpat/short-read-mapping-and-QC-snakemake-pipeline;zjnolen/PopGLen,SAMtools,Picard,2,0,17,0
 bwa-mem2,samtools,15,3d-omics/hg_genotype;Addimator/varlociraptor-copy-number-variants;LiaOb21/FSP_assembly_benchmarking;MPUSP/snakemake-simple-mapping;SarahSaadain/Single_Copy_Gene_Selector;SichongP/atac-seq;Wheeler-Lab/InDelCoordinateCorrection;abbyevewilliams/map-pipeline;aryazand/fastq-process-align;dlaehnemann/create-quant-seq-testing-dataset;dlaehnemann/create-sv-ci-testing-dataset;isaacvock/PROseq_etal;mkrg01/genome_assembly_pipeline;niekwit/partridge-workflow;regulatory-genomics/hic_sm,Bwa-mem2,SAMtools,2,0,15,0
+pandas,numpy,15,Addimator/compare_meth;FilippoGas/HapScorer;LiaOb21/FSP_assembly_benchmarking;MPUSP/snakemake-assembly-postprocessing;MPUSP/snakemake-ms-proteomics;SarahSaadain/Single_Copy_Gene_Selector;SarahSaadain/pastForward;dbespiatykh/RDscan;dbespiatykh/TBvar;epigen/unsupervised_analysis;martykardos/asacphus_fire_frogs;milesroberts-123/custom-rag-cli;moiexpositoalonsolab/grenepipe;sandragodinhosilva/melange;snakemake-workflows/rna-seq-kallisto-sleuth,Pandas,NumPy,2,0,15,0
 fastp,bowtie2,14,DavideBrex/SpikeFlow;JeremyTournayre/Pipeline-Holoruminant-Meta;Kratzcomycete/Fungal-Genome-Processing-Snakemake;MPUSP/snakemake-simple-mapping;aryazand/fastq-process-align;epigen/atacseq_pipeline;fischuu/Snakebite-Holoruminant-MetaG;gynecoloji/snakemake_ATACseq;gynecoloji/snakemake_ATACseq_spikein;gynecoloji/snakemake_ChIPseq;gynecoloji/snakemake_CutandRunseq;isaacvock/PROseq_etal;sneuensc/mapache;ylab-hi/ScanNeo2,fastp,Bowtie 2,2,0,14,0
 fastp,fastqc,14,DavideBrex/SpikeFlow;IKIM-Essen/QC_pre_NextSeq;IKIM-Essen/ResMAG;JeremyTournayre/Pipeline-Holoruminant-Meta;Kratzcomycete/Fungal-Genome-Processing-Snakemake;NCI-CGR/TriosCompass_v2;abbyevewilliams/map-pipeline;baerlachlan/smk-rnaseq-counts;baerlachlan/smk-rnaseq-gatk-variants;fischuu/Snakebite-Holoruminant-MetaG;isaacvock/PROseq_etal;poloarol/snakemake-methylseq;sneuensc/mapache;ylab-hi/ScanNeo2,fastp,FastQC,2,0,14,0
 gatk,samtools,14,3d-omics/hg_genotype;Albinam1/bioinformatics_school;KonstantinBurkin/cbai;kevinrue/snakemake-cncb-2024;martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;scholl-lab/sm-calling;snakemake-workflows/dna-seq-gatk-variant-calling;snakemake-workflows/dna-seq-short-read-circle-map;snakemake-workflows/dna-seq-varlociraptor;snakemake-workflows/read-alignment-pangenome;sneuensc/mapache;ylab-hi/ScanNeo2;zjnolen/PopGLen,GATK,SAMtools,2,0,14,0
-pandas,numpy,14,Addimator/compare_meth;FilippoGas/HapScorer;LiaOb21/FSP_assembly_benchmarking;MPUSP/snakemake-ms-proteomics;SarahSaadain/Single_Copy_Gene_Selector;SarahSaadain/pastForward;dbespiatykh/RDscan;dbespiatykh/TBvar;epigen/unsupervised_analysis;martykardos/asacphus_fire_frogs;milesroberts-123/custom-rag-cli;moiexpositoalonsolab/grenepipe;sandragodinhosilva/melange;snakemake-workflows/rna-seq-kallisto-sleuth,Pandas,NumPy,2,0,14,0
 biopython,pandas,13,Bioinflows-Bioversity-CIAT/tm-shift_designer;CVUA-RRW/FooDMe;FilippoGas/HapScorer;MPUSP/snakemake-ms-proteomics;PathoGenOmics-Lab/VIPERA;SiYangming/riboseq.smk;TRON-Bioinformatics/oblx;daspacio9/pooledpremiumpcrpipeline2;mkrg01/genome_assembly_pipeline;niekwit/smallRNA-seq;snakemake-workflows/rna-longseq-de-isoform;snakemake-workflows/rna-seq-kallisto-sleuth;westerdijk-wm/snakemake-mlsa-ani,Biopython,Pandas,2,0,13,0
+pysam,pandas,13,IKIM-Essen/uncovar;MPUSP/snakemake-bacterial-riboseq;SarahSaadain/Single_Copy_Gene_Selector;SarahSaadain/pastForward;daspacio9/pooledpremiumpcrpipeline2;koesterlab/rossi-ips-dmr;milesroberts-123/custom-rag-cli;mkrg01/genome_assembly_pipeline;niekwit/chip-seq;snakemake-workflows/dna-seq-benchmark;snakemake-workflows/rna-seq-kallisto-sleuth;thomasbtf/sars-cov-2-wbe;varlociraptor/varlociraptor-methylation-evaluation,pysam,Pandas,2,0,13,0
+samtools,pysam,13,EichlerLab/ONT_pipelines;IKIM-Essen/uncovar;MPUSP/snakemake-bacterial-riboseq;SiYangming/riboseq.smk;loganylchen/prep_mix_data;milesroberts-123/custom-rag-cli;mkrg01/genome_assembly_pipeline;nate-d-olson/adotto-smk;niekwit/eCLIP;regulatory-genomics/hic_sm;varlociraptor/varlociraptor-methylation-evaluation;ylab-hi/ScanNeo2;zavolanlab/mirflowz,SAMtools,pysam,2,0,13,0
 star,multiqc,13,AllenInstitute/Bulk-RNA-Snakeline;ArsenaultResearch/RNAseq_Pipeline;MPUSP/snakemake-bacterial-riboseq;MPUSP/snakemake-bacterial-rnaseq-processing;MPUSP/snakemake-simple-mapping;aryazand/fastq-process-align;jjjoelle/learn_rna;niekwit/eCLIP;niekwit/rna-seq-star-deseq2;niekwit/rna-seq-star-tetranscripts;petroskilp/clustromics;plycrsk/rna-seq-star-deseq2;snakemake-workflows/rna-seq-star-deseq2,STAR,MultiQC,2,0,13,0
 bcftools,gatk,12,3d-omics/hg_genotype;Albinam1/bioinformatics_school;Bioinflows-Bioversity-CIAT/ont-target-dna-variant-calling;KonstantinBurkin/cbai;baerlachlan/smk-rnaseq-gatk-variants;martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;snakemake-workflows/dna-seq-gatk-variant-calling;snakemake-workflows/dna-seq-short-read-circle-map;snakemake-workflows/dna-seq-varlociraptor;snakemake-workflows/read-alignment-pangenome;ylab-hi/ScanNeo2,BCFtools,GATK,2,0,12,0
-pysam,pandas,12,MPUSP/snakemake-bacterial-riboseq;SarahSaadain/Single_Copy_Gene_Selector;SarahSaadain/pastForward;daspacio9/pooledpremiumpcrpipeline2;koesterlab/rossi-ips-dmr;milesroberts-123/custom-rag-cli;mkrg01/genome_assembly_pipeline;niekwit/chip-seq;snakemake-workflows/dna-seq-benchmark;snakemake-workflows/rna-seq-kallisto-sleuth;thomasbtf/sars-cov-2-wbe;varlociraptor/varlociraptor-methylation-evaluation,pysam,Pandas,2,0,12,0
 samtools,bowtie2,12,DavideBrex/SpikeFlow;JeremyTournayre/Pipeline-Holoruminant-Meta;aekrylova/scPASU;fischuu/Snakebite-Holoruminant-MetaG;gynecoloji/snakemake_ATACseq;gynecoloji/snakemake_ATACseq_spikein;gynecoloji/snakemake_ChIPseq;gynecoloji/snakemake_CutandRunseq;gynecoloji/snakemake_debug;niekwit/cut_and_run;regulatory-genomics/hic_sm;ylab-hi/ScanNeo2,SAMtools,Bowtie 2,2,0,12,0
-samtools,pysam,12,EichlerLab/ONT_pipelines;MPUSP/snakemake-bacterial-riboseq;SiYangming/riboseq.smk;loganylchen/prep_mix_data;milesroberts-123/custom-rag-cli;mkrg01/genome_assembly_pipeline;nate-d-olson/adotto-smk;niekwit/eCLIP;regulatory-genomics/hic_sm;varlociraptor/varlociraptor-methylation-evaluation;ylab-hi/ScanNeo2;zavolanlab/mirflowz,SAMtools,pysam,2,0,12,0
 bcftools,samtools,11,IKIM-Essen/uncovar;StergachisLab/IsoSeq_smk;martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;nate-d-olson/giab-stvar-curation-table;scholl-lab/sm-calling;snakemake-workflows/dna-seq-benchmark;snakemake-workflows/dna-seq-varlociraptor;snakemake-workflows/read-alignment-pangenome;varlociraptor/varlociraptor-methylation-evaluation;ylab-hi/ScanNeo2,BCFtools,SAMtools,2,0,11,0
 gatk,bcftools,11,3d-omics/hg_genotype;Bioinflows-Bioversity-CIAT/ont-target-dna-variant-calling;JoyceS13/BEP_pipeline;b-brankovics/bwa-gatk-fasttree-smkwf;ltalignani/evo-shave;martykardos/asacphus_fire_frogs;mdondrup/yeast_variantcalling;moiexpositoalonsolab/grenepipe;scholl-lab/sm-calling;sims-lab/snakemake-cncb-genetic-demultiplexing;ylab-hi/ScanNeo2,GATK,BCFtools,2,0,11,0
 bcftools,vep,10,3d-omics/hg_genotype;IKIM-Essen/uncovar;MPUSP/snakemake-simple-mapping;fcaretti/SNPs_from_RNA;martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;rabiafidan/pure-faf;snakemake-workflows/dna-seq-varlociraptor;vembrane/vembrane-benchmark;ylab-hi/ScanNeo2,BCFtools,Variant Effect Predictor (VEP),2,0,10,0
@@ -36,11 +36,11 @@ tabix,gatk,10,Albinam1/bioinformatics_school;KonstantinBurkin/cbai;NCI-CGR/Trios
 umi-tools,samtools,10,MPUSP/snakemake-bacterial-riboseq;MPUSP/snakemake-bacterial-rnaseq-processing;SiYangming/riboseq.smk;aekrylova/scPASU;aryazand/fastq-process-align;baerlachlan/smk-rnaseq-counts;baerlachlan/smk-rnaseq-gatk-variants;niekwit/eCLIP;snakemake-workflows/dna-seq-varlociraptor;snakemake-workflows/read-alignment-pangenome,UMI-tools,SAMtools,2,0,10,0
 bedtools,count,9,Jain-Joyce-Labs/snakemake-chipseq;SichongP/atac-seq;friendsofstrandseq/mosaicatcher-pipeline;gynecoloji/snakemake_ATACseq;gynecoloji/snakemake_ATACseq_spikein;gynecoloji/snakemake_ChIPseq;gynecoloji/snakemake_CutandRunseq;niekwit/damid-seq;zhongmicai/mosaicatcher-pipeline,BEDTools,Count,3,0,0,9
 fastp,bwa,9,Phlya/tagmap;b-brankovics/bwa-gatk-fasttree-smkwf;mdondrup/yeast_variantcalling;nikostr/read-mapping;open2c/distiller-sm;snakemake-workflows/rna-seq-kallisto-sleuth;sneuensc/mapache;ylab-hi/ScanNeo2;zjnolen/PopGLen,fastp,BWA,2,0,9,0
+pandas,matplotlib,9,MPUSP/snakemake-bacterial-riboseq;brunosate21-a11y/Metabolic-Modeling-Workflow.;daspacio9/pooledpremiumpcrpipeline2;hreypar/containers_test;kircherlab/MPRAsnakeflow;loganylchen/RNA-seq-analysis-pipeline;mkrg01/genome_assembly_pipeline;petroskilp/clustromics;zhuakexi/dna-seq-gatk-variant-calling,Pandas,Matplotlib,2,0,9,0
 picard_tools,multiqc,9,Albinam1/bioinformatics_school;KonstantinBurkin/cbai;b-brankovics/bwa-gatk-fasttree-smkwf;hzi-bifo/phylogeny-of-single-cells;ltalignani/evo-shave;niekwit/atac-seq;sims-lab/snakemake-cncb-genetic-demultiplexing;snakemake-workflows/dna-seq-gatk-variant-calling;vkpat/short-read-mapping-and-QC-snakemake-pipeline,Picard,MultiQC,2,0,9,0
 rseqc,multiqc,9,MPUSP/snakemake-bacterial-rnaseq-processing;MPUSP/snakemake-simple-mapping;aryazand/fastq-process-align;epigen/rnaseq_pipeline;petroskilp/clustromics;plycrsk/rna-seq-star-deseq2;schlesnerlab/multiconDEnrich;snakemake-workflows/rna-seq-star-deseq2;tdayris/fair_bowtie2_mapping,RSeQC,MultiQC,2,0,9,0
 samtools,pandas,9,IKIM-Essen/QC_pre_NextSeq;daspacio9/pooledpremiumpcrpipeline2;epigen/rnaseq_pipeline;martykardos/asacphus_fire_frogs;mkrg01/genome_assembly_pipeline;moiexpositoalonsolab/grenepipe;niekwit/eCLIP;snakemake-workflows/read-alignment-pangenome;westerdijk-wm/snakemake-mlsa-ani,SAMtools,Pandas,2,0,9,0
 fastp,star,8,MPUSP/snakemake-bacterial-rnaseq-processing;aryazand/fastq-process-align;baerlachlan/smk-rnaseq-counts;baerlachlan/smk-rnaseq-gatk-variants;epigen/rnaseq_pipeline;loganylchen/RNA-seq-analysis-pipeline;snakemake-workflows/rna-seq-star-deseq2;ylab-hi/ScanNeo2,fastp,STAR,2,0,8,0
-pandas,matplotlib,8,MPUSP/snakemake-bacterial-riboseq;brunosate21-a11y/Metabolic-Modeling-Workflow.;daspacio9/pooledpremiumpcrpipeline2;hreypar/containers_test;loganylchen/RNA-seq-analysis-pipeline;mkrg01/genome_assembly_pipeline;petroskilp/clustromics;zhuakexi/dna-seq-gatk-variant-calling,Pandas,Matplotlib,2,0,8,0
 samtools,minimap2,8,CBIbigA/hicstuff_pipeline;ChaissonLab/SegDupAnnotation2;EichlerLab/ONT_pipelines;MathiasEskildsen/ONT-AmpSeq;SiYangming/nanoseq.smk;daspacio9/pooledpremiumpcrpipeline2;tbenavi1/RetroDetector;vollgerlab/DSA-phasing,SAMtools,Minimap2,2,0,8,0
 samtools,qualimap,8,TRON-Bioinformatics/neorasp;gynecoloji/snakemake_RNAseq;loganylchen/NanoRNAMod;martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;snakemake-workflows/rna-longseq-de-isoform;sneuensc/mapache;zjnolen/PopGLen,SAMtools,QualiMap,2,0,8,0
 bwa,gatk,7,Albinam1/bioinformatics_school;ArsenaultResearch/RNAseq_Pipeline;KonstantinBurkin/cbai;snakemake-workflows/dna-seq-gatk-variant-calling;snakemake-workflows/dna-seq-varlociraptor;snakemake-workflows/read-alignment-pangenome;ylab-hi/ScanNeo2,BWA,GATK,2,0,7,0
@@ -60,7 +60,6 @@ pysam,samtools,6,kircherlab/MPRAsnakeflow;loganylchen/prep_mix_data;mkrg01/genom
 samtools,mosdepth,6,dlaehnemann/create-ecdna-testing-data;dlaehnemann/create-sv-ci-testing-dataset;magwenelab/WeavePop;snakemake-workflows/dna-seq-benchmark;varlociraptor/varlociraptor-methylation-evaluation;vkpat/short-read-mapping-and-QC-snakemake-pipeline,SAMtools,mosdepth,2,0,6,0
 samtools,tabix,6,ChaissonLab/SegDupAnnotation2;IKIM-Essen/uncovar;NCI-CGR/TriosCompass_v2;martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;snakemake-workflows/dna-seq-varlociraptor,SAMtools,tabix,2,0,6,0
 bcftools,multiqc,5,MPUSP/snakemake-simple-mapping;martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;scholl-lab/sm-calling;sims-lab/snakemake-cncb-genetic-demultiplexing,BCFtools,MultiQC,2,0,5,0
-bcftools,pandas,5,martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;snakemake-workflows/dna-seq-benchmark;vembrane/vembrane-benchmark;xin-huang/selscape,BCFtools,Pandas,2,0,5,0
 bcftools,plot,5,IKIM-Essen/uncovar;Zilong-Li/lcWGS-imputation-workflow;mdondrup/admixture_simulation;sneuensc/mapache;xin-huang/selscape,BCFtools,plot,3,0,0,5
 bcftools,snpeff,5,MPUSP/snakemake-assembly-postprocessing;MPUSP/snakemake-simple-mapping;martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;vembrane/vembrane-benchmark,BCFtools,snpEff,2,0,5,0
 bcftools,vcftools,5,JoyceS13/BEP_pipeline;MPUSP/snakemake-ont-bacterial-variants;TLenfers/multispecies_mitochondrial_variant_analysis;mdondrup/admixture_workflow;milesroberts-123/slim-sweep-cnn,BCFtools,VCFtools,2,0,5,0
@@ -94,6 +93,7 @@ varlociraptor,bcftools,5,IKIM-Essen/uncovar;koesterlab/rossi-ips-dmr;snakemake-w
 vep,bcftools,5,IKIM-Essen/uncovar;MPUSP/snakemake-simple-mapping;rabiafidan/pure-faf;snakemake-workflows/dna-seq-varlociraptor;vembrane/vembrane-benchmark,Variant Effect Predictor (VEP),BCFtools,2,0,5,0
 bcftools,bedtools,4,dbespiatykh/RDscan;mdondrup/admixture_workflow;rabiafidan/pure-faf;usnistgov/defrabb,BCFtools,BEDTools,2,0,4,0
 bcftools,bwa,4,martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;snakemake-workflows/dna-seq-varlociraptor;snakemake-workflows/read-alignment-pangenome,BCFtools,BWA,2,0,4,0
+bcftools,pandas,4,martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;snakemake-workflows/dna-seq-benchmark;vembrane/vembrane-benchmark,BCFtools,Pandas,2,0,4,0
 bcftools,varlociraptor,4,IKIM-Essen/uncovar;hzi-bifo/phylogeny-of-single-cells;snakemake-workflows/cyrcular-calling;snakemake-workflows/dna-seq-varlociraptor,BCFtools,varlociraptor,2,0,4,0
 bedtools,macs,4,gynecoloji/snakemake_ATACseq;gynecoloji/snakemake_ATACseq_spikein;gynecoloji/snakemake_ChIPseq;gynecoloji/snakemake_CutandRunseq,BEDTools,MACS,2,0,4,0
 bedtools,pybedtools,4,koesterlab/rossi-ips-dmr;nate-d-olson/defrabb;usnistgov/defrabb;usnistgov/giab-defrabb,BEDTools,Pybedtools,2,0,4,0
@@ -141,6 +141,7 @@ bcftools,annotate,3,ncherric/Iliad;xin-huang/selscape;ylab-hi/ScanNeo2,BCFtools,
 bcftools,htslib,3,nate-d-olson/defrabb;usnistgov/defrabb;usnistgov/giab-defrabb,BCFtools,HTSlib,2,0,3,0
 bcftools,matplotlib,3,Albinam1/bioinformatics_school;KonstantinBurkin/cbai;snakemake-workflows/dna-seq-gatk-variant-calling,BCFtools,Matplotlib,2,0,3,0
 bcftools,picard_tools,3,martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;snakemake-workflows/dna-seq-benchmark,BCFtools,Picard,2,0,3,0
+bcftools,pysam,3,IKIM-Essen/uncovar;snakemake-workflows/dna-seq-benchmark;varlociraptor/varlociraptor-methylation-evaluation,BCFtools,pysam,2,0,3,0
 bcftools,rust-bio,3,hzi-bifo/phylogeny-of-single-cells;snakemake-workflows/cyrcular-calling;snakemake-workflows/dna-seq-varlociraptor,BCFtools,Rust-Bio,2,0,3,0
 bcftools,vembrane,3,hzi-bifo/phylogeny-of-single-cells;snakemake-workflows/dna-seq-benchmark;vembrane/vembrane-benchmark,BCFtools,vembrane,2,0,3,0
 bedtools,UCSC_Genome_Browser_Utilities,3,lacklab/epens-snakemake;niekwit/methyl-seq;zavolanlab/zarp,BEDTools,UCSC Genome Browser Utilities,2,0,3,0
@@ -199,6 +200,7 @@ spades,quast,3,ClavelLab/genome-assembly;IKIM-Essen/uncovar;LiaOb21/FSP_assembly
 star,deeptools,3,MPUSP/snakemake-bacterial-rnaseq-processing;niekwit/rna-seq-star-deseq2;niekwit/rna-seq-star-tetranscripts,STAR,DeepTools,2,0,3,0
 star,rseqc,3,petroskilp/clustromics;plycrsk/rna-seq-star-deseq2;snakemake-workflows/rna-seq-star-deseq2,STAR,RSeQC,2,0,3,0
 subread,multiqc,3,MPUSP/snakemake-bacterial-rnaseq-processing;johnne/map_metaT;mdondrup/ras_meta_transcriptomics,Subread,MultiQC,2,0,3,0
+tabix,varscan,3,Cesconlab/ExomeSeq;elsamah/ExomeSeq;elsamah/ExomeSeq_wNorm,tabix,VarScan,2,0,3,0
 tabix,vep,3,IKIM-Essen/uncovar;martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe,tabix,Variant Effect Predictor (VEP),2,0,3,0
 trim_galore,bowtie2,3,aryazand/fastq-process-align;niekwit/cut_and_run;niekwit/damid-seq,Trim Galore,Bowtie 2,2,0,3,0
 trim_galore,bwa-mem2,3,Wheeler-Lab/InDelCoordinateCorrection;aryazand/fastq-process-align;niekwit/partridge-workflow,Trim Galore,Bwa-mem2,2,0,3,0
@@ -220,10 +222,8 @@ bamutil,damageprofiler,2,martykardos/asacphus_fire_frogs;moiexpositoalonsolab/gr
 bamutil,mapdamage,2,martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe,Bamutil,MapDamage,2,0,2,0
 bamutil,picard_tools,2,martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe,Bamutil,Picard,2,0,2,0
 bcftools,bowtie2,2,martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe,BCFtools,Bowtie 2,2,0,2,0
-bcftools,decompress,2,martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe,BCFtools,DeCompress,3,0,0,2
 bcftools,pangolin,2,DSiB-G2/G2-CovPipeline;IKIM-Essen/uncovar,BCFtools,Pangolin,2,0,2,0
 bcftools,plink,2,mdondrup/admixture_workflow;xin-huang/selscape,BCFtools,PLINK,2,0,2,0
-bcftools,pysam,2,snakemake-workflows/dna-seq-benchmark;varlociraptor/varlociraptor-methylation-evaluation,BCFtools,pysam,2,0,2,0
 bcftools,qualimap,2,martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe,BCFtools,QualiMap,2,0,2,0
 bcftools,treemix,2,mdondrup/admixture_simulation;mdondrup/admixture_workflow,BCFtools,TreeMix,3,0,0,2
 bcftools,trf,2,nate-d-olson/defrabb;usnistgov/giab-defrabb,BCFtools,TRF,2,0,2,0
@@ -280,7 +280,6 @@ genomicranges,bioconductor-chipseeker,2,Addimator/compare_meth;koesterlab/rossi-
 gffcompare,gtftogenepred,2,aryazand/proseq_workflow;aryazand/rnaseq_to_genome_annotation,gffcompare,gtftogenepred,2,0,2,0
 ggtree,treeio,2,ammaraziz/voi;westerdijk-wm/snakemake-mlsa-ani,ggtree,treeio,2,0,2,0
 gridss,bcftools,2,GooglingTheCancerGenome/sv-callers;mynameisdidit/UTS_Bioinformatika_SV-Callers,GRIDSS,BCFtools,2,0,2,0
-htslib,decompress,2,martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe,HTSlib,DeCompress,3,0,0,2
 htslib,vep,2,3d-omics/hg_genotype;MPUSP/snakemake-simple-mapping,HTSlib,Variant Effect Predictor (VEP),2,0,2,0
 kallisto,BUStools,2,jma1991/chromium;snakemake-workflows/rna-seq-kallisto-sleuth,kallisto,BUStools,2,0,2,0
 kallisto,trim_galore,2,arwisyah/snakemake_rna_vc_docker_reproduce;massiddamt/rna_vc_docker,kallisto,Trim Galore,2,0,2,0
@@ -305,6 +304,7 @@ ncbi_datasets,AGAT,2,niekwit/rna-seq-star-deseq2;snakemake-workflows/rna-longseq
 ncbi_datasets,minimap2,2,snakemake-workflows/rna-longseq-de-isoform;westerdijk-wm/snakemake-mlsa-ani,NCBI Datasets,Minimap2,2,0,2,0
 numpy,bwa,2,martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe,NumPy,BWA,2,0,2,0
 numpy,matplotlib,2,martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe,NumPy,Matplotlib,2,0,2,0
+pandas,altair,2,IKIM-Essen/QC_pre_NextSeq;thomasbtf/sars-cov-2-wbe,Pandas,AltaiR,2,0,2,0
 pandas,bcftools,2,MPUSP/snakemake-ont-bacterial-variants;Zilong-Li/lcWGS-imputation-workflow,Pandas,BCFtools,2,0,2,0
 pandas,cutadapt,2,SiYangming/riboseq.smk;daspacio9/pooledpremiumpcrpipeline2,Pandas,Cutadapt,2,0,2,0
 pandas,deseq2,2,petroskilp/clustromics;snakemake-workflows/rna-seq-star-deseq2,Pandas,DESeq2,2,0,2,0
@@ -410,6 +410,7 @@ CAT,EvidenceModeler,1,r1cheu/gnnotator,Cosolvent Analysis Toolkit (CAT),Evidence
 CAT,alpha,1,merfre/MMCAW,Cosolvent Analysis Toolkit (CAT),ALPHA,3,0,0,1
 Circle-Map,pandas,1,snakemake-workflows/dna-seq-short-read-circle-map,Circle-Map,Pandas,2,0,1,0
 Circle-Map,samtools,1,snakemake-workflows/dna-seq-short-read-circle-map,Circle-Map,SAMtools,2,0,1,0
+DNA_Chisel,gffutils,1,IKIM-Essen/uncovar,DNA Chisel,GFFutils,2,0,1,0
 EvidenceModeler,emboss,1,r1cheu/gnnotator,EvidenceModeler,EMBOSS,2,0,1,0
 FAIR,gatk,1,tdayris/fair_gatk_mutect2,FAIR,GATK,3,0,0,1
 FAIR,multiqc,1,tdayris/fair_fastqc_multiqc,FAIR,MultiQC,3,0,0,1
@@ -431,6 +432,7 @@ MAFFT,seqkit,1,davelunt/NemaTree,MAFFT,seqkit,2,0,1,0
 MAFFT,trimal,1,ethan-baldwin/hybpiper_astral_pipeline,MAFFT,trimAl,2,0,1,0
 MAP,gffutils,1,zavolanlab/mirflowz,MAP,GFFutils,3,0,0,1
 MAP,rtracklayer,1,zavolanlab/mirflowz,MAP,rtracklayer,3,0,0,1
+MetaBAT_2,metawrap,1,franciscozorrilla/metaGEM,MetaBAT 2,MetaWRAP,2,0,1,0
 MetaEuk,recognizer,1,rodolfobrandao8/Snakemake-Mag-Annotation,MetaEuk,reCOGnizer,2,0,1,0
 MetaEuk,upimapi,1,rodolfobrandao8/Snakemake-Mag-Annotation,MetaEuk,UPIMAPI,2,0,1,0
 Nanocompore,post,1,loganylchen/NanoRNAMod,Nanocompore,POST,3,0,0,1
@@ -508,12 +510,12 @@ bbtools,spades,1,ClavelLab/genome-assembly,BBTools,SPAdes,2,0,1,0
 bcftools,MAFFT,1,usnistgov/defrabb,BCFtools,MAFFT,2,0,1,0
 bcftools,Vireo,1,sims-lab/snakemake-cncb-genetic-demultiplexing,BCFtools,Vireo,2,0,1,0
 bcftools,admixture,1,mdondrup/admixture_workflow,BCFtools,Admixture,3,0,0,1
+bcftools,biostrings,1,MPUSP/snakemake-simple-mapping,BCFtools,Biostrings,2,0,1,0
 bcftools,cellsnp-lite,1,sims-lab/snakemake-cncb-genetic-demultiplexing,BCFtools,cellsnp-lite,2,0,1,0
 bcftools,chm-eval,1,snakemake-workflows/dna-seq-varlociraptor,BCFtools,chm-eval,2,0,1,0
 bcftools,cyvcf2,1,snakemake-workflows/dna-seq-benchmark,BCFtools,cyvcf2,2,0,1,0
 bcftools,fasttree,1,b-brankovics/bwa-gatk-fasttree-smkwf,BCFtools,FastTree,2,0,1,0
 bcftools,ffpe,1,rabiafidan/pure-faf,BCFtools,ffpe,3,0,0,1
-bcftools,focus,1,varlociraptor/varlociraptor-methylation-evaluation,BCFtools,FOCUS,3,0,0,1
 bcftools,freebayes,1,milesroberts-123/poolseq-kmers,BCFtools,FreeBayes,2,0,1,0
 bcftools,hisat2,1,TRON-Bioinformatics/oblx,BCFtools,HISAT2,2,0,1,0
 bcftools,mason,1,varlociraptor/varlociraptor-methylation-evaluation,BCFtools,Mason,3,0,0,1
@@ -551,6 +553,7 @@ bedtools,pysam,1,zavolanlab/mirflowz,BEDTools,pysam,2,0,1,0
 bedtools,rtracklayer,1,niekwit/atac-seq,BEDTools,rtracklayer,2,0,1,0
 bedtools,tabix,1,TRON-Bioinformatics/oblx,BEDTools,tabix,2,0,1,0
 bedtools,treemix,1,mdondrup/admixture_workflow,BEDTools,TreeMix,3,0,0,1
+bedtools,trf,1,nate-d-olson/adotto-smk,BEDTools,TRF,3,0,0,1
 bedtools,varlociraptor,1,snakemake-workflows/dna-seq-varlociraptor,BEDTools,varlociraptor,2,0,1,0
 bedtools,vep,1,3d-omics/hg_genotype,BEDTools,Variant Effect Predictor (VEP),2,0,1,0
 biobambam,bedtools,1,zhongmicai/mosaicatcher-pipeline,Biobambam2,BEDTools,2,0,1,0
@@ -646,6 +649,7 @@ bwa,minibwa,1,Phlya/tagmap,BWA,minibwa,2,0,1,0
 bwa,msa,1,cbg-ethz/V-pipe,BWA,msa,3,0,0,1
 bwa,orthanq,1,orthanq/orthanq-hla-quantification,BWA,Orthanq,2,0,1,0
 bwa,pairtools,1,Phlya/tagmap,BWA,pairtools,2,0,1,0
+bwa,pysam,1,IKIM-Essen/uncovar,BWA,pysam,2,0,1,0
 bwa,sambamba,1,dbespiatykh/TBvar,BWA,Sambamba,2,0,1,0
 bwa,yahs,1,LiaOb21/colora,BWA,YaHS,2,0,1,0
 bwa-mem2,MAP,1,nikostr/dna-seq-deepvariant-glnexus-variant-calling,Bwa-mem2,MAP,3,0,0,1
@@ -729,7 +733,6 @@ cutadapt,trim_galore,1,petroskilp/clustromics,Cutadapt,Trim Galore,3,0,0,1
 cutadapt,vsearch,1,monagrland/MB_Pipeline,Cutadapt,VSEARCH,2,0,1,0
 cuteSV,vcftools,1,MPUSP/snakemake-ont-bacterial-variants,cuteSV,VCFtools,2,0,1,0
 cyvcf2,bcftools,1,snakemake-workflows/dna-seq-benchmark,cyvcf2,BCFtools,2,0,1,0
-dadi,bcftools,1,xin-huang/selscape,dadi,BCFtools,2,0,1,0
 dadi,plot,1,xin-huang/selscape,dadi,plot,3,0,0,1
 damidseq_pipeline,bedgraphtobigwig,1,niekwit/damid-seq,damidseq_pipeline,bedGraphToBigWig,2,0,1,0
 damidseq_pipeline,bioconductor-damidbind,1,niekwit/damid-seq,damidseq_pipeline,damidBind,2,0,1,0
@@ -765,6 +768,7 @@ diamond,TransDecoder,1,shahcompbio/transdecoder-smk,Diamond,TransDecoder,2,0,1,0
 diamond,blast,1,GArcho44/snvs-annotation-pipeline,Diamond,BLAST,3,0,0,1
 diamond,cogs,1,bheimbu/annoSnake,Diamond,COGs,2,0,1,0
 diamond,hmmer3,1,sandragodinhosilva/melange,Diamond,HMMER3,2,0,1,0
+diamond,memote,1,franciscozorrilla/metaGEM,Diamond,memote,2,0,1,0
 diffbind,bioconductor-chipseeker,1,niekwit/cut_and_run,DiffBind,ChIPseeker,2,0,1,0
 dorado,htslib,1,MPUSP/snakemake-ont-basecalling,Dorado,HTSlib,3,0,0,1
 dorado,seqkit,1,SiYangming/nanoseq.smk,Dorado,seqkit,2,0,1,0
@@ -789,7 +793,6 @@ emboss,samtools,1,tbenavi1/RetroDetector,EMBOSS,SAMtools,2,0,1,0
 epinano,post,1,loganylchen/NanoRNAMod,EpiNano,POST,3,0,0,1
 extract,CAT,1,IKIM-Essen/uncovar,EXTRACT,Cosolvent Analysis Toolkit (CAT),3,0,0,1
 extract,RAxML-NG,1,hzi-bifo/phylogeny-of-single-cells,EXTRACT,RAxML-NG,3,0,0,1
-extract,blaze,1,khanlab/SPIMprep,EXTRACT,BLAZE,3,0,0,1
 extract,clip,1,nismod/open-gira,EXTRACT,CLIP,3,0,0,1
 extract,gffutils,1,zavolanlab/mirflowz,EXTRACT,GFFutils,3,0,0,1
 extract,guppy,1,loganylchen/prep_public_nanoporeDRS_data,EXTRACT,GUPPY,3,0,0,1
@@ -848,7 +851,6 @@ filtlong,ngmlr,1,MPUSP/snakemake-ont-bacterial-variants,Filtlong,NGMLR,2,0,1,0
 filtlong,usearch,1,KasperSkytte/snakemake_usearch,Filtlong,USEARCH,2,0,1,0
 find,rust-bio,1,Addimator/compare_meth,FIND,Rust-Bio,3,0,0,1
 find,sample,1,Phlya/tagmap,FIND,SAMPLE,3,0,0,1
-focus,mosdepth,1,varlociraptor/varlociraptor-methylation-evaluation,FOCUS,mosdepth,3,0,0,1
 freebayes,multiqc,1,MPUSP/snakemake-simple-mapping,FreeBayes,MultiQC,2,0,1,0
 freebayes,rust-bio,1,snakemake-workflows/dna-seq-varlociraptor,FreeBayes,Rust-Bio,2,0,1,0
 freebayes,snpeff,1,MPUSP/snakemake-simple-mapping,FreeBayes,snpEff,2,0,1,0
@@ -899,8 +901,17 @@ gffread,pyfaidx,1,tdayris/fair_genome_indexer,gffread,pyfaidx,2,0,1,0
 gffread,samtools,1,tdayris/fair_genome_indexer,gffread,SAMtools,2,0,1,0
 gffread,singlecellexperiment,1,jma1991/chromium,gffread,SingleCellExperiment,2,0,1,0
 gffread,star,1,tdayris/fair_genome_indexer,gffread,STAR,2,0,1,0
+gffutils,bcftools,1,IKIM-Essen/uncovar,GFFutils,BCFtools,2,0,1,0
 gffutils,bedtools,1,zavolanlab/mirflowz,GFFutils,BEDTools,2,0,1,0
+gffutils,minimap2,1,IKIM-Essen/uncovar,GFFutils,Minimap2,2,0,1,0
 gffutils,pandas,1,SilvanCodes/1001_genomes_analysis,GFFutils,Pandas,2,0,1,0
+gffutils,pangolin,1,IKIM-Essen/uncovar,GFFutils,Pangolin,2,0,1,0
+gffutils,pysam,1,IKIM-Essen/uncovar,GFFutils,pysam,2,0,1,0
+gffutils,quality,1,IKIM-Essen/uncovar,GFFutils,QUALITY,3,0,0,1
+gffutils,quast,1,IKIM-Essen/uncovar,GFFutils,QUAST,2,0,1,0
+gffutils,rust-bio,1,IKIM-Essen/uncovar,GFFutils,Rust-Bio,2,0,1,0
+gffutils,samtools,1,IKIM-Essen/uncovar,GFFutils,SAMtools,2,0,1,0
+gffutils,snakemake,1,IKIM-Essen/uncovar,GFFutils,Snakemake,3,0,0,1
 ggtree,biopython,1,PathoGenOmics-Lab/VIPERA,ggtree,Biopython,2,0,1,0
 glmgampoi,sample,1,manuelphilip/Single-cell-analysis-Snakemake-workflow,glmGamPoi,SAMPLE,3,0,0,1
 gmap_build,gmap,1,juliawiggeshoff/AugusMake,gmap_build,GMAP,2,0,1,0
@@ -941,6 +952,7 @@ htslib,biopython,1,kircherlab/MPRAsnakeflow,HTSlib,Biopython,2,0,1,0
 htslib,bwa-mem2,1,3d-omics/hg_genotype,HTSlib,Bwa-mem2,2,0,1,0
 htslib,gatk,1,3d-omics/hg_genotype,HTSlib,GATK,2,0,1,0
 htslib,hmmcopy,1,tmweiskittel/tmw_analysis_emseq,HTSlib,HMMcopy,2,0,1,0
+htslib,pandas,1,kircherlab/MPRAsnakeflow,HTSlib,Pandas,2,0,1,0
 htslib,pybedtools,1,usnistgov/defrabb,HTSlib,Pybedtools,2,0,1,0
 htslib,pysam,1,kircherlab/MPRAsnakeflow,HTSlib,pysam,2,0,1,0
 htslib,snpeff,1,MPUSP/snakemake-simple-mapping,HTSlib,snpEff,2,0,1,0
@@ -1040,8 +1052,10 @@ medaka,pandas,1,MPUSP/snakemake-ont-bacterial-variants,Medaka,Pandas,2,0,1,0
 medaka,samtools,1,IKIM-Essen/uncovar,Medaka,SAMtools,2,0,1,0
 medaka,tensorflow,1,IKIM-Essen/uncovar,Medaka,TensorFlow,2,0,1,0
 medaka,vcftools,1,MPUSP/snakemake-ont-bacterial-variants,Medaka,VCFtools,2,0,1,0
+megahit,MetaBAT_2,1,franciscozorrilla/metaGEM,MEGAHIT,MetaBAT 2,2,0,1,0
 megahit,bbmap,1,metagenome-atlas/metagenome-assembly,MEGAHIT,BBMap,2,0,1,0
 megahit,busco,1,LiaOb21/FSP_assembly_benchmarking,MEGAHIT,BUSCO,2,0,1,0
+megahit,bwa,1,franciscozorrilla/metaGEM,MEGAHIT,BWA,2,0,1,0
 megahit,coverm,1,IKIM-Essen/ResMAG,MEGAHIT,CoverM,2,0,1,0
 megahit,dastool,1,IKIM-Essen/ResMAG,MEGAHIT,dastool,2,0,1,0
 megahit,metacoag,1,IKIM-Essen/ResMAG,MEGAHIT,MetaCoAG,2,0,1,0
@@ -1067,6 +1081,7 @@ minimap2,mosdepth,1,dlaehnemann/create-ecdna-testing-data,Minimap2,mosdepth,2,0,
 minimap2,pairtools,1,CBIbigA/hicstuff_pipeline,Minimap2,pairtools,2,0,1,0
 minimap2,pandas,1,mkrg01/genome_assembly_pipeline,Minimap2,Pandas,2,0,1,0
 minimap2,purge_dups,1,mkrg01/genome_assembly_pipeline,Minimap2,purge_dups,2,0,1,0
+minimap2,pysam,1,IKIM-Essen/uncovar,Minimap2,pysam,2,0,1,0
 minimap2,quast,1,IKIM-Essen/uncovar,Minimap2,QUAST,2,0,1,0
 minimap2,subread,1,mdondrup/ras_meta_transcriptomics,Minimap2,Subread,2,0,1,0
 minimap2,varlociraptor,1,snakemake-workflows/cyrcular-calling,Minimap2,varlociraptor,2,0,1,0
@@ -1078,9 +1093,8 @@ mosdepth,maftools,1,dlaehnemann/wgs-mosdepth-maftools-copy-numbers,mosdepth,maft
 mosdepth,samtools,1,dlaehnemann/create-sv-ci-testing-dataset,mosdepth,SAMtools,2,0,1,0
 mothur,plot,1,SchlossLab/mothur-snakemake-workflow,mothur,plot,3,0,0,1
 motifmatchr,count,1,friendsofstrandseq/mosaicatcher-pipeline,motifmatchr,Count,3,0,0,1
+mpralib,pandas,1,kircherlab/MPRAsnakeflow,MPRAlib,Pandas,2,0,1,0
 msa,Augur,1,cbg-ethz/V-pipe,msa,Augur,2,0,1,0
-msa,bowtie,1,cbg-ethz/V-pipe,msa,Bowtie,3,0,0,1
-msa,bwa,1,cbg-ethz/V-pipe,msa,BWA,3,0,0,1
 msa,lofreq,1,cbg-ethz/V-pipe,msa,lofreq,2,0,1,0
 msa,samtools,1,cbg-ethz/V-pipe,msa,SAMtools,3,0,0,1
 msprime,bcftools,1,milesroberts-123/slim-sweep-cnn,msprime,BCFtools,2,0,1,0
@@ -1092,6 +1106,7 @@ multiqc,pysam,1,niekwit/eCLIP,MultiQC,pysam,2,0,1,0
 multiqc,tetranscripts,1,niekwit/rna-seq-star-tetranscripts,MultiQC,TEtranscripts,2,0,1,0
 nanoplot,multiqc,1,MPUSP/snakemake-ont-bacterial-variants,NanoPlot,MultiQC,3,0,0,1
 nanosim,scikit-learn,1,snakemake-workflows/species-quantification,NanoSim,scikit-learn,2,0,1,0
+ncbi_datasets,annotationforge,1,tucca-cellag/tucca-rna-seq,NCBI Datasets,AnnotationForge,2,0,1,0
 ncbi_datasets,biopython,1,westerdijk-wm/snakemake-mlsa-ani,NCBI Datasets,Biopython,2,0,1,0
 ncbi_datasets,bwa,1,b-brankovics/bwa-gatk-fasttree-smkwf,NCBI Datasets,BWA,2,0,1,0
 ncbi_datasets,gatk,1,b-brankovics/bwa-gatk-fasttree-smkwf,NCBI Datasets,GATK,2,0,1,0
@@ -1100,6 +1115,7 @@ ncbi_datasets,metaquast,1,mdondrup/ras_meta_transcriptomics,NCBI Datasets,MetaQU
 ncbi_datasets,quast,1,westerdijk-wm/snakemake-mlsa-ani,NCBI Datasets,QUAST,2,0,1,0
 ncbi_datasets,samtools,1,b-brankovics/bwa-gatk-fasttree-smkwf,NCBI Datasets,SAMtools,2,0,1,0
 ncbi_datasets,snpeff,1,westerdijk-wm/smkwf-bwa-gatk-snpeff,NCBI Datasets,snpEff,2,0,1,0
+ncbi_datasets,tximeta,1,tucca-cellag/tucca-rna-seq,NCBI Datasets,tximeta,2,0,1,0
 ncbi_fcs,busco,1,LiaOb21/colora,NCBI fcs,BUSCO,2,0,1,0
 ncbi_fcs,bwa,1,LiaOb21/colora,NCBI fcs,BWA,2,0,1,0
 ncbi_fcs,purge_dups,1,LiaOb21/colora,NCBI fcs,purge_dups,2,0,1,0
@@ -1133,7 +1149,6 @@ pairtools,multiqc,1,regulatory-genomics/hic_sm,pairtools,MultiQC,2,0,1,0
 pandas,AGAT,1,magwenelab/WeavePop,Pandas,AGAT,2,0,1,0
 pandas,CAT,1,thomasbtf/sars-cov-2-wbe,Pandas,Cosolvent Analysis Toolkit (CAT),3,0,0,1
 pandas,PyRanges,1,SamBryce-Smith/LAPA_snakemake,Pandas,PyRanges,2,0,1,0
-pandas,altair,1,IKIM-Essen/QC_pre_NextSeq,Pandas,AltaiR,2,0,1,0
 pandas,anndata,1,snakemake-workflows/rna-longseq-de-isoform,Pandas,anndata,2,0,1,0
 pandas,bbmap,1,SiYangming/riboseq.smk,Pandas,BBMap,2,0,1,0
 pandas,bioconductor-chipseeker,1,niekwit/chip-seq,Pandas,ChIPseeker,2,0,1,0
@@ -1160,12 +1175,14 @@ pandas,primer3,1,Bioinflows-Bioversity-CIAT/tm-shift_designer,Pandas,Primer3,2,0
 pandas,pytorch,1,yeyuan98/rna_fish_analysis,Pandas,PyTorch,2,0,1,0
 pandas,scikit-learn,1,CVUA-RRW/FooDMe,Pandas,scikit-learn,2,0,1,0
 pandas,snpeff,1,PathoGenOmics-Lab/VIPERA,Pandas,snpEff,2,0,1,0
+pandas,trf,1,nate-d-olson/adotto-smk,Pandas,TRF,3,0,0,1
 pandas,unite,1,magwenelab/WeavePop,Pandas,unite,3,0,0,1
 pandas,vcftools,1,MPUSP/snakemake-ont-bacterial-variants,Pandas,VCFtools,2,0,1,0
 pandas,vsearch,1,monagrland/MB_Pipeline,Pandas,VSEARCH,2,0,1,0
 pangolin,bcftools,1,IKIM-Essen/uncovar,Pangolin,BCFtools,2,0,1,0
 pangolin,ggtree,1,PathoGenOmics-Lab/VIPERA,Pangolin,ggtree,2,0,1,0
 pangolin,plot,1,IKIM-Essen/uncovar,Pangolin,plot,3,0,0,1
+pangolin,pysam,1,IKIM-Essen/uncovar,Pangolin,pysam,2,0,1,0
 pangolin,snakemake,1,IKIM-Essen/uncovar,Pangolin,Snakemake,3,0,0,1
 parallel,diamond,1,bheimbu/annoSnake,GNU Parallel,Diamond,2,0,1,0
 parallel,pandas,1,bheimbu/annoSnake,GNU Parallel,Pandas,2,0,1,0
@@ -1176,7 +1193,6 @@ pbmm2,isoseq3,1,SilkeAllmannLab/pacbio_snakemake,pbmm2,IsoSeq3,2,0,1,0
 pbmm2,pysam,1,kircherlab/MPRAsnakeflow,pbmm2,pysam,2,0,1,0
 phantom,multiqc,1,DavideBrex/SpikeFlow,Phantom,MultiQC,3,0,0,1
 phantompeakqualtools,samtools,1,gynecoloji/snakemake_CutandRunseq,phantompeakqualtools,SAMtools,2,0,1,0
-pharokka,foldseek,1,TMs-code/phagefactor,Pharokka,Foldseek,3,0,0,1
 picard_tools,assign,1,baerlachlan/smk-rnaseq-gatk-variants,Picard,ASSIGN,3,0,0,1
 picard_tools,ataqv,1,niekwit/atac-seq,Picard,ataqv,2,0,1,0
 picard_tools,bamtools,1,SiYangming/isoseq.smk,Picard,BamTools,2,0,1,0
@@ -1203,14 +1219,12 @@ plot,demand,1,modelblocks-org/module_demand_electricity,plot,DeMAND,3,0,0,1
 plot,ibs,1,zjnolen/PopGLen,plot,IBS,3,0,0,1
 plot,snakemake,1,IKIM-Essen/uncovar,plot,Snakemake,3,0,0,1
 plot,theta,1,zjnolen/PopGLen,plot,ThETA,3,0,0,1
-post,bwa,1,solida-core/dima,POST,BWA,3,0,0,1
 predicthaplo,msa,1,cbg-ethz/V-pipe,PredictHaplo,msa,2,0,1,0
 predicthaplo,samtools,1,cbg-ethz/V-pipe,PredictHaplo,SAMtools,3,0,0,1
 prep,GraphAligner,1,loganylchen/NanoInsight,PreP,GraphAligner,3,0,0,1
 prep,minimap2,1,loganylchen/NanoInsight,PreP,Minimap2,3,0,0,1
 prep,plot,1,epigen/unsupervised_analysis,PreP,plot,3,0,0,1
 primer3,biopython,1,Bioinflows-Bioversity-CIAT/tm-shift_designer,Primer3,Biopython,2,0,1,0
-process,impute,1,gynecoloji/snakemake_scstseq,PROcess,impute,3,0,0,1
 process,multiqc,1,odcambc/dumpling,PROcess,MultiQC,3,0,0,1
 process,numpy,1,odcambc/dumpling,PROcess,NumPy,3,0,0,1
 process,theta,1,seankmartin/atn-sub-lfp-workflow,PROcess,ThETA,3,0,0,1
@@ -1266,25 +1280,34 @@ quality,bcftools,1,IKIM-Essen/uncovar,QUALITY,BCFtools,3,0,0,1
 quality,kraken2,1,IKIM-Essen/uncovar,QUALITY,kraken2,3,0,0,1
 quality,pangolin,1,IKIM-Essen/uncovar,QUALITY,Pangolin,3,0,0,1
 quality,plot,1,IKIM-Essen/uncovar,QUALITY,plot,3,0,0,1
+quality,pysam,1,IKIM-Essen/uncovar,QUALITY,pysam,3,0,0,1
 quality,rust-bio,1,IKIM-Essen/uncovar,QUALITY,Rust-Bio,3,0,0,1
 quality,snakemake,1,IKIM-Essen/uncovar,QUALITY,Snakemake,3,0,0,1
 quast,multiqc,1,JeremyTournayre/Pipeline-Holoruminant-Meta,QUAST,MultiQC,2,0,1,0
 quast,pandas,1,ClavelLab/genome-assembly,QUAST,Pandas,2,0,1,0
 quast,quality,1,IKIM-Essen/uncovar,QUAST,QUALITY,3,0,0,1
 ragtag,bwa,1,DSiB-G2/G2-CovPipeline,ragtag,BWA,2,0,1,0
+ragtag,pysam,1,IKIM-Essen/uncovar,ragtag,pysam,2,0,1,0
 ragtag,samtools,1,IKIM-Essen/uncovar,ragtag,SAMtools,2,0,1,0
 raxml,RAxML-NG,1,hzi-bifo/phylogeny-of-single-cells,RAxML,RAxML-NG,3,0,0,1
 raxml,ggtree,1,hzi-bifo/phylogeny-of-single-cells,RAxML,ggtree,3,0,0,1
 real,vg,1,milesroberts-123/poolseq-kmers,REAL,vg,3,0,0,1
 remap,impute,1,modelblocks-org/module_powerplants,remap,impute,3,0,0,1
+repeatmasker,EvidenceModeler,1,r1cheu/gnnotator,RepeatMasker,EvidenceModeler,2,0,1,0
 repeatmasker,diamond,1,mkrg01/genome_assembly_pipeline,RepeatMasker,Diamond,2,0,1,0
+repeatmasker,eviann,1,r1cheu/gnnotator,RepeatMasker,EviAnn,2,0,1,0
+repeatmasker,fgenesh,1,r1cheu/gnnotator,RepeatMasker,FGENESH,2,0,1,0
 repeatmasker,gffread,1,mkrg01/genome_assembly_pipeline,RepeatMasker,gffread,2,0,1,0
+repeatmasker,hisat2,1,r1cheu/gnnotator,RepeatMasker,HISAT2,2,0,1,0
+repeatmasker,miniprot,1,r1cheu/gnnotator,RepeatMasker,miniprot,2,0,1,0
 repeatmasker,pandas,1,mkrg01/genome_assembly_pipeline,RepeatMasker,Pandas,2,0,1,0
 repeatmasker,repeatmodeler,1,magwenelab/WeavePop,RepeatMasker,RepeatModeler,2,0,1,0
 repeatmasker,samtools,1,mkrg01/genome_assembly_pipeline,RepeatMasker,SAMtools,2,0,1,0
+repeatmasker,snap,1,r1cheu/gnnotator,RepeatMasker,SNAP,2,0,1,0
 repeatmodeler,repeatmasker,1,zjnolen/PopGLen,RepeatModeler,RepeatMasker,2,0,1,0
 reveal,biopython,1,SarahSaadain/pastForward,Reveal,Biopython,2,0,1,0
 rmats,bioconductor-maser,1,niekwit/rna-seq-star-rmats,rMATS,maser,2,0,1,0
+rsamtools,deseq2,1,niekwit/smallRNA-seq,Rsamtools,DESeq2,2,0,1,0
 rsamtools,rtracklayer,1,epigen/rnaseq_pipeline,Rsamtools,rtracklayer,2,0,1,0
 rsem,bowtie2,1,SiYangming/riboseq.smk,RSEM,Bowtie 2,2,0,1,0
 rtracklayer,annotationhub,1,niekwit/atac-seq,rtracklayer,AnnotationHub,2,0,1,0
@@ -1377,7 +1400,6 @@ samtools,sample,1,nixonlab/HERV_um_mets,SAMtools,SAMPLE,3,0,0,1
 samtools,somalier,1,snakemake-workflows/dna-seq-varlociraptor,SAMtools,somalier,2,0,1,0
 samtools,spades,1,IKIM-Essen/uncovar,SAMtools,SPAdes,2,0,1,0
 samtools,spladder,1,ylab-hi/ScanNeo2,SAMtools,SplAdder,2,0,1,0
-samtools,temp,1,ChaissonLab/SegDupAnnotation2,SAMtools,TEMP,3,0,0,1
 samtools,tetranscripts,1,niekwit/rna-seq-star-tetranscripts,SAMtools,TEtranscripts,2,0,1,0
 samtools,tiddit,1,jsquaredosquared/novocraft-sv-benchmarking,SAMtools,TIDDIT,2,0,1,0
 samtools,trf,1,nate-d-olson/adotto-smk,SAMtools,TRF,2,0,1,0
@@ -1501,6 +1523,7 @@ tabix,bedtools,1,ChaissonLab/SegDupAnnotation2,tabix,BEDTools,2,0,1,0
 tabix,clair3,1,EichlerLab/ONT_pipelines,tabix,Clair3,2,0,1,0
 tabix,hisat2,1,TRON-Bioinformatics/oblx,tabix,HISAT2,2,0,1,0
 tabix,numpy,1,open2c/distiller-sm,tabix,NumPy,2,0,1,0
+tabix,pysam,1,IKIM-Essen/uncovar,tabix,pysam,2,0,1,0
 tabix,slivar,1,NCI-CGR/TriosCompass_v2,tabix,slivar,2,0,1,0
 tabix,trio,1,NCI-CGR/TriosCompass_v2,tabix,trio,3,0,0,1
 tabix,trtools,1,NCI-CGR/TriosCompass_v2,tabix,TRTools,2,0,1,0
@@ -1514,7 +1537,6 @@ trim_galore,bismark,1,lueong1/cfdna_methylation_public,Trim Galore,Bismark,2,0,1
 trim_galore,fastp,1,aryazand/fastq-process-align,Trim Galore,fastp,2,0,1,0
 trim_galore,minimap2,1,aryazand/fastq-process-align,Trim Galore,Minimap2,2,0,1,0
 trim_galore,multiqc,1,aryazand/fastq-process-align,Trim Galore,MultiQC,2,0,1,0
-trim_galore,post,1,solida-core/dima,Trim Galore,POST,3,0,0,1
 trim_galore,salmon,1,niekwit/rna-seq-salmon-deseq2,Trim Galore,Salmon,2,0,1,0
 trim_galore,samtools,1,niekwit/methyl-seq,Trim Galore,SAMtools,2,0,1,0
 trimal,iqtree,1,ethan-baldwin/hybpiper_astral_pipeline,trimAl,iqtree,2,0,1,0
@@ -1591,4 +1613,3 @@ yahs,quast,1,LiaOb21/colora,YaHS,QUAST,2,0,1,0
 yahs,repeatmasker,1,mkrg01/genome_assembly_pipeline,YaHS,RepeatMasker,2,0,1,0
 yahs,seqkit,1,mkrg01/genome_assembly_pipeline,YaHS,seqkit,2,0,1,0
 yara,samtools,1,ylab-hi/ScanNeo2,yara,SAMtools,2,0,1,0
-zarr,BigStitcher,1,khanlab/SPIMprep,bio2zarr,BigStitcher,3,0,0,1

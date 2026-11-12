@@ -10,3 +10,4 @@ tool	action	biotoolsID	note
 rust-bio-tools	map	rust-bio	maps to Rust-Bio
 bamcoverage	map	deeptools	Is part of DeepTools
 fasterq-dump	map	fastER	Part of fastER
+makeblastdb    map	blast	Part of BLAST suite
