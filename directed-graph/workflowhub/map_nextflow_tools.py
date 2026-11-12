@@ -15,6 +15,9 @@ It outputs:
   - data/biotools/nextflow/biotools_pairs.csv     one row per workflow and pair       } the same columns as the
   - data/biotools/nextflow/biotools_edges.csv     one row per pair, over workflows    } Galaxy files, with bio.tools
   - data/biotools/nextflow/biotools_nodes.csv     one row per bio.tools ID            } names for ToolShed names
+  - data/biotools/nextflow/biotools_{pairs,edges,nodes}_without_nfcore.csv   the same without the workflows of
+                                                  the WorkflowHub space nf-core (column nf_core of
+                                                  nextflow_workflows.csv), which another tool gets from nf-core
   - data/biotools/nextflow/workflows/<id>_v<version>.csv   the bio.tools DAG of each workflow (for Cytoscape)
 
 Usage (from the repository root, after extract_nextflow_dags.py):
@@ -55,6 +58,7 @@ DAG_DIR = HERE / "data" / "nextflow"
 CURATED_FILE = HERE / "nextflow_curated_map.tsv"
 MAP_DIR = MAPPING / "nextflow"
 OUT_DIR = BIOTOOLS_DIR / "nextflow"
+SUMMARY_FILE = HERE / "data" / "download" / "nextflow" / "nextflow_workflows.csv"  # download_workflowhub_nextflow.py
 EXAMPLES = 3  # example processes / workflows per tool in the TSVs
 METHODS = ("curated", "meta", "biotools_id", "biotools_name", "biotools_url", "codex", "prefix")
 
@@ -296,31 +300,50 @@ def write_to_curate(tools: dict[str, ToolStats], index: BiotoolsIndex) -> int:
     return len(rows)
 
 
-def write_biotools(pairs: dict[str, list[BiotoolsPair]], index: BiotoolsIndex, with_paper: set[str]) -> None:
-    """The same three files as map_galaxy_tools.py, with the bio.tools names in place of the ToolShed names,
-    and one CSV per workflow."""
+def load_nfcore_ids() -> set[str] | None:
+    """IDs of the workflows in the WorkflowHub space nf-core (column nf_core of nextflow_workflows.csv),
+    None if the summary has no such column."""
+    if not SUMMARY_FILE.exists():
+        return None
+    with SUMMARY_FILE.open(encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    if not rows or "nf_core" not in rows[0]:
+        return None
+    return {r["id"] for r in rows if r["nf_core"] == "true"}
+
+
+def write_workflow_csvs(pairs: dict[str, list[BiotoolsPair]]) -> None:
+    """The bio.tools DAG of each workflow, for Cytoscape."""
     workflows_dir = OUT_DIR / "workflows"
     workflows_dir.mkdir(parents=True, exist_ok=True)
+    for name, workflow_pairs in pairs.items():
+        unique = sorted({(p.source, p.target, p.kind, p.source_node, p.target_node) for p in workflow_pairs})
+        with (workflows_dir / f"{name}.csv").open("w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["source", "target", "kind", "source_node", "target_node"])
+            writer.writerows(unique)
+
+
+def write_biotools(
+    pairs: dict[str, list[BiotoolsPair]], index: BiotoolsIndex, with_paper: set[str], suffix: str = ""
+) -> None:
+    """The same three files as map_galaxy_tools.py, with the bio.tools names in place of the ToolShed names,
+    over the given workflows; suffix is added to the file names."""
     edge_workflows: dict[tuple[str, str], set[str]] = defaultdict(set)
     node_workflows: dict[str, set[str]] = defaultdict(set)
     n_pairs = 0
-    with (OUT_DIR / "biotools_pairs.csv").open("w", newline="", encoding="utf-8") as f:
+    with (OUT_DIR / f"biotools_pairs{suffix}.csv").open("w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(["workflow_id", "source", "target", "source_biotools_name", "target_biotools_name"])
         for name, workflow_pairs in pairs.items():
             workflow_id = name.split("_v")[0]
-            unique = sorted({(p.source, p.target, p.kind, p.source_node, p.target_node) for p in workflow_pairs})
-            with (workflows_dir / f"{name}.csv").open("w", newline="", encoding="utf-8") as wf:
-                per_workflow = csv.writer(wf)
-                per_workflow.writerow(["source", "target", "kind", "source_node", "target_node"])
-                per_workflow.writerows(unique)
-            for source, target in sorted({(p[0], p[1]) for p in unique}):  # like Galaxy: once per workflow
+            for source, target in sorted({(p.source, p.target) for p in workflow_pairs}):  # once per workflow
                 writer.writerow([workflow_id, source, target, index.name_of(source), index.name_of(target)])
                 n_pairs += 1
                 edge_workflows[(source, target)].add(workflow_id)
                 node_workflows[source].add(workflow_id)
                 node_workflows[target].add(workflow_id)
-    with (OUT_DIR / "biotools_edges.csv").open("w", newline="", encoding="utf-8") as f:
+    with (OUT_DIR / f"biotools_edges{suffix}.csv").open("w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(
             ["source", "target", "n_workflows", "workflow_ids", "source_biotools_name", "target_biotools_name"]
@@ -336,14 +359,14 @@ def write_biotools(pairs: dict[str, list[BiotoolsPair]], index: BiotoolsIndex, w
                     index.name_of(target),
                 ]
             )
-    with (OUT_DIR / "biotools_nodes.csv").open("w", newline="", encoding="utf-8") as f:
+    with (OUT_DIR / f"biotools_nodes{suffix}.csv").open("w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(["biotoolsID", "biotools_name", "n_workflows", "has_publication"])
         for biotools_id, ids in sorted(node_workflows.items(), key=lambda kv: (-len(kv[1]), kv[0])):
             writer.writerow([biotools_id, index.name_of(biotools_id), len(ids), str(biotools_id in with_paper).lower()])
     print(
-        f"Wrote {OUT_DIR}: {n_pairs} pairs, {len(edge_workflows)} edges, "
-        f"{len(node_workflows)} bio.tools nodes, {len(pairs)} workflow CSVs"
+        f"Wrote {OUT_DIR}/biotools_*{suffix}.csv: {len(pairs)} workflows, {n_pairs} pairs, "
+        f"{len(edge_workflows)} edges, {len(node_workflows)} bio.tools nodes"
     )
 
 
@@ -390,7 +413,14 @@ def main() -> None:
     for s in unmapped[:15]:
         tool = next(t for t, v in tools.items() if v is s)
         print(f"  {len(s.workflows):5d}  {tool}  ({_examples(s.processes)})")
+    write_workflow_csvs(pairs)
     write_biotools(pairs, index, with_paper)
+    nfcore = load_nfcore_ids()
+    if nfcore is None:
+        print(f"No nf_core column in {SUMMARY_FILE}: run download_workflowhub_nextflow.py --summary-only")
+    else:  # the nf-core pipelines also come directly from nf-core, with another tool
+        others = {name: p for name, p in pairs.items() if name.split("_v")[0] not in nfcore}
+        write_biotools(others, index, with_paper, "_without_nfcore")
 
 
 if __name__ == "__main__":

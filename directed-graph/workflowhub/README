@@ -61,7 +61,7 @@ data/
     ├── biotools_pairs.csv      per workflow
     ├── biotools_edges.csv      edges, to compare with the literature graph
     ├── biotools_nodes.csv      node attributes (ToolShed names, n_workflows)
-    └── nextflow/               map_nextflow_tools.py: the same three files, and workflows/<id>_v<version>.csv
+    └── nextflow/               map_nextflow_tools.py: the same three files, again *_without_nfcore.csv, and workflows/<id>_v<version>.csv
 ```
 
 Main output is `data/biotools/biotools_edges.csv`, which has the number of workflows each tool pair appears in and can be used to compare with the literature graph.
@@ -76,7 +76,7 @@ python3 directed-graph/workflowhub/extract_nextflow_dags.py           # DAG of e
 python3 directed-graph/workflowhub/map_nextflow_tools.py              # tool nodes -> bio.tools IDs
 ```
 
-`download_workflowhub_nextflow.py` downloads every Nextflow workflow (metadata and crates are shared with the Galaxy download) and unpacks it to `data/download/nextflow/<id>_v<version>/`. Incomplete crates (only a link to a git repository, empty or HTML `.nf` files, included files missing) are filled from a shallow `git clone` of the registered repository (needs git; `--no-clone` skips it). Each crate is tried once; `.cloned_from` records the result.
+`download_workflowhub_nextflow.py` downloads every Nextflow workflow (metadata and crates are shared with the Galaxy download) and unpacks it to `data/download/nextflow/<id>_v<version>/`. Incomplete crates (only a link to a git repository, empty or HTML `.nf` files, included files missing) are filled from a shallow `git clone` of the registered repository (needs git; `--no-clone` skips it). Each crate is tried once; `.cloned_from` records the result. `nextflow_workflows.csv` marks the workflows of the WorkflowHub space nf-core (`nf_core` = true/false); `--summary-only` rebuilds it from the saved files.
 
 `extract_nextflow_dags.py` (code in `nfdag/`) reads the `.nf` files without running them, for DSL1 and DSL2, with every if/else branch (the union over all parameter choices). Each process is split into the tools it runs, in script order: `bwa-mem2 | samtools` becomes `…/bwa-mem2 → …/samtools` (`kind=chain`); edges between processes (`kind=dag`) leave the last tool and reach the first. The tools of a process are its executables, restricted to the software the module declares (meta.yml, conda, biocontainers); a process that only runs its own scripts keeps one node named after the process. Tools in `nextflow_excluded_tools.txt` (compression, language runtimes, ...; globs like `r-*` allowed) never become nodes and do not cut the flow. `nodes.csv` has all information found per tool node (executables, own scripts, containers, conda packages, versions.yml tools, nf-core meta.yml with bio.tools IDs); `warnings.log` what could not be resolved.
 
@@ -108,6 +108,7 @@ Details:
 Outputs:
 - `data/mapping/nextflow/nextflow_tool_map.tsv`: one row per tool name, with `biotoolsID`, `biotools_name`, `method`, the candidates `codex_biotoolsID` and `match_biotoolsID` (the best bio.tools match), and where the tool is used.
 - `data/biotools/nextflow/biotools_pairs.csv`, `biotools_edges.csv`, `biotools_nodes.csv`: the same columns as the Galaxy files, with the bio.tools names (`source_biotools_name`, `target_biotools_name`, `biotools_name`) in place of the ToolShed names.
+- `data/biotools/nextflow/biotools_{pairs,edges,nodes}_without_nfcore.csv`: the same, without the workflows of the WorkflowHub space nf-core (column `nf_core` of `nextflow_workflows.csv`), because the nf-core pipelines are also downloaded directly from nf-core by another tool.
 - `data/biotools/nextflow/workflows/<id>_v<version>.csv`: the bio.tools DAG of each workflow (`source`, `target`, `kind` = dag/chain/bridged, `source_node`, `target_node`), for Cytoscape.
 
 ### Curation

@@ -241,8 +241,8 @@ pear	pear	PEAR	biotools_id	pear	pear	3	3	0	PEAR	local/pear;nf-core/pear	dnalinux
 percolator	percolator	Percolator	biotools_id		percolator	3	4	0	execute_percolator;get_software_versions		luxii/progfastagen:1.0		true
 perl-bioperl	bioperl	BioPerl	biotools_id	bioperl	bioperl	3	3	0	SELFCOMP_SPLITFASTA;PERL_BIOPERL	local/selfcomp_splitfasta;local/selfcomp/splitfasta;local/perl/bioperl		conda-forge::perl-bioperl=1.7.8-1;bioconda::perl-bioperl=1.7.2	true
 phantompeakqualtools	phantompeakqualtools	phantompeakqualtools	biotools_id		phantompeakqualtools	3	3	0	PHANTOMPEAKQUALTOOLS;phantomPeakQualTools;PHANTOM_PEAKS	r/phantompeakqualtools;local/qc	quay.io/biocontainers/phantompeakqualtools:1.2.2--0;quay.io/biocontainers/phantompeakqualtools:1.2.2--hdfd78af_1		true
-pigz_compress	unmapped					3	13	67	PIGZ_COMPRESS	nf-core/pigz/compress		pigz=2.8	false
-pigz_uncompress	unmapped					3	7	76	PIGZ_UNCOMPRESS	nf-core/pigz/uncompress		conda-forge::pigz	false
+pigz_compress	drop		curated			3	13	0	PIGZ_COMPRESS	nf-core/pigz/compress		pigz=2.8	false
+pigz_uncompress	drop		curated			3	7	0	PIGZ_UNCOMPRESS	nf-core/pigz/uncompress		conda-forge::pigz	false
 plotfingerprint	unmapped					3	5	12	get_software_versions;plotFingerprint;MergedLibPlotFingerprint	local/deeptools	nciccbr/ccbr_deeptools_3.5.3:v1		false
 plotprofile	unmapped					3	4	8	plotProfile;MergedLibPlotProfile;MergedRepPlotProfile	local/deeptools	nciccbr/ccbr_deeptools_3.5.3:v1		false
 preprocess_transcripts_fasta_gencode	unmapped					3	3	23	PREPROCESS_TRANSCRIPTS_FASTA_GENCODE	local/preprocess_transcripts_fasta_gencode	https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/4a/4ad78019c37ff4ab22c0dff6ab1af655c6438562ef644d0323861a97971d7694/data	conda-forge::sed=4.7	false
