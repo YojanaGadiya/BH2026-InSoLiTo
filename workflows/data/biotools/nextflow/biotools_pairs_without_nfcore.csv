@@ -235,6 +235,7 @@ workflow_id,source,target,source_biotools_name,target_biotools_name,confidence
 416,megahit,Flye,MEGAHIT,Flye,2
 416,megahit,bwa,MEGAHIT,BWA,2
 416,prodigal,OrthoFinder,Prodigal,OrthoFinder,2
+416,prodigal,blast,Prodigal,BLAST,2
 416,quast,eukcc,QUAST,EukCC,2
 416,ragtag,quast,ragtag,QUAST,2
 416,samtools,braker3,SAMtools,BRAKER3,2
@@ -391,6 +392,7 @@ workflow_id,source,target,source_biotools_name,target_biotools_name,confidence
 462,prokka,samtools,Prokka,SAMtools,2
 462,prokka,seqtk,Prokka,seqtk,2
 462,prokka,trnascan-se,Prokka,Trnascan-SE,2
+556,extract,score,EXTRACT,score,3
 560,IPA,busco,IPA,BUSCO,2
 560,IPA,quast,IPA,QUAST,2
 560,samtools,jellyfish,SAMtools,Jellyfish,2
@@ -1017,11 +1019,14 @@ workflow_id,source,target,source_biotools_name,target_biotools_name,confidence
 1321,samtools,minimap2,SAMtools,Minimap2,2
 1321,seqtk,gap,seqtk,GAP,3
 1321,windowmasker,extract,WindowMasker,EXTRACT,3
+1330,diamond,find,Diamond,FIND,3
 1330,extract,bedtools,EXTRACT,BEDTools,3
+1330,extract,blast,EXTRACT,BLAST,3
 1330,extract,busco,EXTRACT,BUSCO,3
 1330,extract,diamond,EXTRACT,Diamond,3
 1330,extract,omamer,EXTRACT,OMAmer,3
 1330,extract,plot,EXTRACT,plot,3
+1330,find,plot,FIND,plot,3
 1330,hisat2,samtools,HISAT2,SAMtools,2
 1330,omamer,omark,OMAmer,OMArk,2
 1330,omark,plot,OMArk,plot,3
@@ -1111,6 +1116,7 @@ workflow_id,source,target,source_biotools_name,target_biotools_name,confidence
 1864,gatk,haplocheck,GATK,haplocheck,2
 1864,gatk,mosdepth,GATK,mosdepth,2
 1864,gatk,samtools,GATK,SAMtools,2
+1864,gatk,tabix,GATK,tabix,2
 1864,gatk,vep,GATK,Variant Effect Predictor (VEP),2
 1864,haplocheck,gatk,haplocheck,GATK,2
 1864,samtools,ExpansionHunter,SAMtools,ExpansionHunter,2
@@ -1247,6 +1253,7 @@ workflow_id,source,target,source_biotools_name,target_biotools_name,confidence
 2053,MetaBAT_2,multiqc,MetaBAT 2,MultiQC,2
 2053,assign,plot,ASSIGN,plot,3
 2053,barrnap,multiqc,Barrnap,MultiQC,2
+2053,bedtools,multiqc,BEDTools,MultiQC,2
 2053,binette,drep,Binette,dRep,2
 2053,binette,multiqc,Binette,MultiQC,2
 2053,bowtie2,samtools,Bowtie 2,SAMtools,2
@@ -1279,6 +1286,7 @@ workflow_id,source,target,source_biotools_name,target_biotools_name,confidence
 2053,drep,multiqc,dRep,MultiQC,2
 2053,eggnog-mapper,multiqc,EggNOG-mapper,MultiQC,2
 2053,fastqc,multiqc,FastQC,MultiQC,2
+2053,featurecounts,bedtools,FeatureCounts,BEDTools,2
 2053,genomes,multiqc,genomes,MultiQC,3
 2053,hifiasm-meta,multiqc,Hifiasm-meta,MultiQC,2
 2053,kaiju,multiqc,Kaiju,MultiQC,2

@@ -1,4 +1,4 @@
-# Executables that never become tool nodes of the Nextflow DAGs (read by nfdag / extract_nextflow_dags.py).
+# Executables that never become tool nodes of the Nextflow DAGs (read by nfdag / 02_extract_nextflow_dags.py).
 # One name per line, case-insensitive; '#' starts a comment.
 # An excluded tool disappears from its process and the flow stays connected: `megahit | pigz` becomes `megahit`.
 # Generic shell commands (cat, sed, awk, ...) are already skipped in nfdag/shell.py (SHELL_SKIP).

@@ -22,10 +22,10 @@ trim_galore,multiqc,14,44;874;965;971;972;976;988;997;998;1000;1016;1018;1022;17
 bcftools,multiqc,13,19;192;836;967;984;995;1020;1027;1030;1226;1293;1307;2212,BCFtools,MultiQC,1,3,10,0
 quast,multiqc,13,19;192;966;995;1005;1027;1106;1263;1763;2053;2171;2181;2217,QUAST,MultiQC,1,4,9,0
 samtools,minimap2,13,665;813;975;995;1002;1106;1320;1321;1888;2053;2160;2204;2217,SAMtools,Minimap2,2,0,13,0
+bedtools,multiqc,12,452;874;970;972;976;990;998;1002;1018;1027;1307;2053,BEDTools,MultiQC,1,2,10,0
 bowtie2,multiqc,12,874;970;974;975;976;995;996;1015;1023;1025;1236;2244,Bowtie 2,MultiQC,2,0,12,0
 gatk,samtools,12,417;419;442;874;1014;1017;1019;1020;1030;1862;1864;2212,GATK,SAMtools,2,0,12,0
 samtools,fastqc,12,44;884;968;991;1017;1020;1030;1735;1763;2053;2171;2212,SAMtools,FastQC,1,6,6,0
-bedtools,multiqc,11,452;874;970;972;976;990;998;1002;1018;1027;1307,BEDTools,MultiQC,1,2,9,0
 gatk,bcftools,11,417;874;1014;1019;1020;1030;1307;1862;1864;2200;2212,GATK,BCFtools,2,0,11,0
 kraken2,multiqc,11,44;966;974;978;988;1025;1027;1263;2037;2197;2244,kraken2,MultiQC,1,7,4,0
 pandas,multiqc,11,963;974;984;987;990;995;1178;1217;1307;2208;2217,Pandas,MultiQC,2,0,11,0
@@ -138,6 +138,7 @@ freebayes,bcftools,4,192;995;1020;1030,FreeBayes,BCFtools,1,1,3,0
 gatk,deepvariant,4,1014;1020;1030;1862,GATK,DeepVariant,2,0,4,0
 gatk,htslib,4,1014;1019;1020;2212,GATK,HTSlib,2,0,4,0
 gatk,snpeff,4,874;1019;1020;1030,GATK,snpEff,2,0,4,0
+gatk,tabix,4,874;1014;1030;1864,GATK,tabix,2,0,4,0
 gffread,hisat2,4,44;264;1236;2212,gffread,HISAT2,1,3,1,0
 hmmer3,multiqc,4,987;1009;1954;2177,HMMER3,MultiQC,2,0,4,0
 htslib,gatk,4,1019;1020;1763;2212,HTSlib,GATK,2,0,4,0
@@ -261,7 +262,6 @@ gatk,manta_sv,3,1014;1020;2212,GATK,Manta,2,0,3,0
 gatk,picard_tools,3,874;1014;1017,GATK,Picard,2,0,3,0
 gatk,sambamba,3,417;419;1014,GATK,Sambamba,2,0,3,0
 gatk,strelka,3,1020;1030;2212,GATK,Strelka,2,0,3,0
-gatk,tabix,3,874;1014;1030,GATK,tabix,2,0,3,0
 gatk,tiddit,3,1014;1020;1030,GATK,TIDDIT,2,0,3,0
 gatk,vcftools,3,1020;1030;2212,GATK,VCFtools,2,0,3,0
 gffread,busco,3,1058;2141;2181,gffread,BUSCO,1,2,1,0
@@ -1316,6 +1316,7 @@ biostrings,multiqc,1,975,Biostrings,MultiQC,2,0,1,0
 biostrings,phyloseq,1,964,Biostrings,phyloseq,1,1,0,0
 biostrings,picrust2,1,964,Biostrings,PICRUSt2,1,1,0,0
 biostrings,qiime2,1,964,Biostrings,QIIME 2,1,1,0,0
+biostrings,rsamtools,1,975,Biostrings,Rsamtools,2,0,1,0
 biostrings,seqtk,1,964,Biostrings,seqtk,1,1,0,0
 biostrings,shortread,1,975,Biostrings,ShortRead,2,0,1,0
 biostrings,vsearch,1,964,Biostrings,VSEARCH,1,1,0,0
@@ -1642,6 +1643,7 @@ diamond,assign,1,2053,Diamond,ASSIGN,3,0,0,1
 diamond,best,1,2053,Diamond,BEST,3,0,0,1
 diamond,blast,1,2239,Diamond,BLAST,3,0,0,1
 diamond,bracken,1,1025,Diamond,Bracken,1,1,0,0
+diamond,find,1,1330,Diamond,FIND,3,0,0,1
 diamond,ganon,1,1025,Diamond,Ganon,1,1,0,0
 diamond,krakentools,1,1025,Diamond,KrakenTools,1,1,0,0
 diamond,metaphlan,1,1025,Diamond,MetaPhlAn,1,1,0,0
@@ -1698,12 +1700,14 @@ exomedepth,bedops,1,383,ExomeDepth,Bedops,3,0,0,1
 exomedepth,cnv,1,1864,ExomeDepth,PennCNV,3,0,0,1
 extract,MAFFT,1,1782,EXTRACT,MAFFT,3,0,0,1
 extract,UCSC_Genome_Browser_Utilities,1,813,EXTRACT,UCSC Genome Browser Utilities,3,0,0,1
+extract,blast,1,1330,EXTRACT,BLAST,3,0,0,1
 extract,busco,1,1330,EXTRACT,BUSCO,3,0,0,1
 extract,diamond,1,1330,EXTRACT,Diamond,3,0,0,1
 extract,omamer,1,1330,EXTRACT,OMAmer,3,0,0,1
 extract,plot,1,1330,EXTRACT,plot,3,0,0,1
 extract,rna,1,982,EXTRACT,RNA,3,0,0,1
 extract,samtools,1,1026,EXTRACT,SAMtools,3,0,0,1
+extract,score,1,556,EXTRACT,score,3,0,0,1
 extract,star,1,1026,EXTRACT,STAR,3,0,0,1
 extract,tabix,1,813,EXTRACT,tabix,3,0,0,1
 extract,tximport,1,982,EXTRACT,tximport,3,0,0,1
@@ -1860,6 +1864,7 @@ fastx-toolkit,miRTop,1,1023,FASTX-Toolkit,miRTop,2,0,1,0
 fastx-toolkit,mirdeep2,1,1023,FASTX-Toolkit,miRDeep2,2,0,1,0
 fastx-toolkit,multiqc,1,1023,FASTX-Toolkit,MultiQC,2,0,1,0
 fastx-toolkit,samtools,1,1023,FASTX-Toolkit,SAMtools,2,0,1,0
+featurecounts,bedtools,1,2053,FeatureCounts,BEDTools,2,0,1,0
 featurecounts,edger,1,1018,FeatureCounts,edgeR,2,0,1,0
 featurecounts,preseq,1,971,FeatureCounts,preseq,2,0,1,0
 fgbio,Sentieon_DNASeq,1,1020,fgbio,Sentieon DNASeq,1,1,0,0
@@ -1923,6 +1928,7 @@ find,kaiju,1,1742,FIND,Kaiju,2,0,1,0
 find,kmcp,1,1742,FIND,KMCP,2,0,1,0
 find,kofamscan,1,997,FIND,kofamscan,2,0,1,0
 find,kraken2,1,1742,FIND,kraken2,2,0,1,0
+find,plot,1,1330,FIND,plot,3,0,0,1
 find,seqkit,1,1742,FIND,seqkit,2,0,1,0
 find,sourmash,1,1742,FIND,sourmash,2,0,1,0
 find,sylph,1,1742,FIND,sylph,2,0,1,0
@@ -2455,6 +2461,7 @@ minimap2,purge_dups,1,1106,Minimap2,purge_dups,2,0,1,0
 minimap2,pysam,1,975,Minimap2,pysam,2,0,1,0
 minimap2,quast,1,1325,Minimap2,QUAST,2,0,1,0
 minimap2,ragtag,1,1325,Minimap2,ragtag,2,0,1,0
+minimap2,rsamtools,1,975,Minimap2,Rsamtools,2,0,1,0
 minimap2,semibin,1,995,Minimap2,SemiBin,2,0,1,0
 minimap2,seqtk,1,683,Minimap2,seqtk,2,0,1,0
 minimap2,vg,1,19,Minimap2,vg,2,0,1,0
@@ -2707,6 +2714,7 @@ prodigal,ampir,1,987,Prodigal,ampir,1,1,0,0
 prodigal,amplify,1,987,Prodigal,AMPlify,1,1,0,0
 prodigal,amrfinderplus,1,987,Prodigal,AMRFinderPlus,1,1,0,0
 prodigal,antismash,1,987,Prodigal,antiSMASH,1,1,0,0
+prodigal,blast,1,416,Prodigal,BLAST,2,0,1,0
 prodigal,dbcan,1,987,Prodigal,dbCAN,1,1,0,0
 prodigal,deeparg,1,987,Prodigal,DeepARG,2,0,1,0
 prodigal,diamond,1,997,Prodigal,Diamond,1,1,0,0
@@ -2761,6 +2769,7 @@ pysam,bamtools,1,1179,pysam,BamTools,2,0,1,0
 pysam,biopython,1,967,pysam,Biopython,2,0,1,0
 pysam,picard_tools,1,1179,pysam,Picard,2,0,1,0
 pysam,pysamstats,1,1757,pysam,pysamstats,2,0,1,0
+pysam,rsamtools,1,975,pysam,Rsamtools,2,0,1,0
 pysam,samtools,1,1179,pysam,SAMtools,2,0,1,0
 pysam,umi-tools,1,1179,pysam,UMI-tools,2,0,1,0
 qiime,bioconductor-treesummarizedexperiment,1,964,QIIME,TreeSummarizedExperiment,2,0,1,0
@@ -2976,6 +2985,7 @@ samtools,regtools,1,1330,SAMtools,regtools,2,0,1,0
 samtools,ribotricer,1,1016,SAMtools,Ribotricer,1,1,0,0
 samtools,ribowaltz,1,1016,SAMtools,riboWaltz,1,1,0,0
 samtools,rmats,1,1018,SAMtools,rMATS,2,0,1,0
+samtools,rsamtools,1,975,SAMtools,Rsamtools,2,0,1,0
 samtools,rsem,1,44,SAMtools,RSEM,2,0,1,0
 samtools,rtracklayer,1,990,SAMtools,rtracklayer,2,0,1,0
 samtools,sam,1,1108,SAMtools,SAM,2,0,1,0
@@ -3230,6 +3240,7 @@ sra,multiqc,1,986,SRA,MultiQC,3,0,0,1
 stager,multiqc,1,1018,stageR,MultiQC,2,0,1,0
 star,Arriba,1,1017,STAR,Arriba,1,1,0,0
 star,LinX,1,1006,STAR,LinX,2,0,1,0
+star,Sentieon_DNASeq,1,44,STAR,Sentieon DNASeq,3,0,0,1
 star,amber,1,1006,STAR,AMBER,2,0,1,0
 star,bamtools,1,1006,STAR,BamTools,2,0,1,0
 star,bowtie,1,969,STAR,Bowtie,2,0,1,0

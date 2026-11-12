@@ -1,4 +1,4 @@
-# Hand-curated bio.tools mapping of Nextflow tool nodes (read by map_nextflow_tools.py). Tab-separated.
+# Hand-curated bio.tools mapping of Nextflow tool nodes (read by 03_map_nextflow_tools.py). Tab-separated.
 # tool:       tool name as in nodes.csv (case-insensitive); for processes that only run own scripts, the process name
 # action:     map  = use biotoolsID (several IDs separated by ";" make a chain, e.g. bwa;samtools)
 #             drop = not a bio.tools tool: the node goes, its neighbours are connected
@@ -41,4 +41,4 @@ genomecoveragebed	map	bedtools_genomecoveragebed_histogram	Weird name/ID in biot
 git	drop		mostly used for download, not an analysis step
 cram_filter	map	cramtools	CRAMTools
 sentieon	map	Sentieon_DNASeq	Sentieon DNASeq
-makeblastdb    map	blast	Part of BLAST suite
+makeblastdb	map	blast	Part of BLAST suite

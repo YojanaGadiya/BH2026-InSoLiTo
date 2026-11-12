@@ -1,17 +1,12 @@
 tool	action	biotoolsID	note	suggestions	biotools_name	codex_biotoolsID	match_biotoolsID	n_workflows	n_nodes	lost_edges	processes	modules	containers	conda
-quarto			unmapped	quatgo (QUATgo); quanto (QUANTO); matplotlib (Matplotlib); base (BASE)				7	10	203	SCORE_REPORT;QUARTONOTEBOOK;QUARTO	local/score_report;nf-core/quartonotebook;local/quarto	community.wave.seqera.io/library/jupyter_libxml2-conda-x86_64_libxml2-devel-conda-x86_64_matplotlib_pruned:a244b989a0cdf3e5;https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/5e/5e7b982d1dc8ff674a706ec01ed098853401975e3819505fcf11df284c498952/data	conda-forge::jupyter=1.0.0;conda-forge::matplotlib=3.4.3;conda-forge::papermill=2.4.0;conda-forge::quarto=1.5.57;conda-forge::r-rmarkdown=2.25;conda-forge::jupyter=1.1.1;conda-forge::matplotlib=3.10.3;conda-forge::papermill=2.6.0;conda-forge::quarto=1.7.31;conda-forge::r-rmarkdown=2.29
 csvtk			unmapped					6	31	124	compress_bed;extract_cs_variants;extract_lead_cc_signal	prepare_molecular_traits;susie;extract_cc_signal	quay.io/eqtlcatalogue/qtlmap:v20.05.1;quay.io/eqtlcatalogue/susie-finemapping:v20.08.1	conda-forge::csvtk=0.37.0;bioconda::csvtk=0.31.0
-next			unmapped	knext (KNeXT); kinext (KiNext); nextsv (NextSV)				6	18	36	STAR_GENOMEPARAMS_UPGRADE;NORMALIZE_BBMAP_IDS;FIX_HEADER_JASMINE	local/star_genomeparams_upgrade;local/normalize_bbmap_ids;local/fix_header_sv/jasmine	https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/ce/cee0212dfecd678e2742f70d5a2c2868b54334a52dcd20d63505e7414ecdb7a7/data;community.wave.seqera.io/library/gawk:5.3.1--e09efb5dfc4b8156	conda-forge::gawk=5.3.1;conda-forge::gawk=5.3.0
 aria2c			unmapped	aria (ARIA)				5	31	100	ARIA_DOWNLOAD;CHECKM2_DATABASEDOWNLOAD;ARIA2	utility_modules/aria_download;nf-core/checkm2/databasedownload;nf-core/aria2	quay.io/jaxcompsci/aria2:1.36.0	conda-forge::aria2=1.37.0;conda-forge::aria2=1.36.0
 bioawk			unmapped					5	5	74	CONVERT_DEPTHS;SPLIT_CHR;BIOAWK	local/mag/convert_depths;local/mag_depths_convert;local/split_chr		bioconda::bioawk=1.0
-makeblastdb			unmapped	blast (BLAST)				5	9	26	MAKE_BLAST_DB;DNAtranslation;Enrichment	local/blast/MakeDB;blast/makedb	ncbi/blast:2.7.1;ncbi/blast:2.15.0	
 java-jdk			unmapped					5	7	22	JUICER_TOOLS_PRE;FIND_TELOMERE_WINDOWS;JUICER	local/juicer_tools_pre;local/find_telomere_windows;local/find/telomere_windows		bioconda::java-jdk=8.0.112
-t			unmapped					5	6	12	cluster_ctss;generate_cool;CREATE_INTERVALS_BED	local/create_intervals_bed		conda-forge::gawk=5.3.0;anaconda::gawk=5.1.0
 licence			unmapped	SED (SED)				4	27	86	GUNZIP;BAYSOR_PREPROCESS_TRANSCRIPTS;BAYSOR_RUN	nf-core/modules/gunzip;nf-core/gunzip;local/baysor/preprocess	khersameesh24/baysor:0.7.1	conda-forge::sed=4.7
 documentation			unmapped	SED (SED)				4	27	54	GUNZIP;BAYSOR_PREPROCESS_TRANSCRIPTS;BAYSOR_RUN	nf-core/modules/gunzip;nf-core/gunzip;local/baysor/preprocess	khersameesh24/baysor:0.7.1	conda-forge::sed=4.7
 description			unmapped	scrip (SCRIP); DiversityDescriptions (DiversityDescriptions); SED (SED)				4	27	47	GUNZIP;BAYSOR_PREPROCESS_TRANSCRIPTS;BAYSOR_RUN	nf-core/modules/gunzip;nf-core/gunzip;local/baysor/preprocess	khersameesh24/baysor:0.7.1	conda-forge::sed=4.7
 cooler			unmapped	numpy (NumPy)				4	14	44	COOLER_CLOAD;COOLER_ZOOMIFY;generate_cool	nf-core/cooler/cload;nf-core/cooler/zoomify		bioconda::cooler=0.9.2;bioconda::cooler=0.10.4;bioconda::cooler=0.10.4;conda-forge::numpy=1.26.4
-i++			unmapped	pi (Pi); I3 (I3); hi (HI)				4	19	41	generate_cool;MERGE_QUANT_ANNOT_BEST;FEATURE_COUNTS	merge_quant_eggnog_best;feature_counts		
 pretextmap			unmapped	samtools (SAMtools); htslib (HTSlib)				4	9	39	PRETEXTMAP	nf-core/pretextmap	quay.io/sanger-tol/pretext:0.0.8-yy5-c1	bioconda::pretextmap=0.1.9;bioconda::samtools=1.17;bioconda::htslib=1.23;bioconda::pretextmap=0.2.4;bioconda::samtools=1.23
 gtf_gene_filter			unmapped	genefilter (genefilter)				4	4	27	GTF_GENE_FILTER	local/gtf_gene_filter		conda-forge::python=3.8.3;conda-forge::python=3.9.5
 dragmap			unmapped	drugmap (DrugMAP); drgap (DrGaP); DRAMP (DRAMP)				4	4	24	DRAGMAP_HASHTABLE	nf-core/dragmap/hashtable		bioconda::dragmap=1.2.1;bioconda::dragmap=1.3.0
@@ -20,7 +15,7 @@ intersectbed			unmapped	Tersect (Tersect); bedtools_intersectbed (bedtools_inter
 pretextsnapshot			unmapped	snapshot (Snapshot)				4	4	7	PRETEXTSNAPSHOT	nf-core/pretextsnapshot		bioconda::pretextsnapshot=0.0.4;bioconda::pretextsnapshot=0.0.7
 extract_repeat		extract	prefix match		EXTRACT			4	4	0	EXTRACT_REPEAT	local/extract_repeat;local/extract/repeat		conda-forge::perl=5.26.2
 rtg			unmapped	alertgs (AlertGS); rt-gscs (Real-Time Geo-Spatial Consensus System (RT-GSCS)); bert-gt (BERT-GT); rt (rt)				3	15	364	RTGTOOLS_FORMAT;RTGTOOLS_VCFEVAL;RTGTOOLS_CNVEVAL	nf-core/rtgtools/format;nf-core/rtgtools/vcfeval;nf-core/rtgtools/cnveval		bioconda::rtg-tools=3.13
-longest			unmapped	longshot (Longshot)				3	4	215	CREATE_INTERVALS_BED	local/create_intervals_bed		conda-forge::gawk=5.3.0;anaconda::gawk=5.1.0
+create_intervals_bed			unmapped					3	4	215	CREATE_INTERVALS_BED	local/create_intervals_bed		conda-forge::gawk=5.3.0;anaconda::gawk=5.1.0
 prinseqplusplus			unmapped	prinseq (PRINSEQ)				3	4	200	PRINSEQPLUSPLUS	nf-core/prinseqplusplus		bioconda::prinseq-plus-plus=1.2.3
 fq			unmapped					3	11	179	FQ_SUBSAMPLE;FQ_LINT	nf-core/fq/subsample;nf-core/fq/lint	https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/cb/cb160e49e56ddbf7d53ba1c8495d6f4880a3f811cc9993619b1e84e40f8ffb53/data	bioconda::fq=0.12.0
 parabricks			unmapped					3	4	126	PARABRICKS_RNAFQ2BAM;PARABRICKS_FQ2BAMMETH;PARABRICKS_HAPLOTYPECALLER	nf-core/parabricks/rnafq2bam;nf-core/parabricks/fq2bammeth;nf-core/parabricks/haplotypecaller	nvcr.io/nvidia/clara/clara-parabricks:4.6.0-1;nvcr.io/nvidia/clara/clara-parabricks:4.7.1-1	
@@ -28,7 +23,6 @@ leidenalg			unmapped	scanpy (SCANPY)				3	24	87	CONCAT_H5AD;MTX_TO_H5AD;ANNOTATE
 biom			unmapped	biomformat (biomformat); biome (BioMe); biom3d (Biom3d); biomix (BiomiX); bipom (BiPOm)				3	16	86	microDecon_step2;QIIME2_ANCOMBC2_TAX;QIIME2_ANCOMBC_TAX	local/qiime2_ancombc2_tax;local/qiime2_ancombc_tax	qiime2/qiime2:2026.4;nf-core/pipesidle:0.1.0-beta	_openmp_mutex=4.5;_python_abi3_support=1.0;_r-mutex=1.0.1;alsa-lib=1.2.15.3;altair=6.0.0;annotated-doc=0.0.4;annotated-types=0.7.0;anyio=4.13.0;appdirs=1.4.4;array-api-compat=1.14.0;asttokens=3.0.1;atpublic=7.0.0;attrs=26.1.0;backports.zstd=1.3.0;bibtexparser=1.4.4;binutils_impl_linux-64=2.45.1;bioconductor-ancombc=2.12.0;bioconductor-biobase=2.70.0;bioconductor-biocgenerics=0.56.0;bioconductor-biocparallel=1.44.0;bioconductor-biomformat=1.38.0;bioconductor-biostrings=2.78.0;bioconductor-cigarillo=1.0.0;bioconductor-dada2=1.38.0;bioconductor-decontam=1.30.0;bioconductor-delayedarray=0.36.0;bioconductor-genomicalignments=1.46.0;bioconductor-genomicranges=1.62.1;bioconductor-iranges=2.44.0;bioconductor-matrixgenerics=1.22.0;bioconductor-microbiome=1.32.0;bioconductor-multtest=2.66.0;bioconductor-phyloseq=1.54.0;bioconductor-pwalign=1.6.0;bioconductor-rhdf5=2.54.1;bioconductor-rhdf5filters=1.22.0;bioconductor-rhdf5lib=1.32.0;bioconductor-rhtslib=3.6.0;bioconductor-rsamtools=2.26.0;bioconductor-s4arrays=1.10.1;bioconductor-s4vectors=0.48.0;bioconductor-seqinfo=1.0.0;bioconductor-shortread=1.68.0;bioconductor-sparsearray=1.10.8;bioconductor-summarizedexperiment=1.40.0;bioconductor-xvector=0.50.0;biom-format=2.1.17;blast=2.17.0;bowtie2=2.5.5;brotli=1.2.0;brotli-bin=1.2.0;brotli-python=1.2.0;brotlicffi=1.2.0.1;bwidget=1.10.1;bzip2=1.0.8;c-ares=1.34.6;ca-certificates=2026.2.25;cached-property=1.5.2;cached_property=1.5.2;cairo=1.18.4;certifi=2026.2.25;cffi=2.0.0;chardet=5.2.0;charset-normalizer=3.4.7;click=8.1.8;clustalw=2.1;colorama=0.4.6;comm=0.2.3;conda-pack=0.9.1;contourpy=1.3.3;cpython=3.12.13;curl=8.19.0;cutadapt=5.2;cycler=0.12.1;cyrus-sasl=2.1.28;dbus=1.16.2;deblur=1.1.1;decorator=5.2.1;dendropy=5.0.8;dill=0.4.1;dnaio=1.2.2;dnspython=2.8.0;double-conversion=3.4.0;emperor=1.0.5;entrez-direct=24.0;entrezpy=2.1.3;exceptiongroup=1.3.1;executing=2.2.1;fastcluster=1.3.0;fastp=1.0.1;fasttree=2.2.0;feedparser=6.0.12;filelock=3.28.0;flufl.lock=9.0.0;font-ttf-dejavu-sans-mono=2.37;font-ttf-inconsolata=3.000;font-ttf-source-code-pro=2.038;font-ttf-ubuntu=0.83;fontconfig=2.17.1;fonts-conda-ecosystem=1;fonts-conda-forge=1;fonttools=4.62.0;formulaic=1.2.1;freetype=2.14.3;fribidi=1.0.16;frictionless=5.5.0;future=1.0.0;gawk=5.3.1;gcc_impl_linux-64=15.2.0;gfortran_impl_linux-64=15.2.0;giflib=5.2.2;glpk=5.0;gmp=6.3.0;graphite2=1.3.14;gsl=2.7;gxx_impl_linux-64=15.2.0;h11=0.16.0;h2=4.3.0;h5py=3.15.1;harfbuzz=14.1.0;hdf5=1.14.6;hdmedians=0.14.2;hmmer=3.4;hpack=4.1.0;htslib=1.23.1;httpcore=1.0.9;httpx=0.28.1;humanize=4.15.0;hyperframe=6.1.0;icu=78.3;idna=3.11;ijson=3.5.0;importlib-metadata=8.8.0;importlib_metadata=8.8.0;inflate64=1.0.4;iniconfig=2.3.0;interface_meta=1.3.0;iow=1.0.8;ipython=9.12.0;ipython_pygments_lexers=1.1.1;ipywidgets=8.1.8;iqtree=3.1.1;isa-l=2.31.1;isodate=0.7.2;jedi=0.19.2;jinja2=3.1.6;joblib=1.5.3;jsonschema=4.26.0;jsonschema-specifications=2025.9.1;jupyterlab_widgets=3.0.16;kernel-headers_linux-64=4.18.0;keyutils=1.6.3;kiwisolver=1.5.0;krb5=1.22.2;lcms2=2.18;ld_impl_linux-64=2.45.1;lerc=4.1.0;libaec=1.1.5;libasprintf=0.25.1;libblas=3.11.0;libbrotlicommon=1.2.0;libbrotlidec=1.2.0;libbrotlienc=1.2.0;libcblas=3.11.0;libclang13=22.1.3;libcups=2.3.3;libcurl=8.19.0;libdeflate=1.25;libdrm=2.4.125;libedit=3.1.20250104;libegl=1.7.0;libegl-devel=1.7.0;libev=4.33;libexpat=2.7.5;libffi=3.5.2;libfreetype=2.14.3;libfreetype6=2.14.3;libgcc=15.2.0;libgcc-devel_linux-64=15.2.0;libgcc-ng=15.2.0;libgettextpo=0.25.1;libgfortran=15.2.0;libgfortran-ng=15.2.0;libgfortran5=15.2.0;libgl=1.7.0;libgl-devel=1.7.0;libglib=2.86.4;libglvnd=1.7.0;libglx=1.7.0;libglx-devel=1.7.0;libgomp=15.2.0;libhwloc=2.12.2;libiconv=1.18;libidn2=2.3.8;libjpeg-turbo=3.1.4.1;liblapack=3.11.0;liblapacke=3.11.0;libllvm22=22.1.3;liblzma=5.8.3;libnghttp2=1.68.1;libnsl=2.0.1;libntlm=1.8;libopenblas=0.3.32;libopengl=1.7.0;libpciaccess=0.18;libpng=1.6.58;libpq=18.3;libsanitizer=15.2.0;libsodium=1.0.21;libsqlite=3.53.0;libssh2=1.11.1;libstdcxx=15.2.0;libstdcxx-devel_linux-64=15.2.0;libstdcxx-ng=15.2.0;libtiff=4.7.1;libunistring=0.9.10;libuuid=2.42;libvulkan-loader=1.4.341.0;libwebp-base=1.6.0;libxcb=1.17.0;libxcrypt=4.4.36;libxkbcommon=1.13.1;libxml2=2.15.3;libxml2-16=2.15.3;libxslt=1.1.43;libzlib=1.3.2;llvmlite=0.47.0;lxml=6.0.4;lz4=4.4.5;lz4-c=1.10.0;mafft=7.526;make=4.4.1;markdown-it-py=4.0.0;marko=2.2.2;markupsafe=3.0.3;matplotlib=3.10.8;matplotlib-base=3.10.8;matplotlib-inline=0.2.1;mdurl=0.1.2;mpfr=4.2.2;mpi=1.0;multivolumefile=0.2.3;munkres=1.1.4;muscle=3.8.1551;mypy_extensions=1.1.0;narwhals=2.19.0;natsort=8.4.0;ncbi-datasets-pyclient=18.18.0;ncbi-vdb=3.4.1;ncurses=6.5;networkx=3.6.1;nlopt=2.10.1;numba=0.65.0;numpy=2.4.2;openjdk=25.0.2;openjpeg=2.5.4;openldap=2.6.13;openmpi=4.1.6;openssl=3.6.2;packaging=26.1;pandas=2.3.3;pandera=0.30.1;pandera-base=0.30.1;pandoc=3.9.0.2;pango=1.56.4;parsl=2026.2.23;parso=0.8.6;pasta=1.9.3;patsy=1.0.2;pbzip2=1.1.13;pcre=8.45;pcre2=10.47;perl=5.32.1;perl-archive-tar=3.04;perl-carp=1.50;perl-common-sense=3.75;perl-compress-raw-bzip2=2.214;perl-compress-raw-zlib=2.214;perl-encode=3.21;perl-exporter=5.74;perl-exporter-tiny=1.002002;perl-extutils-makemaker=7.70;perl-io-compress=2.216;perl-io-zlib=1.15;perl-json=4.11;perl-json-xs=4.04;perl-list-moreutils=0.430;perl-list-moreutils-xs=0.430;perl-parent=0.243;perl-pathtools=3.75;perl-scalar-list-utils=1.70;perl-storable=3.15;perl-types-serialiser=1.01;petl=1.7.17;pexpect=4.9.0;pigz=2.8;pillow=12.1.1;pip=26.0.1;pixman=0.46.4;pluggy=1.6.0;pplacer=1.1.alpha19;prank=170427;prompt-toolkit=3.0.52;psutil=7.2.2;pthread-stubs=0.4;ptyprocess=0.7.0;pure_eval=0.2.3;py7zr=1.0.0;pybcj=1.0.7;pycparser=2.22;pycryptodomex=3.23.0;pydantic=2.13.1;pydantic-core=2.46.1;pygments=2.20.0;pyhmmer=0.12.0;pymongo=4.16.0;pynndescent=0.5.13;pyparsing=3.3.2;pyppmd=1.1.0;pyside6=6.11.0;pysocks=1.7.1;pytest=9.0.3;python=3.12.13;python-dateutil=2.9.0.post0;python-dotenv=1.2.2;python-gil=3.12.13;python-isal=1.8.0;python-slugify=8.0.4;python-tzdata=2026.1;python-zlib-ng=1.0.0;python_abi=3.12;pytz=2026.1.post1;pyyaml=6.0.3;pyzmq=27.1.0;pyzotero=1.11.0;pyzstd=0.19.1;q2-alignment=2026.4.0;q2-boots=2026.4.0;q2-composition=2026.4.0;q2-cutadapt=2026.4.0;q2-dada2=2026.4.0;q2-deblur=2026.4.0;q2-demux=2026.4.0;q2-diversity=2026.4.0;q2-diversity-lib=2026.4.0;q2-emperor=2026.4.0;q2-feature-classifier=2026.4.0;q2-feature-table=2026.4.0;q2-fondue=2026.4.0;q2-fragment-insertion=2026.4.0;q2-kmerizer=2026.4.0;q2-longitudinal=2026.4.0;q2-metadata=2026.4.0;q2-mystery-stew=2026.4.0;q2-phylogeny=2026.4.0;q2-quality-control=2026.4.0;q2-quality-filter=2026.4.0;q2-sample-classifier=2026.4.0;q2-stats=2026.4.0;q2-taxa=2026.4.0;q2-types=2026.4.0;q2-vizard=2026.4.0;q2-vsearch=2026.4.0;q2cli=2026.4.0;q2templates=2026.4.0;qhull=2020.2;qiime2=2026.4.0;qt6-main=6.11.0;r-abind=1.4_8;r-ade4=1.7_24;r-ape=5.8_1;r-askpass=1.2.1;r-assertthat=0.2.1;r-backports=1.5.1;r-base=4.5.2;r-base64enc=0.1_6;r-bayesm=3.1_7;r-bh=1.90.0_1;r-bibtex=0.5.2;r-bit=4.6.0;r-bit64=4.6.0_1;r-bitops=1.0_9;r-blob=1.3.0;r-boot=1.3_32;r-broom=1.0.12;r-bslib=0.10.0;r-cachem=1.1.0;r-callr=3.7.6;r-cellranger=1.1.0;r-checkmate=2.3.3;r-class=7.3_23;r-cli=3.6.6;r-clipr=0.8.0;r-cluster=2.1.8.2;r-codetools=0.2_20;r-colorspace=2.1_2;r-compositions=2.0_9;r-conflicted=1.2.0;r-cpp11=0.5.4;r-crayon=1.5.3;r-curl=7.0.0;r-cvxr=1.0_15;r-data.table=1.17.8;r-dbi=1.3.0;r-dbplyr=2.5.2;r-deldir=2.0_4;r-deoptimr=1.1_4;r-desctools=0.99.60;r-digest=0.6.39;r-doparallel=1.0.17;r-dorng=1.8.6.3;r-dplyr=1.2.1;r-dtplyr=1.3.3;r-e1071=1.7_17;r-ecosolver=0.5.5;r-ellipsis=0.3.3;r-energy=1.7_12;r-evaluate=1.0.5;r-exact=3.3;r-expm=1.0_0;r-fansi=1.0.7;r-farver=2.1.2;r-fastmap=1.2.0;r-fontawesome=0.5.3;r-forcats=1.0.1;r-foreach=1.5.2;r-foreign=0.8_91;r-formatr=1.14;r-formula=1.2_5;r-frictionless=1.2.1;r-fs=1.6.7;r-futile.logger=1.4.9;r-futile.options=1.0.1;r-gargle=1.6.1;r-gbrd=0.4.12;r-generics=0.1.4;r-getopt=1.20.4;r-ggplot2=4.0.2;r-gld=2.6.8;r-glue=1.8.1;r-gmp=0.7_5.1;r-googledrive=2.1.2;r-googlesheets4=1.1.2;r-gridextra=2.3;r-gsl=2.1_9;r-gtable=0.3.6;r-gtools=3.9.5;r-haven=2.5.5;r-here=1.0.2;r-highr=0.12;r-hmisc=5.2_5;r-hms=1.1.4;r-htmltable=2.4.3;r-htmltools=0.5.9;r-htmlwidgets=1.6.4;r-httr=1.4.8;r-hwriter=1.3.2.1;r-ids=1.0.1;r-igraph=2.1.4;r-interp=1.1_6;r-isoband=0.3.0;r-iterators=1.0.14;r-jpeg=0.1_11;r-jquerylib=0.1.4;r-jsonlite=2.0.0;r-knitr=1.51;r-labeling=0.4.3;r-lambda.r=1.2.4;r-lattice=0.22_9;r-latticeextra=0.6_31;r-lifecycle=1.0.5;r-lme4=1.1_38;r-lmertest=3.2_1;r-lmom=3.3;r-lubridate=1.9.5;r-magrittr=2.0.5;r-mass=7.3_65;r-matrix=1.7_4;r-matrixstats=1.5.0;r-memoise=2.0.1;r-mgcv=1.9_4;r-mime=0.13;r-minqa=1.2.8;r-modelr=0.1.11;r-multcomp=1.4_30;r-munsell=0.5.1;r-mvtnorm=1.3_6;r-nlme=3.1_169;r-nloptr=2.2.1;r-nnet=7.3_20;r-numderiv=2016.8_1.1;r-openssl=2.4.0;r-optparse=1.7.5;r-osqp=1.0.0;r-permute=0.9_10;r-pillar=1.11.1;r-pixmap=0.4_14;r-pkgconfig=2.0.3;r-pkgmaker=0.32.10;r-plyr=1.8.9;r-png=0.1_9;r-prettyunits=1.2.0;r-processx=3.8.7;r-progress=1.2.3;r-proxy=0.4_29;r-ps=1.9.2;r-purrr=1.2.2;r-r6=2.6.1;r-ragg=1.5.2;r-rappdirs=0.3.4;r-rbibutils=2.4.1;r-rcolorbrewer=1.1_3;r-rcpp=1.1.1;r-rcpparmadillo=15.2.4_1;r-rcppeigen=0.3.4.0.2;r-rcppparallel=5.1.11_2;r-rcpptoml=0.2.3;r-rdpack=2.6.6;r-readr=2.2.0;r-readxl=1.4.5;r-reformulas=0.4.4;r-registry=0.5_1;r-rematch=2.0.0;r-rematch2=2.1.2;r-reprex=2.1.1;r-reshape2=1.4.5;r-reticulate=1.45.0;r-rlang=1.2.0;r-rmarkdown=2.31;r-rmpfr=1.1_1;r-rngtools=1.5.2;r-robustbase=0.99_7;r-rootsolve=1.8.2.4;r-rpart=4.1.27;r-rprojroot=2.1.1;r-rstudioapi=0.18.0;r-rtsne=0.17;r-rvest=1.0.5;r-s7=0.2.1;r-sandwich=3.1_1;r-sass=0.4.10;r-scales=1.4.0;r-scs=3.2.7;r-selectr=0.5_1;r-snow=0.4_4;r-sp=2.2_1;r-stringi=1.8.7;r-stringr=1.6.0;r-survival=3.8_6;r-sys=3.4.3;r-systemfonts=1.3.2;r-tensora=0.36.2.1;r-textshaping=1.0.5;r-th.data=1.1_5;r-tibble=3.3.1;r-tidyr=1.3.2;r-tidyselect=1.2.1;r-tidyverse=2.0.0;r-timechange=0.4.0;r-tinytex=0.59;r-tzdb=0.5.0;r-utf8=1.2.6;r-uuid=1.2_2;r-vctrs=0.7.3;r-vegan=2.7_3;r-viridis=0.6.5;r-viridislite=0.4.3;r-vroom=1.7.1;r-withr=3.0.2;r-xfun=0.57;r-xml2=1.5.2;r-xtable=1.8_8;r-yaml=2.3.12;r-zoo=1.8_15;rachis=2026.4.0;raxml=8.2.13;readline=8.3;referencing=0.37.0;requests=2.33.1;rescript=2026.4.0;rfc3986=2.0.0;rich=15.0.0;rnanorm=2.1.0;rpds-py=0.30.0;rpy2=3.6.4;samtools=1.22.1;scikit-bio=0.7.2;scikit-learn=1.7.1;scipy=1.17.1;seaborn=0.13.2;seaborn-base=0.13.2;sed=4.9;sepp=4.5.6;setproctitle=1.3.7;setuptools=82.0.1;sgmllib3k=1.0.0;shellingham=1.5.4;simpleeval=1.0.7;six=1.17.0;sniffio=1.3.1;sortedcontainers=2.4.0;sortmerna=2.0;stack_data=0.6.3;statsmodels=0.14.6;stringcase=1.2.0;sysroot_linux-64=2.28;tabulate=0.10.0;tbb=2022.3.0;tbb-devel=2022.3.0;tblib=3.2.2;text-unidecode=1.3;texttable=1.7.0;threadpoolctl=3.6.0;tk=8.6.13;tktable=2.10;tomli=2.4.1;tomlkit=0.14.0;tornado=6.5.5;tqdm=4.67.3;traitlets=5.14.3;typeguard=4.5.1;typer=0.23.1;typing-extensions=4.15.0;typing-inspection=0.4.2;typing_extensions=4.15.0;typing_inspect=0.9.0;tzdata=2025c;tzlocal=5.3.1;umap-learn=0.5.11;unicodedata2=17.0.1;unifrac=1.5.1;unifrac-binaries=1.5.1;urllib3=2.6.3;validators=0.35.0;vsearch=2.30.4;wayland=1.25.0;wcwidth=0.6.0;wget=1.25.0;wheel=0.46.3;whenever=0.10.0;widgetsnbextension=4.0.15;wrapt=2.1.2;xcb-util=0.4.1;xcb-util-cursor=0.1.6;xcb-util-image=0.4.0;xcb-util-keysyms=0.4.1;xcb-util-renderutil=0.3.10;xcb-util-wm=0.4.2;xkeyboard-config=2.47;xmltodict=1.0.4;xopen=2.0.2;xorg-libice=1.1.2;xorg-libsm=1.2.6;xorg-libx11=1.8.13;xorg-libxau=1.0.12;xorg-libxcomposite=0.4.7;xorg-libxcursor=1.2.3;xorg-libxdamage=1.1.6;xorg-libxdmcp=1.1.5;xorg-libxext=1.3.7;xorg-libxfixes=6.0.2;xorg-libxi=1.8.2;xorg-libxrandr=1.5.5;xorg-libxrender=0.9.12;xorg-libxt=1.3.1;xorg-libxtst=1.2.5;xorg-libxxf86vm=1.1.7;xorg-xorgproto=2025.1;yaml=0.2.5;zeromq=4.3.5;zipfile-deflate64=0.2.0;zipp=3.23.1;zlib=1.3.2;zlib-ng=2.3.3;zstandard=0.25.0;zstd=1.5.7;pip;dask=2022.2.1;dask-core=2022.2.1;xmltodict=0.13.0;rescript=2021.4.0;_libgcc_mutex=0.1;_openmp_mutex=4.5;_r-mutex=1.0.1;argon2-cffi=20.1.0;async_generator=1.10;attrs=20.3.0;backcall=0.2.0;backports=1.0;backports.functools_lru_cache=1.6.4;bibtexparser=1.1.0;binutils_impl_linux-64=2.35.1;binutils_linux-64=2.35;bioconductor-biobase=2.50.0;bioconductor-biocgenerics=0.36.0;bioconductor-biocparallel=1.24.1;bioconductor-biostrings=2.58.0;bioconductor-dada2=1.18.0;bioconductor-delayedarray=0.16.3;bioconductor-genomeinfodb=1.26.4;bioconductor-genomeinfodbdata=1.2.4;bioconductor-genomicalignments=1.26.0;bioconductor-genomicranges=1.42.0;bioconductor-iranges=2.24.1;bioconductor-matrixgenerics=1.2.1;bioconductor-rhtslib=1.22.0;bioconductor-rsamtools=2.6.0;bioconductor-s4vectors=0.28.1;bioconductor-shortread=1.48.0;bioconductor-summarizedexperiment=1.20.0;bioconductor-xvector=0.30.0;bioconductor-zlibbioc=1.36.0;biom-format=2.1.10;blas=1.1;blast=2.11.0;bleach=3.3.0;bokeh=2.3.1;bowtie2=2.4.2;brotlipy=0.7.0;bwidget=1.9.14;bzip2=1.0.8;c-ares=1.17.1;ca-certificates=2020.12.5;cachecontrol=0.12.6;cached-property=1.5.2;cached_property=1.5.2;cairo=1.16.0;certifi=2020.12.5;cffi=1.14.5;chardet=4.0.0;click=7.1.2;cryptography=3.4.7;curl=7.76.1;cutadapt=3.4;cycler=0.10.0;cython=0.29.23;dbus=1.13.6;deblur=1.1.0;decorator=4.4.2;defusedxml=0.7.1;dendropy=4.5.2;dnaio=0.5.0;emperor=1.0.3;entrez-direct=13.9;entrypoints=0.3;expat=2.3.0;fastcluster=1.1.26;fasttree=2.1.10;fontconfig=2.13.1;freetype=2.10.4;fribidi=1.0.10;future=0.18.2;gcc_impl_linux-64=9.3.0;gcc_linux-64=9.3.0;gettext=0.19.8.1;gfortran_impl_linux-64=9.3.0;gfortran_linux-64=9.3.0;glib=2.68.1;glib-tools=2.68.1;gneiss=0.4.6;graphite2=1.3.13;gsl=2.6;gst-plugins-base=1.18.4;gstreamer=1.18.4;gxx_impl_linux-64=9.3.0;gxx_linux-64=9.3.0;h5py=3.2.1;harfbuzz=2.8.0;hdf5=1.10.6;hdmedians=0.14.2;hmmer=3.1b2;htslib=1.12;icu=68.1;idna=2.10;ijson=3.1.3;importlib-metadata=3.10.1;iniconfig=1.1.1;ipykernel=5.5.3;ipython=7.22.0;ipython_genutils=0.2.0;ipywidgets=7.6.3;iqtree=2.1.2;isa-l=2.30.0;jedi=0.18.0;jinja2=2.11.3;joblib=1.0.1;jpeg=9d;jsonschema=3.2.0;jupyter_client=6.1.12;jupyter_core=4.7.1;jupyterlab_pygments=0.1.2;jupyterlab_widgets=1.0.0;kernel-headers_linux-64=2.6.32;kiwisolver=1.3.1;krb5=1.17.2;lcms2=2.12;ld_impl_linux-64=2.35.1;libblas=3.9.0;libcblas=3.9.0;libclang=11.1.0;libcurl=7.76.1;libdeflate=1.7;libedit=3.1.20191231;libev=4.33;libevent=2.1.10;libffi=3.3;libgcc=7.2.0;libgcc-devel_linux-64=9.3.0;libgcc-ng=9.3.0;libgfortran-ng=9.3.0;libgfortran5=9.3.0;libglib=2.68.1;libgomp=9.3.0;libiconv=1.16;liblapack=3.9.0;libllvm11=11.1.0;libnghttp2=1.43.0;libopenblas=0.3.12;libpng=1.6.37;libpq=13.1;libsodium=1.0.18;libssh2=1.9.0;libstdcxx-devel_linux-64=9.3.0;libstdcxx-ng=9.3.0;libtiff=4.2.0;libuuid=2.32.1;libuv=1.41.0;libwebp-base=1.2.0;libxcb=1.13;libxkbcommon=1.0.3;libxml2=2.9.10;libxslt=1.1.33;lockfile=0.12.2;lxml=4.6.3;lz4=3.1.3;lz4-c=1.9.3;mafft=7.475;make=4.3;markupsafe=1.1.1;matplotlib=3.4.1;matplotlib-base=3.4.1;mistune=0.8.4;more-itertools=8.7.0;msgpack-python=1.0.2;mysql-common=8.0.23;mysql-libs=8.0.23;natsort=7.1.1;nbclient=0.5.3;nbconvert=6.0.7;nbformat=5.1.3;ncurses=6.2;nest-asyncio=1.5.1;networkx=2.5.1;nodejs=15.14.0;nose=1.3.7;notebook=6.3.0;nspr=4.30;nss=3.64;numpy=1.20.2;olefile=0.46;openblas=0.3.12;openjdk=11.0.1;openjpeg=2.4.0;openssl=1.1.1k;packaging=20.9;pandas=1.2.4;pandoc=2.12;pandocfilters=1.4.2;pango=1.48.4;parso=0.8.2;patsy=0.5.1;pcre=8.44;pcre2=10.36;perl=5.26.2;perl-app-cpanminus=1.7044;perl-archive-tar=2.32;perl-base=2.23;perl-business-isbn=3.004;perl-business-isbn-data=20140910.003;perl-carp=1.38;perl-common-sense=3.74;perl-compress-raw-bzip2=2.087;perl-compress-raw-zlib=2.087;perl-constant=1.33;perl-data-dumper=2.173;perl-digest-hmac=1.03;perl-digest-md5=2.55;perl-encode=2.88;perl-encode-locale=1.05;perl-exporter=5.72;perl-exporter-tiny=1.002001;perl-extutils-makemaker=7.36;perl-file-listing=6.04;perl-file-path=2.16;perl-file-temp=0.2304;perl-html-parser=3.72;perl-html-tagset=3.20;perl-html-tree=5.07;perl-http-cookies=6.04;perl-http-daemon=6.01;perl-http-date=6.02;perl-http-message=6.18;perl-http-negotiate=6.01;perl-io-compress=2.087;perl-io-html=1.001;perl-io-socket-ssl=2.066;perl-io-zlib=1.10;perl-json=4.02;perl-json-xs=2.34;perl-libwww-perl=6.39;perl-list-moreutils=0.428;perl-list-moreutils-xs=0.428;perl-lwp-mediatypes=6.04;perl-lwp-protocol-https=6.07;perl-mime-base64=3.15;perl-mozilla-ca=20180117;perl-net-http=6.19;perl-net-ssleay=1.88;perl-ntlm=1.09;perl-parent=0.236;perl-pathtools=3.75;perl-scalar-list-utils=1.52;perl-socket=2.027;perl-storable=3.15;perl-test-requiresinternet=0.05;perl-time-local=1.28;perl-try-tiny=0.30;perl-types-serialiser=1.0;perl-uri=1.76;perl-www-robotrules=6.02;perl-xml-namespacesupport=1.12;perl-xml-parser=2.44_01;perl-xml-sax=1.02;perl-xml-sax-base=1.09;perl-xml-sax-expat=0.51;perl-xml-simple=2.25;perl-xsloader=0.24;pexpect=4.8.0;pickleshare=0.7.5;pigz=2.6;pillow=8.1.2;pip=21.0.1;pixman=0.40.0;pluggy=0.13.1;prometheus_client=0.10.1;prompt-toolkit=3.0.18;psutil=5.8.0;pthread-stubs=0.4;ptyprocess=0.7.0;py=1.10.0;pycparser=2.20;pygments=2.8.1;pyopenssl=20.0.1;pyparsing=2.4.7;pyqt=5.12.3;pyqt-impl=5.12.3;pyqt5-sip=4.19.18;pyqtchart=5.12;pyqtwebengine=5.12.1;pyrsistent=0.17.3;pysocks=1.7.1;pytest=6.2.3;python=3.8.8;python-dateutil=2.8.1;python-isal=0.10.0;python_abi=3.8;pytz=2021.1;pyyaml=5.4.1;pyzmq=22.0.3;q2-alignment=2021.4.0;q2-composition=2021.4.0;q2-cutadapt=2021.4.0;q2-dada2=2021.4.0;q2-deblur=2021.4.0;q2-demux=2021.4.0;q2-diversity=2021.4.0;q2-diversity-lib=2021.4.0;q2-emperor=2021.4.0;q2-feature-classifier=2021.4.0;q2-feature-table=2021.4.0;q2-fragment-insertion=2021.4.0;q2-gneiss=2021.4.0;q2-longitudinal=2021.4.0;q2-metadata=2021.4.0;q2-mystery-stew=2021.4.0;q2-phylogeny=2021.4.0;q2-quality-control=2021.4.0;q2-quality-filter=2021.4.0;q2-sample-classifier=2021.4.0;q2-taxa=2021.4.0;q2-types=2021.4.0;q2-vsearch=2021.4.0;q2cli=2021.4.0;q2galaxy=2021.4.0;q2templates=2021.4.0;qiime2=2021.4.0;qt=5.12.9;r-assertthat=0.2.1;r-backports=1.2.1;r-base=4.0.3;r-bh=1.75.0_0;r-bitops=1.0_6;r-brio=1.1.1;r-callr=3.6.0;r-cli=2.4.0;r-cluster=2.1.1;r-colorspace=2.0_0;r-crayon=1.4.1;r-desc=1.3.0;r-diffobj=0.3.3;r-digest=0.6.27;r-ellipsis=0.3.1;r-evaluate=0.14;r-fansi=0.4.2;r-farver=2.1.0;r-formatr=1.9;r-futile.logger=1.4.3;r-futile.options=1.0.1;r-ggplot2=3.3.3;r-glue=1.4.2;r-gtable=0.3.0;r-hwriter=1.3.2;r-isoband=0.2.4;r-jpeg=0.1_8.1;r-jsonlite=1.7.2;r-labeling=0.4.2;r-lambda.r=1.2.4;r-lattice=0.20_41;r-latticeextra=0.6_29;r-lifecycle=1.0.0;r-magrittr=2.0.1;r-mass=7.3_53.1;r-matrix=1.3_2;r-matrixstats=0.58.0;r-mgcv=1.8_34;r-munsell=0.5.0;r-nlme=3.1_152;r-permute=0.9_5;r-pillar=1.6.0;r-pkgconfig=2.0.3;r-pkgload=1.2.1;r-plyr=1.8.6;r-png=0.1_7;r-praise=1.0.0;r-processx=3.5.1;r-ps=1.6.0;r-r6=2.5.0;r-rcolorbrewer=1.1_2;r-rcpp=1.0.6;r-rcppparallel=5.1.2;r-rcurl=1.98_1.3;r-rematch2=2.1.2;r-reshape2=1.4.4;r-rlang=0.4.10;r-rprojroot=2.0.2;r-rstudioapi=0.13;r-scales=1.1.1;r-snow=0.4_3;r-stringi=1.5.3;r-stringr=1.4.0;r-testthat=3.0.2;r-tibble=3.1.1;r-utf8=1.2.1;r-vctrs=0.3.7;r-vegan=2.5_7;r-viridislite=0.4.0;r-waldo=0.2.5;r-withr=2.4.2;r-zeallot=0.1.0;raxml=8.2.12;readline=8.1;requests=2.25.1;samtools=1.12;scikit-bio=0.5.6;scikit-learn=0.24.1;scipy=1.6.2;seaborn=0.11.1;seaborn-base=0.11.1;sed=4.8;send2trash=1.5.0;sepp=4.3.10;setuptools=49.6.0;six=1.15.0;sortmerna=2.0;sqlite=3.35.4;statsmodels=0.12.2;sysroot_linux-64=2.12;tbb=2020.2;terminado=0.9.4;testpath=0.4.4;threadpoolctl=2.1.0;tk=8.6.10;tktable=2.10;toml=0.10.2;tornado=6.1;traitlets=5.0.5;typing_extensions=3.7.4.3;tzlocal=2.1;unifrac=0.20.2;urllib3=1.26.4;vsearch=2.7.0;wcwidth=0.2.5;webencodings=0.5.1;wheel=0.36.2;widgetsnbextension=3.5.1;xopen=1.1.0;xorg-kbproto=1.0.7;xorg-libice=1.0.10;xorg-libsm=1.2.3;xorg-libx11=1.7.0;xorg-libxau=1.0.9;xorg-libxdmcp=1.1.3;xorg-libxext=1.3.4;xorg-libxrender=0.9.10;xorg-libxt=1.2.1;xorg-renderproto=0.11.1;xorg-xextproto=7.3.0;xorg-xproto=7.0.31;xz=5.2.5;yaml=0.2.5;zeromq=4.3.4;zipp=3.4.1;zlib=1.2.11;zstd=1.4.9
 sratools			unmapped	sra-tools (SRA Software Toolkit); sRNAtools (sRNAtools); sgatools (SGAtools)				3	7	76	CUSTOM_SRATOOLSNCBISETTINGS;SRATOOLS_FASTERQDUMP;SRATOOLS_PREFETCH	nf-core/custom/sratoolsncbisettings;nf-core/sratools/fasterqdump;nf-core/sratools/prefetch		bioconda::sra-tools=3.2.1;bioconda::sra-tools=3.2.1;conda-forge::pigz=2.8;bioconda::sra-tools=3.2.1;conda-forge::curl=8.14.1
 cat_pack			unmapped	CAT (Cosolvent Analysis Toolkit (CAT))				3	18	70	CATPACK_ADDNAMES;CATPACK_BINS;CATPACK_DOWNLOAD	nf-core/catpack/addnames;nf-core/catpack/bins;nf-core/catpack/download	agusinac/catpack:latest	bioconda::cat=6.0.1;bioconda::cat=6.0.1;conda-forge::gzip=1.14
-singularity			unmapped	singularity_hub (Singularity Hub)				3	35	68	overlay_many;overlay_one;get_software_version	multiqc;utilities/annotation_summary		
 nanoq			unmapped	NanoR (NanoR); nanoj (NanoJ)				3	4	64	filter;NANOQ	nf-core/nanoq		bioconda::nanoq=0.10.0
 svdb			unmapped	rsvdb (RSVdb)				3	12	55	SVDB_QUERY;SVDB_MERGE	nf-core/svdb/query;nf-core/svdb/merge		bioconda::bcftools=1.23;bioconda::svdb=2.8.4;bioconda::bcftools=1.23=*;bioconda::svdb=2.8.4;svdb=2.8.1;samtools=1.19.2;htslib=1.19.1
 survivor			unmapped	st_jude_survivorship_portal (St. Jude Survivorship Portal)				3	8	52	survivor_merge;survivor_summary;SURVIVOR_MERGE	survivor_merge;survivor_summary;survivor/survivor_merge	quay.io/biocontainers/survivor:1.0.7--hd03093a_2;quay.io/biocontainers/survivor:1.0.7--he513fc3_0	bioconda::survivor=1.0.7
@@ -37,6 +31,7 @@ gnu			unmapped	gnumap (Gnumap); gnuvid (GNUVID); whatsgnu (WhatsGNU)				3	10	42	
 py_fasta_validator			unmapped					3	3	38	FASTAVALIDATOR	nf-core/fastavalidator		bioconda::py_fasta_validator=0.6
 cellranger			unmapped	CellAge (CellAge); celltracer (CellTracer)				3	9	37	CELLRANGER_VDJ;CELLRANGER_MKFASTQ;CELLRANGER_COUNT	nf-core/cellranger/vdj;nf-core/cellranger/mkfastq;nf-core/cellranger/count	nf-core/cellranger:8.0.0;nf-core/cellrangermkfastq:9.0.1;quay.io/nf-core/cellranger:10.0.0	
 cometadapter			unmapped	cometa (CoMeta); coadaptr (coADAPTr)				3	5	37	OPENMSTHIRDPARTY_COMETADAPTER;get_software_versions;search_engine_comet	nf-core/openmsthirdparty/cometadapter;local/openms/thirdparty/searchenginecomet		bioconda::openms-thirdparty=3.5.0;bioconda::openms-thirdparty=2.8.0
+report			unmapped	vireport (ViReport); reporter (Reporter); degreport (DEGreport); reportype (ReporType); reportree (ReporTree)				3	3	37	report;REPORT	report	docker://neoformit/daff-taxonomic-assignment:v1.0.0;sydneyinformaticshub/scrnavigator-nf-report	
 merquryfk			unmapped	merqury (Merqury)				3	8	36	MERQURYFK_MERQURYFK;MERQURYFK_KATCOMP;MERQURYFK_KATGC	nf-core/merquryfk/merquryfk;local/merquryfk/merquryfk;nf-core/merquryfk/katcomp	ghcr.io/nbisweden/fastk_genescopefk_merquryfk:1.2;https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/b9/b9d3a76b0ab12d4ea8b331912232557ab4797ff4ef336f46680ae92941afdb30/data	bioconda::merquryfk=1.2;bioconda::merquryfk=1.2;modules/nf-core/merquryfk/merquryfk/.conda-lock/linux_arm64-bd-1e5626c171d2dfe9_1.txt;modules/nf-core/merquryfk/merquryfk/.conda-lock/linux_amd64-bd-5ac50fb470d146e0_1.txt
 g			unmapped					3	12	35	REFORMAT_INTERSECT;RENAME_IDS;REPLACE_DOTS	local/reformat_intersect;local/rename_ids;local/replace_dots		conda-forge::coreutils=9.1
 umicollapse			unmapped	collapse (COLLAPSE)				3	5	35	UMICOLLAPSE	nf-core/umicollapse	https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/4c/4c8b7641b14c16d52ea08c1ced6a8be4a686c9502de648228dc406d9642a9572/data	bioconda::umicollapse=1.1.0
@@ -60,18 +55,13 @@ get_largest_scaff			unmapped					3	3	9	GET_LARGEST_SCAFF	local/get_largest_scaff
 graphoverallcoverage			unmapped					3	3	9	GRAPHOVERALLCOVERAGE	local/graphoverallcoverage		conda-forge::perl=5.26.2
 pretextgraph			unmapped					3	7	9	PRETEXT_GRAPH	local/pretext/graph;local/pretext_graph	quay.io/sanger-tol/pretext:0.0.9-yy5-c2;quay.io/sanger-tol/pretext:0.0.8-yy5-c1	
 checkdesign			unmapped					3	3	8	checkDesign;CheckDesign			
-chunk			unmapped	chunkchromosome (ChunkChromosome)				3	4	8	CREATE_INTERVALS_BED	local/create_intervals_bed		conda-forge::gawk=5.3.0;anaconda::gawk=5.1.0
-name			unmapped	rname (RNAME); namech (NAmech); scname (scNAME); nam (NAM); nae (NAE)				3	4	8	CREATE_INTERVALS_BED	local/create_intervals_bed		conda-forge::gawk=5.3.0;anaconda::gawk=5.1.0
 plotprofile			unmapped	phyloprofile (PhyloProfile); phyloprofil (PhyloProfil)				3	4	8	plotProfile;MergedLibPlotProfile;MergedRepPlotProfile	local/deeptools	nciccbr/ccbr_deeptools_3.5.3:v1	
 read_distribution.py			unmapped	getreaddistribution (getreaddistribution)				3	5	8	ctss_qc;get_software_versions;rseqc			
 runworkflow.py			unmapped	workflow (workflow); rworkflows (rworkflows); manta (manta)				3	3	8	manta;MANTA;run_manta	manta;execution_modules	quay.io/biocontainers/mulled-v2-40295ae41112676b05b649e513fe7000675e9b84:0b4be2c719f99f44df34be7b447b287bb7f86e01-0;tblabfjd/manta:1.6.0;baseDir/sifs/manta.sif	
-d			unmapped	base (BASE)				3	3	7	COLLECT_STATS;Pangenie_postprocess	local/collect/stats		conda-forge::r-base=4.5.3;conda-forge::r-dplyr=1.2.1;conda-forge::r-readr=2.2.0;conda-forge::r-purrr=1.2.2;conda-forge::r-tidyr=1.3.2;conda-forge::r-stringi=1.8.7;conda-forge::r-stringr=1.6.0;conda-forge::r-tidyverse=2.0.0;conda-forge::r-data.table=1.17.8;conda-forge::r-dtplyr=1.3.3;conda-forge::r-base=4.3.1;conda-forge::r-data.table=1.17.8;conda-forge::r-dplyr=1.1.4;conda-forge::r-dtplyr=1.3.2;conda-forge::r-purrr=1.1.0;conda-forge::r-readr=2.1.5;conda-forge::r-stringr=1.5.2;conda-forge::r-tidyr=1.3.1
 emapper.py			unmapped	Mapper (Mapper); gazemapper (gazeMapper); emapper2gbk (emapper2gbk); genomemapper (GenomeMapper)				3	4	7	eggnogmapper;EGGNOG_MAPPER;EGGNOG_BINS	eggnogmapper;eggnog;annotation/eggnog_bins	/containers/eggNOG-mapper-2.1.9.sif;quay.io/microbiome-informatics/genomes-pipeline.eggnog-mapper:v2.1.11	
-end			unmapped	ENdb (ENdb); endor (endoR); blend (BLEND); encd (ENCD)				3	3	7	STAR_GENOMEPARAMS_UPGRADE;end	local/star_genomeparams_upgrade	https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/ce/cee0212dfecd678e2742f70d5a2c2868b54334a52dcd20d63505e7414ecdb7a7/data	conda-forge::gawk=5.3.1
 find_telomere			unmapped					3	3	7	TELOMERE_REGIONS;FIND_TELOMERE_REGIONS	sanger-tol/telomere/regions;local/find_telomere_regions	sanger-tol/telomere:0.0.1-c2;quay.io/sanger-tol/telomere:0.0.1-c1	
 makegenebed			unmapped	genebe (GeneBe)				3	3	6	makeGeneBED;MakeGeneBED			
 n			unmapped	base (BASE)				3	3	6	get_ctss;generate_cool;COLLECT_STATS	local/collect/stats		conda-forge::r-base=4.3.1;conda-forge::r-data.table=1.17.8;conda-forge::r-dplyr=1.1.4;conda-forge::r-dtplyr=1.3.2;conda-forge::r-purrr=1.1.0;conda-forge::r-readr=2.1.5;conda-forge::r-stringr=1.5.2;conda-forge::r-tidyr=1.3.1
-id			unmapped					3	3	5	SPLIT_TAXIDS;FORMAT2INFO_CHRM;FEATURE_COUNTS	local/split_taxids;execution_modules;feature_counts	tblabfjd/bioinfotools:2.0.0	conda-forge::gawk=5.3.1
 maketssbed			unmapped					3	3	4	makeTSSBED;MakeTSSBED			
 gap_length		gap	prefix match		GAP			3	3	0	GAP_LENGTH	local/gap_length		conda-forge::coreutils=9.1
 rename_fasta_header			unmapped	SED (SED)				2	8	584	RENAME_FASTA_HEADER	local/rename_fasta_header		conda-forge::sed=4.9;conda-forge::sed=4.7
@@ -88,6 +78,7 @@ filter_recruited			unmapped	biopython (Biopython)				2	4	51	FILTER_RECRUITED	loc
 awk			unmapped	vawk (vawk); hawkeye (HawkEye); HawkDock (HawkDock); SED (SED)				2	14	47	AWK;FILTERPAF	local/linux/awk;ebi-metagenomics/filterpaf		conda-forge::sed=4.7
 extract_family_reps			unmapped					2	6	41	EXTRACT_FAMILY_REPS	local/extract_family_reps		conda-forge::python=3.13.1
 remove_redundant_seqs			unmapped	biopython (Biopython)				2	4	38	REMOVE_REDUNDANT_SEQS	local/remove_redundant_seqs		python=3.13.1;conda-forge::biopython=1.85
+quartonotebook			unmapped	matplotlib (Matplotlib)				2	2	37	QUARTONOTEBOOK	nf-core/quartonotebook	community.wave.seqera.io/library/jupyter_libxml2-conda-x86_64_libxml2-devel-conda-x86_64_matplotlib_pruned:a244b989a0cdf3e5;https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/5e/5e7b982d1dc8ff674a706ec01ed098853401975e3819505fcf11df284c498952/data	conda-forge::jupyter=1.0.0;conda-forge::matplotlib=3.4.3;conda-forge::papermill=2.4.0;conda-forge::quarto=1.5.57;conda-forge::r-rmarkdown=2.25;conda-forge::jupyter=1.1.1;conda-forge::matplotlib=3.10.3;conda-forge::papermill=2.6.0;conda-forge::quarto=1.7.31;conda-forge::r-rmarkdown=2.29
 chunk_clusters			unmapped	biopython (Biopython)				2	2	36	CHUNK_CLUSTERS	local/chunk_clusters		python=3.13.1;conda-forge::biopython=1.85
 msisensor2			unmapped	msisensor (MSIsensor); msisensor-ct (MSIsensor-ct)				2	4	35	MSISENSOR2_MSI	msisensor2/msisensor2;msisensor2/msisensor2_tumorOnly;nf-core/msisensor2/msi	quay.io/biocontainers/msisensor2:0.1--hd03093a_0	bioconda::msisensor2=0.1
 tidk			unmapped					2	10	33	TIDK_EXPLORE;TIDK_PLOT;TIDK_SEARCH	nf-core/tidk/explore;nf-core/tidk/plot;nf-core/tidk/search		bioconda::tidk=0.2.41;bioconda::tidk=0.2.7
@@ -104,6 +95,7 @@ sylph-tax			unmapped	sylph (sylph)				2	3	29	SYLPHTAX_TAXPROF;SYLPHTAX_MERGE	nf-
 filter_quality			unmapped	quality (QUALITY); nf-core_airrflow (nf-core airrflow)				2	3	28	FILTER_QUALITY	local/utils;local/reveal/filter_quality	docker.io/immcantation/airrflow:5.1.0	
 branch_hits_fasta			unmapped	biopython (Biopython)				2	2	27	BRANCH_HITS_FASTA	local/branch_hits_fasta		python=3.13.1;conda-forge::biopython=1.85
 msgfplusadapter			unmapped	msgfplus (MSGFplus)				2	4	27	get_software_versions;search_engine_msgf;SEARCHENGINEMSGF	local/openms/thirdparty/searchenginemsgf		bioconda::openms-thirdparty=2.8.0
+rename_contigs			unmapped					2	2	27	RENAME_CONTIGS	rename_contigs;utilities/rename_contigs		
 baysor			unmapped	baysir (BaySIR); sopa (Sopa)				2	12	26	BAYSOR_CREATE_DATASET;BAYSOR_PREVIEW;BAYSOR_PREPROCESS_TRANSCRIPTS	local/baysor/create_dataset;local/baysor/preview;local/baysor/preprocess	khersameesh24/baysor:0.7.1;quay.io/nf-core/sopa:2.2.9-baysor	python=3.12;pip=24.3.1;baysor=0.7.1=*_1;python=3.12;pip=24.3.1;baysor=0.7.1
 cmaple-aa			unmapped	maple (MAPLE)				2	2	24	CMAPLE	nf-core/cmaple		bioconda::cmaple=1.1.0
 falsediscoveryrate			unmapped	DiscoverY (DiscoverY); openms (OpenMS)				2	7	24	fdr_consensusid;fdr_idpep;get_software_versions	local/openms/falsediscoveryrate		bioconda::openms=2.8.0
@@ -114,9 +106,7 @@ kb			unmapped					2	4	23	KALLISTOBUSTOOLS_COUNT;KALLISTOBUSTOOLS_REF	nf-core/kal
 simpleaf			unmapped	simpleaffy (simpleaffy); simplemap (SimpleMap); simplex (simplex); alevin-fry-atac (Alevin-fry-atac); salmon (Salmon)				2	4	23	SIMPLEAF_INDEX;SIMPLEAF_QUANT	nf-core/simpleaf/index;nf-core/simpleaf/quant;local/simpleaf_index		bioconda::alevin-fry=0.11.2;bioconda::piscem=0.12.2;bioconda::salmon=1.10.3;bioconda::simpleaf=0.19.5;bioconda::simpleaf=0.10.0-1
 extract_family_members			unmapped					2	4	22	EXTRACT_FAMILY_MEMBERS	local/extract_family_members		conda-forge::python=3.13.1
 idposteriorerrorprobability			unmapped	openms (OpenMS)				2	4	22	get_software_versions;idpep;IDPEP	local/openms/idpep		bioconda::openms=2.8.0
-params			unmapped	PDEparams (PDEparams); PRAS (PRAS); PRAM (PRAM)				2	12	22	DIFF_METH_DM1;MERGE_EMSEQ_MAE_RESULTS;MIXED_LINEAR_MODELS	DM1;linear_models;viz_linear_models	docker://casperdevisser/r-mae-mulit-omics-ipsc:v0.1;ghcr.io/tlitfin/wisps-colabfold-batch:1.1	
 fusion_report			unmapped	fusion (Fusion)				2	3	21	FUSION_REPORT;FUSIONREPORT_DOWNLOAD;FUSIONREPORT_DETECT	fusion_report/fusion_report;nf-core/fusionreport/download;nf-core/fusionreport/detect	quay.io/biocontainers/fusion-report:2.1.5--pyhdfd78af_0	bioconda::fusion-report=4.1.1;conda-forge::beautifulsoup4=4.14.3;conda-forge::click=8.4.0;conda-forge::colorlog=6.10.1;conda-forge::jinja2=3.1.6;conda-forge::markupsafe=3.0.3;conda-forge::numpy=2.4.6;conda-forge::openpyxl=3.1.5;conda-forge::pandas=3.0.1;conda-forge::pyyaml=6.0.3;conda-forge::requests=2.34.2;conda-forge::tabulate=0.10.0;conda-forge::tqdm=4.67.3;conda-forge::xlrd=2.0.2;bioconda::fusion-report=4.1.1;conda-forge::beautifulsoup4=4.14.3;conda-forge::click=8.4.0;conda-forge::colorlog=6.10.1;conda-forge::jinja2=3.1.6;conda-forge::markupsafe=3.0.3;conda-forge::numpy=2.4.6;conda-forge::openpyxl=3.1.5;conda-forge::pandas=3.0.3;conda-forge::pyyaml=6.0.3;conda-forge::requests=2.34.2;conda-forge::tabulate=0.10.0;conda-forge::tqdm=4.67.3;conda-forge::xlrd=2.0.2
-report			unmapped	vireport (ViReport); reporter (Reporter); degreport (DEGreport); reportype (ReporType); reportree (ReporTree)				2	2	21	report;REPORT	report	docker://neoformit/daff-taxonomic-assignment:v1.0.0	
 gfatools			unmapped	gtftools (GTFtools); giatools (giatools); gtools (GTools)				2	3	20	GFATOOLS_GFA2FA	local/gfatools/gfa2fa;nf-core/gfatools/gfa2fa		bioconda::gfatools=0.5;bioconda::gfatools=0.5=h577a1d6_5
 idfilter			unmapped	filter (Filter); openms (OpenMS)				2	5	20	get_software_versions;idfilter;IDFILTER	local/openms/idfilter		bioconda::openms=2.8.0
 luciphoradapter			unmapped					2	3	20	luciphor;LUCIPHORADAPTER	local/openms/thirdparty/luciphoradapter		bioconda::openms-thirdparty=2.8.0
@@ -132,6 +122,7 @@ duckdb			unmapped					2	5	15	DUCKDB_TABLE2PARQUET;HMMER_HMMRANK	nf-core/duckdb/t
 gt			unmapped					2	4	15	GT_GFF3VALIDATOR;GT_GFF3;GT_STAT	nf-core/gt/gff3validator;pfr/gt/gff3;pfr/gt/gff3validator		bioconda::genometools-genometools=1.6.5
 python3.11			unmapped					2	3	15	CAT_TO_BIOM;METAPHLAN_TO_BIOM;MINMAX	local/cat_to_biom;local/metaphlan_to_biom;local/minmax	agusinac/anot2biom:latest	
 rename_fasta			unmapped					2	2	15	RENAME_FASTA	rename_fasta;local/rename_fasta	quay.io/microbiome-informatics/genomes-pipeline.python3base:v1.1	
+summarize			unmapped	annovar_summarize (annovar_summarize); summarized.science (summarized.science); summarizedbenchmark (SummarizedBenchmark)				2	2	15	SUMMARIZE	local/summarize		conda-forge::r-gridextra=2.3;conda-forge::r-png=0.1_8;conda-forge::r-seqinr=4.2_36;conda-forge::r-tidyverse=2.0.0
 trgt			unmapped	trgt-denovo (TRGT-denovo)				2	3	15	TRGT_GENOTYPE;TRGT_PLOT	nf-core/trgt/genotype;nf-core/trgt/plot		bioconda::trgt=5.0.0
 beautifulsoup4			unmapped					2	7	14	STRIP_NAV_MULTIQC;EXTRACT_PREVIEW_DATA	local/strip_nav_multiqc;local/utility/extract_preview_data		conda-forge::python=3.13.0;conda-forge::beautifulsoup4=4.13.5;conda-forge::lxml=6.0.1
 easypqp			unmapped	easyqpcr (EasyqpcR)				2	4	14	dda_library_generation;EASYPQP_CONVERT;EASYPQP_LIBRARY	local/easypqp/convert;local/easypqp/library		bioconda::easypqp=0.1.57
@@ -196,9 +187,8 @@ check_ensembl_vcf			unmapped					2	2	4	check_ensembl_vcf
 check_samplesheet			unmapped					2	2	4	check_samplesheet;CHECK_SAMPLESHEET	check_samplesheet;local/check_samplesheet	python:3.8	
 concat_query_csvs			unmapped					2	2	4	concat_query_csvs		luxii/progfastagen:1.0	
 cut_up_fasta.py			unmapped					2	2	4	binning;FEATURED_ALIGNMENT	local/bwa_mem2/binning_alignment	quay.io/microbiome-informatics/bwa_metabat_concoct:2.3_2.16_1.1.0	
-format			unmapped	deformats (DEFormats); biomformat (biomformat); bioformats (bioformats); frma (frma)				2	2	4	CIRCOS;FORMAT2INFO_CHRM	local/circos;execution_modules	docker.io/gallvp/circos-tools:v0.23-1_ps;tblabfjd/bioinfotools:2.0.0	
+d			unmapped	base (BASE)				2	2	4	COLLECT_STATS	local/collect/stats		conda-forge::r-base=4.5.3;conda-forge::r-dplyr=1.2.1;conda-forge::r-readr=2.2.0;conda-forge::r-purrr=1.2.2;conda-forge::r-tidyr=1.3.2;conda-forge::r-stringi=1.8.7;conda-forge::r-stringr=1.6.0;conda-forge::r-tidyverse=2.0.0;conda-forge::r-data.table=1.17.8;conda-forge::r-dtplyr=1.3.3;conda-forge::r-base=4.3.1;conda-forge::r-data.table=1.17.8;conda-forge::r-dplyr=1.1.4;conda-forge::r-dtplyr=1.3.2;conda-forge::r-purrr=1.1.0;conda-forge::r-readr=2.1.5;conda-forge::r-stringr=1.5.2;conda-forge::r-tidyr=1.3.1
 gatk4			unmapped	gatk (GATK)				2	2	4	MADINSERTSIZECUSTOM;MAE_ALLELICCOUNTS	madinsertsizecustom;local/mae/alleliccounts		bioconda::picard:3.1.1;bioconda::bcftools=1.22;bioconda::gatk4=4.6.2.0;bioconda::htslib=1.22.1;bioconda::samtools=1.22.1
-line			unmapped	CLINE (CLINE); scline (scLINE); celline (Celline); lapine (LAPINE); base (BASE)				2	2	4	NORMALIZE_BBMAP_IDS;COLLECT_STATS	local/normalize_bbmap_ids;local/collect/stats		conda-forge::gawk=5.3.0;conda-forge::r-base=4.3.1;conda-forge::r-data.table=1.17.8;conda-forge::r-dplyr=1.1.4;conda-forge::r-dtplyr=1.3.2;conda-forge::r-purrr=1.1.0;conda-forge::r-readr=2.1.5;conda-forge::r-stringr=1.5.2;conda-forge::r-tidyr=1.3.1
 makecmap_fa2cmapmulticolor			unmapped					2	2	4	MAKECMAP_FA2CMAPMULTICOLOR	local/makecmap_fa2cmapmulticolor;local/makecmap/fa2cmapmulticolor		conda-forge::perl=5.26.2
 merge			unmapped	merger (merger); svmerge (SVMerge); hmmerge (HMMerge); marge (MARGE)				2	2	4	MERGE		mplynch28/demux_sim	
 paraclu			unmapped	paracell (paraCell)				2	2	4	cluster_ctss;paraclu_peak_call			
@@ -206,6 +196,7 @@ paraclu-cut			unmapped					2	2	4	cluster_ctss;paraclu_peak_call
 parse_rrna-bacteria.py			unmapped					2	2	4	DETECT_NCRNA;DETECT_RRNA	detect_ncrna;local/detect_rrna	quay.io/microbiome-informatics/genomes-pipeline.detect_rrna:v3.2;quay.io/microbiome-informatics/genomes-pipeline.detect_rrna:v3.1	
 protgraphtraverseintvarlimitter			unmapped					2	2	4	create_precursor_specific_fasta_via_protgraphcpp		luxii/progfastagen:1.0	
 rsync			unmapped	supernova (Supernova)				2	2	4	supernova;DOWNLOAD_PDBMMCIF	local/download_pdbmmcif	nfcore/supernova:2.1.1	bioconda::aria2=1.36.0;conda-forge::rsync=3.2.7
+t			unmapped					2	2	4	cluster_ctss;generate_cool			
 transrate			unmapped	translate (Translate); transat (TransAT); transreg (transreg)				2	2	4	TRANSRATE;ORP_TRANSRATE	local/transrate;local/orp_transrate	quay.io/nf-core/orp_transrate:1.0.3_cv1.3	bioconda::transrate=1.0.3
 check_input			unmapped	input (INPUT)				2	2	3	check_input	check_input	https://depot.galaxyproject.org/singularity/python:3.8.3;python:3.8	
 check_samplesheet.py			unmapped					2	2	3	CHECK_SAMPLESHEET;SAMPLESHEET_CHECK	local/samplesheet_check		
@@ -214,7 +205,6 @@ create_analysis_mapping			unmapped					2	2	3	CREATE_ANALYSIS_MAPPING	local/creat
 mergetab			unmapped	base (BASE)				2	2	3	COLLECT_STATS	local/collect/stats		conda-forge::r-base=4.5.3;conda-forge::r-dplyr=1.2.1;conda-forge::r-readr=2.2.0;conda-forge::r-purrr=1.2.2;conda-forge::r-tidyr=1.3.2;conda-forge::r-stringi=1.8.7;conda-forge::r-stringr=1.6.0;conda-forge::r-tidyverse=2.0.0;conda-forge::r-data.table=1.17.8;conda-forge::r-dtplyr=1.3.3;conda-forge::r-base=4.3.1;conda-forge::r-data.table=1.17.8;conda-forge::r-dplyr=1.1.4;conda-forge::r-dtplyr=1.3.2;conda-forge::r-purrr=1.1.0;conda-forge::r-readr=2.1.5;conda-forge::r-stringr=1.5.2;conda-forge::r-tidyr=1.3.1
 parse			unmapped	parsec (PARSEC); parseq (Parseq); sparse (SPARSE); pars (PARS)				2	2	3	PARSE		mplynch28/demux_sim	
 rename_bcs			unmapped					2	2	3	RENAME_BCS		mplynch28/demux_sim	
-seen_upgraded			unmapped					2	2	3	STAR_GENOMEPARAMS_UPGRADE	local/star_genomeparams_upgrade	https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/ce/cee0212dfecd678e2742f70d5a2c2868b54334a52dcd20d63505e7414ecdb7a7/data	conda-forge::gawk=5.3.1
 stranger			unmapped	strainge (StrainGE); stager (stageR); straglr (Straglr); htslib (HTSlib); tabix (tabix)				2	2	3	STRANGER	nf-core/stranger		bioconda::htslib=1.23;conda-forge::pip=25.3;conda-forge::python=3.14.2;bioconda::tabix=1.11;conda-forge::pip=25.3;conda-forge::python=3.14.2
 cds_grch37_download			unmapped					2	2	2	cds_GRCh37_download			
 genomescope.r			unmapped	genomes (genomes); scope (SCOPE); GenomeScope_2.0 (GenomeScope 2.0); genomedisco (GenomeDISCO); genomespy (GenomeSpy)				2	2	2	genomescope	preqc		bioconda::genomescope2
@@ -226,6 +216,7 @@ extract_ancestral		extract	prefix match		EXTRACT			2	2	0	EXTRACT_ANCESTRAL	local
 extract_cov_iden		extract	prefix match		EXTRACT			2	2	0	EXTRACT_COV_IDEN	local/extract_cov_iden;local/extract/cov_iden		conda-forge::coreutils=9.1
 extract_gnomad_vcf		extract	prefix match		EXTRACT			2	2	0	extract_gnomad_vcf			
 gencode_download		GENCODE	prefix match		GENCODE			2	2	0	gencode_download			
+star_genomeparams_upgrade		star	prefix match		STAR			2	2	0	STAR_GENOMEPARAMS_UPGRADE	local/star_genomeparams_upgrade	https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/ce/cee0212dfecd678e2742f70d5a2c2868b54334a52dcd20d63505e7414ecdb7a7/data	conda-forge::gawk=5.3.1
 custom_extracttarball			unmapped					1	25	365	CUSTOM_EXTRACTTARBALL	local/custom/extract_tarball		conda-forge::tar=1.34
 humid			unmapped	exhumid (ExHuMId); humir (HumiR)				1	1	171	HUMID	nf-core/humid		bioconda::humid=1.0.4
 concatenate_reads_samplesheet			unmapped					1	23	132	CONCATENATE_READS_SAMPLESHEET	utility_modules/concatenate_reads_sampleSheet		
@@ -269,7 +260,9 @@ saltshaker			unmapped	ShaKer (ShaKer)				1	3	41	SALTSHAKER_CALL;SALTSHAKER_CLASS
 teal			unmapped	tealeaves (tealeaves); glycositealign (GlycoSiteAlign)				1	2	41	TEAL_PIPELINE;TEAL_PREP	local/teal/pipeline;local/teal/prep		bioconda::hmftools-teal=1.3.6
 comebin			unmapped	combind (ComBind)				1	1	39	COMEBIN_RUNCOMEBIN	nf-core/comebin/runcomebin		bioconda::comebin=1.0.4
 filter_samples			unmapped	base (BASE)				1	1	39	FILTER_SAMPLES	local/filter_samples		conda-forge::r-base=4.2.1
+pick_assemblies			unmapped					1	1	37	PICK_ASSEMBLIES	local/pick_assemblies		conda-forge::quarto=1.6.41;bioconda::r-pathosurveilr=0.4.5
 ccsmeth			unmapped					1	2	35	CCSMETH_CALLFREQB;CCSMETH_CALLMODS	local/ccsmeth/callfreqb;local/ccsmeth/callmods		ccsmeth
+initial_classification			unmapped					1	1	35	INITIAL_CLASSIFICATION	local/initial_classification		conda-forge::quarto=1.6.41;bioconda::r-pathosurveilr=0.4.5
 purgedups			unmapped	purge_dups (purge_dups); predus (PredUs); predps (PredPS)				1	7	35	PURGEDUPS_CALCUTS;PURGEDUPS_GETSEQS;PURGEDUPS_HISTPLOT	nf-core/purgedups/calcuts;nf-core/purgedups/getseqs;nf-core/purgedups/histplot		bioconda::purge_dups=1.2.6
 svync			unmapped					1	1	35	SVYNC	nf-core/svync		bioconda::svync=0.3.0
 nanolyse			unmapped	nanolas (NanoLAS)				1	1	34	NANOLYSE	nf-core/nanolyse		bioconda::nanolyse=1.2.0
@@ -291,6 +284,7 @@ cuppa			unmapped	cupp (CUPP); cppa (CPPA); cupca (CuPCA)				1	1	30	CUPPA	local/c
 numorph_preprocessing			unmapped					1	6	30	NUMORPHSTITCH;NUMORPHALIGN;NUMORPH_INTENSITY	local/numorphstitch;local/numorphalign;nf-core/numorph/intensity	nf-core/numorph_preprocessing:1.0.0	
 g2gtools			unmapped	gtools (GTools); gtool (GTOOL); ggtools (GGtools); grtools (grtools)				1	9	29	CHAIN_CONVERT;G2GTOOLS_CONVERT;G2GTOOLS_EXTRACT	g2gtools/g2gtools_chain_convert_peak;g2gtools/g2gtools_convert;g2gtools/g2gtools_extract	quay.io/jaxcompsci/g2gtools:0.1.31;quay.io/jaxcompsci/g2gtools:74926ad	
 read_groups			unmapped	picard_addorreplacereadgroups (picard_AddOrReplaceReadGroups)				1	12	29	READ_GROUPS	utility_modules/read_groups	quay.io/jaxcompsci/python-bz2file:np_2.7.18	
+ca-certificates			unmapped					1	1	28	REPORT	local/report	https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/62/62cee220a91255a09aa10b25f920b6b68febe137c7ed00b527d5891a3e5c7842/data	conda-forge::ca-certificates;conda-forge::quarto=1.9.38;conda-forge::r-gt=1.0.0;conda-forge::r-plotly=4.10.4;conda-forge::r-quarto=1.4.4;conda-forge::r-tidyjson=0.3.3.1;conda-forge::r-tidyverse=2.0.0;conda-forge::r-showtext=0.9_8;modules/local/report/.conda-lock/linux_amd64-bd-833048f01b6491fc_1.txt
 pbjasmine			unmapped	Jasmine (Jasmine)				1	1	28	PBJASMINE	nf-core/pbjasmine		bioconda::pbjasmine=2.4.0
 genomescope			unmapped	genomes (genomes); scope (SCOPE); GenomeScope_2.0 (GenomeScope 2.0); genomedisco (GenomeDISCO); genomespy (GenomeSpy)				1	1	27	GENOMESCOPE	local/genomescope		
 prepare_tsv_for_uploader			unmapped					1	2	27	PREPARE_TSV_FOR_UPLOADER	local/genome_uploader/generate_table_for_upload		
@@ -304,7 +298,6 @@ fastq-sort			unmapped					1	5	25	XENOME_CLASSIFY	xenome/xenome	quay.io/jaxcompsc
 vcf2maf.pl			unmapped					1	2	25	VCF2MAF	nf-core/vcf2maf		bioconda::ensembl-vep=113.3;bioconda::vcf2maf=1.6.22
 ampcombi			unmapped					1	4	24	AMPCOMBI2_CLUSTER;AMPCOMBI2_COMPLETE;AMPCOMBI2_PARSETABLES	nf-core/ampcombi2/cluster;nf-core/ampcombi2/complete;nf-core/ampcombi2/parsetables		bioconda::ampcombi=3.0.0
 generate_input_samplesheet			unmapped					1	1	24	GENERATE_INPUT_SAMPLESHEET	local/generate_input_samplesheet	quay.io/microbiome-informatics/ggp_samplesheet_generation:v1	
-rename_contigs			unmapped					1	1	24	RENAME_CONTIGS	rename_contigs		
 dragonflye			unmapped	dragonfly (Dragonfly); dragon (DRAGON)				1	1	23	DRAGONFLYE	nf-core/dragonflye		bioconda::dragonflye=1.2.1
 gnu-wget			unmapped					1	2	23	GENCODE_DOWNLOAD;HGNC_DOWNLOAD	local/gencode_download;local/hgnc		bioconda::gnu-wget=1.18
 svtk			unmapped	stk (stk)				1	2	23	SVTK_VCF2BED;SVTK_STANDARDIZE	nf-core/svtk/vcf2bed;nf-core/svtk/standardize		bioconda::svtk=0.0.20190615;python=3.10;setuptools=65.5.0;bioconda::svtk=0.0.20190615=*2
@@ -367,7 +360,6 @@ rename_postdastool			unmapped	SED (SED)				1	1	15	RENAME_POSTDASTOOL	local/dasto
 report_html			unmapped					1	1	15	REPORT_HTML	local/report/html		conda-forge::python=3.9.5
 rustqc			unmapped					1	1	15	RUSTQC	nf-core/rustqc	https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/0d/0d5139459cbdb26c71b7b27fae2cdacda370b2ee42c912a8d8bd37239bb43e74/data	bioconda::rustqc=0.2.1
 subset_busco_genes			unmapped	base (BASE)				1	1	15	SUBSET_BUSCO_GENES	local/subset_busco_genes		conda-forge::r-base=4.2.1
-summarize			unmapped	annovar_summarize (annovar_summarize); summarized.science (summarized.science); summarizedbenchmark (SummarizedBenchmark)				1	1	15	SUMMARIZE	local/summarize		conda-forge::r-gridextra=2.3;conda-forge::r-png=0.1_8;conda-forge::r-seqinr=4.2_36;conda-forge::r-tidyverse=2.0.0
 add_nygc_allele_counts			unmapped					1	2	14	ADD_NYGC_ALLELE_COUNTS	python/python_add_nygc_allele_counts	quay.io/jaxcompsci/bedtools-python3:2.26.0	
 amulety			unmapped	amulet (AMULET); igblast (IgBLAST)				1	5	14	AMULETY_EMBED;AMULETY_TRANSLATE	nf-core/amulety/embed;nf-core/amulety/translate		bioconda::igblast=1.22.0;conda-forge::curl=8.18.0;conda-forge::pip=26.1.1;conda-forge::python=3.12.13;conda-forge::wget=1.25.0
 checkref			unmapped	checker (Checker)				1	3	14	checkRef			
@@ -512,7 +504,6 @@ survivor_summary			unmapped					1	3	9	SURVIVOR_SUMMARY	survivor/survivor_summary
 survivor_vcf_to_table			unmapped					1	3	9	SURVIVOR_VCF_TO_TABLE	survivor/survivor_vcf_to_table	quay.io/jaxcompsci/perl:0.1.0	
 vartrix_linux			unmapped					1	2	9	DEMUXSNP;DEMUXSNPNGENES			
 w			unmapped					1	1	9	CONVERT_SICER	local/peaks	nciccbr/ccbr_ubuntu_base_20.04:v6.1	
-ad			unmapped					1	2	8	FORMAT2INFO;FORMAT2INFO_CHRM	execution_modules	tblabfjd/bioinfotools:2.0.0	
 assembly_postprocessing			unmapped					1	1	8	ASSEMBLY_POSTPROCESSING	local/assembly_postprocessing		conda-forge::python=3.8.3
 backsub			unmapped					1	1	8	BACKSUB	nf-core/backsub	ghcr.io/schapirolabor/background_subtraction:v0.4.1	
 bamsifter			unmapped	bamsi (BAMSI)				1	2	8	SUMMARY_REPORT;VIRUS_REPORT	local/summary_report;local/virus_report	trinityctat/ctat_vif	
@@ -544,7 +535,6 @@ merge_prep			unmapped					1	4	8	MERGE_PREP	python/python_merge_prep	quay.io/jaxc
 novel_allele_inference			unmapped	nf-core_airrflow (nf-core airrflow)				1	1	8	NOVEL_ALLELE_INFERENCE	local/enchantr/novel_allele_inference	docker.io/immcantation/airrflow:5.1.0	
 openpyxl			unmapped	openpepxl (OpenPepXL); pandas (Pandas)				1	3	8	PREPARE_PIPELINE;VELOCITY_CONVERT;VELOCITY_WHITELIST	local/prepare/pipeline;local/velocity/convert;local/velocity/whitelist		bioconda::openpyxl==2.6.1;conda-forge::pandas==1.2.4
 ortho_seqs			unmapped	pandas (Pandas)				1	2	8	BUSCO_SEQS	local/busco/seqs		conda-forge::pandas=2.3.1;conda-forge::python=3.13.5
-pandoc			unmapped	Pandoc_Scholar (Pandoc Scholar); padloc (PADLOC); padhoc (Padhoc)				1	1	8	CIGAR_PARSER	local/cigar_parser		pandoc=2.19.2;r-seqinr=4.2_16;r-optparse=1.7.3;bioconductor-rsamtools=2.10.0;r-dplyr=1.0.10;r-plyr=1.8.7;r-stringr=1.4.1;bioconductor-shortread=1.52.0;bioconductor-genomicalignments=1.30.0;r-data.table=1.14.4;bioconductor-biomart=2.50.0;r-plotly=4.10.0;bioconductor-decipher=2.22.0;bioconductor-biostrings=2.62.0;r-parallelly=1.32.1;r-jsonlite=1.8.2
 params.metacoag_suffix			unmapped					1	2	8	METACOAG_LONGREADS;METACOAG_SHORTREADS	binning/metacoag		
 peptideindexer			unmapped	peptideminer (PeptideMiner)				1	2	8	get_software_versions;index_peptides			
 pgscatalog-ancestry-adjust			unmapped					1	1	8	ANCESTRY_ANALYSIS	local/ancestry/ancestry_analysis		
@@ -572,7 +562,6 @@ create_stack			unmapped					1	1	7	CREATE_STACK	local/createstack	ghcr.io/schapir
 create_transcriptome_fasta_pathogen			unmapped					1	1	7	create_transcriptome_fasta_pathogen			
 cutoff_identification_results			unmapped					1	1	7	cutoff_identification_results			
 dump_reads			unmapped					1	4	7	DUMP_READS	local/atacreads/dumpreads		anaconda::gawk=5.1.0
-fnr			unmapped					1	1	7	FIND_ORTHOLOG	utils/find_matching_orthologs		
 fqtk			unmapped	ftk (FTK)				1	1	7	FQTK	nf-core/fqtk		bioconda::fqtk=0.3.1
 gene_overlaps			unmapped	overlap (overlap); geneoverlap (GeneOverlap); genomicranges (GenomicRanges); base (BASE)				1	1	7	GENEOVERLAPS	local/geneoverlaps	ecoflowucl/gene_overlap:v1.0	bioconda::bioconductor-genomicranges=1.54.1;conda-forge::r-base=4.3.3;conda-forge::r-dplyr=1.1.4
 genome_summary_json			unmapped					1	1	7	GENOME_SUMMARY_JSON	genome_summary_json	quay.io/microbiome-informatics/genomes-pipeline.python3base:v1.1	
@@ -588,12 +577,14 @@ parse_domain			unmapped					1	1	7	PARSE_DOMAIN	parse_domain	quay.io/microbiome-i
 postmerge			unmapped	postm (POSTm); postre (POSTRE)				1	1	7	POSTMERGE	local/postmerge		
 postproc_sourmashtaxo			unmapped					1	1	7	POSTPROC_SOURMASHTAXO	local/postproc/sourmashtaxo		
 ppqt_process			unmapped	process (PROcess)				1	1	7	PPQT_PROCESS	local/qc	nciccbr/ccbr_ubuntu_base_20.04:v6.1	
+prepare_merge_vcfs			unmapped					1	1	7	prepare_merge_vcfs			
 q2_assign_taxo			unmapped					1	1	7	q2_assign_taxo	qiime2	sebimer/samba-marabyss-qiime2:2024.2	
 q2_picrust2.sh			unmapped	picrust2 (PICRUSt2); picrust (PICRUSt)				1	1	7	q2_picrust2_analysis			
 q2_taxo.sh			unmapped					1	1	7	q2_taxonomy			
 qc_summary			unmapped					1	1	7	QC_SUMMARY	execution_modules	tblabfjd/bioinfotools:2.0.0	
 sgdemux			unmapped					1	1	7	SGDEMUX	nf-core/sgdemux		bioconda::sgdemux=1.1.1
 split_vep_tsv			unmapped					1	1	7	SPLIT_VEP_TSV	execution_modules		
+ad			unmapped					1	1	6	FORMAT2INFO	execution_modules	tblabfjd/bioinfotools:2.0.0	
 anvi-script-reformat-fasta			unmapped					1	2	6	anvio;modelling			
 assemblathon_stats			unmapped					1	1	6	ASSEMBLATHON_STATS	local/assemblathon_stats		conda-forge::perl
 bam			unmapped	bamm (BaMM); bamsi (BAMSI); ppbam (ppBAM); beam (BEAM)				1	2	6	bam_trim;get_software_versions			
@@ -649,11 +640,14 @@ https://wave.seqera.io/v1alpha1/builds/bd-c5870abfebd19646_1/condalock			unmappe
 ipsae			unmapped	ipsa (IPSA); isafe (iSAFE); ipage (iPAGE)				1	1	6	IPSAE	local/ipsae		
 isosceles			unmapped	isoscale (isoScale)				1	1	6	ISOSCELES	isosceles	https://zenodo.org/records/10951160/files/isosceles.sif	
 kraken-parser.pl			unmapped	kraken (Kraken); krakenparser (KrakenParser)				1	2	6	kraken;physeter			
+left			unmapped	calcifications-attenuation-left-coronary-artery-ct-images (Calcifications Attenuation in Left Coronary Artery CT Images Using FDA Domain)				1	1	6	METASPADES	assembly		
 log_parser			unmapped					1	1	6	LOG_PARSER	python/python_log_parser	python:3.8.10	
 mapseq2asvtable			unmapped					1	2	6	MAPSEQ2ASVTABLE	local/mapseq2asvtable		
 mapseq2biom			unmapped	mapseq (MAPseq)				1	2	6	MAPSEQ2BIOM	mapseq2biom	quay.io/biocontainers/python:3.9--1	
 medusapipeline			unmapped					1	3	6	ANNOTATE;CREATE_DB;CREATE_DICTIONARY	local/annotate/idmapping;local/annotate/createdb;local/create_dictionary		arthurvinx::medusaPipeline
+merge_emseq_mae_results			unmapped					1	2	6	MERGE_EMSEQ_MAE_RESULTS	linear_models	docker://casperdevisser/r-mae-mulit-omics-ipsc:v0.1	
 no_merge_bams			unmapped					1	1	6	NO_MERGE_BAMS	no_merge_bams	ubuntu:22.04	
+normalize_bbmap_ids			unmapped					1	1	6	NORMALIZE_BBMAP_IDS	local/normalize_bbmap_ids		conda-forge::gawk=5.3.0
 opt			unmapped	optm (OptM); smopt (SMOPT); gropt (GrOpt)				1	3	6	OPT_FLIP;OPT_STAT;OPT_TRACK	nf-core/opt/flip;nf-core/opt/stat;nf-core/opt/track	khersameesh24/opt:v0.0.1	
 ortho_seq_count			unmapped	pandas (Pandas)				1	2	6	ORTHOSEQCOUNT	local/orthoseqcount		conda-forge::pandas=2.3.1;conda-forge::python=3.13.5
 pacbio_filter			unmapped	filter (Filter)				1	2	6	PACBIO_FILTER	local/pacbio_filter		conda-forge::gawk=5.1.0
@@ -669,7 +663,6 @@ q2_phylogeny.sh			unmapped					1	1	6	q2_phylogeny
 rclone			unmapped	clone (CLoNe)				1	3	6	RCLONE_CHECK;RCLONE_CHECKSUM;RCLONE_COPY	nf-core/rclone/check;nf-core/rclone/checksum;nf-core/rclone/copy	https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/de/de06d232599f015aa253f63b84ba2e257bb542810dc11714b88ca9b4045b80ea/data;https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/c9/c947c1a7171daf074310295417d0f0afe879275e1543fa5fc2a9711e7c2c72ab/data	conda-forge::rclone=1.74.3;modules/nf-core/rclone/check/.conda-lock/linux_arm64-bd-351f8e39202b129a_1.txt;modules/nf-core/rclone/check/.conda-lock/linux_amd64-bd-2ef33c5b9132aa97_1.txt;conda-forge::rclone=1.74.3;modules/nf-core/rclone/checksum/.conda-lock/linux_arm64-bd-351f8e39202b129a_1.txt;modules/nf-core/rclone/checksum/.conda-lock/linux_amd64-bd-2ef33c5b9132aa97_1.txt;conda-forge::rclone=1.74.3;modules/nf-core/rclone/copy/.conda-lock/linux_arm64-bd-ff88b2e0040147be_1.txt;modules/nf-core/rclone/copy/.conda-lock/linux_amd64-bd-ff88b2e0040147be_1.txt
 remove_chimeric			unmapped	nf-core_airrflow (nf-core airrflow)				1	1	6	REMOVE_CHIMERIC	local/enchantr/remove_chimeric	docker.io/immcantation/airrflow:5.1.0	
 rename_fasta_for_catpack			unmapped					1	1	6	RENAME_FASTA_FOR_CATPACK	local/rename_fasta_for_catpack		conda-forge::gzip=1.14;conda-forge::bash=5.2.37
-right			unmapped	Plotwright (Plotwright); rightfield (RightField); copyrighter (copyrighter)				1	1	6	METASPADES	assembly		
 run_gx.py			unmapped					1	1	6	FCSGX_RUNGX	local/fcsgx/rungx		
 run_pangenome_aware_deepvariant			unmapped					1	2	6	deepVariant;deepVariant_chr		baseDir/sifs/deepvariant.sif	
 run_pathways.sh			unmapped	pathway (pathway)				1	2	6	KEGG_COMPLETENESS	local/kegg/completeness	quay.io/microbiome-informatics/kegg-completeness:v1.1	
@@ -722,9 +715,7 @@ cut_sam			unmapped	SED (SED)				1	1	5	CUT_SAM	local/cut/sam		conda-forge::sed=4.
 date_tree			unmapped	cafe (CAFE)				1	1	5	DATE_TREE	local/date_tree	ecoflowucl/cafe:r-4.3.1	
 demultiplexing_guppy			unmapped					1	1	5	demultiplexing_guppy			
 demultiplexing_guppy_cpu			unmapped					1	1	5	demultiplexing_guppy_cpu			
-does			unmapped	CADOES (CADOES); doestrare (DoEstRare); hydrogen_bonding_does (Hydrogen bonding does)				1	1	5	FILTERSORTFASTA	local/filtersortfasta		
 entrez-direct			unmapped	DIRECT (Direct Information Reweighted by Contact Templates (DIRECT)); entrez (Entrez)				1	1	5	EXTRACT_REF_FASTA		quay.io/biocontainers/entrez-direct:22.4--he881be0_0	
-error			unmapped	errorx (ErrorX); ErrorTracer (ErrorTracer); umierrorcorrect (UMIErrorCorrect)				1	2	5	CIRCLEFINDER	local/circlefinder		
 extractassemblymetrics			unmapped					1	1	5	EXTRACTASSEMBLYMETRICS	local/extractassemblymetrics		python=3.14.4;matplotlib=3.10.9;pandas=3.0.2;numpy=2.4.3
 famdb.py			unmapped	famd (FAMD); fimdb (fIMDb); repeatmasker (RepeatMasker)				1	1	5	FAMDBPYEMBL	local/famdbpyembl		bioconda::repeatmasker=4.2.2
 fastcat			unmapped	fatcat (FATCAT); fasta (FASTA); fastskat (FastSKAT)				1	1	5	FASTCAT		ontresearch/wf-amplicon:sha7d1766bb6196d4c370d6bd45d89154e7c1fef0b3	
@@ -747,6 +738,7 @@ local-cd-search			unmapped	cd-search (CD-Search)				1	3	5	LOCALCDSEARCH_DOWNLOAD
 make_prg			unmapped	make_nr (make_nr)				1	1	5	MAKE_PRG	local/make_prg		conda-forge::python=3.8.3
 makechim			unmapped					1	1	5	makechim			
 makecorr			unmapped					1	1	5	makecorr			
+mask-ali.pl			unmapped					1	2	5	jaccknifeMLinference;mlinference			
 mccellpose			unmapped	cellpose (Cellpose)				1	1	5	MCCELLPOSE	local/mccellpose	docker.io/labsyspharm/mccellpose:1.0.3	
 merge_tables			unmapped					1	1	5	MERGE_TABLES	local/merge/summary		conda-forge::r-tidyverse=2.0.0;conda-forge::r-dtplyr=1.3.1;conda-forge::r-data.table=1.14.8
 microdecon.r			unmapped	microeco (microeco)				1	1	5	microDecon_step1			
@@ -754,9 +746,9 @@ modkit_bedgraph			unmapped					1	2	5	MODKIT_BEDGRAPH	local/bed2bedgraphs/modkit_
 msstatsconverter			unmapped	openms (OpenMS)				1	1	5	MSSTATSCONVERTER	local/openms/msstatsconverter		bioconda::openms=2.8.0
 ncbi_fcs_gx_setup_sample			unmapped					1	1	5	NCBI_FCS_GX_SETUP_SAMPLE	local/ncbi_fcs_gx_setup_sample		
 numorph_3dunet			unmapped					1	1	5	NUMORPH_3DUNET	nf-core/numorph/3dunet	quay.io/nf-core/numorph-3dunet:1.0.9	
-orig			unmapped	origami (Origami); genorigin (GenOrigin); polyorigin (PolyOrigin)				1	1	5	NORMALIZE_BBMAP_IDS	local/normalize_bbmap_ids		conda-forge::gawk=5.3.0
 panelcnmops			unmapped	panelcn.mops (panelcn.mops)				1	1	5	PANELCNMOPS	execution_modules	tblabfjd/bioinfotools:2.0.0	
 parse_blat_results			unmapped					1	1	5	PARSE_BLAT_RESULTS	local/parse_blat_results		conda-forge::python=3.8.3
+parse_filter_annotations			unmapped					1	1	5	PARSE_FILTER_ANNOTATIONS	utilities/parse_filter_annotations		
 pbcpg_bedgraphs			unmapped					1	2	5	PBCPG_BEDGRAPHS	local/bed2bedgraphs/pbcpgtools_bedgraphs		pigz=2.8
 pbcpgtools			unmapped	CpGtools (CpGtools); gtools (GTools)				1	1	5	PBCPGTOOLS_ALIGNEDBAMTOCPGSCORES	nf-core/pbcpgtools/alignedbamtocpgscores		bioconda::pb-cpg-tools=3.0.0
 perl-bio-procedural			unmapped					1	1	5	KRAKEN2_PREPARE_GTDBTK_TAX	kraken2	quay.io/biocontainers/perl-bio-procedural:1.7.4--pl5321h9ee0642_0	
@@ -773,7 +765,6 @@ qc_batch			unmapped	qcatch (QCatch); mass (Mass++)				1	1	5	QC_BATCH	local/qc/ba
 quantification_table			unmapped					1	1	5	QUANTIFICATION_TABLE	feature_counts		
 r1reads			unmapped					1	1	5	R1READS	local/fragmentreads/r1reads		anaconda::gawk=5.1.0
 reads_summary			unmapped					1	2	5	READS_SUMMARY	local/reads_summary		r::r-magrittr=1.5
-ref-alt			unmapped					1	1	5	prepare_merge_vcfs			
 remove_crossmapped_reads			unmapped					1	1	5	remove_crossmapped_reads			
 rescale_tree			unmapped					1	1	5	RESCALE_TREE	local/rescale_tree		
 root_tree			unmapped					1	1	5	ROOT_TREE	local/root_tree		
@@ -790,13 +781,13 @@ uncompress_host_fasta_genome			unmapped					1	1	5	uncompress_host_fasta_genome
 abridged_tsv			unmapped	bridge (bridge)				1	1	4	ABRIDGED_TSV	local/abridged_tsv	trinityctat/ctat_vif	
 add_alt_af			unmapped					1	2	4	ADD_ALT_AF	python/python_add_AF_freebayes;python/python_add_AF_haplotypecaller	quay.io/jaxcompsci/bedtools-python3:2.26.0	
 add_final_allele_counts			unmapped					1	2	4	ADD_FINAL_ALLELE_COUNTS	python/python_add_final_allele_counts	quay.io/jaxcompsci/bedtools-python3:2.26.0	
+add_quast_info_to_bins			unmapped					1	1	4	ADD_QUAST_INFO_TO_BINS	sum_up_bins_informations		
 agp2assembly.py			unmapped					1	1	4	AGP2ASSEMBLY	local/agp2assembly	docker.io/gallvp/juicebox_scripts:a7ae991_ps	
+annotation_summary			unmapped					1	1	4	ANNOTATION_SUMMARY	utilities/annotation_summary		
 anvi-compute-gene-cluster-homogeneity			unmapped					1	1	4	anvio			
 anvi-gen-contigs-database			unmapped					1	2	4	anvio;modelling			
 ariba			unmapped	Arriba (Arriba); aria (ARIA); atria (Atria)				1	2	4	ariba_run;ariba_summary	ariba		
 bam2stats.py			unmapped	bamstats (bamstats)				1	2	4	bam2stats			
-bamdam			unmapped	bamm (BaMM)				1	2	4	BAMDAM;PLOTS_KRONA_BY_SITE			
-bamfiles			unmapped					1	2	4	assembleTranscripts			
 barrnapsummary			unmapped	barrnap (Barrnap)				1	1	4	BARRNAPSUMMARY	local/barrnapsummary		conda-forge::python=3.9.1
 batch_parser			unmapped	exomedepth (ExomeDepth)				1	2	4	BATCH_PARSER	batch_parser	quay.io/biocontainers/r-exomedepth:1.1.12--r36h6786f55_0	
 bionj_tree.r			unmapped	bionj (BIONJ)				1	1	4	NJtree			
@@ -814,6 +805,7 @@ combine_chunked_drep			unmapped					1	1	4	COMBINE_CHUNKED_DREP	combine_chunked_d
 combine_host_genome_trna_gff_files_htseq			unmapped					1	1	4	combine_host_genome_tRNA_gff_files_htseq			
 combine_mapped_files			unmapped					1	1	4	combine_mapped_files			
 combinefasta			unmapped					1	2	4	COMBINEFASTA	local/utils/CombineFasta		
+compare_prophages			unmapped					1	1	4	COMPARE_PROPHAGES	utilities/compare_prophages		
 concat_single_copy			unmapped					1	1	4	CONCAT_SINGLE_COPY	local/concat_single_copy		
 concatenate_quality_files			unmapped					1	1	4	CONCATENATE_QUALITY_FILES	local/euk_utils		
 convading_pipeline.py			unmapped					1	1	4	CONVADING	local/convading		
@@ -834,7 +826,6 @@ cython			unmapped	cyto (Cyto)				1	2	4	AMPLICONARCHITECT_AMPLICONARCHITECT;AMPLI
 datasets			unmapped	ncbi_datasets (NCBI Datasets); datasets2tools (Datasets2Tools); geocancerprognosticdatasetsretriever (geoCancerPrognosticDatasetsRetriever)				1	1	4	DOWNLOAD_NCBI	local/download_ncbi	quay.io/ecoflowucl/ncbi_download:v16.1.2-arm64	
 dedup			unmapped	triededup (TrieDedup); nubeam-dedup (Nubeam-dedup)				1	2	4	dedup;get_software_versions			
 dnadiff			unmapped	mummer (MUMmer)				1	1	4	DNADIFF	local/dnadiff	docker.io/staphb/mummer:4.0.0	
-docker			unmapped	audocker (AUDocker); docker4seq (docker4seq); GPSRdocker (GPSRdocker); dockecr (dockECR); dockey (Dockey)				1	1	4	HCVGLUE	local/hcvglue		docker-compose;bash
 download_uni			unmapped					1	1	4	DOWNLOAD_UNI	utils/download_uni		
 downloadclinical			unmapped					1	2	4	downloadClinical	download		
 dreme			unmapped	dream (DREAM); demes (Demes)				1	4	4	icount_motif_dreme;paraclu_motif_dreme;piranha_motif_dreme			
@@ -846,11 +837,11 @@ extract_fasta_bins.py			unmapped					1	1	4	binning
 extract_via_alphatims.py			unmapped					1	2	4	retrieve_xics_from_raw_spectra		luxii/xic-extractor:1.0	
 extract_via_fisher.py			unmapped					1	2	4	retrieve_xics_from_raw_spectra		luxii/xic-extractor:1.0	
 fastx_collapser			unmapped	fastx-toolkit (FASTX-Toolkit); collapse (COLLAPSE); cshl_fastx_collapser (cshl_fastx_collapser)				1	1	4	FASTX_COLLAPSER	nf-core/fastx/collapser		bioconda::fastx_toolkit=0.0.14
-file			unmapped	filer (FILER); snpfile (SNPFile); mrcfile (mrcfile); filter (Filter); fiddle (Fiddle)				1	2	4	joinCountStats			
 filemerger			unmapped	merger (merger); pklfilemerger (PklFileMerger); openms (OpenMS)				1	1	4	FILEMERGE	local/openms/filemerge		bioconda::openms=2.8.0
 filter_bedpe			unmapped	filter (Filter)				1	4	4	FILTER_BEDPE	r/filter_bedpe;r/filter_bedpe_mouse	quay.io/jaxcompsci/r-sv_cnv_annotate:4.1.1	
 filter_qs50			unmapped	filter (Filter)				1	1	4	FILTER_QS50	filter_qs50	quay.io/microbiome-informatics/genomes-pipeline.python3base:v1.1	
 filter_vecscreen_results			unmapped					1	2	4	FILTER_VECSCREEN_RESULTS	local/filter/vecscreen_results		conda-forge::python=3.9
+finalize_merged_sv			unmapped					1	1	4	finalize_merged_sv			
 findmotifsgenome.pl			unmapped					1	2	4	HOMER_MOTIFS	local/homer	nciccbr/ccbr_homer_4.11:v1	
 flask			unmapped	flasktrack (FlaskTrack); flash (FLASH); flams (FLAMS); flags (FlaGs)				1	2	4	AMPLICONARCHITECT_AMPLICONARCHITECT;AMPLIFIED_INTERVALS	local/ampliconarchitect/ampliconarchitect;local/amplified_intervals		conda-forge::python=2.7;bioconda::pysam=0.15.2;anaconda::flask=1.1.2;anaconda::cython=0.29.14;anaconda::numpy=1.16.6;anaconda::scipy=1.2.1;conda-forge::matplotlib=2.2.5;mosek::mosek=8.0.60;anaconda::future=0.18.2
 force-higher-level			unmapped					1	1	4	FORCE_HIGHER_LEVEL	local/force-higher_level	docker.io/davidfrantz/force:3.7.10	
@@ -866,14 +857,15 @@ generate_queries_from_mgf_mzml.py			unmapped					1	1	4	generate_query_csvs		luxi
 get_lineage_for_top			unmapped					1	2	4	GET_LINEAGE_FOR_TOP	local/get/lineage_for_top		conda-forge::python=3.9
 get_mapseq_db			unmapped	mapseq (MAPseq)				1	2	4	GET_MAPSEQ_DB	mapseq		
 gfaffix			unmapped					1	1	4	GFAFFIX	nf-core/gfaffix		bioconda::gfaffix=0.1.4
+hcvglue			unmapped					1	1	4	HCVGLUE	local/hcvglue		docker-compose;bash
 hlahd.sh			unmapped	hla3d (HLA3D); bowtie2 (Bowtie 2)				1	1	4	HLAHD	local/hlahd/genotype		bioconda::bowtie2=2.5.4;conda-forge::gcc=15.2.0;conda-forge::gxx=15.2.0;conda-forge::wget=1.25.0
 hmmscan			unmapped	mscan (MSCAN); hmmscan_ebi (hmmscan (EBI)); hmmscan_genouest (hmmscan (genouest)); hmmer_hmmscan_ebi (HMMER hmmscan (EBI)); hmcan (HMCan)				1	1	4	HMMSCAN	local/hmmscan		
 idconflictresolver			unmapped	openms (OpenMS)				1	1	4	IDCONFLICTRESOLVER	local/openms/idconflictresolver		bioconda::openms=2.8.0
 integration			unmapped	smintegration (SMIntegration); integrationmap (IntegrationMap); data_integration_quality_check_tool_diqct (Data Integration Quality Check Tool (DIQCT)); interactionset (InteractionSet)				1	1	4	INTEGRATION	integrate	sydneyinformaticshub/scrnavigator-nf-cluster	
 isolate_kraken2_ids			unmapped					1	1	4	ISOLATE_KRAKEN2_IDS	local/isolate_kraken2_ids		conda-forge::python=3.10.4
 joinalnstats			unmapped					1	2	4	joinAlnStats			
+joincountstats			unmapped					1	2	4	joinCountStats			
 ktimporttaxonomy			unmapped	krona (Krona)				1	2	4	KRAKEN2_KRONA_PLOT;NCBI_FCS_GX_KRONA_PLOT	local/kraken2_krona_plot;local/ncbi_fcs_gx_krona_plot	docker.io/nanozoo/krona:2.7.1--e7615f7	
-length			unmapped	hylength (HyLength); seqlengthplot (SeqLengthPlot); seqlengthplot_v202 (SeqLengthPlot v2.0)				1	1	4	prepare_merge_vcfs			
 lzip			unmapped					1	1	4	TAR	nf-core/tar		conda-forge::bzip2=1.0.8;conda-forge::gzip=1.13;conda-forge::lzip=1.21;conda-forge::lzop=1.04;conda-forge::tar=1.34;conda-forge::xz=5.2.6;conda-forge::zstd=1.5.6
 makeagpfromfasta.py			unmapped					1	1	4	MAKEAGPFROMFASTA	local/makeagpfromfasta	docker.io/gallvp/juicebox_scripts:a7ae991_ps	
 malt-build			unmapped					1	1	4	MALT_BUILD	nf-core/malt/build		bioconda::malt=0.62
@@ -884,6 +876,7 @@ matlock			unmapped					1	1	4	MATLOCK_BAM2_JUICER	local/matlock_bam2_juicer
 merge_cafe_large_results			unmapped	cafe (CAFE)				1	1	4	MERGE_CAFE_LARGE_RESULTS	local/merge_cafe_large_results	ecoflowucl/cafe:r-4.3.1	
 merge_columns			unmapped					1	2	4	MERGE_COLUMNS	python/python_merge_columns	quay.io/jaxcompsci/bedtools-python3:2.26.0	
 merge_fq_pe			unmapped					1	1	4	merge_fq_PE			
+merge_quant_annot_best			unmapped					1	1	4	MERGE_QUANT_ANNOT_BEST	merge_quant_eggnog_best		
 merge_sample			unmapped	sample (SAMPLE)				1	1	4	merge_sample			
 merge_trees			unmapped					1	1	4	MERGE_TREES	local/merge_trees		conda-forge::python=3.8.3
 merge_vcf			unmapped					1	1	4	merge_vcf			
@@ -903,6 +896,7 @@ organelle_contamination_recommendations			unmapped					1	2	4	ORGANELLE_CONTAMINA
 output_format			unmapped					1	2	4	OUTPUT_FORMAT	local/output		
 panelcmops			unmapped	panelcn.mops (panelcn.mops)				1	1	4	PANELCNMOPS	local/panelcmops		
 parquet_to_csv			unmapped					1	2	4	PARQUET_TO_CSV	local/utility/parquet_to_csv		
+parse_checkv			unmapped	checkv (CheckV)				1	1	4	PARSE_CHECKV	utilities/parse_checkv		
 parsefirstmapping			unmapped					1	1	4	PARSEFIRSTMAPPING	local/parsefirstmapping		conda-forge::r-seqinr=4.2_36;conda-forge::r-tidyverse=2.0.0
 pbccs			unmapped	pbcmc (pbcmc)				1	1	4	PBCCS	nf-core/modules/pbccs		bioconda::pbccs=6.2.0
 proseg			unmapped	prose (PROSE); proseqgo (ProSeqGO); proseq (ProSeq)				1	2	4	PROSEG	local/proseg/preset	ghcr.io/dcjones/proseg:v3.1.0	
@@ -1004,9 +998,11 @@ fasplit			unmapped	aspli (ASpli)				1	1	3	splitReference		biocorecrg/mopmod:0.6.
 fastaembedlength			unmapped					1	1	3	FASTAEMBEDLENGTH	local/fastaembedlength		
 fcsgx_report_2_table			unmapped					1	1	3	TABLE_FCSGX	local/table/fcsgx		conda-forge::python=3.9.5
 ficture			unmapped					1	2	3	FICTURE;FICTURE_PREPROCESS	local/ficture/model;local/ficture/preprocess		
+filter_genomes			unmapped	genomes (genomes); fair_genomes (FAIR genomes)				1	1	3	FILTER_GENOMES	utilities/filter_genomes		
 filter_junction_mod3			unmapped	nf-core_airrflow (nf-core airrflow)				1	1	3	FILTER_JUNCTION_MOD3	local/reveal/filter_junction_mod3	docker.io/immcantation/airrflow:5.1.0	
 filter_longest_gff			unmapped	pandas (Pandas)				1	1	3	FILTER_LONGEST_GFF	utils/filter_longest_isoforms	amancevice/pandas:2.1.3	
 filter_pangenie_by_new_variants			unmapped					1	1	3	filter_pangenie_by_new_variants			
+fix_header_jasmine			unmapped					1	1	3	FIX_HEADER_JASMINE	local/fix_header_sv/jasmine	community.wave.seqera.io/library/gawk:5.3.1--e09efb5dfc4b8156	
 fmhfunprofiler			unmapped	fmh-funprofiler (fmh-funprofiler); profiler (Profiler)				1	1	3	FMHFUNPROFILER	nf-core/fmhfunprofiler		bioconda::fmh-funprofiler=1.1.1
 format_taxonomy_sidle			unmapped	SED (SED)				1	1	3	FORMAT_TAXONOMY_SIDLE	local/format_taxonomy_sidle		conda-forge::bash=5.2.37;conda-forge::coreutils=9.12;conda-forge::findutils=4.10.0;conda-forge::gawk=5.4.1;conda-forge::grep=3.12;conda-forge::gzip=1.14;conda-forge::sed=4.10;conda-forge::tar=1.35;conda-forge::unzip=6.0
 functional_predictions.r			unmapped					1	1	3	q2_picrust2_stats			
@@ -1038,7 +1034,6 @@ maeqc_dnarnamatrixplot			unmapped					1	1	3	MAEQC_DNARNAMATRIXPLOT	local/maeqc/d
 make_bedfile			unmapped					1	1	3	make_bedfile			
 make_database			unmapped	maude_database (MAUDE); massdatabase (massDatabase)				1	1	3	MAKE_DATABASE	local/ancestry/bootstrap/make_database		
 make_genome_filter			unmapped					1	1	3	MAKE_GENOME_FILTER	utility_modules/chipseq_make_genome_filter		
-mask-ali.pl			unmapped					1	1	3	mlinference			
 merge_bam			unmapped					1	1	3	merge_bam			
 merge_btk_datasets			unmapped	BlobToolKit (BlobToolKit)				1	1	3	MERGE_BTK_DATASETS	local/blobtoolkit/merge_dataset	docker.io/genomehubs/blobtoolkit:4.3.9	
 merge_csv_files			unmapped					1	1	3	MERGE_CSV_FILES	linear_models	docker://casperdevisser/r-mae-mulit-omics-ipsc:v0.1	
@@ -1049,21 +1044,20 @@ mergexml_diamond			unmapped					1	1	3	mergeXML_diamond	diamond
 microview			unmapped	micropie (MicroPIE)				1	1	3	MICROVIEW	local/microview		bioconda::microview=0.10.1
 mifaser			unmapped	faser (FASER)				1	1	3	MIFASER	nf-core/mifaser		bioconda::mifaser=1.64
 mindagap			unmapped	numpy (NumPy)				1	1	3	MINDAGAP_DUPLICATEFINDER	nf-core/mindagap/duplicatefinder		conda-forge::numpy=1.24.2;bioconda::mindagap=0.0.2
+mixed_linear_models			unmapped					1	1	3	MIXED_LINEAR_MODELS	linear_models	docker://casperdevisser/r-mae-mulit-omics-ipsc:v0.1	
 modify_quality_file			unmapped					1	1	3	MODIFY_QUALITY_FILE	local/euk_utils		
 mogrify			unmapped					1	1	3	DADA2	local/dada2	agusinac/run-dada2-batch:latest	
 mtx_to_seurat			unmapped	seurat (Seurat)				1	1	3	MTX_TO_SEURAT	local/mtx_to_seurat	nf-core/seurat:4.3.0	r-seurat
 multibigwigsummary			unmapped					1	1	3	BIGWIG_SUM	local/deeptools	nciccbr/ccbr_deeptools_3.5.3:v1	
 mvgwas			unmapped	SASM-VGWAS (SASM-VGWAS)				1	1	3	mvgwas			
-newinfo			unmapped					1	1	3	finalize_merged_sv			
-nt2			unmapped	pprint2 (Pprint2); gecont_2 (GeConT 2); HVint2.0 (HVint2.0)				1	1	3	NORMALIZE_BBMAP_IDS	local/normalize_bbmap_ids		conda-forge::gawk=5.3.0
 nucmer			unmapped	nucome (NUCOME); nucler (nucleR); mummer (MUMmer)				1	1	3	MUMMER	local/mummer	docker.io/staphb/mummer:4.0.0	
 optimize_query			unmapped					1	1	3	optimize_query			
 optimize_query_csv.py			unmapped					1	1	3	optimize_query		luxii/progfastagen:1.0	
 ora			unmapped	mora (MORA); hora (HorA); lora (LORA); orna (ORNA); orma (ORMA)				1	1	3	ORA	ora	sydneyinformaticshub/scrnavigator-nf-fea	
 orthoani			unmapped	orthanq (Orthanq)				1	1	3	orthoani			
-out_filename			unmapped					1	1	3	SPLIT_TAXIDS	local/split_taxids		conda-forge::gawk=5.3.1
 outgenomesfilter			unmapped					1	1	3	OutGenomesFilter			
 outlier_finder			unmapped					1	1	3	OUTLIER_FINDER	local/compositional_outlier_detection	quay.io/microbiome-informatics/python_bio_numpy:v3.9.23	
+pangenie_postprocess			unmapped					1	1	3	Pangenie_postprocess			
 params.use_bfloat16			unmapped					1	1	3	RunBoltz			
 parse_assemblies			unmapped					1	1	3	PARSE_ASSEMBLIES	local/parse_assemblies	quay.io/nf-core/rcppsimdjson:0.2	conda-forge::r-rcppsimdjson=0.1.12
 parse_preseq_log			unmapped					1	1	3	PARSE_PRESEQ_LOG	local/qc	nciccbr/ccbr_ubuntu_base_20.04:v6.1	
@@ -1093,6 +1087,7 @@ python3.10			unmapped					1	1	3	CAFE_SELECT_K	local/cafe_select_k	ecoflowucl/cho
 pyyaml			unmapped	pyam (pyam); paml (PAML)				1	1	3	STATS2CSV	local/stats2csv		conda-forge::python=3.11.0;conda-forge::pyyaml=5.4.1
 qc_aligned			unmapped	align (ALIGN); mass (Mass++)				1	1	3	QC_ALIGNED	local/qc/align		conda-forge::r-mass==7.3_54;conda-forge::r-zoo==1.8_9;conda-forge::r-gplots==3.1.1
 qcreport			unmapped	affyqcreport (affyQCReport)				1	1	3	QCREPORT		docker://infrahelpers/python-light:py310-bullseye	
+quarto			unmapped	quatgo (QUATgo); quanto (QUANTO); base (BASE)				1	1	3	QUARTO	local/quarto	docker.io/rocker/verse:4.3.2	conda-forge::quarto=1.3.450;conda-forge::r-base=4.3.2;conda-forge::r-tidyverse=2.0.0
 radius			unmapped	radis (RADIS); radiatus (Radiatus)				1	1	3	CIRCOS	local/circos	docker.io/gallvp/circos-tools:v0.23-1_ps	
 read_classification_html			unmapped					1	1	3	READ_CLASSIFICATION_HTML		docker://infrahelpers/python-light:py310-bullseye	
 reads_stat			unmapped					1	1	3	READS_STAT	local/reads_stat		r::r-magrittr=1.5
@@ -1117,8 +1112,10 @@ sort_and_convert_to_fastq			unmapped					1	1	3	sort_and_convert_to_fastq
 sort_susie			unmapped					1	1	3	sort_susie	susie	quay.io/eqtlcatalogue/susie-finemapping:v20.08.1	
 sourcepredict			unmapped	source (SOURCE); scikit-learn (scikit-learn)				1	1	3	SOURCEPREDICT	nf-core/sourcepredict		bioconda::sourcepredict=0.5.1;conda-forge::python=3.12.7;conda-forge::scikit-learn=1.5.2
 spaceranger			unmapped	erange (ERANGE); spacer (SPACER)				1	1	3	SPACERANGER_COUNT	nf-core/spaceranger/count	quay.io/nf-core/spaceranger:9c5e7dc93c32448e	
+split_fasta			unmapped	fasta (FASTA)				1	1	3	SPLIT_FASTA	utilities/split_fasta		
 split_primers_by_strand			unmapped					1	1	3	SPLIT_PRIMERS_BY_STRAND	local/split_primers_by_strand		
 splitmsa			unmapped					1	1	3	SplitMSA			
+summary_report			unmapped					1	1	3	SUMMARY_REPORT	utilities/summary_report		
 svanna-cli			unmapped	svanna (SvAnna)				1	1	3	SVANNA_PRIORITIZE	local/svanna	community.wave.seqera.io/library/svanna:1.0.4--86fc312dcf69d05b	
 tenx_tgz_extract_bam			unmapped					1	1	3	tenx_tgz_extract_bam			
 tqdm			unmapped	pysam (pysam)				1	1	3	EXTRACT_UMIS	local/extract_umis		pysam=0.19.1;edlib=1.3.9;tqdm=4.64.0
@@ -1126,22 +1123,19 @@ uncompress_host_gff_trna_file			unmapped					1	1	3	uncompress_host_gff_trna_file
 uncompress_pathogen_fasta_genome			unmapped					1	1	3	uncompress_pathogen_fasta_genome			
 unmask			unmapped					1	1	3	UNMASK	local/unmask		conda-forge::gawk=5.1.0
 unpack_bin_archives			unmapped	SED (SED)				1	1	3	UNPACK_BIN_ARCHIVES	local/unpack_bin_archives		conda-forge::sed=4.7
+usage			unmapped	qusage (qusage); iggeneusage (IgGeneUsage); codon_usage_database (Codon Usage Database); usagi (Usagi)				1	1	3	generate_cool			
 vcf2cytosure			unmapped					1	1	3	VCF2CYTOSURE	nf-core/vcf2cytosure		bioconda::vcf2cytosure=0.9.3
 vggiraffe			unmapped					1	1	3	vgGiraffe			
 vgpaths			unmapped					1	1	3	vgPaths			
 vipr_af_vs_cov_html.py			unmapped					1	1	3	vipr_tools			
+vis_mixed_models			unmapped					1	2	3	VIS_MIXED_MODELS	viz_linear_models	docker://casperdevisser/r-mae-mulit-omics-ipsc:v0.1	
 wiggletools			unmapped	widgettools (widgetTools)				1	1	3	COMBINEBW	local/combinebw		
 writespadesyaml			unmapped					1	1	3	WRITESPADESYAML	local/spades/writeyaml		conda-forge::pigz=2.3.4
 /home/atharva/miniforge3/envs/ascat/			unmapped					1	1	2	ASCAT	ascat		/home/atharva/miniforge3/envs/ascat/
 /home/atharva/miniforge3/envs/dnacopy/			unmapped					1	2	2	PLOT_PANEL;WAVE_CORRECTION	plot_panel;wave_correction		/home/atharva/miniforge3/envs/dnacopy/
-ad_alt			unmapped	adat (ADAT)				1	1	2	FORMAT2INFO_CHRM	execution_modules	tblabfjd/bioinfotools:2.0.0	
-ad_ref			unmapped	nomad-ref (NOMAD-Ref)				1	1	2	FORMAT2INFO_CHRM	execution_modules	tblabfjd/bioinfotools:2.0.0	
 addsamplesdb			unmapped	sample (SAMPLE)				1	1	2	SV_SAMPLES	local/sv_samples		YOUR-TOOL-HERE
-af			unmapped					1	1	2	FORMAT2INFO_CHRM	execution_modules	tblabfjd/bioinfotools:2.0.0	
 aggregate			unmapped	regate (ReGaTE); hi-c_aggregate (Hi-C Aggregate); aggregatebiovar (aggregateBioVar); bioconductor-aggregatebiovar (aggregateBioVar)				1	1	2	aggregate			
 aggregate_report			unmapped					1	1	2	AGGREGATE_REPORT	aggregate_report		
-alt			unmapped	salt (SALT); alter (ALTER); malta (MaLTA)				1	1	2	FORMAT2INFO_CHRM	execution_modules	tblabfjd/bioinfotools:2.0.0	
-ambiguous			unmapped					1	1	2	NORMALIZE_BBMAP_IDS	local/normalize_bbmap_ids		conda-forge::gawk=5.3.0
 analyse_gsea			unmapped					1	1	2	ANALYSE_GSEA	analyse_gsea	sydneyinformaticshub/scrnavigator-nf-base	
 analyse_ora			unmapped					1	1	2	ANALYSE_ORA	analyse_ora	sydneyinformaticshub/scrnavigator-nf-base	
 annotatesquidoutput.py			unmapped					1	1	2	SQUID_ANNOTATE	squid/squid_annotate	docker.io/nfcore/rnafusion:squid_1.5-star2.7.1a	
@@ -1159,7 +1153,7 @@ atlasgeneannotationmanipulation			unmapped					1	1	2	ATLASGENEANNOTATIONMANIPULA
 b			unmapped					1	1	2	generate_cool			
 bam2fasta			unmapped	fasta (FASTA); bam2fastq (bam2fastq)				1	2	2	count_umis_per_cell;get_software_versions			
 bam2fq.py			unmapped	bam2fastq (bam2fastq)				1	1	2	get_software_versions			
-bambuannotations			unmapped					1	1	2	assembleTranscripts			
+bamdam			unmapped	bamm (BaMM)				1	2	2	BAMDAM;PLOTS_KRONA_BY_SITE			
 bampe_rm_orphan			unmapped					1	1	2	BAMPE_RM_ORPHAN	utility_modules/chipseq_bampe_rm_orphan	quay.io/biocontainers/mulled-v2-57736af1eb98c01010848572c9fec9fff6ffaafd:402e865b8f6af2f3e58c6fc8d57127ff0144b2c7-0	
 barcodes			unmapped	barcod (BARCOD); dnabarcodes (DNABarcodes); cshl_princeton_fastx_barcode_splitter (cshl_princeton_fastx_barcode_splitter); barcoder (barCoder)				1	1	2	SUBSET_BARCODES		mplynch28/demux_sim	
 basecalling			unmapped					1	1	2	basecalling			
@@ -1179,19 +1173,16 @@ c			unmapped					1	1	2	generate_cool
 cafeplotter			unmapped					1	2	2	CAFE_PLOT	local/cafe_plot	ecoflowucl/cafeplotter:latest	
 calculate_canonical			unmapped					1	1	2	CALCULATE_CANONICAL	utils/calculate_canonical	phuongdoan96/biopython-aiohttp:0.1	
 calculate_statistics			unmapped	pandas (Pandas)				1	1	2	CALCULATE_STATISTICS	utils/calculate_statistics	amancevice/pandas:2.1.3	
-cds			unmapped	scds (scds); CDSeq (CDSeq); jcdsa (JCDSA); CRDS (Consensus Reverse Docking System (CRDS))				1	1	2	FEATURE_COUNTS	feature_counts		
 chain_bad2uniq_reads			unmapped					1	1	2	CHAIN_BAD2UNIQ_READS	samtools/samtools_chain_bad2uniq_reads	quay.io/jaxcompsci/samtools_with_bc:1.3.1	
 changext			unmapped					1	1	2	changext			
 checksums			unmapped	checksumstats (CheckSumStats); checkm (CheckM)				1	1	2	CHECKSUMS	local/checksums		conda-forge::coreutils=8.31
 chelae			unmapped					1	1	2	CHELAE_TRIM	nf-core/chelae/trim		bioconda::chelae=0.1.0
-chrom			unmapped	chromax (ChromaX); ichromo (ChroMo); chromas (Chromas); charm (charm)				1	1	2	FORMAT2INFO_CHRM	execution_modules	tblabfjd/bioinfotools:2.0.0	
 chromopaint			unmapped	ROMOP (ROMOP); chromopainter (ChromoPainter); jcvi (JCVI)				1	1	2	CHROMOPAINT	local/chromo	quay.io/ecoflowucl/jcvi:python-3.10_last-1522	
 chunks.txt			unmapped					1	1	2	generate_chunks_vcf	subset_vcf		
+circlefinder			unmapped	finder (FINDER)				1	1	2	CIRCLEFINDER	local/circlefinder		
 clean_biom_txt.py			unmapped					1	1	2	BIOTAVIZ	local/biotaviz	ederveen/biotaviz:latest	
 clusty			unmapped	crusty (CRUSTY); clustifyr (clustifyr); clst (clst)				1	1	2	CLUSTY	nf-core/clusty		bioconda::clusty=1.2.2
 cmsearch			unmapped	cmsearch-deoverlap (cmsearch-deoverlap); chemsearch (Chemsearch); cd-search (CD-Search)				1	1	2	DETECT_RRNA	local/detect_rrna	quay.io/microbiome-informatics/genomes-pipeline.detect_rrna:v3.1	
-col_names			unmapped	base (BASE)				1	1	2	COLLECT_STATS	local/collect/stats		conda-forge::r-base=4.5.3;conda-forge::r-dplyr=1.2.1;conda-forge::r-readr=2.2.0;conda-forge::r-purrr=1.2.2;conda-forge::r-tidyr=1.3.2;conda-forge::r-stringi=1.8.7;conda-forge::r-stringr=1.6.0;conda-forge::r-tidyverse=2.0.0;conda-forge::r-data.table=1.17.8;conda-forge::r-dtplyr=1.3.3
-col_types			unmapped	base (BASE)				1	1	2	COLLECT_STATS	local/collect/stats		conda-forge::r-base=4.5.3;conda-forge::r-dplyr=1.2.1;conda-forge::r-readr=2.2.0;conda-forge::r-purrr=1.2.2;conda-forge::r-tidyr=1.3.2;conda-forge::r-stringi=1.8.7;conda-forge::r-stringr=1.6.0;conda-forge::r-tidyverse=2.0.0;conda-forge::r-data.table=1.17.8;conda-forge::r-dtplyr=1.3.3
 collect_processed_reads			unmapped					1	1	2	collect_processed_reads			
 collect_processed_reads_salmon_alignment_based			unmapped					1	1	2	collect_processed_reads_salmon_alignment_based			
 collect_processed_reads_star			unmapped					1	1	2	collect_processed_reads_STAR			
@@ -1241,13 +1232,11 @@ deeplexicon_sub.py			unmapped					1	1	2	demultiplex
 delmerge			unmapped	elmer (ELMER)				1	1	2	DEL_MERGE	local/del_merge		
 determine_limits_using_binary_search			unmapped					1	1	2	determine_limits_using_binary_search			
 diverse			unmapped					1	1	2	CLASSIFIER_DOWNLOAD	local/classifier/download		
-dmrs_dm1			unmapped					1	1	2	PLOT_DMPK_REP	DM1	docker://casperdevisser/r-mae-mulit-omics-ipsc:v0.1	
 download_dram_db			unmapped					1	1	2	DOWNLOAD_DRAM_DB	local/dram/download_dram_db		
 download_oma			unmapped					1	1	2	DOWNLOAD_OMA	utils/download_oma		
 dupmerge			unmapped					1	1	2	DUP_MERGE	local/dup_merge		
 dv_call_variants.py			unmapped					1	1	2	call_variants			
 edlib			unmapped	pysam (pysam)				1	1	2	EXTRACT_UMIS	local/extract_umis		pysam=0.19.1;edlib=1.3.9;tqdm=4.64.0
-enddistance			unmapped					1	1	2	finalize_merged_sv			
 enrichmentcheck			unmapped	enrichment (enrichment); enrichM (enrichM)				1	1	2	enrichmentcheck			
 f			unmapped	base (BASE)				1	1	2	COLLECT_STATS	local/collect/stats		conda-forge::r-base=4.3.1;conda-forge::r-data.table=1.17.8;conda-forge::r-dplyr=1.1.4;conda-forge::r-dtplyr=1.3.2;conda-forge::r-purrr=1.1.0;conda-forge::r-readr=2.1.5;conda-forge::r-stringr=1.5.2;conda-forge::r-tidyr=1.3.1
 fast5_subset			unmapped					1	1	2	extracting_demultiplexed_fast5_deeplexicon		lpryszcz/deeplexicon:1.2.0	
@@ -1257,13 +1246,13 @@ filter_cnv_str_by_pangenie			unmapped					1	1	2	filter_cnv_str_by_pangenie
 filter_pon			unmapped	filter (Filter)				1	1	2	FILTER_PON	python/python_filter_pon	quay.io/jaxcompsci/bedtools-python3:2.26.0	
 filter_vcf			unmapped	filter (Filter)				1	1	2	FILTER_VCF	python/python_filter_vcf	quay.io/jaxcompsci/bedtools-python3:2.26.0	
 filtered_genomes			unmapped					1	1	2	DREP	tools/drep		
-first			unmapped	firstef (FirstEF); first_person_bioimage (First Person Bioimage); frst (FRST); fist (FIST)				1	1	2	NORMALIZE_BBMAP_IDS	local/normalize_bbmap_ids		conda-forge::gawk=5.3.0
 fix_consensus_header.py			unmapped					1	1	2	map_to_reference		quay.io/enasequence/ena-sars-cov2-illumina:2.0	
 fix_header_cutesv			unmapped	SED (SED)				1	1	2	FIX_HEADER_CUTESV	local/fix_header_sv/cutesv	community.wave.seqera.io/library/sed:4.9--b22139a895c82f4b	
 force-cube			unmapped					1	1	2	FORCE_GENERATE_ANALYSIS_MASK	local/force-generate_analysis_mask	docker.io/davidfrantz/force:3.7.10	
 force-mosaic			unmapped	mosaic (mosaic)				1	1	2	FORCE_MOSAIC	local/force-mosaic	docker.io/davidfrantz/force:3.7.10	
 force-pyramid			unmapped					1	1	2	FORCE_PYRAMID	local/force-pyramid	docker.io/davidfrantz/force:3.7.10	
 force-tile-extent			unmapped					1	1	2	FORCE_GENERATE_TILE_ALLOW_LIST	local/force-generate_tile_allow_list	docker.io/davidfrantz/force:3.7.10	
+format			unmapped	deformats (DEFormats); biomformat (biomformat); bioformats (bioformats); frma (frma)				1	1	2	CIRCOS	local/circos	docker.io/gallvp/circos-tools:v0.23-1_ps	
 format_diamond_tax_ranklist			unmapped					1	1	2	FORMAT_DIAMOND_TAX_RANKLIST	local/diamond/format_tax/ranklist		conda-forge::r-tidyverse=2.0.0;conda-forge::r-dtplyr=1.3.1;conda-forge::r-data.table=1.14.8
 format_eukulele_tax			unmapped					1	1	2	FORMAT_EUKULELE_TAX	local/eukulele/format_tax		conda-forge::r-tidyverse=2.0.0;conda-forge::r-dtplyr=1.3.1;conda-forge::r-data.table=1.14.8
 format_prodigal_gff			unmapped					1	1	2	FORMAT_PRODIGAL_GFF	local/format/prodigal		conda-forge::gzip=1.11
@@ -1289,7 +1278,6 @@ greengenes			unmapped	graingenes (GrainGenes)				1	1	2	CLASSIFIER_DOWNLOAD	local
 gripss			unmapped	gridss (GRIDSS); grip (GRIP); gips (GIPS)				1	1	2	GRIPSS_SOMATIC_FILTER	gridss/gripss_somatic_filter	quay.io/biocontainers/hmftools-gripss:2.3.2--hdfd78af_0	
 gtdbtk_db_preparation			unmapped	SED (SED)				1	1	2	GTDBTK_DB_PREPARATION	local/gtdbtk_db_preparation		conda-forge::coreutils=9.5;conda-forge::grep=3.11;conda-forge::gzip=1.13;conda-forge::lbzip2=2.5;conda-forge::sed=4.8;conda-forge::tar=1.34
 gtfparse			unmapped	gfasparse (GFAsparse)				1	1	2	PHASING	05_variant_normalization		conda-forge::python=3.8.5;conda-forge::pandas=1.1.5;bioconda::pysam=0.17.0;bioconda::gtfparse=1.2.1;bioconda::cyvcf2=0.30.14
-gtmatch			unmapped	tmatch (TMatch); match (Match); gpsmatch (GPSmatch)				1	1	2	finalize_merged_sv			
 gxx			unmapped	bowtie2 (Bowtie 2)				1	1	2	HLAHD_INSTALL	local/hlahd/install		bioconda::bowtie2=2.5.4;conda-forge::gcc=15.2.0;conda-forge::gxx=15.2.0;conda-forge::wget=1.25.0
 gzip			unmapped	gip (GIP); SED (SED)				1	2	2	GZIP	local/gzip		conda-forge::coreutils=9.5;conda-forge::grep=3.11;conda-forge::gzip=1.13;conda-forge::lbzip2=2.5;conda-forge::sed=4.8;conda-forge::tar=1.34
 h			unmapped					1	1	2	generate_cool			
@@ -1303,17 +1291,14 @@ ids			unmapped	IDSM (IDSM); pids (PIDS); idseq (IDseq)				1	1	2	SUBSET_BARCODES	
 igv-reports			unmapped					1	1	2	htmlReport	Report	quay.io/biocontainers/igv-reports:1.6.1--pyh7cba7a3_0	
 index			unmapped	cindex (CINdex); kmindex (kmindex); knindex (KNIndex); inmex (INMEX)				1	1	2	index			
 infer_experiment.py			unmapped					1	1	2	rseqc			
-info			unmapped	inform (INfORM); geinfo (GEInfo); bcinfo (BCINFO)				1	1	2	FORMAT2INFO_CHRM	execution_modules	tblabfjd/bioinfotools:2.0.0	
 insmerge			unmapped	immerge (IMMerge)				1	1	2	INS_MERGE	local/ins_merge		
 interproscan_database			unmapped	SED (SED)				1	1	2	INTERPROSCAN_DATABASE	local/interproscan_download		conda-forge::sed=4.7
 invmerge			unmapped	immerge (IMMerge)				1	1	2	INV_MERGE	local/inv_merge		
-isa_file			unmapped					1	1	2	PLOT_DMPK_REP	DM1	docker://casperdevisser/r-mae-mulit-omics-ipsc:v0.1	
 isec_vcfs.py			unmapped					1	1	2	INTERSECT_VCF	local/intersect/vcf		bioconda::bcftools=1.22;bioconda::pysam=0.23.3;conda-forge::pandas=2.3.3;conda-forge::python=3.10.19
 ivar_variants_to_vcf.py			unmapped					1	1	2	IVAR_VARIANTS			
 jinja2			unmapped	pandas (Pandas)				1	2	2	GENERATE_HTML_REPORT	local/generate_html_report		python=3.9;pandas=1.5.3;jinja2=3.1.2
 join_rsids_var_info			unmapped					1	1	2	join_rsids_var_info	reformat_sumstats	quay.io/eqtlcatalogue/qtlmap:v20.05.1	
 jpeg			unmapped	jepeg (JEPEG); biostrings (Biostrings); shortread (ShortRead)				1	1	2	ORIENT_REFERENCE	local/orient_reference		r-seqinr=4.2_16;bioconductor-biostrings=2.62.0;bioconductor-shortread=1.52.0;jpeg=9d
-jq			unmapped					1	1	2	MULTIQC_ASSEMBLYSCAN_PLOT_DATA	local/multiqc_assemblyscan_plot_data		conda-forge::jq=1.7.1
 k2_db			unmapped					1	1	2	KRAKEN2			
 kmer-counter			unmapped					1	1	2	COBIONTID_KMERCOUNTER	nf-core/cobiontid/kmercounter		kmer-counter=0.1.2
 knotannotsv			unmapped	AnnotSV (AnnotSV); Annot (Annot)				1	2	2	KNOTANNOTSV	nf-core/knotannotsv		bioconda::knotannotsv=1.1.5
@@ -1322,12 +1307,12 @@ label_multiplier			unmapped					1	1	2	CIRCOS	local/circos	docker.io/gallvp/circo
 label_offset			unmapped					1	1	2	CIRCOS	local/circos	docker.io/gallvp/circos-tools:v0.23-1_ps	
 label_size			unmapped					1	1	2	CIRCOS	local/circos	docker.io/gallvp/circos-tools:v0.23-1_ps	
 leel.pl			unmapped	transposable_element_finder (TEF)				1	1	2	DNAtranslation			
-left			unmapped	calcifications-attenuation-left-coronary-artery-ct-images (Calcifications Attenuation in Left Coronary Artery CT Images Using FDA Domain)				1	1	2	METASPADES	assembly		
+line			unmapped	CLINE (CLINE); scline (scLINE); celline (Celline); lapine (LAPINE); base (BASE)				1	1	2	COLLECT_STATS	local/collect/stats		conda-forge::r-base=4.3.1;conda-forge::r-data.table=1.17.8;conda-forge::r-dplyr=1.1.4;conda-forge::r-dtplyr=1.3.2;conda-forge::r-purrr=1.1.0;conda-forge::r-readr=2.1.5;conda-forge::r-stringr=1.5.2;conda-forge::r-tidyr=1.3.1
 maboss_bb			unmapped	maboss (MaBoSS)				1	1	2	MaBoSS_analysis			
 make_examples			unmapped					1	1	2	MAKE_EXAMPLES			
 make_vcf_list			unmapped					1	1	2	MAKE_VCF_LIST	utility_modules/make_vcf_list		
+makecons			unmapped					1	1	2	jaccknifeMLinference			
 mapfile			unmapped	maple (MAPLE)				1	1	2	DORADO_BASECALL	dorado_basecall	quay.io/sangerpathogens/cuda_dorado:1.3.1	
-matchid			unmapped	match (Match)				1	1	2	finalize_merged_sv			
 merge-paired-reads.sh			unmapped					1	1	2	sortmerna			
 merge_cutup_clustering.py			unmapped					1	1	2	binning			
 merge_library_macs_qc			unmapped					1	1	2	merge_library_macs_qc			
@@ -1348,8 +1333,6 @@ molkartqcpng			unmapped					1	1	2	MOLKARTQCPNG	local/molkartqcpng	ghcr.io/schapi
 msgf_plus			unmapped	msgfplus (MSGFplus)				1	1	2	get_software_versions			
 msnbasexic			unmapped	msnbase (MSnbase)				1	1	2	MSNBASEXIC	local/msnbasexic		bioconductor-msnbase=2.26.0;r-base=4.3.1;r-ggplot2=3.4.3;r-optparse=1.7.3;r-pracma=2.4.2;r-readr=2.1.4;r-jsonlite=1.8.7;r-glue=1.6.2
 nanoconsensus			unmapped	consensus (Consensus)				1	1	2	nanoConsensus		biocorecrg/mop_consensus:0.1	
-new_info			unmapped					1	1	2	FORMAT2INFO_CHRM	execution_modules	tblabfjd/bioinfotools:2.0.0	
-nf			unmapped					1	1	2	NORMALIZE_BBMAP_IDS	local/normalize_bbmap_ids		conda-forge::gawk=5.3.0
 normalized_bigwigs			unmapped					1	1	2	normalized_bigwigs			
 ns			unmapped					1	1	2	SUBSET_BARCODES		mplynch28/demux_sim	
 number			unmapped	getnumber (getnumber); bionumbers (BioNumbers); basenumber (BaseNumber)				1	2	2	plot_performance_target	report		
@@ -1362,17 +1345,19 @@ orientation			unmapped	orientate (ORIENTATE)				1	1	2	CIRCOS	local/circos	docker
 outdir			unmapped					1	1	2	KRAKEN2			
 output_combine			unmapped					1	2	2	OUTPUT_COMBINE	local/output		
 output_visualization			unmapped					1	1	2	output_visualization			
+overlay_one			unmapped					1	1	2	overlay_one			
 parallel_dada2			unmapped	parallel (GNU Parallel)				1	1	2	DADA2	local/dada2	agusinac/run-dada2-batch:latest	
+params			unmapped	PDEparams (PDEparams); PRAS (PRAS); PRAM (PRAM)				1	1	2	COLABFOLD_BATCH	local/colabfold_batch	ghcr.io/tlitfin/wisps-colabfold-batch:1.1	
 params.chunk_size_outer_product			unmapped					1	1	2	RunBoltz			
 params.chunk_size_threshold			unmapped					1	1	2	RunBoltz			
 params.chunk_size_transition_msa			unmapped					1	1	2	RunBoltz			
 params.chunk_size_transition_z			unmapped					1	1	2	RunBoltz			
 params.chunk_size_tri_attn			unmapped					1	1	2	RunBoltz			
 params.triangle_mult_gate_nchunks			unmapped					1	1	2	RunBoltz			
+parse_genomad			unmapped	genomad (geNomad); Genoma (Genoma)				1	1	2	PARSE_GENOMAD	utilities/parse_genomad		
 parse_kraken2report			unmapped					1	1	2	PARSE_KRAKEN2REPORT	local/parse_kraken2report		conda-forge::python=3.12.2
 parse_transition_probabilities			unmapped					1	2	2	PARSE_TRANSITION_PROBABILITIES	python/parse_transprobs	hdfgroup/h5py:2.7.0	
-pctrecoverlap			unmapped	recover (ReCOVER); overlap (overlap)				1	1	2	finalize_merged_sv			
-pctsizesimilarity			unmapped					1	1	2	finalize_merged_sv			
+parse_vibrant			unmapped	VIBRANT (VIBRANT)				1	1	2	PARSE_VIBRANT	utilities/parse_vibrant		
 pdftk			unmapped					1	1	2	modellingplots			
 peak			unmapped	hpeak (HPeak); peakC (peakC); peaKO (peaKO)				1	1	2	CONVERT_SICER	local/peaks	nciccbr/ccbr_ubuntu_base_20.04:v6.1	
 perl-vcftools-vcf			unmapped	vcftools (VCFtools); cftools (cfTools)				1	2	2	SEQUENZA_ANNOTATE	sequenza/sequenza_annotate	quay.io/biocontainers/perl-vcftools-vcf:0.1.16--pl5321hdfd78af_4	
@@ -1385,7 +1370,6 @@ plotcorrelation			unmapped					1	1	2	PLOT_CORRELATION	local/deeptools	nciccbr/cc
 plotpca			unmapped					1	1	2	PLOT_PCA	local/deeptools	nciccbr/ccbr_deeptools_3.5.3:v1	
 plots_metrics			unmapped	base (BASE); ggplot2 (ggplot2)				1	1	2	PLOTS_METRICS	local/plots/metrics		r-base=4.1.*;r-ggplot2=3.3.*;r-reshape2=1.4.*
 polish_viral_ref.sh			unmapped					1	1	2	polish_assembly			
-pos			unmapped	posa (POSA); ppos (PPoS); post (POST)				1	1	2	FORMAT2INFO_CHRM	execution_modules	tblabfjd/bioinfotools:2.0.0	
 prepare			unmapped	feprepare (FEPrepare); prepareannotation (prepareannotation)				1	1	2	prepare			
 prepare_adaptor			unmapped					1	1	2	PREPARE_ADAPTOR	local/prepare_adaptor		conda-forge::python=3.8.3
 prepare_shiny			unmapped					1	1	2	PREPARE_SHINY	local/custom/prepare_shiny		
@@ -1403,13 +1387,11 @@ q2_cutadapt.sh			unmapped	cutadapt (Cutadapt); adapt (ADAPT)				1	1	2	q2_cutadap
 q2_import.sh			unmapped					1	1	2	q2_import			
 q2_merge			unmapped					1	1	2	q2_merge	qiime2	sebimer/samba-marabyss-qiime2:2024.2	
 qc_table			unmapped	table (TABLE)				1	1	2	QC_TABLE	local/qc	nciccbr/ccbr_ubuntu_base_20.04:v6.1	
-qual			unmapped	magqual (MAGqual); sequali (Sequali); quality (QUALITY); quetal (QueTAL)				1	1	2	FORMAT2INFO_CHRM	execution_modules	tblabfjd/bioinfotools:2.0.0	
 rastair_call_to_methylkit.sh			unmapped					1	1	2	RASTAIR_METHYLKIT	nf-core/rastair/methylkit		bioconda::rastair=0.8.2=*_2
 rcf			unmapped	URCFG (URCFG); mrcfile (mrcfile); irc-fuse (IRC-Fuse); RCMF (RCMF)				1	2	2	RECENTRIFUGE_C	local/recentrifuge/centrifuge		
 read_duplication.py			unmapped					1	1	2	rseqc			
 readarray			unmapped	jcvi (JCVI)				1	1	2	RIBBON	local/ribbon	quay.io/ecoflowucl/jcvi:python-3.10_last-1522_StatisticsBasic	
 realignsamfile			unmapped					1	1	2	circularmapper			
-ref			unmapped	irefr (iRefIndex Manager (iRefR)); refka (RefKA); KOREF (KOREF)				1	1	2	FORMAT2INFO_CHRM	execution_modules	tblabfjd/bioinfotools:2.0.0	
 reformat_design			unmapped					1	1	2	reformat_design			
 rename_as_global			unmapped					1	1	2	RENAME_AS_GLOBAL	cd_hit		
 rename_fastq			unmapped					1	1	2	RENAME_FASTQ	local/rename_fastq		
@@ -1417,9 +1399,9 @@ replace_attribute_host_trna_gff_star_salmon			unmapped					1	1	2	replace_attribu
 replace_gene_feature_gff_pathogen_htseq			unmapped					1	1	2	replace_gene_feature_gff_pathogen_htseq			
 replace_gene_feature_gff_pathogen_salmon			unmapped					1	1	2	replace_gene_feature_gff_pathogen_salmon			
 report_dtol			unmapped					1	1	2	REPORT_DTOL	local/report/dtol		
-rest			unmapped	orest (OREST); rREST (rREST); arrest (ARResT); reslt (ResLT); reslit (ResLit)				1	1	2	NORMALIZE_BBMAP_IDS	local/normalize_bbmap_ids		conda-forge::gawk=5.3.0
 return_files			unmapped					1	1	2	RETURN_FILES			
 run_deeptrio			unmapped	deeptrio (DeepTrio)				1	1	2	deeptrio_dry_run			
+run_mixed_models_corrected			unmapped					1	1	2	RUN_MIXED_MODELS_CORRECTED	linear_models	docker://casperdevisser/r-mae-mulit-omics-ipsc:v0.1	
 run_treeshrink.py			unmapped	TreeShrink (TreeShrink)				1	1	2	ConstrainTreeRaxml			
 runpangenie			unmapped	genie (Genie)				1	1	2	runPangenie			
 runtcgadragon			unmapped	dragon (DRAGON)				1	2	2	runTCGADragon	tcga_wfs		
@@ -1438,14 +1420,13 @@ simple_contig_joiner.py			unmapped					1	1	2	gap_fill_assembly
 single_cell_processing_bb			unmapped					1	1	2	single_cell_processing			
 single_copy_files.txt			unmapped					1	1	2	ALIGN_SINGLE_COPY	local/align_single_copy		
 size			unmapped	ssize (ssize); ssizer (SSizer); dnasize (dnasize)				1	1	2	CIRCOS	local/circos	docker.io/gallvp/circos-tools:v0.23-1_ps	
-sizediff			unmapped					1	1	2	finalize_merged_sv			
 smncopynumbercaller			unmapped	copynumber (copynumber)				1	1	2	SMNCOPYNUMBERCALLER	nf-core/smncopynumbercaller		bioconda::smncopynumbercaller=1.1.2
 software			unmapped	rvs_software (RVS); ABI_software (ABI software); SLiM_software (SLiM)				1	1	2	SOFTWARE_INFO	local/software_info		
 sort_qtltools_output			unmapped					1	1	2	sort_qtltools_output	map_qtls	quay.io/eqtlcatalogue/qtlmap:v20.05.1	
 spacing			unmapped	spang (SPANG)				1	1	2	CIRCOS	local/circos	docker.io/gallvp/circos-tools:v0.23-1_ps	
 split_file			unmapped	SED (SED)				1	1	2	SPLIT_FILE	local/split_file		conda-forge::sed=4.7
+split_taxids			unmapped					1	1	2	SPLIT_TAXIDS	local/split_taxids		conda-forge::gawk=5.3.1
 splitvcfpvm			unmapped					1	1	2	SPLITVCFPVM	local/splitvcfpvm		
-startdistance			unmapped					1	1	2	finalize_merged_sv			
 stats_alpha			unmapped	alpha (ALPHA)				1	1	2	stats_alpha			
 stats_beta			unmapped					1	1	2	stats_beta			
 stats_beta_css			unmapped					1	1	2	stats_beta_css			
@@ -1453,18 +1434,14 @@ stats_beta_deseq2			unmapped					1	1	2	stats_beta_deseq2
 stats_beta_rarefied			unmapped					1	1	2	stats_beta_rarefied			
 stats_desc_comp			unmapped					1	1	2	stats_desc_comp			
 statsmodels			unmapped	model (MoDEL); pandas (Pandas); numpy (NumPy)				1	1	2	CLONALITY_CLASSIFIER	local/clonality_classifier		pandas=2.2.0;numpy=1.26.3;statsmodels=0.14.1
-stopped			unmapped					1	1	2	CIRCLEFINDER	local/circlefinder		
 str_filter			unmapped	filter (Filter)				1	1	2	STR_filter			
 subset			unmapped	phylosubsets (phylosubsets); experimentsubset (ExperimentSubset); createcontrolsubset (createcontrolsubset); subseq (subSeq)				1	1	2	SUBSET			
-sum			unmapped	suma (SUMA); Sumer (Sumer); orsum (orsum)				1	1	2	MERGE_QUANT_ANNOT_BEST	merge_quant_eggnog_best		
 svtools			unmapped	vtools (vtools); SURVTOOLS (SURVTOOLS); sttools (STtools); spktools (spkTools)				1	1	2	SVTOOLS	svtools	quay.io/biocontainers/svtools:0.5.1--py_0	
-t1			unmapped					1	1	2	NORMALIZE_BBMAP_IDS	local/normalize_bbmap_ids		conda-forge::gawk=5.3.0
 tdf2mzml.py			unmapped					1	2	2	convert_d_via_tdf2mzml		mfreitas/tdf2mzml	
 thickness			unmapped	thicknesstool (ThicknessTool); ct_slice_thickness_normalization (CT Slice thickness harmonization)				1	1	2	CIRCOS	local/circos	docker.io/gallvp/circos-tools:v0.23-1_ps	
 transposonpsi.pl			unmapped	Transposons (Transposons); transposcope (TranspoScope)				1	1	2	TRANSPOSON	local/filterRepeat/Transposon	phuongdoan96/transposon:1.0.0	
 tree2list.pl			unmapped					1	1	2	ReferenceTreeRaxml			
 trim_reads			unmapped					1	1	2	trim_reads			
-truscore			unmapped	score (score)				1	1	2	finalize_merged_sv			
 truvaribench			unmapped	VariBench (VariBench); ribench (RIbench)				1	1	2	truvariBench			
 tuple			unmapped	genomictuples (GenomicTuples)				1	1	2	SUBSET_BARCODES		mplynch28/demux_sim	
 ucsc-fasize			unmapped					1	1	2	MITOSALT	local/mitosalt		bioconda::bbmap=39.37;bioconda::bedtools=2.31.1;bioconda::bioconductor-biostrings=2.74.0;bioconda::bioconductor-pwalign=1.2.0;bioconda::hisat2=2.2.1;bioconda::last=1648;bioconda::sambamba=1.0.1;bioconda::samtools=1.22.1;bioconda::ucsc-bedgraphtobigwig=482;bioconda::ucsc-fasize=482;bioconda::ucsc-fasomerecords=482;conda-forge::r-rcolorbrewer=1.1_3
@@ -1472,7 +1449,6 @@ ucsc-fasomerecords			unmapped					1	1	2	MITOSALT	local/mitosalt		bioconda::bbmap
 umap-learn			unmapped	scikit-learn (scikit-learn)				1	1	2	KMER_COUNT_DIM_REDUCTION	local/kmer_count/dim_reduction		python=3.9;pandas=2.2.1;tensorflow=2.15.0;scikit-learn=1.4.1;umap-learn=0.5.5;matplotlib=3.8.0
 unique-kmers.py			unmapped					1	1	2	GENOME_SIZE	local/genome_size		
 unpack_netmhc_software			unmapped					1	2	2	UNPACK_NETMHC_SOFTWARE	local/unpack_netmhc_software		conda-forge::coreutils=9.1
-usage			unmapped	qusage (qusage); iggeneusage (IgGeneUsage); codon_usage_database (Codon Usage Database); usagi (Usagi)				1	1	2	generate_cool			
 validate_sketch_values			unmapped					1	1	2	validate_sketch_values			
 variant-extractor			unmapped	xtractor (Xtractor)				1	1	2	VARIANTEXTRACTOR	nf-core/variantextractor		bioconda::variant-extractor=5.1.0
 variantannotator			unmapped	gatk_variant_annotator (gatk_variant_annotator); variantannotation (VariantAnnotation)				1	1	2	GATK4_VARIANTANNOTATOR	local/gatk4/variantannotator		
@@ -1480,12 +1456,12 @@ vcf2genome			unmapped					1	1	2	get_software_versions
 vcf_to_consensus.py			unmapped	consensus (Consensus); vcf_consensus (vcf_consensus)				1	1	2	map_to_reference		quay.io/enasequence/ena-sars-cov2-illumina:2.0	
 vibrant_run.py			unmapped	VIBRANT (VIBRANT)				1	1	2	VIBRANT	tools/vibrant		
 visualize_rt_transoformations			unmapped					1	2	2	visualize_RT_transoformations		luxii/unbequant:	
-ws			unmapped					1	1	2	NORMALIZE_BBMAP_IDS	local/normalize_bbmap_ids		conda-forge::gawk=5.3.0
 ampliconclassifier			unmapped					1	1	1	AMPLICONARCHITECT_AMPLICONSIMILARITY	local/ampliconarchitect/ampliconsimilarity		bioconda::ampliconclassifier=0.4.5=hdfd78af_1
 analyseboltz			unmapped					1	1	1	AnalyseBoltz			
 analysis_submission.py			unmapped					1	1	1	ena_analysis_submit		quay.io/enasequence/ena-analysis-submitter:2.3	
 anvi-setup-kegg-kofams			unmapped					1	1	1	keggsetup			
 apt-copynumber-cyto-ssa			unmapped					1	1	1	RUN_APT	affy/run_apt		
+assembletranscripts			unmapped					1	1	1	assembleTranscripts			
 assembly-scan			unmapped					1	1	1	ASSEMBLYSCAN	nf-core/assemblyscan		bioconda::assembly-scan=1.0.0
 augustuscongig			unmapped	augustus (AUGUSTUS)				1	1	1	augustusCongig			
 average_r2			unmapped					1	1	1	average_r2	report		
@@ -1512,8 +1488,10 @@ cvbio			unmapped					1	1	1	RENAME_DELIM_CONTIGS	local/prepare_genome	nciccbr/ccb
 db_untar_amrfinderplus			unmapped	amrfinderplus (AMRFinderPlus)				1	1	1	DB_UNTAR_AMRFINDERPLUS	local/db_untar_amrfinderplus		
 db_untar_pathofact			unmapped	pathofact (PathoFact)				1	1	1	DB_UNTAR_PATHOFACT	local/db_untar_pathofact		
 detection_report			unmapped					1	1	1	DETECTION_REPORT		docker://infrahelpers/python-light:py310-bullseye	
+diff_meth_dm1			unmapped					1	1	1	DIFF_METH_DM1	DM1	docker://casperdevisser/r-mae-mulit-omics-ipsc:v0.1	
 download_human_phix_bwamem2_index			unmapped					1	1	1	DOWNLOAD_HUMAN_PHIX_BWAMEM2_INDEX	local/download_human_phix_bwamem2_index		
 downloadtemplates			unmapped					1	1	1	DownloadTemplates			
+end			unmapped	ENdb (ENdb); endor (endoR); blend (BLEND); encd (ENCD)				1	1	1	end			
 format_diamond_tax_taxdump			unmapped					1	1	1	FORMAT_DIAMOND_TAX_TAXDUMP	local/diamond/format_tax/taxdump		conda-forge::r-tidyverse=2.0.0;conda-forge::r-dtplyr=1.3.1;conda-forge::r-data.table=1.14.8
 functional_annot_table			unmapped					1	1	1	FUNCTIONAL_ANNOT_TABLE	functional_annot_table		
 generate_yaml.py			unmapped					1	1	1	GenerateYAML			
@@ -1522,6 +1500,7 @@ get_input_info			unmapped					1	1	1	get_input_info	multiqc
 get_kraken2			unmapped	kraken2 (kraken2); kraken (Kraken)				1	1	1	get_kraken2	get_kraken2		
 get_ncbi			unmapped					1	1	1	get_ncbi	get_ncbi		
 get_ref_genome			unmapped					1	1	1	GET_REF_GENOME	decontamination		
+get_software_version			unmapped					1	1	1	get_software_version	multiqc		
 getrestrictionfragments			unmapped					1	1	1	getRestrictionFragments			
 giffl-pi			unmapped					1	1	1	GIFFL_PREP_INPUT	giffl_prep_input	https://github.com/calizilla/GIFFL/releases/download/1.0.1/giffl_1.0.1.sif	
 giffl_combine			unmapped					1	1	1	GIFFL_COMBINE	giffl_combine	ubuntu:22.04	
@@ -1535,9 +1514,15 @@ host_comb_ambig_uniq_alignment_based			unmapped					1	1	1	host_comb_ambig_uniq_a
 humann_databases			unmapped	humann (humann)				1	1	1	HUMANN_DOWNLOAD	local/humann/download	biobakery/humann:latest	
 indexdb_rna			unmapped					1	1	1	sortmerna_index			
 install.pl			unmapped	biocinstaller (BiocInstaller)				1	1	1	download_vep	download_vep	quay.io/lifebitaiorg/vep-nf:v110.1	
+install_checkm2			unmapped	checkm2 (CheckM2)				1	1	1	INSTALL_CHECKM2	install/install_checkm2		
 install_checkm2_database			unmapped					1	1	1	INSTALL_CHECKM2_DATABASE	install/install_checkm2_database		
+install_checkv			unmapped					1	1	1	INSTALL_CHECKV	install/install_checkv		
+install_genomad			unmapped	genomad (geNomad)				1	1	1	INSTALL_GENOMAD	install/install_genomad		
 install_genomad_database			unmapped					1	1	1	INSTALL_GENOMAD_DATABASE	install/install_genomad_database		
+install_pharokka			unmapped	pharokka (Pharokka)				1	1	1	INSTALL_PHAROKKA	install/install_pharokka		
 install_pharokka_database			unmapped					1	1	1	INSTALL_PHAROKKA_DATABASE	install/install_pharokka_database		
+install_phold			unmapped					1	1	1	INSTALL_PHOLD	install/install_phold		
+install_vibrant			unmapped	VIBRANT (VIBRANT)				1	1	1	INSTALL_VIBRANT	install/install_vibrant		
 intersecting_sets			unmapped	intersect-sets (intersect sets)				1	1	1	intersecting_sets	R	sebimer/sebimer-samba-v4-r-4.4.2	
 joinepinanores			unmapped	epinano (EpiNano)				1	1	1	joinEpinanoRes		biocorecrg/mopmod:0.6.2	
 kneaddata_database			unmapped					1	1	1	KNEADDATA_DOWNLOAD	local/kneaddata/download	agusinac/kneaddata:latest	
@@ -1547,7 +1532,7 @@ list_fq			unmapped					1	1	1	KRAKEN2
 lr_count_table_minimap2.py			unmapped					1	1	1	lr_get_taxonomy			
 lymphoma_classifier			unmapped					1	1	1	LYMPHOMA_CLASSIFIER	python/python_lymphoma_classifier	quay.io/jaxcompsci/biopython-pyvcf:1.78	
 lzop			unmapped					1	1	1	TAR	nf-core/tar		conda-forge::bzip2=1.0.8;conda-forge::gzip=1.13;conda-forge::lzip=1.21;conda-forge::lzop=1.04;conda-forge::tar=1.34;conda-forge::xz=5.2.6;conda-forge::zstd=1.5.6
-mae_hdf5_path			unmapped					1	1	1	PLOT_DMPK_REP	DM1	docker://casperdevisser/r-mae-mulit-omics-ipsc:v0.1	
+main_report			unmapped	maxreport (MaxReport)				1	1	1	MAIN_REPORT	local/main_report		conda-forge::quarto=1.6.41;bioconda::r-pathosurveilr=0.4.5
 make_small_file_with_coverage			unmapped					1	1	1	make_small_file_with_coverage		alexeyebi/bowtie2_samtools	
 make_table			unmapped	table (TABLE)				1	1	1	MAKE_TABLE	local/spikein/make_table	nciccbr/ccbr_ubuntu_base_20.04:v6	
 matricescreation			unmapped	base (BASE)				1	1	1	MATRICESCREATION	local/matricescreation		conda-forge::r-base==4.0
@@ -1561,10 +1546,10 @@ mergexml_interpro			unmapped	interpro (InterPro)				1	1	1	mergeXML_interpro	inte
 meta_analysis_bb			unmapped	meaanalysis (MEAanalysis)				1	1	1	meta_analysis			
 mkarv			unmapped	marv (MARV)				1	1	1	merge_library_ataqv_mkarv			
 modules/local/rename_raw_data_files/.conda-lock/linux_arm64-bd-1ee21000d35e67a8_1.txt			unmapped					1	1	1	RENAME_RAW_DATA_FILES	local/rename_raw_data_files	https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/19/192943fc3892b7bf5a1fd30bb395abb382e7433da19e1e2a36d9b2641b7ae986/data	conda-forge::bash=5.2.37;conda-forge::coreutils=9.5;modules/local/rename_raw_data_files/.conda-lock/linux_arm64-bd-1ee21000d35e67a8_1.txt;modules/local/rename_raw_data_files/.conda-lock/linux_amd64-bd-25e9437236fbb54f_1.txt
+modules/local/report/.conda-lock/linux_amd64-bd-833048f01b6491fc_1.txt			unmapped					1	1	1	REPORT	local/report	https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/62/62cee220a91255a09aa10b25f920b6b68febe137c7ed00b527d5891a3e5c7842/data	conda-forge::ca-certificates;conda-forge::quarto=1.9.38;conda-forge::r-gt=1.0.0;conda-forge::r-plotly=4.10.4;conda-forge::r-quarto=1.4.4;conda-forge::r-tidyjson=0.3.3.1;conda-forge::r-tidyverse=2.0.0;conda-forge::r-showtext=0.9_8;modules/local/report/.conda-lock/linux_amd64-bd-833048f01b6491fc_1.txt
 multibamsummary			unmapped					1	1	1	MULTIBAM_SUMMARY	local/deeptools	nciccbr/ccbr_deeptools_3.5.3:v1	
 nanoqc			unmapped					1	1	1	NANOQC	nanoqc/nanoqc	quay.io/biocontainers/nanoqc:0.9.4--py_0	
 nanostat			unmapped	nanotator (nanotatoR); nanostr (NanoSTR)				1	2	1	NANOSTAT	nanostat/nanostat	quay.io/biocontainers/nanostat:1.6.0--pyhdfd78af_0	
-no			unmapped					1	1	1	CIRCLEFINDER	local/circlefinder		
 nominal_mtc			unmapped					1	1	1	nominal_mtc			
 pandas_schema			unmapped	pandas (Pandas); SCHEMA (SCHEMA); sdrf-pipelines (sdrf-pipelines)				1	1	1	SAMPLESHEET_CHECK	local/samplesheet_check		conda-forge::pandas_schema;bioconda::sdrf-pipelines=0.0.21
 parse_cellrangermulti_samplesheet			unmapped					1	1	1	PARSE_CELLRANGERMULTI_SAMPLESHEET	local/parse_cellrangermulti_samplesheet		conda-forge::python=3.9.5
@@ -1576,6 +1561,7 @@ plotheatmap			unmapped	pheatmap (pheatmap)				1	1	1	PLOT_HEATMAP	local/deeptools
 pmdtools			unmapped	ptools (ptools); pdb-tools (pdb-tools); pftools (pftools)				1	1	1	pmdtools			
 preprocess			unmapped	process (PROcess); repro (REPRO); gs-preprocess (GS-Preprocess); preprocesscore (preprocessCore); frogs_preprocess (frogs_preprocess)				1	1	1	preprocess			
 processone			unmapped	process (PROcess)				1	1	1	processOne	process1		
+prophage_summary			unmapped					1	1	1	PROPHAGE_SUMMARY	utilities/prophage_summary		
 pvm_chrm			unmapped					1	1	1	PVM_CHRM	execution_modules	/mnt/genetica5/singularity_images	
 quantif_and_taxonomic_table_contigs			unmapped					1	1	1	QUANTIF_AND_TAXONOMIC_TABLE_CONTIGS	quantif_and_taxonomic_table_contigs		
 reformat_amrfinder_tsv			unmapped					1	1	1	REFORMAT_AMRFINDER_TSV	local/reformat_amrfinder_tsv		
@@ -1586,6 +1572,7 @@ report_multiqc_config			unmapped					1	1	1	report_multiqc_config	multiqc
 report_pipeline_started			unmapped					1	1	1	report_pipeline_started		alexeyebi/ena-sars-cov2-nanopore	
 results			unmapped	resultssift (RESULTS:SIFT); reslt (ResLT)				1	1	1	results			
 run_ice			unmapped					1	1	1	run_ice			
+run_mixed_models			unmapped					1	1	1	RUN_MIXED_MODELS	linear_models	docker://casperdevisser/r-mae-mulit-omics-ipsc:v0.1	
 run_qc_cat			unmapped					1	1	1	RUN_QC_CAT	execution_modules	tblabfjd/bioinfotools:2.0.0	
 rundirparser			unmapped					1	1	1	RUNDIRPARSER	local/rundirparser		conda-forge::python=3.13.2;pip=25.3
 scarhrd			unmapped					1	1	1	SCARHRD	scarhrd/scarhrd	quay.io/jaxcompsci/sequenza:v1	
@@ -1595,7 +1582,6 @@ scatter_plot_host_salmon_alignment_based			unmapped					1	1	1	scatter_plot_host_
 scatter_plot_pathogen_htseq			unmapped					1	1	1	scatter_plot_pathogen_htseq			
 scatter_plot_pathogen_salmon			unmapped					1	1	1	scatter_plot_pathogen_salmon			
 scatter_plot_pathogen_salmon_alignment_based			unmapped					1	1	1	scatter_plot_pathogen_salmon_alignment_based			
-se			unmapped					1	1	1	assembleTranscripts			
 sniffles2_plot			unmapped	sniffles (Sniffles)				1	1	1	SNIFFLES_GENERATE_PLOTS	local/sniffles/generate_plots	community.wave.seqera.io/library/sniffles2-plot:0.2.1--54e822d08702535e	
 standard			unmapped	bms_standards_registry (BMS standards registry); standard-deviation-filter (Standard deviation filter); standardized_velvet_assembly_report (Standardized Velvet Assembly Report)				1	1	1	CLASSIFIER_DOWNLOAD	local/classifier/download		
 statistical_post_processing			unmapped					1	1	1	statistical_post_processing			
@@ -1736,6 +1722,7 @@ falco_qcstat_compiling		falco	prefix match		Falco			1	1	0	FALCO_QCSTAT_COMPILING
 filterbam			unmapped	filter (Filter)				1	1	0	FILTERBAM			
 find_adapters		find	prefix match		FIND			1	1	0	FIND_ADAPTERS	local/find_adapters		conda-forge::r-fastqcr==0.1.2
 find_half_coverage		find	prefix match		FIND			1	1	0	FIND_HALF_COVERAGE	local/find/half_coverage		conda-forge::python=3.9
+find_ortholog		find	prefix match		FIND			1	1	0	FIND_ORTHOLOG	utils/find_matching_orthologs		
 find_telomere_regions		find	prefix match		FIND			1	1	0	FIND_TELOMERE_REGIONS	local/find_telomere_regions	docker.io/library/gcc:7.1.0	
 find_threshold		find	prefix match		FIND			1	2	0	FIND_THRESHOLD	local/enchantr/find_threshold	docker.io/immcantation/airrflow:5.1.0	
 fqstat_summary		FQStat	prefix match		FQStat			1	1	0	FQSTAT_SUMMARY	local/fqstat_summary		coreutils
@@ -1779,6 +1766,8 @@ igv_session		igv	prefix match		IGV			1	1	0	IGV_SESSION	local/python/igv_session	
 illumina_alpha_diversity		illumina	prefix match		illumina			1	1	0	illumina_alpha_diversity	R	sebimer/sebimer-samba-v4-r-4.4.2	
 illumina_beta_diversity		illumina	prefix match		illumina			1	1	0	illumina_beta_diversity	R	sebimer/sebimer-samba-v4-r-4.4.2	
 illumina_extract_data		illumina	prefix match		illumina			1	1	0	ILLUMINA_EXTRACT_DATA	illumina_extract_data		
+install_drep			unmapped					1	1	0	INSTALL_DREP	install/install_drep		
+install_parsing_env			unmapped					1	1	0	INSTALL_PARSING_ENV	install/install_parsing_env		
 juicer_sort		juicer	prefix match		Juicer			1	1	0	JUICER_SORT	local/juicer_sort		
 kegg_species		kegg	prefix match		Kyoto encyclopedia of genes and genomes (KEGG)			1	2	0	KEGG_SPECIES	local/kegg/species		
 kmerfinder_summary		kmerfinder	prefix match		KmerFinder			1	1	0	KMERFINDER_SUMMARY	local/kmerfinder/summary		
@@ -1797,6 +1786,7 @@ match_feature_with_idents		match	prefix match		Match			1	2	0	match_feature_with_
 merge_xy.sh			unmapped					1	1	0	MAKE_BED	make_bed		
 metaphlan_download		metaphlan	prefix match		MetaPhlAn			1	1	0	METAPHLAN_DOWNLOAD	local/metaphlan/download	biobakery/humann:latest	
 mosdepth_plot		mosdepth	prefix match		mosdepth			1	1	0	MOSDEPTH_PLOT	execution_modules	tblabfjd/bioinfotools:2.0.0	
+multiqc_assemblyscan_plot_data		multiqc	prefix match		MultiQC			1	1	0	MULTIQC_ASSEMBLYSCAN_PLOT_DATA	local/multiqc_assemblyscan_plot_data		conda-forge::jq=1.7.1
 multiqc_custom_fail_mapped		multiqc	prefix match		MultiQC			1	1	0	MULTIQC_CUSTOM_FAIL_MAPPED	local/multiqc_custom_fail_mapped		conda-forge::sed=4.7
 multiqc_custom_phantompeakqualtools		multiqc	prefix match		MultiQC			1	1	0	MULTIQC_CUSTOM_PHANTOMPEAKQUALTOOLS	r/multiqc_custom_phantompeakqualtools	quay.io/biocontainers/r-base:3.5.1	
 multiqc_custom_strand_check		multiqc	prefix match		MultiQC			1	1	0	MULTIQC_CUSTOM_STRAND_CHECK	local/multiqc_custom_strand_check		conda-forge::sed=4.7
@@ -1816,6 +1806,7 @@ pivot_wider		pivot	prefix match		PIVOT			1	1	0	PIVOT_WIDER	local/pivot/wider		co
 plot_cafe_go		plot	prefix match		plot			1	2	0	PLOT_CAFE_GO	local/plot_cafe_go		
 plot_delly_cnv		plot	prefix match		plot			1	1	0	PLOT_DELLY_CNV	r/plot_delly_cnv	quay.io/jaxcompsci/r-sv_cnv_annotate:4.1.1	
 plot_distribution		plot	prefix match		plot			1	1	0	PLOT_DISTRIBUTION	utils/plot_protein_distribution	phuongdoan96/seaborn:0.13.2	
+plot_dmpk_rep		plot	prefix match		plot			1	1	0	PLOT_DMPK_REP	DM1	docker://casperdevisser/r-mae-mulit-omics-ipsc:v0.1	
 plot_entity_binding_ratios		plot	prefix match		plot			1	1	0	PLOT_ENTITY_BINDING_RATIOS	local/plot_entity_binding_ratios		conda-forge::r-ggplot2=3.4.2;conda-forge::r-data.table=1.14.8;conda-forge::r-dplyr=1.1.2;conda-forge::r-stringr=1.5.0;conda-forge::r-ggpubr=0.6.0;conda-forge::r-optparse=1.7.3
 plot_freq_comparison		plot	prefix match		plot			1	1	0	plot_freq_comparison	report		
 plot_frip		plot	prefix match		plot			1	1	0	PLOT_FRIP	local/peaks	nciccbr/ccbr_r_4.3.0:v1	
@@ -1849,6 +1840,9 @@ plot_salmon_mapping_stats_host_pathogen		plot	prefix match		plot			1	1	0	plot_sa
 plot_salmon_mapping_stats_host_pathogen_salmon_alignment_based		plot	prefix match		plot			1	1	0	plot_salmon_mapping_stats_host_pathogen_salmon_alignment_based			
 plot_star_mapping_stats		plot	prefix match		plot			1	1	0	plot_star_mapping_stats			
 plot_taxonomic_affiliations		plot	prefix match		plot			1	1	0	PLOT_TAXONOMIC_AFFILIATIONS	assign_taxonomy		
+plots			unmapped	splots (splots); plotsr (plotsr); jnplots (JNplots); plot (plot); poets (POETs)				1	1	0	PLOTS			
+prep_chunks_mixed_models		prep	prefix match		PreP			1	1	0	PREP_CHUNKS_MIXED_MODELS	linear_models	docker://casperdevisser/r-mae-mulit-omics-ipsc:v0.1	
+prep_corrected_chunks_mixed_models		prep	prefix match		PreP			1	1	0	PREP_CORRECTED_CHUNKS_MIXED_MODELS	linear_models	docker://casperdevisser/r-mae-mulit-omics-ipsc:v0.1	
 prep_mitosalt		prep	prefix match		PreP			1	1	0	PREP_MITOSALT	local/prep_mitosalt		
 process_align_peaks_neg_xcms		process	prefix match		PROcess			1	1	0	process_align_peaks_neg_xcms			
 process_align_peaks_pos_xcms		process	prefix match		PROcess			1	1	0	process_align_peaks_pos_xcms			
@@ -1977,6 +1971,7 @@ salmon_quantification_stats_salmon_alignment_based		salmon	prefix match		Salmon	
 samples_per_omics			unmapped					1	1	0	SAMPLES_PER_OMICS	single_omics		
 samtools_markdup_dv		samtools	prefix match		SAMtools			1	1	0	samtools_markdup_dv			
 score_plots_3		score	prefix match		score			1	1	0	SCORE_PLOTS_3	local/score_plot3	quay.io/ecoflowucl/chopgo:r-4.3.2_python-3_perl-5.38	
+score_report		score	prefix match		score			1	1	0	SCORE_REPORT	local/score_report		
 scrape_settings			unmapped					1	1	0	scrape_settings			
 sed_sed		SED	prefix match		SED			1	2	0	SED_SED	local/sed/sed		conda-forge::coreutils=9.5
 seqprep_report		seqprep	prefix match		SeqPrep			1	1	0	SEQPREP_REPORT	seqprep	quay.io/openshifttest/base-alpine:1.2.0	
