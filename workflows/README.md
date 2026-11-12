@@ -37,6 +37,7 @@ TODO: Xenie add scripts
 
 - `data/galaxy/`    downloaded Galaxy workflows and their tool pairs (ToolShed names)
 - `data/nextflow/`  tsv? TODO: Julian add descritpion
+- `data/nf-core/`  TODO: Xenie - add if you have any msc data files
 - `data/mapping/`   tool name -> bio.tools ID maps, per source
 - `data/biotools/`  tool pairs with bio.tools IDs, 
   -  per source:
