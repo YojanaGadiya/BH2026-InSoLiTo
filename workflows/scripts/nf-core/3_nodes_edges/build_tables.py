@@ -1,21 +1,24 @@
 #!/usr/bin/env python3
 """build_tables.py - the final tables (pairs, edges, nodes) from the merged pair table.
 
-  python build_tables.py [--results DIR] [--out DIR] [--dump FILE]
+  python build_tables.py [--results DIR] [--out DIR] [--dump FILE] [--keep-parallel]
 
 Reads  (from --results, default workflows/data/nf-core/intermediate):
   tools_with_ids.csv        from `run.py idtable`
   pairs_merged_unique.csv   from `run.py merge` (must contain direction_type)
   the bio.tools dump        biotools_raw*.jsonl: found in --results, or give its place with --dump (it can stay where it is, it is only read)
-Writes to --out (default workflows/data/nf-core):
+Writes to --out (default: workflows/data/biotools/nf-core, next to the Galaxy and Nextflow tables):
   biotools_pairs.csv   one row per WORKFLOW and directed tool pair: workflow_id, source, target, parallel (`parallel` = the two tools run side by side
                        in that workflow, `not parallel` = one comes after the other). The flag is exact for every workflow
   biotools_edges.csv   source, target, n_workflows, workflow_ids; one row per direction, each with its own count (A->B and B->A are two rows)
   biotools_nodes.csv   one row per tool
 and to --results:
-  pairs_biotools.csv   one row per tool pair with all columns (the table the other three are made from; not a final table)
+  pairs_merged_biotools.csv   one row per tool pair with all columns (the table the other three are made from; not a final table)
 
 Only pairs where BOTH tools have a bio.tools ID and that are valid in at least one workflow are kept.
+Parallel pairs are left out of the three final tables for now (KEEP_PARALLEL = False): a pair is only counted in the workflows where one tool
+comes after the other, and a pair that is parallel in every workflow is dropped. pairs_merged_biotools.csv keeps them all.
+--keep-parallel (or KEEP_PARALLEL = True) is a placeholder to bring them back later; the `parallel` column of biotools_pairs.csv then tells them apart.
 direction_type: one_direction (A feeds B, never B feeds A) | both_directions | parallel (side by side, no path between them).
 Needs pandas.
 """
@@ -26,6 +29,8 @@ import pandas as pd
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, '..', '2_pairs'))
 import merge_pairs as mp   # the same tool-name matching as the merge, so the pairs line up
+
+KEEP_PARALLEL = False  # placeholder: parallel pairs are left out for now, set True (or --keep-parallel) to keep them
 
 
 def find_dump(results, dump):
@@ -86,6 +91,20 @@ def workflow_pair_table(pairs, types):
     return pd.DataFrame(rows)
 
 
+def drop_parallel(pairs, workflow_pairs):
+    """leaves out the workflows where a pair is only parallel. Each pair keeps the workflows where it is `not parallel`, with its count and
+    workflow list updated, so the edges and nodes made from it only see those. Pairs left with no workflow are dropped"""
+    kept = workflow_pairs[workflow_pairs['parallel'] == 'not parallel']
+    by_pair = kept.groupby(['source', 'target'], sort=False)['workflow_id'].agg(';'.join)
+    key = pd.MultiIndex.from_frame(pairs[['source_biotool_id', 'target_biotool_id']])
+    out = pairs.assign(pipelines_positive=by_pair.reindex(key).to_numpy())
+    out = out[out['pipelines_positive'].notna()].copy()
+    out['n_pipelines_positive'] = out['pipelines_positive'].str.count(';') + 1
+    print(f'Parallel left out: {len(workflow_pairs) - len(kept):,} of {len(workflow_pairs):,} workflow-pair rows | '
+          f'pairs only parallel, dropped: {len(pairs) - len(out):,} of {len(pairs):,}')
+    return out.reset_index(drop=True), kept.reset_index(drop=True)
+
+
 def node_table(pairs, dump):
     ends = pd.concat([pairs[['source_biotool_id', 'source_match', 'pipelines_positive']].set_axis(['biotoolsID', 'matching_method', 'pipelines_positive'], axis=1),
                       pairs[['target_biotool_id', 'target_match', 'pipelines_positive']].set_axis(['biotoolsID', 'matching_method', 'pipelines_positive'], axis=1)])
@@ -101,8 +120,9 @@ def node_table(pairs, dump):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    DATA = os.path.join(HERE, '..', '..', '..', 'data', 'nf-core')
-    ap.add_argument('--results', default=os.path.join(DATA, 'intermediate')); ap.add_argument('--out', default=DATA); ap.add_argument('--dump')
+    DATA = os.path.join(HERE, '..', '..', '..', 'data')
+    ap.add_argument('--results', default=os.path.join(DATA, 'nf-core')); ap.add_argument('--out', default=os.path.join(DATA, 'biotools', 'nf-core')); ap.add_argument('--dump')
+    ap.add_argument('--keep-parallel', action='store_true', default=KEEP_PARALLEL, help='keep the parallel pairs (placeholder, off for now)')
     a = ap.parse_args()
     results, out = os.path.abspath(a.results), os.path.abspath(a.out)
     tools_file, pairs_file, dump = os.path.join(results, 'tools_with_ids.csv'), os.path.join(results, 'pairs_merged_unique.csv'), find_dump(results, a.dump)
@@ -110,17 +130,19 @@ def main():
     for f in (tools_file, pairs_file, dump): print(('found    ' if f and os.path.exists(f) else 'MISSING  ') + str(f))
     if missing: sys.exit('missing: ' + '; '.join(missing))
 
-    pairs = pair_table(tools_file, pairs_file)
-    edges, workflow_pairs, nodes = edge_table(pairs), workflow_pair_table(pairs, workflow_types(results)), node_table(pairs, dump)
+    all_pairs = pair_table(tools_file, pairs_file)
+    assert not all_pairs.duplicated(['source_biotool_id', 'target_biotool_id']).any()
+    pairs, workflow_pairs = all_pairs, workflow_pair_table(all_pairs, workflow_types(results))
+    if not a.keep_parallel: pairs, workflow_pairs = drop_parallel(pairs, workflow_pairs)
+    edges, nodes = edge_table(pairs), node_table(pairs, dump)
     assert len(edges) == len(pairs) and len(workflow_pairs) == pairs['n_pipelines_positive'].sum()
     assert set(nodes['biotoolsID']) == set(edges['source']) | set(edges['target'])
     assert set(workflow_pairs['parallel']) <= {'parallel', 'not parallel'}
 
     os.makedirs(out, exist_ok=True)
-    pairs.to_csv(os.path.join(results, 'pairs_biotools.csv'), index=False)
+    all_pairs.to_csv(os.path.join(results, 'pairs_merged_biotools.csv'), index=False)   # all pairs, parallel ones too
     for name, df in (('biotools_edges.csv', edges), ('biotools_pairs.csv', workflow_pairs), ('biotools_nodes.csv', nodes)): df.to_csv(os.path.join(out, name), index=False)
-    print('\nparallel flag in biotools_pairs.csv (rows = workflow x directed pair):'); print(workflow_pairs['parallel'].value_counts().to_string())
-    print(f'\nnodes {len(nodes):,} | edges {len(edges):,} | workflow pairs {len(workflow_pairs):,}\nwritten to {out} (pairs_biotools.csv to {results})')
+    print(f'\nnodes {len(nodes):,} | edges {len(edges):,} | workflow pairs {len(workflow_pairs):,}\nwritten to {out} (pairs_merged_biotools.csv to {results})')
 
 
 if __name__ == '__main__':

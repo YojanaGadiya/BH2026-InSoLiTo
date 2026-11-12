@@ -15,9 +15,12 @@ Step 3 (split):   split the main publications by whether another tool has the sa
                                                                 pmid, pmcid, doi, type, is_primary, biotoolsID
                   - data/biotools_main_publications_shared.csv  one row per paper that is the main
                                                                 publication of several tools:
-                                                                pmid, pmcid, doi, n_tools, biotoolsIDs (";"-joined)
+                                                                collection_id, pmid, pmcid, doi, n_tools,
+                                                                biotoolsIDs (";"-joined)
                   The unique file keeps bio.tools' order; the shared file is sorted by n_tools,
-                  largest first.
+                  largest first. collection_id is the paper's first identifier, in the order pmid, pmcid,
+                  doi, with its kind as prefix (e.g. "pmid:10827456"), so it stays the same between runs.
+                  Papers never share an identifier, so it is unique. With several values the lowest is used.
                   In the shared file, an identifier with several values ("|"-joined) means bio.tools
                   records disagree.
                   Rows are matched on any shared identifier, so a tool citing only the DOI and another
@@ -207,12 +210,14 @@ def split_shared(main_rows):
     shared = sorted([group for group in groups.values() if len(group["tools"]) > 1], key=lambda g: len(g["tools"]), reverse=True)
     with open(SHARED_FILE, "w", newline="", encoding="utf-8") as out:
         writer = csv.writer(out)
-        writer.writerow(["pmid", "pmcid", "doi", "n_tools", "biotoolsIDs"])
+        writer.writerow(["collection_id", "pmid", "pmcid", "doi", "n_tools", "biotoolsIDs"])
         for group in shared:
             # Several values for one identifier mean bio.tools records disagree; keep them all, "|"-joined
             # (not ";", which occurs inside SICI-style DOIs)
             tools = list(dict.fromkeys(row[0] for row in group["rows"]))  # bio.tools' order
-            writer.writerow(["|".join(sorted(group[k])) for k in ("pmid", "pmcid", "doi")]
+            kind = next(k for k in ("pmid", "pmcid", "doi") if group[k])
+            collection_id = f"{kind}:{min(group[kind])}"
+            writer.writerow([collection_id] + ["|".join(sorted(group[k])) for k in ("pmid", "pmcid", "doi")]
                             + [len(tools), ";".join(tools)])
 
     tools = sum(len(group["tools"]) for group in shared)
