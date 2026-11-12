@@ -11,15 +11,27 @@ from datetime import datetime, timezone
 # CONFIGURATION
 # ============================================================
 
-ROOT = Path(__file__).resolve().parents[4]   # 1_download -> nf-core -> scripts -> workflows -> root
-DATA = ROOT / "workflows" / "data" / "nf-core"
+PROJECT_ROOT = Path.home() / "projects" / "BH2026"
 
-OUTPUT_ROOT = DATA / "download"              # <pipeline>/<version>/, plus manifest, snapshot, logs
-CATALOGUE_PATH = OUTPUT_ROOT / "nfcore_pipelines_catalogue.json"
+CATALOGUE_PATH = (
+    PROJECT_ROOT
+    / "nfcore_analysis"
+    / "data"
+    / "raw"
+    / "nfcore_pipelines_catalogue.json"
+)
+
+OUTPUT_ROOT = (
+    PROJECT_ROOT
+    / "nfcore_analysis"
+    / "data"
+    / "raw"
+    / "nfcore_catalogue_code"
+)
 
 # None = all active pipelines in the catalogue.
 # Alternatively: {"rnaseq", "sarek", "ampliseq"}
-PIPELINE_NAMES = {"rnaseq", "sarek"}
+PIPELINE_NAMES = None
 
 # Exclude archived pipelines by default.
 INCLUDE_ARCHIVED = True

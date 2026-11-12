@@ -10,10 +10,10 @@ Expected layout of the catalogue:  <catalogue>/<pipeline>/<version>/main.nf   (w
   python run.py match [--dump FILE]        # fill missing bio.tools IDs from a local bio.tools dump (biotools_raw*.jsonl in RESULTS, or --dump; the file can stay where it is)
   python run.py idtable                    # RESULTS/tools_with_ids.csv: every tool with at least one identifier
   python run.py merge [--pool-ids biotools]  # ONE table of all pairs over all pipelines -> RESULTS/pairs_merged_unique.csv, control_pool.csv
-  python run.py tables [--dump FILE]       # the final tables (pairs, edges, nodes) -> nf-core/final tables (runs ../3_nodes_edges/build_tables.py)
+  python run.py tables [--dump FILE]       # the final tables (pairs, edges, nodes) -> the same data folder (runs ../3_nodes_edges/build_tables.py)
   python run.py all [--lookup]             # analyze, ids, match, idtable, merge and tables one after the other
 
-Options: --catalogue DIR (default: current folder)   --out DIR (default: nf-core/data, next to scripts/ and final tables/)
+Options: --catalogue DIR (default: current folder)   --out DIR (default: workflows/data/nf-core)
          --jobs N (pipelines analysed in parallel, default 4)   --timeout SECONDS (per pipeline, default 900)   --only TEXT (only pipelines whose path contains TEXT)
 Nothing from the pipelines is executed and nothing is downloaded (except bio.tools answers with --lookup). Only text files are read.
 """
@@ -21,11 +21,9 @@ import argparse, collections, concurrent.futures as cf, csv, glob, json, os, sub
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-ROOT = os.path.abspath(os.path.join(HERE, '..', '..', '..', '..'))   # 2_pairs -> nf-core -> scripts -> workflows -> root
-DATA = os.path.join(ROOT, 'workflows', 'data', 'nf-core')
-BIOTOOLS_DATA = os.path.join(ROOT, 'directed-graph', 'biotools', 'data')
 SKIP_PARENTS = ('modules', 'subworkflows', 'tests', 'test', '.git', 'work')   # a main.nf inside these is a module, not a pipeline
 PRUNE = ('modules', 'subworkflows', 'workflows', 'conf', 'tests')
+
 
 def libs_ok():
     try: import yaml, networkx; return True
@@ -128,12 +126,12 @@ def setup(a):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('step', choices=['setup', 'survey', 'analyze', 'ids', 'match', 'idtable', 'merge', 'tables', 'all'])
-    ap.add_argument('--catalogue', default=os.path.join(DATA, 'download')); ap.add_argument('--out'); ap.add_argument('--jobs', type=int, default=4); ap.add_argument('--timeout', type=int, default=900)
+    ap.add_argument('--catalogue', default='.'); ap.add_argument('--out'); ap.add_argument('--jobs', type=int, default=4); ap.add_argument('--timeout', type=int, default=900)
     ap.add_argument('--limit', type=int, default=0); ap.add_argument('--only', default=''); ap.add_argument('--lookup', action='store_true'); ap.add_argument('--dump')
     ap.add_argument('--pool-ids', choices=['any', 'biotools'], default='any', help='merge: control pool needs both tools to have any identifier (any) or a bio.tools ID (biotools)')
     a = ap.parse_args()
     a.cat = os.path.abspath(a.catalogue)
-    a.out = os.path.abspath(a.out or os.path.join(HERE, '..', '..', 'data'))   # nf-core/data, next to scripts/ and final tables/
+    a.out = os.path.abspath(a.out or os.path.join(HERE, '..', '..', '..', 'data', 'nf-core'))   # workflows/data/nf-core
     steps = {'setup': [setup], 'survey': [survey], 'analyze': [analyze], 'ids': [ids], 'match': [match], 'idtable': [idtable], 'merge': [merge], 'tables': [tables], 'all': [analyze, ids, match, idtable, merge, tables]}[a.step]
     for f in steps:
         rc = f(a)

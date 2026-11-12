@@ -25,7 +25,7 @@ A pair means: a process that uses software A is followed by a process that uses 
 5. **Merge over all workflows.** Pairs are merged by tool, and the number of workflows where each pair is valid is counted. Tools with the same bio.tools ID are one tool (`star_align` counts as `star`).
 6. **bio.tools IDs.** From the module `meta.yml`, then from the local dump by DOI, other IDs (PMID, PMCID, RRID), homepage URL and last by name. Stronger evidence wins over weaker. Generic words (`cat`, `find`, `filter`, `gzip` ...) never get an ID by name.
 7. **Filter.** Only pairs where both tools have a bio.tools ID and that are valid in at least one workflow are kept.
-8. **Tables.** `scripts/3_nodes_edges/build_tables.py` writes the final tables.
+8. **Tables.** `3_nodes_edges/build_tables.py` writes the final tables.
 
 ### `direction_type`
 
@@ -37,12 +37,12 @@ A pair means: a process that uses software A is followed by a process that uses 
 
 If a pair is a sequence in some workflows and parallel in others, it is `one_direction` or `both_directions`: the sequence is the stronger information.
 
-## Final tables (`final tables/`)
+## Final tables (in `workflows/data/nf-core/`)
 
 | file | one row per | main columns |
 |---|---|---|
-| `biotools_pairs.csv` | workflow and tool pair (the same pair once for every workflow where it is valid) | `workflow_id`, `source`, `target`, `direction_type`, `source_biotools_name`, `target_biotools_name` |
-| `biotools_edges.csv` | tool pair (the workflows are listed in `workflow_ids`) | `source`, `target`, `direction_type`, `n_workflows`, `workflow_ids` |
+| `biotools_pairs.csv` | workflow and directed tool pair (the same pair once for every workflow where it is valid) | `workflow_id`, `source`, `target`, `parallel`. `parallel` is `parallel` when the two tools run side by side in that workflow (same input, no path between them), and `not parallel` when one comes after the other. The flag is exact for every workflow |
+| `biotools_edges.csv` | directed tool pair | `source`, `target`, `n_workflows`, `workflow_ids`. `n_workflows` is the number of workflows where this direction appears. A to B and B to A are two rows with their own counts. A `parallel` pair appears once forward and once reverse in each workflow, so its two rows have the same count |
 | `biotools_nodes.csv` | tool | `biotoolsID`, `biotools_name`, `n_workflows`, `matching_method` |
 
 `source` and `target` in the edges and pairs are bio.tools IDs. `matching_method` says how the ID was found: `biotool_id` (written in the module `meta.yml`), `doi`, `url` or `name`.
@@ -54,9 +54,9 @@ If a pair is a sequence in some workflows and parallel in others, it is `one_dir
 - `name` matches to bio.tools are the weakest and can be wrong for tools with a common name.
 - Utilities and reporting tools (for example MultiQC) are in the tables. They can be filtered by hand.
 
-## Data (`data/`)
+## Other files in `workflows/data/nf-core/`
 
-What the scripts write, so the tables in `final tables/` can be traced back.
+What the scripts write next to the final tables, so the tables can be traced back.
 
 | file | content |
 |---|---|
@@ -64,13 +64,13 @@ What the scripts write, so the tables in `final tables/` can be traced back.
 | `pairs_merged_summary.md` | counts and the most frequent pairs |
 | `control_pool.csv` | valid pairs where both tools have at least one identifier |
 | `tools_with_ids.csv`, `tool_identifiers.csv` | tools with at least one ID and why a bio.tools ID is missing; every identifier we hold for every tool |
-| `pairs_biotools.csv` | the pairs with a bio.tools ID on both sides, all columns; `final tables/` is made from it |
+| `pairs_biotools.csv` | the pairs with a bio.tools ID on both sides, all columns; the final tables are made from it |
 | `batch_summary.csv` | status of every pipeline |
 | `pipelines/<pipeline>/` | `software_pairs.csv` (the software pairs of one pipeline with their `pair_type`), `process_edges.csv` (the process edges behind them: class, payload check, conditions, call sites), `process_software_map.csv` (software of each process), `summary.json` |
 
-Not in git (see `.gitignore`): the bio.tools dump `biotools_raw_14-10-2026.jsonl` (about 100 MB, a public input: put it into `data/`, or pass its place with `--dump`; it is only read and can stay where it is), the files that only serve to check the ID matching (`biotools_match_report.csv`, `biotools_match_summary.csv`, `biotools_cache.json`) and the logs.
+Not in git (see `.gitignore`): the bio.tools dump `biotools_raw_14-10-2026.jsonl` (about 100 MB, a public input: put it into this folder, or pass its place with `--dump`; it is only read and can stay where it is), the files that only serve to check the ID matching (`biotools_match_report.csv`, `biotools_match_summary.csv`, `biotools_cache.json`) and the logs.
 
-## Scripts (`scripts/`)
+## Scripts (`workflows/scripts/nf-core/`)
 
 | folder | content |
 |---|---|
@@ -84,19 +84,19 @@ Python 3.10 or newer and `pip install -r requirements.txt` (pyyaml, networkx; `b
 
 ```bash
 # 1. download (edit the settings at the top first)
-python scripts/1_download/downloader.py
+python 1_download/downloader.py
 
-# 2. pairs. CATALOGUE is the folder with the downloaded pipelines (<pipeline>/<version>/main.nf); results go to data/
-python scripts/2_pairs/run.py setup
-python scripts/2_pairs/run.py survey  --catalogue CATALOGUE      # what is in the catalogue
-python scripts/2_pairs/run.py analyze --catalogue CATALOGUE      # software pairs of every pipeline, a few minutes
-python scripts/2_pairs/run.py ids     --catalogue CATALOGUE --lookup   # tool identifiers (needs internet)
-python scripts/2_pairs/run.py match                              # put the bio.tools dump biotools_raw*.jsonl into data/ first
-python scripts/2_pairs/run.py idtable                            # tools_with_ids.csv
-python scripts/2_pairs/run.py merge                              # pairs_merged_unique.csv, control_pool.csv
+# 2. pairs. CATALOGUE is the folder with the downloaded pipelines (<pipeline>/<version>/main.nf); results go to workflows/data/nf-core
+python 2_pairs/run.py setup
+python 2_pairs/run.py survey  --catalogue CATALOGUE      # what is in the catalogue
+python 2_pairs/run.py analyze --catalogue CATALOGUE      # software pairs of every pipeline, a few minutes
+python 2_pairs/run.py ids     --catalogue CATALOGUE --lookup   # tool identifiers (needs internet)
+python 2_pairs/run.py match                              # put the bio.tools dump biotools_raw*.jsonl into workflows/data/nf-core first
+python 2_pairs/run.py idtable                            # tools_with_ids.csv
+python 2_pairs/run.py merge                              # pairs_merged_unique.csv, control_pool.csv
 
-# 3. the final tables: reads data/, writes "final tables"/. The bio.tools dump is found in data/, or give its place (it can stay where it is)
-python scripts/2_pairs/run.py tables --dump /path/to/biotools_raw_14-10-2026.jsonl
+# 3. the final tables: reads and writes workflows/data/nf-core. The bio.tools dump is found there, or give its place (it can stay where it is)
+python 2_pairs/run.py tables --dump /path/to/biotools_raw_14-10-2026.jsonl
 ```
 
-`run.py all --catalogue CATALOGUE --lookup` runs all the steps from `analyze` to `tables` one after the other. Everything goes to `data/` (change with `--out`). The folder `final tables/` has a space in its name: put the path in quotes in a shell.
+`run.py all --catalogue CATALOGUE --lookup` runs all the steps from `analyze` to `tables` one after the other. Everything goes to `workflows/data/nf-core` (change with `--out`). The commands above are run from this folder (`workflows/scripts/nf-core`).
