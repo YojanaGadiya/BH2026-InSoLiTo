@@ -38,7 +38,7 @@ import urllib.request
 import zipfile
 from pathlib import Path, PurePosixPath
 
-from nfdag.build import build
+from workflows.scripts.nextflow.nfdag.build import build
 
 BASE = "https://workflowhub.org"
 DATA_DIR = Path(__file__).resolve().parent / "data" / "download"  # shared with download_workflowhub.py
