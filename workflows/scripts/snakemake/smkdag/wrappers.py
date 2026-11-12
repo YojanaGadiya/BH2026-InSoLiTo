@@ -61,7 +61,7 @@ class WrapperInfo:
 
 
 def read_wrapper(wrappers_dir: Path, ref: WrapperRef) -> WrapperInfo:
-    """The cached meta.yaml / environment.yaml of a wrapper (download_snakemake_catalog.py fetches them)."""
+    """The cached meta.yaml / environment.yaml of a wrapper (01_download_snakemake_catalog.py fetches them)."""
     info = WrapperInfo(ref)
     folder = wrapper_dir(wrappers_dir, ref)
     for file in FILES:

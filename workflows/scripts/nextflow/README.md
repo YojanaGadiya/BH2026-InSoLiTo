@@ -4,21 +4,21 @@ Downloads the Nextflow workflows registered on WorkflowHub, reads the DAG of eac
 
 From the repository root:
 ```
-.venv/bin/python workflows/scripts/nextflow/download_workflowhub_nextflow.py   # crates (--ignore-nfcore skips the nf-core space)
-.venv/bin/python workflows/scripts/nextflow/extract_nextflow_dags.py           # DAG of each pipeline, one node per tool
-.venv/bin/python workflows/scripts/nextflow/map_nextflow_tools.py              # tool nodes -> bio.tools IDs
+.venv/bin/python workflows/scripts/nextflow/01_download_workflowhub_nextflow.py   # crates (--ignore-nfcore skips the nf-core space)
+.venv/bin/python workflows/scripts/nextflow/02_extract_nextflow_dags.py           # DAG of each pipeline, one node per tool
+.venv/bin/python workflows/scripts/nextflow/03_map_nextflow_tools.py              # tool nodes -> bio.tools IDs
 ```
 They need PyYAML and git. The mapping also needs the bio.tools dump `directed-graph/biotools/data/biotools_raw*.jsonl` and the Galaxy Codex table `workflows/data/mapping/galaxy/galaxy_codex_tools.tsv`, and it reuses helpers of `../galaxy/map_galaxy_tools.py`.
 
 ## Download
 
-`download_workflowhub_nextflow.py` downloads every Nextflow workflow on WorkflowHub. Metadata and crates are shared with the Galaxy download, in `workflows/data/galaxy/download/`. Each workflow is unpacked to `workflows/data/nextflow/download/<id>_v<version>/`.
+`01_download_workflowhub_nextflow.py` downloads every Nextflow workflow on WorkflowHub. Metadata and crates are shared with the Galaxy download, in `workflows/data/galaxy/download/`. Each workflow is unpacked to `workflows/data/nextflow/download/<id>_v<version>/`.
 - **Incomplete crates** (only a link to a git repository, empty or HTML `.nf` files, included files missing) are filled from a shallow `git clone` of the registered repository. `--no-clone` skips that. Each crate is tried once, and `.cloned_from` records the result.
 - **`nextflow_workflows.csv`** has one row per workflow. Its column `nf_core` marks the workflows of the WorkflowHub space nf-core. `--summary-only` rebuilds the file from the saved files.
 
 ## DAG
 
-`extract_nextflow_dags.py` (code in `nfdag/`) reads the `.nf` files without running them, for DSL1 and DSL2, with every if/else branch (the union over all parameter choices).
+`02_extract_nextflow_dags.py` (code in `nfdag/`) reads the `.nf` files without running them, for DSL1 and DSL2, with every if/else branch (the union over all parameter choices).
 - **One node per tool:** each process is split into the tools it runs, in script order. `bwa-mem2 | samtools` becomes `…/bwa-mem2 → …/samtools` (`kind=chain`). Edges between processes (`kind=dag`) leave the last tool of one process and reach the first tool of the next.
 - **Which tools:** the executables of a process, restricted to the software its module declares (meta.yml, conda, biocontainers). A process that only runs its own scripts keeps one node, named after the process.
 - **Excluded tools:** tools in `nextflow_excluded_tools.txt` never become nodes and don't cut the flow. The list covers compression, language runtimes, containers and reporting tools, and accepts globs like `r-*`.
@@ -30,7 +30,7 @@ They need PyYAML and git. The mapping also needs the bio.tools dump `directed-gr
 
 ## Mapping the tools to bio.tools
 
-`map_nextflow_tools.py` (logic in `nfdag/mapping.py`) gives each tool node a bio.tools ID. The goal is an ID for every tool that is not excluded or dropped. The reference is the full bio.tools dump: every ID used must exist in it. IDs from meta.yml, the Codex or the curated file that are not in bio.tools are not used (curated ones are reported).
+`03_map_nextflow_tools.py` (logic in `nfdag/mapping.py`) gives each tool node a bio.tools ID. The goal is an ID for every tool that is not excluded or dropped. The reference is the full bio.tools dump: every ID used must exist in it. IDs from meta.yml, the Codex or the curated file that are not in bio.tools are not used (curated ones are reported).
 
 Each tool node is mapped by its tool name: `bwa-mem2`, `bedGraphToBigWig`, or the process name for processes that only run their own scripts. The methods are tried in this order, and the first match wins:
 
@@ -75,9 +75,9 @@ Its first columns are those of `nextflow_curated_map.tsv` (next to this README, 
 - `map`, with a `biotoolsID`; several separated by `;` make a chain;
 - `drop`: not a bio.tools tool, so its neighbours are connected.
 
-Then run `map_nextflow_tools.py` again. The DAGs don't need to be rebuilt.
+Then run `03_map_nextflow_tools.py` again. The DAGs don't need to be rebuilt.
 
-`nextflow_excluded_tools.txt` is for helpers that run inside a process next to the real tool (`megahit | pigz`). It is read by `extract_nextflow_dags.py`, so the DAGs have to be rebuilt after a change. A process that runs nothing but an excluded tool (nf-core `GUNZIP`, `UNTAR`) becomes a node named after the process, and needs a `drop` row.
+`nextflow_excluded_tools.txt` is for helpers that run inside a process next to the real tool (`megahit | pigz`). It is read by `02_extract_nextflow_dags.py`, so the DAGs have to be rebuilt after a change. A process that runs nothing but an excluded tool (nf-core `GUNZIP`, `UNTAR`) becomes a node named after the process, and needs a `drop` row.
 
 ## Shared with Snakemake
 
@@ -86,6 +86,6 @@ The Snakemake catalog scripts (`../snakemake`) import these parts, so changes th
 - the tool selection (`nfdag/process.py`, `choose_steps`);
 - the mapping (`nfdag/mapping.py`);
 - the output files (`nfdag/report.py`);
-- `load_lookup` in `map_nextflow_tools.py`.
+- the loading of the bio.tools dump, Codex and curated TSV (`nfdag/lookup.py`).
 
 Lint and type check (settings in `pyproject.toml`), from this folder: `ruff check . && ruff format --check nfdag && ty check`

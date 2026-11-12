@@ -4,14 +4,14 @@ Downloads the workflows of the [Snakemake Workflow Catalog](https://snakemake.gi
 
 From the repository root:
 ```
-.venv/bin/python workflows/scripts/snakemake/download_snakemake_catalog.py --standardized   # catalog + git clones
-.venv/bin/python workflows/scripts/snakemake/extract_snakemake_dags.py                      # rule DAG, one node per tool
-.venv/bin/python workflows/scripts/snakemake/map_snakemake_tools.py                         # tool nodes -> bio.tools IDs
+.venv/bin/python workflows/scripts/snakemake/01_download_snakemake_catalog.py --standardized   # catalog + git clones
+.venv/bin/python workflows/scripts/snakemake/02_extract_snakemake_dags.py                      # rule DAG, one node per tool
+.venv/bin/python workflows/scripts/snakemake/03_map_snakemake_tools.py                         # tool nodes -> bio.tools IDs
 ```
 Requirements:
 - Python 3.12+, PyYAML and git.
 - For the mapping: the bio.tools dump `directed-graph/biotools/data/biotools_raw*.jsonl` and the Galaxy Codex table `workflows/data/mapping/galaxy/galaxy_codex_tools.tsv`.
-- Shared code: the shell parser, the tool selection and the bio.tools mapping are imported from `../nextflow` (`nfdag/`, `map_nextflow_tools.py`).
+- Shared code: the shell parser, the tool selection and the bio.tools mapping are imported from `../nextflow/nfdag/`.
 
 ## What the catalog provides
 
@@ -30,7 +30,7 @@ Snakemake has no meta.yml with bio.tools IDs. The tools of a rule come from:
 
 ## Download
 
-`download_snakemake_catalog.py` fetches the catalog and clones the selected repositories into `workflows/data/snakemake/download/`.
+`01_download_snakemake_catalog.py` fetches the catalog and clones the selected repositories into `workflows/data/snakemake/download/`.
 - **Selection:**
   - `--standardized` or `--non-standardized` picks one group; neither picks all workflows.
   - `--sample N` takes a fixed sample, the same in every run. In the standardized sample, the workflows with a catalog rule graph come first.
@@ -47,7 +47,7 @@ Snakemake has no meta.yml with bio.tools IDs. The tools of a rule come from:
 
 ## DAG
 
-`extract_snakemake_dags.py` (code in `smkdag/`) reads the main Snakefile (`workflow/Snakefile`, else `Snakefile`, else the least deep one) and everything it includes: local modules, `use rule ... as ... with:`, functions and variables. Nothing is executed. The Snakefiles are split into logical lines, and each rule section is read with Python's `ast`.
+`02_extract_snakemake_dags.py` (code in `smkdag/`) reads the main Snakefile (`workflow/Snakefile`, else `Snakefile`, else the least deep one) and everything it includes: local modules, `use rule ... as ... with:`, functions and variables. Nothing is executed. The Snakefiles are split into logical lines, and each rule section is read with Python's `ast`.
 - **Edges (`smkdag/build.py`):**
   - **By path pattern:** an input path of rule B that matches an output pattern of rule A gives A -> B, as Snakemake links rules. If several output patterns match, the most specific one wins (the longest literal text).
   - **Run-time values:** an input whose wildcards are filled in at run time (`expand("results/{tool}/x.bam", tool=config[...])`) counts every rule that can write such a file. The DAG is the union over all configurations.
@@ -80,7 +80,7 @@ A full run first clears `workflows/data/snakemake/dags/`.
 
 ## Mapping
 
-`map_snakemake_tools.py` gives each tool node a bio.tools ID. The goal is an ID for every tool that is not excluded or dropped. The reference is the full bio.tools dump: every ID used must exist in it. The methods are tried in this order, the first match wins, and `snakemake_tool_map.tsv` records the method:
+`03_map_snakemake_tools.py` gives each tool node a bio.tools ID. The goal is an ID for every tool that is not excluded or dropped. The reference is the full bio.tools dump: every ID used must exist in it. The methods are tried in this order, the first match wins, and `snakemake_tool_map.tsv` records the method:
 
 | method | the tool gets the bio.tools ID ... | example | confidence |
 |---|---|---|---|
@@ -125,23 +125,23 @@ Its first columns are those of `snakemake_curated_map.tsv` (next to this README,
 - `map`, with a `biotoolsID`; several separated by `;` make a chain;
 - `drop`: not a bio.tools tool, so its neighbours are connected.
 
-Then run `map_snakemake_tools.py` again. The DAGs don't need to be rebuilt.
+Then run `03_map_snakemake_tools.py` again. The DAGs don't need to be rebuilt.
 
-`snakemake_excluded_tools.txt` is for helpers that run inside a rule next to the real tool. It is read by `extract_snakemake_dags.py`, so the DAGs have to be rebuilt after a change. A rule that runs nothing but excluded tools becomes a node named after the rule, and needs a `drop` row.
+`snakemake_excluded_tools.txt` is for helpers that run inside a rule next to the real tool. It is read by `02_extract_snakemake_dags.py`, so the DAGs have to be rebuilt after a change. A rule that runs nothing but excluded tools becomes a node named after the rule, and needs a `drop` row.
 
 ## Data
 
 ```
 workflows/data/snakemake/                 not tracked
-├── download/                             download_snakemake_catalog.py
+├── download/                             01_download_snakemake_catalog.py
 │   ├── catalog.json                      the catalog's data.json
 │   ├── snakemake_workflows.csv           one row per downloaded workflow (standardized, stars, ref, commit, Snakefile)
 │   ├── repos/<owner>__<repo>/            sparse clones
 │   ├── wrappers/<version>/<path>/        meta.yaml, environment.yaml
 │   └── rulegraphs/<owner>__<repo>.dot    the catalog's rule graphs
-└── dags/                                 extract_snakemake_dags.py: <owner>__<repo>/, snakemake_dags.csv
-workflows/data/mapping/snakemake/         map_snakemake_tools.py: tool map, to-curate list
-workflows/data/biotools/snakemake/        map_snakemake_tools.py: bio.tools pairs, edges, nodes
+└── dags/                                 02_extract_snakemake_dags.py: <owner>__<repo>/, snakemake_dags.csv
+workflows/data/mapping/snakemake/         03_map_snakemake_tools.py: tool map, to-curate list
+workflows/data/biotools/snakemake/        03_map_snakemake_tools.py: bio.tools pairs, edges, nodes
 ```
 
 Lint and type check (settings in `pyproject.toml`), from this folder: `ruff check . && ruff format --check . && ty check`

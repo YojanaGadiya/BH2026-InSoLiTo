@@ -1,7 +1,7 @@
 """
-Translates the Snakemake DAGs (tool nodes) to bio.tools IDs, like map_nextflow_tools.py does for Nextflow.
+Translates the Snakemake DAGs (tool nodes) to bio.tools IDs, like 03_map_nextflow_tools.py does for Nextflow.
 
-Reads workflows/data/snakemake/dags/<owner>__<repo>/{nodes,edges}.csv (from extract_snakemake_dags.py), the
+Reads workflows/data/snakemake/dags/<owner>__<repo>/{nodes,edges}.csv (from 02_extract_snakemake_dags.py), the
 hand-curated snakemake_curated_map.tsv next to this script, the bio.tools dump
 (directed-graph/biotools/data/biotools_raw*.jsonl) and the Galaxy Codex (workflows/data/mapping/galaxy/).
 The methods are those of workflows/scripts/nextflow/nfdag/mapping.py, first match wins:
@@ -18,8 +18,8 @@ It outputs (in workflows/):
   - data/biotools/snakemake/biotools_{pairs,edges,nodes}_standardized.csv   the same, standardized workflows only
   - data/biotools/snakemake/workflows/<owner>__<repo>.csv   the bio.tools DAG of each workflow (for Cytoscape)
 
-Usage (from the repository root, after extract_snakemake_dags.py):
-    python3 workflows/scripts/snakemake/map_snakemake_tools.py
+Usage (from the repository root, after 02_extract_snakemake_dags.py):
+    python3 workflows/scripts/snakemake/03_map_snakemake_tools.py
 """
 
 import argparse
@@ -31,7 +31,7 @@ from typing import Final
 from smkdag import DAG_DIR, DOWNLOAD_DIR, MAP_DIR, OUT_DIR  # also puts workflows/scripts/nextflow on the path
 
 # isort: split
-from map_nextflow_tools import load_lookup
+from nfdag.lookup import load_lookup
 from nfdag.mapping import BiotoolsPair, Lookup, ToolMap, translate
 from nfdag.report import (
     ToolStats,
@@ -106,7 +106,7 @@ def main() -> None:
     args = parser.parse_args()
     dag_dir, map_dir, out_dir = args.dags, args.map_dir, args.out_dir
     if not dag_dir.is_dir():
-        sys.exit(f"{dag_dir} not found - run extract_snakemake_dags.py first")
+        sys.exit(f"{dag_dir} not found - run 02_extract_snakemake_dags.py first")
     map_dir.mkdir(parents=True, exist_ok=True)
     out_dir.mkdir(parents=True, exist_ok=True)
     index, with_paper, lookup = load_lookup(args.curated)

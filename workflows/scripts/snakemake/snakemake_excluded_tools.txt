@@ -1,4 +1,4 @@
-# Executables that never become tool nodes of the Snakemake DAGs (read by extract_snakemake_dags.py; started as a copy of the Nextflow list).
+# Executables that never become tool nodes of the Snakemake DAGs (read by 02_extract_snakemake_dags.py; started as a copy of the Nextflow list).
 # One name per line, case-insensitive; '#' starts a comment.
 # An excluded tool disappears from its rule and the flow stays connected: `megahit | pigz` becomes `megahit`.
 # Generic shell commands (cat, sed, awk, ...) are already skipped in workflowhub/nfdag/shell.py (SHELL_SKIP).

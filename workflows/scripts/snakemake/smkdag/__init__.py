@@ -1,7 +1,7 @@
 """
 Extract the rule DAG of each downloaded Snakemake workflow, by reading its Snakefiles (nothing is run).
 
-Input:  workflows/data/snakemake/download/repos/<owner>__<repo>/       (from download_snakemake_catalog.py)
+Input:  workflows/data/snakemake/download/repos/<owner>__<repo>/       (from 01_download_snakemake_catalog.py)
         workflows/data/snakemake/download/wrappers/<version>/<path>/  meta.yaml / environment.yaml of the wrappers
 Output: workflows/data/snakemake/dags/<owner>__<repo>/nodes.csv       one row per tool node, with all tool information
         workflows/data/snakemake/dags/<owner>__<repo>/edges.csv       source, target, kind (dag / chain), via
@@ -31,11 +31,11 @@ warnings.filterwarnings("ignore", category=SyntaxWarning)
 ROOT = Path(__file__).resolve().parents[4]  # smkdag -> snakemake -> scripts -> workflows -> repository root
 SCRIPTS = ROOT / "workflows" / "scripts"
 DATA = ROOT / "workflows" / "data"
-DOWNLOAD_DIR = DATA / "snakemake" / "download"  # catalog, clones, wrappers (download_snakemake_catalog.py)
-DAG_DIR = DATA / "snakemake" / "dags"  # extract_snakemake_dags.py
-MAP_DIR = DATA / "mapping" / "snakemake"  # map_snakemake_tools.py: tool map, to-curate list
-OUT_DIR = DATA / "biotools" / "snakemake"  # map_snakemake_tools.py: bio.tools pairs, edges, nodes
+DOWNLOAD_DIR = DATA / "snakemake" / "download"  # catalog, clones, wrappers (01_download_snakemake_catalog.py)
+DAG_DIR = DATA / "snakemake" / "dags"  # 02_extract_snakemake_dags.py
+MAP_DIR = DATA / "mapping" / "snakemake"  # 03_map_snakemake_tools.py: tool map, to-curate list
+OUT_DIR = DATA / "biotools" / "snakemake"  # 03_map_snakemake_tools.py: bio.tools pairs, edges, nodes
 
-# nfdag and map_nextflow_tools are shared with the Nextflow scripts
+# nfdag (shell parser, tool selection, bio.tools mapping and lookup) is shared with the Nextflow scripts
 if str(SCRIPTS / "nextflow") not in sys.path:
     sys.path.insert(0, str(SCRIPTS / "nextflow"))

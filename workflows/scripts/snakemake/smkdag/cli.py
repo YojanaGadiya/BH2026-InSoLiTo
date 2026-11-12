@@ -69,7 +69,7 @@ def _workflows(download: Path, only: list[str] | None) -> list[tuple[Path, str]]
     """(repository folder, standardized) of the downloaded workflows that were cloned."""
     summary = download / "snakemake_workflows.csv"
     if not summary.is_file():
-        sys.exit(f"{summary} not found: run download_snakemake_catalog.py first")
+        sys.exit(f"{summary} not found: run 01_download_snakemake_catalog.py first")
     with summary.open(encoding="utf-8") as f:
         rows = [r for r in csv.DictReader(f) if not r["clone_error"]]
     chosen = [(download / "repos" / r["folder"], r["standardized"]) for r in rows]

@@ -13,7 +13,7 @@ from .steps import read_excluded
 
 ROOT: Final = Path(__file__).resolve().parents[4]  # nfdag -> nextflow -> scripts -> workflows -> root
 DATA_DIR: Final = ROOT / "workflows" / "data" / "nextflow"
-NF_DIR: Final = DATA_DIR / "download"  # from download_workflowhub_nextflow.py
+NF_DIR: Final = DATA_DIR / "download"  # from 01_download_workflowhub_nextflow.py
 DAG_DIR: Final = DATA_DIR / "dags"
 OVERVIEW_NAME: Final = "nextflow_dags.csv"
 EXCLUDED_FILE: Final = Path(__file__).resolve().parents[1] / "nextflow_excluded_tools.txt"  # tracked

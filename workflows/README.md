@@ -22,18 +22,18 @@ From the repository root:
 .venv/bin/python workflows/scripts/galaxy/map_galaxy_tools.py               # ToolShed names translated to bio.tools IDs
 
 # Nextflow
-.venv/bin/python workflows/scripts/nextflow/download_workflowhub_nextflow.py  # downloads nextflow files from WorkflowHub
-.venv/bin/python workflows/scripts/nextflow/extract_nextflow_dags.py          # extracts graphs from each workflow
-.venv/bin/python workflows/scripts/nextflow/map_nextflow_tools.py             # Mapping the tools to bio.tools and creating pairs and edges
+.venv/bin/python workflows/scripts/nextflow/01_download_workflowhub_nextflow.py  # downloads nextflow files from WorkflowHub
+.venv/bin/python workflows/scripts/nextflow/02_extract_nextflow_dags.py          # extracts graphs from each workflow
+.venv/bin/python workflows/scripts/nextflow/03_map_nextflow_tools.py             # Mapping the tools to bio.tools and creating pairs and edges
 
 # nf-core
 .venv/bin/python workflows/scripts/nf-core/1_download/downloader.py     # downloads the pipeline files from GitHub.
 .venv/bin/python workflows/scripts/nf-core/2_pairs/run.py all           # the analysis, in five files
 
 # Snakemake (see scripts/snakemake/README.md)
-.venv/bin/python workflows/scripts/snakemake/download_snakemake_catalog.py  # workflows of the Snakemake Workflow Catalog
-.venv/bin/python workflows/scripts/snakemake/extract_snakemake_dags.py      # extracts graphs from each workflow
-.venv/bin/python workflows/scripts/snakemake/map_snakemake_tools.py         # Mapping the tools to bio.tools and creating pairs and edges
+.venv/bin/python workflows/scripts/snakemake/01_download_snakemake_catalog.py  # workflows of the Snakemake Workflow Catalog
+.venv/bin/python workflows/scripts/snakemake/02_extract_snakemake_dags.py      # extracts graphs from each workflow
+.venv/bin/python workflows/scripts/snakemake/03_map_snakemake_tools.py         # Mapping the tools to bio.tools and creating pairs and edges
 
 # Combine outputs from all sources
 .venv/bin/python workflows/scripts/combine_workflow_edges.py      # combines the workflows from the four sources and the citation data

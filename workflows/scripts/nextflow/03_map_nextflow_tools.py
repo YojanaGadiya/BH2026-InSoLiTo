@@ -1,7 +1,7 @@
 """
 Translates the Nextflow DAGs (tool nodes) to bio.tools IDs, like map_galaxy_tools.py does for Galaxy.
 
-Reads workflows/data/nextflow/dags/<id>_v<version>/{nodes,edges}.csv (from extract_nextflow_dags.py) and the
+Reads workflows/data/nextflow/dags/<id>_v<version>/{nodes,edges}.csv (from 02_extract_nextflow_dags.py) and the
 hand-curated nextflow_curated_map.tsv next to this script. The reference is the bio.tools dump
 (directed-graph/biotools/data/biotools_raw*.jsonl). The mapping methods are described in nfdag/mapping.py:
 curated > meta (nf-core meta.yml) > biotools_id > biotools_name > biotools_url > codex (Galaxy Codex) > prefix.
@@ -20,33 +20,18 @@ It outputs (in workflows/):
                                                   nextflow_workflows.csv), which another tool gets from nf-core
   - data/biotools/nextflow/workflows/<id>_v<version>.csv   the bio.tools DAG of each workflow (for Cytoscape)
 
-Usage (from the repository root, after extract_nextflow_dags.py):
-    python3 workflows/scripts/nextflow/map_nextflow_tools.py
+Usage (from the repository root, after 02_extract_nextflow_dags.py):
+    python3 workflows/scripts/nextflow/03_map_nextflow_tools.py
 """
 
 import argparse
 import csv
-import re
 import sys
-from collections import defaultdict
 from pathlib import Path
 
-HERE = Path(__file__).resolve().parent
-ROOT = HERE.parents[2]
-DATA = ROOT / "workflows" / "data"
-
-sys.path.insert(0, str(HERE.parent / "galaxy"))  # to import map_galaxy_tools
-from map_galaxy_tools import (  # noqa: E402
-    BIOTOOLS_PUBS,
-    BIOTOOLS_RAW,
-    CODEX_FILE,
-    PREFIX_BLOCKLIST,
-    find_column,
-    variants,
-)
-
-from nfdag.mapping import BiotoolsIndex, BiotoolsPair, Lookup, ToolMap, read_curated, translate  # noqa: E402
-from nfdag.report import (  # noqa: E402
+from nfdag.lookup import load_lookup
+from nfdag.mapping import BiotoolsPair, Lookup, ToolMap, translate
+from nfdag.report import (
     ToolStats,
     count_lost,
     print_summary,
@@ -57,76 +42,16 @@ from nfdag.report import (  # noqa: E402
     write_workflow_csvs,
 )
 
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parents[2]
+DATA = ROOT / "workflows" / "data"
 DAG_DIR = DATA / "nextflow" / "dags"
 CURATED_FILE = HERE / "nextflow_curated_map.tsv"  # tracked, next to this script
 MAP_DIR = DATA / "mapping" / "nextflow"
 OUT_DIR = DATA / "biotools" / "nextflow"
-SUMMARY_FILE = DATA / "nextflow" / "download" / "nextflow_workflows.csv"  # download_workflowhub_nextflow.py
+SUMMARY_FILE = DATA / "nextflow" / "download" / "nextflow_workflows.csv"  # 01_download_workflowhub_nextflow.py
 METHODS = ("curated", "meta", "biotools_id", "biotools_name", "biotools_url", "codex", "prefix")
 LABELS = ("processes", "modules")  # the context columns of the tool map and the to-curate list
-
-
-def load_codex_suites() -> dict[str, str]:
-    """{Galaxy suite ID -> bio.tools ID}. Unlike map_galaxy_tools.load_codex, without the tool IDs inside a
-    suite: those are Galaxy wrapper names (the srst2 suite has a tool `samtools`), not executables."""
-    if not CODEX_FILE.exists():
-        return {}
-    csv.field_size_limit(10**9)
-    with CODEX_FILE.open(encoding="utf-8") as f:
-        reader = csv.DictReader(f, delimiter="\t")
-        suite_col = find_column(reader.fieldnames, "suite", "id")
-        biotools_col = find_column(reader.fieldnames, "bio.tool", "id")
-        if not suite_col or not biotools_col:
-            return {}
-        out: dict[str, str] = {}
-        for row in reader:
-            suite, biotools_id = (row.get(suite_col) or "").strip().lower(), (row.get(biotools_col) or "").strip()
-            if suite and biotools_id:
-                for name in variants(suite):
-                    out.setdefault(name, biotools_id)
-    return out
-
-
-def load_with_paper() -> set[str]:
-    """The bio.tools IDs with a publication."""
-    with BIOTOOLS_PUBS.open(encoding="utf-8") as f:
-        return {row["biotoolsID"] for row in csv.DictReader(f)}
-
-
-def _name_parts(name: str) -> set[str]:
-    return {p for p in re.split(r"[-_.]", name.lower()) if len(p) > 2}
-
-
-def load_codex_conda() -> dict[str, str]:
-    """{bioconda package -> bio.tools ID} from the Codex column 'Suite conda package'.
-    That is the main requirement of a Galaxy suite, often only a dependency (a suite needing samtools is about
-    srst2, one needing pandas about image analysis). So per package the most common bio.tools ID of its suites
-    is taken, and only if it or one of those suites shares a name part with the package
-    (samtools -> samtools, ncbi-amrfinderplus -> amrfinderplus, pandas -> nothing)."""
-    if not CODEX_FILE.exists():
-        return {}
-    csv.field_size_limit(10**9)
-    with CODEX_FILE.open(encoding="utf-8") as f:
-        reader = csv.DictReader(f, delimiter="\t")
-        conda_col = "Suite conda package" if "Suite conda package" in (reader.fieldnames or []) else None
-        suite_col = find_column(reader.fieldnames, "suite", "id")
-        biotools_col = find_column(reader.fieldnames, "bio.tool", "id")
-        if not conda_col or not suite_col or not biotools_col:
-            return {}
-        suites: dict[str, dict[str, list[str]]] = defaultdict(lambda: defaultdict(list))  # package -> ID -> suites
-        for row in reader:
-            biotools_id = (row.get(biotools_col) or "").strip()
-            suite = (row.get(suite_col) or "").strip()
-            for package in (row.get(conda_col) or "").split(",") if biotools_id else []:
-                if package.strip():
-                    suites[package.strip().lower()][biotools_id].append(suite)
-    out = {}
-    for package, by_id in suites.items():
-        biotools_id, its_suites = max(by_id.items(), key=lambda kv: len(kv[1]))
-        names = _name_parts(biotools_id).union(*(_name_parts(s) for s in its_suites))
-        if _name_parts(package) & names:
-            out[package] = biotools_id
-    return out
 
 
 def _workflow_dirs(dag_dir: Path) -> list[Path]:
@@ -149,7 +74,9 @@ def map_workflows(lookup: Lookup, dag_dir: Path) -> tuple[dict[str, ToolStats], 
         with (folder / "edges.csv").open(encoding="utf-8") as f:
             reader = csv.DictReader(f)
             if "kind" not in (reader.fieldnames or []) or (nodes and "tool" not in nodes[0]):
-                sys.exit(f"{folder} holds process-level DAGs from an older version: run extract_nextflow_dags.py again")
+                sys.exit(
+                    f"{folder} holds process-level DAGs from an older version: run 02_extract_nextflow_dags.py again"
+                )
             edges = [(e["source"], e["target"], e["kind"]) for e in reader]
         mapped: dict[str, ToolMap] = {}
         for row in nodes:
@@ -184,27 +111,13 @@ def load_nfcore_ids() -> set[str] | None:
     return {r["id"] for r in rows if r["nf_core"] == "true"}
 
 
-def load_lookup(curated_file: Path) -> tuple[BiotoolsIndex, set[str], Lookup]:
-    """The bio.tools dump, the IDs with a paper, and the lookup with the Codex and the curated TSV."""
-    if BIOTOOLS_RAW is None:
-        sys.exit("No bio.tools dump (directed-graph/biotools/data/biotools_raw*.jsonl): it is the mapping reference")
-    print(f"bio.tools: {BIOTOOLS_RAW}")
-    index = BiotoolsIndex.load(BIOTOOLS_RAW)
-    print(f"Codex: {CODEX_FILE}" if CODEX_FILE.exists() else f"No {CODEX_FILE.name}: skipping Codex matching")
-    curated = read_curated(curated_file)
-    unknown = sorted({i for e in curated.values() for i in e.ids if i.lower() not in index.ids})
-    if unknown:
-        print(f"Curated IDs not found in bio.tools (check spelling): {', '.join(unknown)}")
-    return index, load_with_paper(), Lookup(index, load_codex_conda(), load_codex_suites(), curated, PREFIX_BLOCKLIST)
-
-
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--dags", type=Path, default=DAG_DIR, help="the DAGs (default: data/nextflow)")
     parser.add_argument("--curated", type=Path, default=CURATED_FILE, help="the curated TSV")
     args = parser.parse_args()
     if not args.dags.is_dir():
-        sys.exit(f"{args.dags} not found - run extract_nextflow_dags.py first")
+        sys.exit(f"{args.dags} not found - run 02_extract_nextflow_dags.py first")
     MAP_DIR.mkdir(parents=True, exist_ok=True)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     index, with_paper, lookup = load_lookup(args.curated)
@@ -217,7 +130,7 @@ def main() -> None:
     write_biotools(OUT_DIR, pairs, index, with_paper, workflow_id=_workflow_id)
     nfcore = load_nfcore_ids()
     if nfcore is None:
-        print(f"No nf_core column in {SUMMARY_FILE}: run download_workflowhub_nextflow.py --summary-only")
+        print(f"No nf_core column in {SUMMARY_FILE}: run 01_download_workflowhub_nextflow.py --summary-only")
     else:  # the nf-core pipelines also come directly from nf-core, with another tool
         others = {name: p for name, p in pairs.items() if _workflow_id(name) not in nfcore}
         write_biotools(OUT_DIR, others, index, with_paper, workflow_id=_workflow_id, suffix="_without_nfcore")

@@ -18,13 +18,13 @@ usually workflow/Snakefile, workflow/rules/, workflow/envs/). Runs can be stoppe
 already cloned are not cloned again, and every run adds to the same folders.
 
 Usage (from the repository root):
-    python3 workflows/scripts/snakemake/download_snakemake_catalog.py --sample 50 --standardized
-    python3 workflows/scripts/snakemake/download_snakemake_catalog.py --sample 50 --non-standardized
-    python3 workflows/scripts/snakemake/download_snakemake_catalog.py --standardized     # all 479 standardized
-    python3 workflows/scripts/snakemake/download_snakemake_catalog.py                    # everything
-    python3 workflows/scripts/snakemake/download_snakemake_catalog.py --summary-only     # rebuild the CSV
-    python3 workflows/scripts/snakemake/download_snakemake_catalog.py --resparse --summary-only  # new file patterns
-    python3 workflows/scripts/snakemake/download_snakemake_catalog.py --workflow snakemake-workflows/rna-seq-star-deseq2
+    python3 workflows/scripts/snakemake/01_download_snakemake_catalog.py --sample 50 --standardized
+    python3 workflows/scripts/snakemake/01_download_snakemake_catalog.py --sample 50 --non-standardized
+    python3 workflows/scripts/snakemake/01_download_snakemake_catalog.py --standardized     # all 479 standardized
+    python3 workflows/scripts/snakemake/01_download_snakemake_catalog.py                    # everything
+    python3 workflows/scripts/snakemake/01_download_snakemake_catalog.py --summary-only     # rebuild the CSV
+    python3 workflows/scripts/snakemake/01_download_snakemake_catalog.py --resparse --summary-only  # new file patterns
+    python3 workflows/scripts/snakemake/01_download_snakemake_catalog.py --workflow owner/repo
 """
 
 import argparse

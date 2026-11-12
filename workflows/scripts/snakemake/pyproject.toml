@@ -19,7 +19,7 @@ ignore = [
 ]
 
 [tool.ruff.lint.isort]
-known-first-party = ["smkdag", "nfdag", "map_nextflow_tools", "map_galaxy_tools"]
+known-first-party = ["smkdag", "nfdag", "map_galaxy_tools"]
 
 [tool.ruff.lint.pylint]
 max-branches = 15
@@ -27,7 +27,7 @@ max-returns = 8
 
 [tool.ty.environment]
 python-version = "3.12"
-extra-paths = ["../nextflow", "../galaxy"]  # nfdag, map_nextflow_tools (and map_galaxy_tools) are shared
+extra-paths = ["../nextflow", "../galaxy"]  # nfdag (and map_galaxy_tools) are shared
 
 [tool.ty.src]
-include = ["smkdag", "download_snakemake_catalog.py", "extract_snakemake_dags.py", "map_snakemake_tools.py"]
+include = ["smkdag", "01_download_snakemake_catalog.py", "02_extract_snakemake_dags.py", "03_map_snakemake_tools.py"]
