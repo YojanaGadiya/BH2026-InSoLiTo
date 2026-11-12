@@ -16,7 +16,7 @@ Needs the output of 04_directed_pairs.py. Run from BH2026-InSoLiTo/:
     .venv/bin/python directed-graph/citation-order/05_sum_pairs.py
     .venv/bin/python directed-graph/citation-order/05_sum_pairs.py --max-delta 1
     .venv/bin/python directed-graph/citation-order/05_sum_pairs.py --max-delta 1 --dir directed-graph/edges-processed \
-        --raw directed-graph/edges-processed/directed_edges_raw-all_citations.parquet
+        --raw directed-graph/edges-processed/directed_edges_raw.parquet
 """
 
 import argparse
