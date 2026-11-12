@@ -54,9 +54,9 @@ If a pair is a sequence in some workflows and parallel in others, it is `one_dir
 - `name` matches to bio.tools are the weakest and can be wrong for tools with a common name.
 - Utilities and reporting tools (for example MultiQC) are in the tables. They can be filtered by hand.
 
-## Other files in `workflows/data/nf-core/`
+## Intermediate files (`workflows/data/nf-core/intermediate/`)
 
-What the scripts write next to the final tables, so the tables can be traced back.
+What the scripts write on the way to the final tables, so the tables can be traced back.
 
 | file | content |
 |---|---|
@@ -68,7 +68,7 @@ What the scripts write next to the final tables, so the tables can be traced bac
 | `batch_summary.csv` | status of every pipeline |
 | `pipelines/<pipeline>/` | `software_pairs.csv` (the software pairs of one pipeline with their `pair_type`), `process_edges.csv` (the process edges behind them: class, payload check, conditions, call sites), `process_software_map.csv` (software of each process), `summary.json` |
 
-Not in git (see `.gitignore`): the bio.tools dump `biotools_raw_14-10-2026.jsonl` (about 100 MB, a public input: put it into this folder, or pass its place with `--dump`; it is only read and can stay where it is), the files that only serve to check the ID matching (`biotools_match_report.csv`, `biotools_match_summary.csv`, `biotools_cache.json`) and the logs.
+Not in git (see `.gitignore`): the bio.tools dump `biotools_raw_14-10-2026.jsonl` (about 100 MB, a public input: put it into the intermediate folder, or pass its place with `--dump`; it is only read and can stay where it is), the files that only serve to check the ID matching (`biotools_match_report.csv`, `biotools_match_summary.csv`, `biotools_cache.json`) and the logs.
 
 ## Scripts (`workflows/scripts/nf-core/`)
 
@@ -86,17 +86,17 @@ Python 3.10 or newer and `pip install -r requirements.txt` (pyyaml, networkx; `b
 # 1. download (edit the settings at the top first)
 python 1_download/downloader.py
 
-# 2. pairs. CATALOGUE is the folder with the downloaded pipelines (<pipeline>/<version>/main.nf); results go to workflows/data/nf-core
+# 2. pairs. CATALOGUE is the folder with the downloaded pipelines (<pipeline>/<version>/main.nf); results go to workflows/data/nf-core/intermediate
 python 2_pairs/run.py setup
 python 2_pairs/run.py survey  --catalogue CATALOGUE      # what is in the catalogue
 python 2_pairs/run.py analyze --catalogue CATALOGUE      # software pairs of every pipeline, a few minutes
 python 2_pairs/run.py ids     --catalogue CATALOGUE --lookup   # tool identifiers (needs internet)
-python 2_pairs/run.py match                              # put the bio.tools dump biotools_raw*.jsonl into workflows/data/nf-core first
+python 2_pairs/run.py match                              # put the bio.tools dump biotools_raw*.jsonl into workflows/data/nf-core/intermediate first
 python 2_pairs/run.py idtable                            # tools_with_ids.csv
 python 2_pairs/run.py merge                              # pairs_merged_unique.csv, control_pool.csv
 
-# 3. the final tables: reads and writes workflows/data/nf-core. The bio.tools dump is found there, or give its place (it can stay where it is)
+# 3. the final tables: reads workflows/data/nf-core/intermediate, writes workflows/data/nf-core. The bio.tools dump is found in the intermediate folder, or give its place (it can stay where it is)
 python 2_pairs/run.py tables --dump /path/to/biotools_raw_14-10-2026.jsonl
 ```
 
-`run.py all --catalogue CATALOGUE --lookup` runs all the steps from `analyze` to `tables` one after the other. Everything goes to `workflows/data/nf-core` (change with `--out`). The commands above are run from this folder (`workflows/scripts/nf-core`).
+`run.py all --catalogue CATALOGUE --lookup` runs all the steps from `analyze` to `tables` one after the other. The intermediate files go to `workflows/data/nf-core/intermediate` and the final tables to `workflows/data/nf-core`. The commands above are run from this folder (`workflows/scripts/nf-core`).

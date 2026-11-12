@@ -6,4 +6,4 @@ biotools_match_summary.csv
 biotools_cache.json
 tool_identifiers.before_jsonl.csv
 # per-pipeline logs
-pipelines/*/pairs.log
+**/pairs.log
