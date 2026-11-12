@@ -1,0 +1,76 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_FUNCSCAN:FUNCSCAN:GUNZIP_INPUT_PREP,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:SEQKIT_SEQ_LENGTH,SEQKIT_SEQ,modules/nf-core/seqkit/seq/main.nf,1,seqkit,seqkit,seqkit,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ANNOTATION:PYRODIGAL_GBK,PYRODIGAL,modules/nf-core/pyrodigal/main.nf,1,pyrodigal,pyrodigal,pyrodigal;pigz,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ANNOTATION:PYRODIGAL_GFF,PYRODIGAL,modules/nf-core/pyrodigal/main.nf,1,pyrodigal,pyrodigal,pyrodigal;pigz,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ANNOTATION:GUNZIP_PYRODIGAL_FAA,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ANNOTATION:GUNZIP_PYRODIGAL_FNA,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ANNOTATION:GUNZIP_PYRODIGAL_GBK,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ANNOTATION:GUNZIP_PYRODIGAL_GFF,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ANNOTATION:PRODIGAL_GBK,PRODIGAL,modules/nf-core/prodigal/main.nf,1,prodigal,prodigal,prodigal;pigz,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ANNOTATION:PRODIGAL_GFF,PRODIGAL,modules/nf-core/prodigal/main.nf,1,prodigal,prodigal,prodigal;pigz,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ANNOTATION:GUNZIP_PRODIGAL_FAA,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ANNOTATION:GUNZIP_PRODIGAL_FNA,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ANNOTATION:GUNZIP_PRODIGAL_GBK,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ANNOTATION:GUNZIP_PRODIGAL_GFF,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ANNOTATION:PROKKA,PROKKA,modules/nf-core/prokka/main.nf,1,prokka,prokka,prokka;openjdk;parallel,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ANNOTATION:BAKTA_BAKTADBDOWNLOAD,BAKTA_BAKTADBDOWNLOAD,modules/nf-core/bakta/baktadbdownload/main.nf,1,bakta,bakta,bakta;diamond,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ANNOTATION:BAKTA_BAKTA,BAKTA_BAKTA,modules/nf-core/bakta/bakta/main.nf,1,bakta,bakta,bakta;diamond,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:TAXA_CLASS:MMSEQS_DATABASES,MMSEQS_DATABASES,modules/nf-core/mmseqs/databases/main.nf,1,mmseqs2,mmseqs,mmseqs2,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:TAXA_CLASS:MMSEQS_CREATEDB,MMSEQS_CREATEDB,modules/nf-core/mmseqs/createdb/main.nf,1,mmseqs2,mmseqs,mmseqs2,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:TAXA_CLASS:MMSEQS_TAXONOMY,MMSEQS_TAXONOMY,modules/nf-core/mmseqs/taxonomy/main.nf,1,mmseqs2,mmseqs,mmseqs2,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:TAXA_CLASS:MMSEQS_CREATETSV,MMSEQS_CREATETSV,modules/nf-core/mmseqs/createtsv/main.nf,1,mmseqs2,mmseqs,mmseqs2,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:SEQKIT_SEQ_FILTER,SEQKIT_SEQ,modules/nf-core/seqkit/seq/main.nf,1,seqkit,seqkit,seqkit,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:PROTEIN_ANNOTATION:INTERPROSCAN_DATABASE,INTERPROSCAN_DATABASE,modules/local/interproscan_download.nf,1,interproscan_database,,,module name
+NFCORE_FUNCSCAN:FUNCSCAN:PROTEIN_ANNOTATION:INTERPROSCAN,INTERPROSCAN,modules/nf-core/interproscan/main.nf,1,interproscan,interproscan,interproscan,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:AMP:AMPLIFY_PREDICT,AMPLIFY_PREDICT,modules/nf-core/amplify/predict/main.nf,1,amplify,amplify,amplify,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:AMP:MACREL_CONTIGS,MACREL_CONTIGS,modules/nf-core/macrel/contigs/main.nf,1,macrel,macrel,macrel,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:AMP:GUNZIP_MACREL_PRED,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:AMP:GUNZIP_MACREL_ORFS,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:AMP:AMPIR,AMPIR,modules/nf-core/ampir/main.nf,1,r-ampir,ampir,r-ampir,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:AMP:AMP_HMMER_HMMSEARCH,HMMER_HMMSEARCH,modules/nf-core/hmmer/hmmsearch/main.nf,1,hmmer,hmmer,hmmer,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:AMP:AMP_GUNZIP_HMMER_HMMSEARCH,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:AMP:AMPCOMBI2_PARSETABLES,AMPCOMBI2_PARSETABLES,modules/nf-core/ampcombi2/parsetables/main.nf,1,ampcombi,ampcombi2/parsetables,ampcombi,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:AMP:AMP_DATABASE_DOWNLOAD,AMP_DATABASE_DOWNLOAD,modules/local/amp_database_download.nf,1,amp_database_download,,,module name
+NFCORE_FUNCSCAN:FUNCSCAN:AMP:AMPCOMBI2_COMPLETE,AMPCOMBI2_COMPLETE,modules/nf-core/ampcombi2/complete/main.nf,1,ampcombi,ampcombi2/complete,ampcombi,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:AMP:AMPCOMBI2_CLUSTER,AMPCOMBI2_CLUSTER,modules/nf-core/ampcombi2/cluster/main.nf,1,ampcombi,ampcombi2/cluster,ampcombi,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:AMP:MERGE_TAXONOMY_AMPCOMBI,MERGE_TAXONOMY_AMPCOMBI,modules/local/merge_taxonomy_ampcombi.nf,1,merge_taxonomy_ampcombi,,,module name
+NFCORE_FUNCSCAN:FUNCSCAN:AMP:AMP_TABIX_BGZIP,TABIX_BGZIP,modules/nf-core/tabix/bgzip/main.nf,1,tabix,bgzip,htslib;tabix,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:AMRFINDERPLUS_UPDATE,AMRFINDERPLUS_UPDATE,modules/nf-core/amrfinderplus/update/main.nf,1,ncbi-amrfinderplus,amrfinderplus,ncbi-amrfinderplus,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:AMRFINDERPLUS_RUN,AMRFINDERPLUS_RUN,modules/nf-core/amrfinderplus/run/main.nf,1,ncbi-amrfinderplus,amrfinderplus,ncbi-amrfinderplus,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:HAMRONIZATION_AMRFINDERPLUS,HAMRONIZATION_AMRFINDERPLUS,modules/nf-core/hamronization/amrfinderplus/main.nf,1,hamronization,hamronization,hamronization,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:ARGNORM_AMRFINDERPLUS,ARGNORM,modules/nf-core/argnorm/main.nf,1,argnorm,argnorm,argnorm,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:FARGENE,FARGENE,modules/nf-core/fargene/main.nf,1,fargene,fargene,fargene,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:HAMRONIZATION_FARGENE,HAMRONIZATION_FARGENE,modules/nf-core/hamronization/fargene/main.nf,1,hamronization,hamronization,hamronization,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:UNTAR_CARD,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:RGI_CARDANNOTATION,RGI_CARDANNOTATION,modules/nf-core/rgi/cardannotation/main.nf,1,rgi,rgi,rgi,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:RGI_MAIN,RGI_MAIN,modules/nf-core/rgi/main/main.nf,1,rgi,rgi,rgi,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:HAMRONIZATION_RGI,HAMRONIZATION_RGI,modules/nf-core/hamronization/rgi/main.nf,1,hamronization,hamronization,hamronization,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:DEEPARG_DOWNLOADDATA,DEEPARG_DOWNLOADDATA,modules/nf-core/deeparg/downloaddata/main.nf,1,deeparg,deeparg,deeparg,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:DEEPARG_PREDICT,DEEPARG_PREDICT,modules/nf-core/deeparg/predict/main.nf,1,deeparg,deeparg,deeparg,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:HAMRONIZATION_DEEPARG,HAMRONIZATION_DEEPARG,modules/nf-core/hamronization/deeparg/main.nf,1,hamronization,hamronization,hamronization,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:ARGNORM_DEEPARG,ARGNORM,modules/nf-core/argnorm/main.nf,1,argnorm,argnorm,argnorm,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:ABRICATE_RUN,ABRICATE_RUN,modules/nf-core/abricate/run/main.nf,1,abricate,abricate,abricate,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:HAMRONIZATION_ABRICATE,HAMRONIZATION_ABRICATE,modules/nf-core/hamronization/abricate/main.nf,1,hamronization,hamronization,hamronization,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:ARGNORM_ABRICATE,ARGNORM,modules/nf-core/argnorm/main.nf,1,argnorm,argnorm,argnorm,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:HAMRONIZATION_SUMMARIZE,HAMRONIZATION_SUMMARIZE,modules/nf-core/hamronization/summarize/main.nf,1,hamronization,hamronization,hamronization,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:MERGE_TAXONOMY_HAMRONIZATION,MERGE_TAXONOMY_HAMRONIZATION,modules/local/merge_taxonomy_hamronization.nf,1,merge_taxonomy_hamronization,,,module name
+NFCORE_FUNCSCAN:FUNCSCAN:ARG:ARG_TABIX_BGZIP,TABIX_BGZIP,modules/nf-core/tabix/bgzip/main.nf,1,tabix,bgzip,htslib;tabix,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:BGC:UNTAR_ANTISMASHDB,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:BGC:ANTISMASH_ANTISMASHDOWNLOADDATABASES,ANTISMASH_ANTISMASHDOWNLOADDATABASES,modules/nf-core/antismash/antismashdownloaddatabases/main.nf,1,antismash,antismash,antismash,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:BGC:ANTISMASH_ANTISMASH,ANTISMASH_ANTISMASH,modules/nf-core/antismash/antismash/main.nf,1,antismash,antismash,antismash,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:BGC:DEEPBGC_DOWNLOAD,DEEPBGC_DOWNLOAD,modules/nf-core/deepbgc/download/main.nf,1,deepbgc,deepbgc,deepbgc,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:BGC:DEEPBGC_PIPELINE,DEEPBGC_PIPELINE,modules/nf-core/deepbgc/pipeline/main.nf,1,deepbgc,deepbgc,deepbgc,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:BGC:GECCO_RUN,GECCO_RUN,modules/nf-core/gecco/run/main.nf,1,gecco,gecco,gecco,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:BGC:GECCO_CONVERT,GECCO_CONVERT,modules/nf-core/gecco/convert/main.nf,1,gecco,gecco,gecco,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:BGC:BIGSLICE_DOWNLOADDB,BIGSLICE_DOWNLOADDB,modules/nf-core/bigslice/downloaddb/main.nf,1,bigslice,bigslice,bigslice;python,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:BGC:BIGSLICE_BIGSLICE,BIGSLICE_BIGSLICE,modules/nf-core/bigslice/bigslice/main.nf,1,bigslice,bigslice,bigslice,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:BGC:BGC_HMMER_HMMSEARCH,HMMER_HMMSEARCH,modules/nf-core/hmmer/hmmsearch/main.nf,1,hmmer,hmmer,hmmer,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:BGC:COMBGC,COMBGC,modules/local/combgc.nf,1,combgc,,,module name
+NFCORE_FUNCSCAN:FUNCSCAN:BGC:MERGE_TAXONOMY_COMBGC,MERGE_TAXONOMY_COMBGC,modules/local/merge_taxonomy_combgc.nf,1,merge_taxonomy_combgc,,,module name
+NFCORE_FUNCSCAN:FUNCSCAN:BGC:BGC_TABIX_BGZIP,TABIX_BGZIP,modules/nf-core/tabix/bgzip/main.nf,1,tabix,bgzip,htslib;tabix,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:CAZYME:RUNDBCAN_DATABASE,RUNDBCAN_DATABASE,modules/nf-core/rundbcan/database/main.nf,1,dbcan,run_dbcan,dbcan,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:CAZYME:RUNDBCAN_CAZYMEANNOTATION,RUNDBCAN_CAZYMEANNOTATION,modules/nf-core/rundbcan/cazymeannotation/main.nf,1,dbcan,dbcan,dbcan,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:CAZYME:RUNDBCAN_EASYCGC,RUNDBCAN_EASYCGC,modules/nf-core/rundbcan/easycgc/main.nf,1,dbcan,dbcan,dbcan,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:CAZYME:RUNDBCAN_EASYSUBSTRATE,RUNDBCAN_EASYSUBSTRATE,modules/nf-core/rundbcan/easysubstrate/main.nf,1,dbcan,dbcan,dbcan,environment.yml
+NFCORE_FUNCSCAN:FUNCSCAN:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

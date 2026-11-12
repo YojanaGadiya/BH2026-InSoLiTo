@@ -1,0 +1,48 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_NANOSEQ:NANOSEQ:GET_TEST_DATA,GET_TEST_DATA,modules/local/get_test_data.nf,1,get_test_data,,,module name
+NFCORE_NANOSEQ:NANOSEQ:INPUT_CHECK:SAMPLESHEET_CHECK,SAMPLESHEET_CHECK,modules/local/samplesheet_check.nf,1,samplesheet_check,,,module name
+NFCORE_NANOSEQ:NANOSEQ:FAST5_TO_POD5,FAST5_TO_POD5,modules/local/fast5_to_pod5.nf,1,fast5_to_pod5,,,module name
+NFCORE_NANOSEQ:NANOSEQ:DORADO_BASECALLER,DORADO_BASECALLER,modules/local/dorado_basecaller.nf,1,dorado_basecaller,,,module name
+NFCORE_NANOSEQ:NANOSEQ:QCAT,QCAT,modules/nf-core/qcat/main.nf,1,qcat,qcat,qcat,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:DORADO_ALIGNER,DORADO_ALIGNER,modules/local/dorado_aligner.nf,1,dorado_aligner,,,module name
+NFCORE_NANOSEQ:NANOSEQ:MODKIT_PILEUP,MODKIT_PILEUP,modules/local/modkit_pileup.nf,1,modkit_pileup,,,module name
+NFCORE_NANOSEQ:NANOSEQ:GET_NANOLYSE_FASTA,GET_NANOLYSE_FASTA,modules/local/get_nanolyse_fasta.nf,1,get_nanolyse_fasta,,,module name
+NFCORE_NANOSEQ:NANOSEQ:NANOLYSE,NANOLYSE,modules/nf-core/nanolyse/main.nf,1,nanolyse,nanolyse,nanolyse,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:QCFASTQ_NANOPLOT_FASTQC:NANOPLOT,NANOPLOT,modules/nf-core/nanoplot/main.nf,1,nanoplot,nanoplot,nanoplot,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:QCFASTQ_NANOPLOT_FASTQC:TOULLIGQC,TOULLIGQC,modules/nf-core/toulligqc/main.nf,1,toulligqc,toulligqc,toulligqc,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:QCFASTQ_NANOPLOT_FASTQC:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:CUSTOM_GETCHROMSIZES,CUSTOM_GETCHROMSIZES,modules/nf-core/custom/getchromsizes/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:ALIGN_MINIMAP2:MINIMAP2_INDEX,MINIMAP2_INDEX,modules/nf-core/minimap2/index/main.nf,1,minimap2,minimap2,minimap2,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:ALIGN_MINIMAP2:MINIMAP2_ALIGN_VARIANT,MINIMAP2_ALIGN,modules/nf-core/minimap2/align/main.nf,1,minimap2,minimap2,minimap2;samtools,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:ALIGN_MINIMAP2:MINIMAP2_ALIGN_OTHER,MINIMAP2_ALIGN,modules/nf-core/minimap2/align/main.nf,1,minimap2,minimap2,minimap2;samtools,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:ALIGN_MINIMAP2:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:ALIGN_MINIMAP2:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:ALIGN_MINIMAP2:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:ALIGN_MINIMAP2:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:ALIGN_GRAPHMAP2:GRAPHMAP2_INDEX,GRAPHMAP2_INDEX,modules/nf-core/graphmap2/index/main.nf,1,graphmap,graphmap2,graphmap,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:ALIGN_GRAPHMAP2:GRAPHMAP2_ALIGN,GRAPHMAP2_ALIGN,modules/nf-core/graphmap2/align/main.nf,1,graphmap,graphmap2,graphmap,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:ALIGN_GRAPHMAP2:SAMTOOLS_VIEW,SAMTOOLS_VIEW,modules/nf-core/samtools/view/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:ALIGN_GRAPHMAP2:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:ALIGN_GRAPHMAP2:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:ALIGN_GRAPHMAP2:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:ALIGN_GRAPHMAP2:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:ALIGN_GRAPHMAP2:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:BEDTOOLS_UCSC_BIGWIG:BEDTOOLS_GENOMECOV,BEDTOOLS_GENOMECOV,modules/nf-core/bedtools/genomecov/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:BEDTOOLS_UCSC_BIGWIG:UCSC_BEDGRAPHTOBIGWIG,UCSC_BEDGRAPHTOBIGWIG,modules/nf-core/ucsc/bedgraphtobigwig/main.nf,1,ucsc-bedgraphtobigwig,ucsc,ucsc-bedgraphtobigwig,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:BEDTOOLS_UCSC_BIGBED:BEDTOOLS_BAMTOBED,BEDTOOLS_BAMTOBED,modules/nf-core/bedtools/bamtobed/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:BEDTOOLS_UCSC_BIGBED:UCSC_BEDTOBIGBED,UCSC_BEDTOBIGBED,modules/nf-core/ucsc/bedtobigbed/main.nf,1,ucsc-bedtobigbed,ucsc,ucsc-bedtobigbed,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:BAM_RENAME,BAM_RENAME,modules/local/bam_rename.nf,1,bam_rename,,,module name
+NFCORE_NANOSEQ:NANOSEQ:BAMBU,BAMBU,modules/local/bambu.nf,1,bambu,,,module name
+NFCORE_NANOSEQ:NANOSEQ:QUANTIFY_STRINGTIE_FEATURECOUNTS:STRINGTIE_STRINGTIE,STRINGTIE_STRINGTIE,modules/nf-core/stringtie/stringtie/main.nf,1,stringtie,stringtie2,stringtie,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:QUANTIFY_STRINGTIE_FEATURECOUNTS:STRINGTIE_MERGE,STRINGTIE_MERGE,modules/nf-core/stringtie/merge/main.nf,1,stringtie,stringtie2,stringtie,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:QUANTIFY_STRINGTIE_FEATURECOUNTS:SUBREAD_FEATURECOUNTS_GENE,SUBREAD_FEATURECOUNTS,modules/nf-core/subread/featurecounts/main.nf,1,subread,featurecounts,subread,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:QUANTIFY_STRINGTIE_FEATURECOUNTS:SUBREAD_FEATURECOUNTS_TRANSCRIPT,SUBREAD_FEATURECOUNTS,modules/nf-core/subread/featurecounts/main.nf,1,subread,featurecounts,subread,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:DIFFERENTIAL_DESEQ2_DEXSEQ:DESEQ2,DESEQ2,modules/local/deseq2.nf,1,deseq2,,,module name
+NFCORE_NANOSEQ:NANOSEQ:DIFFERENTIAL_DESEQ2_DEXSEQ:DEXSEQ,DEXSEQ,modules/local/dexseq.nf,1,dexseq,,,module name
+NFCORE_NANOSEQ:NANOSEQ:RNA_MODIFICATION_XPORE_M6ANET:XPORE_DATAPREP,XPORE_DATAPREP,modules/local/xpore_dataprep.nf,1,xpore_dataprep,,,module name
+NFCORE_NANOSEQ:NANOSEQ:RNA_MODIFICATION_XPORE_M6ANET:M6ANET_DATAPREP,M6ANET_DATAPREP,modules/local/m6anet_dataprep.nf,1,m6anet_dataprep,,,module name
+NFCORE_NANOSEQ:NANOSEQ:RNA_FUSIONS_JAFFAL:GET_JAFFAL_REF,GET_JAFFAL_REF,modules/local/get_jaffal_ref.nf,1,get_jaffal_ref,,,module name
+NFCORE_NANOSEQ:NANOSEQ:RNA_FUSIONS_JAFFAL:UNTAR,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:RNA_FUSIONS_JAFFAL:JAFFAL,JAFFAL,modules/local/jaffal.nf,1,jaffal,,,module name
+NFCORE_NANOSEQ:NANOSEQ:CUSTOM_DUMPSOFTWAREVERSIONS,CUSTOM_DUMPSOFTWAREVERSIONS,modules/nf-core/custom/dumpsoftwareversions/main.nf,9,multiqc,custom,multiqc,environment.yml
+NFCORE_NANOSEQ:NANOSEQ:MULTIQC,MULTIQC,modules/local/multiqc.nf,1,multiqc,,,module name

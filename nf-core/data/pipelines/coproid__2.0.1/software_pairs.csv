@@ -1,0 +1,36 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bowtie2,damageprofiler,data_flow,1,1,E00004,
+bowtie2,multiqc,data_flow,1,1,E00035,
+bowtie2,pydamage,data_flow,1,1,E00006,
+bowtie2,sam2lca,data_flow,1,1,E00013,
+bowtie2,samtools,data_flow,2,2,E00003,
+damageprofiler,damageprofiler_merge,data_flow,1,1,E00005,
+damageprofiler,multiqc,data_flow,1,1,E00036,
+damageprofiler_merge,jupyter,data_flow,1,1,E00032,
+fastp,bowtie2,data_flow,1,1,E00001,
+fastp,kraken2,data_flow,1,1,E00022,
+fastp,multiqc,data_flow,1,1,E00034,
+fastqc,multiqc,data_flow,1,1,E00033,
+kraken2,kraken_parse,data_flow,1,1,E00024,
+kraken2,multiqc,data_flow,1,1,E00037,
+kraken_merge,sourcepredict,data_flow,1,1,E00026,
+kraken_parse,kraken_merge,data_flow,1,1,E00025,
+pydamage,pydamage_merge,data_flow,1,1,E00008,
+pydamage_merge,jupyter,data_flow,1,1,E00031,
+sam2lca,sam2lca_merge,data_flow,1,1,E00021,
+sam2lca_merge,jupyter,data_flow,1,1,E00028,
+samtools,pydamage,data_flow,1,1,E00007,
+samtools,sam2lca,data_flow,2,2,E00018,
+sourcepredict,jupyter,data_flow,2,1,E00029,
+untar,kraken2,data_flow,1,1,E00023,
+xz,sourcepredict,data_flow,1,1,E00027,
+bowtie2,kraken2,parallel_co_use,0,0,,"both consume FASTP.reads (E00001, E00022); no directed path between any process of the two tools"
+damageprofiler,pydamage,parallel_co_use,0,0,,"both consume BOWTIE2_ALIGN.bam (E00004, E00006); no directed path between any process of the two tools"
+damageprofiler,samtools,parallel_co_use,0,0,,"both consume BOWTIE2_ALIGN.bam (E00004, E00003); no directed path between any process of the two tools"
+damageprofiler_merge,multiqc,parallel_co_use,0,0,,"both consume DAMAGEPROFILER.results (E00005, E00036); no directed path between any process of the two tools"
+kraken2,bowtie2,parallel_co_use,0,0,,"both consume FASTP.reads (E00022, E00001); no directed path between any process of the two tools"
+kraken_parse,multiqc,parallel_co_use,0,0,,"both consume KRAKEN2_KRAKEN2.report (E00024, E00037); no directed path between any process of the two tools"
+multiqc,damageprofiler_merge,parallel_co_use,0,0,,"both consume DAMAGEPROFILER.results (E00036, E00005); no directed path between any process of the two tools"
+multiqc,kraken_parse,parallel_co_use,0,0,,"both consume KRAKEN2_KRAKEN2.report (E00037, E00024); no directed path between any process of the two tools"
+pydamage,damageprofiler,parallel_co_use,0,0,,"both consume BOWTIE2_ALIGN.bam (E00006, E00004); no directed path between any process of the two tools"
+samtools,damageprofiler,parallel_co_use,0,0,,"both consume BOWTIE2_ALIGN.bam (E00003, E00004); no directed path between any process of the two tools"

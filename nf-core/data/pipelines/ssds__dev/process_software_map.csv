@@ -1,0 +1,25 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_SSDS:SSDS:INPUT_CHECK:SAMPLESHEET_CHECK,SAMPLESHEET_CHECK,modules/local/samplesheet_check.nf,1,samplesheet_check,,,module name
+NFCORE_SSDS:SSDS:FASTQC,FASTQC,modules/nf-core/modules/fastqc/main.nf,1,fastqc,fastqc,,meta.yml
+NFCORE_SSDS:SSDS:BWA_INDEX,BWA_INDEX,modules/nf-core/modules/bwa/index/main.nf,1,bwa,bwa,,meta.yml
+NFCORE_SSDS:SSDS:ALIGN_SS:TRIMGALORE,TRIMGALORE,modules/nf-core/modules/trimgalore/main.nf,1,trimgalore,trimgalore,,meta.yml
+NFCORE_SSDS:SSDS:ALIGN_SS:BWA_MEM,BWA_MEM,modules/nf-core/modules/bwa/mem/main.nf,1,bwa,bwa,,meta.yml
+NFCORE_SSDS:SSDS:ALIGN_SS:FILTER_SUPP_ALIGNMENTS,SAMTOOLS_VIEW,modules/nf-core/modules/samtools/view/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_SSDS:SSDS:ALIGN_SS:MD_AND_INDEX_RAW:PICARD_SORTSAM,PICARD_SORTSAM,modules/nf-core/modules/picard/sortsam/main.nf,1,picard,picard,,meta.yml
+NFCORE_SSDS:SSDS:ALIGN_SS:MD_AND_INDEX_RAW:PICARD_MARKDUPLICATES,PICARD_MARKDUPLICATES,modules/nf-core/modules/picard/markduplicates/main.nf,1,picard,picard,,meta.yml
+NFCORE_SSDS:SSDS:ALIGN_SS:MD_AND_INDEX_RAW:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/modules/samtools/index/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_SSDS:SSDS:ALIGN_SS:PICARD_COLLECTMULTIPLEMETRICS,PICARD_COLLECTMULTIPLEMETRICS,modules/nf-core/modules/picard/collectmultiplemetrics/main.nf,1,picard,picard,,meta.yml
+NFCORE_SSDS:SSDS:ALIGN_SS:PICARD_SORTSAM_QRY,PICARD_SORTSAM,modules/nf-core/modules/picard/sortsam/main.nf,1,picard,picard,,meta.yml
+NFCORE_SSDS:SSDS:ALIGN_SS:PARSESSDS,PARSESSDS,modules/local/modules/parse_ssds_bam/main.nf,1,parsessds,,,module name
+NFCORE_SSDS:SSDS:ALIGN_SS:BEDTOOLS_SORT,BEDTOOLS_SORT,modules/nf-core/modules/bedtools/sort/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_SSDS:SSDS:ALIGN_SS:MD_AND_INDEX:PICARD_SORTSAM,PICARD_SORTSAM,modules/nf-core/modules/picard/sortsam/main.nf,1,picard,picard,,meta.yml
+NFCORE_SSDS:SSDS:ALIGN_SS:MD_AND_INDEX:PICARD_MARKDUPLICATES,PICARD_MARKDUPLICATES,modules/nf-core/modules/picard/markduplicates/main.nf,1,picard,picard,,meta.yml
+NFCORE_SSDS:SSDS:ALIGN_SS:MD_AND_INDEX:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/modules/samtools/index/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_SSDS:SSDS:ALIGN_SS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/modules/samtools/idxstats/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_SSDS:SSDS:BEDTOOLS_MAKEWINDOWS,BEDTOOLS_MAKEWINDOWS,modules/nf-core/modules/bedtools/makewindows/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_SSDS:SSDS:MAKE_SSDS_BIGWIGS:GENERATE_SSDS_COVERAGE,GENERATE_SSDS_COVERAGE,modules/local/modules/generate_ssds_coverage/main.nf,1,generate_ssds_coverage,,,module name
+NFCORE_SSDS:SSDS:MAKE_SSDS_BIGWIGS:UCSC_BEDGRAPHTOBIGWIG,UCSC_BEDGRAPHTOBIGWIG,modules/nf-core/modules/ucsc/bedgraphtobigwig/main.nf,2,ucsc,ucsc,,meta.yml
+NFCORE_SSDS:SSDS:CALCULATESPOT,CALCULATESPOT,modules/local/modules/calculatespot/main.nf,1,calculatespot,,,module name
+NFCORE_SSDS:SSDS:DEEPTOOLS_PLOTFINGERPRINT,DEEPTOOLS_PLOTFINGERPRINT,modules/nf-core/modules/deeptools/plotfingerprint/main.nf,1,deeptools,deeptools,,meta.yml
+NFCORE_SSDS:SSDS:CUSTOM_DUMPSOFTWAREVERSIONS,CUSTOM_DUMPSOFTWAREVERSIONS,modules/nf-core/modules/custom/dumpsoftwareversions/main.nf,1,custom,custom,,meta.yml
+NFCORE_SSDS:SSDS:MULTIQC_SSDS,MULTIQC,modules/local/modules/multiqc_ssds/main.nf,1,multiqc,multiqc,,meta.yml

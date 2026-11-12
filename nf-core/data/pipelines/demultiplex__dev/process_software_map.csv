@@ -1,0 +1,20 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_DEMULTIPLEX:DEMULTIPLEX:SAMSHEE,SAMSHEE,modules/nf-core/samshee/main.nf,1,samshee,samshee,samshee;python,environment.yml
+NFCORE_DEMULTIPLEX:DEMULTIPLEX:UNTAR_FLOWCELL,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_DEMULTIPLEX:DEMULTIPLEX:BASES2FASTQ,BASES2FASTQ,modules/nf-core/bases2fastq/main.nf,1,bases2fastq,bases2fastq,,meta.yml
+NFCORE_DEMULTIPLEX:DEMULTIPLEX:BCL_DEMULTIPLEX:BCLCONVERT,BCLCONVERT,modules/nf-core/bclconvert/main.nf,1,bclconvert,bclconvert,,meta.yml
+NFCORE_DEMULTIPLEX:DEMULTIPLEX:BCL_DEMULTIPLEX:BCL2FASTQ,BCL2FASTQ,modules/nf-core/bcl2fastq/main.nf,1,bcl2fastq,bcl2fastq,,meta.yml
+NFCORE_DEMULTIPLEX:DEMULTIPLEX:BCL_DEMULTIPLEX:MULTIQCSAV,MULTIQCSAV,modules/nf-core/multiqcsav/main.nf,1,multiqc,multiqc,multiqc;multiqc_sav;pip,environment.yml
+NFCORE_DEMULTIPLEX:DEMULTIPLEX:RUNDIR_CHECKQC:CHECKQC_DIR,CHECKQC_DIR,modules/local/checkqc_dir/main.nf,1,checkqc_dir,,,module name
+NFCORE_DEMULTIPLEX:DEMULTIPLEX:RUNDIR_CHECKQC:CHECKQC,CHECKQC,modules/nf-core/checkqc/main.nf,1,sample-sheet,checkqc,sample-sheet;numpy;pandas;pip;python;tornado;xmltodict,environment.yml
+NFCORE_DEMULTIPLEX:DEMULTIPLEX:FQTK,FQTK,modules/nf-core/fqtk/main.nf,1,fqtk,fqtk,fqtk,environment.yml
+NFCORE_DEMULTIPLEX:DEMULTIPLEX:SGDEMUX,SGDEMUX,modules/nf-core/sgdemux/main.nf,1,sgdemux,sgdemux,sgdemux,environment.yml
+NFCORE_DEMULTIPLEX:DEMULTIPLEX:CELLRANGER_MKFASTQ,CELLRANGER_MKFASTQ,modules/nf-core/cellranger/mkfastq/main.nf,1,cellranger,cellranger,,meta.yml
+NFCORE_DEMULTIPLEX:DEMULTIPLEX:MGIKIT_DEMULTIPLEX,MGIKIT_DEMULTIPLEX,modules/nf-core/mgikit/demultiplex/main.nf,1,mgikit,mgikit demultiplex,mgikit,environment.yml
+NFCORE_DEMULTIPLEX:DEMULTIPLEX:FASTP,FASTP,modules/nf-core/fastp/main.nf,1,fastp,fastp,fastp,environment.yml
+NFCORE_DEMULTIPLEX:DEMULTIPLEX:FALCO,FALCO,modules/nf-core/falco/main.nf,1,falco,fastqc,falco,environment.yml
+NFCORE_DEMULTIPLEX:DEMULTIPLEX:MD5SUM,MD5SUM,modules/nf-core/md5sum/main.nf,1,md5sum,md5sum,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_DEMULTIPLEX:DEMULTIPLEX:UNTAR_KRAKEN_DB,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_DEMULTIPLEX:DEMULTIPLEX:FASTQ_CONTAM_SEQTK_KRAKEN:SEQTK_SAMPLE,SEQTK_SAMPLE,modules/nf-core/seqtk/sample/main.nf,1,seqtk,seqtk,seqtk,environment.yml
+NFCORE_DEMULTIPLEX:DEMULTIPLEX:FASTQ_CONTAM_SEQTK_KRAKEN:KRAKEN2,KRAKEN2_KRAKEN2,modules/nf-core/kraken2/kraken2/main.nf,1,kraken2,kraken2,kraken2;coreutils;pigz,environment.yml
+NFCORE_DEMULTIPLEX:DEMULTIPLEX:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

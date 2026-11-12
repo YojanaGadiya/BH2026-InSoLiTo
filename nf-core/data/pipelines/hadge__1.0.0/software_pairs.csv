@@ -1,0 +1,106 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bcftools,cellsnp-lite,data_flow,1,1,E00022,
+bcftools,popscle,data_flow,3,3,E00034,
+bcftools,samtools,data_flow,1,1,E00017,
+bcftools,souporcell,data_flow,1,1,E00051,
+bcftools,vireosnp,data_flow,1,1,E00028,
+bioconductor-cellhashr,pegasusio,data_flow,1,1,E00091,
+bioconductor-dropletutils,demuxem,data_flow,2,2,E00074,
+bioconductor-dropletutils,pegasusio,data_flow,2,2,E00095,
+cellsnp-lite,vireosnp,data_flow,1,1,E00029,
+csvtk,r-complexupset,data_flow,1,1,E00117,
+csvtk,r-data.table,data_flow,1,1,E00107,
+demuxem,pegasusio,data_flow,1,1,E00092,
+gawk,anndata,data_flow,1,1,E00100,
+gawk,bcftools,data_flow,1,1,E00011,
+gawk,bioconductor-cellhashr,data_flow,1,1,E00067,
+gawk,bioconductor-dropletutils,data_flow,3,3,E00070,
+gawk,cellsnp-lite,data_flow,1,1,E00020,
+gawk,gmm-demux,data_flow,1,1,E00078,
+gawk,matplotlib,data_flow,1,1,E00084,
+gawk,numpy,data_flow,1,1,E00054,
+gawk,pegasusio,data_flow,1,1,E00087,
+gawk,popscle,data_flow,3,3,E00032,
+gawk,r-complexupset,data_flow,1,1,E00114,
+gawk,r-data.table,data_flow,1,1,E00110,
+gawk,r-seurat,data_flow,1,1,E00061,
+gawk,samtools,data_flow,2,2,E00004,
+gawk,souporcell,data_flow,1,1,E00049,
+gawk,vireosnp,data_flow,1,1,E00026,
+gmm-demux,pegasusio,data_flow,2,2,E00093,
+matplotlib,pegasusio,data_flow,1,1,E00097,
+numpy,anndata,data_flow,2,2,E00101,
+numpy,multiqc,data_flow,1,1,E00122,
+numpy,r-complexupset,data_flow,1,1,E00115,
+numpy,r-data.table,data_flow,1,1,E00105,
+pegasusio,anndata,data_flow,2,2,E00103,
+pegasusio,multiqc,data_flow,1,1,E00123,
+pegasusio,r-complexupset,data_flow,1,1,E00116,
+pegasusio,r-data.table,data_flow,1,1,E00106,
+popscle,numpy,data_flow,2,2,E00056,
+r-complexupset,bcftools,data_flow,2,2,E00118,
+r-data.table,bcftools,data_flow,1,1,E00121,
+r-data.table,r-complexupset,data_flow,1,1,E00111,
+r-seurat,pegasusio,data_flow,3,3,E00088,
+r-seurat,r-ggplot2,data_flow,1,1,E00063,
+samtools,bcftools,data_flow,1,1,E00012,
+samtools,cellsnp-lite,data_flow,2,2,E00021,
+samtools,popscle,data_flow,3,3,E00033,
+samtools,souporcell,data_flow,1,1,E00050,
+samtools,umi_tools,data_flow,2,2,E00006,
+samtools,vireosnp,data_flow,1,1,E00027,
+souporcell,numpy,data_flow,1,1,E00058,
+umi_tools,samtools,data_flow,1,1,E00008,
+untar,anndata,data_flow,2,2,E00098,
+untar,bcftools,data_flow,2,2,E00009,
+untar,bioconductor-cellhashr,data_flow,2,2,E00065,
+untar,bioconductor-dropletutils,data_flow,6,6,E00068,
+untar,cellsnp-lite,data_flow,2,2,E00018,
+untar,gawk,data_flow,1,1,E00001,
+untar,gmm-demux,data_flow,2,2,E00076,
+untar,matplotlib,data_flow,2,2,E00082,
+untar,numpy,data_flow,2,2,E00052,
+untar,pegasusio,data_flow,2,2,E00085,
+untar,popscle,data_flow,6,6,E00030,
+untar,r-complexupset,data_flow,2,2,E00112,
+untar,r-data.table,data_flow,2,2,E00108,
+untar,r-seurat,data_flow,2,2,E00059,
+untar,samtools,data_flow,4,4,E00002,
+untar,souporcell,data_flow,2,2,E00047,
+untar,vireosnp,data_flow,2,2,E00024,
+vireosnp,bcftools,data_flow,1,1,E00120,
+vireosnp,numpy,data_flow,1,1,E00055,
+anndata,r-complexupset,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00100, E00114); no directed path between any process of the two tools"
+anndata,r-data.table,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00100, E00110); no directed path between any process of the two tools"
+bioconductor-cellhashr,bioconductor-dropletutils,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00067, E00081); no directed path between any process of the two tools"
+bioconductor-cellhashr,gmm-demux,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00067, E00078); no directed path between any process of the two tools"
+bioconductor-cellhashr,matplotlib,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00067, E00084); no directed path between any process of the two tools"
+bioconductor-cellhashr,r-seurat,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00067, E00061); no directed path between any process of the two tools"
+bioconductor-dropletutils,bioconductor-cellhashr,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00081, E00067); no directed path between any process of the two tools"
+bioconductor-dropletutils,gmm-demux,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00081, E00078); no directed path between any process of the two tools"
+bioconductor-dropletutils,matplotlib,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00081, E00084); no directed path between any process of the two tools"
+bioconductor-dropletutils,r-seurat,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00081, E00061); no directed path between any process of the two tools"
+cellsnp-lite,popscle,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00020, E00038); no directed path between any process of the two tools"
+cellsnp-lite,souporcell,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00020, E00049); no directed path between any process of the two tools"
+gmm-demux,bioconductor-cellhashr,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00078, E00067); no directed path between any process of the two tools"
+gmm-demux,bioconductor-dropletutils,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00078, E00081); no directed path between any process of the two tools"
+gmm-demux,matplotlib,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00078, E00084); no directed path between any process of the two tools"
+gmm-demux,r-seurat,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00078, E00061); no directed path between any process of the two tools"
+matplotlib,bioconductor-cellhashr,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00084, E00067); no directed path between any process of the two tools"
+matplotlib,bioconductor-dropletutils,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00084, E00081); no directed path between any process of the two tools"
+matplotlib,gmm-demux,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00084, E00078); no directed path between any process of the two tools"
+matplotlib,r-seurat,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00084, E00061); no directed path between any process of the two tools"
+popscle,cellsnp-lite,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00038, E00020); no directed path between any process of the two tools"
+popscle,souporcell,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00038, E00049); no directed path between any process of the two tools"
+popscle,vireosnp,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00038, E00026); no directed path between any process of the two tools"
+r-complexupset,anndata,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00114, E00100); no directed path between any process of the two tools"
+r-data.table,anndata,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00110, E00100); no directed path between any process of the two tools"
+r-seurat,bioconductor-cellhashr,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00061, E00067); no directed path between any process of the two tools"
+r-seurat,bioconductor-dropletutils,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00061, E00081); no directed path between any process of the two tools"
+r-seurat,gmm-demux,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00061, E00078); no directed path between any process of the two tools"
+r-seurat,matplotlib,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00061, E00084); no directed path between any process of the two tools"
+souporcell,cellsnp-lite,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00049, E00020); no directed path between any process of the two tools"
+souporcell,popscle,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00049, E00038); no directed path between any process of the two tools"
+souporcell,vireosnp,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00049, E00026); no directed path between any process of the two tools"
+vireosnp,popscle,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00026, E00038); no directed path between any process of the two tools"
+vireosnp,souporcell,parallel_co_use,0,0,,"both consume EXTRACT_HASHES.hashes (E00026, E00049); no directed path between any process of the two tools"

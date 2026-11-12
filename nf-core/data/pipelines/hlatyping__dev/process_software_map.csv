@@ -1,0 +1,20 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_HLATYPING:HLATYPING:CAT_FASTQ,CAT_FASTQ,modules/nf-core/cat/fastq/main.nf,1,cat,cat,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_HLATYPING:HLATYPING:CHECK_PAIRED,CHECK_PAIRED,modules/local/check_paired/main.nf,1,check_paired,,,module name
+NFCORE_HLATYPING:HLATYPING:SAMTOOLS_COLLATEFASTQ,SAMTOOLS_COLLATEFASTQ,modules/nf-core/samtools/collatefastq/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_HLATYPING:HLATYPING:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_HLATYPING:HLATYPING:YARA_INDEX,YARA_INDEX,modules/nf-core/yara/index/main.nf,1,yara,yara,yara,environment.yml
+NFCORE_HLATYPING:HLATYPING:YARA_MAPPER,YARA_MAPPER,modules/nf-core/yara/mapper/main.nf,1,samtools,yara,samtools;yara,environment.yml
+NFCORE_HLATYPING:HLATYPING:OPTITYPE,OPTITYPE,modules/nf-core/optitype/main.nf,1,optitype,optitype,optitype;coincbc,environment.yml
+NFCORE_HLATYPING:HLATYPING:SPECHLA_EXTRACT,SPECHLA_EXTRACT,modules/local/spechla/extract/main.nf,1,spechla,spechla,spechla,environment.yml
+NFCORE_HLATYPING:HLATYPING:SPECHLA_TYPING,SPECHLA_TYPING,modules/local/spechla/typing/main.nf,1,spechla,spechla,spechla,environment.yml
+NFCORE_HLATYPING:HLATYPING:IMMUNOTYPE,IMMUNOTYPE,modules/local/immunotype/main.nf,1,immunotype,immunotype,immunotype,environment.yml
+NFCORE_HLATYPING:HLATYPING:HLAHD_INSTALL,HLAHD_INSTALL,modules/local/hlahd/install/main.nf,1,bowtie2,,bowtie2;gcc;gxx;wget,environment.yml
+NFCORE_HLATYPING:HLATYPING:HLAHD,HLAHD,modules/local/hlahd/genotype/main.nf,1,bowtie2,hlahd,bowtie2;gcc;gxx;wget,environment.yml
+NFCORE_HLATYPING:HLATYPING:SAMTOOLS_VIEW,SAMTOOLS_VIEW,modules/nf-core/samtools/view/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_HLATYPING:HLATYPING:WGET,WGET,modules/nf-core/wget/main.nf,1,wget,wget,wget,environment.yml
+NFCORE_HLATYPING:HLATYPING:UNTAR,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_HLATYPING:HLATYPING:HLALA_PREPAREGRAPH,HLALA_PREPAREGRAPH,modules/nf-core/hlala/preparegraph/main.nf,1,hla-la,hlala,hla-la,environment.yml
+NFCORE_HLATYPING:HLATYPING:HLALA_TYPING,HLALA_TYPING,modules/nf-core/hlala/typing/main.nf,1,hla-la,hlala,hla-la,environment.yml
+NFCORE_HLATYPING:HLATYPING:SUMMARIZE_TYPING,SUMMARIZE_TYPING,modules/local/summarize/main.nf,1,mhcgnomes,mhcgnomes,mhcgnomes,environment.yml
+NFCORE_HLATYPING:HLATYPING:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

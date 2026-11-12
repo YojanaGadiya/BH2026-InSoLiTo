@@ -1,0 +1,16 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+clair3,bcftools,data_flow,2,2,E00017,
+clair3,pyyaml,data_flow,2,2,E00010,
+minimap2,clair3,data_flow,2,2,E00007,
+minimap2,samtools,data_flow,8,8,E00001,
+nanoplot,multiqc,data_flow,1,1,E00030,
+numpy,multiqc,data_flow,1,1,E00031,
+pyyaml,bcftools,data_flow,1,1,E00021,
+pyyaml,numpy,data_flow,4,3,E00026,
+pyyaml,samtools,data_flow,1,1,E00014,
+samtools,pyyaml,data_flow,2,2,E00015,
+wget,clair3,data_flow,1,1,E00009,
+bcftools,samtools,parallel_co_use,0,0,,"both consume ABO_PANEL2BED.bed (E00021, E00014); no directed path between any process of the two tools"
+clair3,samtools,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00007, E00001); no directed path between any process of the two tools"
+samtools,bcftools,parallel_co_use,0,0,,"both consume ABO_PANEL2BED.bed (E00014, E00021); no directed path between any process of the two tools"
+samtools,clair3,parallel_co_use,0,0,,"both consume MINIMAP2_ALIGN.bam (E00001, E00007); no directed path between any process of the two tools"

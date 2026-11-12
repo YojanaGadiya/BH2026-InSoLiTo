@@ -1,0 +1,10 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bioconductor-biostrings,numpy,data_flow,51,32,E00024,
+bioconductor-biostrings,r-dimsum,data_flow,7,7,E00095,
+bwa,pysam,data_flow,5,5,E00004,
+fastqc,multiqc,data_flow,1,1,E00114,
+fq,bwa,gate_metadata,1,0,E00002,
+fq,fastqc,gate_metadata,1,0,E00001,
+multiqc,numpy,gate_metadata,2,0,E00138,
+pysam,bioconductor-biostrings,data_flow,6,6,E00009,
+r-dimsum,numpy,data_flow,2,1,E00136,

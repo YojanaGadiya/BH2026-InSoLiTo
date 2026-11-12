@@ -1,0 +1,4 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_GWAS:GWAS:PLINK_VCF,PLINK_VCF,modules/nf-core/plink/vcf/main.nf,1,plink,plink,plink,environment.yml
+NFCORE_GWAS:GWAS:PLINK_GWAS,PLINK_GWAS,modules/nf-core/plink/gwas/main.nf,1,plink,plink,plink,environment.yml
+NFCORE_GWAS:GWAS:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

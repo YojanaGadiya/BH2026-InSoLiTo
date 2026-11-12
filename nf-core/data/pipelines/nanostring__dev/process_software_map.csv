@@ -1,0 +1,7 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_NANOSTRING:NANOSTRING:NACHO_QC,NACHO_QC,modules/nf-core/nacho/qc/main.nf,1,r-dplyr,NACHO,r-base;r-dplyr;r-fs;r-ggplot2;r-nacho;r-nfcore.utils;r-readr;r-tidyr,environment.yml
+NFCORE_NANOSTRING:NANOSTRING:NACHO_NORMALIZE,NACHO_NORMALIZE,modules/nf-core/nacho/normalize/main.nf,1,r-dplyr,NACHO,r-base;r-dplyr;r-fs;r-ggplot2;r-nacho;r-nfcore.utils;r-readr;r-tidyr,environment.yml
+NFCORE_NANOSTRING:NANOSTRING:CREATE_ANNOTATED_TABLES,CREATE_ANNOTATED_TABLES,modules/local/create_annotated_tables/main.nf,1,r-dplyr,,r-base;r-dplyr;r-ggplot2;r-readr;r-stringr;r-tidyr,environment.yml
+NFCORE_NANOSTRING:NANOSTRING:COMPUTE_GENE_SCORES_HEATMAP:COMPUTE_GENE_SCORES,COMPUTE_GENE_SCORES,modules/local/compute_gene_scores/main.nf,1,r-yaml,compute_gene_scores,r-yaml;r-ggplot2;r-dplyr;r-stringr;bioconductor-gsva;bioconductor-singscore;r-factominer;r-tibble;r-matrixstats,environment.yml
+NFCORE_NANOSTRING:NANOSTRING:COMPUTE_GENE_SCORES_HEATMAP:CREATE_GENE_HEATMAP,CREATE_GENE_HEATMAP,modules/local/create_gene_heatmap/main.nf,1,r-dplyr,create_gene_heatmap,r-dplyr;r-ggplot2;r-rlang;r-fs;bioconductor-complexheatmap;r-circlize;r-yaml;r-ragg,environment.yml
+NFCORE_NANOSTRING:NANOSTRING:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

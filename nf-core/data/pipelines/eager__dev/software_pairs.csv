@@ -1,0 +1,414 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+adapterremoval,bowtie2,data_flow,4,4,E00280,
+adapterremoval,bwa,data_flow,30,30,E00120,
+adapterremoval,cat,data_flow,4,4,E00087,
+adapterremoval,falco,data_flow,2,2,E00095,
+adapterremoval,fastqc,data_flow,2,2,E00103,
+adapterremoval,mapad,data_flow,6,6,E00434,
+adapterremoval,multiqc,data_flow,2,2,E01785,
+adapterremoval,seqkit,data_flow,2,2,E00111,
+amps,multiqc,data_flow,1,1,E01797,
+angsd,print_contamination_angsd,data_flow,1,1,E01061,
+bamutil,samtools,data_flow,2,2,E01212,
+bbmap,kraken2,data_flow,2,2,E00784,
+bbmap,krakenuniq,data_flow,2,2,E00772,
+bbmap,malt,data_flow,2,2,E00747,
+bbmap,metaphlan,data_flow,2,2,E00760,
+bbmap,multiqc,data_flow,1,1,E01792,
+bcftools,multiqc,data_flow,1,1,E01809,
+bcftools,multivcfanalyzer,data_flow,10,10,E01698,
+bedtools,pmdtools,data_flow,2,2,E01151,
+bowtie2,angsd,data_flow,4,4,E01040,
+bowtie2,bcftools,data_flow,4,4,E01665,
+bowtie2,bedtools,data_flow,5,5,E00884,
+bowtie2,build_intervals,data_flow,2,2,E00545,
+bowtie2,damageprofiler,data_flow,6,6,E00903,
+bowtie2,freebayes,data_flow,6,6,E01598,
+bowtie2,gatk,data_flow,26,26,E01320,
+bowtie2,gatk4,data_flow,10,10,E01518,
+bowtie2,gunzip,data_flow,3,3,E00024,
+bowtie2,mapdamage2,data_flow,8,8,E00975,
+bowtie2,mtnucratio,data_flow,2,2,E00828,
+bowtie2,multivcfanalyzer,data_flow,10,10,E01695,
+bowtie2,picard,data_flow,6,6,E00579,
+bowtie2,pmdtools,data_flow,4,4,E01156,
+bowtie2,qualimap,data_flow,3,3,E00716,
+bowtie2,samtools,data_flow,17,17,E00313,
+bowtie2,samtools_view_genome,data_flow,1,1,E00876,
+bowtie2,sequencetools,data_flow,4,4,E01289,
+build_intervals,samtools,data_flow,1,1,E00562,
+bwa,angsd,data_flow,4,4,E01039,
+bwa,bcftools,data_flow,4,4,E01664,
+bwa,bedtools,data_flow,5,5,E00883,
+bwa,bowtie2,data_flow,4,4,E00287,
+bwa,build_intervals,data_flow,2,2,E00544,
+bwa,circularmapper,data_flow,18,18,E00045,
+bwa,damageprofiler,data_flow,6,6,E00902,
+bwa,freebayes,data_flow,6,6,E01597,
+bwa,gatk,data_flow,26,26,E01319,
+bwa,gatk4,data_flow,10,10,E01517,
+bwa,gunzip,data_flow,4,4,E00023,
+bwa,mapad,data_flow,6,6,E00441,
+bwa,mapdamage2,data_flow,8,8,E00974,
+bwa,mtnucratio,data_flow,2,2,E00827,
+bwa,multivcfanalyzer,data_flow,10,10,E01694,
+bwa,picard,data_flow,6,6,E00578,
+bwa,pmdtools,data_flow,4,4,E01155,
+bwa,qualimap,data_flow,3,3,E00715,
+bwa,samtools,data_flow,25,25,E00221,
+bwa,samtools_view_genome,data_flow,1,1,E00875,
+bwa,sequencetools,data_flow,4,4,E01288,
+cat,adapterremoval,data_flow,2,2,E00083,
+cat,bbmap,data_flow,1,1,E00741,
+cat,bowtie2,data_flow,4,4,E00279,
+cat,bwa,data_flow,30,30,E00119,
+cat,falco,data_flow,3,3,E00075,
+cat,fastp,data_flow,2,2,E00079,
+cat,fastqc,data_flow,3,3,E00077,
+cat,host_removal,data_flow,1,1,E00739,
+cat,kraken2,data_flow,2,2,E00786,
+cat,krakenuniq,data_flow,2,2,E00774,
+cat,malt,data_flow,2,2,E00749,
+cat,mapad,data_flow,6,6,E00433,
+cat,metaphlan,data_flow,2,2,E00762,
+cat,prinseq-plus-plus,data_flow,1,1,E00744,
+cat,seqkit,data_flow,2,2,E00110,
+circularmapper,bwa,data_flow,7,7,E00074,
+circularmapper,samtools,data_flow,3,3,E00428,
+collect_genotypes,eigenstratdatabasetools,data_flow,1,1,E01311,
+damageprofiler,multiqc,data_flow,1,1,E01802,
+dedup,samtools,data_flow,4,4,E00645,
+eigenstratdatabasetools,multiqc,data_flow,1,1,E01808,
+endorspy,multiqc,data_flow,1,1,E01799,
+falco,multiqc,data_flow,2,2,E01781,
+fastp,bowtie2,data_flow,6,6,E00276,
+fastp,bwa,data_flow,45,45,E00116,
+fastp,falco,data_flow,3,3,E00091,
+fastp,fastqc,data_flow,3,3,E00099,
+fastp,mapad,data_flow,9,9,E00430,
+fastp,multiqc,data_flow,2,2,E01783,
+fastp,seqkit,data_flow,3,3,E00107,
+fastqc,multiqc,data_flow,2,2,E01782,
+filter_bam_fragment_length,samtools,data_flow,2,2,E00517,
+freebayes,bcftools,data_flow,3,3,E01638,
+freebayes,multivcfanalyzer,data_flow,5,5,E01697,
+gatk,bcftools,data_flow,3,3,E01509,
+gatk,multivcfanalyzer,data_flow,5,5,E01701,
+gatk4,bcftools,data_flow,4,4,E01657,
+gatk4,multivcfanalyzer,data_flow,10,10,E01699,
+gunzip,angsd,data_flow,4,4,E01036,
+gunzip,bcftools,data_flow,4,4,E01661,
+gunzip,bedtools,data_flow,9,9,E00880,
+gunzip,bowtie2,data_flow,6,6,E00009,
+gunzip,build_intervals,data_flow,2,2,E00541,
+gunzip,bwa,data_flow,28,28,E00006,
+gunzip,circularmapper,data_flow,18,18,E00042,
+gunzip,damageprofiler,data_flow,6,6,E00899,
+gunzip,freebayes,data_flow,6,6,E01594,
+gunzip,gatk,data_flow,26,26,E01316,
+gunzip,gatk4,data_flow,10,10,E01514,
+gunzip,mapad,data_flow,8,8,E00012,
+gunzip,mapdamage2,data_flow,8,8,E00971,
+gunzip,mtnucratio,data_flow,2,2,E00824,
+gunzip,multivcfanalyzer,data_flow,10,10,E01691,
+gunzip,picard,data_flow,8,8,E00004,
+gunzip,pmdtools,data_flow,8,8,E01152,
+gunzip,qualimap,data_flow,6,6,E00711,
+gunzip,samtools,data_flow,16,16,E00003,
+gunzip,samtools_view_genome,data_flow,1,1,E00872,
+gunzip,sequencetools,data_flow,4,4,E01285,
+hops,amps,data_flow,1,1,E00799,
+kraken2,multiqc,data_flow,1,1,E01796,
+kraken2,taxpasta,gate_metadata,2,0,E00806,
+krakenuniq,multiqc,data_flow,1,1,E01795,
+krakenuniq,taxpasta,gate_metadata,2,0,E00805,
+malt,amps,data_flow,1,1,E00800,
+malt,cat,data_flow,1,1,E00759,
+malt,hops,data_flow,3,3,E00796,
+malt,megan,data_flow,1,1,E00801,
+malt,multiqc,data_flow,1,1,E01794,
+malt,taxpasta,data_flow,2,2,E00803,
+mapad,angsd,data_flow,4,4,E01041,
+mapad,bcftools,data_flow,4,4,E01666,
+mapad,bedtools,data_flow,5,5,E00885,
+mapad,build_intervals,data_flow,2,2,E00546,
+mapad,damageprofiler,data_flow,6,6,E00904,
+mapad,freebayes,data_flow,6,6,E01599,
+mapad,gatk,data_flow,26,26,E01321,
+mapad,gatk4,data_flow,10,10,E01519,
+mapad,gunzip,data_flow,3,3,E00025,
+mapad,mapdamage2,data_flow,8,8,E00976,
+mapad,mtnucratio,data_flow,2,2,E00829,
+mapad,multivcfanalyzer,data_flow,10,10,E01696,
+mapad,picard,data_flow,6,6,E00580,
+mapad,pmdtools,data_flow,4,4,E01157,
+mapad,qualimap,data_flow,3,3,E00717,
+mapad,samtools,data_flow,15,15,E00486,
+mapad,samtools_view_genome,data_flow,1,1,E00877,
+mapad,sequencetools,data_flow,4,4,E01290,
+mapdamage2,multiqc,data_flow,1,1,E01803,
+mapdamage2,samtools,data_flow,2,2,E01110,
+megan,taxpasta,gate_metadata,2,0,E00802,
+metaphlan,taxpasta,data_flow,2,2,E00804,
+mtnucratio,multiqc,data_flow,1,1,E01798,
+picard,angsd,data_flow,4,4,E01038,
+picard,bcftools,data_flow,4,4,E01663,
+picard,bedtools,data_flow,5,5,E00882,
+picard,bowtie2,data_flow,5,5,E00011,
+picard,build_intervals,data_flow,2,2,E00543,
+picard,bwa,data_flow,20,20,E00008,
+picard,circularmapper,data_flow,12,12,E00044,
+picard,damageprofiler,data_flow,6,6,E00901,
+picard,freebayes,data_flow,6,6,E01596,
+picard,gatk,data_flow,26,26,E01318,
+picard,gatk4,data_flow,10,10,E01516,
+picard,gunzip,data_flow,4,4,E00022,
+picard,mapad,data_flow,7,7,E00014,
+picard,mapdamage2,data_flow,8,8,E00973,
+picard,mtnucratio,data_flow,2,2,E00826,
+picard,multivcfanalyzer,data_flow,10,10,E01693,
+picard,pmdtools,data_flow,4,4,E01154,
+picard,qualimap,data_flow,3,3,E00714,
+picard,samtools,data_flow,18,18,E00644,
+picard,samtools_view_genome,data_flow,1,1,E00874,
+picard,sequencetools,data_flow,4,4,E01287,
+pmdtools,bamutil,data_flow,1,1,E01197,
+pmdtools,samtools,data_flow,3,3,E01193,
+preseq,multiqc,data_flow,2,2,E01800,
+prinseq-plus-plus,kraken2,data_flow,2,2,E00785,
+prinseq-plus-plus,krakenuniq,data_flow,2,2,E00773,
+prinseq-plus-plus,malt,data_flow,2,2,E00748,
+prinseq-plus-plus,metaphlan,data_flow,2,2,E00761,
+prinseq-plus-plus,multiqc,data_flow,1,1,E01793,
+print_contamination_angsd,multiqc,data_flow,1,1,E01805,
+samtools,adapterremoval,data_flow,2,2,E00084,
+samtools,angsd,data_flow,32,22,E01024,
+samtools,bamutil,data_flow,14,14,E01198,
+samtools,bbmap,data_flow,2,2,E00742,
+samtools,bcftools,data_flow,4,4,E01662,
+samtools,bedtools,data_flow,7,6,E00878,
+samtools,bowtie2,data_flow,7,7,E00010,
+samtools,build_intervals,data_flow,2,2,E00542,
+samtools,bwa,data_flow,35,35,E00007,
+samtools,cat,data_flow,5,5,E00001,
+samtools,circularmapper,data_flow,12,12,E00043,
+samtools,damageprofiler,data_flow,42,18,E00887,
+samtools,dedup,data_flow,11,11,E00633,
+samtools,endorspy,gate_metadata,4,0,E00848,
+samtools,falco,data_flow,2,2,E00076,
+samtools,fastp,data_flow,2,2,E00080,
+samtools,fastqc,data_flow,2,2,E00078,
+samtools,filter_bam_fragment_length,data_flow,6,6,E00511,
+samtools,freebayes,data_flow,18,12,E01590,
+samtools,gatk,data_flow,58,46,E01312,
+samtools,gatk4,data_flow,30,22,E01510,
+samtools,gunzip,data_flow,4,4,E00021,
+samtools,host_removal,data_flow,4,4,E00736,
+samtools,kraken2,data_flow,4,4,E00787,
+samtools,krakenuniq,data_flow,4,4,E00775,
+samtools,malt,data_flow,4,4,E00750,
+samtools,mapad,data_flow,10,10,E00013,
+samtools,mapdamage2,data_flow,56,24,E00959,
+samtools,metaphlan,data_flow,4,4,E00763,
+samtools,mtnucratio,data_flow,26,10,E00812,
+samtools,multiqc,data_flow,5,5,E01789,
+samtools,multivcfanalyzer,data_flow,10,10,E01692,
+samtools,picard,data_flow,40,19,E00005,
+samtools,pmdtools,data_flow,28,20,E01139,
+samtools,preseq,data_flow,18,18,E00852,
+samtools,prinseq-plus-plus,data_flow,2,2,E00745,
+samtools,qualimap,data_flow,9,7,E00709,
+samtools,samtools_view_genome,data_flow,3,3,E00870,
+samtools,seqkit,data_flow,1,1,E00114,
+samtools,sequencetools,data_flow,6,6,E01284,
+samtools,sexdeterrmine,data_flow,1,1,E01023,
+samtools_view_genome,bedtools,data_flow,1,1,E00886,
+seqkit,bowtie2,data_flow,2,2,E00275,
+seqkit,bwa,data_flow,15,15,E00115,
+seqkit,mapad,data_flow,3,3,E00429,
+sequencetools,collect_genotypes,data_flow,1,1,E01310,
+sexdeterrmine,multiqc,data_flow,1,1,E01804,
+untar,kraken2,data_flow,2,2,E00789,
+untar,krakenuniq,data_flow,2,2,E00777,
+untar,malt,data_flow,2,2,E00752,
+untar,metaphlan,data_flow,2,2,E00765,
+amps,megan,parallel_co_use,0,0,,"both consume MALT_RUN.rma6 (E00800, E00801); no directed path between any process of the two tools"
+amps,taxpasta,parallel_co_use,0,0,,"both consume MALT_RUN.rma6 (E00800, E00808); no directed path between any process of the two tools"
+angsd,bcftools,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01647, E01665); no directed path between any process of the two tools"
+angsd,damageprofiler,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E01043, E00887); no directed path between any process of the two tools"
+angsd,freebayes,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LIBRARIES.bam (E01641, E01592); no directed path between any process of the two tools"
+angsd,gatk,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LIBRARIES.bam (E01641, E01378); no directed path between any process of the two tools"
+angsd,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LIBRARIES.bam (E01641, E01512); no directed path between any process of the two tools"
+angsd,host_removal,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LANES.bai (E01032, E00738); no directed path between any process of the two tools"
+angsd,mtnucratio,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E01043, E00812); no directed path between any process of the two tools"
+angsd,multivcfanalyzer,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01647, E01707); no directed path between any process of the two tools"
+angsd,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_FILTER_INDEX.bai (E01029, E00854); no directed path between any process of the two tools"
+angsd,qualimap,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LIBRARIES.bam (E01641, E00727); no directed path between any process of the two tools"
+angsd,samtools_view_genome,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LIBRARIES.bam (E01641, E00870); no directed path between any process of the two tools"
+angsd,sequencetools,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01647, E01289); no directed path between any process of the two tools"
+bamutil,damageprofiler,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E01200, E00887); no directed path between any process of the two tools"
+bamutil,host_removal,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LANES.bai (E01208, E00738); no directed path between any process of the two tools"
+bamutil,mapdamage2,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E01200, E00959); no directed path between any process of the two tools"
+bamutil,mtnucratio,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E01200, E00812); no directed path between any process of the two tools"
+bamutil,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_FILTER_INDEX.bai (E01205, E00854); no directed path between any process of the two tools"
+bcftools,angsd,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01665, E01647); no directed path between any process of the two tools"
+bcftools,damageprofiler,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01665, E00903); no directed path between any process of the two tools"
+bcftools,mtnucratio,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01671, E00828); no directed path between any process of the two tools"
+bcftools,qualimap,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01671, E00734); no directed path between any process of the two tools"
+bcftools,samtools_view_genome,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01671, E00876); no directed path between any process of the two tools"
+bcftools,sequencetools,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01665, E01289); no directed path between any process of the two tools"
+bedtools,damageprofiler,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01123, E00903); no directed path between any process of the two tools"
+bedtools,mapdamage2,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01123, E00975); no directed path between any process of the two tools"
+bedtools,mtnucratio,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00884, E00828); no directed path between any process of the two tools"
+bedtools,qualimap,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LIBRARIES.bam (E00878, E00727); no directed path between any process of the two tools"
+bowtie2,falco,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00282, E00075); no directed path between any process of the two tools"
+bowtie2,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00282, E00077); no directed path between any process of the two tools"
+build_intervals,circularmapper,parallel_co_use,0,0,,"both consume BWA_INDEX.index (E00544, E00397); no directed path between any process of the two tools"
+bwa,falco,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00230, E00075); no directed path between any process of the two tools"
+bwa,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00230, E00077); no directed path between any process of the two tools"
+circularmapper,build_intervals,parallel_co_use,0,0,,"both consume BWA_INDEX.index (E00397, E00544); no directed path between any process of the two tools"
+damageprofiler,angsd,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E00887, E01043); no directed path between any process of the two tools"
+damageprofiler,bamutil,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E00887, E01200); no directed path between any process of the two tools"
+damageprofiler,bcftools,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00903, E01665); no directed path between any process of the two tools"
+damageprofiler,bedtools,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00903, E01123); no directed path between any process of the two tools"
+damageprofiler,freebayes,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00903, E01598); no directed path between any process of the two tools"
+damageprofiler,gatk,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00903, E01385); no directed path between any process of the two tools"
+damageprofiler,gatk4,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00903, E01518); no directed path between any process of the two tools"
+damageprofiler,host_removal,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LANES.bam (E00893, E00736); no directed path between any process of the two tools"
+damageprofiler,mapdamage2,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E00887, E00959); no directed path between any process of the two tools"
+damageprofiler,mtnucratio,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E00887, E00812); no directed path between any process of the two tools"
+damageprofiler,multivcfanalyzer,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00903, E01707); no directed path between any process of the two tools"
+damageprofiler,pmdtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E00887, E01139); no directed path between any process of the two tools"
+damageprofiler,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_VIEW_BAM_FILTERING.bam (E00890, E00852); no directed path between any process of the two tools"
+damageprofiler,qualimap,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00909, E00734); no directed path between any process of the two tools"
+damageprofiler,samtools_view_genome,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00909, E00876); no directed path between any process of the two tools"
+damageprofiler,sequencetools,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00903, E01289); no directed path between any process of the two tools"
+dedup,host_removal,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LANES.bai (E00638, E00738); no directed path between any process of the two tools"
+dedup,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_FILTER_INDEX.bai (E00635, E00854); no directed path between any process of the two tools"
+falco,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00075, E00282); no directed path between any process of the two tools"
+falco,bwa,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00075, E00230); no directed path between any process of the two tools"
+falco,host_removal,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00075, E00739); no directed path between any process of the two tools"
+falco,mapad,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00075, E00436); no directed path between any process of the two tools"
+falco,seqkit,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00075, E00113); no directed path between any process of the two tools"
+fastqc,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00077, E00282); no directed path between any process of the two tools"
+fastqc,bwa,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00077, E00230); no directed path between any process of the two tools"
+fastqc,host_removal,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00077, E00739); no directed path between any process of the two tools"
+fastqc,mapad,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00077, E00436); no directed path between any process of the two tools"
+fastqc,seqkit,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00077, E00113); no directed path between any process of the two tools"
+filter_bam_fragment_length,host_removal,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LANES.bai (E00513, E00738); no directed path between any process of the two tools"
+freebayes,angsd,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LIBRARIES.bam (E01592, E01641); no directed path between any process of the two tools"
+freebayes,damageprofiler,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01598, E00903); no directed path between any process of the two tools"
+freebayes,mtnucratio,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01604, E00828); no directed path between any process of the two tools"
+freebayes,qualimap,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LIBRARIES.bam (E01592, E00727); no directed path between any process of the two tools"
+freebayes,samtools_view_genome,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LIBRARIES.bam (E01592, E00870); no directed path between any process of the two tools"
+gatk,angsd,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LIBRARIES.bam (E01378, E01641); no directed path between any process of the two tools"
+gatk,damageprofiler,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01385, E00903); no directed path between any process of the two tools"
+gatk,mtnucratio,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01391, E00828); no directed path between any process of the two tools"
+gatk,qualimap,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LIBRARIES.bai (E01379, E00728); no directed path between any process of the two tools"
+gatk,samtools_view_genome,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LIBRARIES.bai (E01379, E00871); no directed path between any process of the two tools"
+gatk4,angsd,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LIBRARIES.bam (E01512, E01641); no directed path between any process of the two tools"
+gatk4,damageprofiler,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01518, E00903); no directed path between any process of the two tools"
+gatk4,mtnucratio,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01524, E00828); no directed path between any process of the two tools"
+gatk4,qualimap,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LIBRARIES.bai (E01513, E00728); no directed path between any process of the two tools"
+gatk4,samtools_view_genome,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LIBRARIES.bai (E01513, E00871); no directed path between any process of the two tools"
+hops,megan,parallel_co_use,0,0,,"both consume MALT_RUN.rma6 (E00796, E00801); no directed path between any process of the two tools"
+hops,taxpasta,parallel_co_use,0,0,,"both consume MALT_RUN.rma6 (E00796, E00808); no directed path between any process of the two tools"
+host_removal,angsd,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LANES.bai (E00738, E01032); no directed path between any process of the two tools"
+host_removal,bamutil,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LANES.bai (E00738, E01208); no directed path between any process of the two tools"
+host_removal,damageprofiler,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LANES.bam (E00736, E00893); no directed path between any process of the two tools"
+host_removal,dedup,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LANES.bai (E00738, E00638); no directed path between any process of the two tools"
+host_removal,falco,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00739, E00075); no directed path between any process of the two tools"
+host_removal,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00739, E00077); no directed path between any process of the two tools"
+host_removal,filter_bam_fragment_length,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LANES.bai (E00738, E00513); no directed path between any process of the two tools"
+host_removal,mapdamage2,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LANES.bam (E00736, E00965); no directed path between any process of the two tools"
+host_removal,mtnucratio,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LANES.bam (E00736, E00818); no directed path between any process of the two tools"
+host_removal,pmdtools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LANES.bai (E00738, E01147); no directed path between any process of the two tools"
+host_removal,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LANES.bai (E00738, E00857); no directed path between any process of the two tools"
+mapad,falco,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00436, E00075); no directed path between any process of the two tools"
+mapad,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00436, E00077); no directed path between any process of the two tools"
+mapdamage2,bamutil,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E00959, E01200); no directed path between any process of the two tools"
+mapdamage2,bedtools,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00975, E01123); no directed path between any process of the two tools"
+mapdamage2,damageprofiler,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E00959, E00887); no directed path between any process of the two tools"
+mapdamage2,host_removal,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LANES.bam (E00965, E00736); no directed path between any process of the two tools"
+mapdamage2,mtnucratio,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E00959, E00812); no directed path between any process of the two tools"
+mapdamage2,pmdtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E00959, E01139); no directed path between any process of the two tools"
+mapdamage2,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_VIEW_BAM_FILTERING.bam (E00962, E00852); no directed path between any process of the two tools"
+mapdamage2,qualimap,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00981, E00734); no directed path between any process of the two tools"
+mapdamage2,samtools_view_genome,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00981, E00876); no directed path between any process of the two tools"
+megan,amps,parallel_co_use,0,0,,"both consume MALT_RUN.rma6 (E00801, E00800); no directed path between any process of the two tools"
+megan,hops,parallel_co_use,0,0,,"both consume MALT_RUN.rma6 (E00801, E00796); no directed path between any process of the two tools"
+metaphlan,multiqc,parallel_co_use,0,0,,"both consume BBMAP_BBDUK.reads (E00760, E01792); no directed path between any process of the two tools"
+mtnucratio,angsd,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E00812, E01043); no directed path between any process of the two tools"
+mtnucratio,bamutil,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E00812, E01200); no directed path between any process of the two tools"
+mtnucratio,bcftools,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00828, E01671); no directed path between any process of the two tools"
+mtnucratio,bedtools,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00828, E00884); no directed path between any process of the two tools"
+mtnucratio,damageprofiler,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E00812, E00887); no directed path between any process of the two tools"
+mtnucratio,freebayes,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00828, E01604); no directed path between any process of the two tools"
+mtnucratio,gatk,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00828, E01391); no directed path between any process of the two tools"
+mtnucratio,gatk4,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00828, E01524); no directed path between any process of the two tools"
+mtnucratio,host_removal,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LANES.bam (E00818, E00736); no directed path between any process of the two tools"
+mtnucratio,mapdamage2,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E00812, E00959); no directed path between any process of the two tools"
+mtnucratio,multivcfanalyzer,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00828, E01695); no directed path between any process of the two tools"
+mtnucratio,pmdtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E00812, E01139); no directed path between any process of the two tools"
+mtnucratio,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_VIEW_BAM_FILTERING.bam (E00815, E00852); no directed path between any process of the two tools"
+mtnucratio,qualimap,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00828, E00734); no directed path between any process of the two tools"
+mtnucratio,samtools_view_genome,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00828, E00876); no directed path between any process of the two tools"
+mtnucratio,sequencetools,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00828, E01295); no directed path between any process of the two tools"
+multiqc,metaphlan,parallel_co_use,0,0,,"both consume BBMAP_BBDUK.reads (E01792, E00760); no directed path between any process of the two tools"
+multivcfanalyzer,angsd,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01707, E01647); no directed path between any process of the two tools"
+multivcfanalyzer,damageprofiler,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01707, E00903); no directed path between any process of the two tools"
+multivcfanalyzer,mtnucratio,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01695, E00828); no directed path between any process of the two tools"
+multivcfanalyzer,qualimap,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01695, E00734); no directed path between any process of the two tools"
+multivcfanalyzer,samtools_view_genome,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01695, E00876); no directed path between any process of the two tools"
+multivcfanalyzer,sequencetools,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01707, E01289); no directed path between any process of the two tools"
+pmdtools,damageprofiler,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E01139, E00887); no directed path between any process of the two tools"
+pmdtools,host_removal,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LANES.bai (E01147, E00738); no directed path between any process of the two tools"
+pmdtools,mapdamage2,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E01139, E00959); no directed path between any process of the two tools"
+pmdtools,mtnucratio,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_DEDUPPED.bam (E01139, E00812); no directed path between any process of the two tools"
+pmdtools,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_FILTER_INDEX.bai (E01144, E00854); no directed path between any process of the two tools"
+pmdtools,qualimap,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01156, E00734); no directed path between any process of the two tools"
+pmdtools,samtools_view_genome,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01156, E00876); no directed path between any process of the two tools"
+preseq,angsd,parallel_co_use,0,0,,"both consume SAMTOOLS_FILTER_INDEX.bai (E00854, E01029); no directed path between any process of the two tools"
+preseq,bamutil,parallel_co_use,0,0,,"both consume SAMTOOLS_FILTER_INDEX.bai (E00854, E01205); no directed path between any process of the two tools"
+preseq,damageprofiler,parallel_co_use,0,0,,"both consume SAMTOOLS_VIEW_BAM_FILTERING.bam (E00852, E00890); no directed path between any process of the two tools"
+preseq,dedup,parallel_co_use,0,0,,"both consume SAMTOOLS_FILTER_INDEX.bai (E00854, E00635); no directed path between any process of the two tools"
+preseq,host_removal,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LANES.bai (E00857, E00738); no directed path between any process of the two tools"
+preseq,mapdamage2,parallel_co_use,0,0,,"both consume SAMTOOLS_VIEW_BAM_FILTERING.bam (E00852, E00962); no directed path between any process of the two tools"
+preseq,mtnucratio,parallel_co_use,0,0,,"both consume SAMTOOLS_VIEW_BAM_FILTERING.bam (E00852, E00815); no directed path between any process of the two tools"
+preseq,pmdtools,parallel_co_use,0,0,,"both consume SAMTOOLS_FILTER_INDEX.bai (E00854, E01144); no directed path between any process of the two tools"
+qualimap,angsd,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LIBRARIES.bam (E00727, E01641); no directed path between any process of the two tools"
+qualimap,bcftools,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00734, E01671); no directed path between any process of the two tools"
+qualimap,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LIBRARIES.bam (E00727, E00878); no directed path between any process of the two tools"
+qualimap,damageprofiler,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00734, E00909); no directed path between any process of the two tools"
+qualimap,freebayes,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LIBRARIES.bam (E00727, E01592); no directed path between any process of the two tools"
+qualimap,gatk,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LIBRARIES.bai (E00728, E01379); no directed path between any process of the two tools"
+qualimap,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LIBRARIES.bai (E00728, E01513); no directed path between any process of the two tools"
+qualimap,mapdamage2,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00734, E00981); no directed path between any process of the two tools"
+qualimap,mtnucratio,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00734, E00828); no directed path between any process of the two tools"
+qualimap,multivcfanalyzer,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00734, E01695); no directed path between any process of the two tools"
+qualimap,pmdtools,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00734, E01156); no directed path between any process of the two tools"
+qualimap,samtools_view_genome,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LIBRARIES.bai (E00728, E00871); no directed path between any process of the two tools"
+qualimap,sequencetools,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00734, E01295); no directed path between any process of the two tools"
+samtools_view_genome,angsd,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LIBRARIES.bam (E00870, E01641); no directed path between any process of the two tools"
+samtools_view_genome,bcftools,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00876, E01671); no directed path between any process of the two tools"
+samtools_view_genome,damageprofiler,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00876, E00909); no directed path between any process of the two tools"
+samtools_view_genome,freebayes,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT_MERGED_LIBRARIES.bam (E00870, E01592); no directed path between any process of the two tools"
+samtools_view_genome,gatk,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LIBRARIES.bai (E00871, E01379); no directed path between any process of the two tools"
+samtools_view_genome,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LIBRARIES.bai (E00871, E01513); no directed path between any process of the two tools"
+samtools_view_genome,mapdamage2,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00876, E00981); no directed path between any process of the two tools"
+samtools_view_genome,mtnucratio,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00876, E00828); no directed path between any process of the two tools"
+samtools_view_genome,multivcfanalyzer,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00876, E01695); no directed path between any process of the two tools"
+samtools_view_genome,pmdtools,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00876, E01156); no directed path between any process of the two tools"
+samtools_view_genome,qualimap,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX_MERGED_LIBRARIES.bai (E00871, E00728); no directed path between any process of the two tools"
+samtools_view_genome,sequencetools,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E00876, E01295); no directed path between any process of the two tools"
+seqkit,falco,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00113, E00075); no directed path between any process of the two tools"
+seqkit,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ_CONVERTED_BAM.reads (E00113, E00077); no directed path between any process of the two tools"
+sequencetools,angsd,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01289, E01647); no directed path between any process of the two tools"
+sequencetools,bcftools,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01289, E01665); no directed path between any process of the two tools"
+sequencetools,damageprofiler,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01289, E00903); no directed path between any process of the two tools"
+sequencetools,mtnucratio,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01295, E00828); no directed path between any process of the two tools"
+sequencetools,multivcfanalyzer,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01289, E01707); no directed path between any process of the two tools"
+sequencetools,qualimap,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01295, E00734); no directed path between any process of the two tools"
+sequencetools,samtools_view_genome,parallel_co_use,0,0,,"both consume BOWTIE2_BUILD.index (E01295, E00876); no directed path between any process of the two tools"
+taxpasta,amps,parallel_co_use,0,0,,"both consume MALT_RUN.rma6 (E00808, E00800); no directed path between any process of the two tools"
+taxpasta,hops,parallel_co_use,0,0,,"both consume MALT_RUN.rma6 (E00808, E00796); no directed path between any process of the two tools"

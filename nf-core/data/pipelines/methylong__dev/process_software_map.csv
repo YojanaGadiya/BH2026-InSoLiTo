@@ -1,0 +1,80 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_METHYLONG:METHYLONG:PACBIO:CCSMETH_CALLMODS,CCSMETH_CALLMODS,modules/local/ccsmeth/callmods/main.nf,1,ccsmeth,,ccsmeth,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:PBJASMINE,PBJASMINE,modules/nf-core/pbjasmine/main.nf,1,pbjasmine,pbjasmine,pbjasmine,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:FASTQ_UNZIP:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:FASTQ_UNZIP:GUNZIP,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:PACBIO_ALIGN_MINI:PACBIO_MINIMAP2_ALIGN,MINIMAP2_ALIGN,modules/nf-core/minimap2/align/main.nf,1,minimap2,minimap2,minimap2;samtools,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:PACBIO_ALIGN_MINI:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:PACBIO_ALIGN_PBMM2:PBMM2_ALIGN,PBMM2_ALIGN,modules/nf-core/pbmm2/align/main.nf,1,pbmm2,pbmm2,pbmm2,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:PACBIO_ALIGN_PBMM2:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:PACBIO_ALIGN_PBMM2:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:INDEX_MODKIT_PILEUP:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:INDEX_MODKIT_PILEUP:MODKIT_PILEUP_6mA,MODKIT_PILEUP,modules/nf-core/modkit/pileup/main.nf,1,ont-modkit,modkit,ont-modkit,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:INDEX_MODKIT_PILEUP:TABIX_TABIX_6MA,TABIX_TABIX,modules/nf-core/tabix/tabix/main.nf,1,tabix,tabix,htslib,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:INDEX_MODKIT_PILEUP:MODKIT_PILEUP,MODKIT_PILEUP,modules/nf-core/modkit/pileup/main.nf,1,ont-modkit,modkit,ont-modkit,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:INDEX_MODKIT_PILEUP:TABIX_TABIX,TABIX_TABIX,modules/nf-core/tabix/tabix/main.nf,1,tabix,tabix,htslib,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:PACBIO_SPLIT_STRAND_PBCPG_PILEUP:SAMTOOLS_SPLIT_STRAND,SAMTOOLS_SPLIT_STRAND,modules/local/samtools/split_strands/main.nf,1,samtools_split_strand,,,module name
+NFCORE_METHYLONG:METHYLONG:PACBIO:PACBIO_SPLIT_STRAND_PBCPG_PILEUP:SAMTOOLS_MERGE,SAMTOOLS_MERGE,modules/local/samtools/merge/main.nf,1,samtools_merge,,,module name
+NFCORE_METHYLONG:METHYLONG:PACBIO:PACBIO_SPLIT_STRAND_PBCPG_PILEUP:PB_CPG_TOOLS,PB_CPG_TOOLS,modules/local/pb_cpg_tools/main.nf,1,pb_cpg_tools,,,module name
+NFCORE_METHYLONG:METHYLONG:PACBIO:BED2BEDGRAPH:MODKIT_BEDGRAPH,MODKIT_BEDGRAPH,modules/local/bed2bedgraphs/modkit_bedgraphs/main.nf,1,modkit_bedgraph,,pigz,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:BED2BEDGRAPH:PBCPG_BEDGRAPHS,PBCPG_BEDGRAPHS,modules/local/bed2bedgraphs/pbcpgtools_bedgraphs/main.nf,1,pbcpg_bedgraphs,,pigz,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:PACBIO_CALLFREQB_CCSMETH:CCSMETH_CALLFREQB,CCSMETH_CALLFREQB,modules/local/ccsmeth/callfreqb/main.nf,1,ccsmeth,,ccsmeth,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:PACBIO_CALLFREQB_CCSMETH:TABIX_TABIX,TABIX_TABIX,modules/nf-core/tabix/tabix/main.nf,1,tabix,tabix,htslib,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:CCSMETH_BEDGRAPH,MODKIT_BEDGRAPH,modules/local/bed2bedgraphs/modkit_bedgraphs/main.nf,1,modkit_bedgraph,,pigz,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:PACBIO_FIBERSEQ:FIBERTOOLSRS_PREDICTM6A,FIBERTOOLSRS_PREDICTM6A,modules/nf-core/fibertoolsrs/predictm6a/main.nf,1,fibertools-rs,fibertoolsrs,fibertools-rs,environment.yml
+NFCORE_METHYLONG:METHYLONG:PACBIO:PACBIO_FIBERSEQ:FIBERTOOLSRS_EXTRACT,FIBERTOOLSRS_EXTRACT,modules/nf-core/fibertoolsrs/extract/main.nf,1,fibertools-rs,fibertoolsrs,fibertools-rs,environment.yml
+NFCORE_METHYLONG:METHYLONG:ONT:DORADO_BASECALLER,DORADO_BASECALLER,modules/local/dorado/basecaller/main.nf,1,dorado_basecaller,,,module name
+NFCORE_METHYLONG:METHYLONG:ONT:FASTQ_UNZIP:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_METHYLONG:METHYLONG:ONT:FASTQ_UNZIP:GUNZIP,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_METHYLONG:METHYLONG:ONT:ONT_TRIM_REPAIR:SAMTOOLS_RESET,SAMTOOLS_RESET,modules/local/samtools/reset/main.nf,1,samtools_reset,,,module name
+NFCORE_METHYLONG:METHYLONG:ONT:ONT_TRIM_REPAIR:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_METHYLONG:METHYLONG:ONT:ONT_TRIM_REPAIR:SAMTOOLS_FASTQ,SAMTOOLS_FASTQ,modules/nf-core/samtools/fastq/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_METHYLONG:METHYLONG:ONT:ONT_TRIM_REPAIR:RENAME_FASTQ,RENAME_FASTQ,modules/local/rename_fastq/main.nf,1,rename_fastq,,,module name
+NFCORE_METHYLONG:METHYLONG:ONT:ONT_TRIM_REPAIR:PORECHOP_PORECHOP,PORECHOP_PORECHOP,modules/nf-core/porechop/porechop/main.nf,1,porechop,porechop,porechop;pigz,environment.yml
+NFCORE_METHYLONG:METHYLONG:ONT:ONT_TRIM_REPAIR:SAMTOOLS_IMPORT,SAMTOOLS_IMPORT,modules/nf-core/samtools/import/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_METHYLONG:METHYLONG:ONT:ONT_TRIM_REPAIR:MODKIT_REPAIR,MODKIT_REPAIR,modules/nf-core/modkit/repair/main.nf,1,ont-modkit,modkit,ont-modkit,environment.yml
+NFCORE_METHYLONG:METHYLONG:ONT:ONT_ALIGN:ONT_MINIMAP2_ALIGN,MINIMAP2_ALIGN,modules/nf-core/minimap2/align/main.nf,1,minimap2,minimap2,minimap2;samtools,environment.yml
+NFCORE_METHYLONG:METHYLONG:ONT:ONT_ALIGN:SAMTOOLS_RESET,SAMTOOLS_RESET,modules/local/samtools/reset/main.nf,1,samtools_reset,,,module name
+NFCORE_METHYLONG:METHYLONG:ONT:ONT_ALIGN:DORADO_ALIGNER,DORADO_ALIGNER,modules/local/dorado/aligner/main.nf,1,dorado_aligner,,,module name
+NFCORE_METHYLONG:METHYLONG:ONT:ONT_ALIGN:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_METHYLONG:METHYLONG:ONT:INDEX_MODKIT_PILEUP:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_METHYLONG:METHYLONG:ONT:INDEX_MODKIT_PILEUP:MODKIT_PILEUP_6mA,MODKIT_PILEUP,modules/nf-core/modkit/pileup/main.nf,1,ont-modkit,modkit,ont-modkit,environment.yml
+NFCORE_METHYLONG:METHYLONG:ONT:INDEX_MODKIT_PILEUP:TABIX_TABIX_6MA,TABIX_TABIX,modules/nf-core/tabix/tabix/main.nf,1,tabix,tabix,htslib,environment.yml
+NFCORE_METHYLONG:METHYLONG:ONT:INDEX_MODKIT_PILEUP:MODKIT_PILEUP,MODKIT_PILEUP,modules/nf-core/modkit/pileup/main.nf,1,ont-modkit,modkit,ont-modkit,environment.yml
+NFCORE_METHYLONG:METHYLONG:ONT:INDEX_MODKIT_PILEUP:TABIX_TABIX,TABIX_TABIX,modules/nf-core/tabix/tabix/main.nf,1,tabix,tabix,htslib,environment.yml
+NFCORE_METHYLONG:METHYLONG:ONT:BED2BEDGRAPH:MODKIT_BEDGRAPH,MODKIT_BEDGRAPH,modules/local/bed2bedgraphs/modkit_bedgraphs/main.nf,1,modkit_bedgraph,,pigz,environment.yml
+NFCORE_METHYLONG:METHYLONG:ONT:BED2BEDGRAPH:PBCPG_BEDGRAPHS,PBCPG_BEDGRAPHS,modules/local/bed2bedgraphs/pbcpgtools_bedgraphs/main.nf,1,pbcpg_bedgraphs,,pigz,environment.yml
+NFCORE_METHYLONG:METHYLONG:ONT:ONT_FIBERSEQ:MODKIT_CALLMODS,MODKIT_CALLMODS,modules/nf-core/modkit/callmods/main.nf,1,ont-modkit,modkit,ont-modkit,environment.yml
+NFCORE_METHYLONG:METHYLONG:ONT:ONT_FIBERSEQ:FIBERTOOLSRS_ADDNUCLEOSOMES,FIBERTOOLSRS_ADDNUCLEOSOMES,modules/nf-core/fibertoolsrs/addnucleosomes/main.nf,1,fibertools-rs,fibertoolsrs,fibertools-rs,environment.yml
+NFCORE_METHYLONG:METHYLONG:ONT:ONT_FIBERSEQ:FIBERTOOLSRS_EXTRACT,FIBERTOOLSRS_EXTRACT,modules/nf-core/fibertoolsrs/extract/main.nf,1,fibertools-rs,fibertoolsrs,fibertools-rs,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:SNVCALL_CLAIR3:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:SNVCALL_CLAIR3:CLAIR3,CLAIR3,modules/nf-core/clair3/main.nf,1,clair3,clair3,clair3,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:GUNZIP_AWK:GUNZIP,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:GUNZIP_AWK:GAWK,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:WHATSHAP:WHATSHAP_PHASE,WHATSHAP_PHASE,modules/local/whatshap/phase/main.nf,1,whatshap,,whatshap,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:WHATSHAP:TABIX_TABIX_PHASE,TABIX_TABIX,modules/nf-core/tabix/tabix/main.nf,1,tabix,tabix,htslib,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:WHATSHAP:WHATSHAP_HAPLOTAG,WHATSHAP_HAPLOTAG,modules/local/whatshap/haplotag/main.nf,1,whatshap,,whatshap,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:WHATSHAP:SAMTOOLS_INDEX_PHASE,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:MODKIT_DMR_HAPLOTYPE_LEVEL:MODKIT_PILEUP_HAPLOTYPE_LEVEL,MODKIT_PILEUP,modules/nf-core/modkit/pileup/main.nf,1,ont-modkit,modkit,ont-modkit,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:MODKIT_DMR_HAPLOTYPE_LEVEL:TABIX_TABIX_1,TABIX_TABIX,modules/nf-core/tabix/tabix/main.nf,1,tabix,tabix,htslib,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:MODKIT_DMR_HAPLOTYPE_LEVEL:TABIX_TABIX_2,TABIX_TABIX,modules/nf-core/tabix/tabix/main.nf,1,tabix,tabix,htslib,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:MODKIT_DMR_HAPLOTYPE_LEVEL:DMR_HAPLOTYPE_LEVEL,MODKIT_DMRPAIR,modules/local/modkit/dmrpair/main.nf,1,ont-modkit,,ont-modkit,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:DSS_HAPLOTYPE_LEVEL:MODKIT_PILEUP_HAPLOTYPE_LEVEL,MODKIT_PILEUP,modules/nf-core/modkit/pileup/main.nf,1,ont-modkit,modkit,ont-modkit,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:DSS_HAPLOTYPE_LEVEL:GAWK_1,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:DSS_HAPLOTYPE_LEVEL:GAWK_2,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:DSS_HAPLOTYPE_LEVEL:DSS,DSS,modules/local/dss/main.nf,1,bioconductor-dss,,bioconductor-dss;r-base,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:MODKIT_DMR_POPULATION_SCALE:PREPROCESS_A:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:MODKIT_DMR_POPULATION_SCALE:PREPROCESS_A:MODKIT_PILEUP_POPULATION_SCALE,MODKIT_PILEUP,modules/nf-core/modkit/pileup/main.nf,1,ont-modkit,modkit,ont-modkit,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:MODKIT_DMR_POPULATION_SCALE:PREPROCESS_A:TABIX_TABIX,TABIX_TABIX,modules/nf-core/tabix/tabix/main.nf,1,tabix,tabix,htslib,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:MODKIT_DMR_POPULATION_SCALE:PREPROCESS_B:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:MODKIT_DMR_POPULATION_SCALE:PREPROCESS_B:MODKIT_PILEUP_POPULATION_SCALE,MODKIT_PILEUP,modules/nf-core/modkit/pileup/main.nf,1,ont-modkit,modkit,ont-modkit,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:MODKIT_DMR_POPULATION_SCALE:PREPROCESS_B:TABIX_TABIX,TABIX_TABIX,modules/nf-core/tabix/tabix/main.nf,1,tabix,tabix,htslib,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:MODKIT_DMR_POPULATION_SCALE:DMR_POPULATION_SCALE,MODKIT_DMRPAIR,modules/local/modkit/dmrpair/main.nf,1,ont-modkit,,ont-modkit,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:DSS_DMR_POPULATION_SCALE:PREPROCESS_A:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:DSS_DMR_POPULATION_SCALE:PREPROCESS_A:MODKIT_PILEUP_POPULATION_SCALE,MODKIT_PILEUP,modules/nf-core/modkit/pileup/main.nf,1,ont-modkit,modkit,ont-modkit,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:DSS_DMR_POPULATION_SCALE:PREPROCESS_A:GAWK_FOR_DSS,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:DSS_DMR_POPULATION_SCALE:PREPROCESS_B:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:DSS_DMR_POPULATION_SCALE:PREPROCESS_B:MODKIT_PILEUP_POPULATION_SCALE,MODKIT_PILEUP,modules/nf-core/modkit/pileup/main.nf,1,ont-modkit,modkit,ont-modkit,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:DSS_DMR_POPULATION_SCALE:PREPROCESS_B:GAWK_FOR_DSS,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_METHYLONG:METHYLONG:DOWNSTREAM:DSS_DMR_POPULATION_SCALE:DSS_POPULATION_SCALE,DSS,modules/local/dss/main.nf,1,bioconductor-dss,,bioconductor-dss;r-base,environment.yml
+NFCORE_METHYLONG:METHYLONG:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

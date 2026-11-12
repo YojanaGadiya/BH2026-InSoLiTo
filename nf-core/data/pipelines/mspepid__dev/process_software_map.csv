@@ -1,0 +1,17 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_MSPEPID:MSPEPID:PREPARE_DATABASES:FDRBENCH,FDRBENCH,modules/local/fdrbench/main.nf,1,fdrbench,fdrbench,,meta.yml
+NFCORE_MSPEPID:MSPEPID:PREPARE_DATABASES:OPENMS_DECOYDATABASE,OPENMS_DECOYDATABASE,modules/nf-core/openms/decoydatabase/main.nf,1,openms,openms,openms,environment.yml
+NFCORE_MSPEPID:MSPEPID:PREPARE_SPECTRA:GUNZIP,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_MSPEPID:MSPEPID:PREPARE_SPECTRA:UNTAR,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_MSPEPID:MSPEPID:PREPARE_SPECTRA:UNZIP,UNZIP,modules/nf-core/unzip/main.nf,1,p7zip,unzip,p7zip,environment.yml
+NFCORE_MSPEPID:MSPEPID:PREPARE_SPECTRA:TDF2MZML,TDF2MZML,modules/local/tdf2mzml/main.nf,1,tdf2mzml,tdf2mzml,,meta.yml
+NFCORE_MSPEPID:MSPEPID:PREPARE_SPECTRA:THERMORAWFILEPARSER,THERMORAWFILEPARSER,modules/nf-core/thermorawfileparser/main.nf,1,thermorawfileparser,thermorawfileparser,thermorawfileparser;mono,environment.yml
+NFCORE_MSPEPID:MSPEPID:SPECTRA_IDENTIFICATION:COMETCONFIG,COMETCONFIG,modules/local/cometconfig/main.nf,1,cometconfig,,sed,environment.yml
+NFCORE_MSPEPID:MSPEPID:SPECTRA_IDENTIFICATION:COMET,COMET,modules/nf-core/comet/main.nf,1,comet-ms,comet,comet-ms,environment.yml
+NFCORE_MSPEPID:MSPEPID:SPECTRA_IDENTIFICATION:SAGECONFIG,SAGECONFIG,modules/local/sageconfig/main.nf,1,python,python,,meta.yml
+NFCORE_MSPEPID:MSPEPID:SPECTRA_IDENTIFICATION:SAGEBETA,SAGEBETA,modules/local/sagebeta/main.nf,1,sage,sage,,meta.yml
+NFCORE_MSPEPID:MSPEPID:SPECTRA_IDENTIFICATION:PSMUTILSCONVERSIONS,PSMUTILSCONVERSIONS,modules/local/psmutilsconversions/main.nf,1,psmutilsconversions,,,module name
+NFCORE_MSPEPID:MSPEPID:SPECTRA_RESCORING:PERCOLATOR,PERCOLATOR,modules/nf-core/percolator/main.nf,1,percolator,percolator,percolator,environment.yml
+NFCORE_MSPEPID:MSPEPID:SPECTRA_RESCORING:MS2RESCORE_GETMODEL,MS2RESCORE_GETMODEL,modules/local/ms2rescore/getmodel/main.nf,1,ms2rescore,,ms2rescore,environment.yml
+NFCORE_MSPEPID:MSPEPID:SPECTRA_RESCORING:MS2RESCORE_RUNMS2RESCORE,MS2RESCORE_RUNMS2RESCORE,modules/local/ms2rescore/runms2rescore/main.nf,1,ms2rescore,ms2rescore,ms2rescore,environment.yml
+NFCORE_MSPEPID:MSPEPID:SPECTRA_RESCORING:MS2RESCORE_PERCOLATOR,PERCOLATOR,modules/nf-core/percolator/main.nf,1,percolator,percolator,percolator,environment.yml

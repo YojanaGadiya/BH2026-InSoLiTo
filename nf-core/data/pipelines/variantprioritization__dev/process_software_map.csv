@@ -1,0 +1,14 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_VARIANTPRIORITIZATION:VARIANTPRIORITIZATION:REFERENCE_DATA:PCGR_GETREF,PCGR_GETREF,modules/nf-core/pcgr/getref/main.nf,1,curl,pcgr,coreutils;gzip;tar;curl,environment.yml
+NFCORE_VARIANTPRIORITIZATION:VARIANTPRIORITIZATION:REFERENCE_DATA:UNTAR_PCGR_DB,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_VARIANTPRIORITIZATION:VARIANTPRIORITIZATION:REFERENCE_DATA:UNTAR_VEP_CACHE,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_VARIANTPRIORITIZATION:VARIANTPRIORITIZATION:INPUT_PREPROCESSING:HTSLIB_BGZIPTABIX,HTSLIB_BGZIPTABIX,modules/nf-core/htslib/bgziptabix/main.nf,1,xz,htslib,htslib;xz,environment.yml
+NFCORE_VARIANTPRIORITIZATION:VARIANTPRIORITIZATION:INPUT_PREPROCESSING:BCFTOOLS_NORM,BCFTOOLS_NORM,modules/nf-core/bcftools/norm/main.nf,1,bcftools,norm,bcftools;htslib,environment.yml
+NFCORE_VARIANTPRIORITIZATION:VARIANTPRIORITIZATION:INPUT_PREPROCESSING:BCFTOOLS_FILTER,BCFTOOLS_FILTER,modules/nf-core/bcftools/filter/main.nf,1,bcftools,filter,bcftools;htslib,environment.yml
+NFCORE_VARIANTPRIORITIZATION:VARIANTPRIORITIZATION:PREPARE_SOMATIC:REFORMAT_VCF,REFORMAT_VCF,modules/local/reformat/vcf/main.nf,1,bcftools,reformat_vcf.py,bcftools;pysam;pandas;python,environment.yml
+NFCORE_VARIANTPRIORITIZATION:VARIANTPRIORITIZATION:PREPARE_SOMATIC:REFORMAT_CNA,REFORMAT_CNA,modules/local/reformat/cna/main.nf,1,pysam,reformat_cna.py,pysam;vcf2tsvpy;numpy;pandas;python,environment.yml
+NFCORE_VARIANTPRIORITIZATION:VARIANTPRIORITIZATION:PREPARE_SOMATIC:INTERSECT_VCF,INTERSECT_VCF,modules/local/intersect/vcf/main.nf,1,bcftools,isec_vcfs.py,bcftools;pysam;pandas;python,environment.yml
+NFCORE_VARIANTPRIORITIZATION:VARIANTPRIORITIZATION:PREPARE_SOMATIC:PCGR_PREPAREVCF,PCGR_PREPAREVCF,modules/local/pcgr/preparevcf/main.nf,1,numpy,pcgr_vcf,python;numpy;pandas;pysam;vcf2tsvpy,environment.yml
+NFCORE_VARIANTPRIORITIZATION:VARIANTPRIORITIZATION:PCGR_RUN,PCGR_RUN,modules/local/pcgr/run/main.nf,1,pcgr,,pcgr;r-pcgrr,environment.yml
+NFCORE_VARIANTPRIORITIZATION:VARIANTPRIORITIZATION:CPSR_RUN,CPSR_RUN,modules/local/cpsr/run/main.nf,1,pcgr,,pcgr;r-pcgrr,environment.yml
+NFCORE_VARIANTPRIORITIZATION:VARIANTPRIORITIZATION:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

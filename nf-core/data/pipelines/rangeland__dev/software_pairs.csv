@@ -1,0 +1,11 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+force_generate_analysis_mask,force_higher_level,data_flow,1,1,E00011,
+force_generate_tile_allow_list,force_preprocess,data_flow,1,1,E00002,
+force_higher_level,force_mosaic,data_flow,1,1,E00012,
+force_higher_level,force_pyramid,data_flow,1,1,E00013,
+force_preprocess,force_higher_level,data_flow,2,2,E00008,
+force_preprocess,merge,data_flow,2,2,E00005,
+merge,force_higher_level,data_flow,2,2,E00007,
+untar,force_preprocess,data_flow,3,3,E00001,
+force_mosaic,force_pyramid,parallel_co_use,0,0,,"both consume FORCE_HIGHER_LEVEL.trend_files (E00012, E00013); no directed path between any process of the two tools"
+force_pyramid,force_mosaic,parallel_co_use,0,0,,"both consume FORCE_HIGHER_LEVEL.trend_files (E00013, E00012); no directed path between any process of the two tools"

@@ -1,0 +1,7 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+sopa,pip,data_flow,3,3,E00014,
+sopa,rust-proseg,data_flow,4,4,E00024,
+spaceranger,sopa,data_flow,1,1,E00003,
+untar,spaceranger,data_flow,2,2,E00001,
+pip,rust-proseg,parallel_co_use,0,0,,"both consume MAKE_TRANSCRIPT_PATCHES.#0 (E00020, E00027); no directed path between any process of the two tools"
+rust-proseg,pip,parallel_co_use,0,0,,"both consume MAKE_TRANSCRIPT_PATCHES.#0 (E00027, E00020); no directed path between any process of the two tools"

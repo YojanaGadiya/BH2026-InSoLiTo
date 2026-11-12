@@ -1,0 +1,19 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_READSIMULATOR:READSIMULATOR:NCBIGENOMEDOWNLOAD,NCBIGENOMEDOWNLOAD,modules/nf-core/ncbigenomedownload/main.nf,1,ncbi-genome-download,ncbigenomedownload,ncbi-genome-download,environment.yml
+NFCORE_READSIMULATOR:READSIMULATOR:MERGE_FASTAS,MERGE_FASTAS,modules/local/custom/merge_fastas/main.nf,1,merge_fastas,,sed,environment.yml
+NFCORE_READSIMULATOR:READSIMULATOR:AMPLICON_WORKFLOW:CRABS_DBIMPORT,CRABS_DBIMPORT,modules/local/crabs/dbimport/main.nf,1,crabs,,crabs,environment.yml
+NFCORE_READSIMULATOR:READSIMULATOR:AMPLICON_WORKFLOW:CRABS_INSILICOPCR,CRABS_INSILICOPCR,modules/local/crabs/insilicopcr/main.nf,1,crabs,,crabs,environment.yml
+NFCORE_READSIMULATOR:READSIMULATOR:AMPLICON_WORKFLOW:ART_ILLUMINA,ART_ILLUMINA,modules/nf-core/art/illumina/main.nf,1,art,art,,meta.yml
+NFCORE_READSIMULATOR:READSIMULATOR:TARGET_CAPTURE_WORKFLOW:UNZIP,UNZIP,modules/local/unzip/main.nf,1,unzip,,unzip,environment.yml
+NFCORE_READSIMULATOR:READSIMULATOR:TARGET_CAPTURE_WORKFLOW:UNCOMPRESS_FASTA,UNCOMPRESS_FASTA,modules/local/uncompress_fasta/main.nf,1,uncompress_fasta,,gzip,environment.yml
+NFCORE_READSIMULATOR:READSIMULATOR:TARGET_CAPTURE_WORKFLOW:BEDTOOLS_GETFASTA,BEDTOOLS_GETFASTA,modules/nf-core/bedtools/getfasta/main.nf,1,bedtools,bedtools,bedtools,environment.yml
+NFCORE_READSIMULATOR:READSIMULATOR:TARGET_CAPTURE_WORKFLOW:BOWTIE2_BUILD,BOWTIE2_BUILD,modules/nf-core/bowtie2/build/main.nf,1,bowtie2,bowtie2,bowtie2,environment.yml
+NFCORE_READSIMULATOR:READSIMULATOR:TARGET_CAPTURE_WORKFLOW:BOWTIE2_ALIGN,BOWTIE2_ALIGN,modules/nf-core/bowtie2/align/main.nf,1,bowtie2,bowtie2,bowtie2;samtools;pigz,environment.yml
+NFCORE_READSIMULATOR:READSIMULATOR:TARGET_CAPTURE_WORKFLOW:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,samtools,environment.yml
+NFCORE_READSIMULATOR:READSIMULATOR:TARGET_CAPTURE_WORKFLOW:JAPSA_CAPSIM,JAPSA_CAPSIM,modules/local/japsa/capsim/main.nf,1,japsa_capsim,,,module name
+NFCORE_READSIMULATOR:READSIMULATOR:INSILICOSEQ_GENERATE,INSILICOSEQ_GENERATE,modules/local/insilicoseq/generate/main.nf,1,insilicoseq,,insilicoseq,environment.yml
+NFCORE_READSIMULATOR:READSIMULATOR:WGSIM,WGSIM,modules/local/wgsim/main.nf,1,wgsim,,wgsim,environment.yml
+NFCORE_READSIMULATOR:READSIMULATOR:CREATE_SAMPLESHEET,CREATE_SAMPLESHEET,modules/local/custom/create_samplesheet/main.nf,1,create_samplesheet,,,module name
+NFCORE_READSIMULATOR:READSIMULATOR:MERGE_SAMPLESHEETS,MERGE_SAMPLESHEETS,modules/local/custom/merge_samplesheets/main.nf,1,merge_samplesheets,,sed,environment.yml
+NFCORE_READSIMULATOR:READSIMULATOR:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_READSIMULATOR:READSIMULATOR:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

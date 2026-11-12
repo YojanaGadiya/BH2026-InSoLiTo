@@ -1,0 +1,29 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+get_software_versions,get_software_versions,main.nf,246,fastqc,,fastqc;multiqc;cutadapt;bowtie2,script and directives
+generate_premap_index,generate_premap_index,main.nf,294,bowtie2-build,,bowtie2-build,script and directives
+decompress_fasta,decompress_fasta,main.nf,329,decompress_fasta,,,module name
+generate_fai,generate_fai,main.nf,351,samtools,,samtools,script and directives
+decompress_gtf,decompress_gtf,main.nf,386,decompress_gtf,,,module name
+generate_star_index,generate_star_index,main.nf,405,star,,star;samtools,script and directives
+generate_star_index_no_gtf,generate_star_index_no_gtf,main.nf,435,star,,star;samtools,script and directives
+icount_segment,icount_segment,main.nf,476,icount,,icount,script and directives
+fastqc,fastqc,main.nf,506,fastqc,,fastqc,script and directives
+move_umi,move_umi,main.nf,537,umi_tools,,umi_tools;extract,script and directives
+cutadapt,cutadapt,main.nf,567,cutadapt,,cutadapt,script and directives
+premap,premap,main.nf,590,samtools,,samtools;bowtie2,script and directives
+align,align,main.nf,620,samtools,,samtools;star,script and directives
+preseq,preseq,main.nf,662,preseq,,preseq,script and directives
+dedup,dedup,main.nf,690,dedup,,dedup;umi_tools;samtools,script and directives
+rseqc,rseqc,main.nf,730,gtf2bed,,gtf2bed;read_distribution,script and directives
+get_crosslinks,get_crosslinks,main.nf,759,bedtools,,bedtools,script and directives
+icount_peak_call,icount_peak_call,main.nf,788,icount,,icount;bedtools,script and directives
+icount_motif_dreme,icount_motif_dreme,main.nf,819,dreme,,dreme;bedtools;shuf,script and directives
+paraclu_peak_call,paraclu_peak_call,main.nf,851,paraclu,,paraclu;paraclu-cut;bedtools,script and directives
+paraclu_motif_dreme,paraclu_motif_dreme,main.nf,884,dreme,,dreme;bedtools;shuf,script and directives
+pureclip_peak_call,pureclip_peak_call,main.nf,919,pureclip,,pureclip,script and directives
+pureclip_motif_dreme,pureclip_motif_dreme,main.nf,956,dreme,,dreme;bedtools;shuf,script and directives
+piranha_peak_call,piranha_peak_call,main.nf,989,piranha,,piranha,script and directives
+piranha_motif_dreme,piranha_motif_dreme,main.nf,1025,dreme,,dreme;bedtools;shuf,script and directives
+clipqc,clipqc,main.nf,1056,clip_qc,,clip_qc,script and directives
+multiqc,multiqc,main.nf,1100,multiqc,,multiqc,script and directives
+output_documentation,output_documentation,main.nf,1138,markdown_to_html,,markdown_to_html,script and directives

@@ -1,0 +1,51 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:UNTAR,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:CUSTOM_PDBSTOFASTA,CUSTOM_PDBSTOFASTA,modules/local/custom/pdbtofasta/main.nf,1,custom_pdbstofasta,,,module name
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:FASTAVALIDATOR,FASTAVALIDATOR,modules/nf-core/fastavalidator/main.nf,1,py_fasta_validator,fasta_validate,py_fasta_validator,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:PREPROCESS:TCOFFEE_EXTRACTFROMPDB,TCOFFEE_EXTRACTFROMPDB,modules/nf-core/tcoffee/extractfrompdb/main.nf,1,t-coffee,tcoffee,t-coffee,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:TEMPLATES:CREATE_TEMPLATE,CREATE_TEMPLATE,modules/local/custom/create_template/main.nf,1,create_template,,,module name
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:STATS:TCOFFEE_SEQREFORMAT_SIM,TCOFFEE_SEQREFORMAT,modules/nf-core/tcoffee/seqreformat/main.nf,1,t-coffee,tcoffee,t-coffee,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:STATS:PARSE_SIM,PARSE_SIM,modules/local/custom/parse_sim/main.nf,1,parse_sim,,,module name
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:STATS:CONCAT_SIMSTATS,CSVTK_CONCAT,modules/nf-core/csvtk/concat/main.nf,1,csvtk,csvtk,csvtk,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:STATS:CALCULATE_SEQSTATS,CALCULATE_SEQSTATS,modules/local/custom/calculate_seqstats/main.nf,1,calculate_seqstats,,,module name
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:STATS:CONCAT_SEQSTATS,CSVTK_CONCAT,modules/nf-core/csvtk/concat/main.nf,1,csvtk,csvtk,csvtk,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:STATS:EXTRACT_PLDDT,EXTRACT_PLDDT,modules/local/custom/extract_plddt/main.nf,1,extract_plddt,,,module name
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:STATS:CONCAT_PLDDTS,CSVTK_CONCAT,modules/nf-core/csvtk/concat/main.nf,1,csvtk,csvtk,csvtk,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:STATS:MERGE_STATS,CSVTK_JOIN,modules/nf-core/csvtk/join/main.nf,1,csvtk,csvtk,csvtk,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:ALIGN:COMPUTE_TREES:FAMSA_GUIDETREE,FAMSA_GUIDETREE,modules/nf-core/famsa/guidetree/main.nf,1,famsa,famsa,famsa,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:ALIGN:COMPUTE_TREES:CLUSTALO_GUIDETREE,CLUSTALO_GUIDETREE,modules/nf-core/clustalo/guidetree/main.nf,1,clustalo,clustalo,clustalo,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:ALIGN:COMPUTE_TREES:MAFFT_GUIDETREE,MAFFT_GUIDETREE,modules/nf-core/mafft/guidetree/main.nf,1,mafft,mafft,mafft,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:ALIGN:CLUSTALO_ALIGN,CLUSTALO_ALIGN,modules/nf-core/clustalo/align/main.nf,1,clustalo,clustalo;pigz,clustalo;pigz,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:ALIGN:FAMSA_ALIGN,FAMSA_ALIGN,modules/nf-core/famsa/align/main.nf,1,famsa,famsa,famsa,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:ALIGN:KALIGN_ALIGN,KALIGN_ALIGN,modules/nf-core/kalign/align/main.nf,1,kalign3,kalign,kalign3;pigz,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:ALIGN:LEARNMSA_ALIGN,LEARNMSA_ALIGN,modules/nf-core/learnmsa/align/main.nf,1,learnmsa,learnmsa,coreutils,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:ALIGN:PIGZ_COMPRESS_LEARNMSA,PIGZ_COMPRESS,modules/nf-core/pigz/compress/main.nf,1,pigz,pigz,pigz,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:ALIGN:MAFFT_ALIGN,MAFFT_ALIGN,modules/nf-core/mafft/align/main.nf,1,mafft,mafft;pigz,mafft;pigz,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:ALIGN:MAGUS_ALIGN,MAGUS_ALIGN,modules/nf-core/magus/align/main.nf,1,magus-msa,magus,magus-msa;pigz,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:ALIGN:MUSCLE5_ALIGN,MUSCLE5_SUPER5,modules/nf-core/muscle5/super5/main.nf,1,muscle,muscle -super5;pigz,muscle;pigz,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:ALIGN:TCOFFEE_ALIGN,TCOFFEE_ALIGN,modules/nf-core/tcoffee/align/main.nf,1,t-coffee,tcoffee;pigz,t-coffee;tmalign;pigz,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:ALIGN:REGRESSIVE_ALIGN,TCOFFEE_REGRESSIVE,modules/nf-core/tcoffee/regressive/main.nf,1,t-coffee,tcoffee;pigz,t-coffee;pigz,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:ALIGN:UPP_ALIGN,UPP_ALIGN,modules/nf-core/upp/align/main.nf,1,upp,upp,,meta.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:ALIGN:TCOFFEE3D_ALIGN,TCOFFEE_ALIGN,modules/nf-core/tcoffee/align/main.nf,1,t-coffee,tcoffee;pigz,t-coffee;tmalign;pigz,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:ALIGN:MTMALIGN_ALIGN,MTMALIGN_ALIGN,modules/nf-core/mtmalign/align/main.nf,1,mtm-align,mTM-align;pigz,mtm-align;pigz,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:ALIGN:FOLDMASON_ALIGN,FOLDMASON_EASYMSA,modules/nf-core/foldmason/easymsa/main.nf,1,foldmason,foldmason,foldmason;pigz,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:ALIGN:CONSENSUS,TCOFFEE_CONSENSUS,modules/nf-core/tcoffee/consensus/main.nf,1,t-coffee,tcoffee;pigz,t-coffee;pigz,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:PIGZ_COMPRESS,PIGZ_COMPRESS,modules/nf-core/pigz/compress/main.nf,1,pigz,pigz,pigz,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:EVALUATE:TCOFFEE_ALNCOMPARE_SP,TCOFFEE_ALNCOMPARE,modules/nf-core/tcoffee/alncompare/main.nf,1,t-coffee,tcoffee;pigz,t-coffee;pigz,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:EVALUATE:CONCAT_SP,CSVTK_CONCAT,modules/nf-core/csvtk/concat/main.nf,1,csvtk,csvtk,csvtk,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:EVALUATE:TCOFFEE_ALNCOMPARE_TC,TCOFFEE_ALNCOMPARE,modules/nf-core/tcoffee/alncompare/main.nf,1,t-coffee,tcoffee;pigz,t-coffee;pigz,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:EVALUATE:CONCAT_TC,CSVTK_CONCAT,modules/nf-core/csvtk/concat/main.nf,1,csvtk,csvtk,csvtk,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:EVALUATE:CALC_GAPS,CALC_GAPS,modules/local/custom/calculate_gaps/main.nf,1,calc_gaps,,,module name
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:EVALUATE:CONCAT_GAPS,CSVTK_CONCAT,modules/nf-core/csvtk/concat/main.nf,1,csvtk,csvtk,csvtk,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:EVALUATE:TCOFFEE_IRMSD,TCOFFEE_IRMSD,modules/nf-core/tcoffee/irmsd/main.nf,1,t-coffee,tcoffee;pigz,t-coffee;pigz,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:EVALUATE:PARSE_IRMSD,PARSE_IRMSD,modules/local/custom/parse_irmsd/main.nf,1,parse_irmsd,,,module name
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:EVALUATE:CONCAT_IRMSD,CSVTK_CONCAT,modules/nf-core/csvtk/concat/main.nf,1,csvtk,csvtk,csvtk,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:EVALUATE:TCOFFEE_TCS,TCOFFEE_TCS,modules/nf-core/tcoffee/tcs/main.nf,1,t-coffee,tcoffee;pigz,t-coffee;pigz,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:EVALUATE:CONCAT_TCS,CSVTK_CONCAT,modules/nf-core/csvtk/concat/main.nf,1,csvtk,csvtk,csvtk,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:EVALUATE:MERGE_EVAL,CSVTK_JOIN,modules/nf-core/csvtk/join/main.nf,1,csvtk,csvtk,csvtk,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:MERGE_STATS_EVAL,CSVTK_JOIN,modules/nf-core/csvtk/join/main.nf,1,csvtk,csvtk,csvtk,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:PREPARE_SHINY,PREPARE_SHINY,modules/local/custom/prepare_shiny/main.nf,1,prepare_shiny,,,module name
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:VISUALIZATION:FOLDMASON_CREATEDB,FOLDMASON_CREATEDB,modules/nf-core/foldmason/createdb/main.nf,1,foldmason,foldmason,foldmason,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:VISUALIZATION:FOLDMASON_MSA2LDDTREPORT,FOLDMASON_MSA2LDDTREPORT,modules/nf-core/foldmason/msa2lddtreport/main.nf,1,foldmason,foldmason,foldmason,environment.yml
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:PREPARE_MULTIQC,PREPARE_MULTIQC,modules/local/custom/prepare_multiqc/main.nf,1,prepare_multiqc,,,module name
+NFCORE_MULTIPLESEQUENCEALIGN:MULTIPLESEQUENCEALIGN:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

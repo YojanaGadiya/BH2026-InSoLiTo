@@ -1,0 +1,80 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bowtie2,combine_mates,data_flow,7,7,E00019,
+bowtie2,mapping_stats_dnase,data_flow,7,7,E00011,
+bowtie2,merge_bowtie2,data_flow,2,2,E00009,
+bowtie2,samtools,data_flow,1,1,E00002,
+bowtie2,trim_reads,data_flow,1,1,E00006,
+build_contact_maps,ice_normalization,data_flow,1,1,E00040,
+bwa,pairtools_parse,data_flow,1,1,E00043,
+bwa,samtools,data_flow,1,1,E00001,
+combine_mates,get_valid_interaction,data_flow,1,1,E00026,
+combine_mates,get_valid_interaction_dnase,data_flow,1,1,E00028,
+combine_mates,merge_stats,data_flow,1,1,E00033,
+cooler,cooltools_eigscis,data_flow,1,1,E00072,
+cooler,cooltools_insulation,data_flow,1,1,E00075,
+cooler,hic_find_tads,data_flow,1,1,E00076,
+cooler,hic_plot_dist_vs_counts,data_flow,1,1,E00071,
+cooler,r-calder2,data_flow,1,1,E00074,
+cooler,split_cooler_dump,data_flow,1,1,E00070,
+fastqc,multiqc,data_flow,1,1,E00077,
+get_restriction_fragments,get_valid_interaction,data_flow,1,1,E00027,
+get_restriction_fragments,pairtools,data_flow,1,1,E00046,
+get_valid_interaction,merge_stats,data_flow,1,1,E00034,
+get_valid_interaction,merge_valid_interaction,data_flow,1,1,E00029,
+get_valid_interaction_dnase,merge_stats,data_flow,1,1,E00035,
+get_valid_interaction_dnase,merge_valid_interaction,data_flow,1,1,E00030,
+hicpro2pairs,cooler,data_flow,2,2,E00062,
+mapping_stats_dnase,merge_stats,data_flow,1,1,E00032,
+merge_bowtie2,combine_mates,data_flow,1,1,E00018,
+merge_bowtie2,merge_stats,data_flow,1,1,E00031,
+merge_stats,multiqc,data_flow,1,1,E00079,
+merge_valid_interaction,build_contact_maps,data_flow,1,1,E00038,
+merge_valid_interaction,hicpro2pairs,data_flow,1,1,E00036,
+merge_valid_interaction,multiqc,data_flow,1,1,E00078,
+pairix,cooler,data_flow,2,2,E00063,
+pairtools,pairix,data_flow,1,1,E00060,
+pairtools,pairtools_split,data_flow,2,2,E00050,
+pairtools_parse,pairtools,data_flow,2,2,E00045,
+pairtools_split,pairtools,data_flow,2,2,E00056,
+pairtools_split,samtools,data_flow,1,1,E00052,
+samtools,build_contact_maps,data_flow,1,1,E00039,
+samtools,cooler,data_flow,2,2,E00061,
+samtools,cooltools_eigscis,data_flow,1,1,E00073,
+samtools,hicpro2pairs,data_flow,1,1,E00037,
+samtools,pairtools_parse,data_flow,1,1,E00044,
+trim-galore,bowtie2,data_flow,1,1,E00004,
+trim-galore,bwa,data_flow,1,1,E00041,
+trim-galore,fastqc,data_flow,1,1,E00003,
+trim_reads,bowtie2,data_flow,1,1,E00007,
+bowtie2,fastqc,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00004, E00003); no directed path between any process of the two tools"
+build_contact_maps,cooler,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.sizes (E00039, E00064); no directed path between any process of the two tools"
+build_contact_maps,cooltools_eigscis,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.sizes (E00039, E00073); no directed path between any process of the two tools"
+build_contact_maps,hicpro2pairs,parallel_co_use,0,0,,"both consume MERGE_VALID_INTERACTION.valid_pairs (E00038, E00036); no directed path between any process of the two tools"
+bwa,fastqc,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00041, E00003); no directed path between any process of the two tools"
+combine_mates,mapping_stats_dnase,parallel_co_use,0,0,,"both consume BOWTIE2_ALIGN.bam (E00020, E00012); no directed path between any process of the two tools"
+cooler,build_contact_maps,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.sizes (E00064, E00039); no directed path between any process of the two tools"
+cooltools_eigscis,build_contact_maps,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.sizes (E00073, E00039); no directed path between any process of the two tools"
+cooltools_eigscis,cooltools_insulation,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00072, E00075); no directed path between any process of the two tools"
+cooltools_eigscis,hic_find_tads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00072, E00076); no directed path between any process of the two tools"
+cooltools_eigscis,hic_plot_dist_vs_counts,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00072, E00071); no directed path between any process of the two tools"
+cooltools_eigscis,r-calder2,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00072, E00074); no directed path between any process of the two tools"
+cooltools_insulation,cooltools_eigscis,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00075, E00072); no directed path between any process of the two tools"
+cooltools_insulation,hic_find_tads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00075, E00076); no directed path between any process of the two tools"
+cooltools_insulation,hic_plot_dist_vs_counts,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00075, E00071); no directed path between any process of the two tools"
+cooltools_insulation,r-calder2,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00075, E00074); no directed path between any process of the two tools"
+fastqc,bowtie2,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00003, E00004); no directed path between any process of the two tools"
+fastqc,bwa,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00003, E00041); no directed path between any process of the two tools"
+hic_find_tads,cooltools_eigscis,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00076, E00072); no directed path between any process of the two tools"
+hic_find_tads,cooltools_insulation,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00076, E00075); no directed path between any process of the two tools"
+hic_find_tads,hic_plot_dist_vs_counts,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00076, E00071); no directed path between any process of the two tools"
+hic_find_tads,r-calder2,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00076, E00074); no directed path between any process of the two tools"
+hic_plot_dist_vs_counts,cooltools_eigscis,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00071, E00072); no directed path between any process of the two tools"
+hic_plot_dist_vs_counts,cooltools_insulation,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00071, E00075); no directed path between any process of the two tools"
+hic_plot_dist_vs_counts,hic_find_tads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00071, E00076); no directed path between any process of the two tools"
+hic_plot_dist_vs_counts,r-calder2,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00071, E00074); no directed path between any process of the two tools"
+hicpro2pairs,build_contact_maps,parallel_co_use,0,0,,"both consume MERGE_VALID_INTERACTION.valid_pairs (E00036, E00038); no directed path between any process of the two tools"
+mapping_stats_dnase,combine_mates,parallel_co_use,0,0,,"both consume BOWTIE2_ALIGN.bam (E00012, E00020); no directed path between any process of the two tools"
+r-calder2,cooltools_eigscis,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00074, E00072); no directed path between any process of the two tools"
+r-calder2,cooltools_insulation,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00074, E00075); no directed path between any process of the two tools"
+r-calder2,hic_find_tads,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00074, E00076); no directed path between any process of the two tools"
+r-calder2,hic_plot_dist_vs_counts,parallel_co_use,0,0,,"both consume COOLER_BALANCE.cool (E00074, E00071); no directed path between any process of the two tools"

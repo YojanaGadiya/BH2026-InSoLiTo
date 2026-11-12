@@ -1,0 +1,110 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+awk,bedtools,data_flow,2,2,E00011,
+awk,cut,data_flow,2,2,E00254,
+awk,deeptools,data_flow,2,2,E00213,
+awk,peak_counts,data_flow,2,2,E00271,
+awk,sort,data_flow,2,2,E00188,
+awk_script,bedtools,data_flow,1,1,E00146,
+bedtools,awk,data_flow,3,3,E00190,
+bedtools,calculate_peak_reprod,data_flow,1,1,E00275,
+bedtools,find_unique_reads,data_flow,1,1,E00107,
+bedtools,plot_consensus_peaks,data_flow,2,2,E00276,
+bedtools,samtools,data_flow,1,1,E00055,
+bedtools,tabix,data_flow,1,1,E00004,
+bedtools,ucsc,data_flow,1,1,E00160,
+bowtie2,awk,data_flow,2,2,E00051,
+bowtie2,awk_script,data_flow,2,2,E00050,
+bowtie2,multiqc,data_flow,2,2,E00312,
+bowtie2,samtools,data_flow,2,2,E00026,
+calculate_peak_reprod,multiqc,data_flow,1,1,E00310,
+cat,bowtie2,data_flow,2,2,E00019,
+cat,fastqc,data_flow,1,1,E00016,
+cat,trimgalore,data_flow,1,1,E00017,
+cut,awk,data_flow,2,2,E00178,
+cut,bedtools,data_flow,1,1,E00274,
+cut,igv_session,data_flow,2,2,E00197,
+cut,peak_counts,data_flow,1,1,E00266,
+cut,peak_frip,data_flow,2,2,E00255,
+deeptools,multiqc,data_flow,3,3,E00304,
+deeptools_bamcoverage,bedtools,data_flow,1,1,E00159,
+fastqc,multiqc,data_flow,1,1,E00289,
+find_unique_reads,multiqc,data_flow,1,1,E00303,
+find_unique_reads,samtools,gate_metadata,2,0,E00116,
+frag_len_hist,multiqc,data_flow,1,1,E00311,
+gtf2bed,bedtools,data_flow,1,1,E00003,
+gtf2bed,deeptools,data_flow,2,2,E00210,
+gunzip,bedtools,data_flow,1,1,E00002,
+gunzip,bowtie2,data_flow,2,2,E00008,
+gunzip,deeptools,data_flow,2,2,E00209,
+gunzip,gtf2bed,data_flow,1,1,E00001,
+gunzip,igv_session,data_flow,1,1,E00194,
+gunzip,picard,data_flow,2,2,E00069,
+gunzip,samtools,data_flow,10,10,E00005,
+macs2,awk,data_flow,4,4,E00179,
+macs2,cut,data_flow,2,2,E00176,
+macs2,deeptools,data_flow,4,4,E00214,
+macs2,igv_session,data_flow,4,4,E00198,
+macs2,peak_counts,data_flow,2,2,E00267,
+macs2,peak_frip,data_flow,2,2,E00256,
+peak_counts,multiqc,data_flow,2,2,E00308,
+peak_frip,multiqc,data_flow,1,1,E00307,
+picard,awk,data_flow,1,1,E00101,
+picard,awk_script,data_flow,1,1,E00100,
+picard,multiqc,data_flow,1,1,E00319,
+picard,samtools,data_flow,2,2,E00071,
+preseq,multiqc,data_flow,1,1,E00296,
+samtools,awk,data_flow,1,1,E00010,
+samtools,bedtools,data_flow,9,9,E00013,
+samtools,deeptools,data_flow,20,10,E00225,
+samtools,deeptools_bamcoverage,data_flow,10,10,E00148,
+samtools,igv_session,data_flow,1,1,E00195,
+samtools,macs2,data_flow,10,10,E00165,
+samtools,multiqc,data_flow,15,15,E00292,
+samtools,peak_frip,gate_metadata,5,0,E00261,
+samtools,picard,data_flow,7,7,E00067,
+samtools,preseq,data_flow,2,2,E00065,
+samtools,samtools_customview,data_flow,10,10,E00278,
+samtools,ucsc,data_flow,2,2,E00161,
+samtools_customview,frag_len_hist,data_flow,1,1,E00288,
+seacr,awk,data_flow,4,4,E00181,
+seacr,igv_session,data_flow,4,4,E00200,
+seacr,peak_counts,data_flow,2,2,E00269,
+seacr,peak_frip,data_flow,2,2,E00258,
+sort,bedtools,data_flow,2,2,E00189,
+tabix,igv_session,data_flow,1,1,E00196,
+trimgalore,bowtie2,data_flow,2,2,E00018,
+trimgalore,multiqc,data_flow,2,2,E00290,
+ucsc,deeptools,data_flow,4,4,E00208,
+ucsc,igv_session,data_flow,1,1,E00207,
+ucsc,seacr,data_flow,2,2,E00164,
+untar,bowtie2,data_flow,2,2,E00020,
+bowtie2,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00023, E00016); no directed path between any process of the two tools"
+deeptools,igv_session,parallel_co_use,0,0,,"both consume UCSC_BEDGRAPHTOBIGWIG.bigwig (E00208, E00207); no directed path between any process of the two tools"
+deeptools,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00241, E00066); no directed path between any process of the two tools"
+deeptools,samtools_customview,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00246, E00287); no directed path between any process of the two tools"
+deeptools_bamcoverage,macs2,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00152, E00169); no directed path between any process of the two tools"
+deeptools_bamcoverage,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00152, E00066); no directed path between any process of the two tools"
+deeptools_bamcoverage,samtools_customview,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00157, E00287); no directed path between any process of the two tools"
+fastqc,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00016, E00023); no directed path between any process of the two tools"
+fastqc,trimgalore,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00016, E00017); no directed path between any process of the two tools"
+igv_session,deeptools,parallel_co_use,0,0,,"both consume UCSC_BEDGRAPHTOBIGWIG.bigwig (E00207, E00208); no directed path between any process of the two tools"
+igv_session,peak_counts,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK_IGG.peak (E00198, E00267); no directed path between any process of the two tools"
+igv_session,peak_frip,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK_IGG.peak (E00198, E00256); no directed path between any process of the two tools"
+macs2,deeptools_bamcoverage,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00169, E00152); no directed path between any process of the two tools"
+macs2,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00169, E00066); no directed path between any process of the two tools"
+macs2,samtools_customview,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00169, E00282); no directed path between any process of the two tools"
+peak_counts,igv_session,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK_IGG.peak (E00267, E00198); no directed path between any process of the two tools"
+peak_counts,peak_frip,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK_IGG.peak (E00267, E00256); no directed path between any process of the two tools"
+peak_frip,igv_session,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK_IGG.peak (E00256, E00198); no directed path between any process of the two tools"
+peak_frip,peak_counts,parallel_co_use,0,0,,"both consume MACS2_CALLPEAK_IGG.peak (E00256, E00267); no directed path between any process of the two tools"
+picard,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00085, E00066); no directed path between any process of the two tools"
+preseq,deeptools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00066, E00241); no directed path between any process of the two tools"
+preseq,deeptools_bamcoverage,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00066, E00152); no directed path between any process of the two tools"
+preseq,macs2,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00066, E00169); no directed path between any process of the two tools"
+preseq,picard,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00066, E00085); no directed path between any process of the two tools"
+preseq,samtools_customview,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00066, E00282); no directed path between any process of the two tools"
+samtools_customview,deeptools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00287, E00246); no directed path between any process of the two tools"
+samtools_customview,deeptools_bamcoverage,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00287, E00157); no directed path between any process of the two tools"
+samtools_customview,macs2,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00282, E00169); no directed path between any process of the two tools"
+samtools_customview,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00282, E00066); no directed path between any process of the two tools"
+trimgalore,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00017, E00016); no directed path between any process of the two tools"

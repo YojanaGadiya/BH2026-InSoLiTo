@@ -1,0 +1,7 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_NCRNANNOTATOR:NCRNANNOTATOR:FILTER_RFAM_CM,FILTER_RFAM_CM,modules/local/filter_rfam_cm/main.nf,1,filter_rfam_cm,,,module name
+NFCORE_NCRNANNOTATOR:NCRNANNOTATOR:GENOME_CHUNK,GENOME_CHUNK,modules/local/genome_chunk/main.nf,1,genome_chunk,,,module name
+NFCORE_NCRNANNOTATOR:NCRNANNOTATOR:CMSEARCH,CMSEARCH,modules/local/cmsearch/main.nf,1,cmsearch,,,module name
+NFCORE_NCRNANNOTATOR:NCRNANNOTATOR:PARSE_RFAM,PARSE_RFAM,modules/local/parse_rfam/main.nf,1,parse_rfam,,,module name
+NFCORE_NCRNANNOTATOR:NCRNANNOTATOR:RFAM_TO_FORMATS,RFAM_TO_FORMATS,modules/local/rfam_to_formats/main.nf,1,rfam_to_formats,,,module name
+NFCORE_NCRNANNOTATOR:NCRNANNOTATOR:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

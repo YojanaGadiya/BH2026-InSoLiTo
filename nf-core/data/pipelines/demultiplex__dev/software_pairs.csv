@@ -1,0 +1,39 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bases2fastq,multiqc,data_flow,1,1,E00024,
+bcl2fastq,checkqc_dir,data_flow,2,1,E00010,
+bcl2fastq,falco,data_flow,1,1,E00017,
+bcl2fastq,fastp,data_flow,1,1,E00015,
+bcl2fastq,md5sum,data_flow,1,1,E00019,
+bcl2fastq,multiqc,data_flow,3,2,E00008,
+bcl2fastq,seqtk,data_flow,1,1,E00021,
+bclconvert,multiqc,data_flow,2,1,E00007,
+checkqc_dir,sample-sheet,data_flow,1,1,E00012,
+falco,multiqc,data_flow,1,1,E00033,
+fastp,falco,data_flow,1,1,E00016,
+fastp,md5sum,data_flow,1,1,E00018,
+fastp,multiqc,data_flow,1,1,E00032,
+fastp,seqtk,data_flow,1,1,E00020,
+fqtk,multiqc,data_flow,1,1,E00029,
+kraken2,multiqc,data_flow,1,1,E00034,
+mgikit,multiqc,data_flow,1,1,E00031,
+sample-sheet,multiqc,data_flow,1,1,E00028,
+samshee,multiqc,data_flow,1,1,E00005,
+samshee,untar,data_flow,1,1,E00001,
+seqtk,kraken2,data_flow,1,1,E00022,
+sgdemux,multiqc,data_flow,1,1,E00030,
+untar,bases2fastq,data_flow,1,1,E00002,
+untar,bcl2fastq,data_flow,1,1,E00004,
+untar,bclconvert,data_flow,1,1,E00003,
+untar,cellranger,data_flow,1,1,E00014,
+untar,checkqc_dir,data_flow,1,1,E00009,
+untar,kraken2,data_flow,1,1,E00023,
+untar,multiqc,data_flow,1,1,E00006,
+untar,sgdemux,data_flow,1,1,E00013,
+cellranger,multiqc,parallel_co_use,0,0,,"both consume UNTAR_FLOWCELL.untar (E00014, E00006); no directed path between any process of the two tools"
+falco,md5sum,parallel_co_use,0,0,,"both consume BCL2FASTQ.fastq (E00017, E00019); no directed path between any process of the two tools"
+falco,seqtk,parallel_co_use,0,0,,"both consume BCL2FASTQ.fastq (E00017, E00021); no directed path between any process of the two tools"
+md5sum,falco,parallel_co_use,0,0,,"both consume BCL2FASTQ.fastq (E00019, E00017); no directed path between any process of the two tools"
+md5sum,seqtk,parallel_co_use,0,0,,"both consume BCL2FASTQ.fastq (E00019, E00021); no directed path between any process of the two tools"
+multiqc,cellranger,parallel_co_use,0,0,,"both consume UNTAR_FLOWCELL.untar (E00006, E00014); no directed path between any process of the two tools"
+seqtk,falco,parallel_co_use,0,0,,"both consume BCL2FASTQ.fastq (E00021, E00017); no directed path between any process of the two tools"
+seqtk,md5sum,parallel_co_use,0,0,,"both consume BCL2FASTQ.fastq (E00021, E00019); no directed path between any process of the two tools"

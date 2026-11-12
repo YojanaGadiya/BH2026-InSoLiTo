@@ -1,0 +1,65 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bbmap,bwa-mem3,data_flow,1,1,E00027,
+bbmap,minimap2,data_flow,1,1,E00023,
+bbmap,multiqc,data_flow,5,5,E00143,
+bcftools,mafft,data_flow,1,1,E00128,
+bcftools,multiqc,data_flow,1,1,E00150,
+bwa-mem3,bcftools,gate_metadata,1,0,E00125,
+bwa-mem3,gatk4-main,data_flow,1,1,E00033,
+bwa-mem3,samtools,data_flow,2,2,E00137,
+fastqc,multiqc,data_flow,1,1,E00142,
+gatk4,bcftools,data_flow,4,4,E00119,
+gatk4,gatk4-main,data_flow,2,2,E00061,
+gatk4,mosdepth,data_flow,2,2,E00046,
+gatk4,picard,data_flow,2,1,E00044,
+gatk4-lite,gatk4,data_flow,1,1,E00052,
+gatk4-lite,gatk4-main,data_flow,1,1,E00063,
+gatk4-main,gatk4,data_flow,7,7,E00060,
+gatk4-main,gatk4-lite,data_flow,1,1,E00018,
+gatk4-main,picard,data_flow,1,1,E00037,
+gunzip,bbmap,data_flow,1,1,E00021,
+gunzip,bcftools,data_flow,1,1,E00126,
+gunzip,bwa-mem3,data_flow,3,3,E00009,
+gunzip,gatk4,data_flow,20,20,E00039,
+gunzip,gatk4-lite,data_flow,3,3,E00011,
+gunzip,gatk4-main,data_flow,2,2,E00005,
+gunzip,minimap2,data_flow,2,2,E00007,
+gunzip,mosdepth,data_flow,1,1,E00048,
+gunzip,samtools,data_flow,3,3,E00003,
+mafft,iqtree,data_flow,1,1,E00129,
+minimap2,samtools,data_flow,2,2,E00132,
+mosdepth,multiqc,data_flow,2,2,E00151,
+picard,gatk4,data_flow,1,1,E00038,
+picard,multiqc,data_flow,1,1,E00153,
+samtools,gatk4,data_flow,7,7,E00043,
+samtools,gatk4-lite,data_flow,1,1,E00015,
+samtools,gatk4-main,data_flow,1,1,E00036,
+samtools,multiqc,data_flow,2,2,E00148,
+wget,bbmap,data_flow,1,1,E00022,
+wget,bcftools,data_flow,1,1,E00127,
+wget,bwa-mem3,data_flow,3,3,E00010,
+wget,gatk4,data_flow,20,20,E00040,
+wget,gatk4-lite,data_flow,3,3,E00012,
+wget,gatk4-main,data_flow,2,2,E00006,
+wget,gunzip,data_flow,2,2,E00001,
+wget,minimap2,data_flow,2,2,E00008,
+wget,mosdepth,data_flow,1,1,E00049,
+wget,samtools,data_flow,3,3,E00004,
+bcftools,minimap2,parallel_co_use,0,0,,"both consume DOWNLOAD_QUERYFASTA.outfile (E00127, E00025); no directed path between any process of the two tools"
+bcftools,mosdepth,parallel_co_use,0,0,,"both consume DOWNLOAD_QUERYFASTA.outfile (E00127, E00049); no directed path between any process of the two tools"
+bwa-mem3,gatk4-lite,parallel_co_use,0,0,,"both consume DOWNLOAD_QUERYFASTA.outfile (E00029, E00012); no directed path between any process of the two tools"
+bwa-mem3,minimap2,parallel_co_use,0,0,,"both consume DOWNLOAD_QUERYFASTA.outfile (E00029, E00025); no directed path between any process of the two tools"
+gatk4,minimap2,parallel_co_use,0,0,,"both consume DOWNLOAD_QUERYFASTA.outfile (E00066, E00025); no directed path between any process of the two tools"
+gatk4-lite,bwa-mem3,parallel_co_use,0,0,,"both consume DOWNLOAD_QUERYFASTA.outfile (E00012, E00029); no directed path between any process of the two tools"
+gatk4-lite,minimap2,parallel_co_use,0,0,,"both consume DOWNLOAD_QUERYFASTA.outfile (E00012, E00025); no directed path between any process of the two tools"
+gatk4-lite,mosdepth,parallel_co_use,0,0,,"both consume DOWNLOAD_QUERYFASTA.outfile (E00012, E00049); no directed path between any process of the two tools"
+gatk4-main,minimap2,parallel_co_use,0,0,,"both consume DOWNLOAD_QUERYFASTA.outfile (E00035, E00025); no directed path between any process of the two tools"
+minimap2,bcftools,parallel_co_use,0,0,,"both consume DOWNLOAD_QUERYFASTA.outfile (E00025, E00127); no directed path between any process of the two tools"
+minimap2,bwa-mem3,parallel_co_use,0,0,,"both consume DOWNLOAD_QUERYFASTA.outfile (E00025, E00029); no directed path between any process of the two tools"
+minimap2,gatk4,parallel_co_use,0,0,,"both consume DOWNLOAD_QUERYFASTA.outfile (E00025, E00066); no directed path between any process of the two tools"
+minimap2,gatk4-lite,parallel_co_use,0,0,,"both consume DOWNLOAD_QUERYFASTA.outfile (E00025, E00012); no directed path between any process of the two tools"
+minimap2,gatk4-main,parallel_co_use,0,0,,"both consume DOWNLOAD_QUERYFASTA.outfile (E00025, E00035); no directed path between any process of the two tools"
+minimap2,mosdepth,parallel_co_use,0,0,,"both consume DOWNLOAD_QUERYFASTA.outfile (E00025, E00049); no directed path between any process of the two tools"
+mosdepth,bcftools,parallel_co_use,0,0,,"both consume DOWNLOAD_QUERYFASTA.outfile (E00049, E00127); no directed path between any process of the two tools"
+mosdepth,gatk4-lite,parallel_co_use,0,0,,"both consume DOWNLOAD_QUERYFASTA.outfile (E00049, E00012); no directed path between any process of the two tools"
+mosdepth,minimap2,parallel_co_use,0,0,,"both consume DOWNLOAD_QUERYFASTA.outfile (E00049, E00025); no directed path between any process of the two tools"

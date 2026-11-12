@@ -1,0 +1,83 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CREATE_PEDIGREE_FILE,CREATE_PEDIGREE_FILE,modules/local/create_ped_file/main.nf,1,create_pedigree_file,,,module name
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:RTGTOOLS_FORMAT,RTGTOOLS_FORMAT,modules/nf-core/rtgtools/format/main.nf,1,rtg-tools,rtgtools,rtg-tools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CAT_FASTQ,CAT_FASTQ,modules/nf-core/cat/fastq/main.nf,1,cat,cat,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:ALIGN:WINNOWMAP_ALIGN,WINNOWMAP_ALIGN,modules/local/winnowmap/main.nf,1,winnowmap_align,,,module name
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:ALIGN:MINIMAP2_INDEX,MINIMAP2_INDEX,modules/nf-core/minimap2/index/main.nf,1,minimap2,minimap2,minimap2,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:ALIGN:MINIMAP2_ALIGN,MINIMAP2_ALIGN,modules/nf-core/minimap2/align/main.nf,1,minimap2,minimap2,minimap2;samtools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:ALIGN:SAMTOOLS_VIEW,SAMTOOLS_VIEW,modules/nf-core/samtools/view/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:BAM2FASTQ:SAMTOOLS_MERGE,SAMTOOLS_MERGE,modules/nf-core/samtools/merge/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:BAM2FASTQ:SAMTOOLS_FASTQ,SAMTOOLS_FASTQ,modules/nf-core/samtools/fastq/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:METHYL:MODKIT_PILEUP,MODKIT_PILEUP,modules/nf-core/modkit/pileup/main.nf,1,ont-modkit,modkit,ont-modkit,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:METHYL:MODKIT_PILEUP_CPG,MODKIT_PILEUP,modules/nf-core/modkit/pileup/main.nf,1,ont-modkit,modkit,ont-modkit,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:METHYL:MODKIT_BEDGRAPH,MODKIT_PILEUP,modules/nf-core/modkit/pileup/main.nf,1,ont-modkit,modkit,ont-modkit,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:METHYL:MODKIT_BEDGRAPH_CPG,MODKIT_PILEUP,modules/nf-core/modkit/pileup/main.nf,1,ont-modkit,modkit,ont-modkit,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:NANOPLOT_QC,NANOPLOT,modules/nf-core/nanoplot/main.nf,1,nanoplot,nanoplot,nanoplot,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:MOSDEPTH_SUBWORKFLOW:MOSDEPTH,MOSDEPTH,modules/nf-core/mosdepth/main.nf,1,mosdepth,mosdepth,mosdepth;htslib,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:MOSDEPTH_SUBWORKFLOW:MOSDEPTH_COV,MOSDEPTH,modules/nf-core/mosdepth/main.nf,1,mosdepth,mosdepth,mosdepth;htslib,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:MULTIQC_MOSDEPTH,MULTIQC_MOSDEPTH,modules/local/multiqc_mosdepth/main.nf,1,multiqc_mosdepth,,,module name
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_SNV:CLAIR3,CLAIR3,modules/nf-core/clair3/main.nf,1,clair3,clair3,clair3,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_SNV:CLAIR3_FIX,CLAIR3_FIX,modules/local/fix_header_snv/main.nf,1,clair3_fix,,,module name
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_SNV:BCFTOOLS_FILTER_CLAIR3,BCFTOOLS_VIEW,modules/nf-core/bcftools/view/main.nf,1,bcftools,view,htslib;bcftools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_SNV:DEEPVARIANT_RUNDEEPVARIANT,DEEPVARIANT_RUNDEEPVARIANT,modules/nf-core/deepvariant/rundeepvariant/main.nf,1,deepvariant,deepvariant,,meta.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_SNV:BCFTOOLS_FILTER_DEEPVARIANT,BCFTOOLS_VIEW,modules/nf-core/bcftools/view/main.nf,1,bcftools,view,htslib;bcftools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_SNV:DEEPVARIANT_VCFSTATSREPORT,DEEPVARIANT_VCFSTATSREPORT,modules/nf-core/deepvariant/vcfstatsreport/main.nf,1,deepvariant,deepvariant,,meta.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:ANNOTATE_SNV:SNPEFF_DOWNLOAD,SNPEFF_DOWNLOAD,modules/nf-core/snpeff/download/main.nf,1,snpeff,snpeff,snpeff,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:ANNOTATE_SNV:SNPEFF_SNPEFF,SNPEFF_SNPEFF,modules/nf-core/snpeff/snpeff/main.nf,1,snpeff,snpeff,snpeff,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:SNIFFLES_UNPHASED,SNIFFLES,modules/nf-core/sniffles/main.nf,1,sniffles,sniffles,sniffles,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:LONGPHASE_PHASE,LONGPHASE_PHASE,modules/nf-core/longphase/phase/main.nf,1,longphase,longphase,htslib;longphase,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:HAPLOTAG_BAM:LONGPHASE_HAPLOTAG,LONGPHASE_HAPLOTAG,modules/nf-core/longphase/haplotag/main.nf,1,longphase,longphase,htslib;longphase,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:SAMTOOLS_INDEX_HAPLOTAG,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_SV:SNIFFLES,SNIFFLES,modules/nf-core/sniffles/main.nf,1,sniffles,sniffles,sniffles,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_SV:GUNZIP_SNIFFLES_PLOT,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_SV:SNIFFLES_GENERATE_PLOTS,SNIFFLES_GENERATE_PLOTS,modules/local/sniffles/generate_plots/main.nf,1,sniffles_generate_plots,,,module name
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_SV:SVIM_ALIGNMENT,SVIM_ALIGNMENT,modules/nf-core/svim/alignment/main.nf,1,svim,svim,svim,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_SV:BCFTOOLS_SORT_SVIM,BCFTOOLS_SORT,modules/nf-core/bcftools/sort/main.nf,1,bcftools,sort,htslib;bcftools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_SV:CUTESV,CUTESV,modules/nf-core/cutesv/main.nf,1,cutesv,cutesv,cutesv,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_SV:FIX_HEADER_CUTESV,FIX_HEADER_CUTESV,modules/local/fix_header_sv/cutesv/main.nf,1,fix_header_cutesv,,,module name
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_SV:BCFTOOLS_SORT_CUTESV,BCFTOOLS_SORT,modules/nf-core/bcftools/sort/main.nf,1,bcftools,sort,htslib;bcftools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_SV:TABIX_CUTESV,TABIX_TABIX,modules/nf-core/tabix/tabix/main.nf,1,tabix,tabix,htslib,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:FILTER_SV_SNIFFLES:BCFTOOLS_FILTER_SV,BCFTOOLS_VIEW,modules/nf-core/bcftools/view/main.nf,1,bcftools,view,htslib;bcftools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:FILTER_SV_SNIFFLES:DOWNSAMPLE_SV,DOWNSAMPLE_SV,modules/local/epi2me_downsample_sv/main.nf,1,downsample_sv,,,module name
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:FILTER_SV_SVIM:BCFTOOLS_FILTER_SV,BCFTOOLS_VIEW,modules/nf-core/bcftools/view/main.nf,1,bcftools,view,htslib;bcftools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:FILTER_SV_SVIM:DOWNSAMPLE_SV,DOWNSAMPLE_SV,modules/local/epi2me_downsample_sv/main.nf,1,downsample_sv,,,module name
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:ANNOTATE_SV:ANNOTSV_INSTALLANNOTATIONS,ANNOTSV_INSTALLANNOTATIONS,modules/nf-core/annotsv/installannotations/main.nf,1,annotsv,annotsv,annotsv,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:ANNOTATE_SV:UNTAR_ANNOTSV,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:ANNOTATE_SV:ANNOTSV_SNIFFLES,ANNOTSV_ANNOTSV,modules/nf-core/annotsv/annotsv/main.nf,1,annotsv,annotsv,annotsv,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:ANNOTATE_SV:KNOTANNOTSV_SNIFFLES,KNOTANNOTSV,modules/nf-core/knotannotsv/main.nf,1,knotannotsv,knotannotsv,knotannotsv,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:ANNOTATE_SV:ANNOTSV_SVIM,ANNOTSV_ANNOTSV,modules/nf-core/annotsv/annotsv/main.nf,1,annotsv,annotsv,annotsv,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:ANNOTATE_SV:KNOTANNOTSV_SVIM,KNOTANNOTSV,modules/nf-core/knotannotsv/main.nf,1,knotannotsv,knotannotsv,knotannotsv,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:SVANNA_PRIORITIZE,SVANNA_PRIORITIZE,modules/local/svanna/main.nf,1,svanna_prioritize,,,module name
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:TRIO_CONCORDANCE_SV:SNIFFLES_TRIO,SNIFFLES_TRIO,modules/local/sniffles/trio/main.nf,1,sniffles_trio,,,module name
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:TRIO_CONCORDANCE_SV:RTG_MENDELIAN_SV,RTG_MENDELIAN,modules/local/rtg/mendelian/main.nf,1,rtg_mendelian,,,module name
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:TRIO_CONCORDANCE_SV:RTG_VIOLATIONS_SV,RTG_VIOLATIONS,modules/local/rtg/violations/main.nf,1,rtg_violations,,,module name
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:JOINT_GENOTYPE_SNV:GLNEXUS,GLNEXUS,modules/nf-core/glnexus/main.nf,1,bcftools,glnexus,bcftools;glnexus,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:JOINT_GENOTYPE_SNV:BCFTOOLS_INDEX_GLNEXUS,BCFTOOLS_INDEX,modules/nf-core/bcftools/index/main.nf,1,bcftools,bcftools,htslib;bcftools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:JOINT_GENOTYPE_SNV:BCFTOOLS_VIEW_GLNEXUS,BCFTOOLS_VIEW,modules/nf-core/bcftools/view/main.nf,1,bcftools,view,htslib;bcftools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:TRIO_CONCORDANCE_SNV:RTG_MENDELIAN_SNV,RTG_MENDELIAN,modules/local/rtg/mendelian/main.nf,1,rtg_mendelian,,,module name
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:TRIO_CONCORDANCE_SNV:RTG_VIOLATIONS_SNV,RTG_VIOLATIONS,modules/local/rtg/violations/main.nf,1,rtg_violations,,,module name
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_STR:STRAGLR,STRAGLR,modules/local/straglr/main.nf,1,straglr,,,module name
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_STR:BCFTOOLS_SORT_STRAGLR,BCFTOOLS_SORT,modules/nf-core/bcftools/sort/main.nf,1,bcftools,sort,htslib;bcftools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_STR:STRANGER,STRANGER,modules/nf-core/stranger/main.nf,1,tabix,stranger,tabix;pip;python,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_STR:TRGT_GENOTYPE,TRGT_GENOTYPE,modules/nf-core/trgt/genotype/main.nf,1,trgt,trgt,trgt,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_CNV:HIFICNV,HIFICNV,modules/nf-core/hificnv/main.nf,1,hificnv,hificnv,hificnv,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_CNV:SPECTRE_CNVCALLER,SPECTRE_CNVCALLER,modules/local/spectre/cnvcaller/main.nf,1,spectre,spectre;bcftools,,meta.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:CALL_CNV:BCFTOOLS_SORT_SPECTRE,BCFTOOLS_SORT,modules/nf-core/bcftools/sort/main.nf,1,bcftools,sort,htslib;bcftools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:FILTER_SV_CUTESV:BCFTOOLS_FILTER_SV,BCFTOOLS_VIEW,modules/nf-core/bcftools/view/main.nf,1,bcftools,view,htslib;bcftools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:FILTER_SV_CUTESV:DOWNSAMPLE_SV,DOWNSAMPLE_SV,modules/local/epi2me_downsample_sv/main.nf,1,downsample_sv,,,module name
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:GUNZIP_SVIM,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:GUNZIP_CUTESV,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:MERGE_SV:JASMINESV,JASMINESV,modules/nf-core/jasminesv/main.nf,1,jasminesv,jasminesv,htslib;jasminesv,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:MERGE_SV:FIX_HEADER_JASMINE,FIX_HEADER_JASMINE,modules/local/fix_header_sv/jasmine/main.nf,1,fix_header_jasmine,,,module name
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:MERGE_SV:BCFTOOLS_SORT_JASMINE,BCFTOOLS_SORT,modules/nf-core/bcftools/sort/main.nf,1,bcftools,sort,htslib;bcftools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:MERGE_SV:BCFTOOLS_VIEW_JASMINE,BCFTOOLS_VIEW,modules/nf-core/bcftools/view/main.nf,1,bcftools,view,htslib;bcftools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:MERGE_SV:BCFTOOLS_REHEADER_JASMINE,BCFTOOLS_REHEADER,modules/nf-core/bcftools/reheader/main.nf,1,bcftools,reheader,htslib;bcftools,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:MERGE_SV:TABIX_JASMINE,TABIX_TABIX,modules/nf-core/tabix/tabix/main.nf,1,tabix,tabix,htslib,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:UNIFYVCF,UNIFYVCF,modules/local/unify_vcf/main.nf,1,unifyvcf,,,module name
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:ANNOTATE_UNIFIED:SNPEFF_DOWNLOAD_UNIFIED,SNPEFF_DOWNLOAD,modules/nf-core/snpeff/download/main.nf,1,snpeff,snpeff,snpeff,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:ANNOTATE_UNIFIED:SNPEFF_UNIFIED,SNPEFF_SNPEFF,modules/nf-core/snpeff/snpeff/main.nf,1,snpeff,snpeff,snpeff,environment.yml
+NFCORE_LONGRAREDISEASE:LONGRAREDISEASE:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

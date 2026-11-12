@@ -1,0 +1,18 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_LSMQUANT:LSMQUANT:VALIDATE_PARAMETERS,VALIDATE_PARAMETERS,modules/local/validate_parameters/main.nf,1,validate_parameters,,,module name
+NFCORE_LSMQUANT:LSMQUANT:UNZIP,UNZIP,modules/nf-core/unzip/main.nf,1,p7zip,unzip,p7zip,environment.yml
+NFCORE_LSMQUANT:LSMQUANT:STAGEFILES,STAGEFILES,modules/local/stagefiles/main.nf,1,stagefiles,stagefiles,,meta.yml
+NFCORE_LSMQUANT:LSMQUANT:NUMORPHSTITCH,NUMORPHSTITCH,modules/local/numorphstitch/main.nf,1,numorphstitch,,,module name
+NFCORE_LSMQUANT:LSMQUANT:MAT2JSON,MAT2JSON,modules/local/mat2json/main.nf,1,mat2json,mat2json,,meta.yml
+NFCORE_LSMQUANT:LSMQUANT:NUMORPH_STITCH:NUMORPH_INTENSITY,NUMORPH_INTENSITY,modules/nf-core/numorph/intensity/main.nf,1,numorph,numorph,,meta.yml
+NFCORE_LSMQUANT:LSMQUANT:NUMORPH_STITCH:NUMORPHSTITCH,NUMORPHSTITCH,modules/local/numorphstitch/main.nf,1,numorphstitch,,,module name
+NFCORE_LSMQUANT:LSMQUANT:NUMORPH_STITCH:MAT2JSON,MAT2JSON,modules/nf-core/mat2json/main.nf,1,mat2json,mat2json,,meta.yml
+NFCORE_LSMQUANT:LSMQUANT:NUMORPH_PREPROCESSING:NUMORPH_INTENSITY,NUMORPH_INTENSITY,modules/nf-core/numorph/intensity/main.nf,1,numorph,numorph,,meta.yml
+NFCORE_LSMQUANT:LSMQUANT:NUMORPH_PREPROCESSING:NUMORPHALIGN,NUMORPHALIGN,modules/local/numorphalign/main.nf,1,numorphalign,,,module name
+NFCORE_LSMQUANT:LSMQUANT:NUMORPH_PREPROCESSING:NUMORPHSTITCH,NUMORPHSTITCH,modules/local/numorphstitch/main.nf,1,numorphstitch,,,module name
+NFCORE_LSMQUANT:LSMQUANT:NUMORPH_PREPROCESSING:MAT2JSON,MAT2JSON,modules/nf-core/mat2json/main.nf,1,mat2json,mat2json,,meta.yml
+NFCORE_LSMQUANT:LSMQUANT:NUMORPH_3DUNET,NUMORPH_3DUNET,modules/nf-core/numorph/3dunet/main.nf,1,numorph_3dunet,numorph_3dunet,,meta.yml
+NFCORE_LSMQUANT:LSMQUANT:ARAREGISTRATION:NUMORPH_RESAMPLE,NUMORPH_RESAMPLE,modules/nf-core/numorph/resample/main.nf,1,numorph,numorph,,meta.yml
+NFCORE_LSMQUANT:LSMQUANT:ARAREGISTRATION:NUMORPHREGISTER,NUMORPHREGISTER,modules/local/numorphregister/main.nf,1,numorphregister,,,module name
+NFCORE_LSMQUANT:LSMQUANT:ARAREGISTRATION:MAT2JSON,MAT2JSON,modules/nf-core/mat2json/main.nf,1,mat2json,mat2json,,meta.yml
+NFCORE_LSMQUANT:LSMQUANT:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

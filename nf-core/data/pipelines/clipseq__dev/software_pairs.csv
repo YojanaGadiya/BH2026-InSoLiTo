@@ -1,0 +1,57 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bedtools,clip_qc,data_flow,1,1,E00041,
+bedtools,icount,data_flow,1,1,E00020,
+bedtools,paraclu,data_flow,1,1,E00025,
+bedtools,piranha,data_flow,1,1,E00034,
+bowtie2-build,samtools,data_flow,1,1,E00008,
+clip_qc,multiqc,data_flow,1,1,E00052,
+cutadapt,multiqc,data_flow,1,1,E00047,
+cutadapt,samtools,data_flow,2,2,E00007,
+decompress_fasta,dreme,data_flow,4,4,E00023,
+decompress_fasta,pureclip,data_flow,1,1,E00030,
+decompress_fasta,samtools,data_flow,1,1,E00001,
+decompress_fasta,star,data_flow,2,2,E00002,
+decompress_gtf,star,data_flow,1,1,E00003,
+dedup,bedtools,data_flow,1,1,E00017,
+dedup,clip_qc,data_flow,1,1,E00040,
+dedup,gtf2bed,data_flow,1,1,E00015,
+dedup,pureclip,data_flow,1,1,E00029,
+fastqc,multiqc,data_flow,2,2,E00046,
+gtf2bed,multiqc,data_flow,1,1,E00051,
+icount,clip_qc,data_flow,1,1,E00042,
+icount,dreme,data_flow,1,1,E00022,
+paraclu,clip_qc,data_flow,1,1,E00043,
+paraclu,dreme,data_flow,1,1,E00026,
+piranha,clip_qc,data_flow,1,1,E00045,
+piranha,dreme,data_flow,1,1,E00035,
+preseq,multiqc,data_flow,1,1,E00050,
+pureclip,clip_qc,data_flow,1,1,E00044,
+pureclip,dreme,data_flow,1,1,E00031,
+samtools,bedtools,data_flow,2,2,E00018,
+samtools,clip_qc,data_flow,2,2,E00038,
+samtools,dedup,data_flow,1,1,E00014,
+samtools,dreme,data_flow,4,4,E00024,
+samtools,gtf2bed,data_flow,1,1,E00016,
+samtools,icount,data_flow,1,1,E00005,
+samtools,multiqc,data_flow,2,2,E00048,
+samtools,preseq,data_flow,1,1,E00013,
+star,samtools,data_flow,2,2,E00011,
+umi_tools,cutadapt,data_flow,1,1,E00006,
+bedtools,gtf2bed,parallel_co_use,0,0,,"both consume align.ch_aligned (E00018, E00016); no directed path between any process of the two tools"
+bedtools,preseq,parallel_co_use,0,0,,"both consume align.ch_aligned (E00018, E00013); no directed path between any process of the two tools"
+bedtools,pureclip,parallel_co_use,0,0,,"both consume dedup.ch_dedup (E00017, E00029); no directed path between any process of the two tools"
+dedup,preseq,parallel_co_use,0,0,,"both consume align.ch_aligned (E00014, E00013); no directed path between any process of the two tools"
+gtf2bed,bedtools,parallel_co_use,0,0,,"both consume align.ch_aligned (E00016, E00018); no directed path between any process of the two tools"
+gtf2bed,preseq,parallel_co_use,0,0,,"both consume align.ch_aligned (E00016, E00013); no directed path between any process of the two tools"
+gtf2bed,pureclip,parallel_co_use,0,0,,"both consume dedup.ch_dedup (E00015, E00029); no directed path between any process of the two tools"
+icount,paraclu,parallel_co_use,0,0,,"both consume get_crosslinks.ch_xlinks_icount (E00020, E00025); no directed path between any process of the two tools"
+icount,piranha,parallel_co_use,0,0,,"both consume get_crosslinks.ch_xlinks_icount (E00020, E00034); no directed path between any process of the two tools"
+paraclu,icount,parallel_co_use,0,0,,"both consume get_crosslinks.ch_xlinks_icount (E00025, E00020); no directed path between any process of the two tools"
+paraclu,piranha,parallel_co_use,0,0,,"both consume get_crosslinks.ch_xlinks_icount (E00025, E00034); no directed path between any process of the two tools"
+piranha,icount,parallel_co_use,0,0,,"both consume get_crosslinks.ch_xlinks_icount (E00034, E00020); no directed path between any process of the two tools"
+piranha,paraclu,parallel_co_use,0,0,,"both consume get_crosslinks.ch_xlinks_icount (E00034, E00025); no directed path between any process of the two tools"
+preseq,bedtools,parallel_co_use,0,0,,"both consume align.ch_aligned (E00013, E00018); no directed path between any process of the two tools"
+preseq,dedup,parallel_co_use,0,0,,"both consume align.ch_aligned (E00013, E00014); no directed path between any process of the two tools"
+preseq,gtf2bed,parallel_co_use,0,0,,"both consume align.ch_aligned (E00013, E00016); no directed path between any process of the two tools"
+pureclip,bedtools,parallel_co_use,0,0,,"both consume dedup.ch_dedup (E00029, E00017); no directed path between any process of the two tools"
+pureclip,gtf2bed,parallel_co_use,0,0,,"both consume dedup.ch_dedup (E00029, E00015); no directed path between any process of the two tools"
