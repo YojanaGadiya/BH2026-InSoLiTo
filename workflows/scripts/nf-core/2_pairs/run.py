@@ -10,7 +10,7 @@ Expected layout of the catalogue:  <catalogue>/<pipeline>/<version>/main.nf   (w
   python run.py match [--dump FILE]        # fill missing bio.tools IDs from a local bio.tools dump (biotools_raw*.jsonl in RESULTS, or --dump; the file can stay where it is)
   python run.py idtable                    # RESULTS/tools_with_ids.csv: every tool with at least one identifier
   python run.py merge [--pool-ids biotools]  # ONE table of all pairs over all pipelines -> RESULTS/pairs_merged_unique.csv, control_pool.csv
-  python run.py tables [--dump FILE]       # the final tables (pairs, edges, nodes) -> the same data folder (runs ../3_nodes_edges/build_tables.py)
+  python run.py tables [--dump FILE]       # the final tables (pairs, edges, nodes) -> workflows/data/biotools/nf-core (runs ../3_nodes_edges/build_tables.py)
   python run.py all [--lookup]             # analyze, ids, match, idtable, merge and tables one after the other
 
 Options: --catalogue DIR (default: current folder)   --out DIR (default: workflows/data/nf-core)

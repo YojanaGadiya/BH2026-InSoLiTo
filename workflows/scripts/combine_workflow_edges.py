@@ -13,22 +13,23 @@ insensitive merging so it stops the script with an error.
 If an input has a 'confidence' column, only edges with confidence <= MAX_CONFIDENCE are kept.
 
 Usage (from the repository root):
-    .venv/bin/python directed-graph/workflowhub/combine_workflow_edges.py
+    .venv/bin/python workflows/scripts/combine_workflow_edges.py
 """
 from collections import Counter
 from pathlib import Path
 
 import pandas as pd
 
-DATA = Path(__file__).resolve().parent / "data/biotools"
+REPO = Path(__file__).resolve().parents[2]
+DATA = REPO / "workflows" / "data" / "biotools"
 
 edge_filename = "biotools_edges.csv"
 INPUTS = {
     "galaxy": DATA / "galaxy" / edge_filename,
     "nextflow": DATA / "nextflow" / "biotools_edges_without_nfcore.csv",
-    "nfcore": DATA / "nf-core" / edge_filename,
+    "nfcore": DATA / "nf-core" / edge_filename,  # written by nf-core/3_nodes_edges/build_tables.py
 }
-CITATIONS = Path(__file__).resolve().parent.parent / "edges-processed" / "directed_edges.csv"
+CITATIONS = REPO / "directed-graph" / "edges-processed" / "directed_edges_delta1.csv"
 OUT_FILE = DATA / "combined" / "combined_edges.csv"
 
 MAX_CONFIDENCE = 3  # only for galaxy: 1 = codex mapping only, 2 = codex + name match, 3 = all
@@ -111,7 +112,7 @@ def main() -> None:
     combined = None
     for name, path in INPUTS.items():
         edges = read_edges(path, name, spelling)
-        print(f"{name}: {len(edges)} edges from {path.relative_to(DATA)}")
+        print(f"{name}: {len(edges)} edges from {path.relative_to(REPO)}")
         combined = edges if combined is None else combined.merge(edges, on=["source", "target"], how="outer")
 
     counts = [f"n_wf_{name}" for name in INPUTS]

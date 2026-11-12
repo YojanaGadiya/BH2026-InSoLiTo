@@ -37,7 +37,9 @@ A pair means: a process that uses software A is followed by a process that uses 
 
 If a pair is a sequence in some workflows and parallel in others, it is `one_direction` or `both_directions`: the sequence is the stronger information.
 
-## Final tables (in `workflows/data/nf-core/`)
+## Final tables (in `workflows/data/biotools/nf-core/`)
+
+Parallel pairs are left out of these tables for now. A pair only counts in the workflows where one tool comes after the other (`build_tables.py --keep-parallel` brings them back).
 
 | file | one row per | main columns |
 |---|---|---|
@@ -56,7 +58,7 @@ If a pair is a sequence in some workflows and parallel in others, it is `one_dir
 
 ## Other files in `workflows/data/nf-core/`
 
-What the scripts write next to the final tables, so the tables can be traced back.
+What the scripts write before the final tables, so the tables can be traced back.
 
 | file | content |
 |---|---|
@@ -64,7 +66,7 @@ What the scripts write next to the final tables, so the tables can be traced bac
 | `pairs_merged_summary.md` | counts and the most frequent pairs |
 | `control_pool.csv` | valid pairs where both tools have at least one identifier |
 | `tools_with_ids.csv`, `tool_identifiers.csv` | tools with at least one ID and why a bio.tools ID is missing; every identifier we hold for every tool |
-| `pairs_biotools.csv` | the pairs with a bio.tools ID on both sides, all columns; the final tables are made from it |
+| `pairs_merged_biotools.csv` | the pairs with a bio.tools ID on both sides, all columns, parallel ones too; the final tables are made from it |
 | `batch_summary.csv` | status of every pipeline |
 | `pipelines/<pipeline>/` | `software_pairs.csv` (the software pairs of one pipeline with their `pair_type`), `process_edges.csv` (the process edges behind them: class, payload check, conditions, call sites), `process_software_map.csv` (software of each process), `summary.json` |
 
@@ -95,7 +97,7 @@ python 2_pairs/run.py match                              # put the bio.tools dum
 python 2_pairs/run.py idtable                            # tools_with_ids.csv
 python 2_pairs/run.py merge                              # pairs_merged_unique.csv, control_pool.csv
 
-# 3. the final tables: reads and writes workflows/data/nf-core. The bio.tools dump is found there, or give its place (it can stay where it is)
+# 3. the final tables: reads workflows/data/nf-core, writes workflows/data/biotools/nf-core. The bio.tools dump is found in workflows/data/nf-core, or give its place (it can stay where it is)
 python 2_pairs/run.py tables --dump /path/to/biotools_raw_14-10-2026.jsonl
 ```
 
