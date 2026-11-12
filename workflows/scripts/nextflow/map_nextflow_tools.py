@@ -32,7 +32,7 @@ from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from map_galaxy_tools import (
+from workflows.scripts.galaxy.map_galaxy_tools import (
     BIOTOOLS_DIR,
     BIOTOOLS_PUBS,
     BIOTOOLS_RAW,
