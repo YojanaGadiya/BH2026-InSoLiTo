@@ -1,12 +1,12 @@
 """
 Translates the Nextflow DAGs (tool nodes) to bio.tools IDs, like map_galaxy_tools.py does for Galaxy.
 
-Reads data/nextflow/<id>_v<version>/{nodes,edges}.csv (from extract_nextflow_dags.py) and the hand-curated
-nextflow_curated_map.tsv next to this script. The reference is the bio.tools dump
+Reads workflows/data/nextflow/dags/<id>_v<version>/{nodes,edges}.csv (from extract_nextflow_dags.py) and the
+hand-curated nextflow_curated_map.tsv next to this script. The reference is the bio.tools dump
 (directed-graph/biotools/data/biotools_raw*.jsonl). The mapping methods are described in nfdag/mapping.py:
 curated > meta (nf-core meta.yml) > biotools_id > biotools_name > biotools_url > codex (Galaxy Codex) > prefix.
 
-It outputs:
+It outputs (in workflows/):
   - data/mapping/nextflow/nextflow_tool_map.tsv   one row per tool name, with the ID and the method used
   - data/mapping/nextflow/nextflow_to_curate.tsv  tools without ID or mapped only by prefix, most used first,
                                                   with suggestions. The first four columns are those of the
@@ -21,15 +21,14 @@ It outputs:
   - data/biotools/nextflow/workflows/<id>_v<version>.csv   the bio.tools DAG of each workflow (for Cytoscape)
 
 Usage (from the repository root, after extract_nextflow_dags.py):
-    python3 directed-graph/workflowhub/map_nextflow_tools.py
+    python3 workflows/scripts/nextflow/map_nextflow_tools.py
 """
 
 import argparse
 import csv
 import re
 import sys
-from collections import Counter, defaultdict
-from dataclasses import dataclass, field
+from collections import defaultdict
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -45,27 +44,25 @@ from map_galaxy_tools import (  # noqa: E402
     find_column,
     variants,
 )
-from nfdag.mapping import (  # noqa: E402
-    CONFIDENCE,
-    CURATED_FIELDS,
-    BiotoolsIndex,
-    BiotoolsPair,
-    Lookup,
-    ToolMap,
-    read_curated,
-    tool_key,
-    translate,
+from nfdag.mapping import BiotoolsIndex, BiotoolsPair, Lookup, ToolMap, read_curated, translate  # noqa: E402
+from nfdag.report import (  # noqa: E402
+    ToolStats,
+    count_lost,
+    print_summary,
+    record,
+    write_biotools,
+    write_to_curate,
+    write_tool_map,
+    write_workflow_csvs,
 )
 
 DAG_DIR = DATA / "nextflow" / "dags"
-CURATED_FILE = DATA / "nextflow" / "nextflow_curated_map.tsv"
+CURATED_FILE = HERE / "nextflow_curated_map.tsv"  # tracked, next to this script
 MAP_DIR = DATA / "mapping" / "nextflow"
 OUT_DIR = DATA / "biotools" / "nextflow"
 SUMMARY_FILE = DATA / "nextflow" / "download" / "nextflow_workflows.csv"  # download_workflowhub_nextflow.py
-
-EXAMPLES = 3  # example processes / workflows per tool in the TSVs
 METHODS = ("curated", "meta", "biotools_id", "biotools_name", "biotools_url", "codex", "prefix")
-LEVELS = sorted(set(CONFIDENCE.values()))  # 1, 2, 3
+LABELS = ("processes", "modules")  # the context columns of the tool map and the to-curate list
 
 
 def load_codex_suites() -> dict[str, str]:
@@ -131,27 +128,14 @@ def load_codex_conda() -> dict[str, str]:
     return out
 
 
-@dataclass
-class ToolStats:
-    """What is known about one tool name over all workflows."""
-
-    mapping: ToolMap
-    workflows: set[str] = field(default_factory=set)
-    nodes: int = 0
-    lost_edges: int = 0
-    processes: dict[str, None] = field(default_factory=dict)  # ordered set
-    modules: dict[str, None] = field(default_factory=dict)
-    containers: dict[str, None] = field(default_factory=dict)
-    conda: dict[str, None] = field(default_factory=dict)
-
-
-def _examples(values: dict[str, None]) -> str:
-    return ";".join(v for v in list(values)[:EXAMPLES] if v)
-
-
 def _workflow_dirs(dag_dir: Path) -> list[Path]:
     dirs = [p for p in dag_dir.iterdir() if (p / "nodes.csv").is_file()]
     return sorted(dirs, key=lambda p: int(p.name.split("_")[0]))
+
+
+def _workflow_id(folder_name: str) -> str:
+    """462_v3 -> 462"""
+    return folder_name.split("_v", maxsplit=1)[0]
 
 
 def map_workflows(lookup: Lookup, dag_dir: Path) -> tuple[dict[str, ToolStats], dict[str, list[BiotoolsPair]]]:
@@ -167,142 +151,24 @@ def map_workflows(lookup: Lookup, dag_dir: Path) -> tuple[dict[str, ToolStats], 
                 sys.exit(f"{folder} holds process-level DAGs from an older version: run extract_nextflow_dags.py again")
             edges = [(e["source"], e["target"], e["kind"]) for e in reader]
         mapped: dict[str, ToolMap] = {}
-        tool_of = {r["node"]: r["tool"].lower() for r in nodes}
         for row in nodes:
             m = lookup.map(
                 row["tool"], row["tool_source"], row["meta_biotools_id"], row["process"], row["declared_tool"]
             )
             mapped[row["node"]] = m
-            stats = tools.setdefault(row["tool"].lower(), ToolStats(m))
-            if stats.mapping.action == "unmapped" and m.action != "unmapped":  # mapped here (e.g. by meta.yml)
-                stats.mapping = m
-            stats.workflows.add(folder.name)
-            stats.nodes += 1
-            for target, value in ((stats.processes, row["process"]), (stats.modules, row["module"])):
-                target.setdefault(value)
-            for container in row["containers"].split(";")[:1]:
-                stats.containers.setdefault(container)
-            stats.conda.setdefault(row["conda_packages"])
+            record(
+                tools,
+                row["tool"],
+                m,
+                folder.name,
+                unit=row["process"],
+                file=row["module"],
+                containers=row["containers"],
+                conda=row["conda_packages"],
+            )
         pairs[folder.name], _ = translate(mapped, edges)
-        for a, b, _ in edges:  # the edges each unmapped tool cuts, to rank the curation
-            for node in (a, b):
-                if mapped[node].action == "unmapped":
-                    tools[tool_of[node]].lost_edges += 1
+        count_lost(tools, mapped, {r["node"]: r["tool"].lower() for r in nodes}, edges)
     return tools, pairs
-
-
-def _names(index: BiotoolsIndex, ids: list[str]) -> str:
-    return ";".join(index.name_of(i) for i in ids)
-
-
-def write_tool_map(tools: dict[str, ToolStats], index: BiotoolsIndex, with_paper: set[str]) -> None:
-    columns = [
-        "tool",
-        "biotoolsID",
-        "biotools_name",
-        "method",
-        "codex_biotoolsID",
-        "match_biotoolsID",
-        "n_workflows",
-        "n_nodes",
-        "lost_edges",
-        "processes",
-        "modules",
-        "containers",
-        "conda",
-        "has_publication",
-    ]
-    with (MAP_DIR / "nextflow_tool_map.tsv").open("w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f, delimiter="\t")
-        writer.writerow(columns)
-        for tool, s in sorted(tools.items(), key=lambda kv: (-len(kv[1].workflows), kv[0])):
-            ids = ";".join(s.mapping.ids) if s.mapping.action == "map" else s.mapping.action
-            writer.writerow(
-                [
-                    tool,
-                    ids,
-                    _names(index, s.mapping.ids),
-                    s.mapping.method,
-                    s.mapping.codex_id,
-                    s.mapping.match_id,
-                    len(s.workflows),
-                    s.nodes,
-                    s.lost_edges,
-                    _examples(s.processes),
-                    _examples(s.modules),
-                    _examples(s.containers),
-                    _examples(s.conda),
-                    str(any(i in with_paper for i in s.mapping.ids)).lower(),
-                ]
-            )
-
-
-def _context(s: ToolStats) -> list[str]:
-    """Package names the tool comes with: conda packages and container tools (bioconda::bedtools=2.31 -> bedtools)."""
-    names = []
-    for value in [*s.conda, *s.containers]:
-        for item in value.split(";"):
-            name = item.rsplit("::", 1)[-1].rsplit("/", 1)[-1]
-            name = re.split(r"[=:<>]", name)[0].strip()
-            if name and name not in names and not name.startswith(("sha256", "data")):
-                names.append(name)
-    return names
-
-
-def write_to_curate(tools: dict[str, ToolStats], index: BiotoolsIndex) -> int:
-    """Tools a person should look at (unmapped, or only a prefix match of the process name);
-    the first columns are those of the curated TSV."""
-    rows = []
-    for tool, s in tools.items():
-        m = s.mapping
-        if m.action != "unmapped" and m.method != "prefix":
-            continue
-        reason = "unmapped" if m.action == "unmapped" else "prefix match"
-        guess = ";".join(m.ids)
-        suggestions = index.suggest(tool_key(tool), _context(s)) if m.action == "unmapped" else []
-        rows.append(
-            (
-                s,
-                [
-                    tool,
-                    "",
-                    guess,
-                    reason,
-                    "; ".join(f"{i} ({index.name_of(i)})" for i in suggestions),
-                    _names(index, m.ids),
-                    m.codex_id,
-                    m.match_id,
-                    len(s.workflows),
-                    s.nodes,
-                    s.lost_edges,
-                    _examples(s.processes),
-                    _examples(s.modules),
-                    _examples(s.containers),
-                    _examples(s.conda),
-                ],
-            )
-        )
-    rows.sort(key=lambda r: (-len(r[0].workflows), -r[0].lost_edges, r[1][0]))
-    with (MAP_DIR / "nextflow_to_curate.tsv").open("w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f, delimiter="\t")
-        writer.writerow(
-            [
-                *CURATED_FIELDS,
-                "suggestions",
-                "biotools_name",
-                "codex_biotoolsID",
-                "match_biotoolsID",
-                "n_workflows",
-                "n_nodes",
-                "lost_edges",
-                "processes",
-                "modules",
-                "containers",
-                "conda",
-            ]
-        )
-        writer.writerows(r for _, r in rows)
-    return len(rows)
 
 
 def load_nfcore_ids() -> set[str] | None:
@@ -317,113 +183,18 @@ def load_nfcore_ids() -> set[str] | None:
     return {r["id"] for r in rows if r["nf_core"] == "true"}
 
 
-def write_workflow_csvs(pairs: dict[str, list[BiotoolsPair]]) -> None:
-    """The bio.tools DAG of each workflow, for Cytoscape."""
-    workflows_dir = OUT_DIR / "workflows"
-    workflows_dir.mkdir(parents=True, exist_ok=True)
-    for name, workflow_pairs in pairs.items():
-        unique = sorted({(p.source, p.target, p.kind, p.source_node, p.target_node) for p in workflow_pairs})
-        with (workflows_dir / f"{name}.csv").open("w", newline="", encoding="utf-8") as f:
-            writer = csv.writer(f)
-            writer.writerow(["source", "target", "kind", "source_node", "target_node"])
-            writer.writerows(unique)
-
-
-def write_biotools(
-    pairs: dict[str, list[BiotoolsPair]], index: BiotoolsIndex, with_paper: set[str], suffix: str = ""
-) -> None:
-    """The same three files as map_galaxy_tools.py, with the bio.tools names in place of the ToolShed names,
-    over the given workflows; suffix is added to the file names."""
-    edge_workflows: dict[tuple[str, str], set[str]] = defaultdict(set)
-    edge_levels: dict[tuple[str, str], Counter[int]] = defaultdict(Counter)  # confidence -> number of workflows
-    node_workflows: dict[str, set[str]] = defaultdict(set)
-    node_levels: dict[str, Counter[int]] = defaultdict(Counter)  # confidence -> number of workflows
-    n_pairs = 0
-    with (OUT_DIR / f"biotools_pairs{suffix}.csv").open("w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow(
-            ["workflow_id", "source", "target", "source_biotools_name", "target_biotools_name", "confidence"]
-        )
-        for name, workflow_pairs in pairs.items():
-            workflow_id = name.split("_v")[0]
-            best: dict[tuple[str, str], int] = {}  # like Galaxy: once per workflow, the best of its tool pairs
-            node_best: dict[str, int] = {}  # per node, the best level of its own mapping in this workflow
-            for p in workflow_pairs:
-                best[(p.source, p.target)] = min(p.confidence, best.get((p.source, p.target), p.confidence))
-                for biotools_id, level in ((p.source, p.source_confidence), (p.target, p.target_confidence)):
-                    node_best[biotools_id] = min(level, node_best.get(biotools_id, level))
-            for biotools_id, level in node_best.items():
-                node_levels[biotools_id][level] += 1
-            for (source, target), confidence in sorted(best.items()):
-                writer.writerow([workflow_id, source, target, index.name_of(source), index.name_of(target), confidence])
-                n_pairs += 1
-                edge_workflows[(source, target)].add(workflow_id)
-                edge_levels[(source, target)][confidence] += 1
-                node_workflows[source].add(workflow_id)
-                node_workflows[target].add(workflow_id)
-    with (OUT_DIR / f"biotools_edges{suffix}.csv").open("w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow(
-            [
-                "source",
-                "target",
-                "n_workflows",
-                "workflow_ids",
-                "source_biotools_name",
-                "target_biotools_name",
-                "confidence",  # the best over the workflows
-                *(f"confidence{level}" for level in LEVELS),  # workflows per level
-            ]
-        )
-        for (source, target), ids in sorted(edge_workflows.items(), key=lambda kv: (-len(kv[1]), kv[0])):
-            levels = edge_levels[(source, target)]
-            writer.writerow(
-                [
-                    source,
-                    target,
-                    len(ids),
-                    ";".join(sorted(ids, key=int)),
-                    index.name_of(source),
-                    index.name_of(target),
-                    min(levels),
-                    *(levels[level] for level in LEVELS),
-                ]
-            )
-    with (OUT_DIR / f"biotools_nodes{suffix}.csv").open("w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow(
-            [
-                "biotoolsID",
-                "biotools_name",
-                "n_workflows",
-                "has_publication",
-                "confidence",  # the best over the workflows
-                *(f"confidence{level}" for level in LEVELS),  # workflows per level
-            ]
-        )
-        for biotools_id, ids in sorted(node_workflows.items(), key=lambda kv: (-len(kv[1]), kv[0])):
-            levels = node_levels[biotools_id]
-            writer.writerow(
-                [
-                    biotools_id,
-                    index.name_of(biotools_id),
-                    len(ids),
-                    str(biotools_id in with_paper).lower(),
-                    min(levels),
-                    *(levels[level] for level in LEVELS),
-                ]
-            )
-    edges_by = Counter(min(levels) for levels in edge_levels.values())
-    nodes_by = Counter(min(node_levels[n]) for n in node_workflows)
-    print(
-        f"Wrote {OUT_DIR}/biotools_*{suffix}.csv: {len(pairs)} workflows, {n_pairs} pairs, "
-        f"{len(edge_workflows)} edges (confidence {_by_level(edges_by)}), "
-        f"{len(node_workflows)} bio.tools nodes (confidence {_by_level(nodes_by)})"
-    )
-
-
-def _by_level(counts: Counter[int]) -> str:
-    return ", ".join(f"{level}: {counts[level]}" for level in LEVELS)
+def load_lookup(curated_file: Path) -> tuple[BiotoolsIndex, set[str], Lookup]:
+    """The bio.tools dump, the IDs with a paper, and the lookup with the Codex and the curated TSV."""
+    if BIOTOOLS_RAW is None:
+        sys.exit("No bio.tools dump (directed-graph/biotools/data/biotools_raw*.jsonl): it is the mapping reference")
+    print(f"bio.tools: {BIOTOOLS_RAW}")
+    index = BiotoolsIndex.load(BIOTOOLS_RAW)
+    print(f"Codex: {CODEX_FILE}" if CODEX_FILE.exists() else f"No {CODEX_FILE.name}: skipping Codex matching")
+    curated = read_curated(curated_file)
+    unknown = sorted({i for e in curated.values() for i in e.ids if i.lower() not in index.ids})
+    if unknown:
+        print(f"Curated IDs not found in bio.tools (check spelling): {', '.join(unknown)}")
+    return index, load_with_paper(), Lookup(index, load_codex_conda(), load_codex_suites(), curated, PREFIX_BLOCKLIST)
 
 
 def main() -> None:
@@ -435,48 +206,20 @@ def main() -> None:
         sys.exit(f"{args.dags} not found - run extract_nextflow_dags.py first")
     MAP_DIR.mkdir(parents=True, exist_ok=True)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-
-    if BIOTOOLS_RAW is None:
-        sys.exit("No bio.tools dump (directed-graph/biotools/data/biotools_raw*.jsonl): it is the mapping reference")
-    print(f"bio.tools: {BIOTOOLS_RAW}")
-    index = BiotoolsIndex.load(BIOTOOLS_RAW)
-    with_paper = load_with_paper()
-    print(f"Codex: {CODEX_FILE}" if CODEX_FILE.exists() else f"No {CODEX_FILE.name}: skipping Codex matching")
-    curated = read_curated(args.curated)
-    unknown = sorted({i for e in curated.values() for i in e.ids if i.lower() not in index.ids})
-    if unknown:
-        print(f"Curated IDs not found in bio.tools (check spelling): {', '.join(unknown)}")
-    lookup = Lookup(index, load_codex_conda(), load_codex_suites(), curated, PREFIX_BLOCKLIST)
+    index, with_paper, lookup = load_lookup(args.curated)
 
     tools, pairs = map_workflows(lookup, args.dags)
-    write_tool_map(tools, index, with_paper)
-    n_curate = write_to_curate(tools, index)
-
-    nodes = sum(s.nodes for s in tools.values())
-    print(f"Tool names: {len(tools)}, tool nodes: {nodes}")
-    for method in METHODS:
-        chosen = [s for s in tools.values() if s.mapping.method == method]
-        print(f"  {method:13s} {len(chosen):5d} tools, {sum(s.nodes for s in chosen):6d} nodes")
-    for action in ("drop", "unmapped"):
-        chosen = [s for s in tools.values() if s.mapping.action == action]
-        print(f"  {action:13s} {len(chosen):5d} tools, {sum(s.nodes for s in chosen):6d} nodes")
-    kept = sum(s.nodes for s in tools.values() if s.mapping.action != "drop")
-    mapped = sum(s.nodes for s in tools.values() if s.mapping.action == "map")
-    print(f"Coverage: {mapped} of {kept} tool nodes not dropped are bio.tools entries ({mapped / max(kept, 1):.1%})")
-    unmapped = sorted((s for s in tools.values() if s.mapping.action == "unmapped"), key=lambda s: -len(s.workflows))
-    print(f"DAG edges lost at unmapped tools: {sum(s.lost_edges for s in tools.values())}")
-    print(f"Wrote {MAP_DIR / 'nextflow_to_curate.tsv'} ({n_curate} tools). Most used unmapped:")
-    for s in unmapped[:15]:
-        tool = next(t for t, v in tools.items() if v is s)
-        print(f"  {len(s.workflows):5d}  {tool}  ({_examples(s.processes)})")
-    write_workflow_csvs(pairs)
-    write_biotools(pairs, index, with_paper)
+    write_tool_map(MAP_DIR / "nextflow_tool_map.tsv", tools, index, with_paper, LABELS)
+    to_curate = MAP_DIR / "nextflow_to_curate.tsv"
+    print_summary(tools, METHODS, to_curate, write_to_curate(to_curate, tools, index, LABELS))
+    write_workflow_csvs(OUT_DIR / "workflows", pairs)
+    write_biotools(OUT_DIR, pairs, index, with_paper, workflow_id=_workflow_id)
     nfcore = load_nfcore_ids()
     if nfcore is None:
         print(f"No nf_core column in {SUMMARY_FILE}: run download_workflowhub_nextflow.py --summary-only")
     else:  # the nf-core pipelines also come directly from nf-core, with another tool
-        others = {name: p for name, p in pairs.items() if name.split("_v")[0] not in nfcore}
-        write_biotools(others, index, with_paper, "_without_nfcore")
+        others = {name: p for name, p in pairs.items() if _workflow_id(name) not in nfcore}
+        write_biotools(OUT_DIR, others, index, with_paper, workflow_id=_workflow_id, suffix="_without_nfcore")
 
 
 if __name__ == "__main__":

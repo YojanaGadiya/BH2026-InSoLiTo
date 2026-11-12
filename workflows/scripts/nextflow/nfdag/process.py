@@ -142,7 +142,7 @@ def _containers(info: ProcessInfo, pipe: "Pipeline", exprs: list[str]) -> None:
     info.containers = list(dict.fromkeys(i for i in images if not i.endswith(".config")))
     tools, versions = [], []
     for image in info.containers:
-        tool, version = _image_tool(image)
+        tool, version = image_tool(image)
         if tool:
             tools.append(tool)
             if version:
@@ -150,7 +150,7 @@ def _containers(info: ProcessInfo, pipe: "Pipeline", exprs: list[str]) -> None:
     info.container_tools, info.container_versions = list(dict.fromkeys(tools)), list(dict.fromkeys(versions))
 
 
-def _image_tool(image: str) -> tuple[str, str]:
+def image_tool(image: str) -> tuple[str, str]:
     """(tool name, version) read from a container image; ('', '') for multi-tool `mulled-v2` images."""
     last = image.rstrip("/").split("/")[-1]
     tool, _, tag = last.partition(":")
@@ -163,7 +163,7 @@ def _image_tool(image: str) -> tuple[str, str]:
     return tool.lower(), tag.split("--")[0]
 
 
-def _environment_file(path: Path) -> list[str]:
+def environment_file(path: Path) -> list[str]:
     """The dependencies listed in a conda environment.yml."""
     try:
         content = yaml.safe_load(path.read_text())
@@ -185,7 +185,7 @@ def _conda(info: ProcessInfo, pipe: "Pipeline", source: "Source", exprs: list[st
             if literal.endswith((".yml", ".yaml")):
                 env = source.path.parent / PurePosixPath(literal).name
                 if env.is_file():
-                    packages += _environment_file(env)
+                    packages += environment_file(env)
             elif "${" not in literal:
                 packages += literal.split()
     info.conda_packages = list(dict.fromkeys(packages))
@@ -253,7 +253,7 @@ def _meta_yml(info: ProcessInfo, source: "Source") -> None:
 
 def _one_tool_images(info: ProcessInfo) -> list[str]:
     """Tool names of biocontainer-style images, which hold one tool (a pipeline's own image holds all of them)."""
-    tools = [_image_tool(i)[0] for i in info.containers if re.search(r"biocontainers|depot\.galaxyproject\.org", i)]
+    tools = [image_tool(i)[0] for i in info.containers if re.search(r"biocontainers|depot\.galaxyproject\.org", i)]
     return [t for t in tools if t]
 
 
@@ -281,7 +281,7 @@ def _comparable(name: str) -> str:
     return re.sub(r"[-_.]", "", name)
 
 
-def _same_tool(executable: str, declared: str) -> bool:
+def same_tool(executable: str, declared: str) -> bool:
     """`bowtie2-build` belongs to `bowtie2`, `bwa-mem2` to `bwa-mem2`: one name starts with the other.
     Bioconda packages may carry a group prefix: `bedGraphToBigWig` is `ucsc-bedgraphtobigwig`."""
     a, b = _comparable(executable), _comparable(declared)
@@ -291,32 +291,46 @@ def _same_tool(executable: str, declared: str) -> bool:
     return a.startswith(b) or b.startswith(a) or (len(grouped) == 2 and _comparable(grouped[1]) == a)
 
 
-def _is_excluded(name: str, excluded: frozenset[str]) -> bool:
+def is_excluded(name: str, excluded: frozenset[str]) -> bool:
     """Whether a tool is on the exclusion list, by name or by a glob pattern (`r-*`)."""
     name = name.lower()
     return name in excluded or any(fnmatch.fnmatchcase(name, p) for p in excluded if any(c in p for c in "*?["))
 
 
-def _steps(info: ProcessInfo, excluded: frozenset[str]) -> list[Step]:
-    """The tools a process runs, in script order: executables, restricted to the software the module declares."""
-    executables = [e for e in info.executables if not _is_excluded(e, excluded)]
-    # meta.yml often names only the main tool (bwa), the conda environment also the others (samtools)
-    sources = {"meta": info.meta_tools, "conda": info.conda_tools, "container": _one_tool_images(info)}
-    sources = {k: [d for d in v if not _is_excluded(d, excluded)] for k, v in sources.items()}
+def choose_steps(
+    executables: list[str],
+    sources: dict[str, list[str]],
+    excluded: frozenset[str],
+    fallback: str,
+    ids: dict[str, str] | None = None,
+) -> list[Step]:
+    """The tools a process (or Snakemake rule) runs, in script order: its executables, restricted to the software
+    it declares. sources: the declared tools by origin, most specific first (meta, conda, container, ...);
+    ids: bio.tools IDs per declared tool (meta.yml); fallback: the name standing for the tool if nothing is left."""
+    ids = ids or {}
+    executables = [e for e in executables if not is_excluded(e, excluded)]
+    sources = {k: [d for d in v if not is_excluded(d, excluded)] for k, v in sources.items()}
     declared = [d for names in sources.values() for d in names]
     if not declared:
         steps = [Step(e, "executable") for e in executables]
     else:
         steps = []
+        first = next(iter(sources.values()))  # the most specific source, e.g. meta.yml
         for e in executables:
-            match = next((d for d in declared if _same_tool(e, d)), None)
+            match = next((d for d in declared if same_tool(e, d)), None)
             if match is not None:
-                meta = next((m for m in sources["meta"] if _same_tool(e, m)), "")
-                steps.append(Step(e, "executable", info.meta_ids.get(meta.lower(), ""), match))
+                specific = next((m for m in first if same_tool(e, m)), "")
+                steps.append(Step(e, "executable", ids.get(specific.lower(), ""), match))
         if not steps:  # nothing in the script matches (amrfinder_update vs amrfinderplus): the declared tools
             source, names = next((k, v) for k, v in sources.items() if v)
-            steps = [Step(d, source, info.meta_ids.get(d.lower(), ""), d) for d in names]
-    return steps or [Step(info.process, "process")]  # only own scripts: the process stands for its tool
+            steps = [Step(d, source, ids.get(d.lower(), ""), d) for d in names]
+    return steps or [Step(fallback, "process")]  # only own scripts: the process stands for its tool
+
+
+def _steps(info: ProcessInfo, excluded: frozenset[str]) -> list[Step]:
+    """The tools a process runs; meta.yml often names only the main tool (bwa), conda also the others (samtools)."""
+    sources = {"meta": info.meta_tools, "conda": info.conda_tools, "container": _one_tool_images(info)}
+    return choose_steps(info.executables, sources, excluded, info.process, info.meta_ids)
 
 
 def read_process(pipe: "Pipeline", source: "Source", name: str) -> ProcessInfo:

@@ -6,6 +6,8 @@ dump (biotools_raw*.jsonl): every ID used must exist in it. The bio.tools ID of 
   curated        the hand-curated TSV (nextflow_curated_map.tsv): `map` to one or more IDs (several make a chain),
                  or `drop` (not a bio.tools tool: the node goes, its neighbours are connected)
   meta           the `biotools:` identifier an nf-core-style meta.yml gives for this tool, if it is in bio.tools
+  wrapper_homepage  (Snakemake) the homepage a snakemake-wrapper's meta.yaml gives is the homepage of exactly one
+                 bio.tools entry (also after removing trailing path parts, if the entry then resembles the tool)
   biotools_id    the tool name is a bio.tools ID
   biotools_name  the tool name is the name of exactly one bio.tools entry
   biotools_url   the tool name is the package or repository name (GitHub, CRAN, Bioconductor, PyPI, ...)
@@ -39,12 +41,19 @@ GROUP_PREFIXES: Final = ("bioconductor-", "r-", "python-", "py-", "perl-")
 CONFIDENCE: Final = {
     "curated": 1,
     "meta": 1,
+    "wrapper_homepage": 2,
     "biotools_id": 2,
     "biotools_name": 2,
     "biotools_url": 2,
     "codex": 2,
     "prefix": 3,
 }
+# hosts of many tools: a homepage is never matched by the bare host (github.com/x/y needs both parts)
+_SHARED_HOST_WORDS: Final = """
+    github.com gitlab.com bitbucket.org sourceforge.net pypi.org anaconda.org bioconductor.org cran.r-project.org
+    ncbi.nlm.nih.gov www.ncbi.nlm.nih.gov ebi.ac.uk www.ebi.ac.uk readthedocs.io github.io doi.org
+"""
+SHARED_HOSTS: Final = frozenset(_SHARED_HOST_WORDS.split())
 MIN_URL_NAME: Final = 3  # shorter package / repository names are not matched (`s`, `t`)
 # package or repository name in a URL of a bio.tools entry
 URL_NAME: Final = re.compile(
@@ -117,6 +126,13 @@ def _words(name: str) -> set[str]:
     return {w for w in re.split(r"[^a-z0-9]+", name.lower()) if len(w) >= 4}
 
 
+def url_key(url: str) -> str:
+    """A URL for comparing homepages: lower case, without scheme, `www.`, query, fragment and trailing '/'."""
+    key = re.sub(r"^[a-z]+://", "", url.strip().lower())
+    key = re.split(r"[?#]", key)[0].removeprefix("www.").rstrip("/")
+    return key.removesuffix("/index.html").removesuffix("/index.htm")
+
+
 def ungrouped(key: str) -> str:
     """The name without a bioconda group prefix (bioconductor-complexheatmap -> complexheatmap), else ''."""
     return next((key[len(p) :] for p in GROUP_PREFIXES if key.startswith(p) and len(key) > len(p)), "")
@@ -131,6 +147,7 @@ class BiotoolsIndex:
     by_name: dict[str, str] = field(default_factory=dict)  # lower-case name, unique -> ID
     by_url: dict[str, str] = field(default_factory=dict)  # lower-case package / repository name, unique -> ID
     compact_ids: list[tuple[str, str]] = field(default_factory=list)  # (ID without '-', '_', ..., ID) for suggestions
+    by_homepage: dict[str, str] = field(default_factory=dict)  # url_key of the homepage, unique -> ID
 
     @classmethod
     def load(cls, path: Path) -> "BiotoolsIndex":
@@ -138,6 +155,7 @@ class BiotoolsIndex:
         index = cls()
         name_ids: dict[str, set[str]] = defaultdict(set)
         url_ids: dict[str, set[str]] = defaultdict(set)
+        homepage_ids: dict[str, set[str]] = defaultdict(set)
         with path.open(encoding="utf-8") as f:
             for line in f:
                 entry = json.loads(line)
@@ -147,6 +165,8 @@ class BiotoolsIndex:
                 index.names[biotools_id] = name
                 for spelling in spellings(name.lower()):
                     name_ids[spelling].add(biotools_id)
+                if entry.get("homepage"):
+                    homepage_ids[url_key(entry["homepage"])].add(biotools_id)
                 links = [entry.get("homepage") or ""] + [
                     (link or {}).get("url") or "" for link in (entry.get("link") or []) + (entry.get("download") or [])
                 ]
@@ -158,6 +178,7 @@ class BiotoolsIndex:
         index.by_name = {n: next(iter(ids)) for n, ids in name_ids.items() if n and len(ids) == 1}
         index.by_url = {n: next(iter(ids)) for n, ids in url_ids.items() if len(ids) == 1}
         index.compact_ids = [(_compact(i), i) for i in index.ids.values()]
+        index.by_homepage = {u: next(iter(ids)) for u, ids in homepage_ids.items() if u and len(ids) == 1}
         return index
 
     def name_of(self, biotools_id: str) -> str:
@@ -171,6 +192,22 @@ class BiotoolsIndex:
             if a and b and (a.startswith(b) or b.startswith(a) or _words(key) & _words(other)):
                 return True
         return False
+
+    def find_homepage(self, url: str, tool: str) -> str:
+        """The bio.tools ID whose homepage is this URL; else the one whose homepage is a shorter form of it
+        (bio-bwa.sourceforge.net/bwa.shtml -> bio-bwa.sourceforge.net), if that entry resembles the tool.
+        Never the bare host of a site hosting many tools (github.com/x/y needs owner and repository)."""
+        key = url_key(url)
+        if key in self.by_homepage:
+            return self.by_homepage[key]
+        parts = key.split("/")
+        shared = parts[0] in SHARED_HOSTS or any(parts[0].endswith("." + h) for h in ("github.io", "readthedocs.io"))
+        least = 3 if parts[0] in {"github.com", "gitlab.com", "bitbucket.org"} else 2 if shared else 1
+        for n in range(len(parts) - 1, least - 1, -1):
+            found = self.by_homepage.get("/".join(parts[:n]))
+            if found and self._resembles(tool, found):
+                return found
+        return ""
 
     def find(self, key: str) -> tuple[str, str]:
         """(bio.tools ID, method) of a lower-case tool name in the dump, ('', '') if not found."""
@@ -219,7 +256,7 @@ class ToolMap:
 
     action: Action
     ids: list[str] = field(default_factory=list)  # several for a curated chain
-    method: str = ""  # curated | meta | biotools_id | biotools_name | biotools_url | codex | prefix
+    method: str = ""  # curated | meta | wrapper_homepage | biotools_id | biotools_name | biotools_url | codex | prefix
     codex_id: str = ""  # the candidates, to spot disagreements
     match_id: str = ""  # the dump match (biotools_id / _name / _url)
 
@@ -246,9 +283,12 @@ class Lookup:
                 return self.spelled(codex_id)
         return ""
 
-    def map(self, tool: str, source: str, meta_id: str, process: str, declared: str = "") -> ToolMap:
+    def map(  # noqa: PLR0913
+        self, tool: str, source: str, meta_id: str, process: str, declared: str = "", *, homepage: str = ""
+    ) -> ToolMap:
         """Map one tool node; source is how the tool name was found (executable, meta, ..., process),
-        declared the tool the module declares for it (bowtie2-build -> bowtie2), tried after the tool itself."""
+        declared the tool the module declares for it (bowtie2-build -> bowtie2), tried after the tool itself,
+        homepage the tool's homepage (snakemake-wrappers)."""
         curated = self.curated.get(tool.lower()) or self.curated.get(declared.lower())
         if curated:
             return ToolMap(curated.action, [self.spelled(i) for i in curated.ids], "curated")
@@ -257,8 +297,11 @@ class Lookup:
         codex_id = next((c for k in keys if (c := self._codex(k))), "")
         found = ToolMap("map", codex_id=codex_id, match_id=match_id)
         meta_id = meta_id.removeprefix("biotools:").strip()
+        homepage_id = self.biotools.find_homepage(homepage, tool) if homepage else ""
         if meta_id and meta_id.lower() in self.biotools.ids:
             found.ids, found.method = [self.spelled(meta_id)], "meta"
+        elif homepage_id:
+            found.ids, found.method = [homepage_id], "wrapper_homepage"
         elif match_id:
             found.ids, found.method = [match_id], match_method
         elif codex_id:

@@ -1,0 +1,82 @@
+# Snakemake Workflow Catalog
+
+Downloads the workflows of the [Snakemake Workflow Catalog](https://snakemake.github.io/snakemake-workflow-catalog), reads the rule DAG of each one without running it, and translates its tools to bio.tools IDs. This is the same procedure as for the WorkflowHub Nextflow workflows (`directed-graph/workflowhub`, section "Nextflow"), and the outputs have the same columns.
+
+The scripts to run, from the repository root:
+```
+python3 directed-graph/snakemake/download_snakemake_catalog.py --sample 50 --standardized   # catalog + git clones
+python3 directed-graph/snakemake/extract_snakemake_dags.py                                  # rule DAG, one node per tool
+python3 directed-graph/snakemake/map_snakemake_tools.py                                     # tool nodes -> bio.tools IDs
+```
+They need Python 3.12+, PyYAML and git. The shell parser, the tool selection and the bio.tools mapping are shared with the Nextflow scripts: they are imported from `directed-graph/workflowhub` (`nfdag/`, `map_nextflow_tools.py`).
+
+## Download
+
+`download_snakemake_catalog.py` fetches the catalog's `data.json` (6,714 workflows, 479 "standardized") and clones the selected repositories.
+- **Selection:**
+  - `--standardized` or `--non-standardized` picks one group, and neither picks all.
+  - `--sample N` takes a fixed sample (the same in every run). In the standardized sample, the workflows with a catalog rule graph come first, so the DAGs can be checked against it.
+  - `--workflow owner/repo` names single workflows.
+  - Each run adds to the same folders, so a later, larger run only downloads what is new.
+- **Clones:** a shallow clone of the latest release tag, else the default branch. Only the files needed to read the workflow are checked out (Snakefiles, `.smk`, yaml, scripts), so data stored in git is not downloaded. Cloning runs no code. `.cloned_from` records the commit or the error.
+- **snakemake-wrappers:** the `meta.yaml` (with the tool's homepage) and `environment.yaml` (conda packages) of every wrapper used.
+- **Summary:** `--summary-only` rebuilds `snakemake_workflows.csv` from the saved files.
+
+"Standardized" workflows follow the catalog's layout: `.snakemake-workflow-catalog.yml`, `config/README.md`, usually `workflow/Snakefile`, `workflow/rules/*.smk` and `workflow/envs/*.yaml`.
+
+## DAG
+
+`extract_snakemake_dags.py` (code in `smkdag/`) reads the main Snakefile (`workflow/Snakefile`, else `Snakefile`, else the least deep one) and everything it includes: local modules, `use rule ... as ... with:`, and functions and variables. Nothing is executed. The Snakefiles are split into logical lines, and each rule section is read with Python's `ast`.
+- **Edges (`smkdag/build.py`):**
+  - **By path pattern:** an input path of rule B that matches an output pattern of rule A gives A -> B, as Snakemake links rules. If several output patterns match, the most specific one wins (the longest literal text).
+  - **By run-time value:** an input whose wildcards are filled in at run time (`expand("results/{tool}/x.bam", tool=config[...])`) counts every rule that can write such a file, as every if/else branch of a Nextflow pipeline counts.
+  - **By reference:** `rules.A.output` gives the edge directly.
+  - **Input functions** (`input: get_bams`, lambdas) are mined for the paths they can return (`via=function`). An input that stays unresolved (config or sample-sheet values only) loses only its own edges.
+  - **Not DAG nodes:** rules without output that run nothing (`all`).
+- **Tools per rule (`smkdag/tools.py`):**
+  - **wrapper:** the wrapper's tool (`v3.0.0/bio/bwa/mem` -> `bwa`), declared by its conda package, with the homepage from its `meta.yaml`.
+  - **conda environment:** the packages of `workflow/envs/*.yaml`. The executables of `shell:` are restricted to them, and several make a chain (`bwa mem | samtools sort` -> `…/bwa -> …/samtools`, `kind=chain`). Without a match, the packages themselves are used, as for Nextflow modules.
+  - **container:** for a biocontainers image, its tool.
+  - **Fallback:** the rule name, for rules that only run their own code.
+  - **Excluded:** tools in `snakemake_excluded_tools.txt` (compression, runtimes, ...; globs like `r-*` allowed) never become nodes.
+- **Check:** for workflows the catalog has a rule graph for (Snakemake's own `--rulegraph` on the workflow's test data), `snakemake_dags.csv` gives recall and precision of the static rule edges, and `warnings.log` lists the edges not found. That graph only holds the rules of one test configuration, while the static DAG is the union over all configurations, so the precision measured against it is a lower bound.
+
+Output per workflow, in `data/dags/<owner>__<repo>/`:
+- `nodes.csv`: one row per tool node, with tool, source, declared package, homepage, wrapper, conda environment and packages, container, executables, scripts, and inputs / unresolved inputs.
+- `edges.csv`: tool nodes, with `kind` (dag/chain) and `via` (path/function/rules).
+- `rule_edges.csv`: the rule graph.
+- `warnings.log`.
+
+## Mapping
+
+`map_snakemake_tools.py` maps the tool nodes as for Nextflow (see `directed-graph/workflowhub/README`, "Mapping the tools to bio.tools"). The reference is the bio.tools dump, and the first match wins:
+- curated
+- `wrapper_homepage`: the homepage in a snakemake-wrapper's `meta.yaml` is the homepage of exactly one bio.tools entry (also after removing trailing path parts, if the entry then resembles the tool)
+- `biotools_id` / `biotools_name` / `biotools_url`
+- `codex`
+- `prefix`: rule names, `bwa_mem` -> bwa
+
+Confidence: 1 = curated; 2 = wrapper_homepage, biotools_*, codex; 3 = prefix.
+
+Curation works as for Nextflow: `data/mapping/snakemake_to_curate.tsv` lists the unmapped and prefix-matched tools, with suggestions. Fill in `action` (`map` with `biotoolsID`, or `drop`) and copy the row to `snakemake_curated_map.tsv`, then run `map_snakemake_tools.py` again.
+
+Outputs:
+- `data/mapping/snakemake_tool_map.tsv`, `snakemake_to_curate.tsv`.
+- `data/biotools/biotools_{pairs,edges,nodes}.csv`: all workflows. The columns are those of the Galaxy and Nextflow files, including `confidence` and `confidence1-3`.
+- `data/biotools/biotools_{pairs,edges,nodes}_standardized.csv`: the standardized workflows only.
+- `data/biotools/workflows/<owner>__<repo>.csv`: the bio.tools DAG of each workflow, for Cytoscape.
+
+```
+data/
+├── download/      download_snakemake_catalog.py
+│   ├── catalog.json                 the catalog's data.json
+│   ├── snakemake_workflows.csv      one row per downloaded workflow (standardized, stars, ref, commit, Snakefile)
+│   ├── repos/<owner>__<repo>/       sparse clones
+│   ├── wrappers/<version>/<path>/   meta.yaml, environment.yaml
+│   └── rulegraphs/<owner>__<repo>.dot   the catalog's rule graphs
+├── dags/          extract_snakemake_dags.py: <owner>__<repo>/{nodes,edges,rule_edges}.csv, warnings.log, snakemake_dags.csv
+├── mapping/       map_snakemake_tools.py: snakemake_tool_map.tsv, snakemake_to_curate.tsv
+└── biotools/      map_snakemake_tools.py: biotools_{pairs,edges,nodes}[_standardized].csv, workflows/
+```
+
+Lint and type check (settings in `pyproject.toml`), from this folder: `ruff check . && ruff format --check . && ty check`

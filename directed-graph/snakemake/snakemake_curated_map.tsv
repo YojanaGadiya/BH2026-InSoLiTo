@@ -1,0 +1,12 @@
+# Hand-curated bio.tools mapping of Snakemake tool nodes (read by map_snakemake_tools.py). Tab-separated.
+# tool:       tool name as in nodes.csv (case-insensitive); for rules without a known tool, the rule name
+# action:     map  = use biotoolsID (several IDs separated by ";" make a chain, e.g. bwa;samtools)
+#             drop = not a bio.tools tool: the node goes, its neighbours are connected
+# biotoolsID: for map
+# note:       free text (why)
+# Candidates: data/mapping/snakemake_to_curate.tsv has the same first columns - fill in and copy rows here.
+# The format is that of directed-graph/workflowhub/nextflow_curated_map.tsv.
+tool	action	biotoolsID	note
+rust-bio-tools	map	rust-bio	maps to Rust-Bio
+bamcoverage	map	deeptools	Is part of DeepTools
+fasterq-dump	map	fastER	Part of fastER
