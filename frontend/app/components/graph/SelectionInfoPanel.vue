@@ -108,8 +108,6 @@
 </template>
 
 <script setup>
-import { DIRECTED_EDGES_MIN_ARTICLES } from '../../utils/cypherQueries'
-
 const props = defineProps({
     // { kind: 'node', id, label, type, properties } | { kind: 'edge', id, source, target, weight, properties }
     selection: { type: Object, required: true }
@@ -167,7 +165,8 @@ const communityColor = computed(() => getCommunityColor(props.selection.kind ===
 const { fetchBreakdown, loading, error } = useEdgeYearBreakdown()
 const breakdown = ref([])
 
-const minArticles = DIRECTED_EDGES_MIN_ARTICLES
+const filterStore = useFilterStore()
+const minArticles = computed(() => filterStore.directedMinArticles)
 
 // A directed edge (CITED_BEFORE, drawn as one edge per pair) has no co-citation count
 // of its own, so its total comes from the year breakdown; a co-citation edge keeps

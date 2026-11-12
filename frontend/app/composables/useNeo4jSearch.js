@@ -26,9 +26,9 @@ export function useNeo4jSearch () {
     }
 
     // CITED_BEFORE edges between the given nodes (see buildDirectedEdgesQuery).
-    async function fetchDirectedEdges (nodeIds) {
+    async function fetchDirectedEdges (nodeIds, minArticles) {
         if (nodeIds.length < 2) return []
-        const { statement, parameters } = buildDirectedEdgesQuery({ nodeIds })
+        const { statement, parameters } = buildDirectedEdgesQuery({ nodeIds, minArticles })
         const response = await postCypher(statement, parameters, ['graph'])
         return parseNeo4jGraph(response).edges
     }
