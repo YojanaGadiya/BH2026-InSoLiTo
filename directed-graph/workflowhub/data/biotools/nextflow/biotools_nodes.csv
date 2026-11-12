@@ -26,7 +26,7 @@ bedgraphtobigwig,bedGraphToBigWig,15,true
 htslib,HTSlib,15,true
 spades,SPAdes,15,true
 gffread,gffread,14,false
-UCSC_Genome_Browser_Utilities,UCSC Genome Browser Utilities,13,false
+UCSC_Genome_Browser_Utilities,UCSC Genome Browser Utilities,12,false
 extract,EXTRACT,12,true
 find,FIND,12,true
 snpeff,snpEff,12,true
@@ -73,7 +73,6 @@ gffutils,GFFutils,5,false
 igv,IGV,5,true
 kallisto,kallisto,5,true
 lofreq,lofreq,5,true
-macs,MACS,5,true
 matplotlib,Matplotlib,5,false
 merqury,Merqury,5,true
 porechop_abi,Porechop_ABI,5,true
@@ -91,7 +90,6 @@ Racon,Racon,4,true
 Sentieon_DNASeq,Sentieon DNASeq,4,true
 ThermoRawFileParser,ThermoRawFileParser,4,true
 adapterremoval,AdapterRemoval,4,false
-amrfinderplus,AMRFinderPlus,4,false
 antismash,antiSMASH,4,true
 assign,ASSIGN,4,true
 barrnap,Barrnap,4,false
@@ -103,11 +101,9 @@ deseq2,DESeq2,4,true
 featurecounts,FeatureCounts,4,true
 filtlong,Filtlong,4,false
 gunc,GUNC,4,true
-interproscan_ebi,InterProScan (EBI),4,true
 iqtree,iqtree,4,true
 jellyfish,Jellyfish,4,true
 mash,Mash,4,true
-ncbi_fcs,NCBI fcs,4,true
 percolator,Percolator,4,true
 pycoqc,pycoQC,4,true
 qiime,QIIME,4,true
@@ -119,7 +115,6 @@ vcftools,VCFtools,4,true
 windowmasker,WindowMasker,4,false
 FCS,Frequency Conservation Score  (FCS),3,true
 GLnexus,GLnexus,3,true
-MetaBAT_2,MetaBAT 2,3,true
 OrthoFinder,OrthoFinder,3,true
 andersen-lab_ivar,iVar,3,true
 annotate,annotate,3,true
@@ -148,13 +143,12 @@ fastq_screen,FastQ Screen,3,false
 fgbio,fgbio,3,false
 gap,GAP,3,true
 gridss,GRIDSS,3,true
-htseq,HTSeq,3,true
 krakentools,KrakenTools,3,false
 manta,manta,3,true
 manta_sv,Manta,3,true
-maxbin,MaxBin,3,true
 minia,Minia,3,true
 msisensor-pro,MSIsensor-pro,3,true
+ncbi_fcs,NCBI fcs,3,true
 openms,OpenMS,3,true
 pbmm2,pbmm2,3,false
 pear,PEAR,3,true
@@ -187,6 +181,7 @@ SanntiS,SanntiS,2,true
 ToulligQC,ToulligQC,2,false
 abacas,abacas,2,true
 ale,ALE,2,true
+amrfinderplus,AMRFinderPlus,2,false
 ascat,ASCAT,2,true
 bandage,Bandage,2,true
 binette,Binette,2,false
@@ -220,6 +215,7 @@ gtftogenepred,gtftogenepred,2,false
 hamronization,hAMRonization,2,false
 hh-suite,HH-suite,2,true
 hifiasm,Hifiasm,2,true
+htseq,HTSeq,2,true
 igvtools,IGVtools,2,true
 ivar,iVar,2,true
 kmcp,KMCP,2,false
@@ -236,7 +232,6 @@ motus,Metagenomic operational taxonomic units (mOTUs),2,true
 mummer,MUMmer,2,true
 nanofilt,Nanofilt,2,true
 nanopolish,nanopolish,2,true
-ncbi_datasets,NCBI Datasets,2,false
 ngscheckmate,NGSCheckMate,2,true
 omicflow,OmicFlow,2,false
 pangolin,Pangolin,2,true
@@ -259,7 +254,6 @@ whatshap,WhatsHap,2,true
 yahs,YaHS,2,true
 ASHLAR,ASHLAR,1,true
 AlphaBeta,AlphaBeta,1,true
-BiG-SCAPE,BiG-SCAPE,1,true
 BlobToolKit,BlobToolKit,1,true
 CIRCexplorer2,CIRCexplorer2,1,true
 CORE,CORE,1,true
@@ -300,7 +294,6 @@ ampir,ampir,1,true
 amplify,AMPlify,1,true
 anndata,anndata,1,true
 anota2seq,anota2seq,1,true
-antidefensefinder,DefenseFinder,1,true
 aragorn,aragorn,1,true
 argnorm,argNorm,1,false
 art,ART,1,true
@@ -420,6 +413,7 @@ ilastik,ilastik,1,true
 infernal,Infernal,1,true
 insilicoseq_20,InSilicoSeq,1,true
 integron_finder,Integron Finder,1,true
+interproscan_ebi,InterProScan (EBI),1,true
 isescan,ISEScan,1,true
 isoseq3,IsoSeq3,1,false
 itsx,ITSx,1,true
