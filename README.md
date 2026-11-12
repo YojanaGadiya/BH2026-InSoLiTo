@@ -2,7 +2,7 @@
 
 **InSoLiTo** (Interactions of Software for Life Sciences Tools) shows which research software tools are used together, based on how often their papers are cited together (co-citation). Live version: https://test-insolito.openebench.bsc.es/
 
-This is the repository of **BioHackathon Europe 2026, Project 17**: [*Bridging Literature and Practice: Tool Co-citation Networks from Publications and Registered Workflows*](https://github.com/elixir-europe/biohackathon-projects-2026/blob/main/17.md). On top of co-citation, it adds **directed edges**: which tool is cited before which in the text of an article.
+This is the repository of **BioHackathon Europe 2026, Project 17**: [*Bridging Literature and Practice: Tool Co-citation Networks from Publications and Registered Workflows*](https://github.com/elixir-europe/biohackathon-projects-2026/blob/main/17.md). On top of co-citation, it adds **directed edges**: which tool is cited before which in the text of an article. It also compares them with the tool order in registered workflows.
 
 ## Repository layout
 
