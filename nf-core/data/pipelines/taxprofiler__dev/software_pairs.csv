@@ -1,0 +1,602 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+adapterremoval,bbmap,data_flow,2,2,E00048,
+adapterremoval,bowtie2,data_flow,2,2,E00071,
+adapterremoval,bwa,data_flow,8,8,E00433,
+adapterremoval,cat,data_flow,6,6,E00001,
+adapterremoval,centrifuge,data_flow,4,4,E00221,
+adapterremoval,centrifuger,data_flow,4,4,E00265,
+adapterremoval,deacon,data_flow,2,2,E00062,
+adapterremoval,diamond,data_flow,8,8,E00393,
+adapterremoval,falco,data_flow,2,2,E00015,
+adapterremoval,fastqc,data_flow,2,2,E00009,
+adapterremoval,ganon,data_flow,4,4,E00637,
+adapterremoval,hostile,data_flow,2,2,E00083,
+adapterremoval,kaiju,data_flow,4,4,E00349,
+adapterremoval,kmcp,data_flow,6,6,E00575,
+adapterremoval,kraken2,data_flow,4,4,E00174,
+adapterremoval,krakenuniq,data_flow,6,6,E00515,
+adapterremoval,malt,data_flow,4,4,E00133,
+adapterremoval,metacache,data_flow,4,4,E00763,
+adapterremoval,metaphlan,data_flow,4,4,E00309,
+adapterremoval,multiqc,data_flow,2,2,E01062,
+adapterremoval,nonpareil,data_flow,4,4,E00033,
+adapterremoval,prinseq-plus-plus,data_flow,2,2,E00054,
+adapterremoval,sylph,data_flow,4,4,E00681,
+bbmap,bowtie2,data_flow,1,1,E00065,
+bbmap,bwa,data_flow,4,4,E00427,
+bbmap,cat,data_flow,1,1,E00108,
+bbmap,centrifuge,data_flow,2,2,E00215,
+bbmap,centrifuger,data_flow,2,2,E00259,
+bbmap,deacon,data_flow,1,1,E00056,
+bbmap,diamond,data_flow,4,4,E00387,
+bbmap,ganon,data_flow,2,2,E00631,
+bbmap,hostile,data_flow,1,1,E00077,
+bbmap,kaiju,data_flow,2,2,E00343,
+bbmap,kmcp,data_flow,3,3,E00569,
+bbmap,kraken2,data_flow,2,2,E00168,
+bbmap,krakenuniq,data_flow,3,3,E00509,
+bbmap,malt,data_flow,2,2,E00127,
+bbmap,metacache,data_flow,2,2,E00757,
+bbmap,metaphlan,data_flow,2,2,E00303,
+bbmap,multiqc,data_flow,1,1,E01073,
+bbmap,sylph,data_flow,2,2,E00675,
+bowtie2,bwa,data_flow,4,4,E00425,
+bowtie2,cat,data_flow,1,1,E00106,
+bowtie2,centrifuge,data_flow,2,2,E00213,
+bowtie2,centrifuger,data_flow,2,2,E00257,
+bowtie2,diamond,data_flow,4,4,E00385,
+bowtie2,ganon,data_flow,2,2,E00629,
+bowtie2,kaiju,data_flow,2,2,E00341,
+bowtie2,kmcp,data_flow,3,3,E00567,
+bowtie2,kraken2,data_flow,2,2,E00166,
+bowtie2,krakenuniq,data_flow,3,3,E00507,
+bowtie2,malt,data_flow,2,2,E00125,
+bowtie2,metacache,data_flow,2,2,E00755,
+bowtie2,metaphlan,data_flow,2,2,E00301,
+bowtie2,multiqc,data_flow,1,1,E01075,
+bowtie2,samtools,data_flow,2,2,E00074,
+bowtie2,sylph,data_flow,2,2,E00673,
+bracken,bwa,gate_metadata,2,0,E00998,
+bracken,ganon,gate_metadata,1,0,E01030,
+bracken,krakentools,gate_metadata,4,0,E00795,
+bracken,metaphlan,gate_metadata,1,0,E00983,
+bracken,sylph-tax,gate_metadata,1,0,E01045,
+bracken,taxpasta,gate_metadata,4,0,E00843,
+bwa,bracken,data_flow,1,1,E00909,
+bwa,ganon,data_flow,1,1,E01036,
+bwa,krakentools,data_flow,4,4,E00801,
+bwa,metaphlan,data_flow,1,1,E00989,
+bwa,multiqc,data_flow,1,1,E01088,
+bwa,sylph-tax,data_flow,1,1,E01051,
+bwa,taxpasta,data_flow,4,4,E00849,
+cat,bbmap,data_flow,1,1,E00047,
+cat,bowtie2,data_flow,1,1,E00070,
+cat,bwa,data_flow,8,8,E00423,
+cat,centrifuge,data_flow,4,4,E00211,
+cat,centrifuger,data_flow,4,4,E00255,
+cat,deacon,data_flow,1,1,E00061,
+cat,diamond,data_flow,8,8,E00383,
+cat,falco,data_flow,1,1,E00014,
+cat,fastqc,data_flow,1,1,E00008,
+cat,ganon,data_flow,4,4,E00627,
+cat,hostile,data_flow,1,1,E00082,
+cat,kaiju,data_flow,4,4,E00339,
+cat,kmcp,data_flow,6,6,E00565,
+cat,kraken2,data_flow,4,4,E00164,
+cat,krakenuniq,data_flow,6,6,E00505,
+cat,malt,data_flow,4,4,E00123,
+cat,metacache,data_flow,4,4,E00753,
+cat,metaphlan,data_flow,4,4,E00299,
+cat,nonpareil,data_flow,2,2,E00032,
+cat,prinseq-plus-plus,data_flow,1,1,E00053,
+cat,sylph,data_flow,4,4,E00671,
+centrifuge,bracken,data_flow,1,1,E00904,
+centrifuge,bwa,data_flow,2,2,E00999,
+centrifuge,ganon,data_flow,1,1,E01031,
+centrifuge,kaiju,data_flow,4,4,E00810,
+centrifuge,krakentools,data_flow,4,4,E00796,
+centrifuge,megan,data_flow,1,1,E00832,
+centrifuge,metaphlan,data_flow,1,1,E00984,
+centrifuge,multiqc,data_flow,1,1,E01083,
+centrifuge,sylph-tax,data_flow,1,1,E01046,
+centrifuge,taxpasta,data_flow,4,4,E00844,
+centrifuger,bracken,gate_metadata,1,0,E00905,
+centrifuger,bwa,gate_metadata,2,0,E01000,
+centrifuger,ganon,gate_metadata,1,0,E01032,
+centrifuger,kaiju,data_flow,4,4,E00811,
+centrifuger,krakentools,gate_metadata,4,0,E00797,
+centrifuger,megan,data_flow,1,1,E00833,
+centrifuger,metaphlan,gate_metadata,1,0,E00985,
+centrifuger,multiqc,data_flow,1,1,E01084,
+centrifuger,sylph-tax,gate_metadata,1,0,E01047,
+centrifuger,taxpasta,gate_metadata,4,0,E00845,
+deacon,bwa,data_flow,8,8,E00424,
+deacon,cat,data_flow,2,2,E00105,
+deacon,centrifuge,data_flow,4,4,E00212,
+deacon,centrifuger,data_flow,4,4,E00256,
+deacon,diamond,data_flow,8,8,E00384,
+deacon,ganon,data_flow,4,4,E00628,
+deacon,kaiju,data_flow,4,4,E00340,
+deacon,kmcp,data_flow,6,6,E00566,
+deacon,kraken2,data_flow,4,4,E00165,
+deacon,krakenuniq,data_flow,6,6,E00506,
+deacon,malt,data_flow,4,4,E00124,
+deacon,metacache,data_flow,4,4,E00754,
+deacon,metaphlan,data_flow,4,4,E00300,
+deacon,multiqc,data_flow,2,2,E01074,
+deacon,sylph,data_flow,4,4,E00672,
+diamond,bracken,gate_metadata,2,0,E00908,
+diamond,bwa,gate_metadata,4,0,E01003,
+diamond,ganon,gate_metadata,2,0,E01035,
+diamond,kaiju,gate_metadata,4,0,E00816,
+diamond,krakentools,gate_metadata,8,0,E00800,
+diamond,megan,gate_metadata,1,0,E00838,
+diamond,metaphlan,gate_metadata,2,0,E00988,
+diamond,multiqc,data_flow,1,1,E01087,
+diamond,sylph-tax,gate_metadata,2,0,E01050,
+diamond,taxpasta,gate_metadata,8,0,E00848,
+falco,multiqc,data_flow,3,3,E01058,
+fastp,bbmap,data_flow,3,3,E00044,
+fastp,bowtie2,data_flow,3,3,E00067,
+fastp,bwa,data_flow,12,12,E00429,
+fastp,cat,data_flow,3,3,E00110,
+fastp,centrifuge,data_flow,6,6,E00217,
+fastp,centrifuger,data_flow,6,6,E00261,
+fastp,deacon,data_flow,3,3,E00058,
+fastp,diamond,data_flow,12,12,E00389,
+fastp,falco,data_flow,3,3,E00011,
+fastp,fastqc,data_flow,3,3,E00005,
+fastp,ganon,data_flow,6,6,E00633,
+fastp,hostile,data_flow,3,3,E00079,
+fastp,kaiju,data_flow,6,6,E00345,
+fastp,kmcp,data_flow,9,9,E00571,
+fastp,kraken2,data_flow,6,6,E00170,
+fastp,krakenuniq,data_flow,9,9,E00511,
+fastp,malt,data_flow,6,6,E00129,
+fastp,metacache,data_flow,6,6,E00759,
+fastp,metaphlan,data_flow,6,6,E00305,
+fastp,multiqc,data_flow,2,2,E01060,
+fastp,nonpareil,data_flow,6,6,E00029,
+fastp,prinseq-plus-plus,data_flow,3,3,E00050,
+fastp,sylph,data_flow,6,6,E00677,
+fastqc,multiqc,data_flow,3,3,E01059,
+filtlong,bwa,data_flow,4,4,E00440,
+filtlong,cat,data_flow,1,1,E00121,
+filtlong,centrifuge,data_flow,2,2,E00228,
+filtlong,centrifuger,data_flow,2,2,E00272,
+filtlong,deacon,data_flow,1,1,E00088,
+filtlong,diamond,data_flow,4,4,E00400,
+filtlong,falco,data_flow,1,1,E00027,
+filtlong,fastqc,data_flow,1,1,E00023,
+filtlong,ganon,data_flow,2,2,E00644,
+filtlong,hostile,data_flow,1,1,E00102,
+filtlong,kaiju,data_flow,2,2,E00356,
+filtlong,kmcp,data_flow,3,3,E00582,
+filtlong,kraken2,data_flow,2,2,E00181,
+filtlong,krakenuniq,data_flow,3,3,E00522,
+filtlong,malt,data_flow,2,2,E00140,
+filtlong,metacache,data_flow,2,2,E00770,
+filtlong,metaphlan,data_flow,2,2,E00316,
+filtlong,minimap2,data_flow,1,1,E00093,
+filtlong,multiqc,data_flow,1,1,E01068,
+filtlong,sylph,data_flow,2,2,E00688,
+ganon,bracken,data_flow,1,1,E00912,
+ganon,bwa,data_flow,2,2,E01007,
+ganon,kaiju,data_flow,4,4,E00815,
+ganon,krakentools,data_flow,4,4,E00804,
+ganon,megan,data_flow,1,1,E00837,
+ganon,metaphlan,data_flow,1,1,E00992,
+ganon,multiqc,data_flow,1,1,E01096,
+ganon,sylph-tax,data_flow,1,1,E01054,
+ganon,taxpasta,data_flow,4,4,E00852,
+gunzip,krona,data_flow,1,1,E00840,
+hostile,bwa,data_flow,8,8,E00426,
+hostile,cat,data_flow,2,2,E00107,
+hostile,centrifuge,data_flow,4,4,E00214,
+hostile,centrifuger,data_flow,4,4,E00258,
+hostile,diamond,data_flow,8,8,E00386,
+hostile,ganon,data_flow,4,4,E00630,
+hostile,kaiju,data_flow,4,4,E00342,
+hostile,kmcp,data_flow,6,6,E00568,
+hostile,kraken2,data_flow,4,4,E00167,
+hostile,krakenuniq,data_flow,6,6,E00508,
+hostile,malt,data_flow,4,4,E00126,
+hostile,metacache,data_flow,4,4,E00756,
+hostile,metaphlan,data_flow,4,4,E00302,
+hostile,multiqc,data_flow,2,2,E01077,
+hostile,sylph,data_flow,4,4,E00674,
+kaiju,bracken,gate_metadata,1,0,E00907,
+kaiju,bwa,gate_metadata,2,0,E01002,
+kaiju,ganon,gate_metadata,1,0,E01034,
+kaiju,krakentools,gate_metadata,4,0,E00799,
+kaiju,krona,gate_metadata,1,0,E00829,
+kaiju,megan,data_flow,1,1,E00834,
+kaiju,metaphlan,gate_metadata,1,0,E00987,
+kaiju,multiqc,data_flow,2,2,E01086,
+kaiju,sylph-tax,gate_metadata,1,0,E01049,
+kaiju,taxpasta,gate_metadata,4,0,E00847,
+kmcp,bracken,data_flow,1,1,E00911,
+kmcp,bwa,data_flow,2,2,E01006,
+kmcp,ganon,data_flow,1,1,E01038,
+kmcp,kaiju,data_flow,4,4,E00814,
+kmcp,krakentools,data_flow,4,4,E00803,
+kmcp,megan,data_flow,1,1,E00836,
+kmcp,metaphlan,data_flow,1,1,E00991,
+kmcp,multiqc,data_flow,1,1,E01090,
+kmcp,sylph-tax,data_flow,1,1,E01053,
+kmcp,taxpasta,data_flow,4,4,E00851,
+kraken2,bracken,gate_metadata,3,0,E00206,
+kraken2,bwa,gate_metadata,2,0,E00997,
+kraken2,ganon,gate_metadata,1,0,E01029,
+kraken2,kaiju,data_flow,4,4,E00809,
+kraken2,kraken2standardreport,data_flow,1,1,E00204,
+kraken2,krakentools,gate_metadata,4,0,E00794,
+kraken2,megan,data_flow,1,1,E00831,
+kraken2,metaphlan,gate_metadata,1,0,E00982,
+kraken2,multiqc,data_flow,1,1,E01082,
+kraken2,sylph-tax,gate_metadata,1,0,E01044,
+kraken2,taxpasta,gate_metadata,4,0,E00842,
+kraken2standardreport,bracken,gate_metadata,2,0,E00205,
+krakentools,krona,gate_metadata,1,0,E00828,
+krakentools,multiqc,data_flow,3,3,E01091,
+krakenuniq,bracken,gate_metadata,1,0,E00910,
+krakenuniq,bwa,gate_metadata,2,0,E01005,
+krakenuniq,ganon,gate_metadata,1,0,E01037,
+krakenuniq,kaiju,data_flow,4,4,E00813,
+krakenuniq,krakentools,gate_metadata,4,0,E00802,
+krakenuniq,megan,data_flow,1,1,E00835,
+krakenuniq,metaphlan,gate_metadata,1,0,E00990,
+krakenuniq,multiqc,data_flow,1,1,E01089,
+krakenuniq,sylph-tax,gate_metadata,1,0,E01052,
+krakenuniq,taxpasta,gate_metadata,4,0,E00850,
+malt,kaiju,data_flow,4,4,E00808,
+malt,megan,data_flow,2,2,E00163,
+malt,multiqc,data_flow,1,1,E01081,
+megan,bracken,gate_metadata,1,0,E00901,
+megan,bwa,gate_metadata,2,0,E00996,
+megan,ganon,gate_metadata,1,0,E01028,
+megan,gunzip,data_flow,1,1,E00839,
+megan,krakentools,gate_metadata,4,0,E00793,
+megan,metaphlan,gate_metadata,1,0,E00981,
+megan,sylph-tax,gate_metadata,1,0,E01043,
+megan,taxpasta,gate_metadata,4,0,E00841,
+metacache,bracken,data_flow,1,1,E00915,
+metacache,bwa,data_flow,2,2,E01010,
+metacache,ganon,data_flow,1,1,E01042,
+metacache,krakentools,data_flow,4,4,E00807,
+metacache,metaphlan,data_flow,1,1,E00995,
+metacache,sylph-tax,data_flow,1,1,E01057,
+metacache,taxpasta,data_flow,4,4,E00855,
+metaphlan,bracken,data_flow,1,1,E00906,
+metaphlan,bwa,data_flow,2,2,E01001,
+metaphlan,ganon,data_flow,1,1,E01033,
+metaphlan,krakentools,data_flow,4,4,E00798,
+metaphlan,multiqc,data_flow,2,2,E01085,
+metaphlan,sylph-tax,data_flow,1,1,E01048,
+metaphlan,taxpasta,data_flow,4,4,E00846,
+minimap2,samtools,data_flow,3,3,E00096,
+nanoq,bwa,data_flow,4,4,E00441,
+nanoq,cat,data_flow,1,1,E00122,
+nanoq,centrifuge,data_flow,2,2,E00229,
+nanoq,centrifuger,data_flow,2,2,E00273,
+nanoq,deacon,data_flow,1,1,E00089,
+nanoq,diamond,data_flow,4,4,E00401,
+nanoq,falco,data_flow,1,1,E00028,
+nanoq,fastqc,data_flow,1,1,E00024,
+nanoq,ganon,data_flow,2,2,E00645,
+nanoq,hostile,data_flow,1,1,E00103,
+nanoq,kaiju,data_flow,2,2,E00357,
+nanoq,kmcp,data_flow,3,3,E00583,
+nanoq,kraken2,data_flow,2,2,E00182,
+nanoq,krakenuniq,data_flow,3,3,E00523,
+nanoq,malt,data_flow,2,2,E00141,
+nanoq,metacache,data_flow,2,2,E00771,
+nanoq,metaphlan,data_flow,2,2,E00317,
+nanoq,minimap2,data_flow,1,1,E00094,
+nanoq,multiqc,data_flow,1,1,E01069,
+nanoq,sylph,data_flow,2,2,E00689,
+nonpareil,multiqc,data_flow,1,1,E01072,
+porechop,bwa,data_flow,4,4,E00439,
+porechop,cat,data_flow,1,1,E00120,
+porechop,centrifuge,data_flow,2,2,E00227,
+porechop,centrifuger,data_flow,2,2,E00271,
+porechop,deacon,data_flow,1,1,E00087,
+porechop,diamond,data_flow,4,4,E00399,
+porechop,falco,data_flow,1,1,E00026,
+porechop,fastqc,data_flow,1,1,E00022,
+porechop,filtlong,data_flow,1,1,E00018,
+porechop,ganon,data_flow,2,2,E00643,
+porechop,hostile,data_flow,1,1,E00101,
+porechop,kaiju,data_flow,2,2,E00355,
+porechop,kmcp,data_flow,3,3,E00581,
+porechop,kraken2,data_flow,2,2,E00180,
+porechop,krakenuniq,data_flow,3,3,E00521,
+porechop,malt,data_flow,2,2,E00139,
+porechop,metacache,data_flow,2,2,E00769,
+porechop,metaphlan,data_flow,2,2,E00315,
+porechop,minimap2,data_flow,1,1,E00092,
+porechop,multiqc,data_flow,1,1,E01067,
+porechop,nanoq,data_flow,1,1,E00020,
+porechop,sylph,data_flow,2,2,E00687,
+porechop_abi,bwa,data_flow,4,4,E00438,
+porechop_abi,cat,data_flow,1,1,E00119,
+porechop_abi,centrifuge,data_flow,2,2,E00226,
+porechop_abi,centrifuger,data_flow,2,2,E00270,
+porechop_abi,deacon,data_flow,1,1,E00086,
+porechop_abi,diamond,data_flow,4,4,E00398,
+porechop_abi,falco,data_flow,1,1,E00025,
+porechop_abi,fastqc,data_flow,1,1,E00021,
+porechop_abi,filtlong,data_flow,1,1,E00017,
+porechop_abi,ganon,data_flow,2,2,E00642,
+porechop_abi,hostile,data_flow,1,1,E00100,
+porechop_abi,kaiju,data_flow,2,2,E00354,
+porechop_abi,kmcp,data_flow,3,3,E00580,
+porechop_abi,kraken2,data_flow,2,2,E00179,
+porechop_abi,krakenuniq,data_flow,3,3,E00520,
+porechop_abi,malt,data_flow,2,2,E00138,
+porechop_abi,metacache,data_flow,2,2,E00768,
+porechop_abi,metaphlan,data_flow,2,2,E00314,
+porechop_abi,minimap2,data_flow,1,1,E00091,
+porechop_abi,multiqc,data_flow,1,1,E01066,
+porechop_abi,nanoq,data_flow,1,1,E00019,
+porechop_abi,sylph,data_flow,2,2,E00686,
+prinseq-plus-plus,bowtie2,data_flow,1,1,E00066,
+prinseq-plus-plus,bwa,data_flow,4,4,E00428,
+prinseq-plus-plus,cat,data_flow,1,1,E00109,
+prinseq-plus-plus,centrifuge,data_flow,2,2,E00216,
+prinseq-plus-plus,centrifuger,data_flow,2,2,E00260,
+prinseq-plus-plus,deacon,data_flow,1,1,E00057,
+prinseq-plus-plus,diamond,data_flow,4,4,E00388,
+prinseq-plus-plus,ganon,data_flow,2,2,E00632,
+prinseq-plus-plus,hostile,data_flow,1,1,E00078,
+prinseq-plus-plus,kaiju,data_flow,2,2,E00344,
+prinseq-plus-plus,kmcp,data_flow,3,3,E00570,
+prinseq-plus-plus,kraken2,data_flow,2,2,E00169,
+prinseq-plus-plus,krakenuniq,data_flow,3,3,E00510,
+prinseq-plus-plus,malt,data_flow,2,2,E00128,
+prinseq-plus-plus,metacache,data_flow,2,2,E00758,
+prinseq-plus-plus,metaphlan,data_flow,2,2,E00304,
+prinseq-plus-plus,sylph,data_flow,2,2,E00676,
+samtools,bwa,data_flow,4,4,E00436,
+samtools,cat,data_flow,1,1,E00117,
+samtools,centrifuge,data_flow,2,2,E00224,
+samtools,centrifuger,data_flow,2,2,E00268,
+samtools,diamond,data_flow,4,4,E00396,
+samtools,ganon,data_flow,2,2,E00640,
+samtools,kaiju,data_flow,2,2,E00352,
+samtools,kmcp,data_flow,3,3,E00578,
+samtools,kraken2,data_flow,2,2,E00177,
+samtools,krakenuniq,data_flow,3,3,E00518,
+samtools,malt,data_flow,2,2,E00136,
+samtools,metacache,data_flow,2,2,E00766,
+samtools,metaphlan,data_flow,2,2,E00312,
+samtools,multiqc,data_flow,2,2,E01076,
+samtools,sylph,data_flow,2,2,E00684,
+sylph,sylph-tax,data_flow,1,1,E00711,
+sylph-tax,bracken,data_flow,1,1,E00913,
+sylph-tax,bwa,data_flow,2,2,E01008,
+sylph-tax,ganon,data_flow,1,1,E01040,
+sylph-tax,krakentools,data_flow,4,4,E00805,
+sylph-tax,metaphlan,data_flow,1,1,E00993,
+sylph-tax,taxpasta,data_flow,4,4,E00853,
+untar,bracken,data_flow,2,2,E00207,
+untar,bwa,data_flow,6,6,E00442,
+untar,centrifuge,data_flow,4,4,E00230,
+untar,centrifuger,data_flow,4,4,E00274,
+untar,diamond,data_flow,4,4,E00402,
+untar,ganon,data_flow,4,4,E00646,
+untar,kaiju,data_flow,8,8,E00358,
+untar,kmcp,data_flow,4,4,E00584,
+untar,kraken2,data_flow,2,2,E00183,
+untar,krakenuniq,data_flow,3,3,E00524,
+untar,malt,data_flow,2,2,E00142,
+untar,metacache,data_flow,2,2,E00772,
+untar,metaphlan,data_flow,2,2,E00318,
+untar,sylph,data_flow,2,2,E00690,
+untar,sylph-tax,data_flow,1,1,E00712,
+bbmap,falco,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00049, E00016); no directed path between any process of the two tools"
+bbmap,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00049, E00010); no directed path between any process of the two tools"
+bbmap,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00049, E00034); no directed path between any process of the two tools"
+bowtie2,deacon,parallel_co_use,0,0,,"both consume BBMAP_BBDUK.reads (E00065, E00056); no directed path between any process of the two tools"
+bowtie2,falco,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00072, E00016); no directed path between any process of the two tools"
+bowtie2,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00072, E00010); no directed path between any process of the two tools"
+bowtie2,hostile,parallel_co_use,0,0,,"both consume BBMAP_BBDUK.reads (E00065, E00077); no directed path between any process of the two tools"
+bowtie2,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00072, E00034); no directed path between any process of the two tools"
+bwa,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00438, E00025); no directed path between any process of the two tools"
+bwa,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00438, E00021); no directed path between any process of the two tools"
+bwa,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00434, E00034); no directed path between any process of the two tools"
+centrifuge,centrifuger,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00223, E00267); no directed path between any process of the two tools"
+centrifuge,diamond,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00223, E00395); no directed path between any process of the two tools"
+centrifuge,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00226, E00025); no directed path between any process of the two tools"
+centrifuge,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00226, E00021); no directed path between any process of the two tools"
+centrifuge,kmcp,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00223, E00619); no directed path between any process of the two tools"
+centrifuge,kraken2,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00223, E00176); no directed path between any process of the two tools"
+centrifuge,krakenuniq,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00223, E00517); no directed path between any process of the two tools"
+centrifuge,malt,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00223, E00135); no directed path between any process of the two tools"
+centrifuge,metacache,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00223, E00765); no directed path between any process of the two tools"
+centrifuge,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00222, E00034); no directed path between any process of the two tools"
+centrifuge,sylph,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00223, E00683); no directed path between any process of the two tools"
+centrifuger,centrifuge,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00267, E00223); no directed path between any process of the two tools"
+centrifuger,diamond,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00267, E00395); no directed path between any process of the two tools"
+centrifuger,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00270, E00025); no directed path between any process of the two tools"
+centrifuger,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00270, E00021); no directed path between any process of the two tools"
+centrifuger,kmcp,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00267, E00619); no directed path between any process of the two tools"
+centrifuger,kraken2,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00267, E00176); no directed path between any process of the two tools"
+centrifuger,krakenuniq,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00267, E00517); no directed path between any process of the two tools"
+centrifuger,malt,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00267, E00135); no directed path between any process of the two tools"
+centrifuger,metacache,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00267, E00765); no directed path between any process of the two tools"
+centrifuger,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00266, E00034); no directed path between any process of the two tools"
+centrifuger,sylph,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00267, E00683); no directed path between any process of the two tools"
+deacon,bowtie2,parallel_co_use,0,0,,"both consume BBMAP_BBDUK.reads (E00056, E00065); no directed path between any process of the two tools"
+deacon,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00086, E00025); no directed path between any process of the two tools"
+deacon,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00086, E00021); no directed path between any process of the two tools"
+deacon,hostile,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00086, E00100); no directed path between any process of the two tools"
+deacon,minimap2,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00086, E00091); no directed path between any process of the two tools"
+deacon,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00063, E00034); no directed path between any process of the two tools"
+diamond,centrifuge,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00395, E00223); no directed path between any process of the two tools"
+diamond,centrifuger,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00395, E00267); no directed path between any process of the two tools"
+diamond,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00398, E00025); no directed path between any process of the two tools"
+diamond,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00398, E00021); no directed path between any process of the two tools"
+diamond,kmcp,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00395, E00619); no directed path between any process of the two tools"
+diamond,kraken2,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00395, E00176); no directed path between any process of the two tools"
+diamond,krakenuniq,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00395, E00517); no directed path between any process of the two tools"
+diamond,malt,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00395, E00135); no directed path between any process of the two tools"
+diamond,metacache,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00395, E00765); no directed path between any process of the two tools"
+diamond,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00394, E00034); no directed path between any process of the two tools"
+diamond,sylph,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00395, E00683); no directed path between any process of the two tools"
+falco,bbmap,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00016, E00049); no directed path between any process of the two tools"
+falco,bowtie2,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00016, E00072); no directed path between any process of the two tools"
+falco,bwa,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00025, E00438); no directed path between any process of the two tools"
+falco,centrifuge,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00025, E00226); no directed path between any process of the two tools"
+falco,centrifuger,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00025, E00270); no directed path between any process of the two tools"
+falco,deacon,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00025, E00086); no directed path between any process of the two tools"
+falco,diamond,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00025, E00398); no directed path between any process of the two tools"
+falco,ganon,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00025, E00642); no directed path between any process of the two tools"
+falco,hostile,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00025, E00100); no directed path between any process of the two tools"
+falco,kaiju,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00025, E00354); no directed path between any process of the two tools"
+falco,kmcp,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00025, E00622); no directed path between any process of the two tools"
+falco,kraken2,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00025, E00179); no directed path between any process of the two tools"
+falco,krakenuniq,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00025, E00520); no directed path between any process of the two tools"
+falco,malt,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00025, E00138); no directed path between any process of the two tools"
+falco,metacache,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00025, E00768); no directed path between any process of the two tools"
+falco,metaphlan,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00025, E00314); no directed path between any process of the two tools"
+falco,minimap2,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00025, E00091); no directed path between any process of the two tools"
+falco,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00016, E00034); no directed path between any process of the two tools"
+falco,prinseq-plus-plus,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00016, E00055); no directed path between any process of the two tools"
+falco,sylph,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00025, E00686); no directed path between any process of the two tools"
+fastqc,bbmap,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00010, E00049); no directed path between any process of the two tools"
+fastqc,bowtie2,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00010, E00072); no directed path between any process of the two tools"
+fastqc,bwa,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00021, E00438); no directed path between any process of the two tools"
+fastqc,centrifuge,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00021, E00226); no directed path between any process of the two tools"
+fastqc,centrifuger,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00021, E00270); no directed path between any process of the two tools"
+fastqc,deacon,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00021, E00086); no directed path between any process of the two tools"
+fastqc,diamond,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00021, E00398); no directed path between any process of the two tools"
+fastqc,ganon,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00021, E00642); no directed path between any process of the two tools"
+fastqc,hostile,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00021, E00100); no directed path between any process of the two tools"
+fastqc,kaiju,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00021, E00354); no directed path between any process of the two tools"
+fastqc,kmcp,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00021, E00622); no directed path between any process of the two tools"
+fastqc,kraken2,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00021, E00179); no directed path between any process of the two tools"
+fastqc,krakenuniq,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00021, E00520); no directed path between any process of the two tools"
+fastqc,malt,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00021, E00138); no directed path between any process of the two tools"
+fastqc,metacache,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00021, E00768); no directed path between any process of the two tools"
+fastqc,metaphlan,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00021, E00314); no directed path between any process of the two tools"
+fastqc,minimap2,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00021, E00091); no directed path between any process of the two tools"
+fastqc,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00010, E00034); no directed path between any process of the two tools"
+fastqc,prinseq-plus-plus,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00010, E00055); no directed path between any process of the two tools"
+fastqc,sylph,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00021, E00686); no directed path between any process of the two tools"
+ganon,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00642, E00025); no directed path between any process of the two tools"
+ganon,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00642, E00021); no directed path between any process of the two tools"
+ganon,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00638, E00034); no directed path between any process of the two tools"
+hostile,bowtie2,parallel_co_use,0,0,,"both consume BBMAP_BBDUK.reads (E00077, E00065); no directed path between any process of the two tools"
+hostile,deacon,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00100, E00086); no directed path between any process of the two tools"
+hostile,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00100, E00025); no directed path between any process of the two tools"
+hostile,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00100, E00021); no directed path between any process of the two tools"
+hostile,minimap2,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00100, E00091); no directed path between any process of the two tools"
+hostile,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00084, E00034); no directed path between any process of the two tools"
+kaiju,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00354, E00025); no directed path between any process of the two tools"
+kaiju,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00354, E00021); no directed path between any process of the two tools"
+kaiju,metacache,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00351, E00765); no directed path between any process of the two tools"
+kaiju,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00350, E00034); no directed path between any process of the two tools"
+kaiju,sylph,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00351, E00683); no directed path between any process of the two tools"
+kmcp,centrifuge,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00619, E00223); no directed path between any process of the two tools"
+kmcp,centrifuger,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00619, E00267); no directed path between any process of the two tools"
+kmcp,diamond,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00619, E00395); no directed path between any process of the two tools"
+kmcp,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00622, E00025); no directed path between any process of the two tools"
+kmcp,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00622, E00021); no directed path between any process of the two tools"
+kmcp,kraken2,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00619, E00176); no directed path between any process of the two tools"
+kmcp,krakenuniq,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00619, E00517); no directed path between any process of the two tools"
+kmcp,malt,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00619, E00135); no directed path between any process of the two tools"
+kmcp,metacache,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00619, E00765); no directed path between any process of the two tools"
+kmcp,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00618, E00034); no directed path between any process of the two tools"
+kmcp,sylph,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00619, E00683); no directed path between any process of the two tools"
+kraken2,centrifuge,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00176, E00223); no directed path between any process of the two tools"
+kraken2,centrifuger,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00176, E00267); no directed path between any process of the two tools"
+kraken2,diamond,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00176, E00395); no directed path between any process of the two tools"
+kraken2,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00179, E00025); no directed path between any process of the two tools"
+kraken2,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00179, E00021); no directed path between any process of the two tools"
+kraken2,kmcp,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00176, E00619); no directed path between any process of the two tools"
+kraken2,krakenuniq,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00176, E00517); no directed path between any process of the two tools"
+kraken2,malt,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00176, E00135); no directed path between any process of the two tools"
+kraken2,metacache,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00176, E00765); no directed path between any process of the two tools"
+kraken2,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00175, E00034); no directed path between any process of the two tools"
+kraken2,sylph,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00176, E00683); no directed path between any process of the two tools"
+krakentools,taxpasta,parallel_co_use,0,0,,"both consume CENTRIFUGE_KREPORT.kreport (E00919, E00844); no directed path between any process of the two tools"
+krakenuniq,centrifuge,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00517, E00223); no directed path between any process of the two tools"
+krakenuniq,centrifuger,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00517, E00267); no directed path between any process of the two tools"
+krakenuniq,diamond,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00517, E00395); no directed path between any process of the two tools"
+krakenuniq,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00520, E00025); no directed path between any process of the two tools"
+krakenuniq,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00520, E00021); no directed path between any process of the two tools"
+krakenuniq,kmcp,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00517, E00619); no directed path between any process of the two tools"
+krakenuniq,kraken2,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00517, E00176); no directed path between any process of the two tools"
+krakenuniq,malt,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00517, E00135); no directed path between any process of the two tools"
+krakenuniq,metacache,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00517, E00765); no directed path between any process of the two tools"
+krakenuniq,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00516, E00034); no directed path between any process of the two tools"
+krakenuniq,sylph,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00517, E00683); no directed path between any process of the two tools"
+malt,centrifuge,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00135, E00223); no directed path between any process of the two tools"
+malt,centrifuger,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00135, E00267); no directed path between any process of the two tools"
+malt,diamond,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00135, E00395); no directed path between any process of the two tools"
+malt,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00138, E00025); no directed path between any process of the two tools"
+malt,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00138, E00021); no directed path between any process of the two tools"
+malt,kmcp,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00135, E00619); no directed path between any process of the two tools"
+malt,kraken2,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00135, E00176); no directed path between any process of the two tools"
+malt,krakenuniq,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00135, E00517); no directed path between any process of the two tools"
+malt,metacache,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00135, E00765); no directed path between any process of the two tools"
+malt,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00134, E00034); no directed path between any process of the two tools"
+malt,sylph,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00135, E00683); no directed path between any process of the two tools"
+metacache,centrifuge,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00765, E00223); no directed path between any process of the two tools"
+metacache,centrifuger,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00765, E00267); no directed path between any process of the two tools"
+metacache,diamond,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00765, E00395); no directed path between any process of the two tools"
+metacache,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00768, E00025); no directed path between any process of the two tools"
+metacache,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00768, E00021); no directed path between any process of the two tools"
+metacache,kaiju,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00765, E00351); no directed path between any process of the two tools"
+metacache,kmcp,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00765, E00619); no directed path between any process of the two tools"
+metacache,kraken2,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00765, E00176); no directed path between any process of the two tools"
+metacache,krakenuniq,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00765, E00517); no directed path between any process of the two tools"
+metacache,malt,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00765, E00135); no directed path between any process of the two tools"
+metacache,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00764, E00034); no directed path between any process of the two tools"
+metacache,sylph,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00765, E00683); no directed path between any process of the two tools"
+metaphlan,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00314, E00025); no directed path between any process of the two tools"
+metaphlan,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00314, E00021); no directed path between any process of the two tools"
+metaphlan,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00310, E00034); no directed path between any process of the two tools"
+minimap2,deacon,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00091, E00086); no directed path between any process of the two tools"
+minimap2,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00091, E00025); no directed path between any process of the two tools"
+minimap2,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00091, E00021); no directed path between any process of the two tools"
+minimap2,hostile,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00091, E00100); no directed path between any process of the two tools"
+multiqc,taxpasta,parallel_co_use,0,0,,"both consume CENTRIFUGE_KREPORT.kreport (E01083, E00844); no directed path between any process of the two tools"
+nonpareil,bbmap,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00049); no directed path between any process of the two tools"
+nonpareil,bowtie2,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00072); no directed path between any process of the two tools"
+nonpareil,bwa,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00434); no directed path between any process of the two tools"
+nonpareil,centrifuge,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00222); no directed path between any process of the two tools"
+nonpareil,centrifuger,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00266); no directed path between any process of the two tools"
+nonpareil,deacon,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00063); no directed path between any process of the two tools"
+nonpareil,diamond,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00394); no directed path between any process of the two tools"
+nonpareil,falco,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00016); no directed path between any process of the two tools"
+nonpareil,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00010); no directed path between any process of the two tools"
+nonpareil,ganon,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00638); no directed path between any process of the two tools"
+nonpareil,hostile,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00084); no directed path between any process of the two tools"
+nonpareil,kaiju,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00350); no directed path between any process of the two tools"
+nonpareil,kmcp,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00618); no directed path between any process of the two tools"
+nonpareil,kraken2,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00175); no directed path between any process of the two tools"
+nonpareil,krakenuniq,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00516); no directed path between any process of the two tools"
+nonpareil,malt,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00134); no directed path between any process of the two tools"
+nonpareil,metacache,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00764); no directed path between any process of the two tools"
+nonpareil,metaphlan,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00310); no directed path between any process of the two tools"
+nonpareil,prinseq-plus-plus,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00055); no directed path between any process of the two tools"
+nonpareil,sylph,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00034, E00682); no directed path between any process of the two tools"
+prinseq-plus-plus,falco,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00055, E00016); no directed path between any process of the two tools"
+prinseq-plus-plus,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00055, E00010); no directed path between any process of the two tools"
+prinseq-plus-plus,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00055, E00034); no directed path between any process of the two tools"
+sylph,centrifuge,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00683, E00223); no directed path between any process of the two tools"
+sylph,centrifuger,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00683, E00267); no directed path between any process of the two tools"
+sylph,diamond,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00683, E00395); no directed path between any process of the two tools"
+sylph,falco,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00686, E00025); no directed path between any process of the two tools"
+sylph,fastqc,parallel_co_use,0,0,,"both consume PORECHOP_ABI.reads (E00686, E00021); no directed path between any process of the two tools"
+sylph,kaiju,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00683, E00351); no directed path between any process of the two tools"
+sylph,kmcp,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00683, E00619); no directed path between any process of the two tools"
+sylph,kraken2,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00683, E00176); no directed path between any process of the two tools"
+sylph,krakenuniq,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00683, E00517); no directed path between any process of the two tools"
+sylph,malt,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00683, E00135); no directed path between any process of the two tools"
+sylph,metacache,parallel_co_use,0,0,,"both consume DEACON_FILTER.fastq_filtered (E00683, E00765); no directed path between any process of the two tools"
+sylph,nonpareil,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PAIRED.paired_truncated (E00682, E00034); no directed path between any process of the two tools"
+taxpasta,krakentools,parallel_co_use,0,0,,"both consume CENTRIFUGE_KREPORT.kreport (E00844, E00919); no directed path between any process of the two tools"
+taxpasta,multiqc,parallel_co_use,0,0,,"both consume CENTRIFUGE_KREPORT.kreport (E00844, E01083); no directed path between any process of the two tools"

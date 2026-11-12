@@ -1,0 +1,165 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bam_rename,bambu,data_flow,1,1,E00097,
+bam_rename,stringtie,data_flow,3,3,E00101,
+bam_rename,subread,data_flow,2,2,E00115,
+bambu,deseq2,data_flow,1,1,E00121,
+bambu,dexseq,data_flow,1,1,E00123,
+bedtools,ucsc-bedgraphtobigwig,data_flow,1,1,E00082,
+bedtools,ucsc-bedtobigbed,data_flow,2,2,E00090,
+dorado_aligner,modkit_pileup,data_flow,1,1,E00015,
+dorado_basecaller,dorado_aligner,data_flow,1,1,E00014,
+dorado_basecaller,fastqc,data_flow,1,1,E00026,
+dorado_basecaller,graphmap,data_flow,3,3,E00048,
+dorado_basecaller,jaffal,data_flow,1,1,E00126,
+dorado_basecaller,minimap2,data_flow,2,2,E00029,
+dorado_basecaller,nanolyse,data_flow,1,1,E00019,
+dorado_basecaller,nanoplot,data_flow,1,1,E00022,
+dorado_basecaller,qcat,data_flow,1,1,E00013,
+dorado_basecaller,samtools,data_flow,2,2,E00060,
+dorado_basecaller,toulligqc,data_flow,1,1,E00024,
+fast5_to_pod5,dorado_basecaller,data_flow,1,1,E00008,
+fastqc,multiqc,data_flow,2,2,E00129,
+get_jaffal_ref,untar,data_flow,1,1,E00125,
+get_nanolyse_fasta,nanolyse,data_flow,1,1,E00021,
+get_test_data,dorado_basecaller,data_flow,3,3,E00009,
+get_test_data,fast5_to_pod5,data_flow,3,3,E00004,
+get_test_data,qcat,data_flow,3,3,E00016,
+get_test_data,samplesheet_check,data_flow,3,3,E00001,
+graphmap,samtools,data_flow,4,4,E00057,
+minimap2,bambu,data_flow,2,2,E00094,
+minimap2,bedtools,data_flow,6,6,E00075,
+minimap2,samtools,data_flow,8,8,E00036,
+minimap2,stringtie,data_flow,6,6,E00098,
+minimap2,subread,data_flow,4,4,E00112,
+minimap2,ucsc-bedgraphtobigwig,data_flow,2,2,E00083,
+nanolyse,graphmap,data_flow,3,3,E00047,
+nanolyse,minimap2,data_flow,2,2,E00028,
+nanolyse,samtools,data_flow,2,2,E00059,
+samplesheet_check,bam_rename,data_flow,1,1,E00093,
+samplesheet_check,dorado_basecaller,data_flow,1,1,E00012,
+samplesheet_check,fast5_to_pod5,data_flow,1,1,E00007,
+samplesheet_check,fastqc,data_flow,1,1,E00027,
+samplesheet_check,graphmap,data_flow,3,3,E00049,
+samplesheet_check,jaffal,data_flow,1,1,E00127,
+samplesheet_check,minimap2,data_flow,2,2,E00030,
+samplesheet_check,nanolyse,data_flow,1,1,E00020,
+samplesheet_check,nanoplot,data_flow,1,1,E00023,
+samplesheet_check,samtools,data_flow,2,2,E00061,
+samplesheet_check,toulligqc,data_flow,1,1,E00025,
+samtools,bambu,data_flow,1,1,E00096,
+samtools,bedtools,data_flow,4,4,E00077,
+samtools,stringtie,data_flow,3,3,E00100,
+samtools,subread,data_flow,2,2,E00114,
+samtools,ucsc-bedgraphtobigwig,data_flow,2,2,E00085,
+samtools,ucsc-bedtobigbed,data_flow,1,1,E00092,
+stringtie,subread,data_flow,2,2,E00111,
+subread,deseq2,data_flow,1,1,E00122,
+subread,dexseq,data_flow,1,1,E00124,
+subread,multiqc,data_flow,2,2,E00131,
+untar,jaffal,data_flow,1,1,E00128,
+bam_rename,dorado_basecaller,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00093, E00012); no directed path between any process of the two tools"
+bam_rename,fast5_to_pod5,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00093, E00007); no directed path between any process of the two tools"
+bam_rename,fastqc,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00093, E00027); no directed path between any process of the two tools"
+bam_rename,jaffal,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00093, E00127); no directed path between any process of the two tools"
+bam_rename,nanolyse,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00093, E00020); no directed path between any process of the two tools"
+bam_rename,nanoplot,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00093, E00023); no directed path between any process of the two tools"
+bam_rename,samtools,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00093, E00061); no directed path between any process of the two tools"
+bam_rename,toulligqc,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00093, E00025); no directed path between any process of the two tools"
+bambu,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00096, E00089); no directed path between any process of the two tools"
+bambu,ucsc-bedgraphtobigwig,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00096, E00085); no directed path between any process of the two tools"
+bedtools,bambu,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00089, E00096); no directed path between any process of the two tools"
+bedtools,stringtie,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00089, E00109); no directed path between any process of the two tools"
+bedtools,subread,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00089, E00114); no directed path between any process of the two tools"
+dorado_aligner,fastqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00014, E00026); no directed path between any process of the two tools"
+dorado_aligner,graphmap,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00014, E00048); no directed path between any process of the two tools"
+dorado_aligner,jaffal,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00014, E00126); no directed path between any process of the two tools"
+dorado_aligner,minimap2,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00014, E00033); no directed path between any process of the two tools"
+dorado_aligner,nanolyse,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00014, E00019); no directed path between any process of the two tools"
+dorado_aligner,nanoplot,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00014, E00022); no directed path between any process of the two tools"
+dorado_aligner,samtools,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00014, E00060); no directed path between any process of the two tools"
+dorado_aligner,toulligqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00014, E00024); no directed path between any process of the two tools"
+dorado_basecaller,bam_rename,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00012, E00093); no directed path between any process of the two tools"
+fast5_to_pod5,bam_rename,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00007, E00093); no directed path between any process of the two tools"
+fastqc,bam_rename,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00027, E00093); no directed path between any process of the two tools"
+fastqc,dorado_aligner,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00026, E00014); no directed path between any process of the two tools"
+fastqc,graphmap,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00026, E00048); no directed path between any process of the two tools"
+fastqc,jaffal,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00026, E00126); no directed path between any process of the two tools"
+fastqc,minimap2,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00026, E00033); no directed path between any process of the two tools"
+fastqc,nanolyse,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00026, E00019); no directed path between any process of the two tools"
+fastqc,nanoplot,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00026, E00022); no directed path between any process of the two tools"
+fastqc,qcat,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00026, E00013); no directed path between any process of the two tools"
+fastqc,samtools,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00026, E00060); no directed path between any process of the two tools"
+fastqc,toulligqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00026, E00024); no directed path between any process of the two tools"
+graphmap,dorado_aligner,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00048, E00014); no directed path between any process of the two tools"
+graphmap,fastqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00048, E00026); no directed path between any process of the two tools"
+graphmap,jaffal,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00048, E00126); no directed path between any process of the two tools"
+graphmap,nanoplot,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00048, E00022); no directed path between any process of the two tools"
+graphmap,qcat,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00048, E00013); no directed path between any process of the two tools"
+graphmap,toulligqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00048, E00024); no directed path between any process of the two tools"
+jaffal,bam_rename,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00127, E00093); no directed path between any process of the two tools"
+jaffal,dorado_aligner,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00126, E00014); no directed path between any process of the two tools"
+jaffal,fastqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00126, E00026); no directed path between any process of the two tools"
+jaffal,graphmap,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00126, E00048); no directed path between any process of the two tools"
+jaffal,minimap2,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00126, E00033); no directed path between any process of the two tools"
+jaffal,nanolyse,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00126, E00019); no directed path between any process of the two tools"
+jaffal,nanoplot,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00126, E00022); no directed path between any process of the two tools"
+jaffal,qcat,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00126, E00013); no directed path between any process of the two tools"
+jaffal,samtools,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00126, E00060); no directed path between any process of the two tools"
+jaffal,toulligqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00126, E00024); no directed path between any process of the two tools"
+minimap2,dorado_aligner,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00033, E00014); no directed path between any process of the two tools"
+minimap2,fastqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00033, E00026); no directed path between any process of the two tools"
+minimap2,jaffal,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00033, E00126); no directed path between any process of the two tools"
+minimap2,nanoplot,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00033, E00022); no directed path between any process of the two tools"
+minimap2,qcat,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00033, E00013); no directed path between any process of the two tools"
+minimap2,toulligqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00033, E00024); no directed path between any process of the two tools"
+nanolyse,bam_rename,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00020, E00093); no directed path between any process of the two tools"
+nanolyse,dorado_aligner,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00019, E00014); no directed path between any process of the two tools"
+nanolyse,fastqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00019, E00026); no directed path between any process of the two tools"
+nanolyse,jaffal,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00019, E00126); no directed path between any process of the two tools"
+nanolyse,nanoplot,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00019, E00022); no directed path between any process of the two tools"
+nanolyse,qcat,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00019, E00013); no directed path between any process of the two tools"
+nanolyse,toulligqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00019, E00024); no directed path between any process of the two tools"
+nanoplot,bam_rename,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00023, E00093); no directed path between any process of the two tools"
+nanoplot,dorado_aligner,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00022, E00014); no directed path between any process of the two tools"
+nanoplot,fastqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00022, E00026); no directed path between any process of the two tools"
+nanoplot,graphmap,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00022, E00048); no directed path between any process of the two tools"
+nanoplot,jaffal,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00022, E00126); no directed path between any process of the two tools"
+nanoplot,minimap2,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00022, E00033); no directed path between any process of the two tools"
+nanoplot,nanolyse,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00022, E00019); no directed path between any process of the two tools"
+nanoplot,qcat,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00022, E00013); no directed path between any process of the two tools"
+nanoplot,samtools,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00022, E00060); no directed path between any process of the two tools"
+nanoplot,toulligqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00022, E00024); no directed path between any process of the two tools"
+qcat,fastqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00013, E00026); no directed path between any process of the two tools"
+qcat,graphmap,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00013, E00048); no directed path between any process of the two tools"
+qcat,jaffal,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00013, E00126); no directed path between any process of the two tools"
+qcat,minimap2,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00013, E00033); no directed path between any process of the two tools"
+qcat,nanolyse,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00013, E00019); no directed path between any process of the two tools"
+qcat,nanoplot,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00013, E00022); no directed path between any process of the two tools"
+qcat,samtools,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00013, E00060); no directed path between any process of the two tools"
+qcat,toulligqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00013, E00024); no directed path between any process of the two tools"
+samtools,bam_rename,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00061, E00093); no directed path between any process of the two tools"
+samtools,dorado_aligner,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00060, E00014); no directed path between any process of the two tools"
+samtools,fastqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00060, E00026); no directed path between any process of the two tools"
+samtools,jaffal,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00060, E00126); no directed path between any process of the two tools"
+samtools,nanoplot,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00060, E00022); no directed path between any process of the two tools"
+samtools,qcat,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00060, E00013); no directed path between any process of the two tools"
+samtools,toulligqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00060, E00024); no directed path between any process of the two tools"
+stringtie,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00109, E00089); no directed path between any process of the two tools"
+stringtie,ucsc-bedgraphtobigwig,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00109, E00085); no directed path between any process of the two tools"
+subread,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00114, E00089); no directed path between any process of the two tools"
+subread,ucsc-bedgraphtobigwig,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00114, E00085); no directed path between any process of the two tools"
+toulligqc,bam_rename,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00025, E00093); no directed path between any process of the two tools"
+toulligqc,dorado_aligner,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00024, E00014); no directed path between any process of the two tools"
+toulligqc,fastqc,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00024, E00026); no directed path between any process of the two tools"
+toulligqc,graphmap,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00024, E00048); no directed path between any process of the two tools"
+toulligqc,jaffal,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00024, E00126); no directed path between any process of the two tools"
+toulligqc,minimap2,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00024, E00033); no directed path between any process of the two tools"
+toulligqc,nanolyse,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00024, E00019); no directed path between any process of the two tools"
+toulligqc,nanoplot,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00024, E00022); no directed path between any process of the two tools"
+toulligqc,qcat,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00024, E00013); no directed path between any process of the two tools"
+toulligqc,samtools,parallel_co_use,0,0,,"both consume DORADO_BASECALLER.dorado_out (E00024, E00060); no directed path between any process of the two tools"
+ucsc-bedgraphtobigwig,bambu,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00085, E00096); no directed path between any process of the two tools"
+ucsc-bedgraphtobigwig,stringtie,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00085, E00109); no directed path between any process of the two tools"
+ucsc-bedgraphtobigwig,subread,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00085, E00114); no directed path between any process of the two tools"
+ucsc-bedgraphtobigwig,ucsc-bedtobigbed,parallel_co_use,0,0,,"both consume CUSTOM_GETCHROMSIZES.sizes (E00086, E00092); no directed path between any process of the two tools"
+ucsc-bedtobigbed,ucsc-bedgraphtobigwig,parallel_co_use,0,0,,"both consume CUSTOM_GETCHROMSIZES.sizes (E00092, E00086); no directed path between any process of the two tools"

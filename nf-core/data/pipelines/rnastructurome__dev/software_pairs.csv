@@ -1,0 +1,64 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bash,python,data_flow,5,5,E00166,
+bash,ucsc-wigtobigwig,data_flow,4,4,E00175,
+bowtie,multiqc,data_flow,1,1,E00207,
+bowtie,samtools,data_flow,1,1,E00047,
+bowtie2,multiqc,data_flow,1,1,E00209,
+bowtie2,samtools,data_flow,2,2,E00044,
+cat,bowtie,data_flow,1,1,E00036,
+cat,bowtie2,data_flow,1,1,E00037,
+cat,cutadapt,data_flow,2,2,E00003,
+cat,fastqc,data_flow,1,1,E00001,
+cat,umi_tools,data_flow,1,1,E00002,
+cutadapt,bowtie,data_flow,2,2,E00038,
+cutadapt,bowtie2,data_flow,3,3,E00040,
+cutadapt,fastqc,data_flow,2,2,E00007,
+cutadapt,multiqc,data_flow,2,2,E00203,
+ensembl,python,data_flow,8,8,E00009,
+ensembl,seqkit,data_flow,2,2,E00017,
+fastqc,multiqc,data_flow,2,2,E00201,
+gffread,samtools,data_flow,1,1,E00029,
+python,bedops,data_flow,1,1,E00093,
+python,gffread,data_flow,2,2,E00025,
+python,samtools,data_flow,2,2,E00032,
+python,seqkit,data_flow,4,4,E00014,
+python,ucsc-wigtobigwig,data_flow,14,14,E00169,
+rnaframework,bash,data_flow,2,2,E00165,
+rnaframework,multiqc,data_flow,20,20,E00215,
+rnaframework,python,data_flow,4,4,E00156,
+rnaframework,r2dt,data_flow,2,2,E00162,
+rnaframework,viennarna,data_flow,2,2,E00160,
+rseqc,multiqc,data_flow,1,1,E00214,
+rseqc,rnaframework,gate_metadata,4,0,E00109,
+samtools,multiqc,data_flow,6,6,E00206,
+samtools,rnaframework,data_flow,20,13,E00105,
+samtools,rseqc,data_flow,8,5,E00095,
+samtools,umi_tools,data_flow,2,2,E00054,
+seqkit,gffread,data_flow,4,4,E00023,
+seqkit,python,data_flow,1,1,E00194,
+seqkit,samtools,data_flow,4,4,E00030,
+umi_tools,cutadapt,data_flow,2,2,E00004,
+umi_tools,multiqc,data_flow,2,2,E00202,
+umi_tools,rnaframework,data_flow,4,4,E00104,
+umi_tools,rseqc,data_flow,2,2,E00094,
+umi_tools,samtools,data_flow,5,5,E00058,
+bedops,samtools,parallel_co_use,0,0,,"both consume GTF_SANITIZE.gtf (E00093, E00032); no directed path between any process of the two tools"
+bowtie,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E00037); no directed path between any process of the two tools"
+bowtie,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E00001); no directed path between any process of the two tools"
+bowtie2,bowtie,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00037, E00036); no directed path between any process of the two tools"
+bowtie2,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00037, E00001); no directed path between any process of the two tools"
+fastqc,bowtie,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00001, E00036); no directed path between any process of the two tools"
+fastqc,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00001, E00037); no directed path between any process of the two tools"
+multiqc,python,parallel_co_use,0,0,,"both consume RNAFRAMEWORK_RFFOLD.structures (E00227, E00156); no directed path between any process of the two tools"
+multiqc,r2dt,parallel_co_use,0,0,,"both consume RNAFRAMEWORK_RFFOLD.structures (E00227, E00162); no directed path between any process of the two tools"
+multiqc,viennarna,parallel_co_use,0,0,,"both consume RNAFRAMEWORK_RFFOLD.structures (E00227, E00160); no directed path between any process of the two tools"
+python,multiqc,parallel_co_use,0,0,,"both consume RNAFRAMEWORK_RFFOLD.structures (E00156, E00227); no directed path between any process of the two tools"
+python,r2dt,parallel_co_use,0,0,,"both consume RNAFRAMEWORK_RFFOLD.structures (E00156, E00162); no directed path between any process of the two tools"
+python,viennarna,parallel_co_use,0,0,,"both consume RNAFRAMEWORK_RFFOLD.structures (E00156, E00160); no directed path between any process of the two tools"
+r2dt,multiqc,parallel_co_use,0,0,,"both consume RNAFRAMEWORK_RFFOLD.structures (E00162, E00227); no directed path between any process of the two tools"
+r2dt,python,parallel_co_use,0,0,,"both consume RNAFRAMEWORK_RFFOLD.structures (E00162, E00156); no directed path between any process of the two tools"
+r2dt,viennarna,parallel_co_use,0,0,,"both consume RNAFRAMEWORK_RFFOLD.structures (E00162, E00160); no directed path between any process of the two tools"
+samtools,bedops,parallel_co_use,0,0,,"both consume GTF_SANITIZE.gtf (E00032, E00093); no directed path between any process of the two tools"
+viennarna,multiqc,parallel_co_use,0,0,,"both consume RNAFRAMEWORK_RFFOLD.structures (E00160, E00227); no directed path between any process of the two tools"
+viennarna,python,parallel_co_use,0,0,,"both consume RNAFRAMEWORK_RFFOLD.structures (E00160, E00156); no directed path between any process of the two tools"
+viennarna,r2dt,parallel_co_use,0,0,,"both consume RNAFRAMEWORK_RFFOLD.structures (E00160, E00162); no directed path between any process of the two tools"

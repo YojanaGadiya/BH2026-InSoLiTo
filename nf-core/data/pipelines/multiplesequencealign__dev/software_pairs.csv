@@ -1,0 +1,172 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+calc_gaps,csvtk,data_flow,1,1,E00187,
+calculate_seqstats,csvtk,data_flow,1,1,E00007,
+clustalo,calc_gaps,data_flow,1,1,E00172,
+clustalo,csvtk,data_flow,1,1,E00255,
+clustalo,famsa,data_flow,2,2,E00026,
+clustalo,foldmason,data_flow,8,8,E00104,
+clustalo,kalign3,data_flow,1,1,E00034,
+clustalo,learnmsa,data_flow,1,1,E00038,
+clustalo,mafft,data_flow,1,1,E00043,
+clustalo,magus-msa,data_flow,2,2,E00047,
+clustalo,muscle,data_flow,1,1,E00055,
+clustalo,pigz,data_flow,1,1,E00125,
+clustalo,t-coffee,data_flow,13,13,E00059,
+clustalo,upp,data_flow,2,2,E00075,
+create_template,foldmason,data_flow,2,2,E00102,
+create_template,mtm-align,data_flow,1,1,E00100,
+create_template,t-coffee,data_flow,5,5,E00086,
+csvtk,prepare_multiqc,data_flow,1,1,E00332,
+csvtk,prepare_shiny,data_flow,1,1,E00270,
+custom_pdbstofasta,calculate_seqstats,data_flow,1,1,E00006,
+custom_pdbstofasta,clustalo,data_flow,3,3,E00014,
+custom_pdbstofasta,famsa,data_flow,3,3,E00013,
+custom_pdbstofasta,kalign3,data_flow,1,1,E00032,
+custom_pdbstofasta,learnmsa,data_flow,1,1,E00036,
+custom_pdbstofasta,mafft,data_flow,2,2,E00015,
+custom_pdbstofasta,magus-msa,data_flow,2,2,E00045,
+custom_pdbstofasta,muscle,data_flow,1,1,E00053,
+custom_pdbstofasta,py_fasta_validator,data_flow,1,1,E00001,
+custom_pdbstofasta,t-coffee,data_flow,8,8,E00003,
+custom_pdbstofasta,upp,data_flow,2,2,E00073,
+extract_plddt,csvtk,data_flow,1,1,E00009,
+famsa,calc_gaps,data_flow,1,1,E00173,
+famsa,clustalo,data_flow,2,2,E00017,
+famsa,csvtk,data_flow,1,1,E00256,
+famsa,foldmason,data_flow,8,8,E00103,
+famsa,kalign3,data_flow,1,1,E00033,
+famsa,learnmsa,data_flow,1,1,E00037,
+famsa,mafft,data_flow,1,1,E00042,
+famsa,magus-msa,data_flow,2,2,E00046,
+famsa,muscle,data_flow,1,1,E00054,
+famsa,pigz,data_flow,1,1,E00126,
+famsa,t-coffee,data_flow,13,13,E00058,
+famsa,upp,data_flow,2,2,E00074,
+foldmason,calc_gaps,data_flow,1,1,E00185,
+foldmason,csvtk,data_flow,1,1,E00268,
+foldmason,pigz,data_flow,1,1,E00138,
+foldmason,t-coffee,data_flow,6,6,E00124,
+kalign3,calc_gaps,data_flow,1,1,E00174,
+kalign3,csvtk,data_flow,1,1,E00257,
+kalign3,foldmason,data_flow,3,3,E00274,
+kalign3,pigz,data_flow,1,1,E00127,
+kalign3,t-coffee,data_flow,6,6,E00113,
+learnmsa,calc_gaps,data_flow,1,1,E00176,
+learnmsa,csvtk,data_flow,1,1,E00259,
+learnmsa,foldmason,data_flow,3,3,E00276,
+learnmsa,pigz,data_flow,2,2,E00040,
+learnmsa,t-coffee,data_flow,6,6,E00115,
+mafft,calc_gaps,data_flow,1,1,E00177,
+mafft,clustalo,data_flow,2,2,E00019,
+mafft,csvtk,data_flow,1,1,E00260,
+mafft,famsa,data_flow,2,2,E00027,
+mafft,foldmason,data_flow,8,8,E00105,
+mafft,kalign3,data_flow,1,1,E00035,
+mafft,learnmsa,data_flow,1,1,E00039,
+mafft,magus-msa,data_flow,2,2,E00048,
+mafft,muscle,data_flow,1,1,E00056,
+mafft,pigz,data_flow,1,1,E00130,
+mafft,t-coffee,data_flow,13,13,E00060,
+mafft,upp,data_flow,2,2,E00076,
+magus-msa,calc_gaps,data_flow,1,1,E00178,
+magus-msa,csvtk,data_flow,1,1,E00261,
+magus-msa,foldmason,data_flow,3,3,E00278,
+magus-msa,pigz,data_flow,1,1,E00131,
+magus-msa,t-coffee,data_flow,6,6,E00117,
+mtm-align,calc_gaps,data_flow,1,1,E00184,
+mtm-align,csvtk,data_flow,1,1,E00267,
+mtm-align,foldmason,data_flow,3,3,E00284,
+mtm-align,pigz,data_flow,1,1,E00137,
+mtm-align,t-coffee,data_flow,6,6,E00123,
+muscle,calc_gaps,data_flow,1,1,E00179,
+muscle,csvtk,data_flow,1,1,E00262,
+muscle,foldmason,data_flow,3,3,E00279,
+muscle,pigz,data_flow,1,1,E00132,
+muscle,t-coffee,data_flow,6,6,E00118,
+parse_irmsd,csvtk,data_flow,1,1,E00223,
+parse_sim,csvtk,data_flow,1,1,E00005,
+pigz,calc_gaps,data_flow,1,1,E00175,
+pigz,csvtk,data_flow,1,1,E00258,
+pigz,foldmason,data_flow,3,3,E00275,
+pigz,t-coffee,data_flow,6,6,E00114,
+prepare_multiqc,multiqc,data_flow,1,1,E00333,
+t-coffee,calc_gaps,data_flow,4,4,E00180,
+t-coffee,create_template,data_flow,1,1,E00002,
+t-coffee,csvtk,data_flow,7,7,E00155,
+t-coffee,extract_plddt,data_flow,1,1,E00008,
+t-coffee,foldmason,data_flow,18,18,E00101,
+t-coffee,mtm-align,data_flow,1,1,E00099,
+t-coffee,parse_irmsd,data_flow,1,1,E00222,
+t-coffee,parse_sim,data_flow,1,1,E00004,
+t-coffee,pigz,data_flow,4,4,E00133,
+upp,calc_gaps,data_flow,1,1,E00182,
+upp,csvtk,data_flow,1,1,E00265,
+upp,foldmason,data_flow,3,3,E00282,
+upp,pigz,data_flow,1,1,E00135,
+upp,t-coffee,data_flow,6,6,E00121,
+calculate_seqstats,clustalo,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00006, E00016); no directed path between any process of the two tools"
+calculate_seqstats,famsa,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00006, E00013); no directed path between any process of the two tools"
+calculate_seqstats,kalign3,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00006, E00032); no directed path between any process of the two tools"
+calculate_seqstats,learnmsa,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00006, E00036); no directed path between any process of the two tools"
+calculate_seqstats,mafft,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00006, E00015); no directed path between any process of the two tools"
+calculate_seqstats,magus-msa,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00006, E00045); no directed path between any process of the two tools"
+calculate_seqstats,muscle,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00006, E00053); no directed path between any process of the two tools"
+calculate_seqstats,py_fasta_validator,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00006, E00001); no directed path between any process of the two tools"
+calculate_seqstats,t-coffee,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00006, E00065); no directed path between any process of the two tools"
+calculate_seqstats,upp,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00006, E00073); no directed path between any process of the two tools"
+clustalo,calculate_seqstats,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00016, E00006); no directed path between any process of the two tools"
+clustalo,py_fasta_validator,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00016, E00001); no directed path between any process of the two tools"
+create_template,extract_plddt,parallel_co_use,0,0,,"both consume TCOFFEE_EXTRACTFROMPDB.formatted_pdb (E00002, E00008); no directed path between any process of the two tools"
+extract_plddt,create_template,parallel_co_use,0,0,,"both consume TCOFFEE_EXTRACTFROMPDB.formatted_pdb (E00008, E00002); no directed path between any process of the two tools"
+extract_plddt,foldmason,parallel_co_use,0,0,,"both consume TCOFFEE_EXTRACTFROMPDB.formatted_pdb (E00008, E00101); no directed path between any process of the two tools"
+extract_plddt,mtm-align,parallel_co_use,0,0,,"both consume TCOFFEE_EXTRACTFROMPDB.formatted_pdb (E00008, E00099); no directed path between any process of the two tools"
+famsa,calculate_seqstats,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00013, E00006); no directed path between any process of the two tools"
+famsa,py_fasta_validator,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00013, E00001); no directed path between any process of the two tools"
+foldmason,extract_plddt,parallel_co_use,0,0,,"both consume TCOFFEE_EXTRACTFROMPDB.formatted_pdb (E00101, E00008); no directed path between any process of the two tools"
+kalign3,calculate_seqstats,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00032, E00006); no directed path between any process of the two tools"
+kalign3,learnmsa,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00034, E00038); no directed path between any process of the two tools"
+kalign3,magus-msa,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00034, E00047); no directed path between any process of the two tools"
+kalign3,muscle,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00034, E00055); no directed path between any process of the two tools"
+kalign3,py_fasta_validator,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00032, E00001); no directed path between any process of the two tools"
+kalign3,upp,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00034, E00075); no directed path between any process of the two tools"
+learnmsa,calculate_seqstats,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00036, E00006); no directed path between any process of the two tools"
+learnmsa,kalign3,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00038, E00034); no directed path between any process of the two tools"
+learnmsa,magus-msa,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00038, E00047); no directed path between any process of the two tools"
+learnmsa,muscle,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00038, E00055); no directed path between any process of the two tools"
+learnmsa,py_fasta_validator,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00036, E00001); no directed path between any process of the two tools"
+learnmsa,upp,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00038, E00075); no directed path between any process of the two tools"
+mafft,calculate_seqstats,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00015, E00006); no directed path between any process of the two tools"
+mafft,py_fasta_validator,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00015, E00001); no directed path between any process of the two tools"
+magus-msa,calculate_seqstats,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00045, E00006); no directed path between any process of the two tools"
+magus-msa,kalign3,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00047, E00034); no directed path between any process of the two tools"
+magus-msa,learnmsa,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00047, E00038); no directed path between any process of the two tools"
+magus-msa,muscle,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00047, E00055); no directed path between any process of the two tools"
+magus-msa,py_fasta_validator,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00045, E00001); no directed path between any process of the two tools"
+magus-msa,upp,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00047, E00075); no directed path between any process of the two tools"
+mtm-align,extract_plddt,parallel_co_use,0,0,,"both consume TCOFFEE_EXTRACTFROMPDB.formatted_pdb (E00099, E00008); no directed path between any process of the two tools"
+muscle,calculate_seqstats,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00053, E00006); no directed path between any process of the two tools"
+muscle,kalign3,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00055, E00034); no directed path between any process of the two tools"
+muscle,learnmsa,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00055, E00038); no directed path between any process of the two tools"
+muscle,magus-msa,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00055, E00047); no directed path between any process of the two tools"
+muscle,py_fasta_validator,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00053, E00001); no directed path between any process of the two tools"
+muscle,upp,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00055, E00075); no directed path between any process of the two tools"
+prepare_multiqc,prepare_shiny,parallel_co_use,0,0,,"both consume MERGE_STATS_EVAL.csv (E00332, E00270); no directed path between any process of the two tools"
+prepare_shiny,prepare_multiqc,parallel_co_use,0,0,,"both consume MERGE_STATS_EVAL.csv (E00270, E00332); no directed path between any process of the two tools"
+py_fasta_validator,calculate_seqstats,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00001, E00006); no directed path between any process of the two tools"
+py_fasta_validator,clustalo,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00001, E00016); no directed path between any process of the two tools"
+py_fasta_validator,famsa,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00001, E00013); no directed path between any process of the two tools"
+py_fasta_validator,kalign3,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00001, E00032); no directed path between any process of the two tools"
+py_fasta_validator,learnmsa,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00001, E00036); no directed path between any process of the two tools"
+py_fasta_validator,mafft,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00001, E00015); no directed path between any process of the two tools"
+py_fasta_validator,magus-msa,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00001, E00045); no directed path between any process of the two tools"
+py_fasta_validator,muscle,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00001, E00053); no directed path between any process of the two tools"
+py_fasta_validator,t-coffee,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00001, E00065); no directed path between any process of the two tools"
+py_fasta_validator,upp,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00001, E00073); no directed path between any process of the two tools"
+t-coffee,calculate_seqstats,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00065, E00006); no directed path between any process of the two tools"
+t-coffee,py_fasta_validator,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00065, E00001); no directed path between any process of the two tools"
+upp,calculate_seqstats,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00073, E00006); no directed path between any process of the two tools"
+upp,kalign3,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00075, E00034); no directed path between any process of the two tools"
+upp,learnmsa,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00075, E00038); no directed path between any process of the two tools"
+upp,magus-msa,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00075, E00047); no directed path between any process of the two tools"
+upp,muscle,parallel_co_use,0,0,,"both consume CLUSTALO_GUIDETREE.tree (E00075, E00055); no directed path between any process of the two tools"
+upp,py_fasta_validator,parallel_co_use,0,0,,"both consume CUSTOM_PDBSTOFASTA.fasta (E00073, E00001); no directed path between any process of the two tools"

@@ -1,0 +1,7 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+clean_samplesheet,clean_samplesheet,main.nf,249,csvtk,,csvtk;dos2unix,script and directives
+get_software_versions,get_software_versions,main.nf,326,fastqc,,fastqc;multiqc;scrape_software_versions,script and directives
+fastqc,fastqc,main.nf,347,fastqc,,fastqc,script and directives
+trim_galore,trim_galore,main.nf,376,trim_galore,,trim_galore,script and directives
+crispresso,crispresso,main.nf,419,crispresso,,crispresso,script and directives
+multiqc,multiqc,main.nf,466,multiqc,,multiqc,script and directives

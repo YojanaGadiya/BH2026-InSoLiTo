@@ -1,0 +1,9 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+post_processing,analysis_rmsd,data_flow,1,1,E00013,
+pre_pos_check_missing_atoms,run_topology,data_flow,1,1,E00002,
+pre_pos_clean_pdb,pre_pos_check_missing_atoms,data_flow,1,1,E00001,
+run_energy_minimisation,run_nvt_equilibration,data_flow,2,2,E00007,
+run_npt_equilibration,run_production,data_flow,2,2,E00011,
+run_nvt_equilibration,run_npt_equilibration,data_flow,2,2,E00009,
+run_solvation,run_energy_minimisation,data_flow,2,2,E00005,
+run_topology,run_solvation,data_flow,2,2,E00003,

@@ -1,0 +1,54 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+cellpose,maskfilter,data_flow,1,1,E00037,
+clahe,cellpose,data_flow,2,2,E00019,
+clahe,create_stack,data_flow,1,1,E00003,
+clahe,crophdf5,data_flow,1,1,E00005,
+clahe,croptiff,data_flow,1,1,E00008,
+clahe,mesmer,data_flow,2,2,E00013,
+clahe,stardist,data_flow,1,1,E00017,
+clahe,tiffh5convert,data_flow,1,1,E00025,
+create_stack,cellpose,data_flow,2,2,E00020,
+create_stack,crophdf5,data_flow,1,1,E00006,
+create_stack,croptiff,data_flow,1,1,E00009,
+create_stack,tiffh5convert,data_flow,1,1,E00026,
+crophdf5,croptiff,data_flow,1,1,E00010,
+crophdf5,multiqc,data_flow,1,1,E00046,
+croptiff,molkartqcpng,data_flow,1,1,E00011,
+ilastik,maskfilter,data_flow,1,1,E00038,
+maskfilter,molkartqc,data_flow,1,1,E00044,
+maskfilter,spot2cell,data_flow,1,1,E00040,
+mesmer,maskfilter,data_flow,1,1,E00035,
+mindagap,cellpose,data_flow,2,2,E00018,
+mindagap,clahe,data_flow,1,1,E00001,
+mindagap,create_stack,data_flow,1,1,E00002,
+mindagap,crophdf5,data_flow,1,1,E00004,
+mindagap,croptiff,data_flow,1,1,E00007,
+mindagap,mesmer,data_flow,2,2,E00012,
+mindagap,stardist,data_flow,1,1,E00016,
+mindagap,tiffh5convert,data_flow,1,1,E00024,
+molkartqc,multiqc,data_flow,1,1,E00047,
+molkartqcpng,multiqc,data_flow,1,1,E00045,
+numpy,molkartqc,data_flow,1,1,E00042,
+numpy,spot2cell,data_flow,1,1,E00039,
+spot2cell,create_anndata,data_flow,1,1,E00041,
+spot2cell,molkartqc,data_flow,1,1,E00043,
+stardist,maskfilter,data_flow,1,1,E00036,
+tiffh5convert,ilastik,data_flow,5,5,E00027,
+cellpose,mesmer,parallel_co_use,0,0,,"both consume CLAHE.img_clahe (E00019, E00013); no directed path between any process of the two tools"
+cellpose,stardist,parallel_co_use,0,0,,"both consume CLAHE.img_clahe (E00019, E00017); no directed path between any process of the two tools"
+cellpose,tiffh5convert,parallel_co_use,0,0,,"both consume CLAHE.img_clahe (E00019, E00025); no directed path between any process of the two tools"
+create_anndata,molkartqc,parallel_co_use,0,0,,"both consume SPOT2CELL.cellxgene_table (E00041, E00043); no directed path between any process of the two tools"
+create_stack,mesmer,parallel_co_use,0,0,,"both consume CLAHE.img_clahe (E00003, E00013); no directed path between any process of the two tools"
+create_stack,stardist,parallel_co_use,0,0,,"both consume CLAHE.img_clahe (E00003, E00017); no directed path between any process of the two tools"
+mesmer,cellpose,parallel_co_use,0,0,,"both consume CLAHE.img_clahe (E00013, E00019); no directed path between any process of the two tools"
+mesmer,create_stack,parallel_co_use,0,0,,"both consume CLAHE.img_clahe (E00013, E00003); no directed path between any process of the two tools"
+mesmer,stardist,parallel_co_use,0,0,,"both consume CLAHE.img_clahe (E00013, E00017); no directed path between any process of the two tools"
+mesmer,tiffh5convert,parallel_co_use,0,0,,"both consume CLAHE.img_clahe (E00013, E00025); no directed path between any process of the two tools"
+molkartqc,create_anndata,parallel_co_use,0,0,,"both consume SPOT2CELL.cellxgene_table (E00043, E00041); no directed path between any process of the two tools"
+stardist,cellpose,parallel_co_use,0,0,,"both consume CLAHE.img_clahe (E00017, E00019); no directed path between any process of the two tools"
+stardist,create_stack,parallel_co_use,0,0,,"both consume CLAHE.img_clahe (E00017, E00003); no directed path between any process of the two tools"
+stardist,mesmer,parallel_co_use,0,0,,"both consume CLAHE.img_clahe (E00017, E00013); no directed path between any process of the two tools"
+stardist,tiffh5convert,parallel_co_use,0,0,,"both consume CLAHE.img_clahe (E00017, E00025); no directed path between any process of the two tools"
+tiffh5convert,cellpose,parallel_co_use,0,0,,"both consume CLAHE.img_clahe (E00025, E00019); no directed path between any process of the two tools"
+tiffh5convert,mesmer,parallel_co_use,0,0,,"both consume CLAHE.img_clahe (E00025, E00013); no directed path between any process of the two tools"
+tiffh5convert,stardist,parallel_co_use,0,0,,"both consume CLAHE.img_clahe (E00025, E00017); no directed path between any process of the two tools"

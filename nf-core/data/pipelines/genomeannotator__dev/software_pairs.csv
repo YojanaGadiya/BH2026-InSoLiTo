@@ -1,0 +1,145 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+augustus_aligntohints,augustus_augustusbatch,data_flow,2,2,E00079,
+augustus_augustusbatch,augustus_fixjoingenes,data_flow,1,1,E00084,
+augustus_bam2hints,augustus_augustusbatch,data_flow,1,1,E00081,
+augustus_fixjoingenes,helper_creategffids,data_flow,1,1,E00085,
+augustus_stageconfig,augustus_augustusbatch,data_flow,1,1,E00083,
+busco_busco,multiqc,data_flow,1,1,E00106,
+busco_downloaddb,busco_busco,data_flow,1,1,E00104,
+cat,star_align,data_flow,1,1,E00050,
+cat_fasta,evidencemodeler_merge,data_flow,1,1,E00098,
+cat_fasta,evidencemodeler_partition,data_flow,1,1,E00088,
+cat_fasta,fastasplitter,data_flow,1,1,E00076,
+cat_fasta,gffread,data_flow,2,2,E00087,
+custom,multiqc,data_flow,1,1,E00105,
+evidencemodeler_execute,evidencemodeler_merge,data_flow,1,1,E00097,
+evidencemodeler_merge,helper_evm2gff,data_flow,1,1,E00099,
+evidencemodeler_partition,evidencemodeler_execute,data_flow,1,1,E00095,
+evidencemodeler_partition,evidencemodeler_merge,data_flow,1,1,E00096,
+exonerate_fastaclean,gaas_fastafilterbysize,data_flow,2,2,E00025,
+exonerate_fastaclean,minimap2_align,data_flow,1,1,E00061,
+exonerate_fastaclean,pasa_seqclean,data_flow,1,1,E00071,
+fastasplitter,augustus_augustusbatch,data_flow,1,1,E00077,
+fastasplitter,infernal_search,data_flow,1,1,E00005,
+fastasplitter,repeatmasker_repeatmask,data_flow,1,1,E00019,
+fastasplitter,satsuma2_satsumasynteny2,data_flow,1,1,E00011,
+fastp,cat,data_flow,1,1,E00048,
+fastp,star_align,data_flow,2,2,E00051,
+gaas_fastacleaner,exonerate_fastaclean,data_flow,4,4,E00024,
+gaas_fastacleaner,fastasplitter,data_flow,3,3,E00003,
+gaas_fastacleaner,gaas_fastafilterbysize,data_flow,1,1,E00009,
+gaas_fastacleaner,gaas_fastastatistics,data_flow,1,1,E00002,
+gaas_fastacleaner,minimap2_align,data_flow,1,1,E00062,
+gaas_fastacleaner,pasa_alignassemble,data_flow,1,1,E00072,
+gaas_fastacleaner,repeatmodeler,data_flow,1,1,E00016,
+gaas_fastacleaner,spaln_makeindex,data_flow,2,2,E00026,
+gaas_fastacleaner,star_index,data_flow,1,1,E00046,
+gaas_fastafilterbysize,gaas_fastacleaner,data_flow,1,1,E00001,
+gaas_fastafilterbysize,satsuma2_satsumasynteny2,data_flow,1,1,E00012,
+gaas_fastafilterbysize,spaln_align,data_flow,2,2,E00028,
+gffread,busco_busco,data_flow,2,2,E00102,
+gunzip,helper_rfamtogff,data_flow,1,1,E00008,
+gunzip,infernal_press,data_flow,1,1,E00004,
+gunzip,repeatmasker_stagelib,data_flow,1,1,E00018,
+helper_bamtogff,evidencemodeler_partition,data_flow,1,1,E00094,
+helper_bamtogff,helper_match2gmod,data_flow,1,1,E00067,
+helper_bamtogff,helper_minimaptohints,data_flow,1,1,E00066,
+helper_creategffids,evidencemodeler_partition,data_flow,1,1,E00092,
+helper_creategffids,gffread,data_flow,1,1,E00086,
+helper_evm2gff,gffread,data_flow,1,1,E00100,
+helper_gtf2hints,augustus_augustusbatch,data_flow,1,1,E00078,
+helper_kraken2gff,evidencemodeler_partition,data_flow,1,1,E00089,
+helper_minimaptohints,augustus_augustusbatch,data_flow,1,1,E00082,
+helper_spalntoevm,evidencemodeler_partition,data_flow,1,1,E00093,
+infernal_press,infernal_search,data_flow,1,1,E00006,
+infernal_search,helper_rfamtogff,data_flow,1,1,E00007,
+kraken,helper_gtf2hints,data_flow,1,1,E00015,
+kraken,helper_kraken2gff,data_flow,1,1,E00014,
+minimap2_align,helper_bamtogff,data_flow,1,1,E00065,
+minimap2_align,samtools_merge,data_flow,1,1,E00063,
+pasa_alignassemble,pasa_asmblstotraining,data_flow,1,1,E00074,
+pasa_asmblstotraining,evidencemodeler_partition,data_flow,1,1,E00091,
+pasa_asmblstotraining,helper_pasa2training,data_flow,1,1,E00075,
+pasa_seqclean,pasa_alignassemble,data_flow,1,1,E00073,
+repeatmasker_repeatmask,cat_fasta,data_flow,1,1,E00021,
+repeatmasker_stagelib,repeatmasker_repeatmask,data_flow,1,1,E00020,
+repeatmodeler,repeatmasker_repeatmask,data_flow,1,1,E00023,
+repeatmodeler,repeatmasker_stagelib,data_flow,1,1,E00022,
+samplesheet_check,fastp,data_flow,1,1,E00047,
+samtools_merge,augustus_bam2hints,data_flow,1,1,E00056,
+samtools_merge,helper_bamtogff,data_flow,1,1,E00064,
+samtools_merge,trinity_genomeguided,data_flow,1,1,E00057,
+satsuma2_satsumasynteny2,kraken,data_flow,1,1,E00013,
+spaln_align,spaln_merge,data_flow,2,2,E00030,
+spaln_makeindex,spaln_align,data_flow,2,2,E00027,
+spaln_makeindex,spaln_merge,data_flow,2,2,E00029,
+spaln_merge,augustus_aligntohints,data_flow,2,2,E00031,
+spaln_merge,evidencemodeler_partition,data_flow,1,1,E00090,
+spaln_merge,helper_spalntoevm,data_flow,2,2,E00033,
+spaln_merge,helper_spalntogmod,data_flow,2,2,E00032,
+spaln_merge,helper_spalntotraining,data_flow,2,2,E00034,
+star_align,samtools_merge,data_flow,1,1,E00055,
+star_index,star_align,data_flow,2,2,E00049,
+trinity_genomeguided,gaas_fastacleaner,data_flow,2,2,E00059,
+augustus_aligntohints,helper_spalntoevm,parallel_co_use,0,0,,"both consume SPALN_MERGE.gff (E00042, E00044); no directed path between any process of the two tools"
+augustus_aligntohints,helper_spalntogmod,parallel_co_use,0,0,,"both consume SPALN_MERGE.gff (E00042, E00043); no directed path between any process of the two tools"
+augustus_aligntohints,helper_spalntotraining,parallel_co_use,0,0,,"both consume SPALN_MERGE.gff (E00042, E00045); no directed path between any process of the two tools"
+augustus_bam2hints,trinity_genomeguided,parallel_co_use,0,0,,"both consume SAMTOOLS_MERGE.bam (E00056, E00057); no directed path between any process of the two tools"
+evidencemodeler_partition,helper_match2gmod,parallel_co_use,0,0,,"both consume MINIMAP_BAMTOGFF.gff (E00094, E00067); no directed path between any process of the two tools"
+evidencemodeler_partition,helper_pasa2training,parallel_co_use,0,0,,"both consume PASA_ASMBLSTOTRAINING.gff (E00091, E00075); no directed path between any process of the two tools"
+evidencemodeler_partition,helper_spalntogmod,parallel_co_use,0,0,,"both consume SPALN_MERGE.gff (E00090, E00043); no directed path between any process of the two tools"
+evidencemodeler_partition,helper_spalntotraining,parallel_co_use,0,0,,"both consume SPALN_MERGE.gff (E00090, E00045); no directed path between any process of the two tools"
+fastasplitter,gaas_fastastatistics,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00010, E00002); no directed path between any process of the two tools"
+fastasplitter,minimap2_align,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00010, E00062); no directed path between any process of the two tools"
+fastasplitter,pasa_alignassemble,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00010, E00072); no directed path between any process of the two tools"
+fastasplitter,spaln_makeindex,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00010, E00037); no directed path between any process of the two tools"
+fastasplitter,star_index,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00010, E00046); no directed path between any process of the two tools"
+gaas_fastastatistics,fastasplitter,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00002, E00010); no directed path between any process of the two tools"
+gaas_fastastatistics,minimap2_align,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00002, E00062); no directed path between any process of the two tools"
+gaas_fastastatistics,pasa_alignassemble,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00002, E00072); no directed path between any process of the two tools"
+gaas_fastastatistics,repeatmodeler,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00002, E00016); no directed path between any process of the two tools"
+gaas_fastastatistics,spaln_makeindex,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00002, E00037); no directed path between any process of the two tools"
+gaas_fastastatistics,star_index,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00002, E00046); no directed path between any process of the two tools"
+helper_gtf2hints,helper_kraken2gff,parallel_co_use,0,0,,"both consume KRAKEN.gtf (E00015, E00014); no directed path between any process of the two tools"
+helper_kraken2gff,helper_gtf2hints,parallel_co_use,0,0,,"both consume KRAKEN.gtf (E00014, E00015); no directed path between any process of the two tools"
+helper_match2gmod,evidencemodeler_partition,parallel_co_use,0,0,,"both consume MINIMAP_BAMTOGFF.gff (E00067, E00094); no directed path between any process of the two tools"
+helper_match2gmod,helper_minimaptohints,parallel_co_use,0,0,,"both consume MINIMAP_BAMTOGFF.gff (E00067, E00066); no directed path between any process of the two tools"
+helper_minimaptohints,helper_match2gmod,parallel_co_use,0,0,,"both consume MINIMAP_BAMTOGFF.gff (E00066, E00067); no directed path between any process of the two tools"
+helper_pasa2training,evidencemodeler_partition,parallel_co_use,0,0,,"both consume PASA_ASMBLSTOTRAINING.gff (E00075, E00091); no directed path between any process of the two tools"
+helper_spalntoevm,augustus_aligntohints,parallel_co_use,0,0,,"both consume SPALN_MERGE.gff (E00044, E00042); no directed path between any process of the two tools"
+helper_spalntoevm,helper_spalntogmod,parallel_co_use,0,0,,"both consume SPALN_MERGE.gff (E00044, E00043); no directed path between any process of the two tools"
+helper_spalntoevm,helper_spalntotraining,parallel_co_use,0,0,,"both consume SPALN_MERGE.gff (E00044, E00045); no directed path between any process of the two tools"
+helper_spalntogmod,augustus_aligntohints,parallel_co_use,0,0,,"both consume SPALN_MERGE.gff (E00043, E00042); no directed path between any process of the two tools"
+helper_spalntogmod,evidencemodeler_partition,parallel_co_use,0,0,,"both consume SPALN_MERGE.gff (E00043, E00090); no directed path between any process of the two tools"
+helper_spalntogmod,helper_spalntoevm,parallel_co_use,0,0,,"both consume SPALN_MERGE.gff (E00043, E00044); no directed path between any process of the two tools"
+helper_spalntogmod,helper_spalntotraining,parallel_co_use,0,0,,"both consume SPALN_MERGE.gff (E00043, E00045); no directed path between any process of the two tools"
+helper_spalntotraining,augustus_aligntohints,parallel_co_use,0,0,,"both consume SPALN_MERGE.gff (E00045, E00042); no directed path between any process of the two tools"
+helper_spalntotraining,evidencemodeler_partition,parallel_co_use,0,0,,"both consume SPALN_MERGE.gff (E00045, E00090); no directed path between any process of the two tools"
+helper_spalntotraining,helper_spalntoevm,parallel_co_use,0,0,,"both consume SPALN_MERGE.gff (E00045, E00044); no directed path between any process of the two tools"
+helper_spalntotraining,helper_spalntogmod,parallel_co_use,0,0,,"both consume SPALN_MERGE.gff (E00045, E00043); no directed path between any process of the two tools"
+minimap2_align,fastasplitter,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00062, E00010); no directed path between any process of the two tools"
+minimap2_align,gaas_fastastatistics,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00062, E00002); no directed path between any process of the two tools"
+minimap2_align,pasa_alignassemble,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00062, E00072); no directed path between any process of the two tools"
+minimap2_align,repeatmodeler,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00062, E00016); no directed path between any process of the two tools"
+minimap2_align,spaln_makeindex,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00062, E00037); no directed path between any process of the two tools"
+pasa_alignassemble,fastasplitter,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00072, E00010); no directed path between any process of the two tools"
+pasa_alignassemble,gaas_fastastatistics,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00072, E00002); no directed path between any process of the two tools"
+pasa_alignassemble,minimap2_align,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00072, E00062); no directed path between any process of the two tools"
+pasa_alignassemble,repeatmodeler,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00072, E00016); no directed path between any process of the two tools"
+pasa_alignassemble,spaln_makeindex,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00072, E00037); no directed path between any process of the two tools"
+repeatmodeler,gaas_fastastatistics,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00016, E00002); no directed path between any process of the two tools"
+repeatmodeler,minimap2_align,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00016, E00062); no directed path between any process of the two tools"
+repeatmodeler,pasa_alignassemble,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00016, E00072); no directed path between any process of the two tools"
+repeatmodeler,spaln_makeindex,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00016, E00037); no directed path between any process of the two tools"
+repeatmodeler,star_index,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00016, E00046); no directed path between any process of the two tools"
+spaln_makeindex,fastasplitter,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00037, E00010); no directed path between any process of the two tools"
+spaln_makeindex,gaas_fastastatistics,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00037, E00002); no directed path between any process of the two tools"
+spaln_makeindex,minimap2_align,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00037, E00062); no directed path between any process of the two tools"
+spaln_makeindex,pasa_alignassemble,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00037, E00072); no directed path between any process of the two tools"
+spaln_makeindex,repeatmodeler,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00037, E00016); no directed path between any process of the two tools"
+spaln_makeindex,star_index,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00037, E00046); no directed path between any process of the two tools"
+star_index,fastasplitter,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00046, E00010); no directed path between any process of the two tools"
+star_index,gaas_fastastatistics,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00046, E00002); no directed path between any process of the two tools"
+star_index,repeatmodeler,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00046, E00016); no directed path between any process of the two tools"
+star_index,spaln_makeindex,parallel_co_use,0,0,,"both consume GAAS_FASTACLEANER.fasta (E00046, E00037); no directed path between any process of the two tools"
+trinity_genomeguided,augustus_bam2hints,parallel_co_use,0,0,,"both consume SAMTOOLS_MERGE.bam (E00057, E00056); no directed path between any process of the two tools"

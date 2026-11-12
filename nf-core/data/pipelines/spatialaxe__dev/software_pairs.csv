@@ -1,0 +1,91 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+baysor,compute_prior_confidence,data_flow,2,2,E00031,
+baysor,coreutils,data_flow,1,1,E00123,
+baysor,pandas,data_flow,3,3,E02044,
+baysor,python,data_flow,2,2,E00008,
+baysor,xeniumranger,data_flow,2,2,E00039,
+cellpose,python,data_flow,2,2,E00036,
+cellpose,xeniumranger,data_flow,1,1,E00071,
+compute_prior_confidence,baysor,data_flow,2,2,E00035,
+coreutils,python,data_flow,1,1,E00125,
+custom,spoqc,data_flow,120,120,E00169,
+p7zip,baysor,data_flow,4,4,E00025,
+p7zip,cellpose,data_flow,2,2,E00018,
+p7zip,custom,data_flow,2,2,E00134,
+p7zip,multiqc,data_flow,3,3,E02051,
+p7zip,pandas,data_flow,1,1,E02029,
+p7zip,parquet_to_csv,data_flow,2,2,E00004,
+p7zip,proseg,data_flow,1,1,E00092,
+p7zip,python,data_flow,7,7,E00021,
+p7zip,resolift,data_flow,3,3,E00015,
+p7zip,segger,data_flow,4,4,E00099,
+p7zip,spoqc,data_flow,85,85,E00170,
+p7zip,xeniumranger,data_flow,14,14,E00001,
+pandas,multiqc,data_flow,3,3,E02050,
+parquet_to_csv,ficture,data_flow,1,1,E02025,
+parquet_to_csv,python,data_flow,1,1,E00006,
+proseg,python,data_flow,2,2,E00086,
+proseg,xeniumranger,data_flow,2,2,E00097,
+pyarrow,baysor,data_flow,1,1,E00122,
+python,baysor,data_flow,2,2,E00007,
+python,cellpose,data_flow,1,1,E00056,
+python,compute_prior_confidence,data_flow,1,1,E00032,
+python,coreutils,data_flow,1,1,E00124,
+python,multiqc,data_flow,1,1,E02072,
+python,proseg,data_flow,1,1,E00084,
+python,pyarrow,data_flow,1,1,E00121,
+python,stardist,data_flow,3,3,E00023,
+python,xeniumranger,data_flow,7,7,E00069,
+resolift,cellpose,data_flow,2,2,E00017,
+resolift,python,data_flow,4,4,E00020,
+segger,python,data_flow,1,1,E00114,
+stardist,python,data_flow,3,3,E00024,
+untar,baysor,data_flow,4,4,E00026,
+untar,cellpose,data_flow,2,2,E00019,
+untar,custom,data_flow,2,2,E00135,
+untar,multiqc,data_flow,3,3,E02052,
+untar,pandas,data_flow,1,1,E02030,
+untar,parquet_to_csv,data_flow,2,2,E00005,
+untar,proseg,data_flow,1,1,E00093,
+untar,python,data_flow,7,7,E00022,
+untar,resolift,data_flow,3,3,E00016,
+untar,segger,data_flow,4,4,E00100,
+untar,spoqc,data_flow,85,85,E00171,
+untar,xeniumranger,data_flow,14,14,E00002,
+xeniumranger,custom,data_flow,26,26,E00136,
+xeniumranger,multiqc,data_flow,13,13,E02056,
+xeniumranger,pandas,data_flow,13,13,E02031,
+baysor,proseg,parallel_co_use,0,0,,"both consume UNTAR.untar (E02021, E00093); no directed path between any process of the two tools"
+baysor,spoqc,parallel_co_use,0,0,,"both consume UNTAR.untar (E02021, E00700); no directed path between any process of the two tools"
+cellpose,spoqc,parallel_co_use,0,0,,"both consume UNTAR.untar (E00019, E00700); no directed path between any process of the two tools"
+custom,multiqc,parallel_co_use,0,0,,"both consume XENIUMRANGER_IMPORTSEGMENTATION.outs (E00156, E02062); no directed path between any process of the two tools"
+custom,pandas,parallel_co_use,0,0,,"both consume XENIUMRANGER_IMPORTSEGMENTATION.outs (E00156, E02037); no directed path between any process of the two tools"
+custom,parquet_to_csv,parallel_co_use,0,0,,"both consume UNTAR.untar (E00165, E00005); no directed path between any process of the two tools"
+multiqc,custom,parallel_co_use,0,0,,"both consume XENIUMRANGER_IMPORTSEGMENTATION.outs (E02062, E00156); no directed path between any process of the two tools"
+multiqc,spoqc,parallel_co_use,0,0,,"both consume UNTAR.untar (E02071, E00700); no directed path between any process of the two tools"
+pandas,custom,parallel_co_use,0,0,,"both consume XENIUMRANGER_IMPORTSEGMENTATION.outs (E02037, E00156); no directed path between any process of the two tools"
+pandas,parquet_to_csv,parallel_co_use,0,0,,"both consume UNTAR.untar (E02030, E00005); no directed path between any process of the two tools"
+pandas,spoqc,parallel_co_use,0,0,,"both consume UNTAR.untar (E02030, E00700); no directed path between any process of the two tools"
+parquet_to_csv,custom,parallel_co_use,0,0,,"both consume UNTAR.untar (E00005, E00165); no directed path between any process of the two tools"
+parquet_to_csv,pandas,parallel_co_use,0,0,,"both consume UNTAR.untar (E00005, E02030); no directed path between any process of the two tools"
+parquet_to_csv,spoqc,parallel_co_use,0,0,,"both consume UNTAR.untar (E00005, E00700); no directed path between any process of the two tools"
+parquet_to_csv,xeniumranger,parallel_co_use,0,0,,"both consume UNTAR.untar (E00005, E00049); no directed path between any process of the two tools"
+proseg,baysor,parallel_co_use,0,0,,"both consume UNTAR.untar (E00093, E02021); no directed path between any process of the two tools"
+proseg,segger,parallel_co_use,0,0,,"both consume UNTAR.untar (E00093, E00100); no directed path between any process of the two tools"
+proseg,spoqc,parallel_co_use,0,0,,"both consume UNTAR.untar (E00093, E00700); no directed path between any process of the two tools"
+python,spoqc,parallel_co_use,0,0,,"both consume UNTAR.untar (E00120, E00700); no directed path between any process of the two tools"
+resolift,spoqc,parallel_co_use,0,0,,"both consume UNTAR.untar (E00016, E00700); no directed path between any process of the two tools"
+segger,proseg,parallel_co_use,0,0,,"both consume UNTAR.untar (E00100, E00093); no directed path between any process of the two tools"
+segger,spoqc,parallel_co_use,0,0,,"both consume UNTAR.untar (E00100, E00700); no directed path between any process of the two tools"
+spoqc,baysor,parallel_co_use,0,0,,"both consume UNTAR.untar (E00700, E02021); no directed path between any process of the two tools"
+spoqc,cellpose,parallel_co_use,0,0,,"both consume UNTAR.untar (E00700, E00019); no directed path between any process of the two tools"
+spoqc,multiqc,parallel_co_use,0,0,,"both consume UNTAR.untar (E00700, E02071); no directed path between any process of the two tools"
+spoqc,pandas,parallel_co_use,0,0,,"both consume UNTAR.untar (E00700, E02030); no directed path between any process of the two tools"
+spoqc,parquet_to_csv,parallel_co_use,0,0,,"both consume UNTAR.untar (E00700, E00005); no directed path between any process of the two tools"
+spoqc,proseg,parallel_co_use,0,0,,"both consume UNTAR.untar (E00700, E00093); no directed path between any process of the two tools"
+spoqc,python,parallel_co_use,0,0,,"both consume UNTAR.untar (E00700, E00120); no directed path between any process of the two tools"
+spoqc,resolift,parallel_co_use,0,0,,"both consume UNTAR.untar (E00700, E00016); no directed path between any process of the two tools"
+spoqc,segger,parallel_co_use,0,0,,"both consume UNTAR.untar (E00700, E00100); no directed path between any process of the two tools"
+spoqc,xeniumranger,parallel_co_use,0,0,,"both consume UNTAR.untar (E00700, E00049); no directed path between any process of the two tools"
+xeniumranger,parquet_to_csv,parallel_co_use,0,0,,"both consume UNTAR.untar (E00049, E00005); no directed path between any process of the two tools"
+xeniumranger,spoqc,parallel_co_use,0,0,,"both consume UNTAR.untar (E00049, E00700); no directed path between any process of the two tools"

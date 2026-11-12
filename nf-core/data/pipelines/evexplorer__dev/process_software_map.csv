@@ -1,0 +1,21 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_EVEXPLORER:SMALL_READS:STAR_GENOMEGENERATE,STAR_GENOMEGENERATE,modules/nf-core/star/genomegenerate/main.nf,1,samtools,star,htslib;samtools;star;gawk,environment.yml
+NFCORE_EVEXPLORER:SMALL_READS:FASTQC_PRE_TRIM,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_EVEXPLORER:SMALL_READS:CUTADAPT,CUTADAPT,modules/nf-core/cutadapt/main.nf,1,cutadapt,cuatadapt,cutadapt,environment.yml
+NFCORE_EVEXPLORER:SMALL_READS:FASTQC_POST_TRIM,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_EVEXPLORER:SMALL_READS:STAR_ALIGN,STAR_ALIGN,modules/nf-core/star/align/main.nf,1,samtools,star,htslib;samtools;star;gawk,environment.yml
+NFCORE_EVEXPLORER:SMALL_READS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_EVEXPLORER:SMALL_READS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_EVEXPLORER:SMALL_READS:DERFINDER,DERFINDER,modules/local/derfinder/main.nf,1,r-optparse,,r-base;r-optparse;r-ggplot2;r-caret;r-reshape2;r-data.table;bioconductor-rtracklayer;bioconductor-genomicranges;bioconductor-derfinder;bioconductor-biocparallel,environment.yml
+NFCORE_EVEXPLORER:SMALL_READS:BATCHCORRECTION,BATCHCORRECTION,modules/local/batchcorrection/main.nf,1,batchcorrection,,,module name
+NFCORE_EVEXPLORER:SMALL_READS:DRE,DRE,modules/local/dre/main.nf,1,dre,,,module name
+NFCORE_EVEXPLORER:SMALL_READS:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml
+NFCORE_EVEXPLORER:LONG_READS:MINIMAP2_INDEX,MINIMAP2_INDEX,modules/nf-core/minimap2/index/main.nf,1,minimap2,minimap2,minimap2,environment.yml
+NFCORE_EVEXPLORER:LONG_READS:FASTQC_PRE_TRIM,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_EVEXPLORER:LONG_READS:PYCHOPPER,PYCHOPPER,modules/nf-core/pychopper/main.nf,1,pychopper,pychopper;gzip,pychopper,environment.yml
+NFCORE_EVEXPLORER:LONG_READS:FASTQC_POST_TRIM,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_EVEXPLORER:LONG_READS:MINIMAP2_ALIGN,MINIMAP2_ALIGN,modules/nf-core/minimap2/align/main.nf,1,minimap2,minimap2,htslib;minimap2;samtools,environment.yml
+NFCORE_EVEXPLORER:LONG_READS:DERFINDER,DERFINDER,modules/local/derfinder/main.nf,1,r-optparse,,r-base;r-optparse;r-ggplot2;r-caret;r-reshape2;r-data.table;bioconductor-rtracklayer;bioconductor-genomicranges;bioconductor-derfinder;bioconductor-biocparallel,environment.yml
+NFCORE_EVEXPLORER:LONG_READS:BATCHCORRECTION,BATCHCORRECTION,modules/local/batchcorrection/main.nf,1,batchcorrection,,,module name
+NFCORE_EVEXPLORER:LONG_READS:DRE,DRE,modules/local/dre/main.nf,1,dre,,,module name
+NFCORE_EVEXPLORER:LONG_READS:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

@@ -1,0 +1,20 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bedtools,gawk,data_flow,2,2,E00014,
+custom_modify_model_config,stimulus_tune,data_flow,2,2,E00030,
+encode_csv,check_model,data_flow,1,1,E00028,
+encode_csv,stimulus_predict,data_flow,1,1,E00035,
+encode_csv,stimulus_tune,data_flow,2,2,E00029,
+gawk,bedtools,data_flow,5,5,E00004,
+gawk,stimulus_split_data,data_flow,2,2,E00016,
+samtools,bedtools,data_flow,2,2,E00005,
+samtools,gawk,data_flow,1,1,E00001,
+stimulus_compare_tensors,csvtk,data_flow,1,1,E00037,
+stimulus_predict,stimulus_compare_tensors,data_flow,1,1,E00036,
+stimulus_split_data,stimulus_transform_csv,data_flow,2,2,E00020,
+stimulus_split_yaml,encode_csv,data_flow,3,3,E00025,
+stimulus_split_yaml,stimulus_split_data,data_flow,2,2,E00017,
+stimulus_split_yaml,stimulus_transform_csv,data_flow,2,2,E00021,
+stimulus_transform_csv,encode_csv,data_flow,2,2,E00024,
+stimulus_tune,stimulus_predict,data_flow,1,1,E00034,
+check_model,stimulus_tune,parallel_co_use,0,0,,"both consume ENCODE_CSV.encoded (E00028, E00029); no directed path between any process of the two tools"
+stimulus_tune,check_model,parallel_co_use,0,0,,"both consume ENCODE_CSV.encoded (E00029, E00028); no directed path between any process of the two tools"

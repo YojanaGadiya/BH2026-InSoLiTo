@@ -1,0 +1,102 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bismark,bedtools,data_flow,2,2,E00369,
+bismark,multiqc,data_flow,6,6,E00471,
+bismark,samtools,data_flow,4,4,E00027,
+bwa,parabricks,data_flow,3,3,E00136,
+bwa,picard,data_flow,2,2,E00214,
+bwa,samtools,data_flow,5,5,E00155,
+bwameth,parabricks,data_flow,3,3,E00073,
+bwameth,picard,data_flow,1,1,E00129,
+bwameth,samtools,data_flow,3,3,E00105,
+cat,bismark,data_flow,6,6,E00009,
+cat,bwa,data_flow,3,3,E00170,
+cat,bwameth,data_flow,3,3,E00087,
+cat,fastqc,data_flow,1,1,E00006,
+cat,parabricks,data_flow,6,6,E00069,
+cat,picard,data_flow,3,3,E00125,
+cat,samtools,data_flow,7,7,E00030,
+cat,trim-galore,data_flow,1,1,E00007,
+fastqc,multiqc,data_flow,1,1,E00486,
+gunzip,bismark,data_flow,8,8,E00001,
+gunzip,bwa,data_flow,4,4,E00004,
+gunzip,bwameth,data_flow,4,4,E00003,
+gunzip,methurator,data_flow,1,1,E00466,
+gunzip,methyldackel,data_flow,4,4,E00337,
+gunzip,parabricks,data_flow,6,6,E00070,
+gunzip,picard,data_flow,9,9,E00126,
+gunzip,rastair,data_flow,8,8,E00234,
+gunzip,samtools,data_flow,8,8,E00005,
+methyldackel,bedtools,data_flow,1,1,E00370,
+parabricks,samtools,data_flow,2,2,E00104,
+picard,methurator,data_flow,2,2,E00456,
+picard,methyldackel,data_flow,4,4,E00332,
+picard,multiqc,data_flow,3,3,E00477,
+picard,preseq,data_flow,2,2,E00450,
+picard,qualimap,data_flow,2,2,E00364,
+picard,rastair,data_flow,16,16,E00224,
+picard,samtools,data_flow,2,2,E00130,
+preseq,multiqc,data_flow,1,1,E00470,
+qualimap,multiqc,data_flow,1,1,E00469,
+samtools,bwa,data_flow,3,2,E00172,
+samtools,bwameth,rejected,3,0,E00089,every extracted edge is rejected
+samtools,methurator,data_flow,10,10,E00455,
+samtools,methyldackel,data_flow,24,18,E00331,
+samtools,multiqc,data_flow,5,5,E00478,
+samtools,parabricks,data_flow,6,2,E00071,
+samtools,picard,data_flow,56,36,E00123,
+samtools,preseq,data_flow,4,4,E00449,
+samtools,qualimap,data_flow,4,4,E00363,
+samtools,rastair,data_flow,80,50,E00223,
+trim-galore,bismark,data_flow,6,6,E00008,
+trim-galore,bwa,data_flow,3,3,E00169,
+trim-galore,bwameth,data_flow,3,3,E00086,
+trim-galore,multiqc,data_flow,1,1,E00484,
+trim-galore,parabricks,data_flow,6,6,E00068,
+trim-galore,picard,data_flow,3,3,E00124,
+trim-galore,samtools,data_flow,7,7,E00029,
+untar,bismark,data_flow,6,6,E00011,
+untar,bwa,data_flow,3,3,E00173,
+untar,bwameth,data_flow,3,3,E00090,
+untar,parabricks,data_flow,6,6,E00072,
+untar,picard,data_flow,3,3,E00128,
+untar,samtools,data_flow,7,7,E00032,
+bismark,bwa,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00002, E00004); no directed path between any process of the two tools"
+bismark,bwameth,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00002, E00003); no directed path between any process of the two tools"
+bismark,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00009, E00006); no directed path between any process of the two tools"
+bismark,parabricks,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00002, E00133); no directed path between any process of the two tools"
+bwa,bismark,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00004, E00002); no directed path between any process of the two tools"
+bwa,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00170, E00006); no directed path between any process of the two tools"
+bwameth,bismark,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00003, E00002); no directed path between any process of the two tools"
+bwameth,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00087, E00006); no directed path between any process of the two tools"
+fastqc,bismark,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00006, E00009); no directed path between any process of the two tools"
+fastqc,bwa,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00006, E00170); no directed path between any process of the two tools"
+fastqc,bwameth,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00006, E00087); no directed path between any process of the two tools"
+fastqc,parabricks,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00006, E00132); no directed path between any process of the two tools"
+fastqc,picard,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00006, E00210); no directed path between any process of the two tools"
+fastqc,samtools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00006, E00030); no directed path between any process of the two tools"
+fastqc,trim-galore,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00006, E00007); no directed path between any process of the two tools"
+methurator,methyldackel,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00466, E00337); no directed path between any process of the two tools"
+methurator,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00455, E00449); no directed path between any process of the two tools"
+methurator,qualimap,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00455, E00363); no directed path between any process of the two tools"
+methurator,rastair,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00466, E00287); no directed path between any process of the two tools"
+methyldackel,methurator,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00337, E00466); no directed path between any process of the two tools"
+methyldackel,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00331, E00449); no directed path between any process of the two tools"
+methyldackel,qualimap,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00331, E00363); no directed path between any process of the two tools"
+methyldackel,rastair,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00337, E00287); no directed path between any process of the two tools"
+parabricks,bismark,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00133, E00002); no directed path between any process of the two tools"
+parabricks,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00132, E00006); no directed path between any process of the two tools"
+picard,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00210, E00006); no directed path between any process of the two tools"
+preseq,methurator,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00449, E00455); no directed path between any process of the two tools"
+preseq,methyldackel,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00449, E00331); no directed path between any process of the two tools"
+preseq,qualimap,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00449, E00363); no directed path between any process of the two tools"
+preseq,rastair,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00449, E00276); no directed path between any process of the two tools"
+qualimap,methurator,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00363, E00455); no directed path between any process of the two tools"
+qualimap,methyldackel,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00363, E00331); no directed path between any process of the two tools"
+qualimap,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00363, E00449); no directed path between any process of the two tools"
+qualimap,rastair,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00363, E00276); no directed path between any process of the two tools"
+rastair,methurator,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00287, E00466); no directed path between any process of the two tools"
+rastair,methyldackel,parallel_co_use,0,0,,"both consume GUNZIP.gunzip (E00287, E00337); no directed path between any process of the two tools"
+rastair,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00276, E00449); no directed path between any process of the two tools"
+rastair,qualimap,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00276, E00363); no directed path between any process of the two tools"
+samtools,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00030, E00006); no directed path between any process of the two tools"
+trim-galore,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00007, E00006); no directed path between any process of the two tools"

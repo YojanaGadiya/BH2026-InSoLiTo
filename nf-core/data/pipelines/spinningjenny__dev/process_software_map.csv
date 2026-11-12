@@ -1,0 +1,5 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_SPINNINGJENNY:SPINNINGJENNY:XML_MOD,XML_MOD,modules/local/xmlmod.nf,1,xml_mod,,,module name
+NFCORE_SPINNINGJENNY:SPINNINGJENNY:RUN_MODEL,RUN_MODEL,modules/local/model.nf,1,run_model,,,module name
+NFCORE_SPINNINGJENNY:SPINNINGJENNY:JOIN_FILES,JOIN_FILES,modules/local/joinfiles.nf,1,join_files,,,module name
+NFCORE_SPINNINGJENNY:SPINNINGJENNY:MAKE_PLOT,MAKE_PLOT,modules/local/rplot.nf,1,make_plot,,,module name

@@ -1,0 +1,31 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+CheckDesign,CheckDesign,main.nf,277,check_design,,check_design,script and directives
+BWAIndex,BWAIndex,main.nf,331,bwa,,bwa,script and directives
+MakeGeneBED,MakeGeneBED,main.nf,355,gtf2bed,,gtf2bed,script and directives
+MakeTSSBED,MakeTSSBED,main.nf,377,maketssbed,,,module name
+MakeGenomeFilter,MakeGenomeFilter,main.nf,397,complementbed,,complementbed;samtools,script and directives
+FastQC,FastQC,main.nf,436,fastqc,,fastqc,script and directives
+TrimGalore,TrimGalore,main.nf,486,trim_galore,,trim_galore,script and directives
+BWAMem,BWAMem,main.nf,549,bwa,,bwa;samtools,script and directives
+SortBAM,SortBAM,main.nf,580,samtools,,samtools,script and directives
+MergedLibBAM,MergedLibBAM,main.nf,628,samtools,,samtools;picard,script and directives
+MergedLibBAMFilter,MergedLibBAMFilter,main.nf,705,samtools,,samtools;bamtools,script and directives
+MergedLibBAMRemoveOrphan,MergedLibBAMRemoveOrphan,main.nf,779,samtools,,samtools;bampe_rm_orphan,script and directives
+MergedLibPreseq,MergedLibPreseq,main.nf,830,preseq,,preseq,script and directives
+MergedLibMetricsPreFilter,MergedLibMetricsPreFilter,main.nf,854,picard,,picard,script and directives
+MergedLibMetricsPostFilter,MergedLibMetricsPostFilter,main.nf,896,picard,,picard,script and directives
+MergedLibBigWig,MergedLibBigWig,main.nf,938,genomecoveragebed,,genomecoveragebed;bedgraphtobigwig,script and directives
+MergedLibPlotFingerprint,MergedLibPlotFingerprint,main.nf,975,plotfingerprint,,plotfingerprint,script and directives
+MergedLibBAMToBED,MergedLibBAMToBED,main.nf,1018,bamtobed,,bamtobed,script and directives
+MergedLibDANPOS2,MergedLibDANPOS2,main.nf,1042,danpos,,danpos;wigtobigwig,script and directives
+MergedLibPlotProfile,MergedLibPlotProfile,main.nf,1092,plotprofile,,plotprofile;computematrix,script and directives
+MergedRepBAM,MergedRepBAM,main.nf,1146,samtools,,samtools;picard,script and directives
+MergedRepNameSortBAM,MergedRepNameSortBAM,main.nf,1223,samtools,,samtools,script and directives
+MergedRepBigWig,MergedRepBigWig,main.nf,1255,genomecoveragebed,,genomecoveragebed;bedgraphtobigwig,script and directives
+MergedRepBAMToBED,MergedRepBAMToBED,main.nf,1303,bamtobed,,bamtobed,script and directives
+MergedRepDANPOS2,MergedRepDANPOS2,main.nf,1327,danpos,,danpos;wigtobigwig,script and directives
+MergedRepPlotProfile,MergedRepPlotProfile,main.nf,1377,plotprofile,,plotprofile;computematrix,script and directives
+IGV,IGV,main.nf,1425,igv_files_to_session,,igv_files_to_session,script and directives
+get_software_versions,get_software_versions,main.nf,1461,fastqc,,fastqc;trim_galore;samtools;bedtools,script and directives
+MultiQC,MultiQC,main.nf,1512,multiqc,,multiqc,script and directives
+output_documentation,output_documentation,main.nf,1572,markdown_to_html,,markdown_to_html,script and directives

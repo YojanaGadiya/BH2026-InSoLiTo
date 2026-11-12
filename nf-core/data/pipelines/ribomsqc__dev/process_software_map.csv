@@ -1,0 +1,5 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_RIBOMSQC:RIBOMSQC:THERMORAWFILEPARSER,THERMORAWFILEPARSER,modules/nf-core/thermorawfileparser/main.nf,1,thermorawfileparser,thermorawfileparser,thermorawfileparser;mono,environment.yml
+NFCORE_RIBOMSQC:RIBOMSQC:MSNBASEXIC,MSNBASEXIC,modules/local/msnbasexic/main.nf,1,bioconductor-msnbase,msnbasexic,bioconductor-msnbase;r-base;r-ggplot2;r-optparse;r-pracma;r-readr;r-jsonlite;r-glue,environment.yml
+NFCORE_RIBOMSQC:RIBOMSQC:MERGEJSONS,MERGEJSONS,modules/local/mergejsons/main.nf,1,r-jsonlite,,r-base;r-jsonlite;r-glue,environment.yml
+NFCORE_RIBOMSQC:RIBOMSQC:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

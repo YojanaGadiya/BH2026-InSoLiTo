@@ -1,0 +1,21 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+aspera-cli,python,data_flow,1,1,E00012,
+fastq-dl,python,data_flow,1,1,E00013,
+python,aspera-cli,data_flow,1,1,E00008,
+python,fastq-dl,data_flow,1,1,E00009,
+python,sra-tools,data_flow,2,2,E00003,
+python,wget,data_flow,1,1,E00002,
+sra-tools,python,data_flow,1,1,E00011,
+wget,python,data_flow,1,1,E00010,
+aspera-cli,fastq-dl,parallel_co_use,0,0,,"both consume SRA_RUNINFO_TO_FTP.tsv (E00008, E00009); no directed path between any process of the two tools"
+aspera-cli,sra-tools,parallel_co_use,0,0,,"both consume SRA_RUNINFO_TO_FTP.tsv (E00008, E00003); no directed path between any process of the two tools"
+aspera-cli,wget,parallel_co_use,0,0,,"both consume SRA_RUNINFO_TO_FTP.tsv (E00008, E00002); no directed path between any process of the two tools"
+fastq-dl,aspera-cli,parallel_co_use,0,0,,"both consume SRA_RUNINFO_TO_FTP.tsv (E00009, E00008); no directed path between any process of the two tools"
+fastq-dl,sra-tools,parallel_co_use,0,0,,"both consume SRA_RUNINFO_TO_FTP.tsv (E00009, E00003); no directed path between any process of the two tools"
+fastq-dl,wget,parallel_co_use,0,0,,"both consume SRA_RUNINFO_TO_FTP.tsv (E00009, E00002); no directed path between any process of the two tools"
+sra-tools,aspera-cli,parallel_co_use,0,0,,"both consume SRA_RUNINFO_TO_FTP.tsv (E00003, E00008); no directed path between any process of the two tools"
+sra-tools,fastq-dl,parallel_co_use,0,0,,"both consume SRA_RUNINFO_TO_FTP.tsv (E00003, E00009); no directed path between any process of the two tools"
+sra-tools,wget,parallel_co_use,0,0,,"both consume SRA_RUNINFO_TO_FTP.tsv (E00003, E00002); no directed path between any process of the two tools"
+wget,aspera-cli,parallel_co_use,0,0,,"both consume SRA_RUNINFO_TO_FTP.tsv (E00002, E00008); no directed path between any process of the two tools"
+wget,fastq-dl,parallel_co_use,0,0,,"both consume SRA_RUNINFO_TO_FTP.tsv (E00002, E00009); no directed path between any process of the two tools"
+wget,sra-tools,parallel_co_use,0,0,,"both consume SRA_RUNINFO_TO_FTP.tsv (E00002, E00003); no directed path between any process of the two tools"

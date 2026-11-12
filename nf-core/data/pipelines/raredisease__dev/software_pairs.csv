@@ -1,0 +1,538 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+add_varcaller_to_bed,bcftools,data_flow,3,3,E00441,
+bbmap,pip,data_flow,2,2,E00762,
+bcftools,cadd-scripts,data_flow,2,2,E00507,
+bcftools,custom,data_flow,8,8,E00550,
+bcftools,cyvcf2,data_flow,8,8,E00545,
+bcftools,ensembl-vep,data_flow,4,4,E00515,
+bcftools,gatk4,data_flow,4,4,E00475,
+bcftools,picard,data_flow,7,7,E00411,
+bcftools,pip,data_flow,1,1,E00418,
+bcftools,rhocall,data_flow,5,5,E00484,
+bcftools,tabix,data_flow,9,9,E00600,
+bcftools,upd,data_flow,2,2,E00520,
+bcftools,vcf2cytosure,data_flow,2,2,E00911,
+bcftools,vcfanno,data_flow,1,1,E00627,
+bedtools,calculate_seed_fraction,data_flow,1,1,E00201,
+bedtools,tabix,data_flow,1,1,E00015,
+bwa,fastdup,data_flow,1,1,E00085,
+bwa,gatk4,data_flow,2,2,E00167,
+bwa,picard,data_flow,1,1,E00077,
+bwa,samtools,data_flow,5,5,E00050,
+bwa,sentieon,data_flow,3,3,E00095,
+bwa,tiddit,data_flow,1,1,E00698,
+bwa-fastalign,fastdup,data_flow,1,1,E00086,
+bwa-fastalign,picard,data_flow,1,1,E00078,
+bwa-fastalign,samtools,data_flow,5,5,E00051,
+bwa-mem2,fastdup,data_flow,1,1,E00088,
+bwa-mem2,gatk4,data_flow,2,2,E00165,
+bwa-mem2,picard,data_flow,1,1,E00080,
+bwa-mem2,samtools,data_flow,5,5,E00053,
+bwa-meme,fastdup,data_flow,1,1,E00087,
+bwa-meme,picard,data_flow,1,1,E00079,
+bwa-meme,samtools,data_flow,5,5,E00052,
+cadd-scripts,bcftools,gate_metadata,2,0,E00512,
+cadd-scripts,tabix,data_flow,2,2,E00508,
+calculate_seed_fraction,samtools,data_flow,1,1,E00202,
+cat,picard,data_flow,1,1,E00276,
+cat,riker,data_flow,1,1,E00289,
+cat,seqtk,data_flow,1,1,E00745,
+cnvnator,tabix,data_flow,1,1,E00718,
+create_hgncids_file,cyvcf2,data_flow,4,4,E00547,
+create_pedigree_file,genmod,data_flow,8,8,E00555,
+create_pedigree_file,peddy,data_flow,1,1,E00870,
+create_pedigree_file,somalier,data_flow,1,1,E00883,
+custom,genmod,data_flow,4,4,E00553,
+custom,tabix,data_flow,4,4,E00552,
+cyvcf2,tabix,data_flow,4,4,E00548,
+deepvariant,bcftools,data_flow,1,1,E00434,
+deepvariant,pip,data_flow,2,2,E00931,
+ensembl-vep,bcftools,data_flow,8,8,E00518,
+ensembl-vep,custom,data_flow,2,2,E00662,
+ensembl-vep,cyvcf2,data_flow,2,2,E00656,
+expansionhunter,bcftools,data_flow,1,1,E00409,
+expansionhunter,samtools,data_flow,1,1,E00408,
+fastdup,bcftools,data_flow,2,1,E00897,
+fastdup,cnvnator,data_flow,2,1,E00704,
+fastdup,create_pedigree_file,data_flow,2,1,E00350,
+fastdup,deepvariant,data_flow,2,1,E00423,
+fastdup,gatk4,data_flow,8,4,E00140,
+fastdup,manta,data_flow,2,1,E00674,
+fastdup,mosdepth,data_flow,2,1,E00319,
+fastdup,multiqc,data_flow,1,1,E00938,
+fastdup,ngs-bits,data_flow,2,1,E00339,
+fastdup,picard,data_flow,8,4,E00235,
+fastdup,rename_align_files,data_flow,4,2,E00385,
+fastdup,riker,data_flow,4,2,E00281,
+fastdup,sambamba,data_flow,2,1,E00329,
+fastdup,samtools,data_flow,8,6,E00113,
+fastdup,sentieon,data_flow,6,3,E00213,
+fastdup,tiddit,data_flow,6,3,E00305,
+fastdup,verifybamid2,data_flow,2,1,E00361,
+fastp,bwa,data_flow,1,1,E00029,
+fastp,bwa-fastalign,data_flow,1,1,E00035,
+fastp,bwa-mem2,data_flow,1,1,E00045,
+fastp,bwa-meme,data_flow,1,1,E00040,
+fastp,multiqc,data_flow,1,1,E00936,
+fastp,sentieon,data_flow,1,1,E00090,
+fastqc,multiqc,data_flow,1,1,E00935,
+gatk4,bcftools,data_flow,7,7,E00479,
+gatk4,bedtools,data_flow,1,1,E00199,
+gatk4,bwa,data_flow,4,4,E00011,
+gatk4,bwa-mem2,data_flow,4,4,E00009,
+gatk4,cat,data_flow,1,1,E00018,
+gatk4,peddy,data_flow,2,2,E00868,
+gatk4,picard,data_flow,10,10,E00171,
+gatk4,pip,data_flow,2,2,E00929,
+gatk4,python,data_flow,1,1,E00382,
+gatk4,rhocall,data_flow,2,2,E00482,
+gatk4,riker,data_flow,1,1,E00290,
+gatk4,samtools,data_flow,4,4,E00150,
+gatk4,sentieon,data_flow,5,5,E00013,
+gatk4,somalier,data_flow,4,4,E00877,
+gatk4,tabix,data_flow,1,1,E00738,
+gatk4,vcfanno,data_flow,2,2,E00490,
+gatk4,xz,data_flow,4,4,E00871,
+gawk,bcftools,data_flow,4,4,E00503,
+gawk,gatk4,data_flow,1,1,E00020,
+gawk,samtools,data_flow,1,1,E00209,
+genmod,bcftools,data_flow,4,4,E00559,
+genmod,tabix,data_flow,4,4,E00560,
+get_chrom_sizes,add_varcaller_to_bed,data_flow,3,3,E00438,
+get_chrom_sizes,bbmap,data_flow,1,1,E00756,
+get_chrom_sizes,prep_mitosalt,data_flow,1,1,E00747,
+get_chrom_sizes,ucsc-bedtobigbed,data_flow,2,2,E00526,
+get_chrom_sizes,ucsc-wigtobigwig,data_flow,2,2,E00315,
+hisat2,bbmap,data_flow,1,1,E00758,
+hisat2,prep_mitosalt,data_flow,1,1,E00749,
+last,bbmap,data_flow,1,1,E00761,
+last,prep_mitosalt,data_flow,1,1,E00752,
+manta,bcftools,data_flow,2,2,E00684,
+mosdepth,multiqc,data_flow,1,1,E00945,
+ngs-bits,bcftools,gate_metadata,1,0,E00905,
+ngs-bits,create_pedigree_file,gate_metadata,1,0,E00358,
+ngs-bits,deepvariant,gate_metadata,1,0,E00431,
+ngs-bits,gatk4,gate_metadata,1,0,E00924,
+ngs-bits,multiqc,data_flow,1,1,E00942,
+ngs-bits,rename_align_files,gate_metadata,2,0,E00393,
+ngs-bits,sentieon,gate_metadata,1,0,E00452,
+ngs-bits,tiddit,gate_metadata,1,0,E00894,
+peddy,multiqc,data_flow,4,4,E00960,
+picard,bcftools,data_flow,3,3,E00413,
+picard,cnvnator,data_flow,1,1,E00703,
+picard,create_pedigree_file,data_flow,1,1,E00349,
+picard,deepvariant,data_flow,1,1,E00422,
+picard,ensembl-vep,data_flow,1,1,E00846,
+picard,gatk4,data_flow,5,5,E00139,
+picard,manta,data_flow,1,1,E00673,
+picard,mosdepth,data_flow,1,1,E00318,
+picard,multiqc,data_flow,4,4,E00937,
+picard,ngs-bits,data_flow,1,1,E00338,
+picard,rename_align_files,data_flow,2,2,E00384,
+picard,riker,data_flow,2,2,E00280,
+picard,sambamba,data_flow,1,1,E00328,
+picard,samtools,data_flow,7,7,E00083,
+picard,sentieon,data_flow,3,3,E00212,
+picard,tabix,data_flow,1,1,E00412,
+picard,tiddit,data_flow,3,3,E00304,
+picard,verifybamid2,data_flow,1,1,E00360,
+pip,bcftools,gate_metadata,1,0,E00768,
+pip,typer,data_flow,1,1,E00766,
+prep_mitosalt,bbmap,data_flow,1,1,E00754,
+python,multiqc,data_flow,1,1,E00957,
+rename_align_files,expansionhunter,data_flow,2,2,E00405,
+rename_align_files,smncopynumbercaller,data_flow,2,2,E00866,
+retroseq,bcftools,data_flow,1,1,E00835,
+rhocall,chromograph,data_flow,1,1,E00540,
+rhocall,tabix,data_flow,1,1,E00485,
+rhocall,ucsc-wigtobigwig,data_flow,1,1,E00541,
+riker,multiqc,data_flow,8,8,E00948,
+samtools,add_varcaller_to_bed,data_flow,3,3,E00437,
+samtools,bbmap,data_flow,4,4,E00755,
+samtools,bcftools,data_flow,13,11,E00410,
+samtools,bedtools,data_flow,2,1,E00014,
+samtools,bwa,data_flow,2,2,E00010,
+samtools,bwa-mem2,data_flow,2,2,E00008,
+samtools,cnvnator,data_flow,5,3,E00702,
+samtools,create_pedigree_file,data_flow,5,2,E00348,
+samtools,deepvariant,data_flow,6,4,E00421,
+samtools,expansionhunter,data_flow,1,1,E00407,
+samtools,fastdup,data_flow,2,2,E00084,
+samtools,gatk4,data_flow,39,31,E00003,
+samtools,gawk,data_flow,6,6,E00019,
+samtools,last,data_flow,1,1,E00004,
+samtools,manta,data_flow,6,4,E00672,
+samtools,mosdepth,data_flow,5,3,E00317,
+samtools,ngs-bits,data_flow,6,4,E00337,
+samtools,picard,data_flow,30,22,E00076,
+samtools,pip,data_flow,1,1,E00764,
+samtools,prep_mitosalt,data_flow,4,4,E00746,
+samtools,rename_align_files,data_flow,10,5,E00383,
+samtools,retroseq,data_flow,5,5,E00829,
+samtools,riker,data_flow,12,8,E00279,
+samtools,sambamba,data_flow,5,3,E00327,
+samtools,sentieon,data_flow,30,24,E00012,
+samtools,somalier,data_flow,1,1,E00879,
+samtools,tiddit,data_flow,16,10,E00303,
+samtools,ucsc-bedtobigbed,data_flow,2,2,E00525,
+samtools,ucsc-wigtobigwig,data_flow,2,2,E00314,
+samtools,verifybamid2,data_flow,5,3,E00359,
+sanity_check_vcfanno_databases,vcfanno,data_flow,2,2,E00494,
+sentieon,bcftools,data_flow,4,3,E00459,
+sentieon,bwa,data_flow,3,3,E00033,
+sentieon,cnvnator,data_flow,2,1,E00705,
+sentieon,create_pedigree_file,data_flow,2,1,E00351,
+sentieon,deepvariant,data_flow,2,1,E00424,
+sentieon,gatk4,data_flow,10,4,E00141,
+sentieon,manta,data_flow,2,1,E00675,
+sentieon,mosdepth,data_flow,2,1,E00320,
+sentieon,multiqc,data_flow,4,4,E00939,
+sentieon,ngs-bits,data_flow,2,1,E00340,
+sentieon,picard,data_flow,8,4,E00236,
+sentieon,pip,data_flow,2,2,E00932,
+sentieon,rename_align_files,data_flow,4,2,E00386,
+sentieon,riker,data_flow,4,2,E00282,
+sentieon,sambamba,data_flow,2,1,E00330,
+sentieon,samtools,data_flow,10,8,E00099,
+sentieon,tiddit,data_flow,7,4,E00306,
+sentieon,verifybamid2,data_flow,2,1,E00362,
+seqtk,bbmap,data_flow,1,1,E00753,
+somalier,multiqc,data_flow,2,2,E00958,
+split_chr,cnvnator,data_flow,1,1,E00713,
+spring,bwa,data_flow,3,3,E00030,
+spring,bwa-fastalign,data_flow,3,3,E00036,
+spring,bwa-mem2,data_flow,3,3,E00046,
+spring,bwa-meme,data_flow,3,3,E00041,
+spring,cat,data_flow,3,3,E00742,
+spring,fastp,data_flow,3,3,E00026,
+spring,fastqc,data_flow,3,3,E00023,
+spring,sentieon,data_flow,3,3,E00091,
+tabix,bcftools,data_flow,14,14,E00414,
+tabix,custom,data_flow,4,4,E00549,
+tabix,deepvariant,data_flow,1,1,E00432,
+tabix,gatk4,data_flow,1,1,E00488,
+tabix,manta,data_flow,1,1,E00682,
+tabix,sanity_check_vcfanno_databases,data_flow,2,2,E00419,
+tabix,sentieon,data_flow,2,2,E00453,
+tabix,vcfanno,data_flow,5,5,E00492,
+tiddit,chromograph,data_flow,1,1,E00316,
+tiddit,tabix,data_flow,1,1,E00699,
+tiddit,ucsc-wigtobigwig,data_flow,1,1,E00313,
+tiddit,vcf2cytosure,data_flow,1,1,E00913,
+untar,ensembl-vep,data_flow,4,4,E00517,
+upd,chromograph,data_flow,2,2,E00522,
+upd,ucsc-bedtobigbed,data_flow,2,2,E00524,
+vcfanno,bcftools,data_flow,10,10,E00495,
+vcfanno,ensembl-vep,data_flow,1,1,E00648,
+verifybamid2,multiqc,data_flow,1,1,E00956,
+xz,somalier,data_flow,2,2,E00875,
+add_varcaller_to_bed,bbmap,parallel_co_use,0,0,,"both consume GET_CHROM_SIZES.sizes (E00616, E00756); no directed path between any process of the two tools"
+add_varcaller_to_bed,prep_mitosalt,parallel_co_use,0,0,,"both consume GET_CHROM_SIZES.sizes (E00616, E00747); no directed path between any process of the two tools"
+bbmap,add_varcaller_to_bed,parallel_co_use,0,0,,"both consume GET_CHROM_SIZES.sizes (E00756, E00616); no directed path between any process of the two tools"
+bbmap,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00757, E00014); no directed path between any process of the two tools"
+bbmap,bwa,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00760, E00010); no directed path between any process of the two tools"
+bbmap,bwa-mem2,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00760, E00008); no directed path between any process of the two tools"
+bbmap,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00757, E00433); no directed path between any process of the two tools"
+bbmap,expansionhunter,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00757, E00407); no directed path between any process of the two tools"
+bbmap,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00760, E00003); no directed path between any process of the two tools"
+bbmap,gawk,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00757, E00500); no directed path between any process of the two tools"
+bbmap,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00757, E00683); no directed path between any process of the two tools"
+bbmap,ngs-bits,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00757, E00347); no directed path between any process of the two tools"
+bbmap,retroseq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00757, E00834); no directed path between any process of the two tools"
+bbmap,riker,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00757, E00291); no directed path between any process of the two tools"
+bbmap,sentieon,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00760, E00012); no directed path between any process of the two tools"
+bbmap,somalier,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00757, E00879); no directed path between any process of the two tools"
+bbmap,tiddit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00757, E00696); no directed path between any process of the two tools"
+bbmap,ucsc-bedtobigbed,parallel_co_use,0,0,,"both consume GET_CHROM_SIZES.sizes (E00756, E00529); no directed path between any process of the two tools"
+bbmap,ucsc-wigtobigwig,parallel_co_use,0,0,,"both consume GET_CHROM_SIZES.sizes (E00756, E00543); no directed path between any process of the two tools"
+bcftools,mosdepth,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00897, E00319); no directed path between any process of the two tools"
+bcftools,riker,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00836, E00291); no directed path between any process of the two tools"
+bcftools,sambamba,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00897, E00329); no directed path between any process of the two tools"
+bcftools,verifybamid2,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00897, E00361); no directed path between any process of the two tools"
+bedtools,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00014, E00757); no directed path between any process of the two tools"
+bedtools,expansionhunter,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00014, E00407); no directed path between any process of the two tools"
+bedtools,gawk,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00014, E00500); no directed path between any process of the two tools"
+bedtools,ngs-bits,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00014, E00347); no directed path between any process of the two tools"
+bedtools,prep_mitosalt,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00014, E00748); no directed path between any process of the two tools"
+bedtools,retroseq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00014, E00834); no directed path between any process of the two tools"
+bedtools,riker,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00014, E00291); no directed path between any process of the two tools"
+bedtools,tiddit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00014, E00696); no directed path between any process of the two tools"
+bwa,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00010, E00760); no directed path between any process of the two tools"
+bwa,cat,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00030, E00742); no directed path between any process of the two tools"
+bwa,fastqc,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00030, E00023); no directed path between any process of the two tools"
+bwa,last,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00010, E00004); no directed path between any process of the two tools"
+bwa,prep_mitosalt,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00010, E00751); no directed path between any process of the two tools"
+bwa-fastalign,bwa-meme,parallel_co_use,0,0,,"both consume FASTP.reads (E00035, E00040); no directed path between any process of the two tools"
+bwa-fastalign,cat,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00036, E00742); no directed path between any process of the two tools"
+bwa-fastalign,fastqc,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00036, E00023); no directed path between any process of the two tools"
+bwa-mem2,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00008, E00760); no directed path between any process of the two tools"
+bwa-mem2,cat,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00046, E00742); no directed path between any process of the two tools"
+bwa-mem2,fastqc,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00046, E00023); no directed path between any process of the two tools"
+bwa-mem2,last,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00008, E00004); no directed path between any process of the two tools"
+bwa-mem2,prep_mitosalt,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00008, E00751); no directed path between any process of the two tools"
+bwa-meme,bwa-fastalign,parallel_co_use,0,0,,"both consume FASTP.reads (E00040, E00035); no directed path between any process of the two tools"
+bwa-meme,cat,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00041, E00742); no directed path between any process of the two tools"
+bwa-meme,fastqc,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00041, E00023); no directed path between any process of the two tools"
+cat,bwa,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00742, E00030); no directed path between any process of the two tools"
+cat,bwa-fastalign,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00742, E00036); no directed path between any process of the two tools"
+cat,bwa-mem2,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00742, E00046); no directed path between any process of the two tools"
+cat,bwa-meme,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00742, E00041); no directed path between any process of the two tools"
+cat,fastp,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00742, E00026); no directed path between any process of the two tools"
+cat,fastqc,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00742, E00023); no directed path between any process of the two tools"
+cat,sentieon,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00742, E00091); no directed path between any process of the two tools"
+chromograph,ucsc-bedtobigbed,parallel_co_use,0,0,,"both consume UPD_REGIONS.bed (E00523, E00527); no directed path between any process of the two tools"
+chromograph,ucsc-wigtobigwig,parallel_co_use,0,0,,"both consume TIDDIT_COV.wig (E00316, E00313); no directed path between any process of the two tools"
+cnvnator,create_pedigree_file,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00704, E00350); no directed path between any process of the two tools"
+cnvnator,deepvariant,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00704, E00423); no directed path between any process of the two tools"
+cnvnator,gatk4,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00704, E00140); no directed path between any process of the two tools"
+cnvnator,manta,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00704, E00674); no directed path between any process of the two tools"
+cnvnator,mosdepth,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00704, E00319); no directed path between any process of the two tools"
+cnvnator,ngs-bits,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00704, E00339); no directed path between any process of the two tools"
+cnvnator,rename_align_files,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00704, E00396); no directed path between any process of the two tools"
+cnvnator,riker,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00704, E00281); no directed path between any process of the two tools"
+cnvnator,sambamba,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00704, E00329); no directed path between any process of the two tools"
+cnvnator,tiddit,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00704, E00688); no directed path between any process of the two tools"
+cnvnator,verifybamid2,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00704, E00361); no directed path between any process of the two tools"
+create_pedigree_file,cnvnator,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00350, E00704); no directed path between any process of the two tools"
+create_pedigree_file,deepvariant,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00350, E00423); no directed path between any process of the two tools"
+create_pedigree_file,gatk4,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00350, E00140); no directed path between any process of the two tools"
+create_pedigree_file,manta,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00350, E00674); no directed path between any process of the two tools"
+create_pedigree_file,mosdepth,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00350, E00319); no directed path between any process of the two tools"
+create_pedigree_file,rename_align_files,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00350, E00396); no directed path between any process of the two tools"
+create_pedigree_file,riker,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00350, E00281); no directed path between any process of the two tools"
+create_pedigree_file,sambamba,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00350, E00329); no directed path between any process of the two tools"
+create_pedigree_file,tiddit,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00350, E00688); no directed path between any process of the two tools"
+create_pedigree_file,verifybamid2,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00350, E00361); no directed path between any process of the two tools"
+deepvariant,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00433, E00757); no directed path between any process of the two tools"
+deepvariant,cnvnator,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00423, E00704); no directed path between any process of the two tools"
+deepvariant,create_pedigree_file,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00423, E00350); no directed path between any process of the two tools"
+deepvariant,expansionhunter,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00433, E00407); no directed path between any process of the two tools"
+deepvariant,gawk,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00433, E00500); no directed path between any process of the two tools"
+deepvariant,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00433, E00683); no directed path between any process of the two tools"
+deepvariant,mosdepth,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00423, E00319); no directed path between any process of the two tools"
+deepvariant,prep_mitosalt,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00433, E00748); no directed path between any process of the two tools"
+deepvariant,rename_align_files,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00423, E00396); no directed path between any process of the two tools"
+deepvariant,retroseq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00433, E00834); no directed path between any process of the two tools"
+deepvariant,riker,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00433, E00291); no directed path between any process of the two tools"
+deepvariant,sambamba,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00423, E00329); no directed path between any process of the two tools"
+deepvariant,tiddit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00433, E00696); no directed path between any process of the two tools"
+deepvariant,verifybamid2,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00423, E00361); no directed path between any process of the two tools"
+expansionhunter,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00407, E00757); no directed path between any process of the two tools"
+expansionhunter,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00407, E00014); no directed path between any process of the two tools"
+expansionhunter,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00407, E00433); no directed path between any process of the two tools"
+expansionhunter,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00407, E00148); no directed path between any process of the two tools"
+expansionhunter,gawk,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00407, E00500); no directed path between any process of the two tools"
+expansionhunter,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00407, E00683); no directed path between any process of the two tools"
+expansionhunter,prep_mitosalt,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00407, E00748); no directed path between any process of the two tools"
+expansionhunter,retroseq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00407, E00834); no directed path between any process of the two tools"
+expansionhunter,riker,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00407, E00291); no directed path between any process of the two tools"
+expansionhunter,smncopynumbercaller,parallel_co_use,0,0,,"both consume RENAME_BAI.output (E00406, E00867); no directed path between any process of the two tools"
+expansionhunter,somalier,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00407, E00879); no directed path between any process of the two tools"
+expansionhunter,tiddit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00407, E00696); no directed path between any process of the two tools"
+fastp,cat,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00026, E00742); no directed path between any process of the two tools"
+fastp,fastqc,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00026, E00023); no directed path between any process of the two tools"
+fastqc,bwa,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00023, E00030); no directed path between any process of the two tools"
+fastqc,bwa-fastalign,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00023, E00036); no directed path between any process of the two tools"
+fastqc,bwa-mem2,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00023, E00046); no directed path between any process of the two tools"
+fastqc,bwa-meme,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00023, E00041); no directed path between any process of the two tools"
+fastqc,cat,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00023, E00742); no directed path between any process of the two tools"
+fastqc,fastp,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00023, E00026); no directed path between any process of the two tools"
+fastqc,sentieon,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00023, E00091); no directed path between any process of the two tools"
+gatk4,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00003, E00760); no directed path between any process of the two tools"
+gatk4,cnvnator,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00140, E00704); no directed path between any process of the two tools"
+gatk4,create_pedigree_file,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00140, E00350); no directed path between any process of the two tools"
+gatk4,expansionhunter,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00148, E00407); no directed path between any process of the two tools"
+gatk4,last,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00003, E00004); no directed path between any process of the two tools"
+gatk4,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00148, E00683); no directed path between any process of the two tools"
+gatk4,mosdepth,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00140, E00319); no directed path between any process of the two tools"
+gatk4,prep_mitosalt,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00003, E00751); no directed path between any process of the two tools"
+gatk4,rename_align_files,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00140, E00396); no directed path between any process of the two tools"
+gatk4,retroseq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00148, E00834); no directed path between any process of the two tools"
+gatk4,sambamba,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00140, E00329); no directed path between any process of the two tools"
+gatk4,tiddit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00148, E00696); no directed path between any process of the two tools"
+gatk4,verifybamid2,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00140, E00361); no directed path between any process of the two tools"
+gawk,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00500, E00757); no directed path between any process of the two tools"
+gawk,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00500, E00014); no directed path between any process of the two tools"
+gawk,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00500, E00433); no directed path between any process of the two tools"
+gawk,expansionhunter,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00500, E00407); no directed path between any process of the two tools"
+gawk,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00500, E00683); no directed path between any process of the two tools"
+gawk,ngs-bits,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00500, E00347); no directed path between any process of the two tools"
+gawk,prep_mitosalt,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00500, E00748); no directed path between any process of the two tools"
+gawk,retroseq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00500, E00834); no directed path between any process of the two tools"
+gawk,riker,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00500, E00291); no directed path between any process of the two tools"
+gawk,somalier,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00500, E00879); no directed path between any process of the two tools"
+gawk,tiddit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00500, E00696); no directed path between any process of the two tools"
+last,bwa,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00004, E00010); no directed path between any process of the two tools"
+last,bwa-mem2,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00004, E00008); no directed path between any process of the two tools"
+last,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00004, E00003); no directed path between any process of the two tools"
+last,sentieon,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00004, E00012); no directed path between any process of the two tools"
+manta,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00683, E00757); no directed path between any process of the two tools"
+manta,cnvnator,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00674, E00704); no directed path between any process of the two tools"
+manta,create_pedigree_file,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00674, E00350); no directed path between any process of the two tools"
+manta,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00683, E00433); no directed path between any process of the two tools"
+manta,expansionhunter,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00683, E00407); no directed path between any process of the two tools"
+manta,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00683, E00148); no directed path between any process of the two tools"
+manta,gawk,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00683, E00500); no directed path between any process of the two tools"
+manta,mosdepth,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00674, E00319); no directed path between any process of the two tools"
+manta,ngs-bits,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00683, E00347); no directed path between any process of the two tools"
+manta,prep_mitosalt,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00683, E00748); no directed path between any process of the two tools"
+manta,rename_align_files,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00674, E00396); no directed path between any process of the two tools"
+manta,retroseq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00683, E00834); no directed path between any process of the two tools"
+manta,riker,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00683, E00291); no directed path between any process of the two tools"
+manta,sambamba,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00674, E00329); no directed path between any process of the two tools"
+manta,somalier,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00683, E00879); no directed path between any process of the two tools"
+manta,tiddit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00683, E00696); no directed path between any process of the two tools"
+manta,verifybamid2,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00674, E00361); no directed path between any process of the two tools"
+mosdepth,bcftools,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00319, E00897); no directed path between any process of the two tools"
+mosdepth,cnvnator,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00319, E00704); no directed path between any process of the two tools"
+mosdepth,create_pedigree_file,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00319, E00350); no directed path between any process of the two tools"
+mosdepth,deepvariant,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00319, E00423); no directed path between any process of the two tools"
+mosdepth,gatk4,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00319, E00140); no directed path between any process of the two tools"
+mosdepth,manta,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00319, E00674); no directed path between any process of the two tools"
+mosdepth,ngs-bits,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00319, E00339); no directed path between any process of the two tools"
+mosdepth,rename_align_files,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00319, E00396); no directed path between any process of the two tools"
+mosdepth,riker,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00319, E00281); no directed path between any process of the two tools"
+mosdepth,sambamba,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00319, E00329); no directed path between any process of the two tools"
+mosdepth,tiddit,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00319, E00688); no directed path between any process of the two tools"
+mosdepth,verifybamid2,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00319, E00361); no directed path between any process of the two tools"
+ngs-bits,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00347, E00757); no directed path between any process of the two tools"
+ngs-bits,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00347, E00014); no directed path between any process of the two tools"
+ngs-bits,cnvnator,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00339, E00704); no directed path between any process of the two tools"
+ngs-bits,gawk,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00347, E00500); no directed path between any process of the two tools"
+ngs-bits,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00347, E00683); no directed path between any process of the two tools"
+ngs-bits,mosdepth,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00339, E00319); no directed path between any process of the two tools"
+ngs-bits,prep_mitosalt,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00347, E00748); no directed path between any process of the two tools"
+ngs-bits,retroseq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00347, E00834); no directed path between any process of the two tools"
+ngs-bits,riker,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00347, E00291); no directed path between any process of the two tools"
+ngs-bits,sambamba,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00339, E00329); no directed path between any process of the two tools"
+ngs-bits,verifybamid2,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00339, E00361); no directed path between any process of the two tools"
+peddy,rhocall,parallel_co_use,0,0,,"both consume GATK4_SELECTVARIANTS.tbi (E00869, E00483); no directed path between any process of the two tools"
+peddy,somalier,parallel_co_use,0,0,,"both consume CREATE_PEDIGREE_FILE.ped (E00870, E00883); no directed path between any process of the two tools"
+peddy,xz,parallel_co_use,0,0,,"both consume GATK4_SELECTVARIANTS.tbi (E00869, E00872); no directed path between any process of the two tools"
+prep_mitosalt,add_varcaller_to_bed,parallel_co_use,0,0,,"both consume GET_CHROM_SIZES.sizes (E00747, E00616); no directed path between any process of the two tools"
+prep_mitosalt,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00748, E00014); no directed path between any process of the two tools"
+prep_mitosalt,bwa,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00751, E00010); no directed path between any process of the two tools"
+prep_mitosalt,bwa-mem2,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00751, E00008); no directed path between any process of the two tools"
+prep_mitosalt,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00748, E00433); no directed path between any process of the two tools"
+prep_mitosalt,expansionhunter,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00748, E00407); no directed path between any process of the two tools"
+prep_mitosalt,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00751, E00003); no directed path between any process of the two tools"
+prep_mitosalt,gawk,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00748, E00500); no directed path between any process of the two tools"
+prep_mitosalt,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00748, E00683); no directed path between any process of the two tools"
+prep_mitosalt,ngs-bits,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00748, E00347); no directed path between any process of the two tools"
+prep_mitosalt,retroseq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00748, E00834); no directed path between any process of the two tools"
+prep_mitosalt,riker,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00748, E00291); no directed path between any process of the two tools"
+prep_mitosalt,sentieon,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00751, E00012); no directed path between any process of the two tools"
+prep_mitosalt,somalier,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00748, E00879); no directed path between any process of the two tools"
+prep_mitosalt,tiddit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00748, E00696); no directed path between any process of the two tools"
+prep_mitosalt,ucsc-bedtobigbed,parallel_co_use,0,0,,"both consume GET_CHROM_SIZES.sizes (E00747, E00529); no directed path between any process of the two tools"
+prep_mitosalt,ucsc-wigtobigwig,parallel_co_use,0,0,,"both consume GET_CHROM_SIZES.sizes (E00747, E00543); no directed path between any process of the two tools"
+rename_align_files,cnvnator,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00396, E00704); no directed path between any process of the two tools"
+rename_align_files,create_pedigree_file,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00396, E00350); no directed path between any process of the two tools"
+rename_align_files,deepvariant,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00396, E00423); no directed path between any process of the two tools"
+rename_align_files,gatk4,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00396, E00140); no directed path between any process of the two tools"
+rename_align_files,manta,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00396, E00674); no directed path between any process of the two tools"
+rename_align_files,mosdepth,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00396, E00319); no directed path between any process of the two tools"
+rename_align_files,riker,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00396, E00281); no directed path between any process of the two tools"
+rename_align_files,sambamba,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00396, E00329); no directed path between any process of the two tools"
+rename_align_files,tiddit,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00396, E00688); no directed path between any process of the two tools"
+rename_align_files,verifybamid2,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00396, E00361); no directed path between any process of the two tools"
+retroseq,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00834, E00757); no directed path between any process of the two tools"
+retroseq,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00834, E00014); no directed path between any process of the two tools"
+retroseq,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00834, E00433); no directed path between any process of the two tools"
+retroseq,expansionhunter,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00834, E00407); no directed path between any process of the two tools"
+retroseq,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00834, E00148); no directed path between any process of the two tools"
+retroseq,gawk,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00834, E00500); no directed path between any process of the two tools"
+retroseq,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00834, E00683); no directed path between any process of the two tools"
+retroseq,ngs-bits,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00834, E00347); no directed path between any process of the two tools"
+retroseq,prep_mitosalt,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00834, E00748); no directed path between any process of the two tools"
+retroseq,riker,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00834, E00291); no directed path between any process of the two tools"
+retroseq,somalier,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00834, E00879); no directed path between any process of the two tools"
+retroseq,tiddit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00834, E00696); no directed path between any process of the two tools"
+rhocall,peddy,parallel_co_use,0,0,,"both consume GATK4_SELECTVARIANTS.tbi (E00483, E00869); no directed path between any process of the two tools"
+rhocall,somalier,parallel_co_use,0,0,,"both consume GATK4_SELECTVARIANTS.tbi (E00483, E00878); no directed path between any process of the two tools"
+rhocall,xz,parallel_co_use,0,0,,"both consume GATK4_SELECTVARIANTS.tbi (E00483, E00872); no directed path between any process of the two tools"
+riker,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00291, E00757); no directed path between any process of the two tools"
+riker,bcftools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00291, E00836); no directed path between any process of the two tools"
+riker,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00291, E00014); no directed path between any process of the two tools"
+riker,cnvnator,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00281, E00704); no directed path between any process of the two tools"
+riker,create_pedigree_file,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00281, E00350); no directed path between any process of the two tools"
+riker,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00291, E00433); no directed path between any process of the two tools"
+riker,expansionhunter,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00291, E00407); no directed path between any process of the two tools"
+riker,gawk,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00291, E00500); no directed path between any process of the two tools"
+riker,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00291, E00683); no directed path between any process of the two tools"
+riker,mosdepth,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00281, E00319); no directed path between any process of the two tools"
+riker,ngs-bits,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00291, E00347); no directed path between any process of the two tools"
+riker,prep_mitosalt,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00291, E00748); no directed path between any process of the two tools"
+riker,rename_align_files,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00281, E00396); no directed path between any process of the two tools"
+riker,retroseq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00291, E00834); no directed path between any process of the two tools"
+riker,sambamba,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00281, E00329); no directed path between any process of the two tools"
+riker,somalier,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00291, E00879); no directed path between any process of the two tools"
+riker,tiddit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00291, E00696); no directed path between any process of the two tools"
+riker,verifybamid2,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00281, E00361); no directed path between any process of the two tools"
+sambamba,bcftools,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00329, E00897); no directed path between any process of the two tools"
+sambamba,cnvnator,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00329, E00704); no directed path between any process of the two tools"
+sambamba,create_pedigree_file,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00329, E00350); no directed path between any process of the two tools"
+sambamba,deepvariant,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00329, E00423); no directed path between any process of the two tools"
+sambamba,gatk4,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00329, E00140); no directed path between any process of the two tools"
+sambamba,manta,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00329, E00674); no directed path between any process of the two tools"
+sambamba,mosdepth,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00329, E00319); no directed path between any process of the two tools"
+sambamba,ngs-bits,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00329, E00339); no directed path between any process of the two tools"
+sambamba,rename_align_files,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00329, E00396); no directed path between any process of the two tools"
+sambamba,riker,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00329, E00281); no directed path between any process of the two tools"
+sambamba,tiddit,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00329, E00688); no directed path between any process of the two tools"
+sambamba,verifybamid2,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00329, E00361); no directed path between any process of the two tools"
+sentieon,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00012, E00760); no directed path between any process of the two tools"
+sentieon,cat,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00091, E00742); no directed path between any process of the two tools"
+sentieon,fastqc,parallel_co_use,0,0,,"both consume SPRING_DECOMPRESS_TO_FQ_PAIR.fastq (E00091, E00023); no directed path between any process of the two tools"
+sentieon,last,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00012, E00004); no directed path between any process of the two tools"
+sentieon,prep_mitosalt,parallel_co_use,0,0,,"both consume SAMTOOLS_EXTRACT_MT.fa (E00012, E00751); no directed path between any process of the two tools"
+smncopynumbercaller,expansionhunter,parallel_co_use,0,0,,"both consume RENAME_BAI.output (E00867, E00406); no directed path between any process of the two tools"
+somalier,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00879, E00757); no directed path between any process of the two tools"
+somalier,expansionhunter,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00879, E00407); no directed path between any process of the two tools"
+somalier,gawk,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00879, E00500); no directed path between any process of the two tools"
+somalier,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00879, E00683); no directed path between any process of the two tools"
+somalier,peddy,parallel_co_use,0,0,,"both consume CREATE_PEDIGREE_FILE.ped (E00883, E00870); no directed path between any process of the two tools"
+somalier,prep_mitosalt,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00879, E00748); no directed path between any process of the two tools"
+somalier,retroseq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00879, E00834); no directed path between any process of the two tools"
+somalier,rhocall,parallel_co_use,0,0,,"both consume GATK4_SELECTVARIANTS.tbi (E00878, E00483); no directed path between any process of the two tools"
+somalier,riker,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00879, E00291); no directed path between any process of the two tools"
+somalier,tiddit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00879, E00696); no directed path between any process of the two tools"
+tiddit,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00696, E00757); no directed path between any process of the two tools"
+tiddit,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00696, E00014); no directed path between any process of the two tools"
+tiddit,cnvnator,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00688, E00704); no directed path between any process of the two tools"
+tiddit,create_pedigree_file,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00688, E00350); no directed path between any process of the two tools"
+tiddit,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00696, E00433); no directed path between any process of the two tools"
+tiddit,expansionhunter,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00696, E00407); no directed path between any process of the two tools"
+tiddit,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00696, E00148); no directed path between any process of the two tools"
+tiddit,gawk,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00696, E00500); no directed path between any process of the two tools"
+tiddit,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00696, E00683); no directed path between any process of the two tools"
+tiddit,mosdepth,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00688, E00319); no directed path between any process of the two tools"
+tiddit,prep_mitosalt,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00696, E00748); no directed path between any process of the two tools"
+tiddit,rename_align_files,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00688, E00396); no directed path between any process of the two tools"
+tiddit,retroseq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00696, E00834); no directed path between any process of the two tools"
+tiddit,riker,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00696, E00291); no directed path between any process of the two tools"
+tiddit,sambamba,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00688, E00329); no directed path between any process of the two tools"
+tiddit,somalier,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX_GENOME.fai (E00696, E00879); no directed path between any process of the two tools"
+tiddit,verifybamid2,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00688, E00361); no directed path between any process of the two tools"
+ucsc-bedtobigbed,bbmap,parallel_co_use,0,0,,"both consume GET_CHROM_SIZES.sizes (E00529, E00756); no directed path between any process of the two tools"
+ucsc-bedtobigbed,chromograph,parallel_co_use,0,0,,"both consume UPD_REGIONS.bed (E00527, E00523); no directed path between any process of the two tools"
+ucsc-bedtobigbed,prep_mitosalt,parallel_co_use,0,0,,"both consume GET_CHROM_SIZES.sizes (E00529, E00747); no directed path between any process of the two tools"
+ucsc-bedtobigbed,ucsc-wigtobigwig,parallel_co_use,0,0,,"both consume GET_CHROM_SIZES.sizes (E00529, E00543); no directed path between any process of the two tools"
+ucsc-wigtobigwig,bbmap,parallel_co_use,0,0,,"both consume GET_CHROM_SIZES.sizes (E00543, E00756); no directed path between any process of the two tools"
+ucsc-wigtobigwig,chromograph,parallel_co_use,0,0,,"both consume TIDDIT_COV.wig (E00313, E00316); no directed path between any process of the two tools"
+ucsc-wigtobigwig,prep_mitosalt,parallel_co_use,0,0,,"both consume GET_CHROM_SIZES.sizes (E00543, E00747); no directed path between any process of the two tools"
+ucsc-wigtobigwig,ucsc-bedtobigbed,parallel_co_use,0,0,,"both consume GET_CHROM_SIZES.sizes (E00543, E00529); no directed path between any process of the two tools"
+verifybamid2,bcftools,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00361, E00897); no directed path between any process of the two tools"
+verifybamid2,cnvnator,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00361, E00704); no directed path between any process of the two tools"
+verifybamid2,create_pedigree_file,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00361, E00350); no directed path between any process of the two tools"
+verifybamid2,deepvariant,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00361, E00423); no directed path between any process of the two tools"
+verifybamid2,gatk4,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00361, E00140); no directed path between any process of the two tools"
+verifybamid2,manta,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00361, E00674); no directed path between any process of the two tools"
+verifybamid2,mosdepth,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00361, E00319); no directed path between any process of the two tools"
+verifybamid2,ngs-bits,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00361, E00339); no directed path between any process of the two tools"
+verifybamid2,rename_align_files,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00361, E00396); no directed path between any process of the two tools"
+verifybamid2,riker,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00361, E00281); no directed path between any process of the two tools"
+verifybamid2,sambamba,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00361, E00329); no directed path between any process of the two tools"
+verifybamid2,tiddit,parallel_co_use,0,0,,"both consume FASTDUP.bam (E00361, E00688); no directed path between any process of the two tools"
+xz,peddy,parallel_co_use,0,0,,"both consume GATK4_SELECTVARIANTS.tbi (E00872, E00869); no directed path between any process of the two tools"
+xz,rhocall,parallel_co_use,0,0,,"both consume GATK4_SELECTVARIANTS.tbi (E00872, E00483); no directed path between any process of the two tools"

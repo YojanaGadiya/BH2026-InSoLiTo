@@ -1,0 +1,80 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+annotate,hail_sample_qc,data_flow,1,1,E00021,
+bwa,deepvariant,data_flow,1,1,E00014,
+bwa,gatk4,data_flow,3,3,E00028,
+bwa,mosdepth,data_flow,1,1,E00006,
+bwa,mt_liftover,data_flow,1,1,E00049,
+bwa,picard,data_flow,1,1,E00008,
+bwa,picard_collectalignmentsummarymetrics,data_flow,1,1,E00010,
+bwa,picard_qualityscoredistribution,data_flow,1,1,E00012,
+bwa,samtools,data_flow,3,3,E00005,
+custom,multiqc,data_flow,1,1,E00079,
+deepvariant,glnexus,data_flow,1,1,E00016,
+fastqc,multiqc,data_flow,1,1,E00080,
+gatk4,bwa,data_flow,2,2,E00031,
+gatk4,haplocheck,data_flow,1,1,E00063,
+gatk4,mt_liftover,data_flow,2,2,E00047,
+gatk4,mt_step2_participant_data,data_flow,2,2,E00068,
+gatk4,norm,data_flow,1,1,E00054,
+gatk4,picard,data_flow,4,4,E00039,
+gatk4,tabix,data_flow,1,1,E00053,
+glnexus,norm,data_flow,1,1,E00018,
+glnexus,tabix,data_flow,1,1,E00017,
+hail_sample_qc,hail_variant_qc,data_flow,6,6,E00022,
+haplocheck,mt_step3_metadata_sample,data_flow,1,1,E00071,
+mosdepth,mt_step3_metadata_sample,data_flow,1,1,E00070,
+mosdepth,multiqc,data_flow,1,1,E00081,
+mt_liftover,gatk4,data_flow,2,2,E00050,
+mt_step1_input_tsv,hail_variant_mt_qc,data_flow,1,1,E00073,
+mt_step2_participant_data,hail_variant_mt_qc,data_flow,4,4,E00074,
+mt_step3_metadata,hail_variant_mt_qc,data_flow,1,1,E00078,
+mt_step3_metadata_sample,mt_step3_metadata,data_flow,1,1,E00072,
+norm,annotate,data_flow,1,1,E00020,
+norm,gatk4,data_flow,1,1,E00059,
+norm,tabix,data_flow,1,1,E00056,
+picard,multiqc,data_flow,1,1,E00082,
+picard,shift_back,data_flow,2,2,E00064,
+picard_collectalignmentsummarymetrics,multiqc,data_flow,1,1,E00083,
+picard_qualityscoredistribution,multiqc,data_flow,1,1,E00084,
+samplesheet_check,fastqc,data_flow,1,1,E00001,
+samplesheet_check,trimmomatic,data_flow,1,1,E00002,
+samtools,deepvariant,data_flow,1,1,E00015,
+samtools,gatk4,data_flow,1,1,E00029,
+samtools,mosdepth,data_flow,1,1,E00007,
+samtools,picard,data_flow,1,1,E00009,
+samtools,picard_collectalignmentsummarymetrics,data_flow,1,1,E00011,
+samtools,picard_qualityscoredistribution,data_flow,1,1,E00013,
+shift_back,mt_step1_input_tsv,data_flow,2,2,E00066,
+tabix,gatk4,data_flow,1,1,E00060,
+tabix,norm,data_flow,2,2,E00019,
+trimmomatic,bwa,data_flow,1,1,E00003,
+deepvariant,gatk4,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00014, E00028); no directed path between any process of the two tools"
+deepvariant,mosdepth,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00014, E00006); no directed path between any process of the two tools"
+deepvariant,picard,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00014, E00008); no directed path between any process of the two tools"
+deepvariant,picard_collectalignmentsummarymetrics,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00014, E00010); no directed path between any process of the two tools"
+deepvariant,picard_qualityscoredistribution,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00014, E00012); no directed path between any process of the two tools"
+fastqc,trimmomatic,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00001, E00002); no directed path between any process of the two tools"
+gatk4,deepvariant,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00028, E00014); no directed path between any process of the two tools"
+gatk4,mosdepth,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00028, E00006); no directed path between any process of the two tools"
+gatk4,picard_collectalignmentsummarymetrics,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00028, E00010); no directed path between any process of the two tools"
+gatk4,picard_qualityscoredistribution,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00028, E00012); no directed path between any process of the two tools"
+mosdepth,deepvariant,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00006, E00014); no directed path between any process of the two tools"
+mosdepth,gatk4,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00006, E00028); no directed path between any process of the two tools"
+mosdepth,picard,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00006, E00008); no directed path between any process of the two tools"
+mosdepth,picard_collectalignmentsummarymetrics,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00006, E00010); no directed path between any process of the two tools"
+mosdepth,picard_qualityscoredistribution,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00006, E00012); no directed path between any process of the two tools"
+picard,deepvariant,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00008, E00014); no directed path between any process of the two tools"
+picard,mosdepth,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00008, E00006); no directed path between any process of the two tools"
+picard,picard_collectalignmentsummarymetrics,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00008, E00010); no directed path between any process of the two tools"
+picard,picard_qualityscoredistribution,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00008, E00012); no directed path between any process of the two tools"
+picard_collectalignmentsummarymetrics,deepvariant,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00010, E00014); no directed path between any process of the two tools"
+picard_collectalignmentsummarymetrics,gatk4,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00010, E00028); no directed path between any process of the two tools"
+picard_collectalignmentsummarymetrics,mosdepth,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00010, E00006); no directed path between any process of the two tools"
+picard_collectalignmentsummarymetrics,picard,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00010, E00008); no directed path between any process of the two tools"
+picard_collectalignmentsummarymetrics,picard_qualityscoredistribution,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00010, E00012); no directed path between any process of the two tools"
+picard_qualityscoredistribution,deepvariant,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00012, E00014); no directed path between any process of the two tools"
+picard_qualityscoredistribution,gatk4,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00012, E00028); no directed path between any process of the two tools"
+picard_qualityscoredistribution,mosdepth,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00012, E00006); no directed path between any process of the two tools"
+picard_qualityscoredistribution,picard,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00012, E00008); no directed path between any process of the two tools"
+picard_qualityscoredistribution,picard_collectalignmentsummarymetrics,parallel_co_use,0,0,,"both consume BWA_MEM.bam (E00012, E00010); no directed path between any process of the two tools"
+trimmomatic,fastqc,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00002, E00001); no directed path between any process of the two tools"

@@ -1,0 +1,43 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bowtie2,cut_sam,data_flow,1,1,E00015,
+bowtie2,qc_aligned,data_flow,1,1,E00013,
+cat,bowtie2,data_flow,1,1,E00003,
+cat,cutadapt,data_flow,1,1,E00032,
+cat,demultiplex,data_flow,1,1,E00018,
+cat,samtools,data_flow,1,1,E00004,
+cut_sam,cat,data_flow,1,1,E00016,
+cutadapt,multiqc,data_flow,1,1,E00037,
+cutadapt,star,data_flow,1,1,E00033,
+demultiplex,qc_batch,data_flow,1,1,E00021,
+ercc_create,cat,data_flow,1,1,E00002,
+extract_labels,bowtie2,data_flow,1,1,E00010,
+extract_labels,qc_aligned,data_flow,1,1,E00014,
+fastp,extract_labels,data_flow,1,1,E00007,
+fastp,velocity_convert,data_flow,1,1,E00029,
+fastp,velocity_whitelist,data_flow,1,1,E00031,
+fastqc,multiqc,data_flow,1,1,E00036,
+gunzip,bowtie2,data_flow,1,1,E00012,
+gunzip,cat,data_flow,1,1,E00001,
+gunzip,prepare,data_flow,1,1,E00006,
+gunzip,samtools,data_flow,1,1,E00005,
+prepare,demultiplex,data_flow,3,3,E00017,
+prepare,extract_labels,data_flow,2,2,E00008,
+prepare,qc_batch,data_flow,3,3,E00022,
+prepare,qc_report,data_flow,2,2,E00027,
+qc_batch,qc_report,data_flow,2,2,E00025,
+samtools,star,data_flow,1,1,E00035,
+star,multiqc,data_flow,1,1,E00038,
+velocity_convert,cat,data_flow,1,1,E00030,
+velocity_whitelist,star,data_flow,1,1,E00034,
+bowtie2,samtools,parallel_co_use,0,0,,"both consume CAT_FASTA.file_out (E00003, E00004); no directed path between any process of the two tools"
+cut_sam,qc_aligned,parallel_co_use,0,0,,"both consume BOWTIE2_ALIGN.sam (E00015, E00013); no directed path between any process of the two tools"
+extract_labels,velocity_convert,parallel_co_use,0,0,,"both consume FASTP_SPLIT.reads (E00007, E00029); no directed path between any process of the two tools"
+extract_labels,velocity_whitelist,parallel_co_use,0,0,,"both consume FASTP_SPLIT.reads (E00007, E00031); no directed path between any process of the two tools"
+prepare,samtools,parallel_co_use,0,0,,"both consume GUNZIP_GTF.gunzip (E00006, E00005); no directed path between any process of the two tools"
+qc_aligned,cut_sam,parallel_co_use,0,0,,"both consume BOWTIE2_ALIGN.sam (E00013, E00015); no directed path between any process of the two tools"
+samtools,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTA.file_out (E00004, E00003); no directed path between any process of the two tools"
+samtools,prepare,parallel_co_use,0,0,,"both consume GUNZIP_GTF.gunzip (E00005, E00006); no directed path between any process of the two tools"
+velocity_convert,extract_labels,parallel_co_use,0,0,,"both consume FASTP_SPLIT.reads (E00029, E00007); no directed path between any process of the two tools"
+velocity_convert,velocity_whitelist,parallel_co_use,0,0,,"both consume FASTP_SPLIT.reads (E00029, E00031); no directed path between any process of the two tools"
+velocity_whitelist,extract_labels,parallel_co_use,0,0,,"both consume FASTP_SPLIT.reads (E00031, E00007); no directed path between any process of the two tools"
+velocity_whitelist,velocity_convert,parallel_co_use,0,0,,"both consume FASTP_SPLIT.reads (E00031, E00029); no directed path between any process of the two tools"

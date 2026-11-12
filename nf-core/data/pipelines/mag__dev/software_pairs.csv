@@ -1,0 +1,895 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+adapterremoval,ale,data_flow,2,2,E00384,
+adapterremoval,bbmap,data_flow,2,2,E00044,
+adapterremoval,bcftools,data_flow,2,2,E00372,
+adapterremoval,bioawk,data_flow,2,2,E00462,
+adapterremoval,bowtie2,data_flow,12,8,E00002,
+adapterremoval,cat,data_flow,6,4,E00029,
+adapterremoval,comebin,data_flow,2,2,E00592,
+adapterremoval,concoct,data_flow,6,6,E00515,
+adapterremoval,das_tool,data_flow,2,2,E00787,
+adapterremoval,deepmased,data_flow,2,2,E00396,
+adapterremoval,fastqc,data_flow,2,2,E00023,
+adapterremoval,filtlong,data_flow,2,2,E00056,
+adapterremoval,freebayes,data_flow,6,6,E00328,
+adapterremoval,genomad,data_flow,2,2,E00228,
+adapterremoval,megahit,data_flow,2,2,E00138,
+adapterremoval,metabat2,data_flow,6,6,E00414,
+adapterremoval,metabinner,data_flow,6,6,E00616,
+adapterremoval,minimap2,data_flow,2,2,E00274,
+adapterremoval,multiqc,data_flow,2,2,E01143,
+adapterremoval,prodigal,data_flow,2,2,E00217,
+adapterremoval,pydamage,data_flow,2,2,E00303,
+adapterremoval,pypolca,data_flow,2,2,E00195,
+adapterremoval,quast,data_flow,2,2,E00206,
+adapterremoval,samtools,data_flow,2,2,E00316,
+adapterremoval,semibin,data_flow,2,2,E00696,
+adapterremoval,seqkit,data_flow,2,2,E00253,
+adapterremoval,seqtk,data_flow,2,2,E00036,
+adapterremoval,spades,data_flow,4,4,E00129,
+adapterremoval,tiara,data_flow,2,2,E00729,
+aria2,checkm2,data_flow,1,1,E00895,
+bakta,multiqc,data_flow,1,1,E01160,
+bbmap,cat,gate_metadata,1,0,E00116,
+bbmap,megahit,data_flow,1,1,E00133,
+bbmap,spades,data_flow,2,2,E00124,
+bcftools,seqkit,data_flow,1,1,E00405,
+bioawk,maxbin2,data_flow,1,1,E00506,
+bowtie2,ale,data_flow,3,3,E00377,
+bowtie2,bbmap,data_flow,2,2,E00041,
+bowtie2,bcftools,data_flow,3,3,E00365,
+bowtie2,bioawk,data_flow,3,3,E00454,
+bowtie2,cat,data_flow,6,4,E00026,
+bowtie2,comebin,data_flow,3,2,E00584,
+bowtie2,concoct,data_flow,9,6,E00507,
+bowtie2,das_tool,data_flow,3,2,E00779,
+bowtie2,deepmased,data_flow,3,3,E00389,
+bowtie2,fastqc,data_flow,2,2,E00020,
+bowtie2,filtlong,data_flow,2,2,E00053,
+bowtie2,freebayes,data_flow,9,6,E00321,
+bowtie2,genomad,data_flow,2,2,E00225,
+bowtie2,megahit,data_flow,2,2,E00135,
+bowtie2,metabat2,data_flow,9,9,E00406,
+bowtie2,metabinner,data_flow,9,9,E00608,
+bowtie2,minimap2,data_flow,2,2,E00271,
+bowtie2,multiqc,data_flow,4,4,E01146,
+bowtie2,prodigal,data_flow,2,2,E00214,
+bowtie2,pydamage,data_flow,3,3,E00296,
+bowtie2,pypolca,data_flow,2,2,E00192,
+bowtie2,quast,data_flow,2,2,E00203,
+bowtie2,samtools,data_flow,3,3,E00309,
+bowtie2,semibin,data_flow,3,2,E00688,
+bowtie2,seqkit,data_flow,2,2,E00250,
+bowtie2,seqtk,data_flow,2,2,E00033,
+bowtie2,spades,data_flow,4,4,E00126,
+bowtie2,tiara,data_flow,3,2,E00721,
+busco,bakta,data_flow,1,1,E01119,
+busco,cat,data_flow,1,1,E00975,
+busco,galah,data_flow,1,1,E00934,
+busco,gtdbtk,data_flow,1,1,E01029,
+busco,multiqc,data_flow,1,1,E01161,
+busco,pandas,data_flow,1,1,E01050,
+busco,prokka,data_flow,1,1,E01099,
+busco,qsv,data_flow,1,1,E00841,
+cat,ale,data_flow,1,1,E00380,
+cat,bbmap,data_flow,1,1,E00040,
+cat,bcftools,data_flow,1,1,E00368,
+cat,bioawk,data_flow,2,2,E00458,
+cat,bowtie2,data_flow,2,2,E00236,
+cat,comebin,data_flow,2,2,E00588,
+cat,concoct,data_flow,6,6,E00511,
+cat,das_tool,data_flow,2,2,E00783,
+cat,deepmased,data_flow,1,1,E00392,
+cat,filtlong,data_flow,1,1,E00052,
+cat,flye,data_flow,2,2,E00151,
+cat,freebayes,data_flow,3,3,E00324,
+cat,genomad,data_flow,1,1,E00224,
+cat,megahit,data_flow,1,1,E00134,
+cat,metabat2,data_flow,6,6,E00410,
+cat,metabinner,data_flow,6,6,E00612,
+cat,metamdbg,data_flow,2,2,E00167,
+cat,minimap2,data_flow,3,3,E00270,
+cat,pandas,data_flow,1,1,E01074,
+cat,prodigal,data_flow,1,1,E00213,
+cat,pydamage,data_flow,1,1,E00299,
+cat,pypolca,data_flow,1,1,E00191,
+cat,quast,data_flow,1,1,E00202,
+cat,samtools,data_flow,1,1,E00312,
+cat,semibin,data_flow,2,2,E00692,
+cat,seqkit,data_flow,1,1,E00249,
+cat,seqtk,data_flow,1,1,E00032,
+cat,spades,data_flow,5,5,E00125,
+cat,tiara,data_flow,2,2,E00725,
+checkm-genome,bakta,data_flow,1,1,E01120,
+checkm-genome,cat,data_flow,1,1,E00976,
+checkm-genome,galah,data_flow,1,1,E00935,
+checkm-genome,gtdbtk,data_flow,1,1,E01030,
+checkm-genome,gunc,data_flow,1,1,E00916,
+checkm-genome,multiqc,data_flow,1,1,E01162,
+checkm-genome,pandas,data_flow,1,1,E01051,
+checkm-genome,prokka,data_flow,1,1,E01100,
+checkm-genome,qsv,data_flow,1,1,E00878,
+checkm2,bakta,data_flow,1,1,E01121,
+checkm2,cat,data_flow,1,1,E00977,
+checkm2,galah,data_flow,1,1,E00936,
+checkm2,gtdbtk,data_flow,1,1,E01031,
+checkm2,multiqc,data_flow,1,1,E01163,
+checkm2,pandas,data_flow,1,1,E01052,
+checkm2,prokka,data_flow,1,1,E01101,
+checkm2,qsv,data_flow,1,1,E00896,
+chopper,bioawk,data_flow,1,1,E00473,
+chopper,cat,data_flow,2,2,E00097,
+chopper,comebin,data_flow,1,1,E00603,
+chopper,concoct,data_flow,3,3,E00526,
+chopper,das_tool,data_flow,1,1,E00798,
+chopper,flye,data_flow,2,2,E00155,
+chopper,metabat2,data_flow,3,3,E00425,
+chopper,metabinner,data_flow,3,3,E00627,
+chopper,metamdbg,data_flow,2,2,E00171,
+chopper,minimap2,data_flow,4,4,E00066,
+chopper,nanoplot,data_flow,1,1,E00090,
+chopper,samtools,data_flow,1,1,E00083,
+chopper,semibin,data_flow,1,1,E00707,
+chopper,tiara,data_flow,1,1,E00740,
+comebin,bakta,data_flow,1,1,E01112,
+comebin,busco,data_flow,1,1,E00833,
+comebin,cat,data_flow,1,1,E00968,
+comebin,checkm-genome,data_flow,2,2,E00851,
+comebin,checkm2,data_flow,1,1,E00888,
+comebin,das_tool,data_flow,1,1,E00748,
+comebin,galah,data_flow,1,1,E00927,
+comebin,gtdbtk,data_flow,1,1,E01022,
+comebin,gunc,data_flow,1,1,E00906,
+comebin,metabat2,data_flow,1,1,E00814,
+comebin,metaeuk,data_flow,1,1,E01133,
+comebin,pandas,data_flow,2,2,E01043,
+comebin,prokka,data_flow,1,1,E01092,
+comebin,quast,data_flow,1,1,E00946,
+comebin,r-tidyverse,data_flow,1,1,E00757,
+comebin,rename_predastool,data_flow,1,1,E00773,
+comebin,seqkit,data_flow,1,1,E00715,
+concoct,bakta,data_flow,1,1,E01111,
+concoct,busco,data_flow,1,1,E00832,
+concoct,cat,data_flow,1,1,E00967,
+concoct,checkm-genome,data_flow,2,2,E00850,
+concoct,checkm2,data_flow,1,1,E00887,
+concoct,das_tool,data_flow,1,1,E00747,
+concoct,galah,data_flow,1,1,E00926,
+concoct,gtdbtk,data_flow,1,1,E01021,
+concoct,gunc,data_flow,1,1,E00905,
+concoct,metabat2,data_flow,1,1,E00813,
+concoct,metaeuk,data_flow,1,1,E01132,
+concoct,pandas,data_flow,2,2,E01042,
+concoct,prokka,data_flow,1,1,E01091,
+concoct,quast,data_flow,1,1,E00945,
+concoct,r-tidyverse,data_flow,1,1,E00756,
+concoct,rename_predastool,data_flow,1,1,E00772,
+concoct,seqkit,data_flow,1,1,E00714,
+das_tool,r-tidyverse,data_flow,1,1,E00753,
+das_tool,rename_postdastool,data_flow,1,1,E00804,
+fastp,ale,data_flow,1,1,E00383,
+fastp,bbmap,data_flow,1,1,E00043,
+fastp,bcftools,data_flow,1,1,E00371,
+fastp,bioawk,data_flow,1,1,E00461,
+fastp,bowtie2,data_flow,6,4,E00001,
+fastp,cat,data_flow,3,2,E00028,
+fastp,comebin,data_flow,1,1,E00591,
+fastp,concoct,data_flow,3,3,E00514,
+fastp,das_tool,data_flow,1,1,E00786,
+fastp,deepmased,data_flow,1,1,E00395,
+fastp,fastqc,data_flow,1,1,E00022,
+fastp,filtlong,data_flow,1,1,E00055,
+fastp,freebayes,data_flow,3,3,E00327,
+fastp,genomad,data_flow,1,1,E00227,
+fastp,megahit,data_flow,1,1,E00137,
+fastp,metabat2,data_flow,3,3,E00413,
+fastp,metabinner,data_flow,3,3,E00615,
+fastp,minimap2,data_flow,1,1,E00273,
+fastp,multiqc,data_flow,1,1,E01142,
+fastp,prodigal,data_flow,1,1,E00216,
+fastp,pydamage,data_flow,1,1,E00302,
+fastp,pypolca,data_flow,1,1,E00194,
+fastp,quast,data_flow,1,1,E00205,
+fastp,samtools,data_flow,1,1,E00315,
+fastp,semibin,data_flow,1,1,E00695,
+fastp,seqkit,data_flow,1,1,E00252,
+fastp,seqtk,data_flow,1,1,E00035,
+fastp,spades,data_flow,2,2,E00128,
+fastp,tiara,data_flow,1,1,E00728,
+fastqc,multiqc,data_flow,2,2,E01141,
+filtlong,bioawk,data_flow,1,1,E00471,
+filtlong,cat,data_flow,2,2,E00095,
+filtlong,comebin,data_flow,1,1,E00601,
+filtlong,concoct,data_flow,3,3,E00524,
+filtlong,das_tool,data_flow,1,1,E00796,
+filtlong,flye,data_flow,2,2,E00153,
+filtlong,metabat2,data_flow,3,3,E00423,
+filtlong,metabinner,data_flow,3,3,E00625,
+filtlong,metamdbg,data_flow,2,2,E00169,
+filtlong,minimap2,data_flow,4,4,E00064,
+filtlong,multiqc,data_flow,1,1,E01151,
+filtlong,nanoplot,data_flow,1,1,E00088,
+filtlong,samtools,data_flow,1,1,E00081,
+filtlong,semibin,data_flow,1,1,E00705,
+filtlong,tiara,data_flow,1,1,E00738,
+findutils,cat,data_flow,3,3,E00997,
+flye,gunzip,data_flow,1,1,E00187,
+freebayes,bcftools,data_flow,2,2,E00360,
+galah,bakta,data_flow,1,1,E01102,
+galah,cat,data_flow,1,1,E00958,
+galah,gtdbtk,data_flow,1,1,E01012,
+galah,pandas,data_flow,2,2,E01033,
+galah,prokka,data_flow,1,1,E01082,
+gtdbtk,pandas,data_flow,1,1,E01053,
+gtdbtk_db_preparation,gtdbtk,data_flow,1,1,E01032,
+gunc,qsv,data_flow,2,2,E00914,
+gunzip,ale,data_flow,2,2,E00378,
+gunzip,bcftools,data_flow,2,2,E00366,
+gunzip,bioawk,data_flow,3,3,E00455,
+gunzip,bowtie2,data_flow,4,4,E00233,
+gunzip,comebin,data_flow,3,3,E00585,
+gunzip,concoct,data_flow,9,9,E00508,
+gunzip,das_tool,data_flow,3,3,E00780,
+gunzip,deepmased,data_flow,3,3,E00390,
+gunzip,freebayes,data_flow,6,6,E00322,
+gunzip,genomad,data_flow,3,3,E00220,
+gunzip,metabat2,data_flow,9,9,E00407,
+gunzip,metabinner,data_flow,9,9,E00609,
+gunzip,minimap2,data_flow,2,2,E00268,
+gunzip,prodigal,data_flow,3,3,E00209,
+gunzip,pydamage,data_flow,2,2,E00297,
+gunzip,pypolca,data_flow,2,2,E00189,
+gunzip,quast,data_flow,3,3,E00198,
+gunzip,samtools,data_flow,2,2,E00310,
+gunzip,semibin,data_flow,3,3,E00689,
+gunzip,seqkit,data_flow,3,3,E00245,
+gunzip,tiara,data_flow,3,3,E00722,
+maxbin2,bakta,data_flow,1,1,E01110,
+maxbin2,busco,data_flow,1,1,E00831,
+maxbin2,cat,data_flow,1,1,E00966,
+maxbin2,checkm-genome,data_flow,2,2,E00849,
+maxbin2,checkm2,data_flow,1,1,E00886,
+maxbin2,das_tool,data_flow,1,1,E00746,
+maxbin2,galah,data_flow,1,1,E00925,
+maxbin2,gtdbtk,data_flow,1,1,E01020,
+maxbin2,gunc,data_flow,1,1,E00904,
+maxbin2,metabat2,data_flow,2,2,E00719,
+maxbin2,metaeuk,data_flow,1,1,E01131,
+maxbin2,pandas,data_flow,2,2,E01041,
+maxbin2,prokka,data_flow,1,1,E01090,
+maxbin2,quast,data_flow,1,1,E00944,
+maxbin2,r-tidyverse,data_flow,1,1,E00755,
+maxbin2,rename_predastool,data_flow,1,1,E00771,
+maxbin2,seqkit,data_flow,1,1,E00713,
+megahit,gunzip,data_flow,1,1,E00185,
+metabat2,bakta,data_flow,2,2,E01109,
+metabat2,bioawk,data_flow,2,2,E00478,
+metabat2,busco,data_flow,2,2,E00830,
+metabat2,cat,data_flow,2,2,E00965,
+metabat2,checkm-genome,data_flow,4,4,E00848,
+metabat2,checkm2,data_flow,2,2,E00885,
+metabat2,das_tool,data_flow,2,2,E00745,
+metabat2,findutils,data_flow,1,1,E00995,
+metabat2,galah,data_flow,2,2,E00924,
+metabat2,gtdbtk,data_flow,2,2,E01019,
+metabat2,gunc,data_flow,2,2,E00903,
+metabat2,metabinner,data_flow,6,6,E00632,
+metabat2,metaeuk,data_flow,2,2,E01130,
+metabat2,pandas,data_flow,5,5,E00823,
+metabat2,prokka,data_flow,2,2,E01089,
+metabat2,quast,data_flow,2,2,E00943,
+metabat2,r-tidyverse,data_flow,2,2,E00754,
+metabat2,rename_predastool,data_flow,1,1,E00770,
+metabat2,seqkit,data_flow,1,1,E00712,
+metabinner,bakta,data_flow,1,1,E01113,
+metabinner,busco,data_flow,1,1,E00834,
+metabinner,cat,data_flow,1,1,E00969,
+metabinner,checkm-genome,data_flow,2,2,E00852,
+metabinner,checkm2,data_flow,1,1,E00889,
+metabinner,das_tool,data_flow,1,1,E00749,
+metabinner,galah,data_flow,1,1,E00928,
+metabinner,gtdbtk,data_flow,1,1,E01023,
+metabinner,gunc,data_flow,1,1,E00907,
+metabinner,metabat2,data_flow,2,2,E00720,
+metabinner,metaeuk,data_flow,1,1,E01134,
+metabinner,pandas,data_flow,2,2,E01044,
+metabinner,prokka,data_flow,1,1,E01093,
+metabinner,quast,data_flow,1,1,E00947,
+metabinner,r-tidyverse,data_flow,1,1,E00758,
+metabinner,rename_predastool,data_flow,1,1,E00774,
+metabinner,seqkit,data_flow,1,1,E00716,
+metamdbg,gunzip,data_flow,1,1,E00188,
+minimap2,ale,data_flow,2,2,E00387,
+minimap2,bcftools,data_flow,2,2,E00375,
+minimap2,bioawk,data_flow,2,2,E00465,
+minimap2,comebin,data_flow,2,1,E00595,
+minimap2,concoct,data_flow,6,3,E00518,
+minimap2,das_tool,data_flow,2,1,E00790,
+minimap2,deepmased,data_flow,2,2,E00399,
+minimap2,freebayes,data_flow,6,3,E00331,
+minimap2,metabat2,data_flow,6,6,E00417,
+minimap2,metabinner,data_flow,6,6,E00619,
+minimap2,pydamage,data_flow,2,2,E00306,
+minimap2,samtools,data_flow,5,5,E00077,
+minimap2,semibin,data_flow,2,1,E00699,
+minimap2,tiara,data_flow,2,1,E00732,
+mmseqs2,metaeuk,data_flow,1,1,E01140,
+nanolyse,bioawk,data_flow,1,1,E00474,
+nanolyse,cat,data_flow,2,2,E00098,
+nanolyse,comebin,data_flow,1,1,E00604,
+nanolyse,concoct,data_flow,3,3,E00527,
+nanolyse,das_tool,data_flow,1,1,E00799,
+nanolyse,filtlong,data_flow,1,1,E00049,
+nanolyse,flye,data_flow,2,2,E00156,
+nanolyse,metabat2,data_flow,3,3,E00426,
+nanolyse,metabinner,data_flow,3,3,E00628,
+nanolyse,metamdbg,data_flow,2,2,E00172,
+nanolyse,minimap2,data_flow,4,4,E00067,
+nanolyse,nanoplot,data_flow,1,1,E00091,
+nanolyse,nanoq,data_flow,1,1,E00059,
+nanolyse,samtools,data_flow,1,1,E00084,
+nanolyse,semibin,data_flow,1,1,E00708,
+nanolyse,tiara,data_flow,1,1,E00741,
+nanoq,bioawk,data_flow,1,1,E00472,
+nanoq,cat,data_flow,2,2,E00096,
+nanoq,comebin,data_flow,1,1,E00602,
+nanoq,concoct,data_flow,3,3,E00525,
+nanoq,das_tool,data_flow,1,1,E00797,
+nanoq,flye,data_flow,2,2,E00154,
+nanoq,metabat2,data_flow,3,3,E00424,
+nanoq,metabinner,data_flow,3,3,E00626,
+nanoq,metamdbg,data_flow,2,2,E00170,
+nanoq,minimap2,data_flow,4,4,E00065,
+nanoq,multiqc,data_flow,1,1,E01152,
+nanoq,nanoplot,data_flow,1,1,E00089,
+nanoq,samtools,data_flow,1,1,E00082,
+nanoq,semibin,data_flow,1,1,E00706,
+nanoq,tiara,data_flow,1,1,E00739,
+pandas,multiqc,data_flow,1,1,E01154,
+porechop,bioawk,data_flow,1,1,E00476,
+porechop,cat,data_flow,2,2,E00100,
+porechop,chopper,data_flow,1,1,E00063,
+porechop,comebin,data_flow,1,1,E00606,
+porechop,concoct,data_flow,3,3,E00529,
+porechop,das_tool,data_flow,1,1,E00801,
+porechop,filtlong,data_flow,1,1,E00051,
+porechop,flye,data_flow,2,2,E00158,
+porechop,metabat2,data_flow,3,3,E00428,
+porechop,metabinner,data_flow,3,3,E00630,
+porechop,metamdbg,data_flow,2,2,E00174,
+porechop,minimap2,data_flow,4,4,E00069,
+porechop,multiqc,data_flow,1,1,E01150,
+porechop,nanolyse,data_flow,1,1,E00048,
+porechop,nanoplot,data_flow,1,1,E00093,
+porechop,nanoq,data_flow,1,1,E00061,
+porechop,samtools,data_flow,1,1,E00086,
+porechop,semibin,data_flow,1,1,E00710,
+porechop,tiara,data_flow,1,1,E00743,
+porechop_abi,bioawk,data_flow,1,1,E00475,
+porechop_abi,cat,data_flow,2,2,E00099,
+porechop_abi,chopper,data_flow,1,1,E00062,
+porechop_abi,comebin,data_flow,1,1,E00605,
+porechop_abi,concoct,data_flow,3,3,E00528,
+porechop_abi,das_tool,data_flow,1,1,E00800,
+porechop_abi,filtlong,data_flow,1,1,E00050,
+porechop_abi,flye,data_flow,2,2,E00157,
+porechop_abi,metabat2,data_flow,3,3,E00427,
+porechop_abi,metabinner,data_flow,3,3,E00629,
+porechop_abi,metamdbg,data_flow,2,2,E00173,
+porechop_abi,minimap2,data_flow,4,4,E00068,
+porechop_abi,multiqc,data_flow,1,1,E01149,
+porechop_abi,nanolyse,data_flow,1,1,E00047,
+porechop_abi,nanoplot,data_flow,1,1,E00092,
+porechop_abi,nanoq,data_flow,1,1,E00060,
+porechop_abi,samtools,data_flow,1,1,E00085,
+porechop_abi,semibin,data_flow,1,1,E00709,
+porechop_abi,tiara,data_flow,1,1,E00742,
+prokka,multiqc,data_flow,1,1,E01159,
+pydamage,pandas,data_flow,1,1,E01054,
+pypolca,bioawk,data_flow,1,1,E00467,
+pypolca,comebin,data_flow,1,1,E00597,
+pypolca,concoct,data_flow,3,3,E00520,
+pypolca,das_tool,data_flow,1,1,E00792,
+pypolca,deepmased,data_flow,1,1,E00401,
+pypolca,genomad,data_flow,1,1,E00222,
+pypolca,metabat2,data_flow,3,3,E00419,
+pypolca,metabinner,data_flow,3,3,E00621,
+pypolca,minimap2,data_flow,1,1,E00267,
+pypolca,prodigal,data_flow,1,1,E00211,
+pypolca,quast,data_flow,1,1,E00200,
+pypolca,semibin,data_flow,1,1,E00701,
+pypolca,seqkit,data_flow,1,1,E00247,
+pypolca,tiara,data_flow,1,1,E00734,
+qsv,pandas,data_flow,5,5,E01072,
+quast,multiqc,data_flow,2,2,E01155,
+quast,qsv,data_flow,1,1,E00953,
+r-tidyverse,bakta,data_flow,6,6,E01103,
+r-tidyverse,busco,data_flow,6,6,E00824,
+r-tidyverse,cat,data_flow,6,6,E00959,
+r-tidyverse,checkm-genome,data_flow,12,12,E00842,
+r-tidyverse,checkm2,data_flow,6,6,E00879,
+r-tidyverse,findutils,data_flow,6,6,E00989,
+r-tidyverse,galah,data_flow,6,6,E00918,
+r-tidyverse,gtdbtk,data_flow,6,6,E01013,
+r-tidyverse,gunc,data_flow,6,6,E00897,
+r-tidyverse,metabat2,data_flow,6,6,E00805,
+r-tidyverse,metaeuk,data_flow,6,6,E01124,
+r-tidyverse,pandas,data_flow,12,12,E01034,
+r-tidyverse,prokka,data_flow,6,6,E01083,
+r-tidyverse,qsv,data_flow,1,1,E00763,
+r-tidyverse,quast,data_flow,6,6,E00937,
+r-tidyverse,rename_predastool,data_flow,6,6,E00764,
+rename_postdastool,bakta,data_flow,2,2,E01116,
+rename_postdastool,busco,data_flow,2,2,E00837,
+rename_postdastool,cat,data_flow,2,2,E00972,
+rename_postdastool,checkm-genome,data_flow,4,4,E00855,
+rename_postdastool,checkm2,data_flow,2,2,E00892,
+rename_postdastool,findutils,data_flow,1,1,E00996,
+rename_postdastool,galah,data_flow,2,2,E00931,
+rename_postdastool,gtdbtk,data_flow,2,2,E01026,
+rename_postdastool,gunc,data_flow,2,2,E00910,
+rename_postdastool,metabat2,data_flow,2,2,E00818,
+rename_postdastool,metaeuk,data_flow,2,2,E01137,
+rename_postdastool,pandas,data_flow,4,4,E01047,
+rename_postdastool,prokka,data_flow,2,2,E01096,
+rename_postdastool,quast,data_flow,2,2,E00950,
+rename_predastool,das_tool,data_flow,2,2,E00777,
+samtools,bioawk,data_flow,1,1,E00470,
+samtools,cat,data_flow,2,2,E00094,
+samtools,comebin,data_flow,1,1,E00600,
+samtools,concoct,data_flow,3,3,E00523,
+samtools,das_tool,data_flow,1,1,E00795,
+samtools,flye,data_flow,2,2,E00152,
+samtools,freebayes,data_flow,3,3,E00333,
+samtools,metabat2,data_flow,3,3,E00422,
+samtools,metabinner,data_flow,3,3,E00624,
+samtools,metamdbg,data_flow,2,2,E00168,
+samtools,minimap2,data_flow,2,2,E00280,
+samtools,multiqc,data_flow,1,1,E01153,
+samtools,nanoplot,data_flow,1,1,E00087,
+samtools,semibin,data_flow,1,1,E00704,
+samtools,tiara,data_flow,1,1,E00737,
+semibin,bakta,data_flow,1,1,E01114,
+semibin,busco,data_flow,1,1,E00835,
+semibin,cat,data_flow,1,1,E00970,
+semibin,checkm-genome,data_flow,2,2,E00853,
+semibin,checkm2,data_flow,1,1,E00890,
+semibin,das_tool,data_flow,1,1,E00750,
+semibin,galah,data_flow,1,1,E00929,
+semibin,gtdbtk,data_flow,1,1,E01024,
+semibin,gunc,data_flow,1,1,E00908,
+semibin,metabat2,data_flow,1,1,E00816,
+semibin,metaeuk,data_flow,1,1,E01135,
+semibin,pandas,data_flow,2,2,E01045,
+semibin,prokka,data_flow,1,1,E01094,
+semibin,quast,data_flow,1,1,E00948,
+semibin,r-tidyverse,data_flow,1,1,E00759,
+semibin,rename_predastool,data_flow,1,1,E00775,
+semibin,seqkit,data_flow,1,1,E00717,
+seqkit,bakta,gate_metadata,1,0,E01115,
+seqkit,bioawk,data_flow,2,2,E00457,
+seqkit,bowtie2,data_flow,1,1,E00258,
+seqkit,busco,gate_metadata,1,0,E00836,
+seqkit,cat,gate_metadata,1,0,E00971,
+seqkit,checkm-genome,gate_metadata,2,0,E00854,
+seqkit,checkm2,gate_metadata,1,0,E00891,
+seqkit,comebin,data_flow,2,2,E00587,
+seqkit,concoct,data_flow,6,6,E00510,
+seqkit,das_tool,data_flow,3,2,E00751,
+seqkit,galah,gate_metadata,1,0,E00930,
+seqkit,gtdbtk,gate_metadata,1,0,E01025,
+seqkit,gunc,gate_metadata,1,0,E00909,
+seqkit,metabat2,data_flow,7,6,E00409,
+seqkit,metabinner,data_flow,6,6,E00611,
+seqkit,metaeuk,gate_metadata,1,0,E01136,
+seqkit,minimap2,data_flow,1,1,E00277,
+seqkit,pandas,gate_metadata,2,0,E01046,
+seqkit,prokka,gate_metadata,1,0,E01095,
+seqkit,quast,gate_metadata,1,0,E00949,
+seqkit,r-tidyverse,gate_metadata,1,0,E00760,
+seqkit,rename_predastool,gate_metadata,1,0,E00776,
+seqkit,semibin,data_flow,2,2,E00691,
+seqkit,tiara,data_flow,2,2,E00724,
+seqtk,bbmap,data_flow,1,1,E00039,
+spades,gunzip,data_flow,3,3,E00183,
+tiara,r-tidyverse,data_flow,1,1,E00762,
+trimmomatic,ale,data_flow,1,1,E00386,
+trimmomatic,bbmap,data_flow,1,1,E00046,
+trimmomatic,bcftools,data_flow,1,1,E00374,
+trimmomatic,bioawk,data_flow,1,1,E00464,
+trimmomatic,bowtie2,data_flow,6,4,E00004,
+trimmomatic,cat,data_flow,3,2,E00031,
+trimmomatic,comebin,data_flow,1,1,E00594,
+trimmomatic,concoct,data_flow,3,3,E00517,
+trimmomatic,das_tool,data_flow,1,1,E00789,
+trimmomatic,deepmased,data_flow,1,1,E00398,
+trimmomatic,fastqc,data_flow,1,1,E00025,
+trimmomatic,filtlong,data_flow,1,1,E00058,
+trimmomatic,freebayes,data_flow,3,3,E00330,
+trimmomatic,genomad,data_flow,1,1,E00230,
+trimmomatic,megahit,data_flow,1,1,E00140,
+trimmomatic,metabat2,data_flow,3,3,E00416,
+trimmomatic,metabinner,data_flow,3,3,E00618,
+trimmomatic,minimap2,data_flow,1,1,E00276,
+trimmomatic,multiqc,data_flow,1,1,E01145,
+trimmomatic,prodigal,data_flow,1,1,E00219,
+trimmomatic,pydamage,data_flow,1,1,E00305,
+trimmomatic,pypolca,data_flow,1,1,E00197,
+trimmomatic,quast,data_flow,1,1,E00208,
+trimmomatic,samtools,data_flow,1,1,E00318,
+trimmomatic,semibin,data_flow,1,1,E00698,
+trimmomatic,seqkit,data_flow,1,1,E00255,
+trimmomatic,seqtk,data_flow,1,1,E00038,
+trimmomatic,spades,data_flow,2,2,E00131,
+trimmomatic,tiara,data_flow,1,1,E00731,
+untar,bakta,data_flow,1,1,E01122,
+untar,busco,data_flow,1,1,E00840,
+untar,cat,data_flow,6,6,E00978,
+untar,checkm-genome,data_flow,2,2,E00874,
+untar,genomad,data_flow,1,1,E00231,
+ale,bcftools,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00378, E00366); no directed path between any process of the two tools"
+ale,bioawk,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00378, E00455); no directed path between any process of the two tools"
+ale,comebin,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00378, E00585); no directed path between any process of the two tools"
+ale,concoct,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00378, E00533); no directed path between any process of the two tools"
+ale,das_tool,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00378, E00780); no directed path between any process of the two tools"
+ale,deepmased,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00378, E00390); no directed path between any process of the two tools"
+ale,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00385, E00024); no directed path between any process of the two tools"
+ale,freebayes,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00378, E00322); no directed path between any process of the two tools"
+ale,genomad,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00378, E00220); no directed path between any process of the two tools"
+ale,metabat2,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00378, E00407); no directed path between any process of the two tools"
+ale,metabinner,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00378, E00662); no directed path between any process of the two tools"
+ale,prodigal,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00378, E00209); no directed path between any process of the two tools"
+ale,pydamage,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00378, E00297); no directed path between any process of the two tools"
+ale,pypolca,parallel_co_use,0,0,,"both consume GUNZIP_ASSEMBLYINPUT.gunzip (E00379, E00190); no directed path between any process of the two tools"
+ale,quast,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00378, E00198); no directed path between any process of the two tools"
+ale,semibin,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00378, E00689); no directed path between any process of the two tools"
+ale,seqkit,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00378, E00245); no directed path between any process of the two tools"
+ale,tiara,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00378, E00722); no directed path between any process of the two tools"
+bakta,findutils,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E01117, E00995); no directed path between any process of the two tools"
+bakta,gtdbtk,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01113, E01023); no directed path between any process of the two tools"
+bakta,gunc,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01113, E00907); no directed path between any process of the two tools"
+bakta,metaeuk,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01113, E01134); no directed path between any process of the two tools"
+bakta,pandas,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01113, E01065); no directed path between any process of the two tools"
+bakta,prokka,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01113, E01093); no directed path between any process of the two tools"
+bakta,qsv,parallel_co_use,0,0,,"both consume BUSCO_BUSCO.batch_summary (E01119, E00841); no directed path between any process of the two tools"
+bakta,quast,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01113, E00947); no directed path between any process of the two tools"
+bbmap,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00045, E00024); no directed path between any process of the two tools"
+bbmap,filtlong,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00045, E00057); no directed path between any process of the two tools"
+bbmap,pypolca,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00045, E00196); no directed path between any process of the two tools"
+bcftools,ale,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00366, E00378); no directed path between any process of the two tools"
+bcftools,deepmased,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00366, E00390); no directed path between any process of the two tools"
+bcftools,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00373, E00024); no directed path between any process of the two tools"
+bcftools,genomad,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00366, E00220); no directed path between any process of the two tools"
+bcftools,prodigal,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00366, E00209); no directed path between any process of the two tools"
+bcftools,pydamage,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00366, E00297); no directed path between any process of the two tools"
+bcftools,pypolca,parallel_co_use,0,0,,"both consume GUNZIP_ASSEMBLYINPUT.gunzip (E00367, E00190); no directed path between any process of the two tools"
+bioawk,ale,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00455, E00378); no directed path between any process of the two tools"
+bioawk,comebin,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00468, E00598); no directed path between any process of the two tools"
+bioawk,concoct,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00468, E00546); no directed path between any process of the two tools"
+bioawk,deepmased,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00468, E00402); no directed path between any process of the two tools"
+bioawk,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00463, E00024); no directed path between any process of the two tools"
+bioawk,genomad,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00468, E00223); no directed path between any process of the two tools"
+bioawk,metabinner,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00468, E00675); no directed path between any process of the two tools"
+bioawk,nanoplot,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00473, E00090); no directed path between any process of the two tools"
+bioawk,prodigal,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00468, E00212); no directed path between any process of the two tools"
+bioawk,pydamage,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00455, E00297); no directed path between any process of the two tools"
+bioawk,semibin,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00468, E00702); no directed path between any process of the two tools"
+bioawk,tiara,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00468, E00735); no directed path between any process of the two tools"
+busco,checkm-genome,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00834, E00852); no directed path between any process of the two tools"
+busco,checkm2,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00834, E00889); no directed path between any process of the two tools"
+busco,findutils,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E00838, E00995); no directed path between any process of the two tools"
+busco,gunc,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00834, E00907); no directed path between any process of the two tools"
+busco,metaeuk,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00834, E01134); no directed path between any process of the two tools"
+busco,quast,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00834, E00947); no directed path between any process of the two tools"
+cat,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00106, E00024); no directed path between any process of the two tools"
+checkm-genome,busco,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00852, E00834); no directed path between any process of the two tools"
+checkm-genome,checkm2,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00852, E00889); no directed path between any process of the two tools"
+checkm-genome,findutils,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E00856, E00995); no directed path between any process of the two tools"
+checkm-genome,metaeuk,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00852, E01134); no directed path between any process of the two tools"
+checkm-genome,quast,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00852, E00947); no directed path between any process of the two tools"
+checkm2,busco,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00889, E00834); no directed path between any process of the two tools"
+checkm2,checkm-genome,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00889, E00852); no directed path between any process of the two tools"
+checkm2,findutils,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E00893, E00995); no directed path between any process of the two tools"
+checkm2,gunc,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00889, E00907); no directed path between any process of the two tools"
+checkm2,metaeuk,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00889, E01134); no directed path between any process of the two tools"
+checkm2,quast,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00889, E00947); no directed path between any process of the two tools"
+comebin,ale,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00585, E00378); no directed path between any process of the two tools"
+comebin,bioawk,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00598, E00468); no directed path between any process of the two tools"
+comebin,concoct,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00598, E00546); no directed path between any process of the two tools"
+comebin,deepmased,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00598, E00402); no directed path between any process of the two tools"
+comebin,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00593, E00024); no directed path between any process of the two tools"
+comebin,genomad,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00598, E00223); no directed path between any process of the two tools"
+comebin,metabinner,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00598, E00675); no directed path between any process of the two tools"
+comebin,nanoplot,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00603, E00090); no directed path between any process of the two tools"
+comebin,prodigal,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00598, E00212); no directed path between any process of the two tools"
+comebin,pydamage,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00585, E00297); no directed path between any process of the two tools"
+comebin,semibin,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00598, E00702); no directed path between any process of the two tools"
+comebin,tiara,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00598, E00735); no directed path between any process of the two tools"
+concoct,ale,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00533, E00378); no directed path between any process of the two tools"
+concoct,bioawk,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00546, E00468); no directed path between any process of the two tools"
+concoct,comebin,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00546, E00598); no directed path between any process of the two tools"
+concoct,deepmased,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00546, E00402); no directed path between any process of the two tools"
+concoct,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00541, E00024); no directed path between any process of the two tools"
+concoct,genomad,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00546, E00223); no directed path between any process of the two tools"
+concoct,metabinner,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00546, E00675); no directed path between any process of the two tools"
+concoct,nanoplot,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00551, E00090); no directed path between any process of the two tools"
+concoct,prodigal,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00546, E00212); no directed path between any process of the two tools"
+concoct,pydamage,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00533, E00297); no directed path between any process of the two tools"
+concoct,semibin,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00546, E00702); no directed path between any process of the two tools"
+concoct,tiara,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00546, E00735); no directed path between any process of the two tools"
+das_tool,ale,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00780, E00378); no directed path between any process of the two tools"
+das_tool,deepmased,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00793, E00402); no directed path between any process of the two tools"
+das_tool,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00788, E00024); no directed path between any process of the two tools"
+das_tool,genomad,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00793, E00223); no directed path between any process of the two tools"
+das_tool,nanoplot,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00798, E00090); no directed path between any process of the two tools"
+das_tool,prodigal,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00793, E00212); no directed path between any process of the two tools"
+das_tool,pydamage,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00780, E00297); no directed path between any process of the two tools"
+deepmased,ale,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00390, E00378); no directed path between any process of the two tools"
+deepmased,bcftools,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00390, E00366); no directed path between any process of the two tools"
+deepmased,bioawk,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00402, E00468); no directed path between any process of the two tools"
+deepmased,comebin,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00402, E00598); no directed path between any process of the two tools"
+deepmased,concoct,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00402, E00546); no directed path between any process of the two tools"
+deepmased,das_tool,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00402, E00793); no directed path between any process of the two tools"
+deepmased,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00397, E00024); no directed path between any process of the two tools"
+deepmased,freebayes,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00390, E00322); no directed path between any process of the two tools"
+deepmased,genomad,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00402, E00223); no directed path between any process of the two tools"
+deepmased,metabat2,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00402, E00420); no directed path between any process of the two tools"
+deepmased,metabinner,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00402, E00675); no directed path between any process of the two tools"
+deepmased,prodigal,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00402, E00212); no directed path between any process of the two tools"
+deepmased,pydamage,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00390, E00297); no directed path between any process of the two tools"
+deepmased,quast,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00402, E00201); no directed path between any process of the two tools"
+deepmased,semibin,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00402, E00702); no directed path between any process of the two tools"
+deepmased,seqkit,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00402, E00248); no directed path between any process of the two tools"
+deepmased,tiara,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00402, E00735); no directed path between any process of the two tools"
+fastqc,ale,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00385); no directed path between any process of the two tools"
+fastqc,bbmap,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00045); no directed path between any process of the two tools"
+fastqc,bcftools,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00373); no directed path between any process of the two tools"
+fastqc,bioawk,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00463); no directed path between any process of the two tools"
+fastqc,cat,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00106); no directed path between any process of the two tools"
+fastqc,comebin,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00593); no directed path between any process of the two tools"
+fastqc,concoct,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00541); no directed path between any process of the two tools"
+fastqc,das_tool,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00788); no directed path between any process of the two tools"
+fastqc,deepmased,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00397); no directed path between any process of the two tools"
+fastqc,filtlong,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00057); no directed path between any process of the two tools"
+fastqc,freebayes,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00329); no directed path between any process of the two tools"
+fastqc,genomad,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00229); no directed path between any process of the two tools"
+fastqc,megahit,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00139); no directed path between any process of the two tools"
+fastqc,metabat2,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00415); no directed path between any process of the two tools"
+fastqc,metabinner,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00670); no directed path between any process of the two tools"
+fastqc,minimap2,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00275); no directed path between any process of the two tools"
+fastqc,prodigal,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00218); no directed path between any process of the two tools"
+fastqc,pydamage,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00304); no directed path between any process of the two tools"
+fastqc,pypolca,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00196); no directed path between any process of the two tools"
+fastqc,quast,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00207); no directed path between any process of the two tools"
+fastqc,samtools,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00317); no directed path between any process of the two tools"
+fastqc,semibin,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00697); no directed path between any process of the two tools"
+fastqc,seqkit,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00254); no directed path between any process of the two tools"
+fastqc,seqtk,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00037); no directed path between any process of the two tools"
+fastqc,spades,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00148); no directed path between any process of the two tools"
+fastqc,tiara,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00024, E00730); no directed path between any process of the two tools"
+filtlong,bbmap,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00057, E00045); no directed path between any process of the two tools"
+filtlong,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00057, E00024); no directed path between any process of the two tools"
+filtlong,megahit,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00057, E00139); no directed path between any process of the two tools"
+filtlong,seqtk,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00057, E00037); no directed path between any process of the two tools"
+findutils,bakta,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E00995, E01117); no directed path between any process of the two tools"
+findutils,busco,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E00995, E00838); no directed path between any process of the two tools"
+findutils,checkm-genome,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E00995, E00856); no directed path between any process of the two tools"
+findutils,checkm2,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E00995, E00893); no directed path between any process of the two tools"
+findutils,galah,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E00995, E00932); no directed path between any process of the two tools"
+findutils,gtdbtk,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E00995, E01027); no directed path between any process of the two tools"
+findutils,gunc,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E00995, E00911); no directed path between any process of the two tools"
+findutils,metaeuk,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E00995, E01138); no directed path between any process of the two tools"
+findutils,pandas,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E00995, E01069); no directed path between any process of the two tools"
+findutils,prokka,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E00995, E01097); no directed path between any process of the two tools"
+findutils,quast,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E00995, E00951); no directed path between any process of the two tools"
+flye,metamdbg,parallel_co_use,0,0,,"both consume CAT_FASTQ_LONGREADS.reads (E00151, E00167); no directed path between any process of the two tools"
+flye,nanoplot,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00155, E00090); no directed path between any process of the two tools"
+freebayes,ale,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00322, E00378); no directed path between any process of the two tools"
+freebayes,deepmased,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00322, E00390); no directed path between any process of the two tools"
+freebayes,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00329, E00024); no directed path between any process of the two tools"
+freebayes,genomad,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00322, E00220); no directed path between any process of the two tools"
+freebayes,prodigal,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00322, E00209); no directed path between any process of the two tools"
+freebayes,pydamage,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00322, E00297); no directed path between any process of the two tools"
+freebayes,pypolca,parallel_co_use,0,0,,"both consume GUNZIP_ASSEMBLYINPUT.gunzip (E00323, E00190); no directed path between any process of the two tools"
+galah,findutils,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E00932, E00995); no directed path between any process of the two tools"
+galah,gunc,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00928, E00907); no directed path between any process of the two tools"
+galah,metaeuk,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00928, E01134); no directed path between any process of the two tools"
+galah,qsv,parallel_co_use,0,0,,"both consume BUSCO_BUSCO.batch_summary (E00934, E00841); no directed path between any process of the two tools"
+galah,quast,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00928, E00947); no directed path between any process of the two tools"
+genomad,ale,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00220, E00378); no directed path between any process of the two tools"
+genomad,bcftools,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00220, E00366); no directed path between any process of the two tools"
+genomad,bioawk,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00223, E00468); no directed path between any process of the two tools"
+genomad,comebin,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00223, E00598); no directed path between any process of the two tools"
+genomad,concoct,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00223, E00546); no directed path between any process of the two tools"
+genomad,das_tool,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00223, E00793); no directed path between any process of the two tools"
+genomad,deepmased,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00223, E00402); no directed path between any process of the two tools"
+genomad,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00229, E00024); no directed path between any process of the two tools"
+genomad,freebayes,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00220, E00322); no directed path between any process of the two tools"
+genomad,metabat2,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00223, E00420); no directed path between any process of the two tools"
+genomad,metabinner,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00223, E00675); no directed path between any process of the two tools"
+genomad,prodigal,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00223, E00212); no directed path between any process of the two tools"
+genomad,pydamage,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00220, E00297); no directed path between any process of the two tools"
+genomad,quast,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00223, E00201); no directed path between any process of the two tools"
+genomad,semibin,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00223, E00702); no directed path between any process of the two tools"
+genomad,seqkit,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00223, E00248); no directed path between any process of the two tools"
+genomad,tiara,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00223, E00735); no directed path between any process of the two tools"
+gtdbtk,bakta,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01023, E01113); no directed path between any process of the two tools"
+gtdbtk,findutils,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E01027, E00995); no directed path between any process of the two tools"
+gtdbtk,gunc,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01023, E00907); no directed path between any process of the two tools"
+gtdbtk,metaeuk,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01023, E01134); no directed path between any process of the two tools"
+gtdbtk,prokka,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01023, E01093); no directed path between any process of the two tools"
+gtdbtk,qsv,parallel_co_use,0,0,,"both consume BUSCO_BUSCO.batch_summary (E01029, E00841); no directed path between any process of the two tools"
+gtdbtk,quast,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01023, E00947); no directed path between any process of the two tools"
+gunc,bakta,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00907, E01113); no directed path between any process of the two tools"
+gunc,busco,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00907, E00834); no directed path between any process of the two tools"
+gunc,checkm2,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00907, E00889); no directed path between any process of the two tools"
+gunc,findutils,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E00911, E00995); no directed path between any process of the two tools"
+gunc,galah,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00907, E00928); no directed path between any process of the two tools"
+gunc,gtdbtk,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00907, E01023); no directed path between any process of the two tools"
+gunc,metaeuk,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00907, E01134); no directed path between any process of the two tools"
+gunc,multiqc,parallel_co_use,0,0,,"both consume CHECKM_QA.output (E00916, E01162); no directed path between any process of the two tools"
+gunc,prokka,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00907, E01093); no directed path between any process of the two tools"
+gunc,quast,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00907, E00947); no directed path between any process of the two tools"
+megahit,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00139, E00024); no directed path between any process of the two tools"
+megahit,filtlong,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00139, E00057); no directed path between any process of the two tools"
+megahit,pypolca,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00139, E00196); no directed path between any process of the two tools"
+megahit,spades,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00139, E00148); no directed path between any process of the two tools"
+metabat2,ale,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00407, E00378); no directed path between any process of the two tools"
+metabat2,deepmased,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00420, E00402); no directed path between any process of the two tools"
+metabat2,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00415, E00024); no directed path between any process of the two tools"
+metabat2,genomad,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00420, E00223); no directed path between any process of the two tools"
+metabat2,nanoplot,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00425, E00090); no directed path between any process of the two tools"
+metabat2,prodigal,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00420, E00212); no directed path between any process of the two tools"
+metabat2,pydamage,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00407, E00297); no directed path between any process of the two tools"
+metabinner,ale,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00662, E00378); no directed path between any process of the two tools"
+metabinner,bioawk,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00675, E00468); no directed path between any process of the two tools"
+metabinner,comebin,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00675, E00598); no directed path between any process of the two tools"
+metabinner,concoct,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00675, E00546); no directed path between any process of the two tools"
+metabinner,deepmased,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00675, E00402); no directed path between any process of the two tools"
+metabinner,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00670, E00024); no directed path between any process of the two tools"
+metabinner,genomad,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00675, E00223); no directed path between any process of the two tools"
+metabinner,nanoplot,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00680, E00090); no directed path between any process of the two tools"
+metabinner,prodigal,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00675, E00212); no directed path between any process of the two tools"
+metabinner,pydamage,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00662, E00297); no directed path between any process of the two tools"
+metabinner,semibin,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00675, E00702); no directed path between any process of the two tools"
+metabinner,tiara,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00675, E00735); no directed path between any process of the two tools"
+metaeuk,bakta,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01134, E01113); no directed path between any process of the two tools"
+metaeuk,busco,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01134, E00834); no directed path between any process of the two tools"
+metaeuk,checkm-genome,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01134, E00852); no directed path between any process of the two tools"
+metaeuk,checkm2,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01134, E00889); no directed path between any process of the two tools"
+metaeuk,findutils,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E01138, E00995); no directed path between any process of the two tools"
+metaeuk,galah,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01134, E00928); no directed path between any process of the two tools"
+metaeuk,gtdbtk,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01134, E01023); no directed path between any process of the two tools"
+metaeuk,gunc,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01134, E00907); no directed path between any process of the two tools"
+metaeuk,pandas,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01134, E01065); no directed path between any process of the two tools"
+metaeuk,prokka,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01134, E01093); no directed path between any process of the two tools"
+metaeuk,quast,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01134, E00947); no directed path between any process of the two tools"
+metamdbg,flye,parallel_co_use,0,0,,"both consume CAT_FASTQ_LONGREADS.reads (E00167, E00151); no directed path between any process of the two tools"
+metamdbg,nanoplot,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00171, E00090); no directed path between any process of the two tools"
+minimap2,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00275, E00024); no directed path between any process of the two tools"
+multiqc,gunc,parallel_co_use,0,0,,"both consume CHECKM_QA.output (E01162, E00916); no directed path between any process of the two tools"
+multiqc,qsv,parallel_co_use,0,0,,"both consume CHECKM2_PREDICT.checkm2_tsv (E01163, E00896); no directed path between any process of the two tools"
+nanoplot,bioawk,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00090, E00473); no directed path between any process of the two tools"
+nanoplot,comebin,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00090, E00603); no directed path between any process of the two tools"
+nanoplot,concoct,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00090, E00551); no directed path between any process of the two tools"
+nanoplot,das_tool,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00090, E00798); no directed path between any process of the two tools"
+nanoplot,flye,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00090, E00155); no directed path between any process of the two tools"
+nanoplot,metabat2,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00090, E00425); no directed path between any process of the two tools"
+nanoplot,metabinner,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00090, E00680); no directed path between any process of the two tools"
+nanoplot,metamdbg,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00090, E00171); no directed path between any process of the two tools"
+nanoplot,semibin,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00090, E00707); no directed path between any process of the two tools"
+nanoplot,tiara,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00090, E00740); no directed path between any process of the two tools"
+pandas,bakta,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01065, E01113); no directed path between any process of the two tools"
+pandas,findutils,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E01069, E00995); no directed path between any process of the two tools"
+pandas,metaeuk,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01065, E01134); no directed path between any process of the two tools"
+pandas,prokka,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01065, E01093); no directed path between any process of the two tools"
+prodigal,ale,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00209, E00378); no directed path between any process of the two tools"
+prodigal,bcftools,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00209, E00366); no directed path between any process of the two tools"
+prodigal,bioawk,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00212, E00468); no directed path between any process of the two tools"
+prodigal,comebin,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00212, E00598); no directed path between any process of the two tools"
+prodigal,concoct,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00212, E00546); no directed path between any process of the two tools"
+prodigal,das_tool,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00212, E00793); no directed path between any process of the two tools"
+prodigal,deepmased,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00212, E00402); no directed path between any process of the two tools"
+prodigal,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00218, E00024); no directed path between any process of the two tools"
+prodigal,freebayes,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00209, E00322); no directed path between any process of the two tools"
+prodigal,genomad,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00212, E00223); no directed path between any process of the two tools"
+prodigal,metabat2,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00212, E00420); no directed path between any process of the two tools"
+prodigal,metabinner,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00212, E00675); no directed path between any process of the two tools"
+prodigal,pydamage,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00209, E00297); no directed path between any process of the two tools"
+prodigal,quast,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00212, E00201); no directed path between any process of the two tools"
+prodigal,semibin,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00212, E00702); no directed path between any process of the two tools"
+prodigal,seqkit,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00212, E00248); no directed path between any process of the two tools"
+prodigal,tiara,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00212, E00735); no directed path between any process of the two tools"
+prokka,bakta,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01093, E01113); no directed path between any process of the two tools"
+prokka,findutils,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E01097, E00995); no directed path between any process of the two tools"
+prokka,gtdbtk,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01093, E01023); no directed path between any process of the two tools"
+prokka,gunc,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01093, E00907); no directed path between any process of the two tools"
+prokka,metaeuk,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01093, E01134); no directed path between any process of the two tools"
+prokka,pandas,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01093, E01065); no directed path between any process of the two tools"
+prokka,qsv,parallel_co_use,0,0,,"both consume BUSCO_BUSCO.batch_summary (E01099, E00841); no directed path between any process of the two tools"
+prokka,quast,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E01093, E00947); no directed path between any process of the two tools"
+pydamage,ale,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00297, E00378); no directed path between any process of the two tools"
+pydamage,bcftools,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00297, E00366); no directed path between any process of the two tools"
+pydamage,bioawk,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00297, E00455); no directed path between any process of the two tools"
+pydamage,comebin,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00297, E00585); no directed path between any process of the two tools"
+pydamage,concoct,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00297, E00533); no directed path between any process of the two tools"
+pydamage,das_tool,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00297, E00780); no directed path between any process of the two tools"
+pydamage,deepmased,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00297, E00390); no directed path between any process of the two tools"
+pydamage,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00304, E00024); no directed path between any process of the two tools"
+pydamage,freebayes,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00297, E00322); no directed path between any process of the two tools"
+pydamage,genomad,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00297, E00220); no directed path between any process of the two tools"
+pydamage,metabat2,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00297, E00407); no directed path between any process of the two tools"
+pydamage,metabinner,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00297, E00662); no directed path between any process of the two tools"
+pydamage,prodigal,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00297, E00209); no directed path between any process of the two tools"
+pydamage,pypolca,parallel_co_use,0,0,,"both consume GUNZIP_ASSEMBLYINPUT.gunzip (E00298, E00190); no directed path between any process of the two tools"
+pydamage,quast,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00297, E00198); no directed path between any process of the two tools"
+pydamage,semibin,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00297, E00689); no directed path between any process of the two tools"
+pydamage,seqkit,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00297, E00245); no directed path between any process of the two tools"
+pydamage,tiara,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00297, E00722); no directed path between any process of the two tools"
+pypolca,ale,parallel_co_use,0,0,,"both consume GUNZIP_ASSEMBLYINPUT.gunzip (E00190, E00379); no directed path between any process of the two tools"
+pypolca,bbmap,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00196, E00045); no directed path between any process of the two tools"
+pypolca,bcftools,parallel_co_use,0,0,,"both consume GUNZIP_ASSEMBLYINPUT.gunzip (E00190, E00367); no directed path between any process of the two tools"
+pypolca,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00196, E00024); no directed path between any process of the two tools"
+pypolca,freebayes,parallel_co_use,0,0,,"both consume GUNZIP_ASSEMBLYINPUT.gunzip (E00190, E00323); no directed path between any process of the two tools"
+pypolca,megahit,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00196, E00139); no directed path between any process of the two tools"
+pypolca,pydamage,parallel_co_use,0,0,,"both consume GUNZIP_ASSEMBLYINPUT.gunzip (E00190, E00298); no directed path between any process of the two tools"
+pypolca,seqtk,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00196, E00037); no directed path between any process of the two tools"
+pypolca,spades,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00196, E00148); no directed path between any process of the two tools"
+qsv,bakta,parallel_co_use,0,0,,"both consume BUSCO_BUSCO.batch_summary (E00841, E01119); no directed path between any process of the two tools"
+qsv,galah,parallel_co_use,0,0,,"both consume BUSCO_BUSCO.batch_summary (E00841, E00934); no directed path between any process of the two tools"
+qsv,gtdbtk,parallel_co_use,0,0,,"both consume BUSCO_BUSCO.batch_summary (E00841, E01029); no directed path between any process of the two tools"
+qsv,multiqc,parallel_co_use,0,0,,"both consume CHECKM2_PREDICT.checkm2_tsv (E00896, E01163); no directed path between any process of the two tools"
+qsv,prokka,parallel_co_use,0,0,,"both consume BUSCO_BUSCO.batch_summary (E00841, E01099); no directed path between any process of the two tools"
+quast,ale,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00198, E00378); no directed path between any process of the two tools"
+quast,bakta,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00947, E01113); no directed path between any process of the two tools"
+quast,busco,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00947, E00834); no directed path between any process of the two tools"
+quast,checkm-genome,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00947, E00852); no directed path between any process of the two tools"
+quast,checkm2,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00947, E00889); no directed path between any process of the two tools"
+quast,deepmased,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00201, E00402); no directed path between any process of the two tools"
+quast,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00207, E00024); no directed path between any process of the two tools"
+quast,findutils,parallel_co_use,0,0,,"both consume SPLIT_FASTA.unbinned (E00951, E00995); no directed path between any process of the two tools"
+quast,galah,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00947, E00928); no directed path between any process of the two tools"
+quast,genomad,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00201, E00223); no directed path between any process of the two tools"
+quast,gtdbtk,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00947, E01023); no directed path between any process of the two tools"
+quast,gunc,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00947, E00907); no directed path between any process of the two tools"
+quast,metaeuk,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00947, E01134); no directed path between any process of the two tools"
+quast,prodigal,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00201, E00212); no directed path between any process of the two tools"
+quast,prokka,parallel_co_use,0,0,,"both consume METABINNER_BINS.bins (E00947, E01093); no directed path between any process of the two tools"
+quast,pydamage,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00198, E00297); no directed path between any process of the two tools"
+samtools,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00317, E00024); no directed path between any process of the two tools"
+semibin,ale,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00689, E00378); no directed path between any process of the two tools"
+semibin,bioawk,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00702, E00468); no directed path between any process of the two tools"
+semibin,comebin,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00702, E00598); no directed path between any process of the two tools"
+semibin,concoct,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00702, E00546); no directed path between any process of the two tools"
+semibin,deepmased,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00702, E00402); no directed path between any process of the two tools"
+semibin,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00697, E00024); no directed path between any process of the two tools"
+semibin,genomad,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00702, E00223); no directed path between any process of the two tools"
+semibin,metabinner,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00702, E00675); no directed path between any process of the two tools"
+semibin,nanoplot,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00707, E00090); no directed path between any process of the two tools"
+semibin,prodigal,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00702, E00212); no directed path between any process of the two tools"
+semibin,pydamage,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00689, E00297); no directed path between any process of the two tools"
+semibin,tiara,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00702, E00735); no directed path between any process of the two tools"
+seqkit,ale,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00245, E00378); no directed path between any process of the two tools"
+seqkit,deepmased,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00248, E00402); no directed path between any process of the two tools"
+seqkit,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00254, E00024); no directed path between any process of the two tools"
+seqkit,genomad,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00248, E00223); no directed path between any process of the two tools"
+seqkit,prodigal,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00248, E00212); no directed path between any process of the two tools"
+seqkit,pydamage,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00245, E00297); no directed path between any process of the two tools"
+seqtk,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00037, E00024); no directed path between any process of the two tools"
+seqtk,filtlong,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00037, E00057); no directed path between any process of the two tools"
+seqtk,pypolca,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00037, E00196); no directed path between any process of the two tools"
+spades,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00148, E00024); no directed path between any process of the two tools"
+spades,megahit,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00148, E00139); no directed path between any process of the two tools"
+spades,pypolca,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00148, E00196); no directed path between any process of the two tools"
+tiara,ale,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00722, E00378); no directed path between any process of the two tools"
+tiara,bioawk,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00735, E00468); no directed path between any process of the two tools"
+tiara,comebin,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00735, E00598); no directed path between any process of the two tools"
+tiara,concoct,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00735, E00546); no directed path between any process of the two tools"
+tiara,deepmased,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00735, E00402); no directed path between any process of the two tools"
+tiara,fastqc,parallel_co_use,0,0,,"both consume ADAPTERREMOVAL_PE.paired_truncated (E00730, E00024); no directed path between any process of the two tools"
+tiara,genomad,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00735, E00223); no directed path between any process of the two tools"
+tiara,metabinner,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00735, E00675); no directed path between any process of the two tools"
+tiara,nanoplot,parallel_co_use,0,0,,"both consume CHOPPER.fastq (E00740, E00090); no directed path between any process of the two tools"
+tiara,prodigal,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00735, E00212); no directed path between any process of the two tools"
+tiara,pydamage,parallel_co_use,0,0,,"both consume GUNZIP_SHORTREAD_ASSEMBLIES.gunzip (E00722, E00297); no directed path between any process of the two tools"
+tiara,semibin,parallel_co_use,0,0,,"both consume GUNZIP_LONGREAD_ASSEMBLIES.gunzip (E00735, E00702); no directed path between any process of the two tools"

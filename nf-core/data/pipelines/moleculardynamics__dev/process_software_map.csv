@@ -1,0 +1,11 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_MOLECULARDYNAMICS:MOLECULARDYNAMICS:PRE_PROCESSING:PRE_POS_CLEAN_PDB,PRE_POS_CLEAN_PDB,modules/local/pre_pos_clean_pdb.nf,2,pre_pos_clean_pdb,,,module name
+NFCORE_MOLECULARDYNAMICS:MOLECULARDYNAMICS:PRE_PROCESSING:PRE_POS_CHECK_MISSING_ATOMS,PRE_POS_CHECK_MISSING_ATOMS,modules/local/pre_pos_check_missing_atoms.nf,2,pre_pos_check_missing_atoms,,,module name
+NFCORE_MOLECULARDYNAMICS:MOLECULARDYNAMICS:RUN_MD_SIMULATION:RUN_TOPOLOGY,RUN_TOPOLOGY,modules/local/run_topology.nf,2,run_topology,,,module name
+NFCORE_MOLECULARDYNAMICS:MOLECULARDYNAMICS:RUN_MD_SIMULATION:RUN_SOLVATION,RUN_SOLVATION,modules/local/run_solvation.nf,2,run_solvation,,,module name
+NFCORE_MOLECULARDYNAMICS:MOLECULARDYNAMICS:RUN_MD_SIMULATION:RUN_ENERGY_MINIMISATION,RUN_ENERGY_MINIMISATION,modules/local/run_energy_min.nf,2,run_energy_minimisation,,,module name
+NFCORE_MOLECULARDYNAMICS:MOLECULARDYNAMICS:RUN_MD_SIMULATION:RUN_NVT_EQUILIBRATION,RUN_NVT_EQUILIBRATION,modules/local/run_nvt_equilibration.nf,2,run_nvt_equilibration,,,module name
+NFCORE_MOLECULARDYNAMICS:MOLECULARDYNAMICS:RUN_MD_SIMULATION:RUN_NPT_EQUILIBRATION,RUN_NPT_EQUILIBRATION,modules/local/run_npt_equilibration.nf,2,run_npt_equilibration,,,module name
+NFCORE_MOLECULARDYNAMICS:MOLECULARDYNAMICS:RUN_MD_SIMULATION:RUN_PRODUCTION,RUN_PRODUCTION,modules/local/run_production.nf,2,run_production,,,module name
+NFCORE_MOLECULARDYNAMICS:MOLECULARDYNAMICS:POST_PROCESSING,POST_PROCESSING,modules/local/post_processing.nf,2,post_processing,,,module name
+NFCORE_MOLECULARDYNAMICS:MOLECULARDYNAMICS:ANALYSIS_RMSD,ANALYSIS_RMSD,modules/local/analysis_rmsd.nf,2,analysis_rmsd,,,module name

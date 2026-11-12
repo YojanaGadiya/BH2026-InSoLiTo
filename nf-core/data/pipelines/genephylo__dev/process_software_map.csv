@@ -1,0 +1,13 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_GENEPHYLO:GENEPHYLO:BLAST_UPDATEBLASTDB,BLAST_UPDATEBLASTDB,modules/nf-core/blast/updateblastdb/main.nf,1,blast,blast,blast,environment.yml
+NFCORE_GENEPHYLO:GENEPHYLO:BLAST_MAKEBLASTDB,BLAST_MAKEBLASTDB,modules/nf-core/blast/makeblastdb/main.nf,1,blast,blast,blast,environment.yml
+NFCORE_GENEPHYLO:GENEPHYLO:BLAST_BLASTN,BLAST_BLASTN,modules/nf-core/blast/blastn/main.nf,1,blast,blast,blast,environment.yml
+NFCORE_GENEPHYLO:GENEPHYLO:BLAST_TBLASTN,BLAST_TBLASTN,modules/nf-core/blast/tblastn/main.nf,1,blast,blast,blast,environment.yml
+NFCORE_GENEPHYLO:GENEPHYLO:BLAST_EXTRACT,BLAST_EXTRACT,modules/local/blast_extract.nf,1,blast_extract,,,module name
+NFCORE_GENEPHYLO:GENEPHYLO:BLAST_BLASTDBCMD,BLAST_BLASTDBCMD,modules/nf-core/blast/blastdbcmd/main.nf,1,blast,blast,blast,environment.yml
+NFCORE_GENEPHYLO:GENEPHYLO:SEQKIT_RMDUP,SEQKIT_RMDUP,modules/nf-core/seqkit/rmdup/main.nf,1,seqkit,seqkit,seqkit,environment.yml
+NFCORE_GENEPHYLO:GENEPHYLO:ETE_TAXDB,ETE_TAXDB,modules/local/ete_taxdb.nf,1,ete_taxdb,,,module name
+NFCORE_GENEPHYLO:GENEPHYLO:ETE_FILTER,ETE_FILTER,modules/local/ete_filter.nf,1,ete_filter,,,module name
+NFCORE_GENEPHYLO:GENEPHYLO:TD2_LONGORFS,TD2_LONGORFS,modules/nf-core/td2/longorfs/main.nf,1,td2,td2,td2,environment.yml
+NFCORE_GENEPHYLO:GENEPHYLO:TD2_PREDICT,TD2_PREDICT,modules/nf-core/td2/predict/main.nf,1,td2,td2,td2,environment.yml
+NFCORE_GENEPHYLO:GENEPHYLO:MAFFT_ALIGN,MAFFT_ALIGN,modules/nf-core/mafft/align/main.nf,1,mafft,mafft;pigz,mafft;pigz,environment.yml

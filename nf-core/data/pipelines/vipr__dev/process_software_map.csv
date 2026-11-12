@@ -1,0 +1,11 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+trim_and_combine,trim_and_combine,main.nf,134,skewer,,skewer;fastqc,script and directives
+decont,decont,main.nf,161,decont,,decont;fastqc,script and directives
+kraken,kraken,main.nf,187,kraken,,kraken;kraken-report,script and directives
+tadpole,tadpole,main.nf,210,tadpole,,tadpole,script and directives
+gap_fill_assembly,gap_fill_assembly,main.nf,227,simple_contig_joiner,,simple_contig_joiner,script and directives
+polish_assembly,polish_assembly,main.nf,260,seqtk,,seqtk;polish_viral_ref,script and directives
+final_mapping,final_mapping,main.nf,282,samtools,,samtools;lofreq;bwa,script and directives
+var_calling,var_calling,main.nf,310,samtools,,samtools;lofreq,script and directives
+genomecov,genomecov,main.nf,331,bedtools,,bedtools,script and directives
+vipr_tools,vipr_tools,main.nf,349,vipr_af_vs_cov_html,,vipr_af_vs_cov_html;vipr_gaps_to_n,script and directives

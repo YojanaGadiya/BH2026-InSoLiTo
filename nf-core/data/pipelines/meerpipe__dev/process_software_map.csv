@@ -1,0 +1,11 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_MEERPIPE:MEERPIPE:OBS_LIST,OBS_LIST,modules/local/obs_list.nf,1,obs_list,,,module name
+NFCORE_MEERPIPE:MEERPIPE:PSRADD_CALIBRATE_CLEAN,PSRADD_CALIBRATE_CLEAN,modules/local/psradd_calibrate_clean.nf,1,psradd_calibrate_clean,,,module name
+NFCORE_MEERPIPE:MEERPIPE:DM_RM_CALC,DM_RM_CALC,modules/local/dm_rm_calc.nf,1,dm_rm_calc,,,module name
+NFCORE_MEERPIPE:MEERPIPE:GENERATE_IMAGE_RESULTS,GENERATE_IMAGE_RESULTS,modules/local/generate_image_results.nf,1,generate_image_results,,,module name
+NFCORE_MEERPIPE:MEERPIPE:UPLOAD_RESULTS,UPLOAD_RESULTS,modules/local/upload_results.nf,1,upload_results,,,module name
+NFCORE_MEERPIPE:MEERPIPE:GRAB_ALL_PAIRS,GRAB_ALL_PAIRS,modules/local/grab_all_pairs.nf,1,grab_all_pairs,,,module name
+NFCORE_MEERPIPE:MEERPIPE:DECIMATE,DECIMATE,modules/local/decimate.nf,1,decimate,,,module name
+NFCORE_MEERPIPE:MEERPIPE:GENERATE_TOAS,GENERATE_TOAS,modules/local/generate_toas.nf,1,generate_toas,,,module name
+NFCORE_MEERPIPE:MEERPIPE:UPLOAD_TOAS,UPLOAD_TOAS,modules/local/upload_toas.nf,1,upload_toas,,,module name
+NFCORE_MEERPIPE:MEERPIPE:GENERATE_RESIDUALS,GENERATE_RESIDUALS,modules/local/generate_residuals.nf,1,generate_residuals,,,module name

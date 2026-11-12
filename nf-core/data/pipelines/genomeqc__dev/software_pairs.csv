@@ -1,0 +1,351 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+agat,gffread,data_flow,4,4,E00126,
+agat,pandas,data_flow,1,1,E00140,
+agat,quast,data_flow,4,4,E00112,
+agat,r-dplyr,data_flow,2,2,E00160,
+agat,report_excel,data_flow,1,1,E00210,
+agat,report_html,data_flow,1,1,E00190,
+bioconductor-ggtree,shiny_app,data_flow,4,4,E00175,
+busco,bioconductor-ggtree,data_flow,1,1,E00179,
+busco,busco_tsv_to_gff,data_flow,1,1,E00087,
+busco,gawk,data_flow,3,3,E00079,
+busco,orthofinder,data_flow,2,2,E00085,
+busco,r-dplyr,data_flow,3,3,E00084,
+busco_tsv_to_gff,pandas,data_flow,1,1,E00090,
+cd-hit,repeatmasker,data_flow,1,1,E00063,
+curl,repeatmasker,data_flow,1,1,E00047,
+fcs,ncbi-fcs-gx,data_flow,1,1,E00007,
+fcs,report_excel,data_flow,1,1,E00213,
+fcs,report_html,data_flow,1,1,E00196,
+fcsgx_report_2_table,bioconductor-ggtree,data_flow,2,2,E00172,
+findutils,cd-hit,data_flow,1,1,E00055,
+findutils,mmseqs2,data_flow,2,2,E00056,
+gawk,bioconductor-ggtree,data_flow,5,5,E00167,
+gawk,multiqc,data_flow,1,1,E00220,
+gawk,report_excel,data_flow,3,3,E00205,
+gawk,report_html,data_flow,3,3,E00187,
+gffread,agat,data_flow,2,2,E00100,
+gffread,busco,data_flow,1,1,E00146,
+gffread,orthofinder,data_flow,2,2,E00136,
+gffread,quast,data_flow,2,2,E00113,
+gffread,r-dplyr,data_flow,1,1,E00161,
+hite,report_excel,data_flow,1,1,E00218,
+hite,report_html,data_flow,1,1,E00201,
+hite,te_tbl_2_table,data_flow,1,1,E00069,
+meryl,merqury,data_flow,1,1,E00040,
+mmseqs2,repeatmasker,data_flow,2,2,E00064,
+ncbi-fcs-gx,fcsgx_report_2_table,data_flow,1,1,E00016,
+ncbi-fcs-gx,report_excel,data_flow,1,1,E00212,
+ncbi-fcs-gx,report_html,data_flow,1,1,E00195,
+ncbi-fcs-gx,tiara,data_flow,1,1,E00015,
+ncbi-genome-download,agat,data_flow,4,4,E00092,
+ncbi-genome-download,busco,data_flow,4,4,E00075,
+ncbi-genome-download,fcs,data_flow,1,1,E00004,
+ncbi-genome-download,fcsgx_report_2_table,data_flow,1,1,E00018,
+ncbi-genome-download,findutils,data_flow,1,1,E00052,
+ncbi-genome-download,gffread,data_flow,6,6,E00096,
+ncbi-genome-download,hite,data_flow,1,1,E00046,
+ncbi-genome-download,merqury,data_flow,2,2,E00042,
+ncbi-genome-download,meryl,data_flow,2,2,E00036,
+ncbi-genome-download,ncbi-fcs-gx,data_flow,2,2,E00006,
+ncbi-genome-download,pigz,data_flow,2,2,E00001,
+ncbi-genome-download,quast,data_flow,6,6,E00071,
+ncbi-genome-download,r-dplyr,data_flow,6,6,E00081,
+ncbi-genome-download,repeatmasker,data_flow,2,2,E00062,
+ncbi-genome-download,repeatmodeler,data_flow,1,1,E00049,
+ncbi-genome-download,seqkit,data_flow,1,1,E00020,
+ncbi-genome-download,tiara,data_flow,1,1,E00014,
+ncbi-genome-download,tidk,data_flow,2,2,E00025,
+orthofinder,bioconductor-ggtree,data_flow,4,4,E00165,
+orthofinder,pandas,data_flow,4,4,E00088,
+pandas,bioconductor-ggtree,data_flow,2,2,E00174,
+pandas,report_excel,data_flow,2,2,E00215,
+pandas,report_html,data_flow,2,2,E00198,
+pigz,agat,data_flow,4,4,E00091,
+pigz,busco,data_flow,4,4,E00074,
+pigz,fcs,data_flow,1,1,E00003,
+pigz,fcsgx_report_2_table,data_flow,1,1,E00017,
+pigz,findutils,data_flow,1,1,E00051,
+pigz,gffread,data_flow,6,6,E00095,
+pigz,hite,data_flow,1,1,E00045,
+pigz,merqury,data_flow,2,2,E00041,
+pigz,meryl,data_flow,2,2,E00035,
+pigz,ncbi-fcs-gx,data_flow,2,2,E00005,
+pigz,quast,data_flow,6,6,E00070,
+pigz,r-dplyr,data_flow,6,6,E00080,
+pigz,repeatmasker,data_flow,2,2,E00061,
+pigz,repeatmodeler,data_flow,1,1,E00048,
+pigz,seqkit,data_flow,1,1,E00019,
+pigz,tiara,data_flow,1,1,E00013,
+pigz,tidk,data_flow,2,2,E00024,
+quast,bioconductor-ggtree,gate_metadata,2,0,E00173,
+quast,multiqc,data_flow,1,1,E00219,
+quast,report_excel,data_flow,2,2,E00208,
+quast,report_html,data_flow,2,2,E00191,
+r-dplyr,pandas,data_flow,2,2,E00163,
+r-dplyr,report_html,data_flow,3,3,E00202,
+repeatmasker,cd-hit,data_flow,1,1,E00058,
+repeatmasker,findutils,data_flow,1,1,E00053,
+repeatmasker,mmseqs2,data_flow,2,2,E00059,
+repeatmasker,report_excel,data_flow,1,1,E00217,
+repeatmasker,report_html,data_flow,1,1,E00200,
+repeatmasker,te_tbl_2_table,data_flow,1,1,E00068,
+repeatmodeler,findutils,data_flow,1,1,E00054,
+seqkit,tidk,data_flow,5,5,E00022,
+te_tbl_2_table,bioconductor-ggtree,data_flow,2,2,E00171,
+tiara,report_excel,data_flow,1,1,E00214,
+tiara,report_html,data_flow,1,1,E00197,
+tidk,report_excel,data_flow,1,1,E00211,
+tidk,report_html,data_flow,2,2,E00193,
+agat,fcs,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00102, E00004); no directed path between any process of the two tools"
+agat,fcsgx_report_2_table,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00102, E00018); no directed path between any process of the two tools"
+agat,findutils,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00102, E00052); no directed path between any process of the two tools"
+agat,hite,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00102, E00046); no directed path between any process of the two tools"
+agat,merqury,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00102, E00042); no directed path between any process of the two tools"
+agat,meryl,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00102, E00036); no directed path between any process of the two tools"
+agat,ncbi-fcs-gx,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00102, E00006); no directed path between any process of the two tools"
+agat,repeatmasker,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00102, E00062); no directed path between any process of the two tools"
+agat,repeatmodeler,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00102, E00049); no directed path between any process of the two tools"
+agat,seqkit,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00102, E00020); no directed path between any process of the two tools"
+agat,tiara,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00102, E00014); no directed path between any process of the two tools"
+agat,tidk,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00102, E00025); no directed path between any process of the two tools"
+bioconductor-ggtree,multiqc,parallel_co_use,0,0,,"both consume GAWK_PROT.output (E00168, E00220); no directed path between any process of the two tools"
+bioconductor-ggtree,report_excel,parallel_co_use,0,0,,"both consume BUSCO_SEQS_GENOME.table (E00184, E00216); no directed path between any process of the two tools"
+bioconductor-ggtree,report_html,parallel_co_use,0,0,,"both consume BUSCO_SEQS_GENOME.table (E00184, E00199); no directed path between any process of the two tools"
+busco,fcs,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00142, E00004); no directed path between any process of the two tools"
+busco,fcsgx_report_2_table,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00142, E00018); no directed path between any process of the two tools"
+busco,findutils,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00142, E00052); no directed path between any process of the two tools"
+busco,hite,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00142, E00046); no directed path between any process of the two tools"
+busco,merqury,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00142, E00042); no directed path between any process of the two tools"
+busco,meryl,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00142, E00036); no directed path between any process of the two tools"
+busco,ncbi-fcs-gx,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00142, E00006); no directed path between any process of the two tools"
+busco,quast,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00142, E00109); no directed path between any process of the two tools"
+busco,repeatmasker,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00142, E00062); no directed path between any process of the two tools"
+busco,repeatmodeler,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00142, E00049); no directed path between any process of the two tools"
+busco,seqkit,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00142, E00020); no directed path between any process of the two tools"
+busco,tiara,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00142, E00014); no directed path between any process of the two tools"
+busco,tidk,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00142, E00025); no directed path between any process of the two tools"
+fcs,agat,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00004, E00102); no directed path between any process of the two tools"
+fcs,busco,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00004, E00142); no directed path between any process of the two tools"
+fcs,findutils,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00004, E00052); no directed path between any process of the two tools"
+fcs,gffread,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00004, E00123); no directed path between any process of the two tools"
+fcs,hite,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00004, E00046); no directed path between any process of the two tools"
+fcs,merqury,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00004, E00042); no directed path between any process of the two tools"
+fcs,meryl,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00004, E00036); no directed path between any process of the two tools"
+fcs,quast,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00004, E00109); no directed path between any process of the two tools"
+fcs,r-dplyr,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00004, E00151); no directed path between any process of the two tools"
+fcs,repeatmasker,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00004, E00062); no directed path between any process of the two tools"
+fcs,repeatmodeler,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00004, E00049); no directed path between any process of the two tools"
+fcs,seqkit,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00004, E00020); no directed path between any process of the two tools"
+fcs,tidk,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00004, E00025); no directed path between any process of the two tools"
+fcsgx_report_2_table,agat,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00018, E00102); no directed path between any process of the two tools"
+fcsgx_report_2_table,busco,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00018, E00142); no directed path between any process of the two tools"
+fcsgx_report_2_table,findutils,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00018, E00052); no directed path between any process of the two tools"
+fcsgx_report_2_table,gffread,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00018, E00123); no directed path between any process of the two tools"
+fcsgx_report_2_table,hite,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00018, E00046); no directed path between any process of the two tools"
+fcsgx_report_2_table,merqury,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00018, E00042); no directed path between any process of the two tools"
+fcsgx_report_2_table,meryl,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00018, E00036); no directed path between any process of the two tools"
+fcsgx_report_2_table,quast,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00018, E00109); no directed path between any process of the two tools"
+fcsgx_report_2_table,r-dplyr,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00018, E00151); no directed path between any process of the two tools"
+fcsgx_report_2_table,repeatmasker,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00018, E00062); no directed path between any process of the two tools"
+fcsgx_report_2_table,repeatmodeler,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00018, E00049); no directed path between any process of the two tools"
+fcsgx_report_2_table,report_excel,parallel_co_use,0,0,,"both consume FCSGX_RUNGX.fcsgx_report (E00016, E00212); no directed path between any process of the two tools"
+fcsgx_report_2_table,report_html,parallel_co_use,0,0,,"both consume FCSGX_RUNGX.fcsgx_report (E00016, E00195); no directed path between any process of the two tools"
+fcsgx_report_2_table,seqkit,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00018, E00020); no directed path between any process of the two tools"
+fcsgx_report_2_table,tiara,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00018, E00014); no directed path between any process of the two tools"
+fcsgx_report_2_table,tidk,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00018, E00025); no directed path between any process of the two tools"
+findutils,agat,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00052, E00102); no directed path between any process of the two tools"
+findutils,busco,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00052, E00142); no directed path between any process of the two tools"
+findutils,fcs,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00052, E00004); no directed path between any process of the two tools"
+findutils,fcsgx_report_2_table,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00052, E00018); no directed path between any process of the two tools"
+findutils,gffread,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00052, E00123); no directed path between any process of the two tools"
+findutils,merqury,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00052, E00042); no directed path between any process of the two tools"
+findutils,meryl,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00052, E00036); no directed path between any process of the two tools"
+findutils,ncbi-fcs-gx,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00052, E00006); no directed path between any process of the two tools"
+findutils,quast,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00052, E00109); no directed path between any process of the two tools"
+findutils,r-dplyr,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00052, E00151); no directed path between any process of the two tools"
+findutils,seqkit,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00052, E00020); no directed path between any process of the two tools"
+findutils,tiara,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00052, E00014); no directed path between any process of the two tools"
+findutils,tidk,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00052, E00025); no directed path between any process of the two tools"
+gffread,fcs,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00123, E00004); no directed path between any process of the two tools"
+gffread,fcsgx_report_2_table,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00123, E00018); no directed path between any process of the two tools"
+gffread,findutils,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00123, E00052); no directed path between any process of the two tools"
+gffread,hite,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00123, E00046); no directed path between any process of the two tools"
+gffread,merqury,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00123, E00042); no directed path between any process of the two tools"
+gffread,meryl,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00123, E00036); no directed path between any process of the two tools"
+gffread,ncbi-fcs-gx,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00123, E00006); no directed path between any process of the two tools"
+gffread,repeatmasker,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00123, E00062); no directed path between any process of the two tools"
+gffread,repeatmodeler,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00123, E00049); no directed path between any process of the two tools"
+gffread,seqkit,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00123, E00020); no directed path between any process of the two tools"
+gffread,tiara,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00123, E00014); no directed path between any process of the two tools"
+gffread,tidk,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00123, E00025); no directed path between any process of the two tools"
+hite,agat,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00046, E00102); no directed path between any process of the two tools"
+hite,busco,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00046, E00142); no directed path between any process of the two tools"
+hite,fcs,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00046, E00004); no directed path between any process of the two tools"
+hite,fcsgx_report_2_table,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00046, E00018); no directed path between any process of the two tools"
+hite,gffread,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00046, E00123); no directed path between any process of the two tools"
+hite,merqury,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00046, E00042); no directed path between any process of the two tools"
+hite,meryl,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00046, E00036); no directed path between any process of the two tools"
+hite,ncbi-fcs-gx,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00046, E00006); no directed path between any process of the two tools"
+hite,quast,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00046, E00109); no directed path between any process of the two tools"
+hite,r-dplyr,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00046, E00151); no directed path between any process of the two tools"
+hite,seqkit,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00046, E00020); no directed path between any process of the two tools"
+hite,tiara,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00046, E00014); no directed path between any process of the two tools"
+hite,tidk,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00046, E00025); no directed path between any process of the two tools"
+merqury,agat,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00042, E00102); no directed path between any process of the two tools"
+merqury,busco,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00042, E00142); no directed path between any process of the two tools"
+merqury,fcs,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00042, E00004); no directed path between any process of the two tools"
+merqury,fcsgx_report_2_table,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00042, E00018); no directed path between any process of the two tools"
+merqury,findutils,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00042, E00052); no directed path between any process of the two tools"
+merqury,gffread,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00042, E00123); no directed path between any process of the two tools"
+merqury,hite,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00042, E00046); no directed path between any process of the two tools"
+merqury,ncbi-fcs-gx,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00042, E00006); no directed path between any process of the two tools"
+merqury,quast,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00042, E00109); no directed path between any process of the two tools"
+merqury,r-dplyr,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00042, E00151); no directed path between any process of the two tools"
+merqury,repeatmasker,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00042, E00062); no directed path between any process of the two tools"
+merqury,repeatmodeler,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00042, E00049); no directed path between any process of the two tools"
+merqury,seqkit,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00042, E00020); no directed path between any process of the two tools"
+merqury,tiara,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00042, E00014); no directed path between any process of the two tools"
+merqury,tidk,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00042, E00025); no directed path between any process of the two tools"
+meryl,agat,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00036, E00102); no directed path between any process of the two tools"
+meryl,busco,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00036, E00142); no directed path between any process of the two tools"
+meryl,fcs,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00036, E00004); no directed path between any process of the two tools"
+meryl,fcsgx_report_2_table,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00036, E00018); no directed path between any process of the two tools"
+meryl,findutils,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00036, E00052); no directed path between any process of the two tools"
+meryl,gffread,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00036, E00123); no directed path between any process of the two tools"
+meryl,hite,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00036, E00046); no directed path between any process of the two tools"
+meryl,ncbi-fcs-gx,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00036, E00006); no directed path between any process of the two tools"
+meryl,quast,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00036, E00109); no directed path between any process of the two tools"
+meryl,r-dplyr,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00036, E00151); no directed path between any process of the two tools"
+meryl,repeatmasker,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00036, E00062); no directed path between any process of the two tools"
+meryl,repeatmodeler,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00036, E00049); no directed path between any process of the two tools"
+meryl,seqkit,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00036, E00020); no directed path between any process of the two tools"
+meryl,tiara,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00036, E00014); no directed path between any process of the two tools"
+meryl,tidk,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00036, E00025); no directed path between any process of the two tools"
+multiqc,bioconductor-ggtree,parallel_co_use,0,0,,"both consume GAWK_PROT.output (E00220, E00168); no directed path between any process of the two tools"
+multiqc,report_excel,parallel_co_use,0,0,,"both consume GAWK_PROT.output (E00220, E00207); no directed path between any process of the two tools"
+multiqc,report_html,parallel_co_use,0,0,,"both consume GAWK_PROT.output (E00220, E00189); no directed path between any process of the two tools"
+ncbi-fcs-gx,agat,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00006, E00102); no directed path between any process of the two tools"
+ncbi-fcs-gx,busco,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00006, E00142); no directed path between any process of the two tools"
+ncbi-fcs-gx,findutils,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00006, E00052); no directed path between any process of the two tools"
+ncbi-fcs-gx,gffread,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00006, E00123); no directed path between any process of the two tools"
+ncbi-fcs-gx,hite,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00006, E00046); no directed path between any process of the two tools"
+ncbi-fcs-gx,merqury,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00006, E00042); no directed path between any process of the two tools"
+ncbi-fcs-gx,meryl,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00006, E00036); no directed path between any process of the two tools"
+ncbi-fcs-gx,quast,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00006, E00109); no directed path between any process of the two tools"
+ncbi-fcs-gx,r-dplyr,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00006, E00151); no directed path between any process of the two tools"
+ncbi-fcs-gx,repeatmasker,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00006, E00062); no directed path between any process of the two tools"
+ncbi-fcs-gx,repeatmodeler,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00006, E00049); no directed path between any process of the two tools"
+ncbi-fcs-gx,seqkit,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00006, E00020); no directed path between any process of the two tools"
+ncbi-fcs-gx,tidk,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00006, E00025); no directed path between any process of the two tools"
+pandas,quast,parallel_co_use,0,0,,"both consume AGAT_SPKEEPLONGESTISOFORM.gff (E00140, E00114); no directed path between any process of the two tools"
+quast,busco,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00109, E00142); no directed path between any process of the two tools"
+quast,fcs,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00109, E00004); no directed path between any process of the two tools"
+quast,fcsgx_report_2_table,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00109, E00018); no directed path between any process of the two tools"
+quast,findutils,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00109, E00052); no directed path between any process of the two tools"
+quast,hite,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00109, E00046); no directed path between any process of the two tools"
+quast,merqury,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00109, E00042); no directed path between any process of the two tools"
+quast,meryl,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00109, E00036); no directed path between any process of the two tools"
+quast,ncbi-fcs-gx,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00109, E00006); no directed path between any process of the two tools"
+quast,pandas,parallel_co_use,0,0,,"both consume AGAT_SPKEEPLONGESTISOFORM.gff (E00114, E00140); no directed path between any process of the two tools"
+quast,r-dplyr,parallel_co_use,0,0,,"both consume AGAT_SPKEEPLONGESTISOFORM.gff (E00114, E00162); no directed path between any process of the two tools"
+quast,repeatmasker,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00109, E00062); no directed path between any process of the two tools"
+quast,repeatmodeler,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00109, E00049); no directed path between any process of the two tools"
+quast,seqkit,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00109, E00020); no directed path between any process of the two tools"
+quast,tiara,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00109, E00014); no directed path between any process of the two tools"
+quast,tidk,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00109, E00025); no directed path between any process of the two tools"
+r-dplyr,fcs,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00151, E00004); no directed path between any process of the two tools"
+r-dplyr,fcsgx_report_2_table,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00151, E00018); no directed path between any process of the two tools"
+r-dplyr,findutils,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00151, E00052); no directed path between any process of the two tools"
+r-dplyr,hite,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00151, E00046); no directed path between any process of the two tools"
+r-dplyr,merqury,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00151, E00042); no directed path between any process of the two tools"
+r-dplyr,meryl,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00151, E00036); no directed path between any process of the two tools"
+r-dplyr,ncbi-fcs-gx,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00151, E00006); no directed path between any process of the two tools"
+r-dplyr,quast,parallel_co_use,0,0,,"both consume AGAT_SPKEEPLONGESTISOFORM.gff (E00162, E00114); no directed path between any process of the two tools"
+r-dplyr,repeatmasker,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00151, E00062); no directed path between any process of the two tools"
+r-dplyr,repeatmodeler,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00151, E00049); no directed path between any process of the two tools"
+r-dplyr,seqkit,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00151, E00020); no directed path between any process of the two tools"
+r-dplyr,tiara,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00151, E00014); no directed path between any process of the two tools"
+r-dplyr,tidk,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00151, E00025); no directed path between any process of the two tools"
+repeatmasker,agat,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00062, E00102); no directed path between any process of the two tools"
+repeatmasker,busco,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00062, E00142); no directed path between any process of the two tools"
+repeatmasker,fcs,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00062, E00004); no directed path between any process of the two tools"
+repeatmasker,fcsgx_report_2_table,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00062, E00018); no directed path between any process of the two tools"
+repeatmasker,gffread,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00062, E00123); no directed path between any process of the two tools"
+repeatmasker,merqury,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00062, E00042); no directed path between any process of the two tools"
+repeatmasker,meryl,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00062, E00036); no directed path between any process of the two tools"
+repeatmasker,ncbi-fcs-gx,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00062, E00006); no directed path between any process of the two tools"
+repeatmasker,quast,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00062, E00109); no directed path between any process of the two tools"
+repeatmasker,r-dplyr,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00062, E00151); no directed path between any process of the two tools"
+repeatmasker,seqkit,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00062, E00020); no directed path between any process of the two tools"
+repeatmasker,tiara,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00062, E00014); no directed path between any process of the two tools"
+repeatmasker,tidk,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00062, E00025); no directed path between any process of the two tools"
+repeatmodeler,agat,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00049, E00102); no directed path between any process of the two tools"
+repeatmodeler,busco,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00049, E00142); no directed path between any process of the two tools"
+repeatmodeler,fcs,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00049, E00004); no directed path between any process of the two tools"
+repeatmodeler,fcsgx_report_2_table,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00049, E00018); no directed path between any process of the two tools"
+repeatmodeler,gffread,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00049, E00123); no directed path between any process of the two tools"
+repeatmodeler,merqury,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00049, E00042); no directed path between any process of the two tools"
+repeatmodeler,meryl,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00049, E00036); no directed path between any process of the two tools"
+repeatmodeler,ncbi-fcs-gx,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00049, E00006); no directed path between any process of the two tools"
+repeatmodeler,quast,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00049, E00109); no directed path between any process of the two tools"
+repeatmodeler,r-dplyr,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00049, E00151); no directed path between any process of the two tools"
+repeatmodeler,seqkit,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00049, E00020); no directed path between any process of the two tools"
+repeatmodeler,tiara,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00049, E00014); no directed path between any process of the two tools"
+repeatmodeler,tidk,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00049, E00025); no directed path between any process of the two tools"
+report_excel,bioconductor-ggtree,parallel_co_use,0,0,,"both consume BUSCO_SEQS_GENOME.table (E00216, E00184); no directed path between any process of the two tools"
+report_excel,fcsgx_report_2_table,parallel_co_use,0,0,,"both consume FCSGX_RUNGX.fcsgx_report (E00212, E00016); no directed path between any process of the two tools"
+report_excel,multiqc,parallel_co_use,0,0,,"both consume GAWK_PROT.output (E00207, E00220); no directed path between any process of the two tools"
+report_excel,report_html,parallel_co_use,0,0,,"both consume BUSCO_SEQS_GENOME.table (E00216, E00199); no directed path between any process of the two tools"
+report_excel,te_tbl_2_table,parallel_co_use,0,0,,"both consume HITE.tbl (E00218, E00069); no directed path between any process of the two tools"
+report_html,bioconductor-ggtree,parallel_co_use,0,0,,"both consume BUSCO_SEQS_GENOME.table (E00199, E00184); no directed path between any process of the two tools"
+report_html,fcsgx_report_2_table,parallel_co_use,0,0,,"both consume FCSGX_RUNGX.fcsgx_report (E00195, E00016); no directed path between any process of the two tools"
+report_html,multiqc,parallel_co_use,0,0,,"both consume GAWK_PROT.output (E00189, E00220); no directed path between any process of the two tools"
+report_html,report_excel,parallel_co_use,0,0,,"both consume BUSCO_SEQS_GENOME.table (E00199, E00216); no directed path between any process of the two tools"
+report_html,te_tbl_2_table,parallel_co_use,0,0,,"both consume HITE.tbl (E00201, E00069); no directed path between any process of the two tools"
+seqkit,agat,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00020, E00102); no directed path between any process of the two tools"
+seqkit,busco,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00020, E00142); no directed path between any process of the two tools"
+seqkit,fcs,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00020, E00004); no directed path between any process of the two tools"
+seqkit,fcsgx_report_2_table,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00020, E00018); no directed path between any process of the two tools"
+seqkit,findutils,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00020, E00052); no directed path between any process of the two tools"
+seqkit,gffread,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00020, E00123); no directed path between any process of the two tools"
+seqkit,hite,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00020, E00046); no directed path between any process of the two tools"
+seqkit,merqury,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00020, E00042); no directed path between any process of the two tools"
+seqkit,meryl,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00020, E00036); no directed path between any process of the two tools"
+seqkit,ncbi-fcs-gx,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00020, E00006); no directed path between any process of the two tools"
+seqkit,quast,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00020, E00109); no directed path between any process of the two tools"
+seqkit,r-dplyr,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00020, E00151); no directed path between any process of the two tools"
+seqkit,repeatmasker,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00020, E00062); no directed path between any process of the two tools"
+seqkit,repeatmodeler,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00020, E00049); no directed path between any process of the two tools"
+seqkit,tiara,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00020, E00014); no directed path between any process of the two tools"
+te_tbl_2_table,report_excel,parallel_co_use,0,0,,"both consume HITE.tbl (E00069, E00218); no directed path between any process of the two tools"
+te_tbl_2_table,report_html,parallel_co_use,0,0,,"both consume HITE.tbl (E00069, E00201); no directed path between any process of the two tools"
+tiara,agat,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00014, E00102); no directed path between any process of the two tools"
+tiara,busco,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00014, E00142); no directed path between any process of the two tools"
+tiara,fcsgx_report_2_table,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00014, E00018); no directed path between any process of the two tools"
+tiara,findutils,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00014, E00052); no directed path between any process of the two tools"
+tiara,gffread,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00014, E00123); no directed path between any process of the two tools"
+tiara,hite,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00014, E00046); no directed path between any process of the two tools"
+tiara,merqury,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00014, E00042); no directed path between any process of the two tools"
+tiara,meryl,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00014, E00036); no directed path between any process of the two tools"
+tiara,quast,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00014, E00109); no directed path between any process of the two tools"
+tiara,r-dplyr,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00014, E00151); no directed path between any process of the two tools"
+tiara,repeatmasker,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00014, E00062); no directed path between any process of the two tools"
+tiara,repeatmodeler,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00014, E00049); no directed path between any process of the two tools"
+tiara,seqkit,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00014, E00020); no directed path between any process of the two tools"
+tiara,tidk,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00014, E00025); no directed path between any process of the two tools"
+tidk,agat,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00025, E00102); no directed path between any process of the two tools"
+tidk,busco,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00025, E00142); no directed path between any process of the two tools"
+tidk,fcs,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00025, E00004); no directed path between any process of the two tools"
+tidk,fcsgx_report_2_table,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00025, E00018); no directed path between any process of the two tools"
+tidk,findutils,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00025, E00052); no directed path between any process of the two tools"
+tidk,gffread,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00025, E00123); no directed path between any process of the two tools"
+tidk,hite,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00025, E00046); no directed path between any process of the two tools"
+tidk,merqury,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00025, E00042); no directed path between any process of the two tools"
+tidk,meryl,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00025, E00036); no directed path between any process of the two tools"
+tidk,ncbi-fcs-gx,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00025, E00006); no directed path between any process of the two tools"
+tidk,quast,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00025, E00109); no directed path between any process of the two tools"
+tidk,r-dplyr,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00025, E00151); no directed path between any process of the two tools"
+tidk,repeatmasker,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00025, E00062); no directed path between any process of the two tools"
+tidk,repeatmodeler,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00025, E00049); no directed path between any process of the two tools"
+tidk,tiara,parallel_co_use,0,0,,"both consume NCBIGENOMEDOWNLOAD.fna (E00025, E00014); no directed path between any process of the two tools"

@@ -1,0 +1,30 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_HGTSEQ:HGTSEQ:UNTAR_KRAKEN,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:UNTAR_KRONA,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:PREPARE_READS:TRIMGALORE,TRIMGALORE,modules/nf-core/trimgalore/main.nf,1,cutadapt,trimgalore,cutadapt;trim-galore;pigz,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:PREPARE_READS:BWAMEM1_INDEX,BWA_INDEX,modules/nf-core/bwa/index/main.nf,1,bwa,bwa,bwa,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:PREPARE_READS:BWAMEM1_MEM,BWA_MEM,modules/nf-core/bwa/mem/main.nf,1,bwa,bwa,bwa;htslib;samtools,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:PREPARE_READS:BWAMEM2_INDEX,BWAMEM2_INDEX,modules/nf-core/bwamem2/index/main.nf,1,bwa-mem2,bwamem2,bwa-mem2,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:PREPARE_READS:BWAMEM2_MEM,BWAMEM2_MEM,modules/nf-core/bwamem2/mem/main.nf,1,bwa-mem2,bwa,bwa-mem2;htslib;samtools,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:READS_QC:FASTQC_UNTRIMMED,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:READS_QC:FASTQC_TRIMMED,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:SORTBAM:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:SORTBAM:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:BAM_QC:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:BAM_QC:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:BAM_QC:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:BAM_QC:QUALIMAP_BAMQC,QUALIMAP_BAMQC,modules/nf-core/qualimap/bamqc/main.nf,1,qualimap,qualimap,qualimap,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:BAM_QC:BAMTOOLS_STATS,BAMTOOLS_STATS,modules/nf-core/bamtools/stats/main.nf,1,bamtools,bamtools,bamtools,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:CLASSIFY_UNMAPPED:SAMTOOLS_VIEW_SINGLE,SAMTOOLS_VIEW_SINGLE,modules/local/samtools/viewsingle/main.nf,1,samtools_view_single,,,module name
+NFCORE_HGTSEQ:HGTSEQ:CLASSIFY_UNMAPPED:SAMTOOLS_VIEW_BOTH,SAMTOOLS_VIEW,modules/nf-core/samtools/view/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:CLASSIFY_UNMAPPED:PARSEOUTPUTS,PARSEOUTPUTS,modules/local/parseoutputs/main.nf,1,parseoutputs,,,module name
+NFCORE_HGTSEQ:HGTSEQ:CLASSIFY_UNMAPPED:SAMTOOLS_FASTQ_SINGLE,SAMTOOLS_FASTQ,modules/local/samtools/fastqlocal/main.nf,1,samtools_fastq,,,module name
+NFCORE_HGTSEQ:HGTSEQ:CLASSIFY_UNMAPPED:SAMTOOLS_FASTQ_BOTH,SAMTOOLS_FASTQ,modules/local/samtools/fastqlocal/main.nf,1,samtools_fastq,,,module name
+NFCORE_HGTSEQ:HGTSEQ:CLASSIFY_UNMAPPED:KRAKEN2_SINGLE,KRAKEN2_KRAKEN2,modules/nf-core/kraken2/kraken2/main.nf,1,kraken2,kraken2,kraken2;coreutils;pigz,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:CLASSIFY_UNMAPPED:KRAKEN2_BOTH,KRAKEN2_KRAKEN2,modules/nf-core/kraken2/kraken2/main.nf,1,kraken2,kraken2,kraken2;coreutils;pigz,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:REPORTING:GAWK_SINGLE,GAWK,modules/local/gawk/main.nf,1,gawk,,,module name
+NFCORE_HGTSEQ:HGTSEQ:REPORTING:GAWK_BOTH,GAWK,modules/local/gawk/main.nf,1,gawk,,,module name
+NFCORE_HGTSEQ:HGTSEQ:REPORTING:KRONA_KTIMPORTTAXONOMY_SINGLE,KRONA_KTIMPORTTAXONOMY,modules/nf-core/krona/ktimporttaxonomy/main.nf,1,krona,krona,krona,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:REPORTING:KRONA_KTIMPORTTAXONOMY_BOTH,KRONA_KTIMPORTTAXONOMY,modules/nf-core/krona/ktimporttaxonomy/main.nf,1,krona,krona,krona,environment.yml
+NFCORE_HGTSEQ:HGTSEQ:REPORTING:RANALYSIS,RANALYSIS,modules/local/ranalysis/main.nf,1,ranalysis,,,module name
+NFCORE_HGTSEQ:HGTSEQ:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

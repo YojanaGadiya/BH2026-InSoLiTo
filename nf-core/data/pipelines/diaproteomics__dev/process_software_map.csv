@@ -1,0 +1,21 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+get_software_versions,get_software_versions,main.nf,322,fileinfo,,fileinfo;pyprophet;scrape_software_versions,script and directives
+dda_raw_file_conversion,dda_raw_file_conversion,main.nf,347,thermorawfileparser,,thermorawfileparser,script and directives
+dda_id_format_conversion,dda_id_format_conversion,main.nf,367,idfileconverter,,idfileconverter,script and directives
+dda_library_generation,dda_library_generation,main.nf,388,easypqp,,easypqp,script and directives
+assay_generation,assay_generation,main.nf,422,targetedfileconverter,,targetedfileconverter;openswathassaygenerator,script and directives
+library_merging_and_alignment,library_merging_and_alignment,main.nf,459,merge_and_align_libraries_from_easypqp,,merge_and_align_libraries_from_easypqp,script and directives
+pseudo_irt_generation,pseudo_irt_generation,main.nf,487,select_pseudo_irts_from_lib,,select_pseudo_irts_from_lib;targetedfileconverter,script and directives
+decoy_generation,decoy_generation,main.nf,520,targetedfileconverter,,targetedfileconverter;openswathdecoygenerator,script and directives
+dia_raw_file_conversion,dia_raw_file_conversion,main.nf,551,thermorawfileparser,,thermorawfileparser,script and directives
+dia_spectral_library_search,dia_spectral_library_search,main.nf,572,targetedfileconverter,,targetedfileconverter;openswathworkflow,script and directives
+dia_search_output_merging,dia_search_output_merging,main.nf,721,pyprophet,,pyprophet,script and directives
+global_false_discovery_rate_estimation,global_false_discovery_rate_estimation,main.nf,746,pyprophet,,pyprophet,script and directives
+export_of_scoring_results,export_of_scoring_results,main.nf,818,pyprophet,,pyprophet,script and directives
+chromatogram_indexing,chromatogram_indexing,main.nf,846,fileconverter,,fileconverter;openswathmzmlfilecacher,script and directives
+chromatogram_alignment,chromatogram_alignment,main.nf,889,dialignr,,dialignr,script and directives
+reformatting,reformatting,main.nf,929,targetedfileconverter,,targetedfileconverter;reformat_output_for_msstats,script and directives
+mztab_export,mztab_export,main.nf,979,targetedfileconverter,,targetedfileconverter;mztab_output,script and directives
+statistical_post_processing,statistical_post_processing,main.nf,1025,msstats,,msstats,script and directives
+output_visualization,output_visualization,main.nf,1056,plot_quantities_and_counts,,plot_quantities_and_counts,script and directives
+output_documentation,output_documentation,main.nf,1079,markdown_to_html,,markdown_to_html,script and directives

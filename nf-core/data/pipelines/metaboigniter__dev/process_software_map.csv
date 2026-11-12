@@ -1,0 +1,31 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_METABOIGNITER:METABOIGNITER:QUANTIFICATION:OPENMS_PEAKPICKERHIRES,OPENMS_PEAKPICKERHIRES,modules/local/openms_peakpickerhires/main.nf,1,openms_peakpickerhires,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:QUANTIFICATION:OPENMS_FEATUREFINDERMETABO,OPENMS_FEATUREFINDERMETABO,modules/local/openms_featurefindermetabo/main.nf,1,openms_featurefindermetabo,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:ANNOTATION:OPENMS_METABOLITEADDUCTDECHARGER,OPENMS_METABOLITEADDUCTDECHARGER,modules/local/openms_metaboliteadductdecharger/main.nf,1,openms_metaboliteadductdecharger,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:LINKER:PYOPENMS_CONCTSV_MZ,PYOPENMS_CONCTSV,modules/local/pyopenms_conctsv/main.nf,1,pyopenms_conctsv,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:LINKER:PYOPENMS_SPLITFEATUREXML,PYOPENMS_SPLITFEATUREXML,modules/local/pyopenms_splitfeaturexml/main.nf,1,pyopenms_splitfeaturexml,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:LINKER:PYOPENMS_FILEMERGER,PYOPENMS_FILEMERGER,modules/local/pyopenms_filemerger/main.nf,1,pyopenms_filemerger,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:ANNOTATION_REQ:OPENMS_METABOLITEADDUCTDECHARGER,OPENMS_METABOLITEADDUCTDECHARGER,modules/local/openms_metaboliteadductdecharger/main.nf,1,openms_metaboliteadductdecharger,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:LINKER_REQ:PYOPENMS_CONCTSV_MZ,PYOPENMS_CONCTSV,modules/local/pyopenms_conctsv/main.nf,1,pyopenms_conctsv,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:LINKER_REQ:PYOPENMS_SPLITFEATUREXML,PYOPENMS_SPLITFEATUREXML,modules/local/pyopenms_splitfeaturexml/main.nf,1,pyopenms_splitfeaturexml,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:LINKER_REQ:PYOPENMS_FILEMERGER,PYOPENMS_FILEMERGER,modules/local/pyopenms_filemerger/main.nf,1,pyopenms_filemerger,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:PYOPENMS_EXPORTQUANTIFICATION,PYOPENMS_EXPORT,modules/local/pyopenms_export/main.nf,1,pyopenms_export,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:IDENTIFICATION:OPENMS_FILECONVERTER,OPENMS_FILECONVERTER,modules/local/openms_fileconverter/main.nf,1,openms_fileconverter,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:IDENTIFICATION:PYOPENMS_GENERATESEARCHPARAMS,PYOPENMS_GENERATESEARCHPARAMS,modules/local/pyopenms_generatesearchparams/main.nf,1,pyopenms_generatesearchparams,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:IDENTIFICATION:PYOPENMS_CONCTSV_UNMAPPED,PYOPENMS_CONCTSV,modules/local/pyopenms_conctsv/main.nf,1,pyopenms_conctsv,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:IDENTIFICATION:SIRIUSMAPPED:PYOPENMS_SPLITMS,PYOPENMS_SPLITMGF,modules/local/pyopenms_splitmgf/main.nf,1,pyopenms_splitmgf,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:IDENTIFICATION:SIRIUSMAPPED:SIRIUS_SEARCH,SIRIUS_SEARCH,modules/local/sirius_search/main.nf,1,sirius_search,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:IDENTIFICATION:SIRIUSMAPPED:PYOPENMS_CONCTSVSIRIUS,PYOPENMS_CONCTSV,modules/local/pyopenms_conctsv/main.nf,1,pyopenms_conctsv,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:IDENTIFICATION:SIRIUSMAPPED:PYOPENMS_CONCTSVFINGERID,PYOPENMS_CONCTSV,modules/local/pyopenms_conctsv/main.nf,1,pyopenms_conctsv,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:IDENTIFICATION:SIRIUSUNMAPPED:PYOPENMS_SPLITMS,PYOPENMS_SPLITMGF,modules/local/pyopenms_splitmgf/main.nf,1,pyopenms_splitmgf,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:IDENTIFICATION:SIRIUSUNMAPPED:SIRIUS_SEARCH,SIRIUS_SEARCH,modules/local/sirius_search/main.nf,1,sirius_search,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:IDENTIFICATION:SIRIUSUNMAPPED:PYOPENMS_CONCTSVSIRIUS,PYOPENMS_CONCTSV,modules/local/pyopenms_conctsv/main.nf,1,pyopenms_conctsv,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:IDENTIFICATION:SIRIUSUNMAPPED:PYOPENMS_CONCTSVFINGERID,PYOPENMS_CONCTSV,modules/local/pyopenms_conctsv/main.nf,1,pyopenms_conctsv,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:IDENTIFICATION:MS2QUERYMAPPED:PYOPENMS_SPLITMGF,PYOPENMS_SPLITMGF,modules/local/pyopenms_splitmgf/main.nf,1,pyopenms_splitmgf,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:IDENTIFICATION:MS2QUERYMAPPED:MS2QUERY_SEARCH,MS2QUERY_SEARCH,modules/local/ms2query_search/main.nf,1,ms2query_search,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:IDENTIFICATION:MS2QUERYMAPPED:PYOPENMS_CONCTSVMS2QUERY,PYOPENMS_CONCTSV,modules/local/pyopenms_conctsv/main.nf,1,pyopenms_conctsv,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:IDENTIFICATION:MS2QUERYUNMAPPED:PYOPENMS_SPLITMGF,PYOPENMS_SPLITMGF,modules/local/pyopenms_splitmgf/main.nf,1,pyopenms_splitmgf,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:IDENTIFICATION:MS2QUERYUNMAPPED:MS2QUERY_SEARCH,MS2QUERY_SEARCH,modules/local/ms2query_search/main.nf,1,ms2query_search,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:IDENTIFICATION:MS2QUERYUNMAPPED:PYOPENMS_CONCTSVMS2QUERY,PYOPENMS_CONCTSV,modules/local/pyopenms_conctsv/main.nf,1,pyopenms_conctsv,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:PYOPENMS_EXPORTIDENTIFICATION,PYOPENMS_EXPORT,modules/local/pyopenms_export/main.nf,1,pyopenms_export,,,module name
+NFCORE_METABOIGNITER:METABOIGNITER:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

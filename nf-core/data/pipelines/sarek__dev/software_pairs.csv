@@ -1,0 +1,756 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bbmap,bwa,data_flow,1,1,E00164,
+bbmap,bwa-mem2,data_flow,1,1,E00174,
+bbmap,dragmap,data_flow,1,1,E00184,
+bbmap,gatk4-lite,data_flow,2,2,E00287,
+bbmap,gatk4-spark,data_flow,1,1,E00263,
+bbmap,multiqc,data_flow,1,1,E04881,
+bbmap,samtools,data_flow,3,3,E00214,
+bbmap,sentieon,data_flow,2,2,E00194,
+bcftools,ensembl-vep,data_flow,18,18,E04625,
+bcftools,gatk4-lite,data_flow,9,9,E00650,
+bcftools,gawk,data_flow,10,10,E04015,
+bcftools,multiqc,data_flow,1,1,E04906,
+bcftools,rust-bio-tools,data_flow,7,7,E03354,
+bcftools,snpeff,data_flow,18,18,E04501,
+bcftools,snpsift,data_flow,20,20,E04746,
+bcftools,varlociraptor,data_flow,6,6,E03414,
+bcftools,vcflib,data_flow,3,3,E00826,
+bcftools,vcftools,data_flow,9,9,E03097,
+bcftools,xz,data_flow,5,5,E00823,
+bedtools,ascat,data_flow,1,1,E02059,
+bedtools,cnvkit,data_flow,4,4,E00015,
+bedtools,control-freec,data_flow,2,2,E01439,
+bedtools,gatk4,data_flow,2,2,E00954,
+bedtools,gatk4-lite,data_flow,3,3,E00006,
+bedtools,gawk,data_flow,1,1,E00004,
+bedtools,mosdepth,data_flow,5,5,E00256,
+bedtools,msisensor-pro,data_flow,1,1,E02535,
+bedtools,parabricks,data_flow,7,7,E00047,
+bedtools,vcftools,data_flow,3,3,E03144,
+bedtools,xz,data_flow,1,1,E00011,
+bwa,bwa-mem2,data_flow,2,2,E00105,
+bwa,dragmap,data_flow,2,2,E00109,
+bwa,fgbio,data_flow,2,2,E00128,
+bwa,gatk4-lite,data_flow,2,2,E00283,
+bwa,gatk4-spark,data_flow,1,1,E00259,
+bwa,parabricks,data_flow,1,1,E00044,
+bwa,samtools,data_flow,5,5,E00117,
+bwa,sentieon,data_flow,3,3,E00113,
+bwa-mem2,bwa,data_flow,2,2,E00102,
+bwa-mem2,dragmap,data_flow,2,2,E00110,
+bwa-mem2,fgbio,data_flow,2,2,E00129,
+bwa-mem2,gatk4-lite,data_flow,2,2,E00284,
+bwa-mem2,gatk4-spark,data_flow,1,1,E00260,
+bwa-mem2,samtools,data_flow,5,5,E00118,
+bwa-mem2,sentieon,data_flow,3,3,E00114,
+cat,ascat,data_flow,1,1,E02025,
+cat,bbmap,data_flow,2,2,E00157,
+cat,bcftools,data_flow,5,5,E00507,
+cat,bwa,data_flow,2,2,E00166,
+cat,bwa-mem2,data_flow,2,2,E00176,
+cat,cnvkit,data_flow,3,3,E00660,
+cat,deepsomatic,data_flow,1,1,E02336,
+cat,deepvariant,data_flow,1,1,E00705,
+cat,dragmap,data_flow,2,2,E00186,
+cat,fastp,data_flow,2,2,E00151,
+cat,fastqc,data_flow,1,1,E00036,
+cat,fgbio,data_flow,1,1,E00095,
+cat,freebayes,data_flow,3,3,E00788,
+cat,gatk4-lite,data_flow,16,16,E00289,
+cat,gatk4-spark,data_flow,2,2,E00265,
+cat,lofreq,data_flow,1,1,E01868,
+cat,manta,data_flow,3,3,E01015,
+cat,mosdepth,data_flow,1,1,E00467,
+cat,msisensor-pro,data_flow,1,1,E02503,
+cat,msisensor2,data_flow,1,1,E01543,
+cat,muse,data_flow,1,1,E02545,
+cat,parabricks,data_flow,6,6,E00040,
+cat,samtools,data_flow,18,18,E00064,
+cat,sentieon,data_flow,9,9,E00196,
+cat,strelka,data_flow,2,2,E01274,
+cat,tiddit,data_flow,4,4,E01320,
+cat,varlociraptor,data_flow,8,8,E03310,
+cat,yte,data_flow,3,3,E03275,
+deepsomatic,bcftools,data_flow,11,11,E03070,
+deepsomatic,ensembl-vep,data_flow,2,2,E04679,
+deepsomatic,gatk4-lite,data_flow,2,2,E02368,
+deepsomatic,gawk,data_flow,2,2,E04061,
+deepsomatic,rust-bio-tools,data_flow,1,1,E03649,
+deepsomatic,snpeff,data_flow,2,2,E04555,
+deepsomatic,snpsift,data_flow,2,2,E04807,
+deepsomatic,vcftools,data_flow,3,3,E03128,
+deepsomatic,xz,data_flow,1,1,E03526,
+deepvariant,bcftools,data_flow,10,10,E03027,
+deepvariant,ensembl-vep,data_flow,2,2,E04636,
+deepvariant,gatk4-lite,data_flow,2,2,E00737,
+deepvariant,gawk,data_flow,3,3,E04018,
+deepvariant,rust-bio-tools,data_flow,2,2,E03342,
+deepvariant,snpeff,data_flow,2,2,E04512,
+deepvariant,snpsift,data_flow,2,2,E04764,
+deepvariant,vcftools,data_flow,3,3,E03085,
+deepvariant,xz,data_flow,1,1,E03564,
+dragmap,bwa,data_flow,2,2,E00103,
+dragmap,bwa-mem2,data_flow,2,2,E00107,
+dragmap,fgbio,data_flow,2,2,E00130,
+dragmap,gatk4-lite,data_flow,2,2,E00285,
+dragmap,gatk4-spark,data_flow,1,1,E00261,
+dragmap,samtools,data_flow,5,5,E00119,
+dragmap,sentieon,data_flow,3,3,E00115,
+ensembl-vep,multiqc,data_flow,2,2,E04876,
+ensembl-vep,snpsift,data_flow,4,4,E04745,
+fastp,bbmap,data_flow,1,1,E00156,
+fastp,bwa,data_flow,1,1,E00165,
+fastp,bwa-mem2,data_flow,1,1,E00175,
+fastp,dragmap,data_flow,1,1,E00185,
+fastp,gatk4-lite,data_flow,2,2,E00288,
+fastp,gatk4-spark,data_flow,1,1,E00264,
+fastp,multiqc,data_flow,2,2,E04879,
+fastp,samtools,data_flow,3,3,E00215,
+fastp,sentieon,data_flow,2,2,E00195,
+fastqc,multiqc,data_flow,1,1,E04878,
+fgbio,gatk4-lite,data_flow,2,2,E00282,
+fgbio,gatk4-spark,data_flow,1,1,E00258,
+fgbio,samtools,data_flow,8,8,E00099,
+fgbio,sentieon,data_flow,2,2,E00296,
+findutils,control-freec,data_flow,3,3,E01431,
+freebayes,bcftools,data_flow,3,3,E00820,
+gatk4,gatk4-lite,data_flow,4,4,E00958,
+gatk4-lite,ascat,data_flow,7,7,E02035,
+gatk4-lite,bcftools,data_flow,262,262,E00517,
+gatk4-lite,cnvkit,data_flow,22,22,E00014,
+gatk4-lite,control-freec,data_flow,2,2,E01438,
+gatk4-lite,deepsomatic,data_flow,6,6,E02346,
+gatk4-lite,deepvariant,data_flow,6,6,E00715,
+gatk4-lite,ensembl-vep,data_flow,46,46,E04635,
+gatk4-lite,freebayes,data_flow,18,18,E00798,
+gatk4-lite,gatk4,data_flow,10,10,E00947,
+gatk4-lite,gatk4-spark,data_flow,14,14,E00271,
+gatk4-lite,gawk,data_flow,58,58,E04017,
+gatk4-lite,lofreq,data_flow,6,6,E01878,
+gatk4-lite,manta,data_flow,18,18,E01025,
+gatk4-lite,mosdepth,data_flow,15,15,E00255,
+gatk4-lite,msisensor-pro,data_flow,7,7,E02513,
+gatk4-lite,msisensor2,data_flow,6,6,E01553,
+gatk4-lite,multiqc,data_flow,5,5,E04885,
+gatk4-lite,muse,data_flow,6,6,E02555,
+gatk4-lite,parabricks,data_flow,37,37,E00046,
+gatk4-lite,rust-bio-tools,data_flow,35,35,E03341,
+gatk4-lite,samtools,data_flow,57,57,E00336,
+gatk4-lite,sentieon,data_flow,38,38,E01101,
+gatk4-lite,snpeff,data_flow,46,46,E04511,
+gatk4-lite,snpsift,data_flow,46,46,E04763,
+gatk4-lite,strelka,data_flow,12,12,E01284,
+gatk4-lite,tiddit,data_flow,24,24,E01330,
+gatk4-lite,varlociraptor,data_flow,48,48,E03320,
+gatk4-lite,vcflib,data_flow,6,6,E00824,
+gatk4-lite,vcftools,data_flow,72,72,E03084,
+gatk4-lite,xz,data_flow,19,19,E00010,
+gatk4-lite,yte,data_flow,18,18,E03285,
+gatk4-spark,ascat,data_flow,3,3,E02038,
+gatk4-spark,bcftools,data_flow,15,15,E00520,
+gatk4-spark,cnvkit,data_flow,9,9,E00673,
+gatk4-spark,deepsomatic,data_flow,3,3,E02349,
+gatk4-spark,deepvariant,data_flow,3,3,E00718,
+gatk4-spark,freebayes,data_flow,9,9,E00801,
+gatk4-spark,gatk4-lite,data_flow,40,40,E00364,
+gatk4-spark,lofreq,data_flow,3,3,E01881,
+gatk4-spark,manta,data_flow,9,9,E01028,
+gatk4-spark,mosdepth,data_flow,4,4,E00276,
+gatk4-spark,msisensor-pro,data_flow,3,3,E02516,
+gatk4-spark,msisensor2,data_flow,3,3,E01556,
+gatk4-spark,multiqc,data_flow,1,1,E04902,
+gatk4-spark,muse,data_flow,3,3,E02558,
+gatk4-spark,parabricks,data_flow,15,15,E00761,
+gatk4-spark,samtools,data_flow,30,30,E00272,
+gatk4-spark,sentieon,data_flow,15,15,E01104,
+gatk4-spark,strelka,data_flow,6,6,E01287,
+gatk4-spark,tiddit,data_flow,12,12,E01333,
+gatk4-spark,varlociraptor,data_flow,24,24,E03323,
+gatk4-spark,yte,data_flow,9,9,E03288,
+gawk,ascat,data_flow,1,1,E02057,
+gawk,bcftools,data_flow,13,13,E00609,
+gawk,cnvkit,data_flow,4,4,E00013,
+gawk,control-freec,data_flow,4,4,E01433,
+gawk,deepsomatic,data_flow,1,1,E02366,
+gawk,deepvariant,data_flow,1,1,E00735,
+gawk,ensembl-vep,data_flow,3,3,E04637,
+gawk,findutils,data_flow,4,4,E00649,
+gawk,freebayes,data_flow,3,3,E00818,
+gawk,gatk4,data_flow,4,4,E00949,
+gawk,gatk4-lite,data_flow,40,40,E00375,
+gawk,gatk4-spark,data_flow,2,2,E00359,
+gawk,lofreq,data_flow,1,1,E01898,
+gawk,mosdepth,data_flow,5,5,E00254,
+gawk,msisensor-pro,data_flow,1,1,E02533,
+gawk,parabricks,data_flow,7,7,E00045,
+gawk,rust-bio-tools,data_flow,3,3,E03343,
+gawk,samtools,data_flow,6,6,E00646,
+gawk,sentieon,data_flow,6,6,E01121,
+gawk,snpeff,data_flow,3,3,E04513,
+gawk,snpsift,data_flow,3,3,E04765,
+gawk,vcftools,data_flow,6,6,E03086,
+gawk,xz,data_flow,6,6,E00008,
+goleft,multiqc,data_flow,2,2,E04910,
+lofreq,bcftools,data_flow,9,9,E03058,
+lofreq,ensembl-vep,data_flow,2,2,E04667,
+lofreq,gatk4-lite,data_flow,1,1,E01900,
+lofreq,gawk,data_flow,2,2,E04049,
+lofreq,rust-bio-tools,data_flow,1,1,E03853,
+lofreq,snpeff,data_flow,2,2,E04543,
+lofreq,snpsift,data_flow,2,2,E04795,
+lofreq,vcftools,data_flow,3,3,E03116,
+manta,bcftools,data_flow,41,41,E03037,
+manta,ensembl-vep,data_flow,8,8,E04646,
+manta,gawk,data_flow,9,9,E04028,
+manta,rust-bio-tools,data_flow,5,5,E03352,
+manta,snpeff,data_flow,8,8,E04522,
+manta,snpsift,data_flow,8,8,E04774,
+manta,strelka,data_flow,2,2,E02485,
+manta,vcftools,data_flow,12,12,E03095,
+manta,xz,data_flow,3,3,E03528,
+mosdepth,multiqc,data_flow,10,10,E04883,
+muse,bcftools,data_flow,11,11,E03073,
+muse,ensembl-vep,data_flow,2,2,E04682,
+muse,gawk,data_flow,2,2,E04064,
+muse,rust-bio-tools,data_flow,1,1,E03653,
+muse,snpeff,data_flow,2,2,E04558,
+muse,snpsift,data_flow,2,2,E04810,
+muse,vcftools,data_flow,3,3,E03131,
+muse,xz,data_flow,1,1,E03530,
+p7zip,ascat,data_flow,4,4,E02055,
+parabricks,ascat,data_flow,4,4,E02021,
+parabricks,bcftools,data_flow,20,20,E00503,
+parabricks,cnvkit,data_flow,12,12,E00656,
+parabricks,deepsomatic,data_flow,4,4,E02332,
+parabricks,deepvariant,data_flow,4,4,E00701,
+parabricks,freebayes,data_flow,12,12,E00784,
+parabricks,gatk4-lite,data_flow,64,60,E00830,
+parabricks,lofreq,data_flow,4,4,E01864,
+parabricks,manta,data_flow,12,12,E01011,
+parabricks,mosdepth,data_flow,4,4,E00463,
+parabricks,msisensor-pro,data_flow,4,4,E02499,
+parabricks,msisensor2,data_flow,4,4,E01539,
+parabricks,muse,data_flow,4,4,E02541,
+parabricks,samtools,data_flow,48,48,E00060,
+parabricks,sentieon,data_flow,20,20,E01087,
+parabricks,strelka,data_flow,8,8,E01270,
+parabricks,tiddit,data_flow,16,16,E01316,
+parabricks,varlociraptor,data_flow,32,32,E03306,
+parabricks,xz,data_flow,4,4,E00782,
+parabricks,yte,data_flow,12,12,E03271,
+rust-bio-tools,varlociraptor,data_flow,4,4,E03371,
+samtools,ascat,data_flow,15,15,E02020,
+samtools,bcftools,data_flow,77,76,E00502,
+samtools,bedtools,data_flow,1,1,E00003,
+samtools,bwa,data_flow,1,1,E00100,
+samtools,bwa-mem2,data_flow,1,1,E00104,
+samtools,cat,data_flow,4,4,E00034,
+samtools,cnvkit,data_flow,55,52,E00016,
+samtools,control-freec,data_flow,7,7,E01432,
+samtools,deepsomatic,data_flow,15,15,E02331,
+samtools,deepvariant,data_flow,15,15,E00700,
+samtools,dragmap,data_flow,1,1,E00108,
+samtools,fgbio,data_flow,2,2,E00126,
+samtools,findutils,data_flow,4,4,E00648,
+samtools,freebayes,data_flow,45,45,E00783,
+samtools,gatk4,data_flow,4,4,E00955,
+samtools,gatk4-lite,data_flow,199,199,E00007,
+samtools,gatk4-spark,data_flow,5,5,E00270,
+samtools,gawk,data_flow,2,2,E00001,
+samtools,goleft,data_flow,4,4,E01084,
+samtools,lofreq,data_flow,15,15,E01863,
+samtools,manta,data_flow,45,45,E01010,
+samtools,mosdepth,data_flow,23,23,E00252,
+samtools,msisensor-pro,data_flow,15,15,E02498,
+samtools,msisensor2,data_flow,16,16,E01536,
+samtools,multiqc,data_flow,5,5,E04882,
+samtools,muse,data_flow,16,16,E02538,
+samtools,parabricks,data_flow,79,79,E00048,
+samtools,sentieon,data_flow,84,84,E00112,
+samtools,strelka,data_flow,30,30,E01269,
+samtools,tiddit,data_flow,60,56,E01315,
+samtools,varlociraptor,data_flow,120,116,E03305,
+samtools,vcftools,data_flow,3,3,E03145,
+samtools,xz,data_flow,1,1,E00012,
+samtools,yte,data_flow,42,42,E03270,
+sentieon,ascat,data_flow,4,4,E02049,
+sentieon,bcftools,data_flow,81,81,E00531,
+sentieon,cnvkit,data_flow,12,12,E00684,
+sentieon,deepsomatic,data_flow,4,4,E02360,
+sentieon,deepvariant,data_flow,4,4,E00729,
+sentieon,ensembl-vep,data_flow,12,12,E04652,
+sentieon,fgbio,rejected,2,0,E00131,every extracted edge is rejected
+sentieon,freebayes,data_flow,12,12,E00812,
+sentieon,gatk4,data_flow,2,2,E01248,
+sentieon,gatk4-lite,data_flow,64,62,E00286,
+sentieon,gatk4-spark,data_flow,9,8,E00262,
+sentieon,gawk,data_flow,16,16,E04034,
+sentieon,lofreq,data_flow,4,4,E01892,
+sentieon,manta,data_flow,12,12,E01039,
+sentieon,mosdepth,data_flow,8,8,E00315,
+sentieon,msisensor-pro,data_flow,4,4,E02527,
+sentieon,msisensor2,data_flow,4,4,E01567,
+sentieon,multiqc,data_flow,3,3,E04889,
+sentieon,muse,data_flow,4,4,E02569,
+sentieon,parabricks,data_flow,20,20,E00772,
+sentieon,rust-bio-tools,data_flow,10,10,E03358,
+sentieon,samtools,data_flow,41,36,E00120,
+sentieon,snpeff,data_flow,12,12,E04528,
+sentieon,snpsift,data_flow,12,12,E04780,
+sentieon,strelka,data_flow,8,8,E01298,
+sentieon,tiddit,data_flow,16,16,E01344,
+sentieon,varlociraptor,data_flow,32,32,E03334,
+sentieon,vcftools,data_flow,18,18,E03101,
+sentieon,xz,data_flow,5,5,E03542,
+sentieon,yte,data_flow,12,12,E03299,
+snpeff,multiqc,data_flow,3,3,E04873,
+snpeff,xz,data_flow,1,1,E04621,
+spring,ascat,data_flow,3,3,E02026,
+spring,bbmap,data_flow,3,3,E00159,
+spring,bcftools,data_flow,15,15,E00508,
+spring,bwa,data_flow,3,3,E00168,
+spring,bwa-mem2,data_flow,3,3,E00178,
+spring,cnvkit,data_flow,9,9,E00661,
+spring,deepsomatic,data_flow,3,3,E02337,
+spring,deepvariant,data_flow,3,3,E00706,
+spring,dragmap,data_flow,3,3,E00188,
+spring,fastp,data_flow,3,3,E00153,
+spring,fastqc,data_flow,3,3,E00037,
+spring,fgbio,data_flow,3,3,E00096,
+spring,freebayes,data_flow,9,9,E00789,
+spring,gatk4-lite,data_flow,42,42,E00291,
+spring,gatk4-spark,data_flow,3,3,E00267,
+spring,lofreq,data_flow,3,3,E01869,
+spring,manta,data_flow,9,9,E01016,
+spring,mosdepth,data_flow,3,3,E00468,
+spring,msisensor-pro,data_flow,3,3,E02504,
+spring,msisensor2,data_flow,3,3,E01544,
+spring,muse,data_flow,3,3,E02546,
+spring,parabricks,data_flow,18,18,E00041,
+spring,samtools,data_flow,45,45,E00065,
+spring,sentieon,data_flow,21,21,E00198,
+spring,strelka,data_flow,6,6,E01275,
+spring,tiddit,data_flow,12,12,E01321,
+spring,varlociraptor,data_flow,24,24,E03311,
+spring,yte,data_flow,9,9,E03276,
+strelka,bcftools,data_flow,32,32,E03051,
+strelka,ensembl-vep,data_flow,6,6,E04660,
+strelka,gatk4-lite,data_flow,4,4,E01307,
+strelka,gawk,data_flow,7,7,E04042,
+strelka,rust-bio-tools,data_flow,4,4,E03366,
+strelka,snpeff,data_flow,6,6,E04536,
+strelka,snpsift,data_flow,6,6,E04788,
+strelka,vcftools,data_flow,9,9,E03109,
+strelka,xz,data_flow,3,3,E03536,
+tiddit,xz,data_flow,4,4,E01351,
+untar,bbmap,data_flow,1,1,E00162,
+untar,control-freec,data_flow,2,2,E01436,
+untar,msisensor2,data_flow,1,1,E01573,
+varlociraptor,bcftools,data_flow,6,6,E03411,
+vcflib,bcftools,data_flow,18,18,E03031,
+vcflib,ensembl-vep,data_flow,3,3,E04640,
+vcflib,gawk,data_flow,4,4,E04022,
+vcflib,rust-bio-tools,data_flow,4,4,E03346,
+vcflib,snpeff,data_flow,3,3,E04516,
+vcflib,snpsift,data_flow,3,3,E04768,
+vcflib,vcftools,data_flow,9,9,E03089,
+vcflib,xz,data_flow,5,5,E00828,
+vcftools,multiqc,data_flow,3,3,E04907,
+xz,bcftools,data_flow,95,95,E03022,
+xz,control-freec,data_flow,2,2,E01435,
+xz,ensembl-vep,data_flow,17,17,E04622,
+xz,gatk4-lite,data_flow,44,44,E00378,
+xz,gatk4-spark,data_flow,2,2,E00362,
+xz,gawk,data_flow,23,23,E04020,
+xz,manta,data_flow,6,6,E01045,
+xz,muse,data_flow,1,1,E02576,
+xz,parabricks,data_flow,8,6,E00049,
+xz,rust-bio-tools,data_flow,21,21,E03344,
+xz,sentieon,data_flow,11,11,E01123,
+xz,snpeff,data_flow,15,15,E04514,
+xz,snpsift,data_flow,17,17,E04748,
+xz,strelka,data_flow,4,4,E01304,
+xz,vcflib,data_flow,3,3,E00827,
+xz,vcftools,data_flow,33,33,E03087,
+yte,varlociraptor,data_flow,3,3,E03410,
+ascat,bcftools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02060, E00610); no directed path between any process of the two tools"
+ascat,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02060, E00016); no directed path between any process of the two tools"
+ascat,control-freec,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02060, E02226); no directed path between any process of the two tools"
+ascat,deepsomatic,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02060, E02367); no directed path between any process of the two tools"
+ascat,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02060, E00736); no directed path between any process of the two tools"
+ascat,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02025, E00036); no directed path between any process of the two tools"
+ascat,freebayes,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02060, E00819); no directed path between any process of the two tools"
+ascat,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02060, E01255); no directed path between any process of the two tools"
+ascat,goleft,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02060, E01085); no directed path between any process of the two tools"
+ascat,lofreq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02060, E01899); no directed path between any process of the two tools"
+ascat,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02060, E01047); no directed path between any process of the two tools"
+ascat,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02060, E00500); no directed path between any process of the two tools"
+ascat,msisensor-pro,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02060, E02536); no directed path between any process of the two tools"
+ascat,msisensor2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02025, E01543); no directed path between any process of the two tools"
+ascat,muse,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02025, E02545); no directed path between any process of the two tools"
+ascat,strelka,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02060, E01306); no directed path between any process of the two tools"
+ascat,tiddit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02025, E01320); no directed path between any process of the two tools"
+ascat,varlociraptor,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02060, E03408); no directed path between any process of the two tools"
+ascat,vcftools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02060, E03269); no directed path between any process of the two tools"
+ascat,yte,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02025, E03275); no directed path between any process of the two tools"
+bbmap,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00158, E00036); no directed path between any process of the two tools"
+bcftools,ascat,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00610, E02060); no directed path between any process of the two tools"
+bcftools,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00610, E00016); no directed path between any process of the two tools"
+bcftools,control-freec,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00610, E02226); no directed path between any process of the two tools"
+bcftools,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00579, E00036); no directed path between any process of the two tools"
+bcftools,findutils,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E00609, E00649); no directed path between any process of the two tools"
+bcftools,goleft,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00610, E01085); no directed path between any process of the two tools"
+bcftools,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00610, E00500); no directed path between any process of the two tools"
+bcftools,msisensor-pro,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00610, E02536); no directed path between any process of the two tools"
+bcftools,msisensor2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00579, E01543); no directed path between any process of the two tools"
+bwa,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00167, E00036); no directed path between any process of the two tools"
+bwa-mem2,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00177, E00036); no directed path between any process of the two tools"
+cnvkit,ascat,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00016, E02060); no directed path between any process of the two tools"
+cnvkit,bcftools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00016, E00610); no directed path between any process of the two tools"
+cnvkit,control-freec,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00016, E02226); no directed path between any process of the two tools"
+cnvkit,deepsomatic,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00016, E02367); no directed path between any process of the two tools"
+cnvkit,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00016, E00736); no directed path between any process of the two tools"
+cnvkit,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00660, E00036); no directed path between any process of the two tools"
+cnvkit,freebayes,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00016, E00819); no directed path between any process of the two tools"
+cnvkit,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00016, E01255); no directed path between any process of the two tools"
+cnvkit,goleft,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00016, E01085); no directed path between any process of the two tools"
+cnvkit,lofreq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00016, E01899); no directed path between any process of the two tools"
+cnvkit,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00016, E01047); no directed path between any process of the two tools"
+cnvkit,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00016, E00500); no directed path between any process of the two tools"
+cnvkit,msisensor-pro,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00016, E02536); no directed path between any process of the two tools"
+cnvkit,msisensor2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00660, E01543); no directed path between any process of the two tools"
+cnvkit,muse,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00660, E02545); no directed path between any process of the two tools"
+cnvkit,strelka,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00016, E01306); no directed path between any process of the two tools"
+cnvkit,tiddit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00660, E01320); no directed path between any process of the two tools"
+cnvkit,varlociraptor,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00016, E03408); no directed path between any process of the two tools"
+cnvkit,vcftools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00016, E03269); no directed path between any process of the two tools"
+cnvkit,yte,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00660, E03275); no directed path between any process of the two tools"
+control-freec,ascat,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02226, E02060); no directed path between any process of the two tools"
+control-freec,bcftools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02226, E00610); no directed path between any process of the two tools"
+control-freec,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02226, E00016); no directed path between any process of the two tools"
+control-freec,deepsomatic,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02226, E02367); no directed path between any process of the two tools"
+control-freec,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02226, E00736); no directed path between any process of the two tools"
+control-freec,ensembl-vep,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E02223, E04637); no directed path between any process of the two tools"
+control-freec,freebayes,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02226, E00819); no directed path between any process of the two tools"
+control-freec,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02226, E01255); no directed path between any process of the two tools"
+control-freec,goleft,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02226, E01085); no directed path between any process of the two tools"
+control-freec,lofreq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02226, E01899); no directed path between any process of the two tools"
+control-freec,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02226, E01047); no directed path between any process of the two tools"
+control-freec,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02226, E00500); no directed path between any process of the two tools"
+control-freec,msisensor-pro,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02226, E02536); no directed path between any process of the two tools"
+control-freec,muse,parallel_co_use,0,0,,"both consume TABIX_DBSNP.index (E02227, E02576); no directed path between any process of the two tools"
+control-freec,rust-bio-tools,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E02223, E03343); no directed path between any process of the two tools"
+control-freec,snpeff,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E02223, E04513); no directed path between any process of the two tools"
+control-freec,snpsift,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E02223, E04765); no directed path between any process of the two tools"
+control-freec,strelka,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02226, E01306); no directed path between any process of the two tools"
+control-freec,varlociraptor,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02226, E03408); no directed path between any process of the two tools"
+control-freec,vcftools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02226, E03269); no directed path between any process of the two tools"
+deepsomatic,ascat,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02367, E02060); no directed path between any process of the two tools"
+deepsomatic,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02367, E00016); no directed path between any process of the two tools"
+deepsomatic,control-freec,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02367, E02226); no directed path between any process of the two tools"
+deepsomatic,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02367, E00736); no directed path between any process of the two tools"
+deepsomatic,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02336, E00036); no directed path between any process of the two tools"
+deepsomatic,findutils,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E02366, E00649); no directed path between any process of the two tools"
+deepsomatic,freebayes,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02367, E00819); no directed path between any process of the two tools"
+deepsomatic,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02367, E01255); no directed path between any process of the two tools"
+deepsomatic,goleft,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02367, E01085); no directed path between any process of the two tools"
+deepsomatic,lofreq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02367, E01899); no directed path between any process of the two tools"
+deepsomatic,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02367, E01047); no directed path between any process of the two tools"
+deepsomatic,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02367, E00500); no directed path between any process of the two tools"
+deepsomatic,msisensor-pro,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02367, E02536); no directed path between any process of the two tools"
+deepsomatic,msisensor2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02336, E01543); no directed path between any process of the two tools"
+deepsomatic,muse,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02336, E02545); no directed path between any process of the two tools"
+deepsomatic,strelka,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02367, E01306); no directed path between any process of the two tools"
+deepsomatic,tiddit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02336, E01320); no directed path between any process of the two tools"
+deepsomatic,yte,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02336, E03275); no directed path between any process of the two tools"
+deepvariant,ascat,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00736, E02060); no directed path between any process of the two tools"
+deepvariant,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00736, E00016); no directed path between any process of the two tools"
+deepvariant,control-freec,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00736, E02226); no directed path between any process of the two tools"
+deepvariant,deepsomatic,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00736, E02367); no directed path between any process of the two tools"
+deepvariant,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00705, E00036); no directed path between any process of the two tools"
+deepvariant,findutils,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E00735, E00649); no directed path between any process of the two tools"
+deepvariant,freebayes,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00736, E00819); no directed path between any process of the two tools"
+deepvariant,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00736, E01255); no directed path between any process of the two tools"
+deepvariant,goleft,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00736, E01085); no directed path between any process of the two tools"
+deepvariant,lofreq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00736, E01899); no directed path between any process of the two tools"
+deepvariant,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00736, E01047); no directed path between any process of the two tools"
+deepvariant,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00736, E00500); no directed path between any process of the two tools"
+deepvariant,msisensor-pro,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00736, E02536); no directed path between any process of the two tools"
+deepvariant,msisensor2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00705, E01543); no directed path between any process of the two tools"
+deepvariant,muse,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00705, E02545); no directed path between any process of the two tools"
+deepvariant,strelka,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00736, E01306); no directed path between any process of the two tools"
+deepvariant,tiddit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00705, E01320); no directed path between any process of the two tools"
+deepvariant,yte,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00705, E03275); no directed path between any process of the two tools"
+dragmap,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00187, E00036); no directed path between any process of the two tools"
+ensembl-vep,control-freec,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E04637, E02223); no directed path between any process of the two tools"
+ensembl-vep,findutils,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E04637, E00649); no directed path between any process of the two tools"
+ensembl-vep,vcftools,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E04637, E03210); no directed path between any process of the two tools"
+fastp,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00152, E00036); no directed path between any process of the two tools"
+fastqc,ascat,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E02025); no directed path between any process of the two tools"
+fastqc,bbmap,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E00158); no directed path between any process of the two tools"
+fastqc,bcftools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E00579); no directed path between any process of the two tools"
+fastqc,bwa,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E00167); no directed path between any process of the two tools"
+fastqc,bwa-mem2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E00177); no directed path between any process of the two tools"
+fastqc,cnvkit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E00660); no directed path between any process of the two tools"
+fastqc,deepsomatic,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E02336); no directed path between any process of the two tools"
+fastqc,deepvariant,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E00705); no directed path between any process of the two tools"
+fastqc,dragmap,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E00187); no directed path between any process of the two tools"
+fastqc,fastp,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E00152); no directed path between any process of the two tools"
+fastqc,fgbio,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E00095); no directed path between any process of the two tools"
+fastqc,freebayes,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E00788); no directed path between any process of the two tools"
+fastqc,gatk4-lite,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E00883); no directed path between any process of the two tools"
+fastqc,gatk4-spark,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E00266); no directed path between any process of the two tools"
+fastqc,lofreq,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E01868); no directed path between any process of the two tools"
+fastqc,manta,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E01015); no directed path between any process of the two tools"
+fastqc,mosdepth,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E00467); no directed path between any process of the two tools"
+fastqc,msisensor-pro,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E02503); no directed path between any process of the two tools"
+fastqc,msisensor2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E01543); no directed path between any process of the two tools"
+fastqc,muse,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E02545); no directed path between any process of the two tools"
+fastqc,parabricks,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E00748); no directed path between any process of the two tools"
+fastqc,sentieon,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E01137); no directed path between any process of the two tools"
+fastqc,strelka,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E01274); no directed path between any process of the two tools"
+fastqc,tiddit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E01320); no directed path between any process of the two tools"
+fastqc,varlociraptor,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E03310); no directed path between any process of the two tools"
+fastqc,yte,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00036, E03275); no directed path between any process of the two tools"
+fgbio,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00095, E00036); no directed path between any process of the two tools"
+findutils,bcftools,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E00649, E00609); no directed path between any process of the two tools"
+findutils,deepsomatic,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E00649, E02366); no directed path between any process of the two tools"
+findutils,deepvariant,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E00649, E00735); no directed path between any process of the two tools"
+findutils,ensembl-vep,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E00649, E04637); no directed path between any process of the two tools"
+findutils,freebayes,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E00649, E00818); no directed path between any process of the two tools"
+findutils,gatk4,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E00649, E01249); no directed path between any process of the two tools"
+findutils,lofreq,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E00649, E01898); no directed path between any process of the two tools"
+findutils,rust-bio-tools,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E00649, E03343); no directed path between any process of the two tools"
+findutils,snpeff,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E00649, E04513); no directed path between any process of the two tools"
+findutils,snpsift,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E00649, E04765); no directed path between any process of the two tools"
+findutils,vcftools,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E00649, E03210); no directed path between any process of the two tools"
+freebayes,ascat,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00819, E02060); no directed path between any process of the two tools"
+freebayes,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00819, E00016); no directed path between any process of the two tools"
+freebayes,control-freec,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00819, E02226); no directed path between any process of the two tools"
+freebayes,deepsomatic,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00819, E02367); no directed path between any process of the two tools"
+freebayes,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00819, E00736); no directed path between any process of the two tools"
+freebayes,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00788, E00036); no directed path between any process of the two tools"
+freebayes,findutils,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E00818, E00649); no directed path between any process of the two tools"
+freebayes,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00819, E01255); no directed path between any process of the two tools"
+freebayes,goleft,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00819, E01085); no directed path between any process of the two tools"
+freebayes,lofreq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00819, E01899); no directed path between any process of the two tools"
+freebayes,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00819, E01047); no directed path between any process of the two tools"
+freebayes,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00819, E00500); no directed path between any process of the two tools"
+freebayes,msisensor-pro,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00819, E02536); no directed path between any process of the two tools"
+freebayes,msisensor2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00788, E01543); no directed path between any process of the two tools"
+freebayes,muse,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00788, E02545); no directed path between any process of the two tools"
+freebayes,strelka,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00819, E01306); no directed path between any process of the two tools"
+freebayes,tiddit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00788, E01320); no directed path between any process of the two tools"
+freebayes,yte,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00788, E03275); no directed path between any process of the two tools"
+gatk4,ascat,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01255, E02060); no directed path between any process of the two tools"
+gatk4,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01255, E00016); no directed path between any process of the two tools"
+gatk4,control-freec,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01255, E02226); no directed path between any process of the two tools"
+gatk4,deepsomatic,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01255, E02367); no directed path between any process of the two tools"
+gatk4,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01255, E00736); no directed path between any process of the two tools"
+gatk4,findutils,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E01249, E00649); no directed path between any process of the two tools"
+gatk4,freebayes,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01255, E00819); no directed path between any process of the two tools"
+gatk4,goleft,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01255, E01085); no directed path between any process of the two tools"
+gatk4,lofreq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01255, E01899); no directed path between any process of the two tools"
+gatk4,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01255, E01047); no directed path between any process of the two tools"
+gatk4,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01255, E00500); no directed path between any process of the two tools"
+gatk4,msisensor-pro,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01255, E02536); no directed path between any process of the two tools"
+gatk4,strelka,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01255, E01306); no directed path between any process of the two tools"
+gatk4-lite,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00883, E00036); no directed path between any process of the two tools"
+gatk4-spark,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00266, E00036); no directed path between any process of the two tools"
+goleft,ascat,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01085, E02060); no directed path between any process of the two tools"
+goleft,bcftools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01085, E00610); no directed path between any process of the two tools"
+goleft,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01085, E00016); no directed path between any process of the two tools"
+goleft,control-freec,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01085, E02226); no directed path between any process of the two tools"
+goleft,deepsomatic,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01085, E02367); no directed path between any process of the two tools"
+goleft,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01085, E00736); no directed path between any process of the two tools"
+goleft,freebayes,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01085, E00819); no directed path between any process of the two tools"
+goleft,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01085, E01255); no directed path between any process of the two tools"
+goleft,lofreq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01085, E01899); no directed path between any process of the two tools"
+goleft,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01085, E01047); no directed path between any process of the two tools"
+goleft,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01085, E00500); no directed path between any process of the two tools"
+goleft,msisensor-pro,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01085, E02536); no directed path between any process of the two tools"
+goleft,strelka,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01085, E01306); no directed path between any process of the two tools"
+goleft,varlociraptor,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01085, E03408); no directed path between any process of the two tools"
+goleft,vcftools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01085, E03269); no directed path between any process of the two tools"
+lofreq,ascat,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01899, E02060); no directed path between any process of the two tools"
+lofreq,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01899, E00016); no directed path between any process of the two tools"
+lofreq,control-freec,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01899, E02226); no directed path between any process of the two tools"
+lofreq,deepsomatic,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01899, E02367); no directed path between any process of the two tools"
+lofreq,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01899, E00736); no directed path between any process of the two tools"
+lofreq,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01868, E00036); no directed path between any process of the two tools"
+lofreq,findutils,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E01898, E00649); no directed path between any process of the two tools"
+lofreq,freebayes,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01899, E00819); no directed path between any process of the two tools"
+lofreq,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01899, E01255); no directed path between any process of the two tools"
+lofreq,goleft,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01899, E01085); no directed path between any process of the two tools"
+lofreq,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01899, E01047); no directed path between any process of the two tools"
+lofreq,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01899, E00500); no directed path between any process of the two tools"
+lofreq,msisensor-pro,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01899, E02536); no directed path between any process of the two tools"
+lofreq,msisensor2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01868, E01543); no directed path between any process of the two tools"
+lofreq,muse,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01868, E02545); no directed path between any process of the two tools"
+lofreq,strelka,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01899, E01306); no directed path between any process of the two tools"
+lofreq,tiddit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01868, E01320); no directed path between any process of the two tools"
+lofreq,yte,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01868, E03275); no directed path between any process of the two tools"
+manta,ascat,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01047, E02060); no directed path between any process of the two tools"
+manta,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01047, E00016); no directed path between any process of the two tools"
+manta,control-freec,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01047, E02226); no directed path between any process of the two tools"
+manta,deepsomatic,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01047, E02367); no directed path between any process of the two tools"
+manta,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01047, E00736); no directed path between any process of the two tools"
+manta,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01015, E00036); no directed path between any process of the two tools"
+manta,freebayes,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01047, E00819); no directed path between any process of the two tools"
+manta,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01047, E01255); no directed path between any process of the two tools"
+manta,goleft,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01047, E01085); no directed path between any process of the two tools"
+manta,lofreq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01047, E01899); no directed path between any process of the two tools"
+manta,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01047, E00500); no directed path between any process of the two tools"
+manta,msisensor-pro,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01047, E02536); no directed path between any process of the two tools"
+manta,msisensor2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01015, E01543); no directed path between any process of the two tools"
+manta,muse,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01015, E02545); no directed path between any process of the two tools"
+manta,tiddit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01015, E01320); no directed path between any process of the two tools"
+manta,yte,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01015, E03275); no directed path between any process of the two tools"
+mosdepth,ascat,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00500, E02060); no directed path between any process of the two tools"
+mosdepth,bcftools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00500, E00610); no directed path between any process of the two tools"
+mosdepth,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00500, E00016); no directed path between any process of the two tools"
+mosdepth,control-freec,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00500, E02226); no directed path between any process of the two tools"
+mosdepth,deepsomatic,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00500, E02367); no directed path between any process of the two tools"
+mosdepth,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00500, E00736); no directed path between any process of the two tools"
+mosdepth,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00467, E00036); no directed path between any process of the two tools"
+mosdepth,freebayes,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00500, E00819); no directed path between any process of the two tools"
+mosdepth,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00500, E01255); no directed path between any process of the two tools"
+mosdepth,goleft,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00500, E01085); no directed path between any process of the two tools"
+mosdepth,lofreq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00500, E01899); no directed path between any process of the two tools"
+mosdepth,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00500, E01047); no directed path between any process of the two tools"
+mosdepth,msisensor-pro,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00500, E02536); no directed path between any process of the two tools"
+mosdepth,msisensor2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00467, E01543); no directed path between any process of the two tools"
+mosdepth,muse,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00467, E02545); no directed path between any process of the two tools"
+mosdepth,strelka,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00500, E01306); no directed path between any process of the two tools"
+mosdepth,tiddit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00467, E01320); no directed path between any process of the two tools"
+mosdepth,varlociraptor,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00500, E03408); no directed path between any process of the two tools"
+mosdepth,vcftools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E00500, E03269); no directed path between any process of the two tools"
+mosdepth,yte,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00467, E03275); no directed path between any process of the two tools"
+msisensor-pro,ascat,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02536, E02060); no directed path between any process of the two tools"
+msisensor-pro,bcftools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02536, E00610); no directed path between any process of the two tools"
+msisensor-pro,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02536, E00016); no directed path between any process of the two tools"
+msisensor-pro,control-freec,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02536, E02226); no directed path between any process of the two tools"
+msisensor-pro,deepsomatic,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02536, E02367); no directed path between any process of the two tools"
+msisensor-pro,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02536, E00736); no directed path between any process of the two tools"
+msisensor-pro,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02503, E00036); no directed path between any process of the two tools"
+msisensor-pro,freebayes,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02536, E00819); no directed path between any process of the two tools"
+msisensor-pro,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02536, E01255); no directed path between any process of the two tools"
+msisensor-pro,goleft,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02536, E01085); no directed path between any process of the two tools"
+msisensor-pro,lofreq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02536, E01899); no directed path between any process of the two tools"
+msisensor-pro,manta,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02536, E01047); no directed path between any process of the two tools"
+msisensor-pro,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02536, E00500); no directed path between any process of the two tools"
+msisensor-pro,msisensor2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02503, E01543); no directed path between any process of the two tools"
+msisensor-pro,muse,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02503, E02545); no directed path between any process of the two tools"
+msisensor-pro,strelka,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02536, E01306); no directed path between any process of the two tools"
+msisensor-pro,tiddit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02503, E01320); no directed path between any process of the two tools"
+msisensor-pro,varlociraptor,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02536, E03408); no directed path between any process of the two tools"
+msisensor-pro,vcftools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E02536, E03269); no directed path between any process of the two tools"
+msisensor-pro,yte,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02503, E03275); no directed path between any process of the two tools"
+msisensor2,ascat,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01543, E02025); no directed path between any process of the two tools"
+msisensor2,bcftools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01543, E00579); no directed path between any process of the two tools"
+msisensor2,cnvkit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01543, E00660); no directed path between any process of the two tools"
+msisensor2,deepsomatic,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01543, E02336); no directed path between any process of the two tools"
+msisensor2,deepvariant,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01543, E00705); no directed path between any process of the two tools"
+msisensor2,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01543, E00036); no directed path between any process of the two tools"
+msisensor2,freebayes,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01543, E00788); no directed path between any process of the two tools"
+msisensor2,lofreq,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01543, E01868); no directed path between any process of the two tools"
+msisensor2,manta,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01543, E01015); no directed path between any process of the two tools"
+msisensor2,mosdepth,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01543, E00467); no directed path between any process of the two tools"
+msisensor2,msisensor-pro,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01543, E02503); no directed path between any process of the two tools"
+msisensor2,muse,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01543, E02545); no directed path between any process of the two tools"
+msisensor2,strelka,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01543, E01274); no directed path between any process of the two tools"
+msisensor2,tiddit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01543, E01320); no directed path between any process of the two tools"
+msisensor2,varlociraptor,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01543, E03310); no directed path between any process of the two tools"
+msisensor2,yte,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01543, E03275); no directed path between any process of the two tools"
+muse,ascat,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02545, E02025); no directed path between any process of the two tools"
+muse,cnvkit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02545, E00660); no directed path between any process of the two tools"
+muse,control-freec,parallel_co_use,0,0,,"both consume TABIX_DBSNP.index (E02576, E02227); no directed path between any process of the two tools"
+muse,deepsomatic,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02545, E02336); no directed path between any process of the two tools"
+muse,deepvariant,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02545, E00705); no directed path between any process of the two tools"
+muse,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02545, E00036); no directed path between any process of the two tools"
+muse,freebayes,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02545, E00788); no directed path between any process of the two tools"
+muse,lofreq,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02545, E01868); no directed path between any process of the two tools"
+muse,manta,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02545, E01015); no directed path between any process of the two tools"
+muse,mosdepth,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02545, E00467); no directed path between any process of the two tools"
+muse,msisensor-pro,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02545, E02503); no directed path between any process of the two tools"
+muse,msisensor2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02545, E01543); no directed path between any process of the two tools"
+muse,strelka,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02545, E01274); no directed path between any process of the two tools"
+muse,tiddit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02545, E01320); no directed path between any process of the two tools"
+muse,yte,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E02545, E03275); no directed path between any process of the two tools"
+parabricks,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00748, E00036); no directed path between any process of the two tools"
+rust-bio-tools,control-freec,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E03343, E02223); no directed path between any process of the two tools"
+rust-bio-tools,findutils,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E03343, E00649); no directed path between any process of the two tools"
+rust-bio-tools,vcftools,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E03343, E03210); no directed path between any process of the two tools"
+sentieon,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01137, E00036); no directed path between any process of the two tools"
+snpeff,control-freec,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E04513, E02223); no directed path between any process of the two tools"
+snpeff,findutils,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E04513, E00649); no directed path between any process of the two tools"
+snpeff,vcftools,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E04513, E03210); no directed path between any process of the two tools"
+snpsift,control-freec,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E04765, E02223); no directed path between any process of the two tools"
+snpsift,findutils,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E04765, E00649); no directed path between any process of the two tools"
+snpsift,vcftools,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E04765, E03210); no directed path between any process of the two tools"
+strelka,ascat,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01306, E02060); no directed path between any process of the two tools"
+strelka,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01306, E00016); no directed path between any process of the two tools"
+strelka,control-freec,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01306, E02226); no directed path between any process of the two tools"
+strelka,deepsomatic,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01306, E02367); no directed path between any process of the two tools"
+strelka,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01306, E00736); no directed path between any process of the two tools"
+strelka,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01274, E00036); no directed path between any process of the two tools"
+strelka,freebayes,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01306, E00819); no directed path between any process of the two tools"
+strelka,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01306, E01255); no directed path between any process of the two tools"
+strelka,goleft,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01306, E01085); no directed path between any process of the two tools"
+strelka,lofreq,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01306, E01899); no directed path between any process of the two tools"
+strelka,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01306, E00500); no directed path between any process of the two tools"
+strelka,msisensor-pro,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E01306, E02536); no directed path between any process of the two tools"
+strelka,msisensor2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01274, E01543); no directed path between any process of the two tools"
+strelka,muse,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01274, E02545); no directed path between any process of the two tools"
+strelka,tiddit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01274, E01320); no directed path between any process of the two tools"
+strelka,yte,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01274, E03275); no directed path between any process of the two tools"
+tiddit,ascat,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01320, E02025); no directed path between any process of the two tools"
+tiddit,cnvkit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01320, E00660); no directed path between any process of the two tools"
+tiddit,deepsomatic,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01320, E02336); no directed path between any process of the two tools"
+tiddit,deepvariant,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01320, E00705); no directed path between any process of the two tools"
+tiddit,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01320, E00036); no directed path between any process of the two tools"
+tiddit,freebayes,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01320, E00788); no directed path between any process of the two tools"
+tiddit,lofreq,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01320, E01868); no directed path between any process of the two tools"
+tiddit,manta,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01320, E01015); no directed path between any process of the two tools"
+tiddit,mosdepth,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01320, E00467); no directed path between any process of the two tools"
+tiddit,msisensor-pro,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01320, E02503); no directed path between any process of the two tools"
+tiddit,msisensor2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01320, E01543); no directed path between any process of the two tools"
+tiddit,muse,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01320, E02545); no directed path between any process of the two tools"
+tiddit,strelka,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01320, E01274); no directed path between any process of the two tools"
+tiddit,yte,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E01320, E03275); no directed path between any process of the two tools"
+varlociraptor,ascat,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E03408, E02060); no directed path between any process of the two tools"
+varlociraptor,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E03408, E00016); no directed path between any process of the two tools"
+varlociraptor,control-freec,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E03408, E02226); no directed path between any process of the two tools"
+varlociraptor,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E03310, E00036); no directed path between any process of the two tools"
+varlociraptor,goleft,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E03408, E01085); no directed path between any process of the two tools"
+varlociraptor,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E03408, E00500); no directed path between any process of the two tools"
+varlociraptor,msisensor-pro,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E03408, E02536); no directed path between any process of the two tools"
+varlociraptor,msisensor2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E03310, E01543); no directed path between any process of the two tools"
+varlociraptor,vcftools,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E03408, E03269); no directed path between any process of the two tools"
+vcftools,ascat,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E03269, E02060); no directed path between any process of the two tools"
+vcftools,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E03269, E00016); no directed path between any process of the two tools"
+vcftools,control-freec,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E03269, E02226); no directed path between any process of the two tools"
+vcftools,ensembl-vep,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E03210, E04637); no directed path between any process of the two tools"
+vcftools,findutils,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E03210, E00649); no directed path between any process of the two tools"
+vcftools,goleft,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E03269, E01085); no directed path between any process of the two tools"
+vcftools,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E03269, E00500); no directed path between any process of the two tools"
+vcftools,msisensor-pro,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E03269, E02536); no directed path between any process of the two tools"
+vcftools,rust-bio-tools,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E03210, E03343); no directed path between any process of the two tools"
+vcftools,snpeff,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E03210, E04513); no directed path between any process of the two tools"
+vcftools,snpsift,parallel_co_use,0,0,,"both consume CREATE_INTERVALS_BED.bed (E03210, E04765); no directed path between any process of the two tools"
+vcftools,varlociraptor,parallel_co_use,0,0,,"both consume SAMTOOLS_FAIDX.fai (E03269, E03408); no directed path between any process of the two tools"
+yte,ascat,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E03275, E02025); no directed path between any process of the two tools"
+yte,cnvkit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E03275, E00660); no directed path between any process of the two tools"
+yte,deepsomatic,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E03275, E02336); no directed path between any process of the two tools"
+yte,deepvariant,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E03275, E00705); no directed path between any process of the two tools"
+yte,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E03275, E00036); no directed path between any process of the two tools"
+yte,freebayes,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E03275, E00788); no directed path between any process of the two tools"
+yte,lofreq,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E03275, E01868); no directed path between any process of the two tools"
+yte,manta,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E03275, E01015); no directed path between any process of the two tools"
+yte,mosdepth,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E03275, E00467); no directed path between any process of the two tools"
+yte,msisensor-pro,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E03275, E02503); no directed path between any process of the two tools"
+yte,msisensor2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E03275, E01543); no directed path between any process of the two tools"
+yte,muse,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E03275, E02545); no directed path between any process of the two tools"
+yte,strelka,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E03275, E01274); no directed path between any process of the two tools"
+yte,tiddit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E03275, E01320); no directed path between any process of the two tools"

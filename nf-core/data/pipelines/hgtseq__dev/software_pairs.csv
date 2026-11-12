@@ -1,0 +1,38 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bamtools,multiqc,data_flow,1,1,E00044,
+bwa,samtools,data_flow,1,1,E00026,
+bwa-mem2,samtools,data_flow,1,1,E00027,
+cutadapt,bwa,data_flow,1,1,E00001,
+cutadapt,bwa-mem2,data_flow,1,1,E00003,
+cutadapt,fastqc,data_flow,1,1,E00005,
+fastqc,multiqc,data_flow,2,2,E00038,
+gawk,krona,data_flow,2,2,E00030,
+kraken2,gawk,data_flow,2,2,E00028,
+kraken2,multiqc,data_flow,2,2,E00045,
+kraken2,ranalysis,data_flow,3,3,E00034,
+parseoutputs,ranalysis,data_flow,1,1,E00036,
+qualimap,multiqc,data_flow,1,1,E00043,
+samtools,bamtools,data_flow,1,1,E00014,
+samtools,multiqc,data_flow,3,3,E00040,
+samtools,qualimap,data_flow,1,1,E00013,
+samtools,samtools_fastq,data_flow,1,1,E00021,
+samtools,samtools_view_single,data_flow,2,2,E00015,
+samtools_fastq,kraken2,data_flow,2,2,E00022,
+samtools_view_single,parseoutputs,data_flow,1,1,E00019,
+samtools_view_single,samtools_fastq,data_flow,1,1,E00020,
+untar,kraken2,data_flow,2,2,E00023,
+untar,krona,data_flow,2,2,E00031,
+bamtools,qualimap,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00014, E00013); no directed path between any process of the two tools"
+bamtools,samtools_view_single,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00014, E00015); no directed path between any process of the two tools"
+bwa,fastqc,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00001, E00005); no directed path between any process of the two tools"
+bwa-mem2,fastqc,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00003, E00005); no directed path between any process of the two tools"
+fastqc,bwa,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00005, E00001); no directed path between any process of the two tools"
+fastqc,bwa-mem2,parallel_co_use,0,0,,"both consume TRIMGALORE.reads (E00005, E00003); no directed path between any process of the two tools"
+gawk,ranalysis,parallel_co_use,0,0,,"both consume KRAKEN2_BOTH.classified_reads_assignment (E00029, E00035); no directed path between any process of the two tools"
+parseoutputs,samtools_fastq,parallel_co_use,0,0,,"both consume SAMTOOLS_VIEW_SINGLE.bam (E00019, E00020); no directed path between any process of the two tools"
+qualimap,bamtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00013, E00014); no directed path between any process of the two tools"
+qualimap,samtools_view_single,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00013, E00015); no directed path between any process of the two tools"
+ranalysis,gawk,parallel_co_use,0,0,,"both consume KRAKEN2_BOTH.classified_reads_assignment (E00035, E00029); no directed path between any process of the two tools"
+samtools_fastq,parseoutputs,parallel_co_use,0,0,,"both consume SAMTOOLS_VIEW_SINGLE.bam (E00020, E00019); no directed path between any process of the two tools"
+samtools_view_single,bamtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00015, E00014); no directed path between any process of the two tools"
+samtools_view_single,qualimap,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00015, E00013); no directed path between any process of the two tools"

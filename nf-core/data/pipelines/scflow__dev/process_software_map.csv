@@ -1,0 +1,16 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+SCFLOW:SCFLOW_CHECKINPUTS,SCFLOW_CHECKINPUTS,modules/local/process/scflow/checkinputs.nf,11,scflow_checkinputs,,,module name
+SCFLOW:SCFLOW_QC,SCFLOW_QC,modules/local/process/scflow/qc.nf,10,scflow_qc,,,module name
+SCFLOW:SCFLOW_MERGEQCTABLES,SCFLOW_MERGEQCTABLES,modules/local/process/scflow/mergeqctables.nf,10,scflow_mergeqctables,,,module name
+SCFLOW:SCFLOW_MERGE,SCFLOW_MERGE,modules/local/process/scflow/merge.nf,10,scflow_merge,,,module name
+SCFLOW:SCFLOW_INTEGRATE,SCFLOW_INTEGRATE,modules/local/process/scflow/integrate.nf,10,scflow_integrate,,,module name
+SCFLOW:SCFLOW_REDUCEDIMS,SCFLOW_REDUCEDIMS,modules/local/process/scflow/reducedims.nf,10,scflow_reducedims,,,module name
+SCFLOW:SCFLOW_CLUSTER,SCFLOW_CLUSTER,modules/local/process/scflow/cluster.nf,10,scflow_cluster,,,module name
+SCFLOW:SCFLOW_REPORTINTEGRATED,SCFLOW_REPORTINTEGRATED,modules/local/process/scflow/reportintegrated.nf,10,scflow_reportintegrated,,,module name
+SCFLOW:SCFLOW_MAPCELLTYPES,SCFLOW_MAPCELLTYPES,modules/local/process/scflow/mapcelltypes.nf,10,scflow_mapcelltypes,,,module name
+SCFLOW:SCFLOW_FINALIZE,SCFLOW_FINALIZE,modules/local/process/scflow/finalize.nf,10,scflow_finalize,,,module name
+SCFLOW:SCFLOW_DGE,SCFLOW_DGE,modules/local/process/scflow/dge.nf,10,scflow_dge,,,module name
+SCFLOW:SCFLOW_IPA,SCFLOW_IPA,modules/local/process/scflow/ipa.nf,10,scflow_ipa,,,module name
+SCFLOW:SCFLOW_DIRICHLET,SCFLOW_DIRICHLET,modules/local/process/scflow/dirichlet.nf,10,scflow_dirichlet,,,module name
+SCFLOW:SCFLOW_PLOTREDDIMGENES,SCFLOW_PLOTREDDIMGENES,modules/local/process/scflow/plotreddimgenes.nf,10,scflow_plotreddimgenes,,,module name
+SCFLOW:GET_SOFTWARE_VERSIONS,GET_SOFTWARE_VERSIONS,modules/local/get_software_versions.nf,5,get_software_versions,,,module name

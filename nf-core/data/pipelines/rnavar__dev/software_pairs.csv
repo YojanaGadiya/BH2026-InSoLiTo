@@ -1,0 +1,75 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+cat,fastqc,data_flow,1,1,E00014,
+cat,samtools,data_flow,1,1,E00023,
+cat,seq2hla,data_flow,1,1,E00021,
+cat,umi_tools,data_flow,1,1,E00015,
+ensembl-vep,multiqc,data_flow,2,2,E00208,
+fastqc,multiqc,data_flow,2,2,E00162,
+gatk4,bcftools,data_flow,2,2,E00139,
+gatk4,ensembl-vep,data_flow,2,2,E00151,
+gatk4,multiqc,data_flow,1,1,E00181,
+gatk4,remove_unknown_regions,data_flow,1,1,E00006,
+gatk4,riker,data_flow,1,1,E00103,
+gatk4,samtools,data_flow,5,5,E00073,
+gatk4,snpeff,data_flow,2,2,E00143,
+gatk4,xz,data_flow,2,2,E00129,
+gffread,gtf2bed,data_flow,1,1,E00004,
+gffread,riker,data_flow,1,1,E00108,
+gffread,samtools,data_flow,2,2,E00012,
+gtf2bed,gatk4,data_flow,1,1,E00017,
+gtf2bed,remove_unknown_regions,data_flow,1,1,E00005,
+gtf2bed,riker,data_flow,1,1,E00110,
+gunzip,ensembl-vep,data_flow,2,2,E00150,
+gunzip,gatk4,data_flow,7,7,E00001,
+gunzip,gffread,data_flow,1,1,E00002,
+gunzip,gtf2bed,data_flow,1,1,E00003,
+gunzip,mosdepth,data_flow,1,1,E00013,
+gunzip,picard,data_flow,1,1,E00050,
+gunzip,riker,data_flow,2,2,E00107,
+gunzip,samtools,data_flow,9,9,E00007,
+mosdepth,multiqc,data_flow,7,7,E00155,
+picard,gatk4,data_flow,1,1,E00065,
+picard,multiqc,data_flow,1,1,E00177,
+picard,samtools,data_flow,8,8,E00052,
+remove_unknown_regions,gatk4,data_flow,1,1,E00016,
+remove_unknown_regions,riker,data_flow,1,1,E00109,
+riker,multiqc,data_flow,20,20,E00185,
+samtools,gatk4,data_flow,15,15,E00066,
+samtools,multiqc,data_flow,18,18,E00165,
+samtools,picard,data_flow,2,2,E00049,
+samtools,riker,data_flow,4,4,E00104,
+snpeff,multiqc,data_flow,3,3,E00205,
+snpeff,xz,data_flow,1,1,E00146,
+umi_tools,multiqc,data_flow,1,1,E00164,
+umi_tools,samtools,data_flow,1,1,E00022,
+umi_tools,seq2hla,data_flow,1,1,E00020,
+untar,samtools,data_flow,2,2,E00008,
+xz,bcftools,data_flow,2,2,E00141,
+xz,ensembl-vep,data_flow,2,2,E00147,
+xz,gatk4,data_flow,7,7,E00083,
+bcftools,ensembl-vep,parallel_co_use,0,0,,"both consume GATK4_MERGEVCFS.vcf (E00140, E00152); no directed path between any process of the two tools"
+bcftools,snpeff,parallel_co_use,0,0,,"both consume GATK4_MERGEVCFS.vcf (E00140, E00144); no directed path between any process of the two tools"
+ensembl-vep,bcftools,parallel_co_use,0,0,,"both consume GATK4_MERGEVCFS.vcf (E00152, E00140); no directed path between any process of the two tools"
+ensembl-vep,mosdepth,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00154, E00013); no directed path between any process of the two tools"
+ensembl-vep,riker,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00154, E00111); no directed path between any process of the two tools"
+fastqc,samtools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00014, E00023); no directed path between any process of the two tools"
+fastqc,seq2hla,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00014, E00021); no directed path between any process of the two tools"
+fastqc,umi_tools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00014, E00015); no directed path between any process of the two tools"
+gatk4,mosdepth,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00001, E00013); no directed path between any process of the two tools"
+gffread,mosdepth,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00002, E00013); no directed path between any process of the two tools"
+mosdepth,ensembl-vep,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00013, E00154); no directed path between any process of the two tools"
+mosdepth,gatk4,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00013, E00001); no directed path between any process of the two tools"
+mosdepth,gffread,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00013, E00002); no directed path between any process of the two tools"
+mosdepth,picard,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00013, E00050); no directed path between any process of the two tools"
+mosdepth,riker,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00013, E00111); no directed path between any process of the two tools"
+mosdepth,samtools,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00013, E00007); no directed path between any process of the two tools"
+picard,mosdepth,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00050, E00013); no directed path between any process of the two tools"
+riker,ensembl-vep,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00111, E00154); no directed path between any process of the two tools"
+riker,mosdepth,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00111, E00013); no directed path between any process of the two tools"
+samtools,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00023, E00014); no directed path between any process of the two tools"
+samtools,mosdepth,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00007, E00013); no directed path between any process of the two tools"
+samtools,seq2hla,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00023, E00021); no directed path between any process of the two tools"
+seq2hla,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00021, E00014); no directed path between any process of the two tools"
+seq2hla,samtools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00021, E00023); no directed path between any process of the two tools"
+snpeff,bcftools,parallel_co_use,0,0,,"both consume GATK4_MERGEVCFS.vcf (E00144, E00140); no directed path between any process of the two tools"
+umi_tools,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00015, E00014); no directed path between any process of the two tools"

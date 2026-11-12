@@ -1,0 +1,51 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bamtobed,danpos,data_flow,2,2,E00025,
+bwa,samtools,data_flow,1,1,E00007,
+check_design,bwa,data_flow,1,1,E00005,
+check_design,fastqc,data_flow,1,1,E00002,
+check_design,trim_galore,data_flow,1,1,E00003,
+complementbed,danpos,data_flow,2,2,E00026,
+complementbed,genomecoveragebed,data_flow,2,2,E00020,
+complementbed,samtools,data_flow,1,1,E00010,
+danpos,igv_files_to_session,data_flow,2,2,E00042,
+danpos,plotprofile,data_flow,2,2,E00027,
+fastqc,multiqc,data_flow,2,2,E00045,
+genomecoveragebed,igv_files_to_session,data_flow,2,2,E00041,
+gtf2bed,maketssbed,data_flow,1,1,E00001,
+gtf2bed,plotprofile,data_flow,2,2,E00028,
+picard,multiqc,data_flow,2,2,E00056,
+plotfingerprint,multiqc,data_flow,1,1,E00059,
+plotprofile,multiqc,data_flow,2,2,E00060,
+preseq,multiqc,data_flow,1,1,E00058,
+samtools,bamtobed,data_flow,4,4,E00023,
+samtools,genomecoveragebed,data_flow,6,6,E00016,
+samtools,multiqc,data_flow,10,10,E00049,
+samtools,picard,data_flow,3,3,E00013,
+samtools,plotfingerprint,data_flow,2,2,E00021,
+samtools,preseq,data_flow,1,1,E00012,
+trim_galore,bwa,data_flow,1,1,E00004,
+trim_galore,multiqc,data_flow,2,2,E00047,
+bamtobed,genomecoveragebed,parallel_co_use,0,0,,"both consume MergedLibBAMFilter.ch_mlib_filter_bam (E00024, E00017); no directed path between any process of the two tools"
+bamtobed,picard,parallel_co_use,0,0,,"both consume MergedLibBAMFilter.ch_mlib_filter_bam (E00024, E00015); no directed path between any process of the two tools"
+bamtobed,plotfingerprint,parallel_co_use,0,0,,"both consume MergedLibBAMFilter.ch_mlib_filter_bam (E00024, E00022); no directed path between any process of the two tools"
+bwa,fastqc,parallel_co_use,0,0,,"both consume CheckDesign.ch_design_reads_csv (E00005, E00002); no directed path between any process of the two tools"
+danpos,genomecoveragebed,parallel_co_use,0,0,,"both consume MakeGenomeFilter.ch_genome_sizes_mlib_bigwig (E00026, E00020); no directed path between any process of the two tools"
+fastqc,bwa,parallel_co_use,0,0,,"both consume CheckDesign.ch_design_reads_csv (E00002, E00005); no directed path between any process of the two tools"
+fastqc,trim_galore,parallel_co_use,0,0,,"both consume CheckDesign.ch_design_reads_csv (E00002, E00003); no directed path between any process of the two tools"
+genomecoveragebed,bamtobed,parallel_co_use,0,0,,"both consume MergedLibBAMFilter.ch_mlib_filter_bam (E00017, E00024); no directed path between any process of the two tools"
+genomecoveragebed,danpos,parallel_co_use,0,0,,"both consume MakeGenomeFilter.ch_genome_sizes_mlib_bigwig (E00020, E00026); no directed path between any process of the two tools"
+genomecoveragebed,multiqc,parallel_co_use,0,0,,"both consume MergedLibBAMFilter.ch_mlib_filter_bam_flagstat (E00019, E00052); no directed path between any process of the two tools"
+genomecoveragebed,picard,parallel_co_use,0,0,,"both consume MergedLibBAMFilter.ch_mlib_filter_bam (E00017, E00015); no directed path between any process of the two tools"
+genomecoveragebed,plotfingerprint,parallel_co_use,0,0,,"both consume MergedLibBAMFilter.ch_mlib_filter_bam (E00017, E00022); no directed path between any process of the two tools"
+maketssbed,plotprofile,parallel_co_use,0,0,,"both consume MakeGeneBED.ch_gene_bed (E00001, E00028); no directed path between any process of the two tools"
+multiqc,genomecoveragebed,parallel_co_use,0,0,,"both consume MergedLibBAMFilter.ch_mlib_filter_bam_flagstat (E00052, E00019); no directed path between any process of the two tools"
+picard,bamtobed,parallel_co_use,0,0,,"both consume MergedLibBAMFilter.ch_mlib_filter_bam (E00015, E00024); no directed path between any process of the two tools"
+picard,genomecoveragebed,parallel_co_use,0,0,,"both consume MergedLibBAMFilter.ch_mlib_filter_bam (E00015, E00017); no directed path between any process of the two tools"
+picard,plotfingerprint,parallel_co_use,0,0,,"both consume MergedLibBAMFilter.ch_mlib_filter_bam (E00015, E00022); no directed path between any process of the two tools"
+picard,preseq,parallel_co_use,0,0,,"both consume MergedLibBAM.ch_mlib_bam_filter (E00013, E00012); no directed path between any process of the two tools"
+plotfingerprint,bamtobed,parallel_co_use,0,0,,"both consume MergedLibBAMFilter.ch_mlib_filter_bam (E00022, E00024); no directed path between any process of the two tools"
+plotfingerprint,genomecoveragebed,parallel_co_use,0,0,,"both consume MergedLibBAMFilter.ch_mlib_filter_bam (E00022, E00017); no directed path between any process of the two tools"
+plotfingerprint,picard,parallel_co_use,0,0,,"both consume MergedLibBAMFilter.ch_mlib_filter_bam (E00022, E00015); no directed path between any process of the two tools"
+plotprofile,maketssbed,parallel_co_use,0,0,,"both consume MakeGeneBED.ch_gene_bed (E00028, E00001); no directed path between any process of the two tools"
+preseq,picard,parallel_co_use,0,0,,"both consume MergedLibBAM.ch_mlib_bam_filter (E00012, E00013); no directed path between any process of the two tools"
+trim_galore,fastqc,parallel_co_use,0,0,,"both consume CheckDesign.ch_design_reads_csv (E00003, E00002); no directed path between any process of the two tools"

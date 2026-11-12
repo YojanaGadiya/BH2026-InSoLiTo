@@ -1,0 +1,26 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+sdrf_parsing,sdrf_parsing,main.nf,137,parse_sdrf,,parse_sdrf,script and directives
+expdesign_raw2mzml,expdesign_raw2mzml,main.nf,215,expdesign_raw2mzml,,,module name
+get_software_versions,get_software_versions,main.nf,286,thermorawfileparser,,thermorawfileparser;percolator;scrape_software_versions,script and directives
+raw_file_conversion,raw_file_conversion,main.nf,358,thermorawfileparser,,thermorawfileparser,script and directives
+mzml_indexing,mzml_indexing,main.nf,384,fileconverter,,fileconverter,script and directives
+generate_decoy_database,generate_decoy_database,main.nf,423,decoydatabase,,decoydatabase,script and directives
+openms_peakpicker,openms_peakpicker,main.nf,473,peakpickerhires,,peakpickerhires,script and directives
+search_engine_msgf,search_engine_msgf,main.nf,504,msgfplusadapter,,msgfplusadapter,script and directives
+search_engine_comet,search_engine_comet,main.nf,576,cometadapter,,cometadapter,script and directives
+index_peptides,index_peptides,main.nf,679,peptideindexer,,peptideindexer,script and directives
+extract_percolator_features,extract_percolator_features,main.nf,734,psmfeatureextractor,,psmfeatureextractor,script and directives
+percolator,percolator,main.nf,763,percolatoradapter,,percolatoradapter,script and directives
+fdr_idpep,fdr_idpep,main.nf,815,falsediscoveryrate,,falsediscoveryrate,script and directives
+idpep,idpep,main.nf,845,idposteriorerrorprobability,,idposteriorerrorprobability,script and directives
+idscoreswitcher_to_qval,idscoreswitcher_to_qval,main.nf,877,idscoreswitcher,,idscoreswitcher,script and directives
+consensusid,consensusid,main.nf,907,consensusid,,consensusid,script and directives
+fdr_consensusid,fdr_consensusid,main.nf,941,falsediscoveryrate,,falsediscoveryrate,script and directives
+idfilter,idfilter,main.nf,972,idfilter,,idfilter,script and directives
+idscoreswitcher_for_luciphor,idscoreswitcher_for_luciphor,main.nf,1002,idscoreswitcher,,idscoreswitcher,script and directives
+luciphor,luciphor,main.nf,1033,luciphoradapter,,luciphoradapter,script and directives
+proteomicslfq,proteomicslfq,main.nf,1084,proteomicslfq,,proteomicslfq,script and directives
+msstats,msstats,main.nf,1144,msstats_plfq,,msstats_plfq,script and directives
+ptxqc,ptxqc,main.nf,1185,ptxqc,,ptxqc,script and directives
+pmultiqc,pmultiqc,main.nf,1218,multiqc,,multiqc;proteomicslfq,script and directives
+output_documentation,output_documentation,main.nf,1250,markdown_to_html,,markdown_to_html,script and directives
