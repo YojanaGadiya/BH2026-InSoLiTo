@@ -33,20 +33,24 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-HERE = Path(__file__).resolve().parent
-DATA = HERE / "data"
+
+HERE = Path(__file__).resolve().parent         # workflows/scripts/galaxy
+ROOT = HERE.parents[2]                         # repository root
+DATA = ROOT / "workflows" / "data"
+BIOTOOLS_SRC = ROOT / "directed-graph" / "biotools" / "data"   # bio.tools publications and dump
+
 TOOLS_FILE = DATA / "galaxy" / "galaxy_tools.csv"
 PAIRS_IN = DATA / "galaxy" / "galaxy_pairs.csv"
-MAPPING = DATA / "mapping"           # lookup table and the mapping
-CODEX_FILE = MAPPING / "galaxy/galaxy_codex_tools.tsv"
+MAPPING = DATA / "mapping" / "galaxy"          # lookup table and the mapping
+CODEX_FILE = MAPPING / "galaxy_codex_tools.tsv"
 OUT_FILE = MAPPING / "galaxy_tool_map.csv"
-BIOTOOLS_DIR = DATA / "biotools"     # translated pairs, edges and nodes
+BIOTOOLS_DIR = DATA / "biotools" / "galaxy"    # translated pairs, edges and nodes
 PAIRS_OUT = BIOTOOLS_DIR / "biotools_pairs.csv"
 EDGES_OUT = BIOTOOLS_DIR / "biotools_edges.csv"
 NODES_OUT = BIOTOOLS_DIR / "biotools_nodes.csv"
-BIOTOOLS_PUBS = HERE.parent / "biotools" / "data" / "biotools_publications.csv"
+BIOTOOLS_PUBS = BIOTOOLS_SRC / "biotools_publications.csv"
 # Vedran's full bio.tools dump, under any name starting with biotools_raw (e.g. biotools_raw_14-10-2026.jsonl)
-BIOTOOLS_RAW = next(iter(sorted((HERE.parent / "biotools" / "data").glob("biotools_raw*.jsonl"))), None)
+BIOTOOLS_RAW = next(iter(sorted(BIOTOOLS_SRC.glob("biotools_raw*.jsonl"))), None)
 
 
 # Generic words that are also bio.tools IDs: never use them for prefix matching
