@@ -3,21 +3,36 @@ DB/raw_data/
 .venv/
 .vscode/
 .env
+
 DB/PLUGINS/*
 DB/PLUGINS/apoc-4.4.0.3-all.jar
 DB/PLUGINS/neo4j-graph-data-science-1.8.3.jar
 DB/InSoLiToImport.zip
 DB/InSoLiToSupportFiles.zip
-directed-graph/europepmc/data/
-directed-graph/citation-order/data/
-directed-graph/workflowhub/data/biotools/nextflow/workflows
-directed-graph/workflowhub/data/galaxy/download
-directed-graph/workflowhub/data/nextflow/
+
 directed-graph/biotools/data/*.jsonl
 directed-graph/edges-processed/
 directed-graph/biotools/data/*.parquet
 directed-graph/edges_processed
+directed-graph/europepmc/data/
+directed-graph/citation-order/data/
+
+workflows/data/biotools/nextflow/workflows
+workflows/data/galaxy/download
+workflows/data/nextflow/
+
+# the bio.tools dump is a public input (about 100 MB): download it, do not commit it
+workflows/data/nf-core/biotools_raw*.jsonl
+# only for checking the ID matching
+workflows/data/nf-core/biotools_match_report.csv
+workflows/data/nf-core/biotools_match_summary.csv
+workflows/data/nf-core/biotools_cache.json
+workflows/data/nf-core/tool_identifiers.before_jsonl.csv
+# per-pipeline logs
+workflows/data/nf-core/pipelines/*/pairs.log
+
 **.log
 **.python-version
 __pycache__/
 .DS_Store
+workflows/data/nf-core/download/nfcore_pipelines_catalogue.json
