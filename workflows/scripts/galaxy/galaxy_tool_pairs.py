@@ -1,10 +1,10 @@
 """
 Extract tool order in the Galaxy workflows downloaded by download_workflowhub.py.
 
-Reads data/download/workflows.csv and the .ga files in data/download/ga/, and writes:
-  - data/galaxy/galaxy_pairs.csv  one row per workflow and tool pair: tool A feeds tool B
-  - data/galaxy/galaxy_edges.csv  one row per tool pair, summed over workflows
-  - data/galaxy/galaxy_tools.csv  one row per tool, and how many workflows use it
+Reads workflows/data/galaxy/download/workflows.csv and the .ga files in workflows/data/galaxy/download/ga/, and writes:
+  - workflows/data/galaxy/galaxy_pairs.csv  one row per workflow and tool pair: tool A feeds tool B
+  - workflows/data/galaxy/galaxy_edges.csv  one row per tool pair, summed over workflows
+  - workflows/data/galaxy/galaxy_tools.csv  one row per tool, and how many workflows use it
 
 Tools are named by their ToolShed repository (e.g. "megahit"), not yet by bio.tools ID.
 Steps that are not real tools (inputs, Galaxy built-ins such as __APPLY_RULES__, and the
@@ -15,7 +15,7 @@ Subworkflows are read as separate graphs: pairs inside them are kept, but pairs 
 the subworkflow boundary are not (yet).
 
 Usage (from repo root, after download_workflowhub.py):
-    .venv/bin/python directed-graph/workflowhub/galaxy_tool_pairs.py
+    .venv/bin/python workflows/scripts/galaxy/galaxy_tool_pairs.py
 """
 import csv
 import json
@@ -23,10 +23,10 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-DATA_DIR = Path(__file__).resolve().parent / "data"
+DATA_DIR = Path(__file__).resolve().parent / ".." / ".." / "data" / "galaxy"
 WORKFLOWS_FILE = DATA_DIR / "download" / "workflows.csv"
 GA_DIR = DATA_DIR / "download" / "ga"
-OUT_DIR = DATA_DIR / "galaxy"
+OUT_DIR = DATA_DIR
 PAIRS_FILE = OUT_DIR / "galaxy_pairs.csv"
 EDGES_FILE = OUT_DIR / "galaxy_edges.csv"
 TOOLS_FILE = OUT_DIR / "galaxy_tools.csv"

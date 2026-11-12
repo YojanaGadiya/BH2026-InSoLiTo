@@ -17,9 +17,9 @@ Runs can be stopped and restarted: files already on disk are not downloaded agai
 Reading public workflows needs no account or token.
 
 Usage (from the repository root):
-    .venv/bin/python directed-graph/workflowhub/download_workflowhub.py --limit 5   # test on 5 workflows
-    .venv/bin/python directed-graph/workflowhub/download_workflowhub.py             # everything
-    .venv/bin/python directed-graph/workflowhub/download_workflowhub.py --summary-only
+    .venv/bin/python workflows/scripts/galaxy/download_workflowhub_galaxy.py --limit 5   # test on 5 workflows
+    .venv/bin/python workflows/scripts/galaxy/download_workflowhub_galaxy.py             # everything
+    .venv/bin/python workflows/scripts/galaxy/download_workflowhub_galaxy.py --summary-only
 """
 import argparse
 import csv
@@ -32,7 +32,7 @@ import zipfile
 from pathlib import Path
 
 BASE = "https://workflowhub.org"
-DATA_DIR = Path(__file__).resolve().parent / "data" / "download"
+DATA_DIR = Path(__file__).resolve().parent / ".." / ".." / "data" / "galaxy" / "download"
 INDEX_FILE = DATA_DIR / "index.json"
 META_DIR = DATA_DIR / "meta"
 CRATE_DIR = DATA_DIR / "crates"
