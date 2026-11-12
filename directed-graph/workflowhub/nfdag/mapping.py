@@ -35,6 +35,16 @@ Action = Literal["map", "drop", "unmapped"]
 SCRIPT_SUFFIXES: Final = (".py", ".sh", ".pl", ".r", ".exe", ".jar")
 CURATED_FIELDS: Final = ("tool", "action", "biotoolsID", "note")
 GROUP_PREFIXES: Final = ("bioconductor-", "r-", "python-", "py-", "perl-")
+# confidence of a mapping method: 1 = best, 3 = worst (a pair has the worse level of its two tools)
+CONFIDENCE: Final = {
+    "curated": 1,
+    "meta": 1,
+    "biotools_id": 2,
+    "biotools_name": 2,
+    "biotools_url": 2,
+    "codex": 2,
+    "prefix": 3,
+}
 MIN_URL_NAME: Final = 3  # shorter package / repository names are not matched (`s`, `t`)
 # package or repository name in a URL of a bio.tools entry
 URL_NAME: Final = re.compile(
@@ -271,6 +281,13 @@ class BiotoolsPair:
     kind: str  # dag | chain (inside one process, or a curated chain) | bridged (through dropped tools)
     source_node: str
     target_node: str
+    source_confidence: int  # CONFIDENCE of the source tool node's mapping
+    target_confidence: int
+
+    @property
+    def confidence(self) -> int:
+        """A pair is as good as its worse tool."""
+        return max(self.source_confidence, self.target_confidence)
 
 
 def translate(mapped: dict[str, ToolMap], edges: list[tuple[str, str, str]]) -> tuple[list[BiotoolsPair], int]:
@@ -298,9 +315,10 @@ def translate(mapped: dict[str, ToolMap], edges: list[tuple[str, str, str]]) -> 
         if m.action != "map":
             continue
         for a, b in itertools.pairwise(m.ids):
-            pairs.append(BiotoolsPair(a, b, "chain", node, node))
+            pairs.append(BiotoolsPair(a, b, "chain", node, node, CONFIDENCE[m.method], CONFIDENCE[m.method]))
         for nxt, kind in reached(node):
-            pairs.append(BiotoolsPair(m.ids[-1], mapped[nxt].ids[0], kind, node, nxt))
+            levels = CONFIDENCE[m.method], CONFIDENCE[mapped[nxt].method]
+            pairs.append(BiotoolsPair(m.ids[-1], mapped[nxt].ids[0], kind, node, nxt, *levels))
     lost = sum(1 for a, b, _ in edges if "unmapped" in (mapped[a].action, mapped[b].action))
     # like Galaxy: samtools_view -> samtools_sort is no edge, both are the same bio.tools node
     return [p for p in pairs if p.source != p.target], lost
