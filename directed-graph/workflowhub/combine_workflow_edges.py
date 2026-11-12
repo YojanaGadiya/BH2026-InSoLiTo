@@ -25,7 +25,7 @@ DATA = Path(__file__).resolve().parent / "data/biotools"
 edge_filename = "biotools_edges.csv"
 INPUTS = {
     "galaxy": DATA / "galaxy" / edge_filename,
-    "nextflow": DATA / "nextflow" / edge_filename,
+    "nextflow": DATA / "nextflow" / "biotools_edges_without_nfcore.csv",
     "nfcore": DATA / "nf-core" / edge_filename,
 }
 CITATIONS = Path(__file__).resolve().parent.parent / "edges-processed" / "directed_edges.csv"
