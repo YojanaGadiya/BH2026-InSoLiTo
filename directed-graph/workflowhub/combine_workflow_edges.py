@@ -28,7 +28,7 @@ INPUTS = {
     "nextflow": DATA / "nextflow" / edge_filename,
     "nfcore": DATA / "nf-core" / edge_filename,
 }
-CITATIONS = Path(__file__).resolve().parent.parent / "edges-processed" / "directed_edges 2.csv"
+CITATIONS = Path(__file__).resolve().parent.parent / "edges-processed" / "directed_edges.csv"
 OUT_FILE = DATA / "combined" / "combined_edges.csv"
 
 MAX_CONFIDENCE = 3  # only for galaxy: 1 = codex mapping only, 2 = codex + name match, 3 = all
