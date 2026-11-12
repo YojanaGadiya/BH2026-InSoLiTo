@@ -131,6 +131,25 @@
         <p class="graph-sidebar-filter-value">{{ occurrenceValue }}</p>
       </div>
 
+      <div class="graph-sidebar-filter">
+        <h4
+          class="graph-sidebar-filter-subtitle"
+          title="Articles in which both tools are cited in order (both directions added up). Only pairs above this number get an arrow."
+        >
+          Minimum articles (direction)
+        </h4>
+        <GraphRangeSlider
+          v-model="directedValue"
+          :min="DIRECTED_DOMAIN_MIN"
+          :max="DIRECTED_DOMAIN_MAX"
+          :to-percent="directedToPercent"
+          :from-percent="directedPercentToValue"
+          :disabled="uiStore.busy"
+          @change="onDirectedChange"
+        />
+        <p class="graph-sidebar-filter-value">{{ directedValue }}</p>
+      </div>
+
       <div v-if="toolTypeEntries.length" class="graph-sidebar-filter">
         <h4 class="graph-sidebar-filter-subtitle">Tool type</h4>
         <div class="graph-sidebar-tooltype-list">
@@ -246,7 +265,8 @@ const filtersStale = computed(() => {
     if (!lastAppliedFilters.value) return false
     return lastAppliedFilters.value.yearMin !== yearRange.value[0] ||
         lastAppliedFilters.value.yearMax !== yearRange.value[1] ||
-        lastAppliedFilters.value.occurrenceMin !== occurrenceValue.value
+        lastAppliedFilters.value.occurrenceMin !== occurrenceValue.value ||
+        lastAppliedFilters.value.directedMinArticles !== directedValue.value
 })
 
 // Fixed order (not alphabetical by kind) so the groups don't reshuffle as you add/remove terms.
@@ -352,15 +372,17 @@ async function rebuildGraph () {
         const nodeIds = [...new Set(results.flatMap((result) => result.nodes
             .filter((node) => node.type !== 'Publication')
             .map((node) => node.id)))]
-        const directedEdges = await useNeo4jSearch().fetchDirectedEdges(nodeIds)
+        const directedEdges = await useNeo4jSearch().fetchDirectedEdges(nodeIds, filterStore.directedMinArticles)
+        const workflowEdges = await useNeo4jSearch().fetchWorkflowEdges(nodeIds)
         uiStore.setRebuildPhase('building')
         graphStore.clearResults()
         results.forEach(({ nodes, edges, entryPointId }) => graphStore.addToGraph(nodes, edges, entryPointId))
         graphStore.addToGraph([], directedEdges)
+        graphStore.addToGraph([], workflowEdges)
         emptyResultTerms.value = graphStore.searchTerms
             .filter((_, index) => results[index].nodes.length === 0)
             .map((term) => term.name)
-        lastAppliedFilters.value = { yearMin: yearRange.value[0], yearMax: yearRange.value[1], occurrenceMin: occurrenceValue.value }
+        lastAppliedFilters.value = { yearMin: yearRange.value[0], yearMax: yearRange.value[1], occurrenceMin: occurrenceValue.value, directedMinArticles: directedValue.value }
         // rebuilding stays true here on purpose — Screen.vue clears it once GraphNetwork's
         // relayout for this new data actually finishes (see onNetworkReady), not right after
         // the fetch, so the sidebar doesn't re-enable while the layout is still computing.
@@ -388,6 +410,8 @@ async function resetFilters () {
     yearRange.value = [yearDomainMin, yearDomainMax]
     occurrenceValue.value = OCCURRENCE_DEFAULT
     filterStore.setFilters(null, null, OCCURRENCE_DEFAULT)
+    directedValue.value = DIRECTED_DEFAULT
+    filterStore.setDirectedMinArticles(DIRECTED_DEFAULT)
     await rebuildGraph()
 }
 
@@ -484,6 +508,25 @@ const occurrenceValue = ref(OCCURRENCE_DEFAULT)
 function onOccurrenceChange () {
     const [min, max] = yearFilterValue(yearRange.value)
     filterStore.setFilters(min, max, occurrenceValue.value)
+}
+
+// Minimum articles (direction): articles in which both tools are cited in order,
+// both directions added up. Controls which arrows are drawn. Log scale, like the
+// co-citation slider: most pairs have few articles, a handful have thousands
+// (bwa -> samtools ~7,400). No histogram yet (no static distribution file for
+// directed edges). Default 30: where the agreement with registered workflows starts
+// to be meaningful. Must match filter.js.
+const DIRECTED_DOMAIN_MIN = 2
+const DIRECTED_DOMAIN_MAX = 10000
+const DIRECTED_DEFAULT = 30
+const directedLogMin = Math.log(DIRECTED_DOMAIN_MIN)
+const directedLogMax = Math.log(DIRECTED_DOMAIN_MAX)
+const directedToPercent = (value) => ((Math.log(value) - directedLogMin) / (directedLogMax - directedLogMin)) * 100
+const directedPercentToValue = (percent) => Math.round(Math.exp(directedLogMin + (percent / 100) * (directedLogMax - directedLogMin)))
+const directedValue = ref(DIRECTED_DEFAULT)
+
+function onDirectedChange () {
+    filterStore.setDirectedMinArticles(directedValue.value)
 }
 
 // Tool/Database only, and only the types actually present in the graph currently
@@ -634,6 +677,9 @@ async function restoreFromMetadata ({ searchTerms: terms, filters, layers }) {
     yearRange.value = filters.yearMin != null && filters.yearMax != null ? [filters.yearMin, filters.yearMax] : [yearDomainMin, yearDomainMax]
     occurrenceValue.value = filters.occurrenceMin ?? OCCURRENCE_DEFAULT
     filterStore.setFilters(filters.yearMin ?? null, filters.yearMax ?? null, filters.occurrenceMin ?? OCCURRENCE_DEFAULT)
+    // Not saved in exports/share links yet: a restore uses the default.
+    directedValue.value = DIRECTED_DEFAULT
+    filterStore.setDirectedMinArticles(DIRECTED_DEFAULT)
     // A full replacement, not a merge with whatever was hidden before the import —
     // same reasoning as the graph itself only ever being replaced by a successful
     // import, never merged (see the comment on the "every term unknown" bail-out
@@ -714,6 +760,7 @@ async function onImportConfirmed () {
 function onReset () {
     yearRange.value = [yearDomainMin, yearDomainMax]
     occurrenceValue.value = OCCURRENCE_DEFAULT
+    directedValue.value = DIRECTED_DEFAULT
     searchTerm.value = ''
     searchError.value = ''
     uiStore.setConnectionError('')

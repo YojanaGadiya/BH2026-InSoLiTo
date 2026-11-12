@@ -107,8 +107,8 @@
       </li>
     </ul>
 
-    <!-- Edge layers, shown in both color modes. With both on, a co-citation line
-         that has an arrow between the same nodes is hidden under it (Network.vue). -->
+    <!-- Edge layers, shown in both color modes. Between the same two nodes they are
+         drawn side by side, none hides another (Network.vue). -->
     <template v-if="uiStore.legendOpen">
       <p class="legend-section-title">Edges</p>
       <ul class="legend-list">
@@ -148,7 +148,8 @@ const TYPE_ENTRIES = [
 
 const EDGE_ENTRIES = [
     { value: 'cocitation', label: 'Co-citation', title: 'Both tools are cited together in the reference lists of articles' },
-    { value: 'direction', label: 'Direction', title: 'Order in which both tools are cited in the Methods of articles. Filled arrowhead = more common direction' }
+    { value: 'direction', label: 'Citation order', title: 'One tool is cited right after the other in articles. Wider arrow = more common direction' },
+    { value: 'workflow', label: 'Registered workflows', title: 'One tool runs right after the other in registered workflows (WorkflowHub: Galaxy, Nextflow, nf-core). Wider arrow = more common direction' }
 ]
 
 // Colors come from clusterPalette's buildClusterColorMap (same helper Network.vue uses)
@@ -408,13 +409,18 @@ const topicEntries = computed(() => {
 }
 
 .legend-toggle-cocitation {
-    background: var(--insolito-node-primary);
-    border-color: var(--insolito-primary);
+    background: var(--insolito-edge-cocitation);
+    border-color: var(--insolito-edge-cocitation-dark);
 }
 
 .legend-toggle-direction {
-    background: var(--insolito-text-muted);
-    border-color: var(--insolito-text);
+    background: var(--insolito-edge-literature);
+    border-color: var(--insolito-edge-literature-dark);
+}
+
+.legend-toggle-workflow {
+    background: var(--insolito-edge-workflow);
+    border-color: var(--insolito-edge-workflow-dark);
 }
 
 .legend-section-title {
