@@ -22,17 +22,17 @@ from pathlib import Path
 
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[2]  # workflows/scripts -> repository root
-DATA = ROOT / "workflows" / "data" / "biotools"
+REPO = Path(__file__).resolve().parents[2]
+DATA = REPO / "workflows" / "data" / "biotools"
 
 edge_filename = "biotools_edges.csv"
 INPUTS = {
     "galaxy": DATA / "galaxy" / edge_filename,
     "nextflow": DATA / "nextflow" / "biotools_edges_without_nfcore.csv",
-    "nfcore": DATA / "nf-core" / edge_filename,
+    "nfcore": DATA / "nf-core" / edge_filename,  # written by nf-core/3_nodes_edges/build_tables.py
     "snakemake": DATA / "snakemake" / edge_filename,
 }
-CITATIONS = ROOT / "directed-graph" / "edges-processed" / "directed_edges.csv"  # from the citation pipeline
+CITATIONS = REPO / "directed-graph" / "edges-processed" / "directed_edges_delta1.csv"
 OUT_FILE = DATA / "combined" / "combined_edges.csv"
 
 MAX_CONFIDENCE = 3  # only for galaxy: 1 = codex mapping only, 2 = codex + name match, 3 = all
@@ -115,7 +115,7 @@ def main() -> None:
     combined = None
     for name, path in INPUTS.items():
         edges = read_edges(path, name, spelling)
-        print(f"{name}: {len(edges)} edges from {path.relative_to(DATA)}")
+        print(f"{name}: {len(edges)} edges from {path.relative_to(REPO)}")
         combined = edges if combined is None else combined.merge(edges, on=["source", "target"], how="outer")
 
     counts = [f"n_wf_{name}" for name in INPUTS]

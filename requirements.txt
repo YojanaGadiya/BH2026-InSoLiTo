@@ -8,3 +8,4 @@ pyyaml>=6  # directed-graph/workflowhub/ (nfdag)
 matplotlib==3.11.2 # plotting edge comparisons
 networkx>=3
 pandas>=2 
+seaborn>=0.13  # heatmaps in the comparison notebooks

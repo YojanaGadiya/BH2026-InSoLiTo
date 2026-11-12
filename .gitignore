@@ -9,13 +9,14 @@ DB/PLUGINS/apoc-4.4.0.3-all.jar
 DB/PLUGINS/neo4j-graph-data-science-1.8.3.jar
 DB/InSoLiToImport.zip
 DB/InSoLiToSupportFiles.zip
-
 directed-graph/biotools/data/*.jsonl
 directed-graph/edges-processed/
 directed-graph/biotools/data/*.parquet
 directed-graph/edges_processed
 directed-graph/europepmc/data/
 directed-graph/citation-order/data/
+directed-graph/citation-order/data_all_publications/
+directed-graph/citation-order/data_full_corpus/
 
 workflows/data/biotools/nextflow/workflows
 workflows/data/galaxy/download

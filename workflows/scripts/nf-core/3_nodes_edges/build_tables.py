@@ -1,28 +1,36 @@
 #!/usr/bin/env python3
 """build_tables.py - the final tables (pairs, edges, nodes) from the merged pair table.
 
-  python build_tables.py [--results DIR] [--out DIR] [--dump FILE]
+  python build_tables.py [--results DIR] [--out DIR] [--dump FILE] [--keep-parallel]
 
-Reads  (from --results, default nf-core/data):
+Reads  (from --results, default workflows/data/nf-core/intermediate):
   tools_with_ids.csv        from `run.py idtable`
   pairs_merged_unique.csv   from `run.py merge` (must contain direction_type)
   the bio.tools dump        biotools_raw*.jsonl: found in --results, or give its place with --dump (it can stay where it is, it is only read)
-Writes to --out (default nf-core/final tables):
-  biotools_pairs.csv   one row per WORKFLOW and tool pair (the same pair appears once for every workflow where it is valid)
-  biotools_edges.csv   one row per tool pair, with the list of workflows
+Writes to --out (default: workflows/data/biotools/nf-core, next to the Galaxy and Nextflow tables):
+  biotools_pairs.csv   one row per WORKFLOW and directed tool pair: workflow_id, source, target, parallel (`parallel` = the two tools run side by side
+                       in that workflow, `not parallel` = one comes after the other). The flag is exact for every workflow
+  biotools_edges.csv   source, target, n_workflows, workflow_ids; one row per direction, each with its own count (A->B and B->A are two rows)
   biotools_nodes.csv   one row per tool
 and to --results:
-  pairs_biotools.csv   one row per tool pair with all columns (the table the other three are made from; not a final table)
+  pairs_merged_biotools.csv   one row per tool pair with all columns (the table the other three are made from; not a final table)
 
 Only pairs where BOTH tools have a bio.tools ID and that are valid in at least one workflow are kept.
+Parallel pairs are left out of the three final tables for now (KEEP_PARALLEL = False): a pair is only counted in the workflows where one tool
+comes after the other, and a pair that is parallel in every workflow is dropped. pairs_merged_biotools.csv keeps them all.
+--keep-parallel (or KEEP_PARALLEL = True) is a placeholder to bring them back later; the `parallel` column of biotools_pairs.csv then tells them apart.
 direction_type: one_direction (A feeds B, never B feeds A) | both_directions | parallel (side by side, no path between them).
 Needs pandas.
 """
-import argparse, glob, os, sys
+import argparse, collections, glob, os, sys
 
 import pandas as pd
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(HERE, '..', '2_pairs'))
+import merge_pairs as mp   # the same tool-name matching as the merge, so the pairs line up
+
+KEEP_PARALLEL = False  # placeholder: parallel pairs are left out for now, set True (or --keep-parallel) to keep them
 
 
 def find_dump(results, dump):
@@ -43,27 +51,58 @@ def pair_table(tools_file, pairs_file):
     both = pairs['source_software'].astype(str).str.strip().isin(with_id) & pairs['target_software'].astype(str).str.strip().isin(with_id)
     valid = pairs['n_pipelines_positive'] > 0
     out = pairs.loc[both & valid, [
-        'source_software', 'target_software', 'source_biotools_id', 'target_biotools_id', 'source_match_method', 'target_match_method', 'direction_type',
+        'source_key', 'target_key', 'source_software', 'target_software', 'source_biotools_id', 'target_biotools_id', 'source_match_method', 'target_match_method', 'direction_type',
         'n_pipelines_positive', 'n_pipelines_negative', 'n_process_edges_positive', 'reverse_direction_pipelines', 'pipelines_positive', 'pipelines_negative',
     ]].rename(columns={'source_software': 'source', 'target_software': 'target', 'source_biotools_id': 'source_biotool_id', 'target_biotools_id': 'target_biotool_id',
                        'source_match_method': 'source_match', 'target_match_method': 'target_match'}).reset_index(drop=True)
     out[['source_match', 'target_match']] = out[['source_match', 'target_match']].replace('meta_id', 'biotool_id')   # an ID written in the module's meta.yml
     print(f'All pairs: {len(pairs):,} | both tools have a bio.tools ID: {both.sum():,} | and valid in at least one workflow: {len(out):,}')
-    print(out['direction_type'].value_counts().to_string())
+    print('direction_type of the pairs (kept in pairs_biotools.csv, not in the final tables):'); print(out['direction_type'].value_counts().to_string())
     return out
 
 
 def edge_table(pairs):
-    return pairs[['source_biotool_id', 'target_biotool_id', 'direction_type', 'n_pipelines_positive', 'pipelines_positive']].rename(columns={
+    """one row per DIRECTED tool pair. n_workflows / workflow_ids: the workflows where this direction (source -> target) appears.
+    A -> B and B -> A are two rows with their own counts; a parallel pair appears once forward and once reverse in each workflow, so both rows have the same count"""
+    return pairs[['source_biotool_id', 'target_biotool_id', 'n_pipelines_positive', 'pipelines_positive']].rename(columns={
         'source_biotool_id': 'source', 'target_biotool_id': 'target', 'n_pipelines_positive': 'n_workflows', 'pipelines_positive': 'workflow_ids'})
 
 
-def workflow_pair_table(pairs):
-    """one row per workflow and tool pair; source_biotools_name / target_biotools_name are the tool names used in the pipelines"""
-    return (pairs.assign(workflow_id=pairs['pipelines_positive'].str.split(';')).explode('workflow_id')
-            [['workflow_id', 'source_biotool_id', 'target_biotool_id', 'direction_type', 'source', 'target']]
-            .rename(columns={'source_biotool_id': 'source', 'target_biotool_id': 'target', 'source': 'source_biotools_name', 'target': 'target_biotools_name'})
-            .reset_index(drop=True))
+def workflow_types(results):
+    """(workflow, source key, target key) -> the pair types found in that workflow, read from results/pipelines/<workflow>/software_pairs.csv"""
+    mp.load_ids(results)
+    types = collections.defaultdict(set)
+    rows, _ = mp.read_pipelines(results)
+    for pipe, src, dst, t, _n in rows:
+        ks, kd = mp.key(src), mp.key(dst)
+        if ks != kd: types[(pipe, ks, kd)].add(t)
+    return types
+
+
+def workflow_pair_table(pairs, types):
+    """one row per workflow and directed pair. parallel = the pair is only side by side in that workflow; a sequence (data flow or gate / metadata) makes it `not parallel`"""
+    rows, missing = [], 0
+    for r in pairs.itertuples():
+        for wf in r.pipelines_positive.split(';'):
+            t = types.get((wf, r.source_key, r.target_key))
+            if not t: missing += 1; continue
+            rows.append({'workflow_id': wf, 'source': r.source_biotool_id, 'target': r.target_biotool_id, 'parallel': 'not parallel' if t & mp.SEQUENCE else 'parallel'})
+    if missing: sys.exit(f'{missing} workflow-pair rows have no pair type in results/pipelines: run `run.py analyze` and `run.py merge` with the current scripts first')
+    return pd.DataFrame(rows)
+
+
+def drop_parallel(pairs, workflow_pairs):
+    """leaves out the workflows where a pair is only parallel. Each pair keeps the workflows where it is `not parallel`, with its count and
+    workflow list updated, so the edges and nodes made from it only see those. Pairs left with no workflow are dropped"""
+    kept = workflow_pairs[workflow_pairs['parallel'] == 'not parallel']
+    by_pair = kept.groupby(['source', 'target'], sort=False)['workflow_id'].agg(';'.join)
+    key = pd.MultiIndex.from_frame(pairs[['source_biotool_id', 'target_biotool_id']])
+    out = pairs.assign(pipelines_positive=by_pair.reindex(key).to_numpy())
+    out = out[out['pipelines_positive'].notna()].copy()
+    out['n_pipelines_positive'] = out['pipelines_positive'].str.count(';') + 1
+    print(f'Parallel left out: {len(workflow_pairs) - len(kept):,} of {len(workflow_pairs):,} workflow-pair rows | '
+          f'pairs only parallel, dropped: {len(pairs) - len(out):,} of {len(pairs):,}')
+    return out.reset_index(drop=True), kept.reset_index(drop=True)
 
 
 def node_table(pairs, dump):
@@ -81,24 +120,29 @@ def node_table(pairs, dump):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('--results', default=os.path.join(HERE, '..', '..', 'data')); ap.add_argument('--out', default=os.path.join(HERE, '..', '..', 'final tables')); ap.add_argument('--dump')
+    DATA = os.path.join(HERE, '..', '..', '..', 'data')
+    ap.add_argument('--results', default=os.path.join(DATA, 'nf-core')); ap.add_argument('--out', default=os.path.join(DATA, 'biotools', 'nf-core')); ap.add_argument('--dump')
+    ap.add_argument('--keep-parallel', action='store_true', default=KEEP_PARALLEL, help='keep the parallel pairs (placeholder, off for now)')
     a = ap.parse_args()
     results, out = os.path.abspath(a.results), os.path.abspath(a.out)
     tools_file, pairs_file, dump = os.path.join(results, 'tools_with_ids.csv'), os.path.join(results, 'pairs_merged_unique.csv'), find_dump(results, a.dump)
-    missing = [f for f in (tools_file, pairs_file) if not os.path.exists(f)] + ([] if dump and os.path.exists(dump) else ['bio.tools dump (biotools_raw*.jsonl: put it into the data folder or pass --dump FILE)'])
+    missing = [f for f in (tools_file, pairs_file) if not os.path.exists(f)] + ([] if dump and os.path.exists(dump) else ['bio.tools dump (biotools_raw*.jsonl: put it into workflows/data/nf-core/intermediate or pass --dump FILE)'])
     for f in (tools_file, pairs_file, dump): print(('found    ' if f and os.path.exists(f) else 'MISSING  ') + str(f))
     if missing: sys.exit('missing: ' + '; '.join(missing))
 
-    pairs = pair_table(tools_file, pairs_file)
-    edges, workflow_pairs, nodes = edge_table(pairs), workflow_pair_table(pairs), node_table(pairs, dump)
+    all_pairs = pair_table(tools_file, pairs_file)
+    assert not all_pairs.duplicated(['source_biotool_id', 'target_biotool_id']).any()
+    pairs, workflow_pairs = all_pairs, workflow_pair_table(all_pairs, workflow_types(results))
+    if not a.keep_parallel: pairs, workflow_pairs = drop_parallel(pairs, workflow_pairs)
+    edges, nodes = edge_table(pairs), node_table(pairs, dump)
     assert len(edges) == len(pairs) and len(workflow_pairs) == pairs['n_pipelines_positive'].sum()
     assert set(nodes['biotoolsID']) == set(edges['source']) | set(edges['target'])
-    assert edges['direction_type'].notna().all() and workflow_pairs['direction_type'].notna().all()
+    assert set(workflow_pairs['parallel']) <= {'parallel', 'not parallel'}
 
     os.makedirs(out, exist_ok=True)
-    pairs.to_csv(os.path.join(results, 'pairs_biotools.csv'), index=False)
+    all_pairs.to_csv(os.path.join(results, 'pairs_merged_biotools.csv'), index=False)   # all pairs, parallel ones too
     for name, df in (('biotools_edges.csv', edges), ('biotools_pairs.csv', workflow_pairs), ('biotools_nodes.csv', nodes)): df.to_csv(os.path.join(out, name), index=False)
-    print(f'\nnodes {len(nodes):,} | edges {len(edges):,} | workflow pairs {len(workflow_pairs):,}\nwritten to {out} (pairs_biotools.csv to {results})')
+    print(f'\nnodes {len(nodes):,} | edges {len(edges):,} | workflow pairs {len(workflow_pairs):,}\nwritten to {out} (pairs_merged_biotools.csv to {results})')
 
 
 if __name__ == '__main__':
