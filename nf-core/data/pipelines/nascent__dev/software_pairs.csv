@@ -1,0 +1,190 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bed2saf,subread,data_flow,1,1,E00511,
+bedtools,bed2saf,data_flow,3,3,E00498,
+bioconductor-deseq2,bed2saf,data_flow,1,1,E00501,
+bioconductor-deseq2,bedtools,data_flow,2,2,E00490,
+bioconductor-deseq2,multiqc,data_flow,2,2,E00556,
+bowtie2,multiqc,data_flow,1,1,E00527,
+bowtie2,samtools,data_flow,1,1,E00085,
+bwa,bwa-mem2,data_flow,1,1,E00031,
+bwa,samtools,data_flow,1,1,E00016,
+bwa-mem2,bwa,data_flow,1,1,E00014,
+bwa-mem2,samtools,data_flow,1,1,E00034,
+cat,bedtools,data_flow,1,1,E00487,
+deeptools,flip_strand,data_flow,2,2,E00393,
+dragmap,samtools,data_flow,1,1,E00068,
+fastp,bowtie2,data_flow,1,1,E00081,
+fastp,bwa,data_flow,1,1,E00011,
+fastp,bwa-mem2,data_flow,1,1,E00029,
+fastp,dragmap,data_flow,1,1,E00064,
+fastp,hisat2,data_flow,1,1,E00098,
+fastp,minibwa,data_flow,1,1,E00047,
+fastp,star,data_flow,1,1,E00116,
+fastqc,multiqc,data_flow,1,1,E00522,
+gffread,gtf2bed,data_flow,1,1,E00004,
+gffread,r-optparse,data_flow,2,2,E00428,
+gffread,samtools,data_flow,1,1,E00115,
+gffread,star,data_flow,1,1,E00120,
+gffread,subread,data_flow,1,1,E00521,
+gtf2bed,rseqc,data_flow,6,6,E00234,
+gunzip,bioconductor-deseq2,data_flow,1,1,E00463,
+gunzip,bowtie2,data_flow,2,2,E00010,
+gunzip,bwa,data_flow,2,2,E00006,
+gunzip,bwa-mem2,data_flow,2,2,E00007,
+gunzip,deeptools,data_flow,2,2,E00373,
+gunzip,dragmap,data_flow,2,2,E00009,
+gunzip,gffread,data_flow,2,2,E00001,
+gunzip,gtf2bed,data_flow,1,1,E00003,
+gunzip,minibwa,data_flow,2,2,E00008,
+gunzip,pybedtools,gate_metadata,1,0,E00485,
+gunzip,r-optparse,data_flow,2,2,E00427,
+gunzip,rseqc,data_flow,6,6,E00233,
+gunzip,samtools,data_flow,17,17,E00005,
+gunzip,star,data_flow,1,1,E00119,
+gunzip,subread,data_flow,1,1,E00520,
+hisat2,samtools,data_flow,1,1,E00100,
+minibwa,samtools,data_flow,1,1,E00051,
+p7zip,bioconductor-deseq2,data_flow,1,1,E00466,
+preseq,multiqc,data_flow,2,2,E00549,
+pybedtools,cat,data_flow,1,1,E00486,
+r-optparse,bed2saf,data_flow,1,1,E00500,
+r-optparse,bedtools,data_flow,2,2,E00489,
+r-optparse,multiqc,data_flow,1,1,E00555,
+rseqc,multiqc,data_flow,4,4,E00551,
+samtools,bbmap,data_flow,15,15,E00342,
+samtools,bedtools,data_flow,2,2,E00492,
+samtools,bioconductor-deseq2,data_flow,15,7,E00448,
+samtools,deeptools,data_flow,32,32,E00358,
+samtools,multiqc,data_flow,24,24,E00523,
+samtools,preseq,data_flow,30,30,E00170,
+samtools,pybedtools,data_flow,16,16,E00396,
+samtools,r-optparse,data_flow,30,30,E00412,
+samtools,rseqc,data_flow,120,120,E00202,
+samtools,star,data_flow,1,1,E00117,
+samtools,subread,data_flow,14,14,E00504,
+samtools,umi_tools,data_flow,14,14,E00145,
+star,multiqc,data_flow,1,1,E00526,
+star,samtools,data_flow,2,2,E00121,
+subread,multiqc,data_flow,2,2,E00558,
+umi_tools,bbmap,data_flow,1,1,E00341,
+umi_tools,bioconductor-deseq2,data_flow,1,1,E00447,
+umi_tools,deeptools,data_flow,2,2,E00357,
+umi_tools,preseq,data_flow,2,2,E00169,
+umi_tools,pybedtools,data_flow,1,1,E00395,
+umi_tools,r-optparse,data_flow,2,2,E00411,
+umi_tools,rseqc,data_flow,8,8,E00201,
+umi_tools,samtools,data_flow,5,5,E00159,
+umi_tools,subread,data_flow,2,2,E00503,
+untar,bowtie2,data_flow,1,1,E00082,
+untar,bwa,data_flow,1,1,E00012,
+untar,bwa-mem2,data_flow,1,1,E00030,
+untar,dragmap,data_flow,1,1,E00065,
+untar,hisat2,data_flow,1,1,E00099,
+untar,minibwa,data_flow,1,1,E00048,
+untar,star,data_flow,1,1,E00118,
+bbmap,bioconductor-deseq2,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00343, E00449); no directed path between any process of the two tools"
+bbmap,deeptools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00351, E00385); no directed path between any process of the two tools"
+bbmap,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00351, E00179); no directed path between any process of the two tools"
+bbmap,pybedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00351, E00405); no directed path between any process of the two tools"
+bbmap,r-optparse,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00351, E00421); no directed path between any process of the two tools"
+bbmap,rseqc,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00351, E00211); no directed path between any process of the two tools"
+bbmap,subread,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00343, E00514); no directed path between any process of the two tools"
+bioconductor-deseq2,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00449, E00343); no directed path between any process of the two tools"
+bioconductor-deseq2,deeptools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00449, E00377); no directed path between any process of the two tools"
+bioconductor-deseq2,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00449, E00171); no directed path between any process of the two tools"
+bioconductor-deseq2,pybedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00449, E00397); no directed path between any process of the two tools"
+bioconductor-deseq2,r-optparse,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00449, E00413); no directed path between any process of the two tools"
+bioconductor-deseq2,rseqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00449, E00203); no directed path between any process of the two tools"
+bowtie2,bwa,parallel_co_use,0,0,,"both consume FASTP.reads (E00081, E00011); no directed path between any process of the two tools"
+bowtie2,bwa-mem2,parallel_co_use,0,0,,"both consume FASTP.reads (E00081, E00029); no directed path between any process of the two tools"
+bowtie2,dragmap,parallel_co_use,0,0,,"both consume FASTP.reads (E00081, E00064); no directed path between any process of the two tools"
+bowtie2,gffread,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00084, E00002); no directed path between any process of the two tools"
+bowtie2,hisat2,parallel_co_use,0,0,,"both consume FASTP.reads (E00081, E00098); no directed path between any process of the two tools"
+bowtie2,minibwa,parallel_co_use,0,0,,"both consume FASTP.reads (E00081, E00047); no directed path between any process of the two tools"
+bowtie2,star,parallel_co_use,0,0,,"both consume FASTP.reads (E00081, E00116); no directed path between any process of the two tools"
+bwa,bowtie2,parallel_co_use,0,0,,"both consume FASTP.reads (E00011, E00081); no directed path between any process of the two tools"
+bwa,dragmap,parallel_co_use,0,0,,"both consume FASTP.reads (E00011, E00064); no directed path between any process of the two tools"
+bwa,gffread,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00015, E00002); no directed path between any process of the two tools"
+bwa,hisat2,parallel_co_use,0,0,,"both consume FASTP.reads (E00011, E00098); no directed path between any process of the two tools"
+bwa,minibwa,parallel_co_use,0,0,,"both consume FASTP.reads (E00011, E00047); no directed path between any process of the two tools"
+bwa,star,parallel_co_use,0,0,,"both consume FASTP.reads (E00011, E00116); no directed path between any process of the two tools"
+bwa-mem2,bowtie2,parallel_co_use,0,0,,"both consume FASTP.reads (E00029, E00081); no directed path between any process of the two tools"
+bwa-mem2,dragmap,parallel_co_use,0,0,,"both consume FASTP.reads (E00029, E00064); no directed path between any process of the two tools"
+bwa-mem2,gffread,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00033, E00002); no directed path between any process of the two tools"
+bwa-mem2,hisat2,parallel_co_use,0,0,,"both consume FASTP.reads (E00029, E00098); no directed path between any process of the two tools"
+bwa-mem2,minibwa,parallel_co_use,0,0,,"both consume FASTP.reads (E00029, E00047); no directed path between any process of the two tools"
+bwa-mem2,star,parallel_co_use,0,0,,"both consume FASTP.reads (E00029, E00116); no directed path between any process of the two tools"
+deeptools,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00385, E00351); no directed path between any process of the two tools"
+deeptools,bioconductor-deseq2,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00377, E00449); no directed path between any process of the two tools"
+deeptools,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00385, E00179); no directed path between any process of the two tools"
+deeptools,pybedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00385, E00405); no directed path between any process of the two tools"
+deeptools,r-optparse,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00385, E00421); no directed path between any process of the two tools"
+deeptools,rseqc,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00385, E00211); no directed path between any process of the two tools"
+deeptools,subread,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00377, E00514); no directed path between any process of the two tools"
+dragmap,bowtie2,parallel_co_use,0,0,,"both consume FASTP.reads (E00064, E00081); no directed path between any process of the two tools"
+dragmap,bwa,parallel_co_use,0,0,,"both consume FASTP.reads (E00064, E00011); no directed path between any process of the two tools"
+dragmap,bwa-mem2,parallel_co_use,0,0,,"both consume FASTP.reads (E00064, E00029); no directed path between any process of the two tools"
+dragmap,gffread,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00067, E00002); no directed path between any process of the two tools"
+dragmap,hisat2,parallel_co_use,0,0,,"both consume FASTP.reads (E00064, E00098); no directed path between any process of the two tools"
+dragmap,minibwa,parallel_co_use,0,0,,"both consume FASTP.reads (E00064, E00047); no directed path between any process of the two tools"
+dragmap,star,parallel_co_use,0,0,,"both consume FASTP.reads (E00064, E00116); no directed path between any process of the two tools"
+gffread,bowtie2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00002, E00084); no directed path between any process of the two tools"
+gffread,bwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00002, E00015); no directed path between any process of the two tools"
+gffread,bwa-mem2,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00002, E00033); no directed path between any process of the two tools"
+gffread,dragmap,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00002, E00067); no directed path between any process of the two tools"
+gffread,minibwa,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00002, E00050); no directed path between any process of the two tools"
+gtf2bed,r-optparse,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00004, E00428); no directed path between any process of the two tools"
+gtf2bed,samtools,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00004, E00115); no directed path between any process of the two tools"
+gtf2bed,star,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00004, E00120); no directed path between any process of the two tools"
+gtf2bed,subread,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00004, E00521); no directed path between any process of the two tools"
+hisat2,bowtie2,parallel_co_use,0,0,,"both consume FASTP.reads (E00098, E00081); no directed path between any process of the two tools"
+hisat2,bwa,parallel_co_use,0,0,,"both consume FASTP.reads (E00098, E00011); no directed path between any process of the two tools"
+hisat2,bwa-mem2,parallel_co_use,0,0,,"both consume FASTP.reads (E00098, E00029); no directed path between any process of the two tools"
+hisat2,dragmap,parallel_co_use,0,0,,"both consume FASTP.reads (E00098, E00064); no directed path between any process of the two tools"
+hisat2,minibwa,parallel_co_use,0,0,,"both consume FASTP.reads (E00098, E00047); no directed path between any process of the two tools"
+minibwa,bowtie2,parallel_co_use,0,0,,"both consume FASTP.reads (E00047, E00081); no directed path between any process of the two tools"
+minibwa,bwa,parallel_co_use,0,0,,"both consume FASTP.reads (E00047, E00011); no directed path between any process of the two tools"
+minibwa,bwa-mem2,parallel_co_use,0,0,,"both consume FASTP.reads (E00047, E00029); no directed path between any process of the two tools"
+minibwa,dragmap,parallel_co_use,0,0,,"both consume FASTP.reads (E00047, E00064); no directed path between any process of the two tools"
+minibwa,gffread,parallel_co_use,0,0,,"both consume GUNZIP_FASTA.gunzip (E00050, E00002); no directed path between any process of the two tools"
+minibwa,hisat2,parallel_co_use,0,0,,"both consume FASTP.reads (E00047, E00098); no directed path between any process of the two tools"
+minibwa,star,parallel_co_use,0,0,,"both consume FASTP.reads (E00047, E00116); no directed path between any process of the two tools"
+preseq,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00179, E00351); no directed path between any process of the two tools"
+preseq,bioconductor-deseq2,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00171, E00449); no directed path between any process of the two tools"
+preseq,deeptools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00179, E00385); no directed path between any process of the two tools"
+preseq,pybedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00179, E00405); no directed path between any process of the two tools"
+preseq,r-optparse,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00179, E00421); no directed path between any process of the two tools"
+preseq,rseqc,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00179, E00211); no directed path between any process of the two tools"
+preseq,subread,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00171, E00514); no directed path between any process of the two tools"
+pybedtools,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00405, E00351); no directed path between any process of the two tools"
+pybedtools,bioconductor-deseq2,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00397, E00449); no directed path between any process of the two tools"
+pybedtools,deeptools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00405, E00385); no directed path between any process of the two tools"
+pybedtools,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00405, E00179); no directed path between any process of the two tools"
+pybedtools,r-optparse,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00405, E00421); no directed path between any process of the two tools"
+pybedtools,rseqc,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00405, E00211); no directed path between any process of the two tools"
+r-optparse,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00421, E00351); no directed path between any process of the two tools"
+r-optparse,bioconductor-deseq2,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00413, E00449); no directed path between any process of the two tools"
+r-optparse,deeptools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00421, E00385); no directed path between any process of the two tools"
+r-optparse,gtf2bed,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00428, E00004); no directed path between any process of the two tools"
+r-optparse,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00421, E00179); no directed path between any process of the two tools"
+r-optparse,pybedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00421, E00405); no directed path between any process of the two tools"
+r-optparse,rseqc,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00421, E00211); no directed path between any process of the two tools"
+rseqc,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00211, E00351); no directed path between any process of the two tools"
+rseqc,bioconductor-deseq2,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00203, E00449); no directed path between any process of the two tools"
+rseqc,deeptools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00211, E00385); no directed path between any process of the two tools"
+rseqc,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00211, E00179); no directed path between any process of the two tools"
+rseqc,pybedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00211, E00405); no directed path between any process of the two tools"
+rseqc,r-optparse,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00211, E00421); no directed path between any process of the two tools"
+rseqc,subread,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00203, E00514); no directed path between any process of the two tools"
+samtools,gtf2bed,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00115, E00004); no directed path between any process of the two tools"
+star,bowtie2,parallel_co_use,0,0,,"both consume FASTP.reads (E00116, E00081); no directed path between any process of the two tools"
+star,bwa,parallel_co_use,0,0,,"both consume FASTP.reads (E00116, E00011); no directed path between any process of the two tools"
+star,bwa-mem2,parallel_co_use,0,0,,"both consume FASTP.reads (E00116, E00029); no directed path between any process of the two tools"
+star,dragmap,parallel_co_use,0,0,,"both consume FASTP.reads (E00116, E00064); no directed path between any process of the two tools"
+star,gtf2bed,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00120, E00004); no directed path between any process of the two tools"
+star,minibwa,parallel_co_use,0,0,,"both consume FASTP.reads (E00116, E00047); no directed path between any process of the two tools"
+subread,bbmap,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00514, E00343); no directed path between any process of the two tools"
+subread,deeptools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00514, E00377); no directed path between any process of the two tools"
+subread,gtf2bed,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00521, E00004); no directed path between any process of the two tools"
+subread,preseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00514, E00171); no directed path between any process of the two tools"
+subread,rseqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00514, E00203); no directed path between any process of the two tools"

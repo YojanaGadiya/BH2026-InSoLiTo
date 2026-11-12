@@ -1,0 +1,111 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_GENOME:GUNZIP_FASTA,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_GENOME:GUNZIP_SPIKEIN_FASTA,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_GENOME:GUNZIP_GTF,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_GENOME:GUNZIP_BED,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_GENOME:GTF2BED,GTF2BED,modules/local/gtf2bed.nf,1,gtf2bed,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_GENOME:ANNOTATION_BEDTOOLS_SORT,BEDTOOLS_SORT,modules/local/for_patch/bedtools/sort/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_GENOME:TABIX_BGZIPTABIX,TABIX_BGZIPTABIX,modules/nf-core/tabix/bgziptabix/main.nf,1,tabix,tabix,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_GENOME:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_GENOME:TARGET_CHROMSIZES,CUSTOM_GETCHROMSIZES,modules/nf-core/custom/getchromsizes/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_GENOME:SPIKEIN_CHROMSIZES,CUSTOM_GETCHROMSIZES,modules/nf-core/custom/getchromsizes/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_GENOME:UNTAR_INDEX_TARGET,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_GENOME:BOWTIE2_BUILD_TARGET,BOWTIE2_BUILD,modules/nf-core/bowtie2/build/main.nf,1,bowtie2,bowtie2,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_GENOME:UNTAR_INDEX_SPIKEIN,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_GENOME:BOWTIE2_BUILD_SPIKEIN,BOWTIE2_BUILD,modules/nf-core/bowtie2/build/main.nf,1,bowtie2,bowtie2,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_GENOME:BLACKLIST_AWK,AWK,modules/local/linux/awk.nf,1,awk,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_GENOME:BLACKLIST_BEDTOOLS_INTERSECT,BEDTOOLS_INTERSECT,modules/nf-core/bedtools/intersect/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_GENOME:BLACKLIST_BEDTOOLS_SORT,BEDTOOLS_SORT,modules/local/for_patch/bedtools/sort/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_GENOME:BLACKLIST_BEDTOOLS_COMPLEMENT,BEDTOOLS_COMPLEMENT,modules/nf-core/bedtools/complement/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:CAT_FASTQ,CAT_FASTQ,modules/nf-core/cat/fastq/main.nf,1,cat,cat,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:FASTQC_TRIMGALORE:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_CUTANDRUN:CUTANDRUN:FASTQC_TRIMGALORE:TRIMGALORE,TRIMGALORE,modules/local/for_patch/trimgalore/main.nf,1,trimgalore,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:ALIGN_BOWTIE2:BOWTIE2_TARGET_ALIGN,BOWTIE2_ALIGN,modules/nf-core/bowtie2/align/main.nf,1,bowtie2,bowtie2,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:ALIGN_BOWTIE2:BOWTIE2_SPIKEIN_ALIGN,BOWTIE2_ALIGN,modules/nf-core/bowtie2/align/main.nf,1,bowtie2,bowtie2,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:ALIGN_BOWTIE2:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:ALIGN_BOWTIE2:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:ALIGN_BOWTIE2:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:ALIGN_BOWTIE2:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:ALIGN_BOWTIE2:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:ALIGN_BOWTIE2:BAM_SORT_STATS_SAMTOOLS_SPIKEIN:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:ALIGN_BOWTIE2:BAM_SORT_STATS_SAMTOOLS_SPIKEIN:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:ALIGN_BOWTIE2:BAM_SORT_STATS_SAMTOOLS_SPIKEIN:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:ALIGN_BOWTIE2:BAM_SORT_STATS_SAMTOOLS_SPIKEIN:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:ALIGN_BOWTIE2:BAM_SORT_STATS_SAMTOOLS_SPIKEIN:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:EXTRACT_BT2_TARGET_META:AWK_SCRIPT,AWK_SCRIPT,modules/local/linux/awk_script.nf,1,awk_script,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:EXTRACT_BT2_TARGET_META:AWK,AWK,modules/local/linux/awk.nf,1,awk,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:EXTRACT_BT2_SPIKEIN_META:AWK_SCRIPT,AWK_SCRIPT,modules/local/linux/awk_script.nf,1,awk_script,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:EXTRACT_BT2_SPIKEIN_META:AWK,AWK,modules/local/linux/awk.nf,1,awk,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:FILTER_READS:SAMTOOLS_VIEW,SAMTOOLS_VIEW,modules/local/for_patch/samtools/view/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:FILTER_READS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:FILTER_READS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:FILTER_READS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:FILTER_READS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:FILTER_READS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PRESEQ_LCEXTRAP,PRESEQ_LCEXTRAP,modules/nf-core/preseq/lcextrap/main.nf,1,preseq,preseq,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:MARK_DUPLICATES_PICARD:PICARD_MARKDUPLICATES,PICARD_MARKDUPLICATES,modules/nf-core/picard/markduplicates/main.nf,1,picard,picard,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:MARK_DUPLICATES_PICARD:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:MARK_DUPLICATES_PICARD:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:MARK_DUPLICATES_PICARD:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:MARK_DUPLICATES_PICARD:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:MARK_DUPLICATES_PICARD:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEDUPLICATE_PICARD:PICARD_MARKDUPLICATES,PICARD_MARKDUPLICATES,modules/nf-core/picard/markduplicates/main.nf,1,picard,picard,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEDUPLICATE_PICARD:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEDUPLICATE_PICARD:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEDUPLICATE_PICARD:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEDUPLICATE_PICARD:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEDUPLICATE_PICARD:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:EXTRACT_PICARD_DUP_META:AWK_SCRIPT,AWK_SCRIPT,modules/local/linux/awk_script.nf,1,awk_script,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:EXTRACT_PICARD_DUP_META:AWK,AWK,modules/local/linux/awk.nf,1,awk,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:DEDUPLICATE_LINEAR:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEDUPLICATE_LINEAR:BEDTOOLS_BAMTOBED,BEDTOOLS_BAMTOBED,modules/nf-core/bedtools/bamtobed/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEDUPLICATE_LINEAR:FIND_UNIQUE_READS,FIND_UNIQUE_READS,modules/local/python/find_unique_reads.nf,1,find_unique_reads,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:DEDUPLICATE_LINEAR:SAMTOOLS_VIEW,SAMTOOLS_VIEW,modules/nf-core/samtools/view/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEDUPLICATE_LINEAR:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEDUPLICATE_LINEAR:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEDUPLICATE_LINEAR:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEDUPLICATE_LINEAR:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEDUPLICATE_LINEAR:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_PEAKCALLING:BEDTOOLS_GENOMECOV,BEDTOOLS_GENOMECOV,modules/nf-core/bedtools/genomecov/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_PEAKCALLING:DEEPTOOLS_BAMCOVERAGE,DEEPTOOLS_BAMCOVERAGE,modules/local/for_patch/deeptools/bamcoverage/main.nf,1,deeptools_bamcoverage,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_PEAKCALLING:BEDTOOLS_SORT,BEDTOOLS_SORT,modules/local/for_patch/bedtools/sort/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_PEAKCALLING:UCSC_BEDCLIP,UCSC_BEDCLIP,modules/nf-core/ucsc/bedclip/main.nf,1,ucsc,ucsc,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PREPARE_PEAKCALLING:UCSC_BEDGRAPHTOBIGWIG,UCSC_BEDGRAPHTOBIGWIG,modules/nf-core/ucsc/bedgraphtobigwig/main.nf,1,ucsc,ucsc,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:SEACR_CALLPEAK_IGG,SEACR_CALLPEAK,modules/nf-core/seacr/callpeak/main.nf,1,seacr,seacr,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:MACS2_CALLPEAK_IGG,MACS2_CALLPEAK,modules/nf-core/macs2/callpeak/main.nf,1,macs2,macs2,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:SEACR_CALLPEAK_NOIGG,SEACR_CALLPEAK,modules/nf-core/seacr/callpeak/main.nf,1,seacr,seacr,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:MACS2_CALLPEAK_NOIGG,MACS2_CALLPEAK,modules/nf-core/macs2/callpeak/main.nf,1,macs2,macs2,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PEAK_TO_BED,CUT,modules/local/linux/cut.nf,1,cut,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:AWK_EXTRACT_SUMMITS,AWK,modules/local/linux/awk.nf,1,awk,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:AWK_NAME_PEAK_BED,AWK,modules/local/linux/awk.nf,1,awk,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:CONSENSUS_PEAKS_ALL:SORT,SORT,modules/local/linux/sort.nf,1,sort,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:CONSENSUS_PEAKS_ALL:BEDTOOLS_MERGE,BEDTOOLS_MERGE,modules/nf-core/bedtools/merge/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:CONSENSUS_PEAKS_ALL:AWK,AWK,modules/local/linux/awk.nf,1,awk,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:CONSENSUS_PEAKS:SORT,SORT,modules/local/linux/sort.nf,1,sort,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:CONSENSUS_PEAKS:BEDTOOLS_MERGE,BEDTOOLS_MERGE,modules/nf-core/bedtools/merge/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:CONSENSUS_PEAKS:AWK,AWK,modules/local/linux/awk.nf,1,awk,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:IGV_SESSION,IGV_SESSION,modules/local/python/igv_session.nf,1,igv_session,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:DEEPTOOLS_COMPUTEMATRIX_GENE,DEEPTOOLS_COMPUTEMATRIX,modules/nf-core/deeptools/computematrix/main.nf,1,deeptools,deeptools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEEPTOOLS_PLOTHEATMAP_GENE,DEEPTOOLS_PLOTHEATMAP,modules/nf-core/deeptools/plotheatmap/main.nf,1,deeptools,deeptools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEEPTOOLS_COMPUTEMATRIX_PEAKS,DEEPTOOLS_COMPUTEMATRIX,modules/nf-core/deeptools/computematrix/main.nf,1,deeptools,deeptools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEEPTOOLS_PLOTHEATMAP_PEAKS,DEEPTOOLS_PLOTHEATMAP,modules/nf-core/deeptools/plotheatmap/main.nf,1,deeptools,deeptools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEEPTOOLS_COMPUTEMATRIX_GENE_ALL,DEEPTOOLS_COMPUTEMATRIX,modules/nf-core/deeptools/computematrix/main.nf,1,deeptools,deeptools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEEPTOOLS_PLOTHEATMAP_GENE_ALL,DEEPTOOLS_PLOTHEATMAP,modules/nf-core/deeptools/plotheatmap/main.nf,1,deeptools,deeptools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEEPTOOLS_QC:DEEPTOOLS_MULTIBAMSUMMARY,DEEPTOOLS_MULTIBAMSUMMARY,modules/nf-core/deeptools/multibamsummary/main.nf,1,deeptools,deeptools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEEPTOOLS_QC:DEEPTOOLS_PLOTCORRELATION,DEEPTOOLS_PLOTCORRELATION,modules/nf-core/deeptools/plotcorrelation/main.nf,1,deeptools,deeptools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEEPTOOLS_QC:DEEPTOOLS_PLOTPCA,DEEPTOOLS_PLOTPCA,modules/nf-core/deeptools/plotpca/main.nf,1,deeptools,deeptools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:DEEPTOOLS_QC:DEEPTOOLS_PLOTFINGERPRINT,DEEPTOOLS_PLOTFINGERPRINT,modules/nf-core/deeptools/plotfingerprint/main.nf,1,deeptools,deeptools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:EXTRACT_FRAGMENTS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:EXTRACT_FRAGMENTS:BEDTOOLS_BAMTOBED,BEDTOOLS_BAMTOBED,modules/nf-core/bedtools/bamtobed/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:EXTRACT_FRAGMENTS:AWK,AWK,modules/local/linux/awk.nf,1,awk,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:EXTRACT_FRAGMENTS:CUT,CUT,modules/local/linux/cut.nf,1,cut,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:PEAK_QC:PEAK_FRIP,PEAK_FRIP,modules/local/peak_frip.nf,1,peak_frip,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:PEAK_QC:PRIMARY_PEAK_COUNTS,PEAK_COUNTS,modules/local/peak_counts.nf,1,peak_counts,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:PEAK_QC:CONSENSUS_PEAK_COUNTS,PEAK_COUNTS,modules/local/peak_counts.nf,1,peak_counts,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:PEAK_QC:CUT_CALC_REPROD,CUT,modules/local/linux/cut.nf,1,cut,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:PEAK_QC:BEDTOOLS_INTERSECT,BEDTOOLS_INTERSECT,modules/nf-core/bedtools/intersect/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_CUTANDRUN:CUTANDRUN:PEAK_QC:CALCULATE_PEAK_REPROD,CALCULATE_PEAK_REPROD,modules/local/python/peak_reprod.nf,1,calculate_peak_reprod,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:PEAK_QC:PLOT_CONSENSUS_PEAKS,PLOT_CONSENSUS_PEAKS,modules/local/python/plot_consensus_peaks.nf,1,plot_consensus_peaks,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:SAMTOOLS_CUSTOMVIEW,SAMTOOLS_CUSTOMVIEW,modules/local/samtools_custom_view.nf,1,samtools_customview,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:FRAG_LEN_HIST,FRAG_LEN_HIST,modules/local/python/frag_len_hist.nf,1,frag_len_hist,,,module name
+NFCORE_CUTANDRUN:CUTANDRUN:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

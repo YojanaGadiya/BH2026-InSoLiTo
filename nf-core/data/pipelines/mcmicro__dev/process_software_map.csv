@@ -1,0 +1,6 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_MCMICRO:MCMICRO:PRELUDE:PRELUDE_MULTI_SUMMARY,PRELUDE_MULTI_SUMMARY,modules/local/multi_xml_summary/main.nf,1,prelude_multi_summary,,,module name
+NFCORE_MCMICRO:MCMICRO:PRELUDE:PRELUDE_MULTI_MATRIX_SUMMARY,PRELUDE_MULTI_MATRIX_SUMMARY,modules/local/multi_matrix_summary/main.nf,1,prelude_multi_matrix_summary,,,module name
+NFCORE_MCMICRO:MCMICRO:COREOGRAPH,COREOGRAPH,modules/nf-core/coreograph/main.nf,1,coreograph,coreograph,,meta.yml
+NFCORE_MCMICRO:MCMICRO:CELLPOSE,CELLPOSE,modules/nf-core/cellpose/main.nf,1,cellpose,cellpose,,meta.yml
+NFCORE_MCMICRO:MCMICRO:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

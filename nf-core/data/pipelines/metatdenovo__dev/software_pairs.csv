@@ -1,0 +1,324 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bbmap,megahit,data_flow,1,1,E00030,
+bbmap,multiqc,data_flow,1,1,E00352,
+bbmap,r-dplyr,gate_metadata,1,0,E00329,
+bbmap,samtools,data_flow,1,1,E00184,
+bbmap,seqtk,data_flow,1,1,E00014,
+bbmap,spades,data_flow,1,1,E00024,
+bbmap,writespadesyaml,data_flow,1,1,E00021,
+bedtools,format_locusconsolidate,data_flow,1,1,E00125,
+cat,bbmap,data_flow,2,2,E00013,
+cat,fastqc,data_flow,1,1,E00004,
+cat,r-dplyr,data_flow,1,1,E00327,
+cat,seqtk,data_flow,1,1,E00019,
+cat,trim-galore,data_flow,1,1,E00008,
+dbcan,gzip,data_flow,1,1,E00257,
+dbcan,multiqc,data_flow,1,1,E00364,
+diamond,taxonkit,gate_metadata,3,0,E00309,
+eggnog-mapper,gzip,data_flow,1,1,E00231,
+eukulele,r-tidyverse,data_flow,1,1,E00284,
+fastqc,multiqc,data_flow,1,1,E00349,
+findutils,dbcan,data_flow,2,2,E00249,
+findutils,diamond,data_flow,4,4,E00295,
+findutils,eggnog-mapper,data_flow,2,2,E00220,
+findutils,eukulele,data_flow,2,2,E00277,
+findutils,format_gff2bed,data_flow,1,1,E00120,
+findutils,format_locusfaa,data_flow,2,2,E00127,
+findutils,format_metaeuk_gff,data_flow,1,1,E00114,
+findutils,format_metaeukfaa,data_flow,1,1,E00113,
+findutils,hmmer,data_flow,2,2,E00161,
+findutils,interproscan,data_flow,2,2,E00261,
+findutils,kofamscan,data_flow,2,2,E00235,
+findutils,multiqc,data_flow,1,1,E00359,
+findutils,pigz,data_flow,5,5,E00094,
+findutils,r-data.table,data_flow,2,2,E00169,
+findutils,r-dplyr,data_flow,1,1,E00054,
+findutils,r-tidyverse,data_flow,2,2,E00286,
+findutils,seqtk,data_flow,2,2,E00177,
+findutils,subread,data_flow,1,1,E00207,
+format_clusterreps,r-dplyr,data_flow,1,1,E00216,
+format_clusterreps,seqkit,data_flow,1,1,E00149,
+format_gff2bed,bedtools,data_flow,1,1,E00124,
+format_locusconsolidate,format_locusfaa,data_flow,1,1,E00126,
+format_locusconsolidate,r-dplyr,data_flow,2,2,E00213,
+format_locusconsolidate,subread,data_flow,1,1,E00211,
+format_locusfaa,format_clusterreps,data_flow,1,1,E00145,
+format_locusfaa,mmseqs2,data_flow,1,1,E00133,
+format_locusfaa,seqkit,data_flow,1,1,E00147,
+format_metaeuk_gff,dbcan,data_flow,1,1,E00253,
+format_metaeuk_gff,diamond,data_flow,2,2,E00299,
+format_metaeuk_gff,eggnog-mapper,data_flow,1,1,E00224,
+format_metaeuk_gff,eukulele,data_flow,1,1,E00281,
+format_metaeuk_gff,format_gff2bed,data_flow,1,1,E00121,
+format_metaeuk_gff,format_locusfaa,data_flow,1,1,E00131,
+format_metaeuk_gff,hmmer,data_flow,1,1,E00165,
+format_metaeuk_gff,interproscan,data_flow,1,1,E00265,
+format_metaeuk_gff,kofamscan,data_flow,1,1,E00239,
+format_metaeuk_gff,pigz,data_flow,2,2,E00117,
+format_metaeuk_gff,r-data.table,data_flow,1,1,E00173,
+format_metaeuk_gff,r-tidyverse,data_flow,1,1,E00290,
+format_metaeuk_gff,seqtk,data_flow,1,1,E00181,
+format_metaeuk_gff,subread,data_flow,1,1,E00208,
+format_metaeukfaa,dbcan,data_flow,2,2,E00252,
+format_metaeukfaa,diamond,data_flow,4,4,E00298,
+format_metaeukfaa,eggnog-mapper,data_flow,2,2,E00223,
+format_metaeukfaa,eukulele,data_flow,2,2,E00280,
+format_metaeukfaa,format_gff2bed,data_flow,1,1,E00122,
+format_metaeukfaa,format_locusfaa,data_flow,2,2,E00130,
+format_metaeukfaa,hmmer,data_flow,2,2,E00164,
+format_metaeukfaa,interproscan,data_flow,2,2,E00264,
+format_metaeukfaa,kofamscan,data_flow,2,2,E00238,
+format_metaeukfaa,multiqc,data_flow,1,1,E00360,
+format_metaeukfaa,pigz,data_flow,1,1,E00119,
+format_metaeukfaa,r-data.table,data_flow,2,2,E00172,
+format_metaeukfaa,r-tidyverse,data_flow,2,2,E00289,
+format_metaeukfaa,seqtk,data_flow,2,2,E00180,
+format_metaeukfaa,subread,data_flow,1,1,E00209,
+format_prodigal_gff,pigz,data_flow,1,1,E00116,
+format_stripcdsprefix,duckdb-cli,data_flow,1,1,E00344,
+format_stripcdsprefix,r-dplyr,data_flow,1,1,E00331,
+format_stripcdsprefix,r-tidyverse,data_flow,6,6,E00233,
+formatspades,bbmap,data_flow,1,1,E00152,
+formatspades,findutils,data_flow,9,3,E00041,
+formatspades,metaeuk,data_flow,1,1,E00100,
+formatspades,multiqc,data_flow,1,1,E00355,
+formatspades,prodigal,data_flow,1,1,E00057,
+formatspades,prokka,data_flow,1,1,E00037,
+formatspades,quast,data_flow,1,1,E00275,
+formatspades,samtools,data_flow,2,2,E00187,
+formatspades,seqtk,data_flow,1,1,E00033,
+formatspades,transdecoder,data_flow,3,3,E00062,
+gawk,duckdb-cli,gate_metadata,1,0,E00340,
+gawk,r-tidyverse,gate_metadata,1,0,E00270,
+gzip,duckdb-cli,data_flow,3,3,E00336,
+gzip,r-tidyverse,data_flow,3,3,E00232,
+hmmer,r-data.table,data_flow,1,1,E00168,
+interproscan,gawk,data_flow,1,1,E00269,
+kofamscan,gzip,data_flow,1,1,E00244,
+kofamscan,r-tidyverse,gate_metadata,1,0,E00246,
+megahit,bbmap,data_flow,1,1,E00153,
+megahit,findutils,data_flow,9,3,E00042,
+megahit,metaeuk,data_flow,1,1,E00101,
+megahit,multiqc,data_flow,1,1,E00356,
+megahit,prodigal,data_flow,1,1,E00058,
+megahit,prokka,data_flow,1,1,E00038,
+megahit,quast,data_flow,1,1,E00276,
+megahit,samtools,data_flow,2,2,E00188,
+megahit,seqtk,data_flow,1,1,E00034,
+megahit,transdecoder,data_flow,3,3,E00063,
+metaeuk,findutils,gate_metadata,2,0,E00107,
+metaeuk,multiqc,data_flow,1,1,E00362,
+mmseqs2,format_clusterreps,gate_metadata,1,0,E00146,
+mmseqs2,seqkit,gate_metadata,1,0,E00148,
+pigz,bbmap,data_flow,7,7,E00010,
+pigz,fastqc,data_flow,3,3,E00001,
+pigz,findutils,data_flow,9,3,E00040,
+pigz,format_gff2bed,data_flow,1,1,E00123,
+pigz,metaeuk,data_flow,1,1,E00099,
+pigz,multiqc,data_flow,1,1,E00354,
+pigz,prodigal,data_flow,1,1,E00056,
+pigz,prokka,data_flow,1,1,E00036,
+pigz,quast,data_flow,1,1,E00274,
+pigz,r-dplyr,data_flow,3,3,E00324,
+pigz,r-tidyverse,data_flow,2,2,E00313,
+pigz,samtools,data_flow,2,2,E00186,
+pigz,seqtk,data_flow,4,4,E00016,
+pigz,subread,data_flow,1,1,E00210,
+pigz,transdecoder,data_flow,3,3,E00061,
+pigz,trim-galore,data_flow,3,3,E00005,
+prodigal,dbcan,data_flow,1,1,E00250,
+prodigal,diamond,data_flow,2,2,E00296,
+prodigal,eggnog-mapper,data_flow,1,1,E00221,
+prodigal,eukulele,data_flow,1,1,E00278,
+prodigal,format_locusfaa,data_flow,1,1,E00128,
+prodigal,format_prodigal_gff,data_flow,1,1,E00059,
+prodigal,hmmer,data_flow,1,1,E00162,
+prodigal,interproscan,data_flow,1,1,E00262,
+prodigal,kofamscan,data_flow,1,1,E00236,
+prodigal,multiqc,data_flow,1,1,E00358,
+prodigal,r-data.table,data_flow,1,1,E00170,
+prodigal,r-tidyverse,data_flow,1,1,E00287,
+prodigal,seqtk,data_flow,1,1,E00178,
+prokka,findutils,gate_metadata,3,0,E00043,
+prokka,multiqc,data_flow,1,1,E00357,
+quast,multiqc,data_flow,1,1,E00361,
+r-data.table,duckdb-cli,data_flow,1,1,E00347,
+r-data.table,format_stripcdsprefix,data_flow,1,1,E00219,
+r-data.table,seqtk,data_flow,1,1,E00176,
+r-dplyr,duckdb-cli,data_flow,4,3,E00335,
+r-dplyr,r-tidyverse,data_flow,6,6,E00234,
+r-tidyverse,duckdb-cli,data_flow,4,4,E00338,
+r-tidyverse,r-dplyr,data_flow,1,1,E00333,
+samtools,r-dplyr,gate_metadata,1,0,E00330,
+samtools,subread,data_flow,4,2,E00203,
+seqkit,dbcan,data_flow,1,1,E00255,
+seqkit,diamond,data_flow,2,2,E00301,
+seqkit,eggnog-mapper,data_flow,1,1,E00226,
+seqkit,eukulele,data_flow,1,1,E00283,
+seqkit,hmmer,data_flow,1,1,E00167,
+seqkit,interproscan,data_flow,1,1,E00267,
+seqkit,kofamscan,data_flow,1,1,E00241,
+seqkit,r-data.table,data_flow,1,1,E00175,
+seqkit,r-tidyverse,data_flow,1,1,E00292,
+seqkit,seqtk,data_flow,1,1,E00183,
+seqtk,bbmap,data_flow,2,2,E00020,
+seqtk,findutils,data_flow,9,3,E00039,
+seqtk,megahit,data_flow,2,2,E00029,
+seqtk,metaeuk,data_flow,1,1,E00098,
+seqtk,multiqc,data_flow,1,1,E00353,
+seqtk,prodigal,data_flow,1,1,E00055,
+seqtk,prokka,data_flow,1,1,E00035,
+seqtk,quast,data_flow,1,1,E00273,
+seqtk,samtools,data_flow,2,2,E00185,
+seqtk,spades,data_flow,1,1,E00025,
+seqtk,transdecoder,data_flow,3,3,E00060,
+seqtk,writespadesyaml,data_flow,2,2,E00022,
+spades,formatspades,data_flow,2,2,E00027,
+subread,r-data.table,data_flow,1,1,E00218,
+subread,r-dplyr,data_flow,3,2,E00212,
+taxonkit,pigz,data_flow,1,1,E00312,
+transdecoder,findutils,gate_metadata,4,0,E00078,
+trim-galore,bbmap,data_flow,2,2,E00009,
+trim-galore,multiqc,data_flow,2,2,E00350,
+trim-galore,r-dplyr,gate_metadata,1,0,E00328,
+trim-galore,seqtk,data_flow,1,1,E00015,
+wget,interproscan,data_flow,1,1,E00268,
+wget,kofamscan,data_flow,2,2,E00242,
+wget,multiqc,data_flow,1,1,E00363,
+writespadesyaml,spades,data_flow,1,1,E00026,
+bbmap,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00159, E00004); no directed path between any process of the two tools"
+dbcan,diamond,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00252, E00298); no directed path between any process of the two tools"
+dbcan,eggnog-mapper,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00252, E00223); no directed path between any process of the two tools"
+dbcan,eukulele,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00252, E00280); no directed path between any process of the two tools"
+dbcan,hmmer,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00252, E00164); no directed path between any process of the two tools"
+dbcan,interproscan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00252, E00264); no directed path between any process of the two tools"
+dbcan,kofamscan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00252, E00238); no directed path between any process of the two tools"
+dbcan,r-data.table,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00252, E00172); no directed path between any process of the two tools"
+dbcan,subread,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00254, E00209); no directed path between any process of the two tools"
+diamond,dbcan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00298, E00252); no directed path between any process of the two tools"
+diamond,eggnog-mapper,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00298, E00223); no directed path between any process of the two tools"
+diamond,eukulele,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00298, E00280); no directed path between any process of the two tools"
+diamond,hmmer,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00298, E00164); no directed path between any process of the two tools"
+diamond,interproscan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00298, E00264); no directed path between any process of the two tools"
+diamond,kofamscan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00298, E00238); no directed path between any process of the two tools"
+diamond,multiqc,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00298, E00360); no directed path between any process of the two tools"
+diamond,r-data.table,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00298, E00172); no directed path between any process of the two tools"
+diamond,subread,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00300, E00209); no directed path between any process of the two tools"
+eggnog-mapper,dbcan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00223, E00252); no directed path between any process of the two tools"
+eggnog-mapper,diamond,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00223, E00298); no directed path between any process of the two tools"
+eggnog-mapper,eukulele,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00223, E00280); no directed path between any process of the two tools"
+eggnog-mapper,hmmer,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00223, E00164); no directed path between any process of the two tools"
+eggnog-mapper,interproscan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00223, E00264); no directed path between any process of the two tools"
+eggnog-mapper,kofamscan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00223, E00238); no directed path between any process of the two tools"
+eggnog-mapper,multiqc,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00223, E00360); no directed path between any process of the two tools"
+eggnog-mapper,r-data.table,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00223, E00172); no directed path between any process of the two tools"
+eggnog-mapper,subread,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00225, E00209); no directed path between any process of the two tools"
+eukulele,dbcan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00280, E00252); no directed path between any process of the two tools"
+eukulele,diamond,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00280, E00298); no directed path between any process of the two tools"
+eukulele,eggnog-mapper,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00280, E00223); no directed path between any process of the two tools"
+eukulele,hmmer,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00280, E00164); no directed path between any process of the two tools"
+eukulele,interproscan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00280, E00264); no directed path between any process of the two tools"
+eukulele,kofamscan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00280, E00238); no directed path between any process of the two tools"
+eukulele,multiqc,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00280, E00360); no directed path between any process of the two tools"
+eukulele,r-data.table,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00280, E00172); no directed path between any process of the two tools"
+eukulele,subread,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00282, E00209); no directed path between any process of the two tools"
+fastqc,bbmap,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00004, E00159); no directed path between any process of the two tools"
+fastqc,r-dplyr,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00004, E00327); no directed path between any process of the two tools"
+fastqc,seqtk,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00004, E00019); no directed path between any process of the two tools"
+fastqc,trim-galore,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00004, E00008); no directed path between any process of the two tools"
+findutils,prodigal,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00046, E00057); no directed path between any process of the two tools"
+findutils,quast,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00046, E00275); no directed path between any process of the two tools"
+findutils,samtools,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00046, E00194); no directed path between any process of the two tools"
+format_locusfaa,multiqc,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00130, E00360); no directed path between any process of the two tools"
+format_locusfaa,subread,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00132, E00209); no directed path between any process of the two tools"
+hmmer,dbcan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00164, E00252); no directed path between any process of the two tools"
+hmmer,diamond,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00164, E00298); no directed path between any process of the two tools"
+hmmer,eggnog-mapper,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00164, E00223); no directed path between any process of the two tools"
+hmmer,eukulele,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00164, E00280); no directed path between any process of the two tools"
+hmmer,interproscan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00164, E00264); no directed path between any process of the two tools"
+hmmer,kofamscan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00164, E00238); no directed path between any process of the two tools"
+hmmer,multiqc,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00164, E00360); no directed path between any process of the two tools"
+hmmer,r-tidyverse,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00164, E00289); no directed path between any process of the two tools"
+hmmer,subread,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00166, E00209); no directed path between any process of the two tools"
+interproscan,dbcan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00264, E00252); no directed path between any process of the two tools"
+interproscan,diamond,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00264, E00298); no directed path between any process of the two tools"
+interproscan,eggnog-mapper,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00264, E00223); no directed path between any process of the two tools"
+interproscan,eukulele,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00264, E00280); no directed path between any process of the two tools"
+interproscan,hmmer,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00264, E00164); no directed path between any process of the two tools"
+interproscan,kofamscan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00264, E00238); no directed path between any process of the two tools"
+interproscan,multiqc,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00264, E00360); no directed path between any process of the two tools"
+interproscan,r-data.table,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00264, E00172); no directed path between any process of the two tools"
+interproscan,subread,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00266, E00209); no directed path between any process of the two tools"
+kofamscan,dbcan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00238, E00252); no directed path between any process of the two tools"
+kofamscan,diamond,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00238, E00298); no directed path between any process of the two tools"
+kofamscan,eggnog-mapper,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00238, E00223); no directed path between any process of the two tools"
+kofamscan,eukulele,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00238, E00280); no directed path between any process of the two tools"
+kofamscan,hmmer,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00238, E00164); no directed path between any process of the two tools"
+kofamscan,interproscan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00238, E00264); no directed path between any process of the two tools"
+kofamscan,multiqc,parallel_co_use,0,0,,"both consume KOFAMSCAN_DOWNLOAD.ko_list (E00243, E00363); no directed path between any process of the two tools"
+kofamscan,r-data.table,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00238, E00172); no directed path between any process of the two tools"
+kofamscan,subread,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00240, E00209); no directed path between any process of the two tools"
+metaeuk,prodigal,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00100, E00057); no directed path between any process of the two tools"
+metaeuk,prokka,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00100, E00037); no directed path between any process of the two tools"
+metaeuk,quast,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00100, E00275); no directed path between any process of the two tools"
+metaeuk,samtools,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00100, E00194); no directed path between any process of the two tools"
+metaeuk,transdecoder,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00100, E00062); no directed path between any process of the two tools"
+multiqc,diamond,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00360, E00298); no directed path between any process of the two tools"
+multiqc,eggnog-mapper,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00360, E00223); no directed path between any process of the two tools"
+multiqc,eukulele,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00360, E00280); no directed path between any process of the two tools"
+multiqc,format_locusfaa,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00360, E00130); no directed path between any process of the two tools"
+multiqc,hmmer,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00360, E00164); no directed path between any process of the two tools"
+multiqc,interproscan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00360, E00264); no directed path between any process of the two tools"
+multiqc,kofamscan,parallel_co_use,0,0,,"both consume KOFAMSCAN_DOWNLOAD.ko_list (E00363, E00243); no directed path between any process of the two tools"
+multiqc,r-data.table,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00360, E00172); no directed path between any process of the two tools"
+multiqc,r-tidyverse,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00360, E00289); no directed path between any process of the two tools"
+multiqc,samtools,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00355, E00194); no directed path between any process of the two tools"
+prodigal,findutils,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00057, E00046); no directed path between any process of the two tools"
+prodigal,metaeuk,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00057, E00100); no directed path between any process of the two tools"
+prodigal,prokka,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00057, E00037); no directed path between any process of the two tools"
+prodigal,quast,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00057, E00275); no directed path between any process of the two tools"
+prodigal,samtools,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00057, E00194); no directed path between any process of the two tools"
+prodigal,transdecoder,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00057, E00062); no directed path between any process of the two tools"
+prokka,metaeuk,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00037, E00100); no directed path between any process of the two tools"
+prokka,prodigal,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00037, E00057); no directed path between any process of the two tools"
+prokka,quast,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00037, E00275); no directed path between any process of the two tools"
+prokka,samtools,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00037, E00194); no directed path between any process of the two tools"
+prokka,transdecoder,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00037, E00062); no directed path between any process of the two tools"
+quast,findutils,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00275, E00046); no directed path between any process of the two tools"
+quast,metaeuk,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00275, E00100); no directed path between any process of the two tools"
+quast,prodigal,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00275, E00057); no directed path between any process of the two tools"
+quast,prokka,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00275, E00037); no directed path between any process of the two tools"
+quast,samtools,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00275, E00194); no directed path between any process of the two tools"
+quast,transdecoder,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00275, E00062); no directed path between any process of the two tools"
+r-data.table,dbcan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00172, E00252); no directed path between any process of the two tools"
+r-data.table,diamond,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00172, E00298); no directed path between any process of the two tools"
+r-data.table,eggnog-mapper,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00172, E00223); no directed path between any process of the two tools"
+r-data.table,eukulele,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00172, E00280); no directed path between any process of the two tools"
+r-data.table,interproscan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00172, E00264); no directed path between any process of the two tools"
+r-data.table,kofamscan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00172, E00238); no directed path between any process of the two tools"
+r-data.table,multiqc,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00172, E00360); no directed path between any process of the two tools"
+r-dplyr,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00327, E00004); no directed path between any process of the two tools"
+r-tidyverse,hmmer,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00289, E00164); no directed path between any process of the two tools"
+r-tidyverse,multiqc,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00289, E00360); no directed path between any process of the two tools"
+samtools,findutils,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00194, E00046); no directed path between any process of the two tools"
+samtools,metaeuk,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00194, E00100); no directed path between any process of the two tools"
+samtools,multiqc,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00194, E00355); no directed path between any process of the two tools"
+samtools,prodigal,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00194, E00057); no directed path between any process of the two tools"
+samtools,prokka,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00194, E00037); no directed path between any process of the two tools"
+samtools,quast,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00194, E00275); no directed path between any process of the two tools"
+samtools,transdecoder,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00194, E00062); no directed path between any process of the two tools"
+seqtk,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00019, E00004); no directed path between any process of the two tools"
+subread,dbcan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00209, E00254); no directed path between any process of the two tools"
+subread,diamond,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00209, E00300); no directed path between any process of the two tools"
+subread,eggnog-mapper,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00209, E00225); no directed path between any process of the two tools"
+subread,eukulele,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00209, E00282); no directed path between any process of the two tools"
+subread,format_locusfaa,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00209, E00132); no directed path between any process of the two tools"
+subread,hmmer,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00209, E00166); no directed path between any process of the two tools"
+subread,interproscan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00209, E00266); no directed path between any process of the two tools"
+subread,kofamscan,parallel_co_use,0,0,,"both consume FORMAT_METAEUKFAA.format_faa (E00209, E00240); no directed path between any process of the two tools"
+transdecoder,metaeuk,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00062, E00100); no directed path between any process of the two tools"
+transdecoder,prodigal,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00062, E00057); no directed path between any process of the two tools"
+transdecoder,prokka,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00062, E00037); no directed path between any process of the two tools"
+transdecoder,quast,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00062, E00275); no directed path between any process of the two tools"
+transdecoder,samtools,parallel_co_use,0,0,,"both consume FORMATSPADES.assembly (E00062, E00194); no directed path between any process of the two tools"
+trim-galore,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00008, E00004); no directed path between any process of the two tools"

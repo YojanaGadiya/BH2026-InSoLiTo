@@ -1,0 +1,28 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bcftools,bioconductor-biocparallel,data_flow,2,2,E00121,
+bcftools,bioconductor-genomicranges,data_flow,1,1,E00119,
+bcftools,bioconductor-mafdb.gnomad.r2.1.grch38,data_flow,1,1,E00116,
+beautifulsoup4,multiqc,data_flow,6,6,E00126,
+bioconductor-biocparallel,bioconductor-outrider,data_flow,1,1,E00016,
+bioconductor-biocparallel,r-data.table,data_flow,1,1,E00123,
+bioconductor-biocparallel,r-magrittr,data_flow,1,1,E00017,
+bioconductor-genomicranges,bioconductor-biocparallel,data_flow,1,1,E00120,
+bioconductor-mafdb.gnomad.r2.1.grch38,bioconductor-genomicranges,data_flow,1,1,E00117,
+bioconductor-rtracklayer,bioconductor-genomicranges,gate_metadata,1,0,E00118,
+gatk4,bcftools,data_flow,2,2,E00114,
+multiqc,beautifulsoup4,data_flow,6,6,E00039,
+r-magrittr,bioconductor-biocparallel,data_flow,2,2,E00007,
+r-magrittr,bioconductor-bsgenome.hsapiens.ucsc.hg19,data_flow,5,5,E00083,
+samtools,bcftools,data_flow,10,4,E00100,
+samtools,bioconductor-biocparallel,data_flow,10,7,E00001,
+samtools,bioconductor-bsgenome.hsapiens.ucsc.hg19,data_flow,25,10,E00041,
+samtools,r-magrittr,gate_metadata,5,0,E00031,
+tabix,bcftools,rejected,2,0,E00105,every extracted edge is rejected
+tabix,bioconductor-biocparallel,data_flow,2,1,E00006,
+tabix,bioconductor-bsgenome.hsapiens.ucsc.hg19,rejected,5,0,E00046,every extracted edge is rejected
+tabix,r-magrittr,gate_metadata,1,0,E00036,
+tabix,samtools,data_flow,1,1,E00029,
+bcftools,bioconductor-bsgenome.hsapiens.ucsc.hg19,parallel_co_use,0,0,,"both consume SAMTOOLS_CONVERT_NCBI.bam (E00111, E00067); no directed path between any process of the two tools"
+bioconductor-biocparallel,bioconductor-bsgenome.hsapiens.ucsc.hg19,parallel_co_use,0,0,,"both consume SAMTOOLS_CONVERT_NCBI.bam (E00004, E00067); no directed path between any process of the two tools"
+bioconductor-bsgenome.hsapiens.ucsc.hg19,bcftools,parallel_co_use,0,0,,"both consume SAMTOOLS_CONVERT_NCBI.bam (E00067, E00111); no directed path between any process of the two tools"
+bioconductor-bsgenome.hsapiens.ucsc.hg19,bioconductor-biocparallel,parallel_co_use,0,0,,"both consume SAMTOOLS_CONVERT_NCBI.bam (E00067, E00004); no directed path between any process of the two tools"

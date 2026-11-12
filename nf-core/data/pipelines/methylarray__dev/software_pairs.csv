@@ -1,0 +1,18 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+adjust_batch_effect,find_blocks,data_flow,1,1,E00038,
+adjust_batch_effect,find_dmr,data_flow,1,1,E00032,
+adjust_batch_effect,r-readr,data_flow,1,1,E00026,
+bioconductor-illuminahumanmethylationepicmanifest,adjust_batch_effect,data_flow,3,3,E00023,
+bioconductor-illuminahumanmethylationepicmanifest,find_blocks,data_flow,3,3,E00041,
+bioconductor-illuminahumanmethylationepicmanifest,find_dmr,data_flow,3,3,E00035,
+bioconductor-illuminahumanmethylationepicmanifest,r-dplyr,data_flow,9,9,E00008,
+bioconductor-illuminahumanmethylationepicmanifest,r-readr,data_flow,6,6,E00018,
+r-dplyr,adjust_batch_effect,data_flow,1,1,E00022,
+r-dplyr,find_blocks,data_flow,1,1,E00040,
+r-dplyr,find_dmr,data_flow,1,1,E00034,
+r-dplyr,r-readr,data_flow,2,2,E00017,
+r-readr,adjust_batch_effect,data_flow,1,1,E00021,
+r-readr,find_blocks,data_flow,1,1,E00039,
+r-readr,find_dmr,data_flow,1,1,E00033,
+find_blocks,find_dmr,parallel_co_use,0,0,,"both consume ADJUST_BATCH_EFFECT.bVals (E00038, E00032); no directed path between any process of the two tools"
+find_dmr,find_blocks,parallel_co_use,0,0,,"both consume ADJUST_BATCH_EFFECT.bVals (E00032, E00038); no directed path between any process of the two tools"

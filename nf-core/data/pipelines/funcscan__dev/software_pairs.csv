@@ -1,0 +1,281 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+abricate,hamronization,data_flow,1,1,E00283,
+amp_database_download,ampcombi,data_flow,1,1,E00198,
+amplify,ampcombi,gate_metadata,4,0,E00118,
+antismash,bigslice,data_flow,1,1,E00351,
+antismash,combgc,data_flow,3,3,E00368,
+bakta,abricate,data_flow,3,3,E00274,
+bakta,ampcombi,data_flow,12,12,E00127,
+bakta,amplify,data_flow,3,3,E00064,
+bakta,antismash,data_flow,3,3,E00309,
+bakta,combgc,data_flow,3,3,E00375,
+bakta,dbcan,data_flow,15,15,E00394,
+bakta,deeparg,data_flow,3,3,E00294,
+bakta,deepbgc,data_flow,3,3,E00325,
+bakta,fargene,data_flow,6,6,E00226,
+bakta,gecco,data_flow,3,3,E00340,
+bakta,hmmer,data_flow,6,6,E00108,
+bakta,macrel,data_flow,3,3,E00078,
+bakta,mmseqs2,data_flow,3,3,E00028,
+bakta,multiqc,data_flow,1,1,E00463,
+bakta,ncbi-amrfinderplus,data_flow,3,3,E00207,
+bakta,r-ampir,data_flow,3,3,E00094,
+bakta,rgi,data_flow,3,3,E00256,
+bakta,seqkit,data_flow,3,3,E00048,
+deepbgc,combgc,data_flow,1,1,E00385,
+fargene,hamronization,data_flow,1,1,E00249,
+gecco,bigslice,data_flow,1,1,E00352,
+gecco,combgc,data_flow,2,2,E00386,
+gunzip,abricate,data_flow,7,7,E00269,
+gunzip,ampcombi,data_flow,40,40,E00119,
+gunzip,amplify,data_flow,7,7,E00059,
+gunzip,antismash,data_flow,7,7,E00304,
+gunzip,bakta,data_flow,1,1,E00020,
+gunzip,combgc,data_flow,7,7,E00370,
+gunzip,dbcan,data_flow,35,35,E00389,
+gunzip,deeparg,data_flow,7,7,E00289,
+gunzip,deepbgc,data_flow,7,7,E00320,
+gunzip,fargene,data_flow,14,14,E00221,
+gunzip,gecco,data_flow,7,7,E00335,
+gunzip,hmmer,data_flow,14,14,E00103,
+gunzip,macrel,data_flow,7,7,E00073,
+gunzip,mmseqs2,data_flow,7,7,E00023,
+gunzip,ncbi-amrfinderplus,data_flow,7,7,E00202,
+gunzip,prodigal,data_flow,2,2,E00010,
+gunzip,prokka,data_flow,1,1,E00018,
+gunzip,pyrodigal,data_flow,2,2,E00002,
+gunzip,r-ampir,data_flow,7,7,E00089,
+gunzip,rgi,data_flow,7,7,E00251,
+gunzip,seqkit,data_flow,8,8,E00001,
+hamronization,argnorm,gate_metadata,2,0,E00220,
+hmmer,gunzip,data_flow,1,1,E00117,
+interproscan,ampcombi,gate_metadata,4,0,E00137,
+interproscan_database,interproscan,data_flow,1,1,E00058,
+macrel,gunzip,data_flow,2,2,E00087,
+mmseqs2,merge_taxonomy_ampcombi,data_flow,1,1,E00201,
+mmseqs2,merge_taxonomy_combgc,data_flow,1,1,E00388,
+mmseqs2,merge_taxonomy_hamronization,data_flow,1,1,E00303,
+ncbi-amrfinderplus,hamronization,data_flow,3,3,E00217,
+prodigal,gunzip,data_flow,4,4,E00014,
+prokka,abricate,data_flow,3,3,E00273,
+prokka,ampcombi,data_flow,12,12,E00126,
+prokka,amplify,data_flow,3,3,E00063,
+prokka,antismash,data_flow,3,3,E00308,
+prokka,combgc,data_flow,3,3,E00374,
+prokka,dbcan,data_flow,15,15,E00393,
+prokka,deeparg,data_flow,3,3,E00293,
+prokka,deepbgc,data_flow,3,3,E00324,
+prokka,fargene,data_flow,6,6,E00225,
+prokka,gecco,data_flow,3,3,E00339,
+prokka,hmmer,data_flow,6,6,E00107,
+prokka,macrel,data_flow,3,3,E00077,
+prokka,mmseqs2,data_flow,3,3,E00027,
+prokka,multiqc,data_flow,1,1,E00462,
+prokka,ncbi-amrfinderplus,data_flow,3,3,E00206,
+prokka,r-ampir,data_flow,3,3,E00093,
+prokka,rgi,data_flow,3,3,E00255,
+prokka,seqkit,data_flow,3,3,E00047,
+pyrodigal,gunzip,data_flow,4,4,E00006,
+r-ampir,ampcombi,data_flow,4,4,E00120,
+rgi,hamronization,data_flow,3,3,E00266,
+seqkit,abricate,data_flow,1,1,E00270,
+seqkit,ampcombi,data_flow,4,4,E00123,
+seqkit,amplify,data_flow,1,1,E00060,
+seqkit,antismash,data_flow,1,1,E00305,
+seqkit,bakta,data_flow,1,1,E00021,
+seqkit,combgc,data_flow,1,1,E00371,
+seqkit,dbcan,data_flow,5,5,E00390,
+seqkit,deeparg,data_flow,1,1,E00290,
+seqkit,deepbgc,data_flow,1,1,E00321,
+seqkit,fargene,data_flow,2,2,E00222,
+seqkit,gecco,data_flow,1,1,E00336,
+seqkit,hmmer,data_flow,2,2,E00104,
+seqkit,interproscan,data_flow,1,1,E00057,
+seqkit,macrel,data_flow,1,1,E00074,
+seqkit,mmseqs2,data_flow,1,1,E00024,
+seqkit,ncbi-amrfinderplus,data_flow,1,1,E00203,
+seqkit,prodigal,data_flow,2,2,E00011,
+seqkit,prokka,data_flow,1,1,E00019,
+seqkit,pyrodigal,data_flow,2,2,E00003,
+seqkit,r-ampir,data_flow,1,1,E00090,
+seqkit,rgi,data_flow,1,1,E00252,
+untar,antismash,data_flow,1,1,E00318,
+untar,rgi,data_flow,1,1,E00250,
+abricate,ampcombi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00274, E00127); no directed path between any process of the two tools"
+abricate,amplify,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00274, E00064); no directed path between any process of the two tools"
+abricate,antismash,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00274, E00309); no directed path between any process of the two tools"
+abricate,combgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00274, E00375); no directed path between any process of the two tools"
+abricate,dbcan,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00274, E00394); no directed path between any process of the two tools"
+abricate,deepbgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00274, E00325); no directed path between any process of the two tools"
+abricate,fargene,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00274, E00226); no directed path between any process of the two tools"
+abricate,gecco,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00274, E00340); no directed path between any process of the two tools"
+abricate,hmmer,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00274, E00108); no directed path between any process of the two tools"
+abricate,macrel,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00274, E00078); no directed path between any process of the two tools"
+abricate,ncbi-amrfinderplus,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00274, E00207); no directed path between any process of the two tools"
+abricate,r-ampir,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00274, E00094); no directed path between any process of the two tools"
+abricate,rgi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00274, E00256); no directed path between any process of the two tools"
+ampcombi,abricate,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00127, E00274); no directed path between any process of the two tools"
+ampcombi,antismash,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00127, E00309); no directed path between any process of the two tools"
+ampcombi,combgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00127, E00375); no directed path between any process of the two tools"
+ampcombi,dbcan,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00127, E00394); no directed path between any process of the two tools"
+ampcombi,deepbgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00127, E00325); no directed path between any process of the two tools"
+ampcombi,fargene,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00127, E00226); no directed path between any process of the two tools"
+ampcombi,gecco,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00127, E00340); no directed path between any process of the two tools"
+ampcombi,ncbi-amrfinderplus,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00127, E00207); no directed path between any process of the two tools"
+ampcombi,rgi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00127, E00256); no directed path between any process of the two tools"
+amplify,abricate,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00064, E00274); no directed path between any process of the two tools"
+amplify,antismash,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00064, E00309); no directed path between any process of the two tools"
+amplify,combgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00064, E00375); no directed path between any process of the two tools"
+amplify,dbcan,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00064, E00394); no directed path between any process of the two tools"
+amplify,deepbgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00064, E00325); no directed path between any process of the two tools"
+amplify,fargene,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00064, E00226); no directed path between any process of the two tools"
+amplify,gecco,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00064, E00340); no directed path between any process of the two tools"
+amplify,hmmer,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00064, E00108); no directed path between any process of the two tools"
+amplify,macrel,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00064, E00078); no directed path between any process of the two tools"
+amplify,ncbi-amrfinderplus,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00064, E00207); no directed path between any process of the two tools"
+amplify,r-ampir,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00064, E00094); no directed path between any process of the two tools"
+amplify,rgi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00064, E00256); no directed path between any process of the two tools"
+antismash,abricate,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00309, E00274); no directed path between any process of the two tools"
+antismash,ampcombi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00309, E00127); no directed path between any process of the two tools"
+antismash,amplify,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00309, E00064); no directed path between any process of the two tools"
+antismash,dbcan,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00309, E00394); no directed path between any process of the two tools"
+antismash,deepbgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00309, E00325); no directed path between any process of the two tools"
+antismash,fargene,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00309, E00226); no directed path between any process of the two tools"
+antismash,gecco,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00309, E00340); no directed path between any process of the two tools"
+antismash,hmmer,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00309, E00108); no directed path between any process of the two tools"
+antismash,macrel,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00309, E00078); no directed path between any process of the two tools"
+antismash,ncbi-amrfinderplus,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00309, E00207); no directed path between any process of the two tools"
+antismash,r-ampir,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00309, E00094); no directed path between any process of the two tools"
+antismash,rgi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00309, E00256); no directed path between any process of the two tools"
+bakta,pyrodigal,parallel_co_use,0,0,,"both consume GUNZIP_INPUT_PREP.gunzip (E00020, E00002); no directed path between any process of the two tools"
+bigslice,combgc,parallel_co_use,0,0,,"both consume ANTISMASH_ANTISMASH.gbk_results (E00351, E00384); no directed path between any process of the two tools"
+combgc,abricate,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00375, E00274); no directed path between any process of the two tools"
+combgc,ampcombi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00375, E00127); no directed path between any process of the two tools"
+combgc,amplify,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00375, E00064); no directed path between any process of the two tools"
+combgc,bigslice,parallel_co_use,0,0,,"both consume ANTISMASH_ANTISMASH.gbk_results (E00384, E00351); no directed path between any process of the two tools"
+combgc,dbcan,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00375, E00394); no directed path between any process of the two tools"
+combgc,fargene,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00375, E00226); no directed path between any process of the two tools"
+combgc,hmmer,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00375, E00108); no directed path between any process of the two tools"
+combgc,macrel,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00375, E00078); no directed path between any process of the two tools"
+combgc,ncbi-amrfinderplus,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00375, E00207); no directed path between any process of the two tools"
+combgc,r-ampir,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00375, E00094); no directed path between any process of the two tools"
+combgc,rgi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00375, E00256); no directed path between any process of the two tools"
+dbcan,abricate,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00394, E00274); no directed path between any process of the two tools"
+dbcan,ampcombi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00394, E00127); no directed path between any process of the two tools"
+dbcan,amplify,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00394, E00064); no directed path between any process of the two tools"
+dbcan,antismash,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00394, E00309); no directed path between any process of the two tools"
+dbcan,combgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00394, E00375); no directed path between any process of the two tools"
+dbcan,deepbgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00394, E00325); no directed path between any process of the two tools"
+dbcan,fargene,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00394, E00226); no directed path between any process of the two tools"
+dbcan,gecco,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00394, E00340); no directed path between any process of the two tools"
+dbcan,hmmer,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00394, E00108); no directed path between any process of the two tools"
+dbcan,macrel,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00394, E00078); no directed path between any process of the two tools"
+dbcan,mmseqs2,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00394, E00028); no directed path between any process of the two tools"
+dbcan,ncbi-amrfinderplus,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00394, E00207); no directed path between any process of the two tools"
+dbcan,r-ampir,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00394, E00094); no directed path between any process of the two tools"
+dbcan,rgi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00394, E00256); no directed path between any process of the two tools"
+deepbgc,abricate,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00325, E00274); no directed path between any process of the two tools"
+deepbgc,ampcombi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00325, E00127); no directed path between any process of the two tools"
+deepbgc,amplify,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00325, E00064); no directed path between any process of the two tools"
+deepbgc,antismash,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00325, E00309); no directed path between any process of the two tools"
+deepbgc,dbcan,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00325, E00394); no directed path between any process of the two tools"
+deepbgc,fargene,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00325, E00226); no directed path between any process of the two tools"
+deepbgc,gecco,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00325, E00340); no directed path between any process of the two tools"
+deepbgc,hmmer,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00325, E00108); no directed path between any process of the two tools"
+deepbgc,macrel,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00325, E00078); no directed path between any process of the two tools"
+deepbgc,ncbi-amrfinderplus,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00325, E00207); no directed path between any process of the two tools"
+deepbgc,r-ampir,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00325, E00094); no directed path between any process of the two tools"
+deepbgc,rgi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00325, E00256); no directed path between any process of the two tools"
+fargene,abricate,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00226, E00274); no directed path between any process of the two tools"
+fargene,ampcombi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00226, E00127); no directed path between any process of the two tools"
+fargene,amplify,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00226, E00064); no directed path between any process of the two tools"
+fargene,antismash,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00226, E00309); no directed path between any process of the two tools"
+fargene,combgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00226, E00375); no directed path between any process of the two tools"
+fargene,dbcan,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00226, E00394); no directed path between any process of the two tools"
+fargene,deepbgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00226, E00325); no directed path between any process of the two tools"
+fargene,gecco,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00226, E00340); no directed path between any process of the two tools"
+fargene,hmmer,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00226, E00108); no directed path between any process of the two tools"
+fargene,macrel,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00226, E00078); no directed path between any process of the two tools"
+fargene,ncbi-amrfinderplus,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00226, E00207); no directed path between any process of the two tools"
+fargene,r-ampir,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00226, E00094); no directed path between any process of the two tools"
+fargene,rgi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00226, E00256); no directed path between any process of the two tools"
+gecco,abricate,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00340, E00274); no directed path between any process of the two tools"
+gecco,ampcombi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00340, E00127); no directed path between any process of the two tools"
+gecco,amplify,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00340, E00064); no directed path between any process of the two tools"
+gecco,antismash,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00340, E00309); no directed path between any process of the two tools"
+gecco,dbcan,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00340, E00394); no directed path between any process of the two tools"
+gecco,deepbgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00340, E00325); no directed path between any process of the two tools"
+gecco,fargene,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00340, E00226); no directed path between any process of the two tools"
+gecco,hmmer,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00340, E00108); no directed path between any process of the two tools"
+gecco,macrel,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00340, E00078); no directed path between any process of the two tools"
+gecco,ncbi-amrfinderplus,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00340, E00207); no directed path between any process of the two tools"
+gecco,r-ampir,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00340, E00094); no directed path between any process of the two tools"
+gecco,rgi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00340, E00256); no directed path between any process of the two tools"
+hmmer,abricate,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00108, E00274); no directed path between any process of the two tools"
+hmmer,amplify,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00108, E00064); no directed path between any process of the two tools"
+hmmer,antismash,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00108, E00309); no directed path between any process of the two tools"
+hmmer,combgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00108, E00375); no directed path between any process of the two tools"
+hmmer,dbcan,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00108, E00394); no directed path between any process of the two tools"
+hmmer,deepbgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00108, E00325); no directed path between any process of the two tools"
+hmmer,fargene,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00108, E00226); no directed path between any process of the two tools"
+hmmer,gecco,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00108, E00340); no directed path between any process of the two tools"
+hmmer,macrel,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00108, E00078); no directed path between any process of the two tools"
+hmmer,ncbi-amrfinderplus,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00108, E00207); no directed path between any process of the two tools"
+hmmer,r-ampir,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00108, E00094); no directed path between any process of the two tools"
+hmmer,rgi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00108, E00256); no directed path between any process of the two tools"
+macrel,abricate,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00078, E00274); no directed path between any process of the two tools"
+macrel,amplify,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00078, E00064); no directed path between any process of the two tools"
+macrel,antismash,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00078, E00309); no directed path between any process of the two tools"
+macrel,combgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00078, E00375); no directed path between any process of the two tools"
+macrel,dbcan,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00078, E00394); no directed path between any process of the two tools"
+macrel,deepbgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00078, E00325); no directed path between any process of the two tools"
+macrel,fargene,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00078, E00226); no directed path between any process of the two tools"
+macrel,gecco,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00078, E00340); no directed path between any process of the two tools"
+macrel,hmmer,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00078, E00108); no directed path between any process of the two tools"
+macrel,ncbi-amrfinderplus,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00078, E00207); no directed path between any process of the two tools"
+macrel,r-ampir,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00078, E00094); no directed path between any process of the two tools"
+macrel,rgi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00078, E00256); no directed path between any process of the two tools"
+mmseqs2,dbcan,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00028, E00394); no directed path between any process of the two tools"
+ncbi-amrfinderplus,abricate,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00207, E00274); no directed path between any process of the two tools"
+ncbi-amrfinderplus,ampcombi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00207, E00127); no directed path between any process of the two tools"
+ncbi-amrfinderplus,amplify,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00207, E00064); no directed path between any process of the two tools"
+ncbi-amrfinderplus,antismash,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00207, E00309); no directed path between any process of the two tools"
+ncbi-amrfinderplus,combgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00207, E00375); no directed path between any process of the two tools"
+ncbi-amrfinderplus,dbcan,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00207, E00394); no directed path between any process of the two tools"
+ncbi-amrfinderplus,deepbgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00207, E00325); no directed path between any process of the two tools"
+ncbi-amrfinderplus,fargene,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00207, E00226); no directed path between any process of the two tools"
+ncbi-amrfinderplus,gecco,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00207, E00340); no directed path between any process of the two tools"
+ncbi-amrfinderplus,hmmer,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00207, E00108); no directed path between any process of the two tools"
+ncbi-amrfinderplus,macrel,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00207, E00078); no directed path between any process of the two tools"
+ncbi-amrfinderplus,r-ampir,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00207, E00094); no directed path between any process of the two tools"
+ncbi-amrfinderplus,rgi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00207, E00256); no directed path between any process of the two tools"
+prodigal,pyrodigal,parallel_co_use,0,0,,"both consume GUNZIP_INPUT_PREP.gunzip (E00010, E00002); no directed path between any process of the two tools"
+prokka,pyrodigal,parallel_co_use,0,0,,"both consume GUNZIP_INPUT_PREP.gunzip (E00018, E00002); no directed path between any process of the two tools"
+pyrodigal,bakta,parallel_co_use,0,0,,"both consume GUNZIP_INPUT_PREP.gunzip (E00002, E00020); no directed path between any process of the two tools"
+pyrodigal,prodigal,parallel_co_use,0,0,,"both consume GUNZIP_INPUT_PREP.gunzip (E00002, E00010); no directed path between any process of the two tools"
+pyrodigal,prokka,parallel_co_use,0,0,,"both consume GUNZIP_INPUT_PREP.gunzip (E00002, E00018); no directed path between any process of the two tools"
+r-ampir,abricate,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00094, E00274); no directed path between any process of the two tools"
+r-ampir,amplify,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00094, E00064); no directed path between any process of the two tools"
+r-ampir,antismash,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00094, E00309); no directed path between any process of the two tools"
+r-ampir,combgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00094, E00375); no directed path between any process of the two tools"
+r-ampir,dbcan,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00094, E00394); no directed path between any process of the two tools"
+r-ampir,deepbgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00094, E00325); no directed path between any process of the two tools"
+r-ampir,fargene,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00094, E00226); no directed path between any process of the two tools"
+r-ampir,gecco,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00094, E00340); no directed path between any process of the two tools"
+r-ampir,hmmer,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00094, E00108); no directed path between any process of the two tools"
+r-ampir,macrel,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00094, E00078); no directed path between any process of the two tools"
+r-ampir,ncbi-amrfinderplus,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00094, E00207); no directed path between any process of the two tools"
+r-ampir,rgi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00094, E00256); no directed path between any process of the two tools"
+rgi,abricate,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00256, E00274); no directed path between any process of the two tools"
+rgi,ampcombi,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00256, E00127); no directed path between any process of the two tools"
+rgi,amplify,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00256, E00064); no directed path between any process of the two tools"
+rgi,antismash,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00256, E00309); no directed path between any process of the two tools"
+rgi,combgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00256, E00375); no directed path between any process of the two tools"
+rgi,dbcan,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00256, E00394); no directed path between any process of the two tools"
+rgi,deepbgc,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00256, E00325); no directed path between any process of the two tools"
+rgi,fargene,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00256, E00226); no directed path between any process of the two tools"
+rgi,gecco,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00256, E00340); no directed path between any process of the two tools"
+rgi,hmmer,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00256, E00108); no directed path between any process of the two tools"
+rgi,macrel,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00256, E00078); no directed path between any process of the two tools"
+rgi,ncbi-amrfinderplus,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00256, E00207); no directed path between any process of the two tools"
+rgi,r-ampir,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00256, E00094); no directed path between any process of the two tools"

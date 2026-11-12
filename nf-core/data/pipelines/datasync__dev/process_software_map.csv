@@ -1,0 +1,6 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_DATASYNC:DATASYNC:RCLONE_CHECKSUM,RCLONE_CHECKSUM,modules/nf-core/rclone/checksum/main.nf,1,rclone,rclone,rclone,environment.yml
+NFCORE_DATASYNC:DATASYNC:CREATE_FILTER_LIST,CREATE_FILTER_LIST,modules/local/create_filter_list/main.nf,1,create_filter_list,,,module name
+NFCORE_DATASYNC:DATASYNC:RCLONE_COPY,RCLONE_COPY,modules/nf-core/rclone/copy/main.nf,1,rclone,rclone,rclone,environment.yml
+NFCORE_DATASYNC:DATASYNC:RCLONE_CHECK,RCLONE_CHECK,modules/nf-core/rclone/check/main.nf,1,rclone,rclone,rclone,environment.yml
+NFCORE_DATASYNC:DATASYNC:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

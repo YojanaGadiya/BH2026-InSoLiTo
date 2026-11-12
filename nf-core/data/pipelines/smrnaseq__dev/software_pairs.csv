@@ -1,0 +1,90 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bioawk,bowtie,data_flow,1,1,E00001,
+bioawk,mirdeep2,data_flow,1,1,E00213,
+bioawk,samtools,data_flow,2,2,E00187,
+bowtie,mirdeep2,data_flow,1,1,E00211,
+bowtie,mirtop,data_flow,1,1,E00173,
+bowtie,samtools,data_flow,3,3,E00133,
+bowtie2,bowtie,data_flow,6,6,E00120,
+bowtie2,gawk,data_flow,12,12,E00032,
+bowtie2,seqcluster,data_flow,6,6,E00159,
+bowtie2,seqkit,data_flow,6,6,E00196,
+cat,bowtie,data_flow,1,1,E00131,
+cat,bowtie2,data_flow,6,6,E00030,
+cat,fastp,data_flow,2,2,E00005,
+cat,fastqc,data_flow,1,1,E00002,
+cat,gawk,data_flow,1,1,E00111,
+cat,mirtrace,data_flow,1,1,E00024,
+cat,seqcluster,data_flow,1,1,E00170,
+cat,seqkit,data_flow,1,1,E00207,
+cat,umi_tools,data_flow,1,1,E00003,
+cat,umicollapse,data_flow,1,1,E00016,
+fastp,bowtie,data_flow,4,3,E00126,
+fastp,bowtie2,data_flow,24,18,E00025,
+fastp,fastqc,data_flow,2,1,E00006,
+fastp,gawk,data_flow,4,3,E00106,
+fastp,mirtrace,data_flow,4,3,E00019,
+fastp,multiqc,data_flow,1,1,E00218,
+fastp,seqcluster,data_flow,4,3,E00165,
+fastp,seqkit,data_flow,4,3,E00202,
+fastp,umicollapse,data_flow,3,2,E00012,
+fastqc,multiqc,data_flow,2,2,E00216,
+fastx_toolkit,bowtie,data_flow,2,2,E00119,
+fastx_toolkit,mirdeep2,data_flow,2,2,E00214,
+fastx_toolkit,mirtop,data_flow,3,3,E00174,
+fastx_toolkit,samtools,data_flow,4,4,E00134,
+gawk,multiqc,data_flow,1,1,E00220,
+gawk,seqkit,data_flow,4,4,E00043,
+mirtop,multiqc,data_flow,1,1,E00224,
+mirtop,r-optparse,data_flow,1,1,E00180,
+mirtrace,multiqc,data_flow,3,3,E00225,
+r-optparse,r-data.table,data_flow,1,1,E00182,
+samtools,bioconductor-limma,gate_metadata,2,0,E00157,
+samtools,multiqc,data_flow,3,3,E00221,
+seqcluster,bowtie,data_flow,1,1,E00171,
+seqkit,bowtie2,data_flow,4,4,E00044,
+seqkit,fastx_toolkit,data_flow,2,2,E00118,
+seqkit,mirdeep2,data_flow,1,1,E00209,
+ucsc-blat,gawk,data_flow,4,4,E00042,
+umi_tools,bowtie,data_flow,1,1,E00130,
+umi_tools,bowtie2,data_flow,6,6,E00029,
+umi_tools,fastp,data_flow,3,3,E00004,
+umi_tools,gawk,data_flow,1,1,E00110,
+umi_tools,mirtrace,data_flow,1,1,E00023,
+umi_tools,seqcluster,data_flow,1,1,E00169,
+umi_tools,seqkit,data_flow,1,1,E00206,
+umi_tools,umicollapse,data_flow,1,1,E00015,
+umicollapse,multiqc,data_flow,1,1,E00219,
+umicollapse,umi_tools,data_flow,1,1,E00017,
+untar,bowtie,data_flow,1,1,E00184,
+untar,mirdeep2,data_flow,1,1,E00210,
+bowtie,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00131, E00002); no directed path between any process of the two tools"
+bowtie,mirtrace,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00131, E00024); no directed path between any process of the two tools"
+bowtie2,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00052, E00002); no directed path between any process of the two tools"
+bowtie2,mirtrace,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00052, E00024); no directed path between any process of the two tools"
+fastqc,bowtie,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00002, E00131); no directed path between any process of the two tools"
+fastqc,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00002, E00052); no directed path between any process of the two tools"
+fastqc,gawk,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00002, E00111); no directed path between any process of the two tools"
+fastqc,mirtrace,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00002, E00024); no directed path between any process of the two tools"
+fastqc,seqcluster,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00002, E00170); no directed path between any process of the two tools"
+fastqc,seqkit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00002, E00207); no directed path between any process of the two tools"
+fastqc,umicollapse,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00002, E00016); no directed path between any process of the two tools"
+gawk,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00111, E00002); no directed path between any process of the two tools"
+gawk,mirtrace,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00111, E00024); no directed path between any process of the two tools"
+mirdeep2,mirtop,parallel_co_use,0,0,,"both consume FORMAT_HAIRPIN.formatted_fasta (E00215, E00176); no directed path between any process of the two tools"
+mirdeep2,samtools,parallel_co_use,0,0,,"both consume FORMAT_HAIRPIN.formatted_fasta (E00215, E00152); no directed path between any process of the two tools"
+mirtop,mirdeep2,parallel_co_use,0,0,,"both consume FORMAT_HAIRPIN.formatted_fasta (E00176, E00215); no directed path between any process of the two tools"
+mirtop,samtools,parallel_co_use,0,0,,"both consume FORMAT_HAIRPIN.formatted_fasta (E00176, E00152); no directed path between any process of the two tools"
+mirtrace,bowtie,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00024, E00131); no directed path between any process of the two tools"
+mirtrace,bowtie2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00024, E00052); no directed path between any process of the two tools"
+mirtrace,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00024, E00002); no directed path between any process of the two tools"
+mirtrace,gawk,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00024, E00111); no directed path between any process of the two tools"
+mirtrace,seqcluster,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00024, E00170); no directed path between any process of the two tools"
+mirtrace,seqkit,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00024, E00207); no directed path between any process of the two tools"
+samtools,mirdeep2,parallel_co_use,0,0,,"both consume FORMAT_HAIRPIN.formatted_fasta (E00152, E00215); no directed path between any process of the two tools"
+samtools,mirtop,parallel_co_use,0,0,,"both consume FORMAT_HAIRPIN.formatted_fasta (E00152, E00176); no directed path between any process of the two tools"
+seqcluster,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00170, E00002); no directed path between any process of the two tools"
+seqcluster,mirtrace,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00170, E00024); no directed path between any process of the two tools"
+seqkit,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00207, E00002); no directed path between any process of the two tools"
+seqkit,mirtrace,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00207, E00024); no directed path between any process of the two tools"
+umicollapse,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00016, E00002); no directed path between any process of the two tools"

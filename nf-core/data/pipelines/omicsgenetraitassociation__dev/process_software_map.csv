@@ -1,0 +1,12 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_OMICSGENETRAITASSOCIATION:OMICSGENETRAITASSOCIATION:PASCAL_SUBWORKFLOW:PASCAL,PASCAL,modules/local/pascal/main.nf,1,pascal,,,module name
+NFCORE_OMICSGENETRAITASSOCIATION:OMICSGENETRAITASSOCIATION:PASCAL_SUBWORKFLOW:FORMAT_CMA_INPUT,FORMAT_CMA_INPUT,modules/local/cma/format_cma_input/main.nf,1,pandas,,python;pandas,environment.yml
+NFCORE_OMICSGENETRAITASSOCIATION:OMICSGENETRAITASSOCIATION:MMAP_SUBWORKFLOW:MMAP,MMAP,modules/local/mmap/mmap/main.nf,1,mmap,,,module name
+NFCORE_OMICSGENETRAITASSOCIATION:OMICSGENETRAITASSOCIATION:MMAP_SUBWORKFLOW:MMAP_PARSE,MMAP_PARSE,modules/local/mmap/mmap_parse/main.nf,1,numpy,,python;numpy;pandas,environment.yml
+NFCORE_OMICSGENETRAITASSOCIATION:OMICSGENETRAITASSOCIATION:MMAP_SUBWORKFLOW:FORMAT_CMA_INPUT,FORMAT_CMA_INPUT,modules/local/cma/format_cma_input/main.nf,1,pandas,,python;pandas,environment.yml
+NFCORE_OMICSGENETRAITASSOCIATION:OMICSGENETRAITASSOCIATION:CMA_SUBWORKFLOW:CMA,CMA,modules/local/cma/cma/main.nf,1,cma,,,module name
+NFCORE_OMICSGENETRAITASSOCIATION:OMICSGENETRAITASSOCIATION:PREPROCESS_PASCAL,PREPROCESS_PASCAL,modules/local/mea/preprocess/main.nf,1,pandas,,python;pandas,environment.yml
+NFCORE_OMICSGENETRAITASSOCIATION:OMICSGENETRAITASSOCIATION:RUN_PASCAL,RUN_PASCAL,modules/local/mea/pascal/main.nf,1,run_pascal,,,module name
+NFCORE_OMICSGENETRAITASSOCIATION:OMICSGENETRAITASSOCIATION:POSTPROCESS_PASCAL,POSTPROCESS_PASCAL,modules/local/mea/postprocess/main.nf,1,pandas,,python;pandas;numpy;statsmodels,environment.yml
+NFCORE_OMICSGENETRAITASSOCIATION:OMICSGENETRAITASSOCIATION:GO_ANALYSIS,GO_ANALYSIS,modules/local/mea/go_analysis/main.nf,1,go_analysis,,,module name
+NFCORE_OMICSGENETRAITASSOCIATION:OMICSGENETRAITASSOCIATION:MERGE_ORA_AND_SUMMARY,MERGE_ORA_AND_SUMMARY,modules/local/mea/merge_ora_and_summary/main.nf,1,pandas,,python;pandas,environment.yml

@@ -1,0 +1,58 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:PREPARE_INPUT:SAMPLESHEET_CHECK,SAMPLESHEET_CHECK,modules/local/samplesheet_check/main.nf,1,samplesheet_check,,,module name
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:PREPARE_INPUT:SRATOOLS_FASTERQDUMP,SRATOOLS_FASTERQDUMP,modules/nf-core/sratools/fasterqdump/main.nf,1,sra-tools,sratools,sra-tools;pigz,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:PREPARE_INPUT:BBMAP_SENDSKETCH,BBMAP_SENDSKETCH,modules/nf-core/bbmap/sendsketch/main.nf,1,bbmap,bbmap,bbmap;pigz,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:PREPARE_INPUT:INITIAL_CLASSIFICATION,INITIAL_CLASSIFICATION,modules/local/initial_classification/main.nf,1,initial_classification,,,module name
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:PREPARE_INPUT:FIND_ASSEMBLIES,FIND_ASSEMBLIES,modules/local/find_assemblies/main.nf,1,find_assemblies,,,module name
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:PREPARE_INPUT:PARSE_ASSEMBLIES,PARSE_ASSEMBLIES,modules/local/parse_assemblies/main.nf,1,parse_assemblies,,,module name
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:PREPARE_INPUT:PICK_ASSEMBLIES,PICK_ASSEMBLIES,modules/local/pick_assemblies/main.nf,1,pick_assemblies,,,module name
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:PREPARE_INPUT:DOWNLOAD_ASSEMBLIES,DOWNLOAD_ASSEMBLIES,modules/local/download_assemblies/main.nf,1,download_assemblies,,,module name
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:PREPARE_INPUT:SEQKIT_STATS,SEQKIT_STATS,modules/nf-core/seqkit/stats/main.nf,1,seqkit,seqkit,seqkit,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:PREPARE_INPUT:SEQKIT_HEAD,SEQKIT_HEAD,modules/nf-core/seqkit/head/main.nf,1,seqkit,seqkit,seqkit,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:GENOME_ASSEMBLY:FASTP,FASTP,modules/nf-core/fastp/main.nf,1,fastp,fastp,fastp,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:GENOME_ASSEMBLY:SPADES,SPADES,modules/nf-core/spades/main.nf,1,spades,spades,spades,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:GENOME_ASSEMBLY:FLYE_NANOPORE,FLYE,modules/nf-core/flye/main.nf,1,flye,flye,flye,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:GENOME_ASSEMBLY:FLYE_PACBIO,FLYE,modules/nf-core/flye/main.nf,1,flye,flye,flye,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:GENOME_ASSEMBLY:QUAST,QUAST,modules/nf-core/quast/main.nf,1,quast,quast,quast,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:SKETCH_COMPARISON:TRIM_AND_SKETCH,TRIM_AND_SKETCH,modules/local/trim_and_sketch/main.nf,1,trim_and_sketch,,,module name
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:SKETCH_COMPARISON:SOURMASH_SKETCH,SOURMASH_SKETCH,modules/nf-core/sourmash/sketch/main.nf,1,sourmash,sourmash,sourmash,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:SKETCH_COMPARISON:SOURMASH_COMPARE,SOURMASH_COMPARE,modules/nf-core/sourmash/compare/main.nf,1,sourmash,sourmash,sourmash,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:INITIAL_QC_CHECKS:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:INITIAL_QC_CHECKS:NANOPLOT,NANOPLOT,modules/nf-core/nanoplot/main.nf,1,nanoplot,nanoplot,nanoplot,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:VARIANT_ANALYSIS:ASSIGN_MAPPING_REFERENCE,ASSIGN_MAPPING_REFERENCE,modules/local/assign_mapping_reference/main.nf,1,assign_mapping_reference,,,module name
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:VARIANT_ANALYSIS:SEQKIT_SLIDING,SEQKIT_SLIDING,modules/nf-core/seqkit/sliding/main.nf,1,seqkit,seqkit,seqkit,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:VARIANT_ANALYSIS:REFERENCE_INDEX:PICARD_CREATESEQUENCEDICTIONARY,PICARD_CREATESEQUENCEDICTIONARY,modules/nf-core/picard/createsequencedictionary/main.nf,1,picard,picard,picard,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:VARIANT_ANALYSIS:REFERENCE_INDEX:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:VARIANT_ANALYSIS:REFERENCE_INDEX:BWA_INDEX,BWA_INDEX,modules/nf-core/bwa/index/main.nf,1,bwa,bwa,bwa;htslib;samtools,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:VARIANT_ANALYSIS:ALIGN_READS:BWA_MEM,BWA_MEM,modules/nf-core/bwa/mem/main.nf,1,bwa,bwa,bwa;htslib;samtools,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:VARIANT_ANALYSIS:ALIGN_READS:PICARD_FORMAT,PICARD_FORMAT,modules/local/picard_format/main.nf,1,picard_format,,,module name
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:VARIANT_ANALYSIS:ALIGN_READS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:VARIANT_ANALYSIS:CALL_VARIANTS:GRAPHTYPER_GENOTYPE,GRAPHTYPER_GENOTYPE,modules/nf-core/graphtyper/genotype/main.nf,1,graphtyper,graphtyper,graphtyper,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:VARIANT_ANALYSIS:CALL_VARIANTS:GRAPHTYPER_VCFCONCATENATE,GRAPHTYPER_VCFCONCATENATE,modules/nf-core/graphtyper/vcfconcatenate/main.nf,1,graphtyper,graphtyper,graphtyper,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:VARIANT_ANALYSIS:CALL_VARIANTS:TABIX_TABIX,TABIX_TABIX,modules/nf-core/tabix/tabix/main.nf,1,tabix,tabix,htslib,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:VARIANT_ANALYSIS:CALL_VARIANTS:TABIX_BGZIP,TABIX_BGZIP,modules/nf-core/tabix/bgzip/main.nf,1,bgzip,bgzip,htslib,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:VARIANT_ANALYSIS:CALL_VARIANTS:GATK4_VARIANTFILTRATION,GATK4_VARIANTFILTRATION,modules/nf-core/gatk4/variantfiltration/main.nf,1,gatk4,gatk4,gatk4;gcnvkernel,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:VARIANT_ANALYSIS:CALL_VARIANTS:VCFLIB_VCFFILTER,VCFLIB_VCFFILTER,modules/nf-core/vcflib/vcffilter/main.nf,1,vcflib,vcflib,vcflib,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:VARIANT_ANALYSIS:VCF_TO_SNP_ALIGN,VCF_TO_SNP_ALIGN,modules/local/vcf_to_snp_align/main.nf,1,vcf_to_snp_align,,,module name
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:VARIANT_ANALYSIS:IQTREE_SNP,IQTREE,modules/nf-core/iqtree/main.nf,1,iqtree,iqtree,iqtree,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:CORE_GENOME_PHYLOGENY:ASSIGN_CORE_REFERENCES,ASSIGN_CONTEXT_REFERENCES,modules/local/assign_context_references/main.nf,1,assign_context_references,,,module name
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:CORE_GENOME_PHYLOGENY:UNTAR,UNTAR,modules/nf-core/untar/main.nf,1,untar,untar,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:CORE_GENOME_PHYLOGENY:BAKTA_BAKTADBDOWNLOAD,BAKTA_BAKTADBDOWNLOAD,modules/nf-core/bakta/baktadbdownload/main.nf,1,bakta,bakta,bakta,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:CORE_GENOME_PHYLOGENY:BAKTA_BAKTA,BAKTA_BAKTA,modules/nf-core/bakta/bakta/main.nf,1,bakta,bakta,bakta;diamond,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:CORE_GENOME_PHYLOGENY:MAKE_GFF_WITH_FASTA,MAKE_GFF_WITH_FASTA,modules/local/make_gff_with_fasta/main.nf,1,make_gff_with_fasta,,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:CORE_GENOME_PHYLOGENY:PIRATE,PIRATE,modules/nf-core/pirate/main.nf,1,perl-bioperl,pirate,perl-bioperl;pirate,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:CORE_GENOME_PHYLOGENY:REFORMAT_PIRATE_RESULTS,REFORMAT_PIRATE_RESULTS,modules/local/reformat_pirate_results/main.nf,1,reformat_pirate_results,,,module name
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:CORE_GENOME_PHYLOGENY:CALCULATE_POCP,CALCULATE_POCP,modules/local/calculate_pocp/main.nf,1,calculate_pocp,,,module name
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:CORE_GENOME_PHYLOGENY:EXTRACT_FEATURE_SEQUENCES,EXTRACT_FEATURE_SEQUENCES,modules/local/extract_feature_sequences/main.nf,1,extract_feature_sequences,,,module name
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:CORE_GENOME_PHYLOGENY:SUBSET_CORE_GENES,SUBSET_CORE_GENES,modules/local/subset_core_genes/main.nf,1,subset_core_genes,,,module name
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:CORE_GENOME_PHYLOGENY:MAFFT_CORE,MAFFT_ALIGN,modules/nf-core/mafft/align/main.nf,1,mafft,mafft;pigz,mafft;pigz,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:CORE_GENOME_PHYLOGENY:IQTREE_CORE,IQTREE,modules/nf-core/iqtree/main.nf,1,iqtree,iqtree,iqtree,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:BUSCO_PHYLOGENY:ASSIGN_BUSCO_REFERENCES,ASSIGN_CONTEXT_REFERENCES,modules/local/assign_context_references/main.nf,1,assign_context_references,,,module name
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:BUSCO_PHYLOGENY:BUSCO_DOWNLOAD,BUSCO_DOWNLOAD,modules/nf-core/busco/download/main.nf,1,busco,busco,busco;sepp,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:BUSCO_PHYLOGENY:BUSCO_BUSCO,BUSCO_BUSCO,modules/nf-core/busco/busco/main.nf,1,busco,busco,busco,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:BUSCO_PHYLOGENY:SUBSET_BUSCO_GENES,SUBSET_BUSCO_GENES,modules/local/subset_busco_genes/main.nf,1,subset_busco_genes,,,module name
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:BUSCO_PHYLOGENY:MAFFT_BUSCO,MAFFT_ALIGN,modules/nf-core/mafft/align/main.nf,1,mafft,mafft;pigz,mafft;pigz,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:BUSCO_PHYLOGENY:IQTREE_BUSCO,IQTREE,modules/nf-core/iqtree/main.nf,1,iqtree,iqtree,iqtree,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:PREPARE_REPORT_INPUT,PREPARE_REPORT_INPUT,modules/local/prepare_report_input/main.nf,1,prepare_report_input,,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_PATHOGENSURVEILLANCE:PATHOGENSURVEILLANCE:MAIN_REPORT,MAIN_REPORT,modules/local/main_report/main.nf,1,main_report,,,module name

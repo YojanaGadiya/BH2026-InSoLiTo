@@ -1,0 +1,25 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bcftools_view,beagle,data_flow,1,1,E00015,
+beagle,tabix_index,data_flow,1,1,E00016,
+fastqc,multiqc,data_flow,1,1,E00022,
+filter_wasp_reads,samtools,data_flow,1,1,E00009,
+phaser,phaser_gene_ae,data_flow,1,1,E00020,
+phaser_gene_ae,extract_ase_genes,data_flow,1,1,E00021,
+prepare_vcf,bcftools_view,data_flow,1,1,E00014,
+prepare_vcf,star_align_wasp,data_flow,2,2,E00004,
+samplesheet_check,fastqc,data_flow,1,1,E00001,
+samplesheet_check,prepare_vcf,data_flow,1,1,E00002,
+samplesheet_check,star_align_wasp,data_flow,2,2,E00003,
+samtools,phaser,data_flow,1,1,E00019,
+samtools,star_align_wasp,data_flow,1,1,E00005,
+samtools,umi_tools,data_flow,2,2,E00011,
+star_align_wasp,filter_wasp_reads,data_flow,1,1,E00008,
+star_align_wasp,multiqc,data_flow,1,1,E00023,
+tabix_index,phaser,data_flow,1,1,E00017,
+umi_tools,multiqc,data_flow,1,1,E00024,
+umi_tools,phaser,data_flow,1,1,E00018,
+umi_tools,samtools,data_flow,1,1,E00013,
+fastqc,prepare_vcf,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00001, E00002); no directed path between any process of the two tools"
+fastqc,star_align_wasp,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00001, E00003); no directed path between any process of the two tools"
+prepare_vcf,fastqc,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00002, E00001); no directed path between any process of the two tools"
+star_align_wasp,fastqc,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.csv (E00003, E00001); no directed path between any process of the two tools"

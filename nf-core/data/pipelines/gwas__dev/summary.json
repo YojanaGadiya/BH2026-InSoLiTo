@@ -1,0 +1,11 @@
+{
+ "pipeline_kind": "dsl2",
+ "process_instances": 3,
+ "unresolved_statements": 0,
+ "status": "OK",
+ "process_edges": {
+  "data_flow": 3
+ },
+ "software_pairs": {},
+ "warnings": []
+}

@@ -1,0 +1,167 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bioconductor-bsseq,bioconductor-annotatr,data_flow,1,1,E00107,
+clair3,hiphase,data_flow,10,10,E00036,
+deepsomatic,bioconductor-mutationalpatterns,data_flow,1,1,E00117,
+deepsomatic,ensembl-vep,data_flow,1,1,E00051,
+deepsomatic,hiphase,data_flow,6,6,E00059,
+deepsomatic,p7zip,data_flow,1,1,E00108,
+gunzip,clair3,data_flow,1,1,E00033,
+gunzip,cnvkit,data_flow,1,1,E00088,
+gunzip,deepsomatic,data_flow,1,1,E00048,
+gunzip,deeptools,data_flow,1,1,E00028,
+gunzip,ensembl-vep,data_flow,1,1,E00053,
+gunzip,hiphase,data_flow,2,2,E00044,
+gunzip,hmftools-chord,data_flow,1,1,E00113,
+gunzip,hmftools-purple,data_flow,1,1,E00098,
+gunzip,mosdepth,data_flow,1,1,E00024,
+gunzip,pbmm2,data_flow,1,1,E00005,
+gunzip,samtools,data_flow,4,4,E00001,
+hiphase,pb-cpg-tools,data_flow,4,4,E00101,
+hmftools-amber,hmftools-purple,data_flow,1,1,E00096,
+hmftools-cobalt,hmftools-purple,data_flow,1,1,E00097,
+mosdepth,multiqc,data_flow,2,2,E00121,
+p7zip,clair3,data_flow,1,1,E00034,
+p7zip,cnvkit,data_flow,1,1,E00089,
+p7zip,deepsomatic,data_flow,1,1,E00049,
+p7zip,deeptools,data_flow,1,1,E00029,
+p7zip,ensembl-vep,data_flow,1,1,E00054,
+p7zip,hiphase,data_flow,2,2,E00045,
+p7zip,hmftools-chord,data_flow,2,2,E00111,
+p7zip,hmftools-purple,data_flow,1,1,E00099,
+p7zip,mosdepth,data_flow,1,1,E00025,
+p7zip,pbmm2,data_flow,1,1,E00006,
+p7zip,samtools,data_flow,4,4,E00002,
+pb-cpg-tools,bioconductor-bsseq,data_flow,2,2,E00105,
+pbmm2,samtools,data_flow,1,1,E00007,
+pbtk,pbmm2,data_flow,2,2,E00003,
+pysam,tabix,data_flow,2,2,E00081,
+samtools,clair3,data_flow,3,3,E00031,
+samtools,cnvkit,data_flow,3,2,E00086,
+samtools,deepsomatic,data_flow,3,3,E00046,
+samtools,deeptools,data_flow,3,3,E00026,
+samtools,hiphase,data_flow,10,7,E00038,
+samtools,hmftools-amber,data_flow,2,2,E00092,
+samtools,hmftools-chord,data_flow,2,2,E00115,
+samtools,hmftools-cobalt,data_flow,2,2,E00094,
+samtools,hmftools-purple,data_flow,1,1,E00100,
+samtools,mosdepth,data_flow,2,2,E00022,
+samtools,multiqc,data_flow,3,3,E00118,
+samtools,severus,data_flow,2,2,E00075,
+severus,hmftools-chord,data_flow,1,1,E00112,
+severus,pysam,data_flow,1,1,E00077,
+severus,tabix,data_flow,1,1,E00082,
+tabix,annotsv,data_flow,1,1,E00084,
+bioconductor-mutationalpatterns,ensembl-vep,parallel_co_use,0,0,,"both consume DEEPSOMATIC.vcf (E00117, E00051); no directed path between any process of the two tools"
+bioconductor-mutationalpatterns,hiphase,parallel_co_use,0,0,,"both consume DEEPSOMATIC.vcf (E00117, E00059); no directed path between any process of the two tools"
+clair3,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00031, E00086); no directed path between any process of the two tools"
+clair3,deepsomatic,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00032, E00047); no directed path between any process of the two tools"
+clair3,deeptools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00032, E00027); no directed path between any process of the two tools"
+clair3,ensembl-vep,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00033, E00053); no directed path between any process of the two tools"
+clair3,hmftools-amber,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00032, E00093); no directed path between any process of the two tools"
+clair3,hmftools-chord,parallel_co_use,0,0,,"both consume GENOME_FAIDX.fai (E00035, E00115); no directed path between any process of the two tools"
+clair3,hmftools-cobalt,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00032, E00095); no directed path between any process of the two tools"
+clair3,hmftools-purple,parallel_co_use,0,0,,"both consume GENOME_FAIDX.fai (E00035, E00100); no directed path between any process of the two tools"
+clair3,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00032, E00023); no directed path between any process of the two tools"
+clair3,severus,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00032, E00076); no directed path between any process of the two tools"
+cnvkit,clair3,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00086, E00031); no directed path between any process of the two tools"
+cnvkit,deepsomatic,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00086, E00046); no directed path between any process of the two tools"
+cnvkit,deeptools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00086, E00026); no directed path between any process of the two tools"
+cnvkit,ensembl-vep,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00088, E00053); no directed path between any process of the two tools"
+cnvkit,hiphase,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00086, E00038); no directed path between any process of the two tools"
+cnvkit,hmftools-amber,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00086, E00092); no directed path between any process of the two tools"
+cnvkit,hmftools-chord,parallel_co_use,0,0,,"both consume GENOME_FAIDX.fai (E00090, E00115); no directed path between any process of the two tools"
+cnvkit,hmftools-cobalt,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00086, E00094); no directed path between any process of the two tools"
+cnvkit,hmftools-purple,parallel_co_use,0,0,,"both consume GENOME_FAIDX.fai (E00090, E00100); no directed path between any process of the two tools"
+cnvkit,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00086, E00022); no directed path between any process of the two tools"
+cnvkit,severus,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00086, E00075); no directed path between any process of the two tools"
+deepsomatic,clair3,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00047, E00032); no directed path between any process of the two tools"
+deepsomatic,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00046, E00086); no directed path between any process of the two tools"
+deepsomatic,deeptools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00047, E00027); no directed path between any process of the two tools"
+deepsomatic,hmftools-amber,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00047, E00093); no directed path between any process of the two tools"
+deepsomatic,hmftools-cobalt,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00047, E00095); no directed path between any process of the two tools"
+deepsomatic,hmftools-purple,parallel_co_use,0,0,,"both consume GENOME_FAIDX.fai (E00050, E00100); no directed path between any process of the two tools"
+deepsomatic,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00047, E00023); no directed path between any process of the two tools"
+deepsomatic,severus,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00047, E00076); no directed path between any process of the two tools"
+deeptools,clair3,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00027, E00032); no directed path between any process of the two tools"
+deeptools,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00026, E00086); no directed path between any process of the two tools"
+deeptools,deepsomatic,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00027, E00047); no directed path between any process of the two tools"
+deeptools,ensembl-vep,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00028, E00053); no directed path between any process of the two tools"
+deeptools,hiphase,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00027, E00058); no directed path between any process of the two tools"
+deeptools,hmftools-amber,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00027, E00093); no directed path between any process of the two tools"
+deeptools,hmftools-chord,parallel_co_use,0,0,,"both consume GENOME_FAIDX.fai (E00030, E00115); no directed path between any process of the two tools"
+deeptools,hmftools-cobalt,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00027, E00095); no directed path between any process of the two tools"
+deeptools,hmftools-purple,parallel_co_use,0,0,,"both consume GENOME_FAIDX.fai (E00030, E00100); no directed path between any process of the two tools"
+deeptools,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00027, E00023); no directed path between any process of the two tools"
+deeptools,severus,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00027, E00076); no directed path between any process of the two tools"
+ensembl-vep,bioconductor-mutationalpatterns,parallel_co_use,0,0,,"both consume DEEPSOMATIC.vcf (E00051, E00117); no directed path between any process of the two tools"
+ensembl-vep,clair3,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00053, E00033); no directed path between any process of the two tools"
+ensembl-vep,cnvkit,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00053, E00088); no directed path between any process of the two tools"
+ensembl-vep,deeptools,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00053, E00028); no directed path between any process of the two tools"
+ensembl-vep,hiphase,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00053, E00044); no directed path between any process of the two tools"
+ensembl-vep,hmftools-chord,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00053, E00113); no directed path between any process of the two tools"
+ensembl-vep,hmftools-purple,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00053, E00098); no directed path between any process of the two tools"
+ensembl-vep,mosdepth,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00053, E00024); no directed path between any process of the two tools"
+hiphase,bioconductor-mutationalpatterns,parallel_co_use,0,0,,"both consume DEEPSOMATIC.vcf (E00059, E00117); no directed path between any process of the two tools"
+hiphase,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00038, E00086); no directed path between any process of the two tools"
+hiphase,deeptools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00058, E00027); no directed path between any process of the two tools"
+hiphase,ensembl-vep,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00044, E00053); no directed path between any process of the two tools"
+hiphase,hmftools-amber,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00058, E00093); no directed path between any process of the two tools"
+hiphase,hmftools-chord,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00044, E00113); no directed path between any process of the two tools"
+hiphase,hmftools-cobalt,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00058, E00095); no directed path between any process of the two tools"
+hiphase,hmftools-purple,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00044, E00098); no directed path between any process of the two tools"
+hiphase,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00058, E00023); no directed path between any process of the two tools"
+hiphase,severus,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00058, E00076); no directed path between any process of the two tools"
+hmftools-amber,clair3,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00093, E00032); no directed path between any process of the two tools"
+hmftools-amber,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00092, E00086); no directed path between any process of the two tools"
+hmftools-amber,deepsomatic,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00093, E00047); no directed path between any process of the two tools"
+hmftools-amber,deeptools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00093, E00027); no directed path between any process of the two tools"
+hmftools-amber,hiphase,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00093, E00058); no directed path between any process of the two tools"
+hmftools-amber,hmftools-cobalt,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00093, E00095); no directed path between any process of the two tools"
+hmftools-amber,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00093, E00023); no directed path between any process of the two tools"
+hmftools-amber,severus,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00093, E00076); no directed path between any process of the two tools"
+hmftools-chord,clair3,parallel_co_use,0,0,,"both consume GENOME_FAIDX.fai (E00115, E00035); no directed path between any process of the two tools"
+hmftools-chord,cnvkit,parallel_co_use,0,0,,"both consume GENOME_FAIDX.fai (E00115, E00090); no directed path between any process of the two tools"
+hmftools-chord,deeptools,parallel_co_use,0,0,,"both consume GENOME_FAIDX.fai (E00115, E00030); no directed path between any process of the two tools"
+hmftools-chord,ensembl-vep,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00113, E00053); no directed path between any process of the two tools"
+hmftools-chord,hiphase,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00113, E00044); no directed path between any process of the two tools"
+hmftools-chord,hmftools-purple,parallel_co_use,0,0,,"both consume GENOME_FAIDX.fai (E00115, E00100); no directed path between any process of the two tools"
+hmftools-chord,mosdepth,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00113, E00024); no directed path between any process of the two tools"
+hmftools-chord,pysam,parallel_co_use,0,0,,"both consume SEVERUS.somatic_vcf (E00112, E00077); no directed path between any process of the two tools"
+hmftools-chord,tabix,parallel_co_use,0,0,,"both consume SEVERUS.somatic_vcf (E00112, E00082); no directed path between any process of the two tools"
+hmftools-cobalt,clair3,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00095, E00032); no directed path between any process of the two tools"
+hmftools-cobalt,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00094, E00086); no directed path between any process of the two tools"
+hmftools-cobalt,deepsomatic,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00095, E00047); no directed path between any process of the two tools"
+hmftools-cobalt,deeptools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00095, E00027); no directed path between any process of the two tools"
+hmftools-cobalt,hiphase,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00095, E00058); no directed path between any process of the two tools"
+hmftools-cobalt,hmftools-amber,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00095, E00093); no directed path between any process of the two tools"
+hmftools-cobalt,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00095, E00023); no directed path between any process of the two tools"
+hmftools-cobalt,severus,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00095, E00076); no directed path between any process of the two tools"
+hmftools-purple,clair3,parallel_co_use,0,0,,"both consume GENOME_FAIDX.fai (E00100, E00035); no directed path between any process of the two tools"
+hmftools-purple,cnvkit,parallel_co_use,0,0,,"both consume GENOME_FAIDX.fai (E00100, E00090); no directed path between any process of the two tools"
+hmftools-purple,deepsomatic,parallel_co_use,0,0,,"both consume GENOME_FAIDX.fai (E00100, E00050); no directed path between any process of the two tools"
+hmftools-purple,deeptools,parallel_co_use,0,0,,"both consume GENOME_FAIDX.fai (E00100, E00030); no directed path between any process of the two tools"
+hmftools-purple,ensembl-vep,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00098, E00053); no directed path between any process of the two tools"
+hmftools-purple,hiphase,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00098, E00044); no directed path between any process of the two tools"
+hmftools-purple,hmftools-chord,parallel_co_use,0,0,,"both consume GENOME_FAIDX.fai (E00100, E00115); no directed path between any process of the two tools"
+hmftools-purple,mosdepth,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00098, E00024); no directed path between any process of the two tools"
+mosdepth,clair3,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00023, E00032); no directed path between any process of the two tools"
+mosdepth,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00022, E00086); no directed path between any process of the two tools"
+mosdepth,deepsomatic,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00023, E00047); no directed path between any process of the two tools"
+mosdepth,deeptools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00023, E00027); no directed path between any process of the two tools"
+mosdepth,ensembl-vep,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00024, E00053); no directed path between any process of the two tools"
+mosdepth,hiphase,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00023, E00058); no directed path between any process of the two tools"
+mosdepth,hmftools-amber,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00023, E00093); no directed path between any process of the two tools"
+mosdepth,hmftools-chord,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00024, E00113); no directed path between any process of the two tools"
+mosdepth,hmftools-cobalt,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00023, E00095); no directed path between any process of the two tools"
+mosdepth,hmftools-purple,parallel_co_use,0,0,,"both consume GUNZIP_GENOME_FASTA.gunzip (E00024, E00098); no directed path between any process of the two tools"
+mosdepth,severus,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00023, E00076); no directed path between any process of the two tools"
+pysam,hmftools-chord,parallel_co_use,0,0,,"both consume SEVERUS.somatic_vcf (E00077, E00112); no directed path between any process of the two tools"
+severus,clair3,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00076, E00032); no directed path between any process of the two tools"
+severus,cnvkit,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00075, E00086); no directed path between any process of the two tools"
+severus,deepsomatic,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00076, E00047); no directed path between any process of the two tools"
+severus,deeptools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00076, E00027); no directed path between any process of the two tools"
+severus,hiphase,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00076, E00058); no directed path between any process of the two tools"
+severus,hmftools-amber,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00076, E00093); no directed path between any process of the two tools"
+severus,hmftools-cobalt,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00076, E00095); no directed path between any process of the two tools"
+severus,mosdepth,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.bai (E00076, E00023); no directed path between any process of the two tools"
+tabix,hmftools-chord,parallel_co_use,0,0,,"both consume SEVERUS.somatic_vcf (E00082, E00112); no directed path between any process of the two tools"

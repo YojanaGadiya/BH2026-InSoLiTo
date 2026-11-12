@@ -1,0 +1,228 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bedtools,ucsc-bedclip,data_flow,2,2,E00329,
+bioconductor-dexseq,bioconductor-stager,data_flow,4,4,E00207,
+bioconductor-drimseq,bioconductor-dexseq,data_flow,4,4,E00205,
+bioconductor-tximeta,bioconductor-drimseq,data_flow,6,6,E00202,
+bioconductor-tximeta,r-base,data_flow,3,3,E00210,
+bioconductor-tximeta,suppa,data_flow,6,6,E00215,
+cat,fastqc,data_flow,1,1,E00017,
+cat,fq,data_flow,1,1,E00032,
+cat,salmon,data_flow,2,2,E00025,
+cat,samtools,data_flow,1,1,E00060,
+cat,trim-galore,data_flow,1,1,E00020,
+cat,umi_tools,data_flow,1,1,E00018,
+cut,bioconductor-isoformswitchanalyzer,data_flow,1,1,E00316,
+cut,salmon,data_flow,5,5,E00014,
+fastqc,multiqc,data_flow,1,1,E00337,
+fq,salmon,data_flow,1,1,E00033,
+gawk,samtools,data_flow,1,1,E00061,
+gawk,suppa,data_flow,8,8,E00216,
+gffread,bioconductor-aspli,data_flow,1,1,E00172,
+gffread,bioconductor-dexseq,data_flow,1,1,E00082,
+gffread,bioconductor-isoformswitchanalyzer,data_flow,1,1,E00315,
+gffread,bioconductor-tximeta,data_flow,2,2,E00201,
+gffread,misopy,data_flow,1,1,E00123,
+gffread,perl,data_flow,1,1,E00043,
+gffread,pyyaml,data_flow,2,2,E00005,
+gffread,r-pairadise,data_flow,1,1,E00120,
+gffread,rmats,data_flow,1,1,E00111,
+gffread,salmon,data_flow,4,4,E00038,
+gffread,samtools,data_flow,2,2,E00012,
+gffread,subread,data_flow,1,1,E00099,
+gffread,suppa,data_flow,6,6,E00212,
+gunzip,bioconductor-aspli,data_flow,1,1,E00171,
+gunzip,bioconductor-dexseq,data_flow,5,5,E00081,
+gunzip,bioconductor-isoformswitchanalyzer,data_flow,2,2,E00314,
+gunzip,cut,data_flow,1,1,E00002,
+gunzip,gffread,data_flow,4,4,E00001,
+gunzip,perl,data_flow,1,1,E00042,
+gunzip,pyyaml,data_flow,4,4,E00003,
+gunzip,r-base,data_flow,2,2,E00209,
+gunzip,r-pairadise,data_flow,1,1,E00119,
+gunzip,rmats,data_flow,1,1,E00110,
+gunzip,rsem,data_flow,1,1,E00006,
+gunzip,salmon,data_flow,11,11,E00013,
+gunzip,samtools,data_flow,8,8,E00008,
+gunzip,subread,data_flow,1,1,E00098,
+gunzip,suppa,data_flow,10,10,E00211,
+misopy,pyyaml,data_flow,1,1,E00134,
+perl,rseqc,data_flow,2,2,E00055,
+python,suppa,data_flow,4,4,E00240,
+pyyaml,leafcutter,data_flow,1,1,E00165,
+pyyaml,misopy,data_flow,1,1,E00141,
+pyyaml,rsem,data_flow,1,1,E00007,
+r-base,suppa,data_flow,12,12,E00227,
+regtools,leafcutter,data_flow,2,2,E00163,
+regtools,pyyaml,data_flow,1,1,E00158,
+rmats,r-pairadise,data_flow,1,1,E00118,
+rsem,bioconductor-isoformswitchanalyzer,data_flow,1,1,E00318,
+rsem,salmon,data_flow,5,5,E00016,
+rseqc,bedtools,gate_metadata,2,0,E00320,
+rseqc,bioconductor-aspli,gate_metadata,2,0,E00167,
+rseqc,bioconductor-dexseq,gate_metadata,1,0,E00084,
+rseqc,misopy,gate_metadata,2,0,E00125,
+rseqc,multiqc,data_flow,1,1,E00353,
+rseqc,pyyaml,gate_metadata,1,0,E00131,
+rseqc,regtools,gate_metadata,3,0,E00144,
+rseqc,rmats,gate_metadata,1,0,E00107,
+rseqc,sed,gate_metadata,1,0,E00113,
+rseqc,subread,gate_metadata,1,0,E00101,
+salmon,bioconductor-isoformswitchanalyzer,data_flow,4,3,E00310,
+salmon,bioconductor-tximeta,data_flow,7,5,E00197,
+salmon,multiqc,data_flow,4,4,E00341,
+salmon,samtools,gate_metadata,1,0,E00056,
+salmon,untar,data_flow,7,5,E00192,
+samtools,bedtools,data_flow,8,6,E00319,
+samtools,bioconductor-aspli,data_flow,7,4,E00166,
+samtools,bioconductor-dexseq,data_flow,3,2,E00083,
+samtools,misopy,data_flow,8,6,E00124,
+samtools,multiqc,data_flow,9,9,E00345,
+samtools,pyyaml,data_flow,4,3,E00130,
+samtools,regtools,data_flow,12,9,E00143,
+samtools,rmats,data_flow,3,2,E00106,
+samtools,rseqc,data_flow,6,4,E00053,
+samtools,salmon,data_flow,2,2,E00180,
+samtools,sed,data_flow,3,2,E00112,
+samtools,subread,data_flow,3,2,E00100,
+samtools,ucsc-bedclip,data_flow,2,2,E00330,
+samtools,ucsc-bedgraphtobigwig,data_flow,2,2,E00332,
+sed,r-pairadise,data_flow,2,2,E00116,
+subread,bioconductor-edger,data_flow,1,1,E00105,
+subread,multiqc,data_flow,1,1,E00352,
+suppa,gawk,data_flow,2,2,E00213,
+suppa,python,data_flow,2,2,E00237,
+suppa,r-base,data_flow,4,4,E00223,
+trim-galore,fq,data_flow,2,1,E00029,
+trim-galore,multiqc,data_flow,3,3,E00338,
+trim-galore,salmon,data_flow,4,2,E00022,
+trim-galore,samtools,data_flow,2,1,E00057,
+ucsc-bedclip,ucsc-bedgraphtobigwig,data_flow,2,2,E00331,
+umi_tools,fq,data_flow,1,1,E00031,
+umi_tools,salmon,data_flow,2,2,E00024,
+umi_tools,samtools,data_flow,1,1,E00059,
+umi_tools,trim-galore,data_flow,1,1,E00019,
+untar,bioconductor-tximeta,data_flow,2,2,E00200,
+untar,gawk,data_flow,1,1,E00009,
+untar,salmon,data_flow,2,2,E00035,
+bedtools,bioconductor-aspli,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00319, E00166); no directed path between any process of the two tools"
+bedtools,bioconductor-dexseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00319, E00083); no directed path between any process of the two tools"
+bedtools,misopy,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00319, E00124); no directed path between any process of the two tools"
+bedtools,multiqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00321, E00354); no directed path between any process of the two tools"
+bedtools,regtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00319, E00143); no directed path between any process of the two tools"
+bedtools,rmats,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00319, E00106); no directed path between any process of the two tools"
+bedtools,sed,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00319, E00112); no directed path between any process of the two tools"
+bedtools,subread,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00319, E00100); no directed path between any process of the two tools"
+bioconductor-aspli,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00166, E00319); no directed path between any process of the two tools"
+bioconductor-aspli,bioconductor-dexseq,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00172, E00082); no directed path between any process of the two tools"
+bioconductor-aspli,bioconductor-isoformswitchanalyzer,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00172, E00315); no directed path between any process of the two tools"
+bioconductor-aspli,misopy,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00166, E00124); no directed path between any process of the two tools"
+bioconductor-aspli,multiqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00168, E00354); no directed path between any process of the two tools"
+bioconductor-aspli,r-pairadise,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00172, E00120); no directed path between any process of the two tools"
+bioconductor-aspli,regtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00166, E00143); no directed path between any process of the two tools"
+bioconductor-aspli,rmats,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00172, E00111); no directed path between any process of the two tools"
+bioconductor-aspli,sed,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00166, E00112); no directed path between any process of the two tools"
+bioconductor-aspli,subread,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00172, E00099); no directed path between any process of the two tools"
+bioconductor-aspli,suppa,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00172, E00276); no directed path between any process of the two tools"
+bioconductor-dexseq,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00083, E00319); no directed path between any process of the two tools"
+bioconductor-dexseq,bioconductor-aspli,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00082, E00172); no directed path between any process of the two tools"
+bioconductor-dexseq,bioconductor-isoformswitchanalyzer,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00082, E00315); no directed path between any process of the two tools"
+bioconductor-dexseq,misopy,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00083, E00124); no directed path between any process of the two tools"
+bioconductor-dexseq,multiqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00085, E00354); no directed path between any process of the two tools"
+bioconductor-dexseq,r-pairadise,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00082, E00120); no directed path between any process of the two tools"
+bioconductor-dexseq,regtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00083, E00143); no directed path between any process of the two tools"
+bioconductor-dexseq,rmats,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00082, E00111); no directed path between any process of the two tools"
+bioconductor-dexseq,sed,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00083, E00112); no directed path between any process of the two tools"
+bioconductor-dexseq,subread,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00082, E00099); no directed path between any process of the two tools"
+bioconductor-dexseq,suppa,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00082, E00276); no directed path between any process of the two tools"
+bioconductor-isoformswitchanalyzer,bioconductor-aspli,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00315, E00172); no directed path between any process of the two tools"
+bioconductor-isoformswitchanalyzer,bioconductor-dexseq,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00315, E00082); no directed path between any process of the two tools"
+bioconductor-isoformswitchanalyzer,bioconductor-tximeta,parallel_co_use,0,0,,"both consume SALMON_QUANT_SALMON.results (E00310, E00256); no directed path between any process of the two tools"
+bioconductor-isoformswitchanalyzer,multiqc,parallel_co_use,0,0,,"both consume SALMON_QUANT_SALMON.results (E00310, E00341); no directed path between any process of the two tools"
+bioconductor-isoformswitchanalyzer,perl,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00315, E00043); no directed path between any process of the two tools"
+bioconductor-isoformswitchanalyzer,r-pairadise,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00315, E00120); no directed path between any process of the two tools"
+bioconductor-isoformswitchanalyzer,rmats,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00315, E00111); no directed path between any process of the two tools"
+bioconductor-isoformswitchanalyzer,subread,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00315, E00099); no directed path between any process of the two tools"
+bioconductor-isoformswitchanalyzer,suppa,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00315, E00276); no directed path between any process of the two tools"
+bioconductor-tximeta,bioconductor-isoformswitchanalyzer,parallel_co_use,0,0,,"both consume SALMON_QUANT_SALMON.results (E00256, E00310); no directed path between any process of the two tools"
+bioconductor-tximeta,multiqc,parallel_co_use,0,0,,"both consume SALMON_QUANT_SALMON.results (E00256, E00341); no directed path between any process of the two tools"
+fastqc,fq,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00017, E00032); no directed path between any process of the two tools"
+fastqc,salmon,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00017, E00025); no directed path between any process of the two tools"
+fastqc,samtools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00017, E00060); no directed path between any process of the two tools"
+fastqc,trim-galore,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00017, E00020); no directed path between any process of the two tools"
+fastqc,umi_tools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00017, E00018); no directed path between any process of the two tools"
+fq,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00032, E00017); no directed path between any process of the two tools"
+misopy,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00124, E00319); no directed path between any process of the two tools"
+misopy,bioconductor-aspli,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00124, E00166); no directed path between any process of the two tools"
+misopy,bioconductor-dexseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00124, E00083); no directed path between any process of the two tools"
+misopy,multiqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00126, E00354); no directed path between any process of the two tools"
+misopy,regtools,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00128, E00147); no directed path between any process of the two tools"
+misopy,rmats,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00124, E00106); no directed path between any process of the two tools"
+misopy,sed,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00124, E00112); no directed path between any process of the two tools"
+misopy,subread,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00124, E00100); no directed path between any process of the two tools"
+multiqc,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00354, E00321); no directed path between any process of the two tools"
+multiqc,bioconductor-aspli,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00354, E00168); no directed path between any process of the two tools"
+multiqc,bioconductor-dexseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00354, E00085); no directed path between any process of the two tools"
+multiqc,bioconductor-isoformswitchanalyzer,parallel_co_use,0,0,,"both consume SALMON_QUANT_SALMON.results (E00341, E00310); no directed path between any process of the two tools"
+multiqc,bioconductor-tximeta,parallel_co_use,0,0,,"both consume SALMON_QUANT_SALMON.results (E00341, E00256); no directed path between any process of the two tools"
+multiqc,misopy,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00354, E00126); no directed path between any process of the two tools"
+multiqc,regtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00354, E00145); no directed path between any process of the two tools"
+multiqc,rmats,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00354, E00108); no directed path between any process of the two tools"
+multiqc,sed,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00354, E00114); no directed path between any process of the two tools"
+perl,bioconductor-isoformswitchanalyzer,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00043, E00315); no directed path between any process of the two tools"
+perl,salmon,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00043, E00038); no directed path between any process of the two tools"
+perl,samtools,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00043, E00012); no directed path between any process of the two tools"
+perl,suppa,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00043, E00276); no directed path between any process of the two tools"
+r-pairadise,bioconductor-aspli,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00120, E00172); no directed path between any process of the two tools"
+r-pairadise,bioconductor-dexseq,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00120, E00082); no directed path between any process of the two tools"
+r-pairadise,bioconductor-isoformswitchanalyzer,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00120, E00315); no directed path between any process of the two tools"
+r-pairadise,subread,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00120, E00099); no directed path between any process of the two tools"
+r-pairadise,suppa,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00120, E00276); no directed path between any process of the two tools"
+regtools,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00143, E00319); no directed path between any process of the two tools"
+regtools,bioconductor-aspli,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00143, E00166); no directed path between any process of the two tools"
+regtools,bioconductor-dexseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00143, E00083); no directed path between any process of the two tools"
+regtools,misopy,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00147, E00128); no directed path between any process of the two tools"
+regtools,multiqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00145, E00354); no directed path between any process of the two tools"
+regtools,rmats,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00143, E00106); no directed path between any process of the two tools"
+regtools,sed,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00143, E00112); no directed path between any process of the two tools"
+regtools,subread,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00143, E00100); no directed path between any process of the two tools"
+rmats,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00106, E00319); no directed path between any process of the two tools"
+rmats,bioconductor-aspli,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00111, E00172); no directed path between any process of the two tools"
+rmats,bioconductor-dexseq,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00111, E00082); no directed path between any process of the two tools"
+rmats,bioconductor-isoformswitchanalyzer,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00111, E00315); no directed path between any process of the two tools"
+rmats,misopy,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00106, E00124); no directed path between any process of the two tools"
+rmats,multiqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00108, E00354); no directed path between any process of the two tools"
+rmats,regtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00106, E00143); no directed path between any process of the two tools"
+rmats,sed,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00106, E00112); no directed path between any process of the two tools"
+rmats,subread,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00111, E00099); no directed path between any process of the two tools"
+rmats,suppa,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00111, E00276); no directed path between any process of the two tools"
+salmon,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00025, E00017); no directed path between any process of the two tools"
+salmon,perl,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00038, E00043); no directed path between any process of the two tools"
+samtools,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00060, E00017); no directed path between any process of the two tools"
+samtools,perl,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00012, E00043); no directed path between any process of the two tools"
+sed,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00112, E00319); no directed path between any process of the two tools"
+sed,bioconductor-aspli,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00112, E00166); no directed path between any process of the two tools"
+sed,bioconductor-dexseq,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00112, E00083); no directed path between any process of the two tools"
+sed,misopy,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00112, E00124); no directed path between any process of the two tools"
+sed,multiqc,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00114, E00354); no directed path between any process of the two tools"
+sed,regtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00112, E00143); no directed path between any process of the two tools"
+sed,rmats,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00112, E00106); no directed path between any process of the two tools"
+sed,subread,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00112, E00100); no directed path between any process of the two tools"
+subread,bedtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00100, E00319); no directed path between any process of the two tools"
+subread,bioconductor-aspli,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00099, E00172); no directed path between any process of the two tools"
+subread,bioconductor-dexseq,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00099, E00082); no directed path between any process of the two tools"
+subread,bioconductor-isoformswitchanalyzer,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00099, E00315); no directed path between any process of the two tools"
+subread,misopy,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00100, E00124); no directed path between any process of the two tools"
+subread,r-pairadise,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00099, E00120); no directed path between any process of the two tools"
+subread,regtools,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00100, E00143); no directed path between any process of the two tools"
+subread,rmats,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00099, E00111); no directed path between any process of the two tools"
+subread,sed,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00100, E00112); no directed path between any process of the two tools"
+subread,suppa,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00099, E00276); no directed path between any process of the two tools"
+suppa,bioconductor-aspli,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00276, E00172); no directed path between any process of the two tools"
+suppa,bioconductor-dexseq,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00276, E00082); no directed path between any process of the two tools"
+suppa,bioconductor-isoformswitchanalyzer,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00276, E00315); no directed path between any process of the two tools"
+suppa,perl,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00276, E00043); no directed path between any process of the two tools"
+suppa,r-pairadise,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00276, E00120); no directed path between any process of the two tools"
+suppa,rmats,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00276, E00111); no directed path between any process of the two tools"
+suppa,subread,parallel_co_use,0,0,,"both consume GFFREAD.gtf (E00276, E00099); no directed path between any process of the two tools"
+trim-galore,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00020, E00017); no directed path between any process of the two tools"
+umi_tools,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00018, E00017); no directed path between any process of the two tools"

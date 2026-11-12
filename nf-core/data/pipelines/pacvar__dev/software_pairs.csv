@@ -1,0 +1,50 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bcftools,ensembl-vep,data_flow,2,2,E00061,
+bcftools,hiphase,data_flow,1,1,E00050,
+bcftools,trgt,data_flow,2,2,E00100,
+bgzip,bcftools,data_flow,1,1,E00014,
+bgzip,ensembl-vep,data_flow,1,1,E00060,
+bgzip,hiphase,data_flow,1,1,E00049,
+deepvariant,ensembl-vep,data_flow,2,2,E00054,
+deepvariant,hificnv,data_flow,2,2,E00070,
+deepvariant,hiphase,data_flow,2,2,E00045,
+deepvariant,sawfish,data_flow,8,5,E00019,
+fibertools-rs,samtools,data_flow,2,2,E00086,
+gatk4,ensembl-vep,data_flow,2,2,E00052,
+gatk4,hificnv,data_flow,2,2,E00068,
+gatk4,hiphase,data_flow,2,2,E00043,
+gatk4,sawfish,data_flow,8,8,E00017,
+hificnv,bcftools,data_flow,1,1,E00072,
+hificnv,ensembl-vep,data_flow,1,1,E00073,
+hiphase,ensembl-vep,data_flow,2,2,E00051,
+hiphase,fibertools-rs,data_flow,2,2,E00080,
+hiphase,hificnv,data_flow,3,3,E00063,
+hiphase,pb-cpg-tools,data_flow,2,2,E00076,
+lima,pbmm2,data_flow,1,1,E00001,
+pbmm2,pbtk,data_flow,1,1,E00002,
+pbmm2,samtools,data_flow,1,1,E00003,
+pbsv,bgzip,data_flow,1,1,E00013,
+pbtk,samtools,data_flow,1,1,E00004,
+samtools,deepvariant,data_flow,2,2,E00006,
+samtools,fibertools-rs,data_flow,4,4,E00081,
+samtools,gatk4,data_flow,2,2,E00008,
+samtools,hificnv,data_flow,2,2,E00066,
+samtools,hiphase,data_flow,2,2,E00041,
+samtools,pb-cpg-tools,data_flow,2,2,E00078,
+samtools,pbsv,data_flow,2,2,E00010,
+samtools,sawfish,data_flow,8,7,E00015,
+samtools,trgt,data_flow,4,4,E00092,
+sawfish,ensembl-vep,data_flow,2,2,E00058,
+sawfish,hiphase,data_flow,2,2,E00047,
+trgt,bcftools,data_flow,1,1,E00096,
+trgt,samtools,data_flow,1,1,E00094,
+deepvariant,pbsv,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00007, E00011); no directed path between any process of the two tools"
+fibertools-rs,hificnv,parallel_co_use,0,0,,"both consume HIPHASE.bams (E00083, E00063); no directed path between any process of the two tools"
+fibertools-rs,pb-cpg-tools,parallel_co_use,0,0,,"both consume HIPHASE.bams (E00083, E00076); no directed path between any process of the two tools"
+gatk4,pbsv,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00009, E00011); no directed path between any process of the two tools"
+hificnv,fibertools-rs,parallel_co_use,0,0,,"both consume HIPHASE.bams (E00063, E00083); no directed path between any process of the two tools"
+hificnv,pb-cpg-tools,parallel_co_use,0,0,,"both consume HIPHASE.bams (E00063, E00076); no directed path between any process of the two tools"
+pb-cpg-tools,fibertools-rs,parallel_co_use,0,0,,"both consume HIPHASE.bams (E00076, E00083); no directed path between any process of the two tools"
+pb-cpg-tools,hificnv,parallel_co_use,0,0,,"both consume HIPHASE.bams (E00076, E00063); no directed path between any process of the two tools"
+pbsv,deepvariant,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00011, E00007); no directed path between any process of the two tools"
+pbsv,gatk4,parallel_co_use,0,0,,"both consume SAMTOOLS_INDEX.index (E00011, E00009); no directed path between any process of the two tools"

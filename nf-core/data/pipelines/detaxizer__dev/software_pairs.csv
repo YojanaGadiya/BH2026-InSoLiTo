@@ -1,0 +1,58 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bbmap,isolate_bbduk_ids,data_flow,1,1,E00014,
+bbmap,kraken2,data_flow,2,2,E00053,
+blast,filter_blastn_identcov,data_flow,1,1,E00023,
+blast,summary_blastn,gate_metadata,1,0,E00024,
+fastp,bbmap,data_flow,5,5,E00012,
+fastp,filter,data_flow,1,1,E00026,
+fastp,kraken2,data_flow,1,1,E00003,
+fastp,map_kraken2seqids_to_fqheaders,data_flow,1,1,E00006,
+fastp,normalize_bbmap_ids,data_flow,1,1,E00030,
+fastp,prepare_fasta4blastn,data_flow,1,1,E00018,
+fastqc,multiqc,data_flow,1,1,E00060,
+filter,rename_fastq_headers_after,data_flow,2,2,E00049,
+filter_blastn_identcov,bbmap,data_flow,4,4,E00034,
+filter_blastn_identcov,filter,data_flow,1,1,E00028,
+filter_blastn_identcov,normalize_bbmap_ids,data_flow,1,1,E00031,
+filter_blastn_identcov,summary_blastn,data_flow,1,1,E00025,
+isolate_bbduk_ids,merge_ids,data_flow,1,1,E00016,
+isolate_kraken2_ids,merge_ids,data_flow,1,1,E00015,
+kraken2,isolate_kraken2_ids,data_flow,1,1,E00009,
+kraken2,map_kraken2seqids_to_fqheaders,data_flow,1,1,E00007,
+kraken2,parse_kraken2report,data_flow,1,1,E00008,
+kraken2preparation,kraken2,data_flow,3,3,E00005,
+map_kraken2seqids_to_fqheaders,isolate_kraken2_ids,data_flow,1,1,E00011,
+merge_ids,bbmap,data_flow,4,4,E00035,
+merge_ids,filter,data_flow,1,1,E00029,
+merge_ids,normalize_bbmap_ids,data_flow,1,1,E00032,
+merge_ids,prepare_fasta4blastn,data_flow,1,1,E00020,
+merge_ids,summary_classification,data_flow,1,1,E00017,
+normalize_bbmap_ids,bbmap,data_flow,4,4,E00036,
+parse_kraken2report,isolate_kraken2_ids,data_flow,1,1,E00010,
+prepare_fasta4blastn,blast,data_flow,1,1,E00021,
+rename_fastq_headers_after,kraken2,data_flow,2,2,E00052,
+rename_fastq_headers_pre,bbmap,data_flow,1,1,E00013,
+rename_fastq_headers_pre,fastp,data_flow,1,1,E00002,
+rename_fastq_headers_pre,fastqc,data_flow,1,1,E00001,
+rename_fastq_headers_pre,filter,data_flow,1,1,E00027,
+rename_fastq_headers_pre,kraken2,data_flow,1,1,E00004,
+rename_fastq_headers_pre,prepare_fasta4blastn,data_flow,1,1,E00019,
+rename_fastq_headers_pre,rename_fastq_headers_after,data_flow,1,1,E00050,
+summary_blastn,summarizer,gate_metadata,1,0,E00059,
+summary_classification,summarizer,gate_metadata,1,0,E00058,
+bbmap,fastqc,parallel_co_use,0,0,,"both consume RENAME_FASTQ_HEADERS_PRE.fastq (E00013, E00001); no directed path between any process of the two tools"
+fastp,fastqc,parallel_co_use,0,0,,"both consume RENAME_FASTQ_HEADERS_PRE.fastq (E00002, E00001); no directed path between any process of the two tools"
+fastqc,bbmap,parallel_co_use,0,0,,"both consume RENAME_FASTQ_HEADERS_PRE.fastq (E00001, E00013); no directed path between any process of the two tools"
+fastqc,fastp,parallel_co_use,0,0,,"both consume RENAME_FASTQ_HEADERS_PRE.fastq (E00001, E00002); no directed path between any process of the two tools"
+fastqc,filter,parallel_co_use,0,0,,"both consume RENAME_FASTQ_HEADERS_PRE.fastq (E00001, E00027); no directed path between any process of the two tools"
+fastqc,kraken2,parallel_co_use,0,0,,"both consume RENAME_FASTQ_HEADERS_PRE.fastq (E00001, E00004); no directed path between any process of the two tools"
+fastqc,prepare_fasta4blastn,parallel_co_use,0,0,,"both consume RENAME_FASTQ_HEADERS_PRE.fastq (E00001, E00019); no directed path between any process of the two tools"
+filter,fastqc,parallel_co_use,0,0,,"both consume RENAME_FASTQ_HEADERS_PRE.fastq (E00027, E00001); no directed path between any process of the two tools"
+filter,summary_classification,parallel_co_use,0,0,,"both consume MERGE_IDS.classified_ids (E00029, E00017); no directed path between any process of the two tools"
+kraken2,fastqc,parallel_co_use,0,0,,"both consume RENAME_FASTQ_HEADERS_PRE.fastq (E00004, E00001); no directed path between any process of the two tools"
+normalize_bbmap_ids,summary_classification,parallel_co_use,0,0,,"both consume MERGE_IDS.classified_ids (E00032, E00017); no directed path between any process of the two tools"
+prepare_fasta4blastn,fastqc,parallel_co_use,0,0,,"both consume RENAME_FASTQ_HEADERS_PRE.fastq (E00019, E00001); no directed path between any process of the two tools"
+prepare_fasta4blastn,summary_classification,parallel_co_use,0,0,,"both consume MERGE_IDS.classified_ids (E00020, E00017); no directed path between any process of the two tools"
+summary_classification,filter,parallel_co_use,0,0,,"both consume MERGE_IDS.classified_ids (E00017, E00029); no directed path between any process of the two tools"
+summary_classification,normalize_bbmap_ids,parallel_co_use,0,0,,"both consume MERGE_IDS.classified_ids (E00017, E00032); no directed path between any process of the two tools"
+summary_classification,prepare_fasta4blastn,parallel_co_use,0,0,,"both consume MERGE_IDS.classified_ids (E00017, E00020); no directed path between any process of the two tools"

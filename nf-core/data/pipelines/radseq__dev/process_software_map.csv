@@ -1,0 +1,69 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_RADSEQ:RADSEQ:INPUT_CHECK:SAMPLESHEET_CHECK,SAMPLESHEET_CHECK,modules/local/samplesheet_check.nf,1,samplesheet_check,,,module name
+NFCORE_RADSEQ:RADSEQ:PROCESS_RAD:FASTP,FASTP,modules/nf-core/fastp/main.nf,1,fastp,fastp,,meta.yml
+NFCORE_RADSEQ:RADSEQ:FASTQ_UNZIP:GUNZIP_FASTA,GUNZIP,modules/nf-core/gunzip/main.nf,1,gunzip,gunzip,,meta.yml
+NFCORE_RADSEQ:RADSEQ:DENOVO:TRIM_FASTP,FASTP,modules/nf-core/fastp/main.nf,1,fastp,fastp,,meta.yml
+NFCORE_RADSEQ:RADSEQ:DENOVO:PREPARE_FORWARD_READS,PREPARE_FORWARD_READS,modules/local/prepare_forward_reads.nf,1,prepare_forward_reads,,,module name
+NFCORE_RADSEQ:RADSEQ:DENOVO:COMBINE_UNIQUE_READS,COMBINE_UNIQUE_READS,modules/local/combine_uniq_forward_reads.nf,1,combine_unique_reads,,,module name
+NFCORE_RADSEQ:RADSEQ:DENOVO:SEQTK_SEQ,SEQTK_SEQ,modules/nf-core/seqtk/seq/main.nf,1,seqtk,seqtk,,meta.yml
+NFCORE_RADSEQ:RADSEQ:DENOVO:DENOVO_FASTP,FASTP,modules/nf-core/fastp/main.nf,1,fastp,fastp,,meta.yml
+NFCORE_RADSEQ:RADSEQ:DENOVO:CDHIT,CDHIT,modules/nf-core/cdhit/cdhit/main.nf,1,cdhit,cdhit,,meta.yml
+NFCORE_RADSEQ:RADSEQ:DENOVO:CDHIT_TO_RBDIV,CDHIT_TO_RBDIV,modules/local/cdhit_to_rbdiv.nf,1,cdhit_to_rbdiv,,,module name
+NFCORE_RADSEQ:RADSEQ:DENOVO:RAINBOW_DIV,RAINBOW_DIV,modules/local/rainbow/div/rainbow_div.nf,1,rainbow_div,,,module name
+NFCORE_RADSEQ:RADSEQ:DENOVO:RAINBOW_MERGE,RAINBOW_MERGE,modules/local/rainbow/merge/rainbow_merge.nf,1,rainbow_merge,,,module name
+NFCORE_RADSEQ:RADSEQ:DENOVO:WRITE_FASTA,RBMERGE2FASTA,modules/local/rbmerge2fasta.nf,1,rbmerge2fasta,,,module name
+NFCORE_RADSEQ:RADSEQ:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:GATK4_CREATESEQUENCEDICTIONARY,GATK4_CREATESEQUENCEDICTIONARY,modules/nf-core/gatk4/createsequencedictionary/main.nf,1,gatk,gatk,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_CREATE_UMI_CONSENSUS_FGBIO:FASTQTOBAM,FGBIO_FASTQTOBAM,modules/nf-core/fgbio/fastqtobam/main.nf,1,fgbio,fgbio,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_CREATE_UMI_CONSENSUS_FGBIO:BAM2FASTQ_PRE,SAMTOOLS_FASTQ,modules/nf-core/samtools/fastq/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_CREATE_UMI_CONSENSUS_FGBIO:BWAMEM1_INDEX,BWA_INDEX,modules/nf-core/bwa/index/main.nf,1,bwa,bwa,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_CREATE_UMI_CONSENSUS_FGBIO:BWAMEM1_MEM_PRE,BWA_MEM,modules/nf-core/bwa/mem/main.nf,1,bwa,bwa,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_CREATE_UMI_CONSENSUS_FGBIO:BWAMEM2_INDEX,BWAMEM2_INDEX,modules/nf-core/bwamem2/index/main.nf,1,bwamem2,bwamem2,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_CREATE_UMI_CONSENSUS_FGBIO:BWAMEM2_MEM_PRE,BWAMEM2_MEM,modules/nf-core/bwamem2/mem/main.nf,1,bwa,bwa,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_CREATE_UMI_CONSENSUS_FGBIO:ZIPPERBAMS_PRE,FGBIO_ZIPPERBAMS,modules/nf-core/fgbio/zipperbams/main.nf,1,fgbio,fgbio,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_CREATE_UMI_CONSENSUS_FGBIO:BAMFILTER,SAMTOOLS_VIEW,modules/nf-core/samtools/view/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_CREATE_UMI_CONSENSUS_FGBIO:GROUPREADSBYUMI,FGBIO_GROUPREADSBYUMI,modules/nf-core/fgbio/groupreadsbyumi/main.nf,1,fgbio,fgbio,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_CREATE_UMI_CONSENSUS_FGBIO:CALLDUPLEXCONSENSUS,FGBIO_CALLDUPLEXCONSENSUSREADS,modules/nf-core/fgbio/callduplexconsensusreads/main.nf,1,fgbio,fgbio,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_CREATE_UMI_CONSENSUS_FGBIO:CALLUMICONSENSUS,FGBIO_CALLMOLECULARCONSENSUSREADS,modules/nf-core/fgbio/callmolecularconsensusreads/main.nf,1,fgbio,fgbio,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_CREATE_UMI_CONSENSUS_FGBIO:FILTERCONSENSUS,FGBIO_FILTERCONSENSUSREADS,modules/nf-core/fgbio/filterconsensusreads/main.nf,1,fgbio,fgbio,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_CREATE_UMI_CONSENSUS_FGBIO:BAM2FASTQ_POST,SAMTOOLS_FASTQ,modules/nf-core/samtools/fastq/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_CREATE_UMI_CONSENSUS_FGBIO:BWAMEM1_MEM_POST,BWA_MEM,modules/nf-core/bwa/mem/main.nf,1,bwa,bwa,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_CREATE_UMI_CONSENSUS_FGBIO:BWAMEM2_MEM_POST,BWAMEM2_MEM,modules/nf-core/bwamem2/mem/main.nf,1,bwa,bwa,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_CREATE_UMI_CONSENSUS_FGBIO:ZIPPERBAMS_POST,FGBIO_ZIPPERBAMS,modules/nf-core/fgbio/zipperbams/main.nf,1,fgbio,fgbio,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_CREATE_UMI_CONSENSUS_FGBIO:SORTBAM,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_BWA_INDEX_MEM:BWA_INDEX,BWA_INDEX,modules/nf-core/bwa/index/main.nf,1,bwa,bwa,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_BWA_INDEX_MEM:BWA_MEM,BWA_MEM,modules/nf-core/bwa/mem/main.nf,1,bwa,bwa,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_BWA_INDEX_MEM:BWAMEM2_INDEX,BWAMEM2_INDEX,modules/nf-core/bwamem2/index/main.nf,1,bwamem2,bwamem2,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:FASTQ_BWA_INDEX_MEM:BWAMEM2_MEM,BWAMEM2_MEM,modules/nf-core/bwamem2/mem/main.nf,1,bwa,bwa,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:SAMTOOLS_INDEX_BAM,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:BAM_UMITOOLS_DEDUP:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:BAM_UMITOOLS_DEDUP:UMITOOLS_DEDUP,UMITOOLS_DEDUP,modules/nf-core/umitools/dedup/main.nf,1,umi_tools,umi_tools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:BAM_MERGE_INDEX_SAMTOOLS:MERGE_BAM,SAMTOOLS_MERGE,modules/nf-core/samtools/merge/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:BAM_MERGE_INDEX_SAMTOOLS:INDEX_MERGE_BAM,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:ALIGN:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:BAM_INTERVALS_BEDTOOLS:BEDTOOLS_BAMTOBED,BEDTOOLS_BAMTOBED,modules/nf-core/bedtools/bamtobed/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:BAM_INTERVALS_BEDTOOLS:BEDOPS_MERGE_BED,BEDOPS_MERGE_BED,modules/local/bedops/merge/main.nf,1,bedops_merge_bed,,,module name
+NFCORE_RADSEQ:RADSEQ:BAM_INTERVALS_BEDTOOLS:BEDTOOLS_SORT,BEDTOOLS_SORT,modules/nf-core/bedtools/sort/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:BAM_INTERVALS_BEDTOOLS:BEDTOOLS_COVERAGE,BEDTOOLS_COVERAGE,modules/nf-core/bedtools/coverage/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:BAM_INTERVALS_BEDTOOLS:BEDTOOLS_MERGE_COV,BEDTOOLS_MERGE_COV,modules/nf-core/bedtools/merge/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:BAM_INTERVALS_BEDTOOLS:BEDTOOLS_MAKEWINDOWS_BED,BEDTOOLS_MAKEWINDOWS,modules/nf-core/bedtools/makewindows/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:BAM_INTERVALS_BEDTOOLS:BEDTOOLS_INTERSECT,BEDTOOLS_INTERSECT,modules/nf-core/bedtools/intersect/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:BAM_INTERVALS_BEDTOOLS:CREATE_INTERVALS,CREATE_INTERVALS,modules/local/create_intervals.nf,1,create_intervals,,,module name
+NFCORE_RADSEQ:RADSEQ:BAM_INTERVALS_BEDTOOLS:BEDTOOLS_MAKEWINDOWS_FAI,BEDTOOLS_MAKEWINDOWS,modules/nf-core/bedtools/makewindows/main.nf,1,bedtools,bedtools,,meta.yml
+NFCORE_RADSEQ:RADSEQ:BAM_VARIANT_CALLING_FREEBAYES:FREEBAYES,FREEBAYES,modules/nf-core/freebayes/main.nf,1,freebayes,freebayes,,meta.yml
+NFCORE_RADSEQ:RADSEQ:BAM_VARIANT_CALLING_FREEBAYES:BCFTOOLS_SORT,BCFTOOLS_SORT,modules/nf-core/bcftools/sort/main.nf,1,sort,sort,,meta.yml
+NFCORE_RADSEQ:RADSEQ:BAM_VARIANT_CALLING_FREEBAYES:TABIX_TABIX1,TABIX_TABIX,modules/nf-core/tabix/tabix/main.nf,1,tabix,tabix,,meta.yml
+NFCORE_RADSEQ:RADSEQ:BAM_VARIANT_CALLING_FREEBAYES:BCFTOOLS_CONCAT,BCFTOOLS_CONCAT,modules/nf-core/bcftools/concat/main.nf,1,concat,concat,,meta.yml
+NFCORE_RADSEQ:RADSEQ:BAM_VARIANT_CALLING_FREEBAYES:TABIX_TABIX2,TABIX_TABIX,modules/nf-core/tabix/tabix/main.nf,1,tabix,tabix,,meta.yml
+NFCORE_RADSEQ:RADSEQ:BAM_VARIANT_CALLING_FREEBAYES:BCFTOOLS_STATS,BCFTOOLS_STATS,modules/nf-core/bcftools/stats/main.nf,1,stats,stats,,meta.yml
+NFCORE_RADSEQ:RADSEQ:VCF_BCFTOOLS_RADSEQ_FILTERS:BCFTOOLS_NORM,BCFTOOLS_NORM,modules/nf-core/bcftools/norm/main.nf,1,norm,norm,,meta.yml
+NFCORE_RADSEQ:RADSEQ:VCF_BCFTOOLS_RADSEQ_FILTERS:TABIX,TABIX_TABIX,modules/nf-core/tabix/tabix/main.nf,1,tabix,tabix,,meta.yml
+NFCORE_RADSEQ:RADSEQ:VCF_BCFTOOLS_RADSEQ_FILTERS:FILTER1,BCFTOOLS_VIEW,modules/nf-core/bcftools/view/main.nf,1,view,view,,meta.yml
+NFCORE_RADSEQ:RADSEQ:VCF_BCFTOOLS_RADSEQ_FILTERS:RADSEQ_FILTERS_1,RADSEQ_FILTERS,modules/local/bcftools/main.nf,1,radseq_filters,,,module name
+NFCORE_RADSEQ:RADSEQ:VCF_BCFTOOLS_RADSEQ_FILTERS:RADSEQ_FILTERS_2,RADSEQ_FILTERS,modules/local/bcftools/main.nf,1,radseq_filters,,,module name
+NFCORE_RADSEQ:RADSEQ:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,,meta.yml
+NFCORE_RADSEQ:RADSEQ:CUSTOM_DUMPSOFTWAREVERSIONS,CUSTOM_DUMPSOFTWAREVERSIONS,modules/nf-core/custom/dumpsoftwareversions/main.nf,1,custom,custom,,meta.yml
+NFCORE_RADSEQ:RADSEQ:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,,meta.yml

@@ -1,0 +1,616 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bwa,gridss,data_flow,5,5,E00003,
+bwa-mem2,gridss,data_flow,5,5,E01364,
+bwa-mem2,hmftools-amber,data_flow,16,16,E00272,
+bwa-mem2,hmftools-bam-tools,data_flow,8,8,E00157,
+bwa-mem2,hmftools-chord,data_flow,4,4,E01203,
+bwa-mem2,hmftools-cider,data_flow,12,12,E01122,
+bwa-mem2,hmftools-cobalt,data_flow,22,22,E00314,
+bwa-mem2,hmftools-cuppa,data_flow,3,3,E01606,
+bwa-mem2,hmftools-esvee,data_flow,12,12,E00369,
+bwa-mem2,hmftools-isofox,data_flow,13,13,E00209,
+bwa-mem2,hmftools-lilac,data_flow,8,8,E01247,
+bwa-mem2,hmftools-linx,data_flow,12,12,E01012,
+bwa-mem2,hmftools-neo,data_flow,5,5,E01475,
+bwa-mem2,hmftools-orange,data_flow,4,4,E01659,
+bwa-mem2,hmftools-pave,data_flow,18,18,E00592,
+bwa-mem2,hmftools-peach,data_flow,2,2,E01450,
+bwa-mem2,hmftools-purple,data_flow,10,10,E00718,
+bwa-mem2,hmftools-qsee,data_flow,2,2,E00797,
+bwa-mem2,hmftools-redux,data_flow,24,24,E00096,
+bwa-mem2,hmftools-sage,data_flow,70,70,E00453,
+bwa-mem2,hmftools-sigs,data_flow,1,1,E01186,
+bwa-mem2,hmftools-teal,data_flow,6,6,E01299,
+bwa-mem2,hmftools-virus-interpreter,data_flow,1,1,E01423,
+bwa-mem2,hmftools-wisp,data_flow,3,3,E03381,
+bwa-mem2,multiqc,data_flow,2,2,E01705,
+bwa-mem2,r-linxreport,data_flow,2,2,E01111,
+bwa-mem2,star,data_flow,3,3,E00086,
+bwa-mem2,write_reference_data,data_flow,5,5,E00007,
+custom_extracttarball,bwa-mem2,data_flow,40,40,E00063,
+custom_extracttarball,gridss,data_flow,28,28,E01372,
+custom_extracttarball,hmftools-amber,data_flow,81,81,E00280,
+custom_extracttarball,hmftools-bam-tools,data_flow,52,52,E00165,
+custom_extracttarball,hmftools-chord,data_flow,15,15,E01217,
+custom_extracttarball,hmftools-cider,data_flow,50,50,E01132,
+custom_extracttarball,hmftools-cobalt,data_flow,126,126,E00318,
+custom_extracttarball,hmftools-cuppa,data_flow,13,13,E01622,
+custom_extracttarball,hmftools-esvee,data_flow,103,103,E00377,
+custom_extracttarball,hmftools-fastq-tools,data_flow,19,19,E00050,
+custom_extracttarball,hmftools-isofox,data_flow,173,173,E00210,
+custom_extracttarball,hmftools-lilac,data_flow,38,38,E01265,
+custom_extracttarball,hmftools-linx,data_flow,80,80,E01026,
+custom_extracttarball,hmftools-neo,data_flow,31,31,E01490,
+custom_extracttarball,hmftools-orange,data_flow,18,18,E01692,
+custom_extracttarball,hmftools-pave,data_flow,168,168,E00600,
+custom_extracttarball,hmftools-peach,data_flow,24,24,E01460,
+custom_extracttarball,hmftools-purple,data_flow,94,94,E00732,
+custom_extracttarball,hmftools-qsee,data_flow,17,17,E00810,
+custom_extracttarball,hmftools-redux,data_flow,129,129,E00104,
+custom_extracttarball,hmftools-sage,data_flow,426,426,E00461,
+custom_extracttarball,hmftools-sigs,data_flow,4,4,E01196,
+custom_extracttarball,hmftools-teal,data_flow,20,20,E01307,
+custom_extracttarball,hmftools-virus-interpreter,data_flow,12,12,E01435,
+custom_extracttarball,hmftools-wisp,data_flow,10,10,E03393,
+custom_extracttarball,star,data_flow,15,15,E00087,
+custom_extracttarball,write_reference_data,data_flow,75,75,E00008,
+fastp,bwa-mem2,data_flow,8,8,E00056,
+fastp,gridss,data_flow,2,2,E01365,
+fastp,hmftools-amber,data_flow,8,8,E00273,
+fastp,hmftools-bam-tools,data_flow,4,4,E00158,
+fastp,hmftools-chord,data_flow,2,2,E01204,
+fastp,hmftools-cider,data_flow,4,4,E01123,
+fastp,hmftools-cobalt,data_flow,18,18,E00315,
+fastp,hmftools-cuppa,data_flow,4,4,E01602,
+fastp,hmftools-esvee,data_flow,4,4,E00370,
+fastp,hmftools-fastq-tools,data_flow,4,4,E00049,
+fastp,hmftools-isofox,data_flow,5,5,E00205,
+fastp,hmftools-lilac,data_flow,4,4,E01248,
+fastp,hmftools-linx,data_flow,12,12,E01013,
+fastp,hmftools-neo,data_flow,4,4,E01476,
+fastp,hmftools-orange,data_flow,4,4,E01660,
+fastp,hmftools-pave,data_flow,10,10,E00593,
+fastp,hmftools-peach,data_flow,4,4,E01451,
+fastp,hmftools-purple,data_flow,4,4,E00719,
+fastp,hmftools-qsee,data_flow,4,4,E00798,
+fastp,hmftools-redux,data_flow,16,16,E00097,
+fastp,hmftools-sage,data_flow,28,28,E00454,
+fastp,hmftools-sigs,data_flow,2,2,E01187,
+fastp,hmftools-teal,data_flow,4,4,E01300,
+fastp,hmftools-virus-interpreter,data_flow,2,2,E01424,
+fastp,hmftools-wisp,data_flow,2,2,E03382,
+fastp,multiqc,data_flow,4,4,E01706,
+fastp,r-linxreport,data_flow,4,4,E01112,
+fastp,star,data_flow,3,3,E00082,
+gatk4,bwa-mem2,data_flow,8,8,E00061,
+gatk4,gridss,data_flow,4,4,E01370,
+gatk4,hmftools-amber,data_flow,12,12,E00278,
+gatk4,hmftools-bam-tools,data_flow,6,6,E00163,
+gatk4,hmftools-chord,data_flow,3,3,E01215,
+gatk4,hmftools-cider,data_flow,14,14,E01126,
+gatk4,hmftools-cobalt,data_flow,13,13,E00324,
+gatk4,hmftools-cuppa,data_flow,5,5,E01599,
+gatk4,hmftools-esvee,data_flow,10,10,E00375,
+gatk4,hmftools-isofox,data_flow,23,23,E00202,
+gatk4,hmftools-lilac,data_flow,10,10,E01251,
+gatk4,hmftools-linx,data_flow,6,6,E01024,
+gatk4,hmftools-neo,data_flow,5,5,E01488,
+gatk4,hmftools-orange,data_flow,6,6,E01672,
+gatk4,hmftools-pave,data_flow,13,13,E00598,
+gatk4,hmftools-purple,data_flow,8,8,E00730,
+gatk4,hmftools-redux,data_flow,16,16,E00102,
+gatk4,hmftools-sage,data_flow,64,64,E00459,
+gatk4,hmftools-teal,data_flow,4,4,E01305,
+gatk4,hmftools-wisp,data_flow,2,2,E03391,
+gatk4,multiqc,data_flow,2,2,E01718,
+gatk4,star,data_flow,3,3,E00085,
+gatk4,write_reference_data,data_flow,5,5,E00006,
+gridss,bwa-mem2,data_flow,8,8,E00064,
+gridss,hmftools-amber,data_flow,12,12,E00281,
+gridss,hmftools-bam-tools,data_flow,6,6,E00166,
+gridss,hmftools-chord,data_flow,3,3,E01218,
+gridss,hmftools-cider,data_flow,10,10,E01133,
+gridss,hmftools-cobalt,data_flow,13,13,E00327,
+gridss,hmftools-cuppa,data_flow,3,3,E01616,
+gridss,hmftools-esvee,data_flow,10,10,E00378,
+gridss,hmftools-isofox,data_flow,13,13,E00211,
+gridss,hmftools-lilac,data_flow,6,6,E01266,
+gridss,hmftools-linx,data_flow,6,6,E01027,
+gridss,hmftools-neo,data_flow,3,3,E01491,
+gridss,hmftools-orange,data_flow,3,3,E01681,
+gridss,hmftools-pave,data_flow,13,13,E00601,
+gridss,hmftools-purple,data_flow,8,8,E00733,
+gridss,hmftools-redux,data_flow,16,16,E00105,
+gridss,hmftools-sage,data_flow,56,56,E00462,
+gridss,hmftools-teal,data_flow,4,4,E01308,
+gridss,hmftools-virus-interpreter,data_flow,1,1,E01420,
+gridss,hmftools-wisp,data_flow,2,2,E03394,
+gridss,star,data_flow,3,3,E00088,
+gridss,write_reference_data,data_flow,5,5,E00009,
+hmftools-amber,hmftools-chord,data_flow,1,1,E01201,
+hmftools-amber,hmftools-cobalt,data_flow,1,1,E03843,
+hmftools-amber,hmftools-cuppa,data_flow,2,2,E01604,
+hmftools-amber,hmftools-lilac,data_flow,2,2,E01254,
+hmftools-amber,hmftools-linx,data_flow,6,6,E01010,
+hmftools-amber,hmftools-neo,data_flow,2,2,E01473,
+hmftools-amber,hmftools-orange,data_flow,2,2,E01667,
+hmftools-amber,hmftools-peach,data_flow,2,2,E01448,
+hmftools-amber,hmftools-purple,data_flow,2,2,E00716,
+hmftools-amber,hmftools-qsee,data_flow,2,2,E00805,
+hmftools-amber,hmftools-sage,data_flow,6,6,E00819,
+hmftools-amber,hmftools-sigs,data_flow,1,1,E01184,
+hmftools-amber,hmftools-teal,data_flow,1,1,E01346,
+hmftools-amber,hmftools-virus-interpreter,data_flow,1,1,E01428,
+hmftools-amber,hmftools-wisp,data_flow,1,1,E03385,
+hmftools-amber,multiqc,data_flow,2,2,E01709,
+hmftools-amber,r-linxreport,data_flow,2,2,E01109,
+hmftools-bam-tools,hmftools-cuppa,data_flow,2,2,E01617,
+hmftools-bam-tools,hmftools-orange,data_flow,2,2,E01676,
+hmftools-bam-tools,hmftools-qsee,data_flow,2,2,E00801,
+hmftools-bam-tools,hmftools-teal,data_flow,1,1,E01343,
+hmftools-bam-tools,hmftools-virus-interpreter,data_flow,1,1,E01421,
+hmftools-bam-tools,multiqc,data_flow,2,2,E01703,
+hmftools-chord,hmftools-orange,data_flow,1,1,E01682,
+hmftools-cobalt,hmftools-chord,data_flow,1,1,E01207,
+hmftools-cobalt,hmftools-cuppa,data_flow,2,2,E01608,
+hmftools-cobalt,hmftools-lilac,data_flow,2,2,E01255,
+hmftools-cobalt,hmftools-linx,data_flow,6,6,E01016,
+hmftools-cobalt,hmftools-neo,data_flow,2,2,E01479,
+hmftools-cobalt,hmftools-orange,data_flow,2,2,E01668,
+hmftools-cobalt,hmftools-peach,data_flow,2,2,E01454,
+hmftools-cobalt,hmftools-purple,data_flow,2,2,E00722,
+hmftools-cobalt,hmftools-qsee,data_flow,2,2,E00802,
+hmftools-cobalt,hmftools-sage,data_flow,6,6,E00825,
+hmftools-cobalt,hmftools-sigs,data_flow,1,1,E01190,
+hmftools-cobalt,hmftools-teal,data_flow,1,1,E01344,
+hmftools-cobalt,hmftools-virus-interpreter,data_flow,1,1,E01429,
+hmftools-cobalt,hmftools-wisp,data_flow,1,1,E03386,
+hmftools-cobalt,multiqc,data_flow,2,2,E01711,
+hmftools-cobalt,r-linxreport,data_flow,2,2,E01115,
+hmftools-cuppa,hmftools-orange,data_flow,1,1,E01685,
+hmftools-esvee,hmftools-chord,data_flow,1,1,E01208,
+hmftools-esvee,hmftools-cuppa,data_flow,2,2,E01609,
+hmftools-esvee,hmftools-lilac,data_flow,2,2,E01256,
+hmftools-esvee,hmftools-linx,data_flow,6,6,E01017,
+hmftools-esvee,hmftools-neo,data_flow,2,2,E01480,
+hmftools-esvee,hmftools-orange,data_flow,2,2,E01669,
+hmftools-esvee,hmftools-peach,data_flow,2,2,E01455,
+hmftools-esvee,hmftools-purple,data_flow,2,2,E00723,
+hmftools-esvee,hmftools-qsee,data_flow,2,2,E00803,
+hmftools-esvee,hmftools-sage,data_flow,6,6,E00826,
+hmftools-esvee,hmftools-sigs,data_flow,1,1,E01191,
+hmftools-esvee,hmftools-teal,data_flow,1,1,E01347,
+hmftools-esvee,hmftools-virus-interpreter,data_flow,1,1,E01430,
+hmftools-esvee,multiqc,data_flow,2,2,E01712,
+hmftools-esvee,r-linxreport,data_flow,2,2,E01116,
+hmftools-fastq-tools,bwa-mem2,data_flow,4,4,E00057,
+hmftools-fastq-tools,fastp,data_flow,4,4,E00054,
+hmftools-fastq-tools,gridss,data_flow,1,1,E01366,
+hmftools-fastq-tools,hmftools-amber,data_flow,4,4,E00274,
+hmftools-fastq-tools,hmftools-bam-tools,data_flow,2,2,E00159,
+hmftools-fastq-tools,hmftools-chord,data_flow,1,1,E01205,
+hmftools-fastq-tools,hmftools-cider,data_flow,2,2,E01124,
+hmftools-fastq-tools,hmftools-cobalt,data_flow,9,9,E00316,
+hmftools-fastq-tools,hmftools-cuppa,data_flow,2,2,E01601,
+hmftools-fastq-tools,hmftools-esvee,data_flow,2,2,E00371,
+hmftools-fastq-tools,hmftools-isofox,data_flow,5,5,E00204,
+hmftools-fastq-tools,hmftools-lilac,data_flow,2,2,E01249,
+hmftools-fastq-tools,hmftools-linx,data_flow,6,6,E01014,
+hmftools-fastq-tools,hmftools-neo,data_flow,2,2,E01477,
+hmftools-fastq-tools,hmftools-orange,data_flow,2,2,E01661,
+hmftools-fastq-tools,hmftools-pave,data_flow,5,5,E00594,
+hmftools-fastq-tools,hmftools-peach,data_flow,2,2,E01452,
+hmftools-fastq-tools,hmftools-purple,data_flow,2,2,E00720,
+hmftools-fastq-tools,hmftools-qsee,data_flow,2,2,E00799,
+hmftools-fastq-tools,hmftools-redux,data_flow,8,8,E00098,
+hmftools-fastq-tools,hmftools-sage,data_flow,14,14,E00455,
+hmftools-fastq-tools,hmftools-sigs,data_flow,1,1,E01188,
+hmftools-fastq-tools,hmftools-teal,data_flow,2,2,E01301,
+hmftools-fastq-tools,hmftools-virus-interpreter,data_flow,1,1,E01425,
+hmftools-fastq-tools,hmftools-wisp,data_flow,1,1,E03383,
+hmftools-fastq-tools,multiqc,data_flow,2,2,E01707,
+hmftools-fastq-tools,r-linxreport,data_flow,2,2,E01113,
+hmftools-fastq-tools,star,data_flow,3,3,E00081,
+hmftools-isofox,hmftools-cuppa,data_flow,2,2,E01598,
+hmftools-isofox,hmftools-neo,data_flow,2,2,E01565,
+hmftools-isofox,hmftools-orange,data_flow,2,2,E01686,
+hmftools-lilac,hmftools-neo,data_flow,1,1,E01583,
+hmftools-lilac,hmftools-orange,data_flow,2,2,E01684,
+hmftools-linx,hmftools-cuppa,data_flow,2,2,E01614,
+hmftools-linx,hmftools-neo,data_flow,1,1,E01485,
+hmftools-linx,hmftools-orange,data_flow,6,6,E01677,
+hmftools-linx,r-linxreport,data_flow,4,4,E01106,
+hmftools-neo,hmftools-isofox,data_flow,1,1,E01523,
+hmftools-pave,hmftools-chord,data_flow,2,2,E01209,
+hmftools-pave,hmftools-cuppa,data_flow,4,4,E01610,
+hmftools-pave,hmftools-lilac,data_flow,4,4,E01257,
+hmftools-pave,hmftools-linx,data_flow,12,12,E01018,
+hmftools-pave,hmftools-neo,data_flow,4,4,E01481,
+hmftools-pave,hmftools-orange,data_flow,4,4,E01670,
+hmftools-pave,hmftools-peach,data_flow,4,4,E01456,
+hmftools-pave,hmftools-purple,data_flow,4,4,E00724,
+hmftools-pave,hmftools-qsee,data_flow,4,4,E00806,
+hmftools-pave,hmftools-sage,data_flow,12,12,E00827,
+hmftools-pave,hmftools-sigs,data_flow,2,2,E01192,
+hmftools-pave,hmftools-teal,data_flow,2,2,E01348,
+hmftools-pave,hmftools-virus-interpreter,data_flow,2,2,E01431,
+hmftools-pave,multiqc,data_flow,4,4,E01713,
+hmftools-pave,r-linxreport,data_flow,4,4,E01117,
+hmftools-peach,hmftools-orange,data_flow,2,2,E01687,
+hmftools-purple,hmftools-chord,data_flow,1,1,E01200,
+hmftools-purple,hmftools-cuppa,data_flow,2,2,E01603,
+hmftools-purple,hmftools-lilac,data_flow,2,2,E01253,
+hmftools-purple,hmftools-linx,data_flow,6,6,E01009,
+hmftools-purple,hmftools-neo,data_flow,2,2,E01472,
+hmftools-purple,hmftools-orange,data_flow,2,2,E01666,
+hmftools-purple,hmftools-peach,data_flow,2,2,E01447,
+hmftools-purple,hmftools-qsee,data_flow,2,2,E00804,
+hmftools-purple,hmftools-sage,data_flow,6,6,E00818,
+hmftools-purple,hmftools-sigs,data_flow,1,1,E01183,
+hmftools-purple,hmftools-teal,data_flow,1,1,E01345,
+hmftools-purple,hmftools-virus-interpreter,data_flow,1,1,E01427,
+hmftools-purple,multiqc,data_flow,2,2,E01710,
+hmftools-purple,r-linxreport,data_flow,2,2,E01108,
+hmftools-qsee,hmftools-orange,data_flow,2,2,E01675,
+hmftools-redux,gridss,data_flow,1,1,E01363,
+hmftools-redux,hmftools-amber,data_flow,4,4,E00271,
+hmftools-redux,hmftools-bam-tools,data_flow,2,2,E00156,
+hmftools-redux,hmftools-chord,data_flow,1,1,E01202,
+hmftools-redux,hmftools-cider,data_flow,2,2,E01121,
+hmftools-redux,hmftools-cobalt,data_flow,9,9,E00313,
+hmftools-redux,hmftools-cuppa,data_flow,2,2,E01605,
+hmftools-redux,hmftools-esvee,data_flow,2,2,E00368,
+hmftools-redux,hmftools-lilac,data_flow,2,2,E01246,
+hmftools-redux,hmftools-linx,data_flow,6,6,E01011,
+hmftools-redux,hmftools-neo,data_flow,2,2,E01474,
+hmftools-redux,hmftools-orange,data_flow,2,2,E01658,
+hmftools-redux,hmftools-pave,data_flow,5,5,E00591,
+hmftools-redux,hmftools-peach,data_flow,2,2,E01449,
+hmftools-redux,hmftools-purple,data_flow,2,2,E00717,
+hmftools-redux,hmftools-qsee,data_flow,2,2,E00796,
+hmftools-redux,hmftools-sage,data_flow,14,14,E00452,
+hmftools-redux,hmftools-sigs,data_flow,1,1,E01185,
+hmftools-redux,hmftools-teal,data_flow,2,2,E01298,
+hmftools-redux,hmftools-virus-interpreter,data_flow,1,1,E01422,
+hmftools-redux,hmftools-wisp,data_flow,1,1,E03380,
+hmftools-redux,multiqc,data_flow,2,2,E01704,
+hmftools-redux,r-linxreport,data_flow,2,2,E01110,
+hmftools-sage,hmftools-chord,data_flow,2,2,E01210,
+hmftools-sage,hmftools-cuppa,data_flow,4,4,E01611,
+hmftools-sage,hmftools-lilac,data_flow,4,4,E01258,
+hmftools-sage,hmftools-linx,data_flow,12,12,E01019,
+hmftools-sage,hmftools-neo,data_flow,6,6,E01482,
+hmftools-sage,hmftools-orange,data_flow,10,10,E01657,
+hmftools-sage,hmftools-pave,data_flow,5,5,E00590,
+hmftools-sage,hmftools-peach,data_flow,4,4,E01457,
+hmftools-sage,hmftools-purple,data_flow,4,4,E00725,
+hmftools-sage,hmftools-qsee,data_flow,4,4,E00807,
+hmftools-sage,hmftools-sigs,data_flow,2,2,E01193,
+hmftools-sage,hmftools-teal,data_flow,2,2,E01349,
+hmftools-sage,hmftools-virus-interpreter,data_flow,2,2,E01432,
+hmftools-sage,hmftools-wisp,data_flow,2,2,E03387,
+hmftools-sage,multiqc,data_flow,4,4,E01714,
+hmftools-sage,r-linxreport,data_flow,4,4,E01118,
+hmftools-sigs,hmftools-orange,data_flow,1,1,E01683,
+hmftools-virus-interpreter,hmftools-cuppa,data_flow,2,2,E01615,
+hmftools-virus-interpreter,hmftools-orange,data_flow,1,1,E01680,
+samtools,bwa-mem2,data_flow,16,16,E00059,
+samtools,gatk4,data_flow,3,3,E00095,
+samtools,gridss,data_flow,18,18,E00001,
+samtools,hmftools-amber,data_flow,24,24,E00276,
+samtools,hmftools-bam-tools,data_flow,12,12,E00161,
+samtools,hmftools-chord,data_flow,6,6,E01213,
+samtools,hmftools-cider,data_flow,20,20,E01128,
+samtools,hmftools-cobalt,data_flow,26,26,E00322,
+samtools,hmftools-cuppa,data_flow,2,2,E01618,
+samtools,hmftools-esvee,data_flow,20,20,E00373,
+samtools,hmftools-isofox,data_flow,26,26,E00206,
+samtools,hmftools-lilac,data_flow,12,12,E01261,
+samtools,hmftools-linx,data_flow,12,12,E01022,
+samtools,hmftools-neo,data_flow,6,6,E01486,
+samtools,hmftools-orange,data_flow,4,4,E01688,
+samtools,hmftools-pave,data_flow,26,26,E00596,
+samtools,hmftools-purple,data_flow,16,16,E00728,
+samtools,hmftools-redux,data_flow,32,32,E00100,
+samtools,hmftools-sage,data_flow,112,112,E00457,
+samtools,hmftools-teal,data_flow,8,8,E01303,
+samtools,hmftools-wisp,data_flow,4,4,E03389,
+samtools,star,data_flow,6,6,E00083,
+samtools,write_reference_data,data_flow,10,10,E00004,
+star,bwa-mem2,data_flow,8,8,E00066,
+star,gridss,data_flow,4,4,E01375,
+star,hmftools-amber,data_flow,12,12,E00283,
+star,hmftools-bam-tools,data_flow,6,6,E00168,
+star,hmftools-chord,data_flow,3,3,E01220,
+star,hmftools-cider,data_flow,10,10,E01135,
+star,hmftools-cobalt,data_flow,13,13,E00329,
+star,hmftools-cuppa,data_flow,1,1,E01625,
+star,hmftools-esvee,data_flow,10,10,E00380,
+star,hmftools-isofox,data_flow,13,13,E00213,
+star,hmftools-lilac,data_flow,6,6,E01268,
+star,hmftools-linx,data_flow,6,6,E01029,
+star,hmftools-neo,data_flow,3,3,E01493,
+star,hmftools-orange,data_flow,2,2,E01695,
+star,hmftools-pave,data_flow,13,13,E00603,
+star,hmftools-purple,data_flow,8,8,E00735,
+star,hmftools-redux,data_flow,16,16,E00107,
+star,hmftools-sage,data_flow,56,56,E00464,
+star,hmftools-teal,data_flow,4,4,E01310,
+star,hmftools-wisp,data_flow,2,2,E03396,
+star,multiqc,data_flow,2,2,E01717,
+star,samtools,data_flow,3,3,E00094,
+star,write_reference_data,data_flow,5,5,E00012,
+hmftools-amber,hmftools-bam-tools,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01997, E01868); no directed path between any process of the two tools"
+hmftools-amber,hmftools-cider,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01997, E02882); no directed path between any process of the two tools"
+hmftools-amber,hmftools-esvee,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01997, E02104); no directed path between any process of the two tools"
+hmftools-amber,hmftools-pave,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03624, E03878); no directed path between any process of the two tools"
+hmftools-amber,write_reference_data,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03624, E03417); no directed path between any process of the two tools"
+hmftools-bam-tools,hmftools-amber,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01868, E01997); no directed path between any process of the two tools"
+hmftools-bam-tools,hmftools-chord,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E00164, E01216); no directed path between any process of the two tools"
+hmftools-bam-tools,hmftools-cider,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01868, E02882); no directed path between any process of the two tools"
+hmftools-bam-tools,hmftools-cobalt,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01868, E02048); no directed path between any process of the two tools"
+hmftools-bam-tools,hmftools-esvee,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01868, E02104); no directed path between any process of the two tools"
+hmftools-bam-tools,hmftools-isofox,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01868, E01919); no directed path between any process of the two tools"
+hmftools-bam-tools,hmftools-lilac,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01868, E02952); no directed path between any process of the two tools"
+hmftools-bam-tools,hmftools-linx,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01868, E02774); no directed path between any process of the two tools"
+hmftools-bam-tools,hmftools-neo,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E00164, E01489); no directed path between any process of the two tools"
+hmftools-bam-tools,hmftools-pave,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01868, E02334); no directed path between any process of the two tools"
+hmftools-bam-tools,hmftools-peach,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E01869, E02999); no directed path between any process of the two tools"
+hmftools-bam-tools,hmftools-purple,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01868, E02473); no directed path between any process of the two tools"
+hmftools-bam-tools,hmftools-sage,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01868, E02585); no directed path between any process of the two tools"
+hmftools-bam-tools,hmftools-sigs,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E00165, E01196); no directed path between any process of the two tools"
+hmftools-bam-tools,r-linxreport,parallel_co_use,0,0,,"both consume BWAMEM2_ALIGN.#0 (E01861, E02862); no directed path between any process of the two tools"
+hmftools-bam-tools,write_reference_data,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01868, E01725); no directed path between any process of the two tools"
+hmftools-chord,hmftools-bam-tools,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01216, E00164); no directed path between any process of the two tools"
+hmftools-chord,hmftools-cider,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01216, E01131); no directed path between any process of the two tools"
+hmftools-chord,hmftools-cuppa,parallel_co_use,0,0,,"both consume AMBER.#0 (E01201, E01604); no directed path between any process of the two tools"
+hmftools-chord,hmftools-isofox,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01216, E00209); no directed path between any process of the two tools"
+hmftools-chord,hmftools-lilac,parallel_co_use,0,0,,"both consume AMBER.#0 (E01201, E01254); no directed path between any process of the two tools"
+hmftools-chord,hmftools-linx,parallel_co_use,0,0,,"both consume AMBER.#0 (E01201, E01010); no directed path between any process of the two tools"
+hmftools-chord,hmftools-neo,parallel_co_use,0,0,,"both consume AMBER.#0 (E01201, E01473); no directed path between any process of the two tools"
+hmftools-chord,hmftools-peach,parallel_co_use,0,0,,"both consume AMBER.#0 (E01201, E01448); no directed path between any process of the two tools"
+hmftools-chord,hmftools-qsee,parallel_co_use,0,0,,"both consume AMBER.#0 (E01201, E00805); no directed path between any process of the two tools"
+hmftools-chord,hmftools-sigs,parallel_co_use,0,0,,"both consume AMBER.#0 (E01201, E01184); no directed path between any process of the two tools"
+hmftools-chord,hmftools-teal,parallel_co_use,0,0,,"both consume AMBER.#0 (E01201, E01346); no directed path between any process of the two tools"
+hmftools-chord,hmftools-virus-interpreter,parallel_co_use,0,0,,"both consume AMBER.#0 (E01201, E01428); no directed path between any process of the two tools"
+hmftools-chord,multiqc,parallel_co_use,0,0,,"both consume AMBER.#0 (E01201, E01709); no directed path between any process of the two tools"
+hmftools-chord,r-linxreport,parallel_co_use,0,0,,"both consume AMBER.#0 (E01201, E01109); no directed path between any process of the two tools"
+hmftools-chord,write_reference_data,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01216, E00031); no directed path between any process of the two tools"
+hmftools-cider,hmftools-amber,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02882, E01997); no directed path between any process of the two tools"
+hmftools-cider,hmftools-bam-tools,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02882, E01868); no directed path between any process of the two tools"
+hmftools-cider,hmftools-chord,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01131, E01216); no directed path between any process of the two tools"
+hmftools-cider,hmftools-cobalt,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02882, E02048); no directed path between any process of the two tools"
+hmftools-cider,hmftools-cuppa,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01131, E01621); no directed path between any process of the two tools"
+hmftools-cider,hmftools-esvee,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02882, E02104); no directed path between any process of the two tools"
+hmftools-cider,hmftools-isofox,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02882, E01919); no directed path between any process of the two tools"
+hmftools-cider,hmftools-lilac,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02882, E02952); no directed path between any process of the two tools"
+hmftools-cider,hmftools-linx,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02882, E02774); no directed path between any process of the two tools"
+hmftools-cider,hmftools-neo,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01131, E01489); no directed path between any process of the two tools"
+hmftools-cider,hmftools-orange,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02882, E03040); no directed path between any process of the two tools"
+hmftools-cider,hmftools-pave,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02882, E02334); no directed path between any process of the two tools"
+hmftools-cider,hmftools-peach,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E02883, E02999); no directed path between any process of the two tools"
+hmftools-cider,hmftools-purple,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02882, E02473); no directed path between any process of the two tools"
+hmftools-cider,hmftools-qsee,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E02883, E02558); no directed path between any process of the two tools"
+hmftools-cider,hmftools-sage,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02882, E02585); no directed path between any process of the two tools"
+hmftools-cider,hmftools-sigs,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E01132, E01196); no directed path between any process of the two tools"
+hmftools-cider,hmftools-teal,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01131, E01355); no directed path between any process of the two tools"
+hmftools-cider,hmftools-virus-interpreter,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E01132, E01435); no directed path between any process of the two tools"
+hmftools-cider,multiqc,parallel_co_use,0,0,,"both consume BWAMEM2_ALIGN.#0 (E02873, E03054); no directed path between any process of the two tools"
+hmftools-cider,r-linxreport,parallel_co_use,0,0,,"both consume BWAMEM2_ALIGN.#0 (E02873, E02862); no directed path between any process of the two tools"
+hmftools-cider,write_reference_data,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02882, E01725); no directed path between any process of the two tools"
+hmftools-cobalt,hmftools-bam-tools,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02048, E01868); no directed path between any process of the two tools"
+hmftools-cobalt,hmftools-cider,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02048, E02882); no directed path between any process of the two tools"
+hmftools-cobalt,hmftools-esvee,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02048, E02104); no directed path between any process of the two tools"
+hmftools-cobalt,hmftools-pave,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03853, E03878); no directed path between any process of the two tools"
+hmftools-cobalt,write_reference_data,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03853, E03417); no directed path between any process of the two tools"
+hmftools-cuppa,hmftools-chord,parallel_co_use,0,0,,"both consume AMBER.#0 (E01604, E01201); no directed path between any process of the two tools"
+hmftools-cuppa,hmftools-cider,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01621, E01131); no directed path between any process of the two tools"
+hmftools-cuppa,hmftools-lilac,parallel_co_use,0,0,,"both consume AMBER.#0 (E01604, E01254); no directed path between any process of the two tools"
+hmftools-cuppa,hmftools-neo,parallel_co_use,0,0,,"both consume AMBER.#0 (E01604, E01473); no directed path between any process of the two tools"
+hmftools-cuppa,hmftools-peach,parallel_co_use,0,0,,"both consume AMBER.#0 (E01604, E01448); no directed path between any process of the two tools"
+hmftools-cuppa,hmftools-qsee,parallel_co_use,0,0,,"both consume AMBER.#0 (E01604, E00805); no directed path between any process of the two tools"
+hmftools-cuppa,hmftools-sigs,parallel_co_use,0,0,,"both consume AMBER.#0 (E01604, E01184); no directed path between any process of the two tools"
+hmftools-cuppa,hmftools-teal,parallel_co_use,0,0,,"both consume AMBER.#0 (E01604, E01346); no directed path between any process of the two tools"
+hmftools-cuppa,multiqc,parallel_co_use,0,0,,"both consume AMBER.#0 (E01604, E01709); no directed path between any process of the two tools"
+hmftools-cuppa,r-linxreport,parallel_co_use,0,0,,"both consume AMBER.#0 (E01604, E01109); no directed path between any process of the two tools"
+hmftools-cuppa,write_reference_data,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01621, E00031); no directed path between any process of the two tools"
+hmftools-esvee,hmftools-amber,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02104, E01997); no directed path between any process of the two tools"
+hmftools-esvee,hmftools-bam-tools,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02104, E01868); no directed path between any process of the two tools"
+hmftools-esvee,hmftools-cider,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02104, E02882); no directed path between any process of the two tools"
+hmftools-esvee,hmftools-cobalt,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02104, E02048); no directed path between any process of the two tools"
+hmftools-esvee,hmftools-pave,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02104, E02334); no directed path between any process of the two tools"
+hmftools-esvee,write_reference_data,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02104, E01725); no directed path between any process of the two tools"
+hmftools-fastq-tools,write_reference_data,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E03436, E03418); no directed path between any process of the two tools"
+hmftools-isofox,hmftools-bam-tools,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01919, E01868); no directed path between any process of the two tools"
+hmftools-isofox,hmftools-chord,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E00209, E01216); no directed path between any process of the two tools"
+hmftools-isofox,hmftools-cider,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01919, E02882); no directed path between any process of the two tools"
+hmftools-isofox,hmftools-lilac,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01919, E02952); no directed path between any process of the two tools"
+hmftools-isofox,hmftools-peach,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E01920, E02999); no directed path between any process of the two tools"
+hmftools-isofox,hmftools-qsee,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E01920, E02558); no directed path between any process of the two tools"
+hmftools-isofox,hmftools-sigs,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E00210, E01196); no directed path between any process of the two tools"
+hmftools-isofox,hmftools-teal,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E00209, E01355); no directed path between any process of the two tools"
+hmftools-isofox,hmftools-virus-interpreter,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E00210, E01435); no directed path between any process of the two tools"
+hmftools-isofox,multiqc,parallel_co_use,0,0,,"both consume FASTP_UMI.#0 (E01915, E03057); no directed path between any process of the two tools"
+hmftools-isofox,r-linxreport,parallel_co_use,0,0,,"both consume FASTP_UMI.#0 (E01915, E02865); no directed path between any process of the two tools"
+hmftools-isofox,write_reference_data,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03894, E03417); no directed path between any process of the two tools"
+hmftools-lilac,hmftools-bam-tools,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02952, E01868); no directed path between any process of the two tools"
+hmftools-lilac,hmftools-chord,parallel_co_use,0,0,,"both consume AMBER.#0 (E01254, E01201); no directed path between any process of the two tools"
+hmftools-lilac,hmftools-cider,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02952, E02882); no directed path between any process of the two tools"
+hmftools-lilac,hmftools-cuppa,parallel_co_use,0,0,,"both consume AMBER.#0 (E01254, E01604); no directed path between any process of the two tools"
+hmftools-lilac,hmftools-isofox,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02952, E01919); no directed path between any process of the two tools"
+hmftools-lilac,hmftools-linx,parallel_co_use,0,0,,"both consume AMBER.#0 (E02942, E02759); no directed path between any process of the two tools"
+hmftools-lilac,hmftools-peach,parallel_co_use,0,0,,"both consume AMBER.#0 (E02942, E02987); no directed path between any process of the two tools"
+hmftools-lilac,hmftools-qsee,parallel_co_use,0,0,,"both consume AMBER.#0 (E02942, E02553); no directed path between any process of the two tools"
+hmftools-lilac,hmftools-sigs,parallel_co_use,0,0,,"both consume AMBER.#0 (E01254, E01184); no directed path between any process of the two tools"
+hmftools-lilac,hmftools-teal,parallel_co_use,0,0,,"both consume AMBER.#0 (E01254, E01346); no directed path between any process of the two tools"
+hmftools-lilac,hmftools-virus-interpreter,parallel_co_use,0,0,,"both consume AMBER.#0 (E01254, E01428); no directed path between any process of the two tools"
+hmftools-lilac,multiqc,parallel_co_use,0,0,,"both consume AMBER.#0 (E02942, E03058); no directed path between any process of the two tools"
+hmftools-lilac,r-linxreport,parallel_co_use,0,0,,"both consume AMBER.#0 (E02942, E02860); no directed path between any process of the two tools"
+hmftools-lilac,write_reference_data,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02952, E01725); no directed path between any process of the two tools"
+hmftools-linx,hmftools-bam-tools,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02774, E01868); no directed path between any process of the two tools"
+hmftools-linx,hmftools-chord,parallel_co_use,0,0,,"both consume AMBER.#0 (E01010, E01201); no directed path between any process of the two tools"
+hmftools-linx,hmftools-cider,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02774, E02882); no directed path between any process of the two tools"
+hmftools-linx,hmftools-lilac,parallel_co_use,0,0,,"both consume AMBER.#0 (E02759, E02942); no directed path between any process of the two tools"
+hmftools-linx,hmftools-peach,parallel_co_use,0,0,,"both consume AMBER.#0 (E02759, E02987); no directed path between any process of the two tools"
+hmftools-linx,hmftools-qsee,parallel_co_use,0,0,,"both consume AMBER.#0 (E02759, E02553); no directed path between any process of the two tools"
+hmftools-linx,hmftools-sigs,parallel_co_use,0,0,,"both consume AMBER.#0 (E01010, E01184); no directed path between any process of the two tools"
+hmftools-linx,hmftools-teal,parallel_co_use,0,0,,"both consume AMBER.#0 (E01010, E01346); no directed path between any process of the two tools"
+hmftools-linx,hmftools-virus-interpreter,parallel_co_use,0,0,,"both consume AMBER.#0 (E01010, E01428); no directed path between any process of the two tools"
+hmftools-linx,multiqc,parallel_co_use,0,0,,"both consume AMBER.#0 (E02759, E03058); no directed path between any process of the two tools"
+hmftools-linx,write_reference_data,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02774, E01725); no directed path between any process of the two tools"
+hmftools-neo,hmftools-bam-tools,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01489, E00164); no directed path between any process of the two tools"
+hmftools-neo,hmftools-chord,parallel_co_use,0,0,,"both consume AMBER.#0 (E01473, E01201); no directed path between any process of the two tools"
+hmftools-neo,hmftools-cider,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01489, E01131); no directed path between any process of the two tools"
+hmftools-neo,hmftools-cuppa,parallel_co_use,0,0,,"both consume AMBER.#0 (E01473, E01604); no directed path between any process of the two tools"
+hmftools-neo,hmftools-orange,parallel_co_use,0,0,,"both consume AMBER.#0 (E01473, E01667); no directed path between any process of the two tools"
+hmftools-neo,hmftools-peach,parallel_co_use,0,0,,"both consume AMBER.#0 (E01473, E01448); no directed path between any process of the two tools"
+hmftools-neo,hmftools-qsee,parallel_co_use,0,0,,"both consume AMBER.#0 (E01473, E00805); no directed path between any process of the two tools"
+hmftools-neo,hmftools-sigs,parallel_co_use,0,0,,"both consume AMBER.#0 (E01473, E01184); no directed path between any process of the two tools"
+hmftools-neo,hmftools-teal,parallel_co_use,0,0,,"both consume AMBER.#0 (E01473, E01346); no directed path between any process of the two tools"
+hmftools-neo,hmftools-virus-interpreter,parallel_co_use,0,0,,"both consume AMBER.#0 (E01473, E01428); no directed path between any process of the two tools"
+hmftools-neo,multiqc,parallel_co_use,0,0,,"both consume AMBER.#0 (E01473, E01709); no directed path between any process of the two tools"
+hmftools-neo,r-linxreport,parallel_co_use,0,0,,"both consume AMBER.#0 (E01473, E01109); no directed path between any process of the two tools"
+hmftools-neo,write_reference_data,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01489, E00031); no directed path between any process of the two tools"
+hmftools-orange,hmftools-cider,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03040, E02882); no directed path between any process of the two tools"
+hmftools-orange,hmftools-neo,parallel_co_use,0,0,,"both consume AMBER.#0 (E01667, E01473); no directed path between any process of the two tools"
+hmftools-orange,hmftools-teal,parallel_co_use,0,0,,"both consume AMBER.#0 (E01667, E01346); no directed path between any process of the two tools"
+hmftools-orange,multiqc,parallel_co_use,0,0,,"both consume AMBER.#0 (E03021, E03058); no directed path between any process of the two tools"
+hmftools-orange,r-linxreport,parallel_co_use,0,0,,"both consume AMBER.#0 (E03021, E02860); no directed path between any process of the two tools"
+hmftools-orange,write_reference_data,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03040, E01725); no directed path between any process of the two tools"
+hmftools-pave,hmftools-amber,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03878, E03624); no directed path between any process of the two tools"
+hmftools-pave,hmftools-bam-tools,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02334, E01868); no directed path between any process of the two tools"
+hmftools-pave,hmftools-cider,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02334, E02882); no directed path between any process of the two tools"
+hmftools-pave,hmftools-cobalt,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03878, E03853); no directed path between any process of the two tools"
+hmftools-pave,hmftools-esvee,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02334, E02104); no directed path between any process of the two tools"
+hmftools-pave,write_reference_data,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03878, E03417); no directed path between any process of the two tools"
+hmftools-peach,hmftools-bam-tools,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E02999, E01869); no directed path between any process of the two tools"
+hmftools-peach,hmftools-chord,parallel_co_use,0,0,,"both consume AMBER.#0 (E01448, E01201); no directed path between any process of the two tools"
+hmftools-peach,hmftools-cider,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E02999, E02883); no directed path between any process of the two tools"
+hmftools-peach,hmftools-cuppa,parallel_co_use,0,0,,"both consume AMBER.#0 (E01448, E01604); no directed path between any process of the two tools"
+hmftools-peach,hmftools-isofox,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E02999, E01920); no directed path between any process of the two tools"
+hmftools-peach,hmftools-lilac,parallel_co_use,0,0,,"both consume AMBER.#0 (E02987, E02942); no directed path between any process of the two tools"
+hmftools-peach,hmftools-linx,parallel_co_use,0,0,,"both consume AMBER.#0 (E02987, E02759); no directed path between any process of the two tools"
+hmftools-peach,hmftools-neo,parallel_co_use,0,0,,"both consume AMBER.#0 (E01448, E01473); no directed path between any process of the two tools"
+hmftools-peach,hmftools-qsee,parallel_co_use,0,0,,"both consume AMBER.#0 (E02987, E02553); no directed path between any process of the two tools"
+hmftools-peach,hmftools-sigs,parallel_co_use,0,0,,"both consume AMBER.#0 (E01448, E01184); no directed path between any process of the two tools"
+hmftools-peach,hmftools-teal,parallel_co_use,0,0,,"both consume AMBER.#0 (E01448, E01346); no directed path between any process of the two tools"
+hmftools-peach,hmftools-virus-interpreter,parallel_co_use,0,0,,"both consume AMBER.#0 (E01448, E01428); no directed path between any process of the two tools"
+hmftools-peach,multiqc,parallel_co_use,0,0,,"both consume AMBER.#0 (E02987, E03058); no directed path between any process of the two tools"
+hmftools-peach,r-linxreport,parallel_co_use,0,0,,"both consume AMBER.#0 (E02987, E02860); no directed path between any process of the two tools"
+hmftools-peach,write_reference_data,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E02999, E01726); no directed path between any process of the two tools"
+hmftools-purple,hmftools-bam-tools,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02473, E01868); no directed path between any process of the two tools"
+hmftools-purple,hmftools-cider,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02473, E02882); no directed path between any process of the two tools"
+hmftools-purple,write_reference_data,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02473, E01725); no directed path between any process of the two tools"
+hmftools-qsee,hmftools-chord,parallel_co_use,0,0,,"both consume AMBER.#0 (E00805, E01201); no directed path between any process of the two tools"
+hmftools-qsee,hmftools-cider,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E02558, E02883); no directed path between any process of the two tools"
+hmftools-qsee,hmftools-cuppa,parallel_co_use,0,0,,"both consume AMBER.#0 (E00805, E01604); no directed path between any process of the two tools"
+hmftools-qsee,hmftools-isofox,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E02558, E01920); no directed path between any process of the two tools"
+hmftools-qsee,hmftools-lilac,parallel_co_use,0,0,,"both consume AMBER.#0 (E02553, E02942); no directed path between any process of the two tools"
+hmftools-qsee,hmftools-linx,parallel_co_use,0,0,,"both consume AMBER.#0 (E02553, E02759); no directed path between any process of the two tools"
+hmftools-qsee,hmftools-neo,parallel_co_use,0,0,,"both consume AMBER.#0 (E00805, E01473); no directed path between any process of the two tools"
+hmftools-qsee,hmftools-peach,parallel_co_use,0,0,,"both consume AMBER.#0 (E02553, E02987); no directed path between any process of the two tools"
+hmftools-qsee,hmftools-sigs,parallel_co_use,0,0,,"both consume AMBER.#0 (E00805, E01184); no directed path between any process of the two tools"
+hmftools-qsee,hmftools-teal,parallel_co_use,0,0,,"both consume AMBER.#0 (E00805, E01346); no directed path between any process of the two tools"
+hmftools-qsee,hmftools-virus-interpreter,parallel_co_use,0,0,,"both consume AMBER.#0 (E00805, E01428); no directed path between any process of the two tools"
+hmftools-qsee,multiqc,parallel_co_use,0,0,,"both consume AMBER.#0 (E02553, E03058); no directed path between any process of the two tools"
+hmftools-qsee,r-linxreport,parallel_co_use,0,0,,"both consume AMBER.#0 (E02553, E02860); no directed path between any process of the two tools"
+hmftools-qsee,write_reference_data,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E02558, E01726); no directed path between any process of the two tools"
+hmftools-redux,write_reference_data,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03490, E03417); no directed path between any process of the two tools"
+hmftools-sage,hmftools-bam-tools,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02585, E01868); no directed path between any process of the two tools"
+hmftools-sage,hmftools-cider,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E02585, E02882); no directed path between any process of the two tools"
+hmftools-sage,write_reference_data,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03721, E03417); no directed path between any process of the two tools"
+hmftools-sigs,hmftools-bam-tools,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E01196, E00165); no directed path between any process of the two tools"
+hmftools-sigs,hmftools-chord,parallel_co_use,0,0,,"both consume AMBER.#0 (E01184, E01201); no directed path between any process of the two tools"
+hmftools-sigs,hmftools-cider,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E01196, E01132); no directed path between any process of the two tools"
+hmftools-sigs,hmftools-cuppa,parallel_co_use,0,0,,"both consume AMBER.#0 (E01184, E01604); no directed path between any process of the two tools"
+hmftools-sigs,hmftools-isofox,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E01196, E00210); no directed path between any process of the two tools"
+hmftools-sigs,hmftools-lilac,parallel_co_use,0,0,,"both consume AMBER.#0 (E01184, E01254); no directed path between any process of the two tools"
+hmftools-sigs,hmftools-linx,parallel_co_use,0,0,,"both consume AMBER.#0 (E01184, E01010); no directed path between any process of the two tools"
+hmftools-sigs,hmftools-neo,parallel_co_use,0,0,,"both consume AMBER.#0 (E01184, E01473); no directed path between any process of the two tools"
+hmftools-sigs,hmftools-peach,parallel_co_use,0,0,,"both consume AMBER.#0 (E01184, E01448); no directed path between any process of the two tools"
+hmftools-sigs,hmftools-qsee,parallel_co_use,0,0,,"both consume AMBER.#0 (E01184, E00805); no directed path between any process of the two tools"
+hmftools-sigs,hmftools-teal,parallel_co_use,0,0,,"both consume AMBER.#0 (E01184, E01346); no directed path between any process of the two tools"
+hmftools-sigs,hmftools-virus-interpreter,parallel_co_use,0,0,,"both consume AMBER.#0 (E01184, E01428); no directed path between any process of the two tools"
+hmftools-sigs,multiqc,parallel_co_use,0,0,,"both consume AMBER.#0 (E01184, E01709); no directed path between any process of the two tools"
+hmftools-sigs,r-linxreport,parallel_co_use,0,0,,"both consume AMBER.#0 (E01184, E01109); no directed path between any process of the two tools"
+hmftools-sigs,write_reference_data,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E01196, E00032); no directed path between any process of the two tools"
+hmftools-teal,hmftools-chord,parallel_co_use,0,0,,"both consume AMBER.#0 (E01346, E01201); no directed path between any process of the two tools"
+hmftools-teal,hmftools-cider,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01355, E01131); no directed path between any process of the two tools"
+hmftools-teal,hmftools-cuppa,parallel_co_use,0,0,,"both consume AMBER.#0 (E01346, E01604); no directed path between any process of the two tools"
+hmftools-teal,hmftools-isofox,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01355, E00209); no directed path between any process of the two tools"
+hmftools-teal,hmftools-lilac,parallel_co_use,0,0,,"both consume AMBER.#0 (E01346, E01254); no directed path between any process of the two tools"
+hmftools-teal,hmftools-linx,parallel_co_use,0,0,,"both consume AMBER.#0 (E01346, E01010); no directed path between any process of the two tools"
+hmftools-teal,hmftools-neo,parallel_co_use,0,0,,"both consume AMBER.#0 (E01346, E01473); no directed path between any process of the two tools"
+hmftools-teal,hmftools-orange,parallel_co_use,0,0,,"both consume AMBER.#0 (E01346, E01667); no directed path between any process of the two tools"
+hmftools-teal,hmftools-peach,parallel_co_use,0,0,,"both consume AMBER.#0 (E01346, E01448); no directed path between any process of the two tools"
+hmftools-teal,hmftools-qsee,parallel_co_use,0,0,,"both consume AMBER.#0 (E01346, E00805); no directed path between any process of the two tools"
+hmftools-teal,hmftools-sigs,parallel_co_use,0,0,,"both consume AMBER.#0 (E01346, E01184); no directed path between any process of the two tools"
+hmftools-teal,hmftools-virus-interpreter,parallel_co_use,0,0,,"both consume AMBER.#0 (E01346, E01428); no directed path between any process of the two tools"
+hmftools-teal,multiqc,parallel_co_use,0,0,,"both consume AMBER.#0 (E01346, E01709); no directed path between any process of the two tools"
+hmftools-teal,r-linxreport,parallel_co_use,0,0,,"both consume AMBER.#0 (E01346, E01109); no directed path between any process of the two tools"
+hmftools-teal,write_reference_data,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01355, E00031); no directed path between any process of the two tools"
+hmftools-virus-interpreter,hmftools-chord,parallel_co_use,0,0,,"both consume AMBER.#0 (E01428, E01201); no directed path between any process of the two tools"
+hmftools-virus-interpreter,hmftools-cider,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E01435, E01132); no directed path between any process of the two tools"
+hmftools-virus-interpreter,hmftools-isofox,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E01435, E00210); no directed path between any process of the two tools"
+hmftools-virus-interpreter,hmftools-lilac,parallel_co_use,0,0,,"both consume AMBER.#0 (E01428, E01254); no directed path between any process of the two tools"
+hmftools-virus-interpreter,hmftools-linx,parallel_co_use,0,0,,"both consume AMBER.#0 (E01428, E01010); no directed path between any process of the two tools"
+hmftools-virus-interpreter,hmftools-neo,parallel_co_use,0,0,,"both consume AMBER.#0 (E01428, E01473); no directed path between any process of the two tools"
+hmftools-virus-interpreter,hmftools-peach,parallel_co_use,0,0,,"both consume AMBER.#0 (E01428, E01448); no directed path between any process of the two tools"
+hmftools-virus-interpreter,hmftools-qsee,parallel_co_use,0,0,,"both consume AMBER.#0 (E01428, E00805); no directed path between any process of the two tools"
+hmftools-virus-interpreter,hmftools-sigs,parallel_co_use,0,0,,"both consume AMBER.#0 (E01428, E01184); no directed path between any process of the two tools"
+hmftools-virus-interpreter,hmftools-teal,parallel_co_use,0,0,,"both consume AMBER.#0 (E01428, E01346); no directed path between any process of the two tools"
+hmftools-virus-interpreter,multiqc,parallel_co_use,0,0,,"both consume AMBER.#0 (E01428, E01709); no directed path between any process of the two tools"
+hmftools-virus-interpreter,r-linxreport,parallel_co_use,0,0,,"both consume AMBER.#0 (E01428, E01109); no directed path between any process of the two tools"
+hmftools-virus-interpreter,write_reference_data,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E01435, E00032); no directed path between any process of the two tools"
+hmftools-wisp,write_reference_data,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03392, E03074); no directed path between any process of the two tools"
+multiqc,hmftools-chord,parallel_co_use,0,0,,"both consume AMBER.#0 (E01709, E01201); no directed path between any process of the two tools"
+multiqc,hmftools-cider,parallel_co_use,0,0,,"both consume BWAMEM2_ALIGN.#0 (E03054, E02873); no directed path between any process of the two tools"
+multiqc,hmftools-cuppa,parallel_co_use,0,0,,"both consume AMBER.#0 (E01709, E01604); no directed path between any process of the two tools"
+multiqc,hmftools-isofox,parallel_co_use,0,0,,"both consume FASTP_UMI.#0 (E03057, E01915); no directed path between any process of the two tools"
+multiqc,hmftools-lilac,parallel_co_use,0,0,,"both consume AMBER.#0 (E03058, E02942); no directed path between any process of the two tools"
+multiqc,hmftools-linx,parallel_co_use,0,0,,"both consume AMBER.#0 (E03058, E02759); no directed path between any process of the two tools"
+multiqc,hmftools-neo,parallel_co_use,0,0,,"both consume AMBER.#0 (E01709, E01473); no directed path between any process of the two tools"
+multiqc,hmftools-orange,parallel_co_use,0,0,,"both consume AMBER.#0 (E03058, E03021); no directed path between any process of the two tools"
+multiqc,hmftools-peach,parallel_co_use,0,0,,"both consume AMBER.#0 (E03058, E02987); no directed path between any process of the two tools"
+multiqc,hmftools-qsee,parallel_co_use,0,0,,"both consume AMBER.#0 (E03058, E02553); no directed path between any process of the two tools"
+multiqc,hmftools-sigs,parallel_co_use,0,0,,"both consume AMBER.#0 (E01709, E01184); no directed path between any process of the two tools"
+multiqc,hmftools-teal,parallel_co_use,0,0,,"both consume AMBER.#0 (E01709, E01346); no directed path between any process of the two tools"
+multiqc,hmftools-virus-interpreter,parallel_co_use,0,0,,"both consume AMBER.#0 (E01709, E01428); no directed path between any process of the two tools"
+multiqc,r-linxreport,parallel_co_use,0,0,,"both consume AMBER.#0 (E03058, E02860); no directed path between any process of the two tools"
+r-linxreport,hmftools-bam-tools,parallel_co_use,0,0,,"both consume BWAMEM2_ALIGN.#0 (E02862, E01861); no directed path between any process of the two tools"
+r-linxreport,hmftools-chord,parallel_co_use,0,0,,"both consume AMBER.#0 (E01109, E01201); no directed path between any process of the two tools"
+r-linxreport,hmftools-cider,parallel_co_use,0,0,,"both consume BWAMEM2_ALIGN.#0 (E02862, E02873); no directed path between any process of the two tools"
+r-linxreport,hmftools-cuppa,parallel_co_use,0,0,,"both consume AMBER.#0 (E01109, E01604); no directed path between any process of the two tools"
+r-linxreport,hmftools-isofox,parallel_co_use,0,0,,"both consume FASTP_UMI.#0 (E02865, E01915); no directed path between any process of the two tools"
+r-linxreport,hmftools-lilac,parallel_co_use,0,0,,"both consume AMBER.#0 (E02860, E02942); no directed path between any process of the two tools"
+r-linxreport,hmftools-neo,parallel_co_use,0,0,,"both consume AMBER.#0 (E01109, E01473); no directed path between any process of the two tools"
+r-linxreport,hmftools-orange,parallel_co_use,0,0,,"both consume AMBER.#0 (E02860, E03021); no directed path between any process of the two tools"
+r-linxreport,hmftools-peach,parallel_co_use,0,0,,"both consume AMBER.#0 (E02860, E02987); no directed path between any process of the two tools"
+r-linxreport,hmftools-qsee,parallel_co_use,0,0,,"both consume AMBER.#0 (E02860, E02553); no directed path between any process of the two tools"
+r-linxreport,hmftools-sigs,parallel_co_use,0,0,,"both consume AMBER.#0 (E01109, E01184); no directed path between any process of the two tools"
+r-linxreport,hmftools-teal,parallel_co_use,0,0,,"both consume AMBER.#0 (E01109, E01346); no directed path between any process of the two tools"
+r-linxreport,hmftools-virus-interpreter,parallel_co_use,0,0,,"both consume AMBER.#0 (E01109, E01428); no directed path between any process of the two tools"
+r-linxreport,multiqc,parallel_co_use,0,0,,"both consume AMBER.#0 (E02860, E03058); no directed path between any process of the two tools"
+write_reference_data,hmftools-amber,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03417, E03624); no directed path between any process of the two tools"
+write_reference_data,hmftools-bam-tools,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01725, E01868); no directed path between any process of the two tools"
+write_reference_data,hmftools-chord,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E00031, E01216); no directed path between any process of the two tools"
+write_reference_data,hmftools-cider,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01725, E02882); no directed path between any process of the two tools"
+write_reference_data,hmftools-cobalt,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03417, E03853); no directed path between any process of the two tools"
+write_reference_data,hmftools-cuppa,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E00031, E01621); no directed path between any process of the two tools"
+write_reference_data,hmftools-esvee,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01725, E02104); no directed path between any process of the two tools"
+write_reference_data,hmftools-fastq-tools,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E03418, E03436); no directed path between any process of the two tools"
+write_reference_data,hmftools-isofox,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03417, E03894); no directed path between any process of the two tools"
+write_reference_data,hmftools-lilac,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01725, E02952); no directed path between any process of the two tools"
+write_reference_data,hmftools-linx,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01725, E02774); no directed path between any process of the two tools"
+write_reference_data,hmftools-neo,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E00031, E01489); no directed path between any process of the two tools"
+write_reference_data,hmftools-orange,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01725, E03040); no directed path between any process of the two tools"
+write_reference_data,hmftools-pave,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03417, E03878); no directed path between any process of the two tools"
+write_reference_data,hmftools-peach,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E01726, E02999); no directed path between any process of the two tools"
+write_reference_data,hmftools-purple,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E01725, E02473); no directed path between any process of the two tools"
+write_reference_data,hmftools-qsee,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E01726, E02558); no directed path between any process of the two tools"
+write_reference_data,hmftools-redux,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03417, E03490); no directed path between any process of the two tools"
+write_reference_data,hmftools-sage,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03417, E03721); no directed path between any process of the two tools"
+write_reference_data,hmftools-sigs,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E00032, E01196); no directed path between any process of the two tools"
+write_reference_data,hmftools-teal,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E00031, E01355); no directed path between any process of the two tools"
+write_reference_data,hmftools-virus-interpreter,parallel_co_use,0,0,,"both consume DECOMP_BWAMEM2_INDEX.#0 (E00032, E01435); no directed path between any process of the two tools"
+write_reference_data,hmftools-wisp,parallel_co_use,0,0,,"both consume BWAMEM2_INDEX.#0 (E03074, E03392); no directed path between any process of the two tools"

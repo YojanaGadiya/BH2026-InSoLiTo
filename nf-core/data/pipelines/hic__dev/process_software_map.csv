@@ -1,0 +1,45 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_HIC:PREPARE_GENOME:BOWTIE2_BUILD,BOWTIE2_BUILD,modules/nf-core/bowtie2/build/main.nf,1,bowtie2,bowtie2,bowtie2;htslib;samtools;pigz,environment.yml
+NFCORE_HIC:PREPARE_GENOME:BWA_INDEX,BWA_INDEX,modules/nf-core/bwa/index/main.nf,1,bwa,bwa,bwa;htslib;samtools,environment.yml
+NFCORE_HIC:PREPARE_GENOME:SAMTOOLS_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_HIC:PREPARE_GENOME:GET_RESTRICTION_FRAGMENTS,GET_RESTRICTION_FRAGMENTS,modules/local/hicpro/get_restriction_fragments.nf,1,get_restriction_fragments,,,module name
+NFCORE_HIC:HIC:TRIMGALORE,TRIMGALORE,modules/nf-core/trimgalore/main.nf,1,trim-galore,trimgalore,trim-galore,environment.yml
+NFCORE_HIC:HIC:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_HIC:HIC:HICPRO:HICPRO_MAPPING:BOWTIE2_ALIGN,BOWTIE2_ALIGN,modules/nf-core/bowtie2/align/main.nf,1,bowtie2,bowtie2,bowtie2;htslib;samtools;pigz,environment.yml
+NFCORE_HIC:HIC:HICPRO:HICPRO_MAPPING:TRIM_READS,TRIM_READS,modules/local/hicpro/trim_reads.nf,1,trim_reads,,,module name
+NFCORE_HIC:HIC:HICPRO:HICPRO_MAPPING:BOWTIE2_ALIGN_TRIMMED,BOWTIE2_ALIGN,modules/nf-core/bowtie2/align/main.nf,1,bowtie2,bowtie2,bowtie2;htslib;samtools;pigz,environment.yml
+NFCORE_HIC:HIC:HICPRO:HICPRO_MAPPING:MERGE_BOWTIE2,MERGE_BOWTIE2,modules/local/hicpro/bowtie2_merge.nf,1,merge_bowtie2,,,module name
+NFCORE_HIC:HIC:HICPRO:HICPRO_MAPPING:MAPPING_STATS_DNASE,MAPPING_STATS_DNASE,modules/local/hicpro/dnase_mapping_stats.nf,1,mapping_stats_dnase,,,module name
+NFCORE_HIC:HIC:HICPRO:HICPRO_MAPPING:COMBINE_MATES,COMBINE_MATES,modules/local/hicpro/combine_mates.nf,1,combine_mates,,,module name
+NFCORE_HIC:HIC:HICPRO:GET_VALID_INTERACTION,GET_VALID_INTERACTION,modules/local/hicpro/get_valid_interaction.nf,1,get_valid_interaction,,,module name
+NFCORE_HIC:HIC:HICPRO:GET_VALID_INTERACTION_DNASE,GET_VALID_INTERACTION_DNASE,modules/local/hicpro/get_valid_interaction_dnase.nf,1,get_valid_interaction_dnase,,,module name
+NFCORE_HIC:HIC:HICPRO:MERGE_VALID_INTERACTION,MERGE_VALID_INTERACTION,modules/local/hicpro/merge_valid_interaction.nf,1,merge_valid_interaction,,,module name
+NFCORE_HIC:HIC:HICPRO:MERGE_STATS,MERGE_STATS,modules/local/hicpro/merge_stats.nf,1,merge_stats,,,module name
+NFCORE_HIC:HIC:HICPRO:HICPRO2PAIRS,HICPRO2PAIRS,modules/local/hicpro/hicpro2pairs.nf,1,hicpro2pairs,,,module name
+NFCORE_HIC:HIC:HICPRO:BUILD_CONTACT_MAPS,BUILD_CONTACT_MAPS,modules/local/hicpro/build_contact_maps.nf,1,build_contact_maps,,,module name
+NFCORE_HIC:HIC:HICPRO:ICE_NORMALIZATION,ICE_NORMALIZATION,modules/local/hicpro/run_ice.nf,1,ice_normalization,,,module name
+NFCORE_HIC:HIC:PAIRTOOLS:BWA_MEM,BWA_MEM,modules/nf-core/bwa/mem/main.nf,1,bwa,bwa,bwa;htslib;samtools,environment.yml
+NFCORE_HIC:HIC:PAIRTOOLS:PAIRTOOLS_PARSE,PAIRTOOLS_PARSE,modules/local/pairtools/pairtools_parse.nf,1,pairtools_parse,,,module name
+NFCORE_HIC:HIC:PAIRTOOLS:PAIRTOOLS_RESTRICT,PAIRTOOLS_RESTRICT,modules/nf-core/pairtools/restrict/main.nf,1,pairtools,pairtools,pairtools;numpy,environment.yml
+NFCORE_HIC:HIC:PAIRTOOLS:PAIRTOOLS_SORT,PAIRTOOLS_SORT,modules/nf-core/pairtools/sort/main.nf,1,pairtools,pairtools,pairtools;numpy,environment.yml
+NFCORE_HIC:HIC:PAIRTOOLS:PAIRTOOLS_MERGE,PAIRTOOLS_MERGE,modules/nf-core/pairtools/merge/main.nf,1,pairtools,pairtools,pairtools;numpy,environment.yml
+NFCORE_HIC:HIC:PAIRTOOLS:PAIRTOOLS_SPLIT,PAIRTOOLS_SPLIT,modules/local/pairtools/pairtools_split.nf,1,pairtools_split,,,module name
+NFCORE_HIC:HIC:PAIRTOOLS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_HIC:HIC:PAIRTOOLS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_HIC:HIC:PAIRTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_HIC:HIC:PAIRTOOLS:PAIRTOOLS_DEDUP,PAIRTOOLS_DEDUP,modules/nf-core/pairtools/dedup/main.nf,1,pairtools,pairtools,pairtools;numpy,environment.yml
+NFCORE_HIC:HIC:PAIRTOOLS:PAIRTOOLS_SELECT,PAIRTOOLS_SELECT,modules/nf-core/pairtools/select/main.nf,1,pairtools,pairtools,pairtools;numpy,environment.yml
+NFCORE_HIC:HIC:PAIRTOOLS:PAIRTOOLS_STATS,PAIRTOOLS_STATS,modules/nf-core/pairtools/stats/main.nf,1,pairtools,pairtools,pairtools;numpy,environment.yml
+NFCORE_HIC:HIC:PAIRTOOLS:PAIRIX,PAIRIX,modules/nf-core/pairix/main.nf,1,pairix,pairix,pairix,environment.yml
+NFCORE_HIC:HIC:COOLER:COOLER_MAKEBINS,COOLER_MAKEBINS,modules/nf-core/cooler/makebins/main.nf,1,cooler,cooler,cooler,environment.yml
+NFCORE_HIC:HIC:COOLER:COOLER_CLOAD,COOLER_CLOAD,modules/nf-core/cooler/cload/main.nf,1,cooler,cooler,cooler,environment.yml
+NFCORE_HIC:HIC:COOLER:COOLER_BALANCE,COOLER_BALANCE,modules/nf-core/cooler/balance/main.nf,1,cooler,cooler,cooler,environment.yml
+NFCORE_HIC:HIC:COOLER:COOLER_ZOOMIFY,COOLER_ZOOMIFY,modules/nf-core/cooler/zoomify/main.nf,1,cooler,cooler,cooler;numpy,environment.yml
+NFCORE_HIC:HIC:COOLER:COOLER_DUMP,COOLER_DUMP,modules/nf-core/cooler/dump/main.nf,1,cooler,cooler,cooler,environment.yml
+NFCORE_HIC:HIC:COOLER:SPLIT_COOLER_DUMP,SPLIT_COOLER_DUMP,modules/local/split_cooler_dump/main.nf,1,split_cooler_dump,,,module name
+NFCORE_HIC:HIC:HIC_PLOT_DIST_VS_COUNTS,HIC_PLOT_DIST_VS_COUNTS,modules/local/hicexplorer/hicPlotDistVsCounts.nf,1,hic_plot_dist_vs_counts,,,module name
+NFCORE_HIC:HIC:COMPARTMENTS:COOLTOOLS_EIGSCIS,COOLTOOLS_EIGSCIS,modules/local/cooltools/eigscis.nf,1,cooltools_eigscis,,,module name
+NFCORE_HIC:HIC:COMPARTMENTS:CALDER2,CALDER2,modules/nf-core/calder2/main.nf,1,r-calder2,calder2,r-calder2,environment.yml
+NFCORE_HIC:HIC:TADS:COOLTOOLS_INSULATION,COOLTOOLS_INSULATION,modules/local/cooltools/insulation.nf,1,cooltools_insulation,,,module name
+NFCORE_HIC:HIC:TADS:HIC_FIND_TADS,HIC_FIND_TADS,modules/local/hicexplorer/hicFindTADs.nf,1,hic_find_tads,,,module name
+NFCORE_HIC:HIC:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

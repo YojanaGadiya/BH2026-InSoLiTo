@@ -1,0 +1,20 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bakta,carveme,data_flow,1,1,E00008,
+bakta,hmmer,data_flow,1,1,E00005,
+bakta,macsyfinder,data_flow,1,1,E00002,
+carveme,memote,data_flow,2,2,E00022,
+carveme,pandas,data_flow,2,1,E00030,
+gapseq,memote,data_flow,4,4,E00020,
+gapseq,pandas,data_flow,7,5,E00032,
+hmmer,pandas,data_flow,2,2,E00028,
+macsyfinder,pandas,data_flow,2,1,E00026,
+memote,pandas,data_flow,1,1,E00039,
+prokka,carveme,data_flow,1,1,E00009,
+prokka,hmmer,data_flow,1,1,E00006,
+prokka,macsyfinder,data_flow,1,1,E00003,
+carveme,hmmer,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00008, E00005); no directed path between any process of the two tools"
+carveme,macsyfinder,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00008, E00002); no directed path between any process of the two tools"
+hmmer,carveme,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00005, E00008); no directed path between any process of the two tools"
+hmmer,macsyfinder,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00005, E00002); no directed path between any process of the two tools"
+macsyfinder,carveme,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00002, E00008); no directed path between any process of the two tools"
+macsyfinder,hmmer,parallel_co_use,0,0,,"both consume BAKTA_BAKTA.faa (E00002, E00005); no directed path between any process of the two tools"

@@ -1,0 +1,30 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_METAPEP:METAPEP:SHOW_SUPPORTED_MODELS,SHOW_SUPPORTED_MODELS,modules/local/show_supported_models.nf,1,show_supported_models,,,module name
+NFCORE_METAPEP:METAPEP:PROCESS_INPUT:CHECK_SAMPLESHEET_CREATE_TABLES,CHECK_SAMPLESHEET_CREATE_TABLES,modules/local/check_samplesheet_create_tables.nf,1,check_samplesheet_create_tables,,,module name
+NFCORE_METAPEP:METAPEP:PROCESS_INPUT:UNPACK_BIN_ARCHIVES,UNPACK_BIN_ARCHIVES,modules/local/unpack_bin_archives.nf,1,unpack_bin_archives,,,module name
+NFCORE_METAPEP:METAPEP:DOWNLOAD_PROTEINS,DOWNLOAD_PROTEINS,modules/local/download_proteins.nf,1,download_proteins,,,module name
+NFCORE_METAPEP:METAPEP:PRODIGAL,PRODIGAL,modules/nf-core/prodigal/main.nf,1,prodigal,prodigal,prodigal;pigz,environment.yml
+NFCORE_METAPEP:METAPEP:CREATE_PROTEIN_TSV,CREATE_PROTEIN_TSV,modules/local/create_protein_tsv.nf,1,create_protein_tsv,,,module name
+NFCORE_METAPEP:METAPEP:CREATE_PROTEIN_TSV_DIRECT,CREATE_PROTEIN_TSV,modules/local/create_protein_tsv.nf,1,create_protein_tsv,,,module name
+NFCORE_METAPEP:METAPEP:ASSIGN_NUCL_ENTITY_WEIGHTS,ASSIGN_NUCL_ENTITY_WEIGHTS,modules/local/assign_nucl_entity_weights.nf,1,assign_nucl_entity_weights,,,module name
+NFCORE_METAPEP:METAPEP:GENERATE_PROTEIN_AND_ENTITY_IDS,GENERATE_PROTEIN_AND_ENTITY_IDS,modules/local/generate_protein_and_entity_ids.nf,1,generate_protein_and_entity_ids,,,module name
+NFCORE_METAPEP:METAPEP:FINALIZE_MICROBIOME_ENTITIES,FINALIZE_MICROBIOME_ENTITIES,modules/local/finalize_microbiome_entities.nf,1,finalize_microbiome_entities,,,module name
+NFCORE_METAPEP:METAPEP:GENERATE_PEPTIDES,GENERATE_PEPTIDES,modules/local/generate_peptides.nf,1,generate_peptides,,,module name
+NFCORE_METAPEP:METAPEP:SPLIT_PRED_TASKS,SPLIT_PRED_TASKS,modules/local/split_pred_tasks.nf,1,split_pred_tasks,,,module name
+NFCORE_METAPEP:METAPEP:MHC_BINDING_PREDICTION:PREPARE_PREDICTION_INPUT,PREPARE_PREDICTION_INPUT,modules/local/prepare_prediction_input/main.nf,1,mhcgnomes,,mhcgnomes,environment.yml
+NFCORE_METAPEP:METAPEP:MHC_BINDING_PREDICTION:MHCFLURRY,MHCFLURRY,modules/local/mhcflurry/main.nf,1,mhcflurry,,mhcflurry,environment.yml
+NFCORE_METAPEP:METAPEP:MHC_BINDING_PREDICTION:MHCNUGGETS,MHCNUGGETS,modules/local/mhcnuggets/main.nf,1,mhcnuggets,,mhcnuggets,environment.yml
+NFCORE_METAPEP:METAPEP:MHC_BINDING_PREDICTION:MHCNUGGETSII,MHCNUGGETS,modules/local/mhcnuggets/main.nf,1,mhcnuggets,,mhcnuggets,environment.yml
+NFCORE_METAPEP:METAPEP:MHC_BINDING_PREDICTION:NETMHCPAN_IMPORT,UNPACK_NETMHC_SOFTWARE,modules/local/unpack_netmhc_software/main.nf,1,unpack_netmhc_software,,coreutils,environment.yml
+NFCORE_METAPEP:METAPEP:MHC_BINDING_PREDICTION:NETMHCPAN,NETMHCPAN,modules/local/netmhcpan/main.nf,1,bash,,bash;gawk;perl;tcsh,environment.yml
+NFCORE_METAPEP:METAPEP:MHC_BINDING_PREDICTION:NETMHCIIPAN_IMPORT,UNPACK_NETMHC_SOFTWARE,modules/local/unpack_netmhc_software/main.nf,1,unpack_netmhc_software,,coreutils,environment.yml
+NFCORE_METAPEP:METAPEP:MHC_BINDING_PREDICTION:NETMHCIIPAN,NETMHCIIPAN,modules/local/netmhciipan/main.nf,1,bash,,bash;gawk;perl;tcsh,environment.yml
+NFCORE_METAPEP:METAPEP:MHC_BINDING_PREDICTION:MERGE_PREDICTIONS,MERGE_PREDICTIONS,modules/local/merge_predictions/main.nf,1,mhcgnomes,,mhcgnomes,environment.yml
+NFCORE_METAPEP:METAPEP:MERGE_CHUNKS_BUFFER,MERGE_CHUNKS_BUFFER,modules/local/merge_chunks_buffer.nf,1,merge_chunks_buffer,,,module name
+NFCORE_METAPEP:METAPEP:MERGE_CHUNKS,MERGE_CHUNKS,modules/local/merge_chunks.nf,1,merge_chunks,,,module name
+NFCORE_METAPEP:METAPEP:COLLECT_STATS,COLLECT_STATS,modules/local/collect_stats.nf,1,collect_stats,,,module name
+NFCORE_METAPEP:METAPEP:PREPARE_SCORE_DISTRIBUTION,PREPARE_SCORE_DISTRIBUTION,modules/local/prepare_score_distribution.nf,1,prepare_score_distribution,,,module name
+NFCORE_METAPEP:METAPEP:PLOT_SCORE_DISTRIBUTION,PLOT_SCORE_DISTRIBUTION,modules/local/plot_score_distribution.nf,1,plot_score_distribution,,,module name
+NFCORE_METAPEP:METAPEP:PREPARE_ENTITY_BINDING_RATIOS,PREPARE_ENTITY_BINDING_RATIOS,modules/local/prepare_entity_binding_ratios.nf,1,prepare_entity_binding_ratios,,,module name
+NFCORE_METAPEP:METAPEP:PLOT_ENTITY_BINDING_RATIOS,PLOT_ENTITY_BINDING_RATIOS,modules/local/plot_entity_binding_ratios.nf,1,plot_entity_binding_ratios,,,module name
+NFCORE_METAPEP:METAPEP:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

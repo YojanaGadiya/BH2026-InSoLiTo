@@ -1,0 +1,27 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_DETAXIZER:DETAXIZER:RENAME_FASTQ_HEADERS_PRE,RENAME_FASTQ_HEADERS_PRE,modules/local/rename_fastq_headers_pre/main.nf,1,rename_fastq_headers_pre,,,module name
+NFCORE_DETAXIZER:DETAXIZER:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_DETAXIZER:DETAXIZER:FASTP,FASTP,modules/nf-core/fastp/main.nf,1,fastp,fastp,fastp,environment.yml
+NFCORE_DETAXIZER:DETAXIZER:KRAKEN2PREPARATION,KRAKEN2PREPARATION,modules/local/kraken2preparation/main.nf,1,kraken2preparation,,,module name
+NFCORE_DETAXIZER:DETAXIZER:KRAKEN2_KRAKEN2,KRAKEN2_KRAKEN2,modules/nf-core/kraken2/kraken2/main.nf,1,kraken2,kraken2,kraken2;coreutils;pigz,environment.yml
+NFCORE_DETAXIZER:DETAXIZER:MAP_KRAKEN2SEQIDS_TO_FQHEADERS,MAP_KRAKEN2SEQIDS_TO_FQHEADERS,modules/local/map_kraken2seqids_to_fqheaders/main.nf,1,map_kraken2seqids_to_fqheaders,,,module name
+NFCORE_DETAXIZER:DETAXIZER:PARSE_KRAKEN2REPORT,PARSE_KRAKEN2REPORT,modules/local/parse_kraken2report/main.nf,1,parse_kraken2report,,,module name
+NFCORE_DETAXIZER:DETAXIZER:ISOLATE_KRAKEN2_IDS,ISOLATE_KRAKEN2_IDS,modules/local/isolate_kraken2_ids/main.nf,1,isolate_kraken2_ids,,,module name
+NFCORE_DETAXIZER:DETAXIZER:BBMAP_BBDUK,BBMAP_BBDUK,modules/nf-core/bbmap/bbduk/main.nf,1,bbmap,bbmap,bbmap;pigz,environment.yml
+NFCORE_DETAXIZER:DETAXIZER:ISOLATE_BBDUK_IDS,ISOLATE_BBDUK_IDS,modules/local/isolate_bbduk_ids/main.nf,1,isolate_bbduk_ids,,,module name
+NFCORE_DETAXIZER:DETAXIZER:MERGE_IDS,MERGE_IDS,modules/local/merge_ids/main.nf,1,merge_ids,,,module name
+NFCORE_DETAXIZER:DETAXIZER:SUMMARY_CLASSIFICATION,SUMMARY_CLASSIFICATION,modules/local/summary_classification/main.nf,1,summary_classification,,,module name
+NFCORE_DETAXIZER:DETAXIZER:PREPARE_FASTA4BLASTN,PREPARE_FASTA4BLASTN,modules/local/prepare_fasta4blastn/main.nf,1,prepare_fasta4blastn,,,module name
+NFCORE_DETAXIZER:DETAXIZER:BLAST_MAKEBLASTDB,BLAST_MAKEBLASTDB,modules/nf-core/blast/makeblastdb/main.nf,1,blast,blast,blast,environment.yml
+NFCORE_DETAXIZER:DETAXIZER:BLAST_BLASTN,BLAST_BLASTN,modules/nf-core/blast/blastn/main.nf,1,blast,blast,blast,environment.yml
+NFCORE_DETAXIZER:DETAXIZER:FILTER_BLASTN_IDENTCOV,FILTER_BLASTN_IDENTCOV,modules/local/filter_blastn_identcov/main.nf,1,filter_blastn_identcov,,,module name
+NFCORE_DETAXIZER:DETAXIZER:SUMMARY_BLASTN,SUMMARY_BLASTN,modules/local/summary_blastn/main.nf,1,summary_blastn,,,module name
+NFCORE_DETAXIZER:DETAXIZER:FILTER,FILTER,modules/local/filter/main.nf,1,filter,,,module name
+NFCORE_DETAXIZER:DETAXIZER:NORMALIZE_BBMAP_IDS,NORMALIZE_BBMAP_IDS,modules/local/normalize_bbmap_ids/main.nf,1,normalize_bbmap_ids,,,module name
+NFCORE_DETAXIZER:DETAXIZER:BBMAP_FILTERBYNAME,BBMAP_FILTERBYNAME,modules/nf-core/bbmap/filterbyname/main.nf,1,bbmap,bbmap,bbmap;pigz,environment.yml
+NFCORE_DETAXIZER:DETAXIZER:BBMAP_FILTERBYNAME_REMOVED,BBMAP_FILTERBYNAME,modules/nf-core/bbmap/filterbyname/main.nf,1,bbmap,bbmap,bbmap;pigz,environment.yml
+NFCORE_DETAXIZER:DETAXIZER:RENAME_FASTQ_HEADERS_AFTER,RENAME_FASTQ_HEADERS_AFTER,modules/local/rename_fastq_headers_after/main.nf,1,rename_fastq_headers_after,,,module name
+NFCORE_DETAXIZER:DETAXIZER:KRAKEN2_POST_CLASSIFICATION_FILTERED,KRAKEN2_KRAKEN2,modules/nf-core/kraken2/kraken2/main.nf,1,kraken2,kraken2,kraken2;coreutils;pigz,environment.yml
+NFCORE_DETAXIZER:DETAXIZER:KRAKEN2_POST_CLASSIFICATION_REMOVED,KRAKEN2_KRAKEN2,modules/nf-core/kraken2/kraken2/main.nf,1,kraken2,kraken2,kraken2;coreutils;pigz,environment.yml
+NFCORE_DETAXIZER:DETAXIZER:SUMMARIZER,SUMMARIZER,modules/local/summarizer/main.nf,1,summarizer,,,module name
+NFCORE_DETAXIZER:DETAXIZER:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

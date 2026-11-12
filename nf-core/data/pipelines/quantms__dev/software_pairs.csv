@@ -1,0 +1,199 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+CometAdapter,FalseDiscoveryRate,data_flow,3,3,E00057,
+CometAdapter,IDPosteriorErrorProbability,data_flow,3,3,E00061,
+CometAdapter,PSMFeatureExtractor,data_flow,3,3,E00050,
+CometAdapter,PercolatorAdapter,data_flow,3,3,E00053,
+CometAdapter,custom,data_flow,1,1,E00076,
+ConsensusID,FalseDiscoveryRate,data_flow,3,3,E00068,
+ConsensusID,IDScoreSwitcher,data_flow,3,3,E00065,
+ConsensusID,pmultiqc,data_flow,2,2,E00319,
+DIA-NN,custom,data_flow,4,4,E00294,
+DIA-NN,pmultiqc,data_flow,1,1,E00313,
+DecoyDatabase,CometAdapter,data_flow,3,3,E00040,
+DecoyDatabase,MSGFPlusAdapter,data_flow,3,3,E00032,
+DecoyDatabase,ProteomicsLFQ,data_flow,1,1,E00235,
+DecoyDatabase,SageAdapter,data_flow,3,3,E00048,
+Epifany,IDFilter,data_flow,1,1,E00148,
+FalseDiscoveryRate,IDFilter,data_flow,3,3,E00072,
+FalseDiscoveryRate,IDPosteriorErrorProbability,data_flow,3,3,E00059,
+FileConverter,CometAdapter,data_flow,3,3,E00034,
+FileConverter,DIA-NN,data_flow,6,6,E00246,
+FileConverter,IsobaricAnalyzer,data_flow,1,1,E00136,
+FileConverter,LuciphorAdapter,data_flow,2,2,E00128,
+FileConverter,MSGFPlusAdapter,data_flow,3,3,E00026,
+FileConverter,PeakPickerHiRes,data_flow,1,1,E00020,
+FileConverter,ProteomicsLFQ,data_flow,2,2,E00216,
+FileConverter,SageAdapter,data_flow,3,3,E00042,
+FileConverter,custom,data_flow,3,3,E00014,
+FileMerger,Epifany,data_flow,1,1,E00146,
+FileMerger,ProteinInference,data_flow,1,1,E00147,
+IDConflictResolver,MSstatsConverter,data_flow,1,1,E00154,
+IDConflictResolver,ProteinQuantifier,data_flow,1,1,E00151,
+IDFilter,IDConflictResolver,data_flow,1,1,E00150,
+IDFilter,IDMapper,data_flow,1,1,E00143,
+IDFilter,IDScoreSwitcher,data_flow,2,2,E00126,
+IDFilter,ProteomicsLFQ,data_flow,2,2,E00223,
+IDFilter,custom,data_flow,1,1,E00073,
+IDMapper,FileMerger,data_flow,1,1,E00145,
+IDPosteriorErrorProbability,ConsensusID,data_flow,3,3,E00063,
+IDPosteriorErrorProbability,FalseDiscoveryRate,data_flow,3,3,E00069,
+IDPosteriorErrorProbability,IDScoreSwitcher,data_flow,3,3,E00066,
+IDPosteriorErrorProbability,pmultiqc,data_flow,2,2,E00315,
+IDScoreSwitcher,IDFilter,data_flow,3,3,E00071,
+IDScoreSwitcher,LuciphorAdapter,data_flow,2,2,E00134,
+IsobaricAnalyzer,IDMapper,data_flow,1,1,E00144,
+LuciphorAdapter,IDMapper,data_flow,1,1,E00142,
+LuciphorAdapter,ProteomicsLFQ,data_flow,2,2,E00222,
+MSGFPlusAdapter,FalseDiscoveryRate,data_flow,3,3,E00056,
+MSGFPlusAdapter,IDPosteriorErrorProbability,data_flow,3,3,E00060,
+MSGFPlusAdapter,PSMFeatureExtractor,data_flow,3,3,E00049,
+MSGFPlusAdapter,PercolatorAdapter,data_flow,3,3,E00052,
+MSGFPlusAdapter,custom,data_flow,1,1,E00075,
+MSstatsConverter,MSstatsTMT,data_flow,1,1,E00157,
+MSstatsConverter,pmultiqc,data_flow,1,1,E00321,
+PSMFeatureExtractor,PercolatorAdapter,data_flow,3,3,E00055,
+PeakPickerHiRes,CometAdapter,data_flow,3,3,E00033,
+PeakPickerHiRes,DIA-NN,data_flow,6,6,E00245,
+PeakPickerHiRes,IsobaricAnalyzer,data_flow,1,1,E00135,
+PeakPickerHiRes,LuciphorAdapter,data_flow,2,2,E00127,
+PeakPickerHiRes,MSGFPlusAdapter,data_flow,3,3,E00025,
+PeakPickerHiRes,ProteomicsLFQ,data_flow,2,2,E00215,
+PeakPickerHiRes,SageAdapter,data_flow,3,3,E00041,
+PeakPickerHiRes,custom,data_flow,2,2,E00237,
+PercolatorAdapter,ConsensusID,data_flow,3,3,E00064,
+PercolatorAdapter,FalseDiscoveryRate,data_flow,3,3,E00070,
+PercolatorAdapter,IDScoreSwitcher,data_flow,3,3,E00067,
+PercolatorAdapter,pmultiqc,data_flow,2,2,E00316,
+ProteinInference,IDFilter,data_flow,1,1,E00149,
+ProteinQuantifier,pmultiqc,data_flow,1,1,E00311,
+ProteomicsLFQ,MSstats,data_flow,1,1,E00236,
+ProteomicsLFQ,pmultiqc,data_flow,2,2,E00312,
+SageAdapter,FalseDiscoveryRate,data_flow,3,3,E00058,
+SageAdapter,IDPosteriorErrorProbability,data_flow,3,3,E00062,
+SageAdapter,PSMFeatureExtractor,data_flow,3,3,E00051,
+SageAdapter,PercolatorAdapter,data_flow,3,3,E00054,
+SageAdapter,custom,data_flow,1,1,E00077,
+custom,DIA-NN,data_flow,1,1,E00244,
+custom,MSstats,data_flow,1,1,E00308,
+custom,pmultiqc,data_flow,2,2,E00314,
+preprocess_expdesign,CometAdapter,data_flow,3,3,E00036,
+preprocess_expdesign,DIA-NN,data_flow,6,6,E00248,
+preprocess_expdesign,FileConverter,data_flow,1,1,E00006,
+preprocess_expdesign,IsobaricAnalyzer,data_flow,1,1,E00138,
+preprocess_expdesign,LuciphorAdapter,data_flow,2,2,E00130,
+preprocess_expdesign,MSGFPlusAdapter,data_flow,3,3,E00028,
+preprocess_expdesign,MSstatsConverter,data_flow,1,1,E00156,
+preprocess_expdesign,PeakPickerHiRes,data_flow,1,1,E00022,
+preprocess_expdesign,ProteinQuantifier,data_flow,1,1,E00153,
+preprocess_expdesign,ProteomicsLFQ,data_flow,3,3,E00218,
+preprocess_expdesign,SageAdapter,data_flow,3,3,E00044,
+preprocess_expdesign,custom,data_flow,4,4,E00016,
+preprocess_expdesign,pmultiqc,data_flow,1,1,E00310,
+preprocess_expdesign,tar,data_flow,1,1,E00004,
+preprocess_expdesign,tdf2mzml,data_flow,1,1,E00012,
+preprocess_expdesign,thermorawfileparser,data_flow,1,1,E00009,
+samplesheet_check,preprocess_expdesign,data_flow,1,1,E00002,
+samplesheet_check,sdrf-pipelines,data_flow,1,1,E00001,
+sdrf-pipelines,CometAdapter,data_flow,3,3,E00035,
+sdrf-pipelines,DIA-NN,data_flow,6,6,E00247,
+sdrf-pipelines,FileConverter,data_flow,1,1,E00005,
+sdrf-pipelines,IsobaricAnalyzer,data_flow,1,1,E00137,
+sdrf-pipelines,LuciphorAdapter,data_flow,2,2,E00129,
+sdrf-pipelines,MSGFPlusAdapter,data_flow,3,3,E00027,
+sdrf-pipelines,MSstatsConverter,data_flow,1,1,E00155,
+sdrf-pipelines,PeakPickerHiRes,data_flow,1,1,E00021,
+sdrf-pipelines,ProteinQuantifier,data_flow,1,1,E00152,
+sdrf-pipelines,ProteomicsLFQ,data_flow,3,3,E00217,
+sdrf-pipelines,SageAdapter,data_flow,3,3,E00043,
+sdrf-pipelines,custom,data_flow,4,4,E00015,
+sdrf-pipelines,pmultiqc,data_flow,1,1,E00309,
+sdrf-pipelines,tar,data_flow,1,1,E00003,
+sdrf-pipelines,tdf2mzml,data_flow,1,1,E00011,
+sdrf-pipelines,thermorawfileparser,data_flow,1,1,E00008,
+tar,CometAdapter,data_flow,3,3,E00037,
+tar,DIA-NN,data_flow,6,6,E00249,
+tar,FileConverter,data_flow,1,1,E00007,
+tar,IsobaricAnalyzer,data_flow,1,1,E00139,
+tar,LuciphorAdapter,data_flow,2,2,E00131,
+tar,MSGFPlusAdapter,data_flow,3,3,E00029,
+tar,PeakPickerHiRes,data_flow,1,1,E00023,
+tar,ProteomicsLFQ,data_flow,2,2,E00219,
+tar,SageAdapter,data_flow,3,3,E00045,
+tar,custom,data_flow,3,3,E00017,
+tar,tdf2mzml,data_flow,1,1,E00013,
+tar,thermorawfileparser,data_flow,1,1,E00010,
+tdf2mzml,CometAdapter,data_flow,3,3,E00039,
+tdf2mzml,DIA-NN,data_flow,6,6,E00251,
+tdf2mzml,IsobaricAnalyzer,data_flow,1,1,E00141,
+tdf2mzml,LuciphorAdapter,data_flow,2,2,E00133,
+tdf2mzml,MSGFPlusAdapter,data_flow,3,3,E00031,
+tdf2mzml,ProteomicsLFQ,data_flow,2,2,E00221,
+tdf2mzml,SageAdapter,data_flow,3,3,E00047,
+tdf2mzml,custom,data_flow,3,3,E00019,
+thermorawfileparser,CometAdapter,data_flow,3,3,E00038,
+thermorawfileparser,DIA-NN,data_flow,6,6,E00250,
+thermorawfileparser,IsobaricAnalyzer,data_flow,1,1,E00140,
+thermorawfileparser,LuciphorAdapter,data_flow,2,2,E00132,
+thermorawfileparser,MSGFPlusAdapter,data_flow,3,3,E00030,
+thermorawfileparser,PeakPickerHiRes,data_flow,1,1,E00024,
+thermorawfileparser,ProteomicsLFQ,data_flow,2,2,E00220,
+thermorawfileparser,SageAdapter,data_flow,3,3,E00046,
+thermorawfileparser,custom,data_flow,3,3,E00018,
+CometAdapter,DIA-NN,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00036, E00256); no directed path between any process of the two tools"
+CometAdapter,IsobaricAnalyzer,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00036, E00138); no directed path between any process of the two tools"
+CometAdapter,MSGFPlusAdapter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00036, E00028); no directed path between any process of the two tools"
+CometAdapter,SageAdapter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00036, E00044); no directed path between any process of the two tools"
+DIA-NN,CometAdapter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00256, E00036); no directed path between any process of the two tools"
+DIA-NN,IsobaricAnalyzer,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00256, E00138); no directed path between any process of the two tools"
+DIA-NN,LuciphorAdapter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00256, E00210); no directed path between any process of the two tools"
+DIA-NN,MSGFPlusAdapter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00256, E00028); no directed path between any process of the two tools"
+DIA-NN,ProteomicsLFQ,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00256, E00218); no directed path between any process of the two tools"
+DIA-NN,SageAdapter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00256, E00044); no directed path between any process of the two tools"
+FileConverter,tdf2mzml,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00006, E00012); no directed path between any process of the two tools"
+FileConverter,thermorawfileparser,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00006, E00009); no directed path between any process of the two tools"
+IsobaricAnalyzer,CometAdapter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00138, E00036); no directed path between any process of the two tools"
+IsobaricAnalyzer,DIA-NN,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00138, E00256); no directed path between any process of the two tools"
+IsobaricAnalyzer,LuciphorAdapter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00138, E00210); no directed path between any process of the two tools"
+IsobaricAnalyzer,MSGFPlusAdapter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00138, E00028); no directed path between any process of the two tools"
+IsobaricAnalyzer,ProteomicsLFQ,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00138, E00218); no directed path between any process of the two tools"
+IsobaricAnalyzer,SageAdapter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00138, E00044); no directed path between any process of the two tools"
+IsobaricAnalyzer,custom,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00138, E00240); no directed path between any process of the two tools"
+LuciphorAdapter,DIA-NN,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00210, E00256); no directed path between any process of the two tools"
+LuciphorAdapter,IsobaricAnalyzer,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00210, E00138); no directed path between any process of the two tools"
+LuciphorAdapter,custom,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00210, E00240); no directed path between any process of the two tools"
+MSGFPlusAdapter,CometAdapter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00028, E00036); no directed path between any process of the two tools"
+MSGFPlusAdapter,DIA-NN,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00028, E00256); no directed path between any process of the two tools"
+MSGFPlusAdapter,IsobaricAnalyzer,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00028, E00138); no directed path between any process of the two tools"
+MSGFPlusAdapter,SageAdapter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00028, E00044); no directed path between any process of the two tools"
+MSstats,pmultiqc,parallel_co_use,0,0,,"both consume DIANNCONVERT.out_msstats (E00308, E00323); no directed path between any process of the two tools"
+MSstatsConverter,ProteinQuantifier,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_expdesign (E00156, E00153); no directed path between any process of the two tools"
+MSstatsConverter,ProteomicsLFQ,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_expdesign (E00156, E00234); no directed path between any process of the two tools"
+MSstatsConverter,custom,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_expdesign (E00156, E00296); no directed path between any process of the two tools"
+MSstatsTMT,pmultiqc,parallel_co_use,0,0,,"both consume MSSTATSCONVERTER.out_msstats (E00157, E00321); no directed path between any process of the two tools"
+PeakPickerHiRes,tdf2mzml,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00022, E00012); no directed path between any process of the two tools"
+ProteinQuantifier,MSstatsConverter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_expdesign (E00153, E00156); no directed path between any process of the two tools"
+ProteinQuantifier,ProteomicsLFQ,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_expdesign (E00153, E00234); no directed path between any process of the two tools"
+ProteinQuantifier,custom,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_expdesign (E00153, E00296); no directed path between any process of the two tools"
+ProteomicsLFQ,DIA-NN,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00218, E00256); no directed path between any process of the two tools"
+ProteomicsLFQ,IsobaricAnalyzer,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00218, E00138); no directed path between any process of the two tools"
+ProteomicsLFQ,MSstatsConverter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_expdesign (E00234, E00156); no directed path between any process of the two tools"
+ProteomicsLFQ,ProteinQuantifier,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_expdesign (E00234, E00153); no directed path between any process of the two tools"
+ProteomicsLFQ,custom,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00218, E00240); no directed path between any process of the two tools"
+SageAdapter,CometAdapter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00044, E00036); no directed path between any process of the two tools"
+SageAdapter,DIA-NN,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00044, E00256); no directed path between any process of the two tools"
+SageAdapter,IsobaricAnalyzer,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00044, E00138); no directed path between any process of the two tools"
+SageAdapter,MSGFPlusAdapter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00044, E00028); no directed path between any process of the two tools"
+custom,IsobaricAnalyzer,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00240, E00138); no directed path between any process of the two tools"
+custom,LuciphorAdapter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00240, E00210); no directed path between any process of the two tools"
+custom,MSstatsConverter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_expdesign (E00296, E00156); no directed path between any process of the two tools"
+custom,ProteinQuantifier,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_expdesign (E00296, E00153); no directed path between any process of the two tools"
+custom,ProteomicsLFQ,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00240, E00218); no directed path between any process of the two tools"
+pmultiqc,MSstats,parallel_co_use,0,0,,"both consume DIANNCONVERT.out_msstats (E00323, E00308); no directed path between any process of the two tools"
+pmultiqc,MSstatsTMT,parallel_co_use,0,0,,"both consume MSSTATSCONVERTER.out_msstats (E00321, E00157); no directed path between any process of the two tools"
+preprocess_expdesign,sdrf-pipelines,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.checked_file (E00002, E00001); no directed path between any process of the two tools"
+sdrf-pipelines,preprocess_expdesign,parallel_co_use,0,0,,"both consume SAMPLESHEET_CHECK.checked_file (E00001, E00002); no directed path between any process of the two tools"
+tdf2mzml,FileConverter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00012, E00006); no directed path between any process of the two tools"
+tdf2mzml,PeakPickerHiRes,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00012, E00022); no directed path between any process of the two tools"
+tdf2mzml,thermorawfileparser,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00012, E00009); no directed path between any process of the two tools"
+thermorawfileparser,FileConverter,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00009, E00006); no directed path between any process of the two tools"
+thermorawfileparser,tdf2mzml,parallel_co_use,0,0,,"both consume PREPROCESS_EXPDESIGN.ch_config (E00009, E00012); no directed path between any process of the two tools"

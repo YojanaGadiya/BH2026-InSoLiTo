@@ -1,0 +1,122 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_SCNANOSEQ:SCNANOSEQ:CAT_FASTQ,CAT_FASTQ,modules/nf-core/cat/fastq/main.nf,1,cat,cat,coreutils;grep;gzip;lbzip2;sed;tar,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:FASTQC_NANOPLOT_PRE_TRIM:NANOPLOT,NANOPLOT,modules/nf-core/nanoplot/main.nf,1,nanoplot,nanoplot,nanoplot,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:FASTQC_NANOPLOT_PRE_TRIM:TOULLIGQC,TOULLIGQC,modules/nf-core/toulligqc/main.nf,1,toulligqc,toulligqc,toulligqc;huggingface_hub;matplotlib;numpy;pandas;plotly;python,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:FASTQC_NANOPLOT_PRE_TRIM:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:NANOCOMP_FASTQ,NANOCOMP,modules/nf-core/nanocomp/main.nf,1,nanocomp,nanocomp,nanocomp,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PREPARE_REFERENCE_FILES:GUNZIP_GENOME_FASTA,PIGZ_UNCOMPRESS,modules/nf-core/pigz/uncompress/main.nf,1,pigz,pigz,,meta.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PREPARE_REFERENCE_FILES:UNZIP_GENOME_FASTA,UNZIPFILES,modules/nf-core/unzipfiles/main.nf,1,p7zip,unzip,p7zip,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PREPARE_REFERENCE_FILES:GENOME_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PREPARE_REFERENCE_FILES:GUNZIP_TRANSCRIPT_FASTA,PIGZ_UNCOMPRESS,modules/nf-core/pigz/uncompress/main.nf,1,pigz,pigz,,meta.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PREPARE_REFERENCE_FILES:UNZIP_TRANSCRIPT_FASTA,UNZIPFILES,modules/nf-core/unzipfiles/main.nf,1,p7zip,unzip,p7zip,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PREPARE_REFERENCE_FILES:TRANSCRIPT_FAIDX,SAMTOOLS_FAIDX,modules/nf-core/samtools/faidx/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PREPARE_REFERENCE_FILES:GUNZIP_GTF,PIGZ_UNCOMPRESS,modules/nf-core/pigz/uncompress/main.nf,1,pigz,pigz,,meta.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PREPARE_REFERENCE_FILES:UNZIP_GTF,UNZIPFILES,modules/nf-core/unzipfiles/main.nf,1,p7zip,unzip,p7zip,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:UCSC_GTFTOGENEPRED,UCSC_GTFTOGENEPRED,modules/nf-core/ucsc/gtftogenepred/main.nf,1,ucsc-gtftogenepred,ucsc,ucsc-gtftogenepred,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:UCSC_GENEPREDTOBED,UCSC_GENEPREDTOBED,modules/local/ucsc_genepredtobed/main.nf,1,ucsc_genepredtobed,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:SEQKIT_SPLIT2,SEQKIT_SPLIT2,modules/nf-core/seqkit/split2/main.nf,1,seqkit,seqkit,seqkit,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:CHOPPER,CHOPPER,modules/local/chopper/main.nf,1,chopper,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:CAT_CAT,CAT_CAT,modules/nf-core/cat/cat/main.nf,1,cat,cat,pigz,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:FASTQC_NANOPLOT_POST_TRIM:NANOPLOT,NANOPLOT,modules/nf-core/nanoplot/main.nf,1,nanoplot,nanoplot,nanoplot,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:FASTQC_NANOPLOT_POST_TRIM:TOULLIGQC,TOULLIGQC,modules/nf-core/toulligqc/main.nf,1,toulligqc,toulligqc,toulligqc;huggingface_hub;matplotlib;numpy;pandas;plotly;python,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:FASTQC_NANOPLOT_POST_TRIM:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:GUNZIP_WHITELIST,PIGZ_UNCOMPRESS,modules/nf-core/pigz/uncompress/main.nf,1,pigz,pigz,,meta.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:BLAZE,BLAZE,modules/local/blaze/main.nf,1,blaze,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:SPLIT_SEQ_BC_FASTQ,SEQKIT_SPLIT2,modules/nf-core/seqkit/split2/main.nf,1,seqkit,seqkit,seqkit,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:SPLIT_FILE_BC_CSV,SPLIT_FILE,modules/local/split_file/main.nf,1,split_file,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:PREEXTRACT_FASTQ,PREEXTRACT_FASTQ,modules/local/preextract_fastq/main.nf,1,preextract_fastq,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:CORRECT_BARCODES,CORRECT_BARCODES,modules/local/correct_barcodes/main.nf,1,correct_barcodes,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:CAT_CAT_PREEXTRACT,CAT_CAT,modules/nf-core/cat/cat/main.nf,1,cat,cat,pigz,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:CAT_CAT_BARCODE,CAT_CAT,modules/nf-core/cat/cat/main.nf,1,cat,cat,pigz,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:FASTQC_NANOPLOT_POST_EXTRACT:NANOPLOT,NANOPLOT,modules/nf-core/nanoplot/main.nf,1,nanoplot,nanoplot,nanoplot,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:FASTQC_NANOPLOT_POST_EXTRACT:TOULLIGQC,TOULLIGQC,modules/nf-core/toulligqc/main.nf,1,toulligqc,toulligqc,toulligqc;huggingface_hub;matplotlib;numpy;pandas;plotly;python,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:FASTQC_NANOPLOT_POST_EXTRACT:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:READ_COUNTS,READ_COUNTS,modules/local/read_counts/main.nf,1,read_counts,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:ALIGN_LONGREADS:MINIMAP2_INDEX,MINIMAP2_INDEX,modules/nf-core/minimap2/index/main.nf,1,minimap2,minimap2,minimap2,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:ALIGN_LONGREADS:MINIMAP2_ALIGN,MINIMAP2_ALIGN,modules/nf-core/minimap2/align/main.nf,1,minimap2,minimap2,minimap2;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:ALIGN_LONGREADS:SAMTOOLS_FILTER_MAPPED,SAMTOOLS_VIEW,modules/nf-core/samtools/view/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS_FILTERED:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS_FILTERED:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS_FILTERED:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS_FILTERED:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS_FILTERED:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:ALIGN_LONGREADS:RSEQC_READDISTRIBUTION,RSEQC_READDISTRIBUTION,modules/nf-core/rseqc/readdistribution/main.nf,1,rseqc,rseqc,rseqc;r-base,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:ALIGN_LONGREADS:NANOCOMP,NANOCOMP,modules/nf-core/nanocomp/main.nf,1,nanocomp,nanocomp,nanocomp,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:TAG_BARCODES,TAG_BARCODES,modules/local/tag_barcodes/main.nf,1,tag_barcodes,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:SAMTOOLS_INDEX_TAGGED,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:SAMTOOLS_FLAGSTAT_TAGGED,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:DEDUP_UMIS:BAMTOOLS_SPLIT,BAMTOOLS_SPLIT,modules/nf-core/bamtools/split/main.nf,1,bamtools,bamtools,bamtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:DEDUP_UMIS:GROUP_TRANSCRIPTS,GROUP_TRANSCRIPTS,modules/local/group_transcripts/main.nf,1,group_transcripts,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:DEDUP_UMIS:SPLIT_BAM,SPLIT_BAM,modules/local/split_bam/main.nf,1,split_bam,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:DEDUP_UMIS:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:DEDUP_UMIS:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:DEDUP_UMIS:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:DEDUP_UMIS:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:DEDUP_UMIS:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:DEDUP_UMIS:UMITOOLS_DEDUP,UMITOOLS_DEDUP,modules/nf-core/umitools/dedup/main.nf,1,umi_tools,umi_tools,umi_tools;future;matplotlib;numpy;pandas;python;regex;scipy;pybktree;pysam,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:DEDUP_UMIS:PICARD_MARKDUPLICATES,PICARD_MARKDUPLICATES,modules/nf-core/picard/markduplicates/main.nf,1,picard,picard,picard,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:DEDUP_UMIS:SAMTOOLS_INDEX_DEDUP,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:DEDUP_UMIS:SAMTOOLS_MERGE,SAMTOOLS_MERGE,modules/nf-core/samtools/merge/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:DEDUP_UMIS:SAMTOOLS_INDEX_MERGED,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:DEDUP_UMIS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:DEDUP_UMIS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:DEDUP_UMIS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:QUANTIFY_SCRNA_OARFISH:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:QUANTIFY_SCRNA_OARFISH:OARFISH,OARFISH,modules/local/oarfish/main.nf,1,oarfish,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:QUANTIFY_SCRNA_OARFISH:QC_SCRNA:SEURAT,SEURAT,modules/local/seurat/main.nf,1,seurat,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:QUANTIFY_SCRNA_OARFISH:QC_SCRNA:CSVTK_CONCAT,CSVTK_CONCAT,modules/nf-core/csvtk/concat/main.nf,1,csvtk,csvtk,csvtk,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:QUANTIFY_SCRNA_ISOQUANT:ISOQUANT,ISOQUANT,modules/local/isoquant/main.nf,1,isoquant,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:QUANTIFY_SCRNA_ISOQUANT:QC_SCRNA_GENE:SEURAT,SEURAT,modules/local/seurat/main.nf,1,seurat,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:QUANTIFY_SCRNA_ISOQUANT:QC_SCRNA_GENE:CSVTK_CONCAT,CSVTK_CONCAT,modules/nf-core/csvtk/concat/main.nf,1,csvtk,csvtk,csvtk,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:QUANTIFY_SCRNA_ISOQUANT:QC_SCRNA_TRANSCRIPT:SEURAT,SEURAT,modules/local/seurat/main.nf,1,seurat,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_GENOME:QUANTIFY_SCRNA_ISOQUANT:QC_SCRNA_TRANSCRIPT:CSVTK_CONCAT,CSVTK_CONCAT,modules/nf-core/csvtk/concat/main.nf,1,csvtk,csvtk,csvtk,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:ALIGN_LONGREADS:MINIMAP2_INDEX,MINIMAP2_INDEX,modules/nf-core/minimap2/index/main.nf,1,minimap2,minimap2,minimap2,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:ALIGN_LONGREADS:MINIMAP2_ALIGN,MINIMAP2_ALIGN,modules/nf-core/minimap2/align/main.nf,1,minimap2,minimap2,minimap2;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:ALIGN_LONGREADS:SAMTOOLS_FILTER_MAPPED,SAMTOOLS_VIEW,modules/nf-core/samtools/view/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS_FILTERED:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS_FILTERED:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS_FILTERED:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS_FILTERED:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:ALIGN_LONGREADS:BAM_SORT_STATS_SAMTOOLS_FILTERED:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:ALIGN_LONGREADS:RSEQC_READDISTRIBUTION,RSEQC_READDISTRIBUTION,modules/nf-core/rseqc/readdistribution/main.nf,1,rseqc,rseqc,rseqc;r-base,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:ALIGN_LONGREADS:NANOCOMP,NANOCOMP,modules/nf-core/nanocomp/main.nf,1,nanocomp,nanocomp,nanocomp,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:TAG_BARCODES,TAG_BARCODES,modules/local/tag_barcodes/main.nf,1,tag_barcodes,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:SAMTOOLS_INDEX_TAGGED,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:SAMTOOLS_FLAGSTAT_TAGGED,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:DEDUP_UMIS:BAMTOOLS_SPLIT,BAMTOOLS_SPLIT,modules/nf-core/bamtools/split/main.nf,1,bamtools,bamtools,bamtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:DEDUP_UMIS:GROUP_TRANSCRIPTS,GROUP_TRANSCRIPTS,modules/local/group_transcripts/main.nf,1,group_transcripts,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:DEDUP_UMIS:SPLIT_BAM,SPLIT_BAM,modules/local/split_bam/main.nf,1,split_bam,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:DEDUP_UMIS:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:DEDUP_UMIS:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:DEDUP_UMIS:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:DEDUP_UMIS:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:DEDUP_UMIS:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:DEDUP_UMIS:UMITOOLS_DEDUP,UMITOOLS_DEDUP,modules/nf-core/umitools/dedup/main.nf,1,umi_tools,umi_tools,umi_tools;future;matplotlib;numpy;pandas;python;regex;scipy;pybktree;pysam,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:DEDUP_UMIS:PICARD_MARKDUPLICATES,PICARD_MARKDUPLICATES,modules/nf-core/picard/markduplicates/main.nf,1,picard,picard,picard,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:DEDUP_UMIS:SAMTOOLS_INDEX_DEDUP,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:DEDUP_UMIS:SAMTOOLS_MERGE,SAMTOOLS_MERGE,modules/nf-core/samtools/merge/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:DEDUP_UMIS:SAMTOOLS_INDEX_MERGED,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:DEDUP_UMIS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS,SAMTOOLS_STATS,modules/nf-core/samtools/stats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:DEDUP_UMIS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT,SAMTOOLS_FLAGSTAT,modules/nf-core/samtools/flagstat/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:DEDUP_UMIS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS,SAMTOOLS_IDXSTATS,modules/nf-core/samtools/idxstats/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:QUANTIFY_SCRNA_OARFISH:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:QUANTIFY_SCRNA_OARFISH:OARFISH,OARFISH,modules/local/oarfish/main.nf,1,oarfish,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:QUANTIFY_SCRNA_OARFISH:QC_SCRNA:SEURAT,SEURAT,modules/local/seurat/main.nf,1,seurat,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:QUANTIFY_SCRNA_OARFISH:QC_SCRNA:CSVTK_CONCAT,CSVTK_CONCAT,modules/nf-core/csvtk/concat/main.nf,1,csvtk,csvtk,csvtk,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:QUANTIFY_SCRNA_ISOQUANT:ISOQUANT,ISOQUANT,modules/local/isoquant/main.nf,1,isoquant,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:QUANTIFY_SCRNA_ISOQUANT:QC_SCRNA_GENE:SEURAT,SEURAT,modules/local/seurat/main.nf,1,seurat,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:QUANTIFY_SCRNA_ISOQUANT:QC_SCRNA_GENE:CSVTK_CONCAT,CSVTK_CONCAT,modules/nf-core/csvtk/concat/main.nf,1,csvtk,csvtk,csvtk,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:QUANTIFY_SCRNA_ISOQUANT:QC_SCRNA_TRANSCRIPT:SEURAT,SEURAT,modules/local/seurat/main.nf,1,seurat,,,module name
+NFCORE_SCNANOSEQ:SCNANOSEQ:PROCESS_LONGREAD_SCRNA_TRANSCRIPT:QUANTIFY_SCRNA_ISOQUANT:QC_SCRNA_TRANSCRIPT:CSVTK_CONCAT,CSVTK_CONCAT,modules/nf-core/csvtk/concat/main.nf,1,csvtk,csvtk,csvtk,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:MULTIQC_RAWQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml
+NFCORE_SCNANOSEQ:SCNANOSEQ:MULTIQC_FINALQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

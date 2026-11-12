@@ -1,0 +1,18 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bedtools,vipr_af_vs_cov_html,data_flow,1,1,E00011,
+decont,kraken,data_flow,1,1,E00002,
+decont,samtools,data_flow,1,1,E00008,
+decont,seqtk,data_flow,1,1,E00006,
+decont,tadpole,data_flow,1,1,E00003,
+samtools,bedtools,data_flow,1,1,E00010,
+samtools,vipr_af_vs_cov_html,data_flow,1,1,E00012,
+seqtk,samtools,data_flow,1,1,E00007,
+simple_contig_joiner,seqtk,data_flow,1,1,E00005,
+skewer,decont,data_flow,1,1,E00001,
+tadpole,simple_contig_joiner,data_flow,1,1,E00004,
+kraken,samtools,parallel_co_use,0,0,,"both consume decont.fastq_for_tadpole (E00002, E00008); no directed path between any process of the two tools"
+kraken,seqtk,parallel_co_use,0,0,,"both consume decont.fastq_for_tadpole (E00002, E00006); no directed path between any process of the two tools"
+kraken,tadpole,parallel_co_use,0,0,,"both consume decont.fastq_for_tadpole (E00002, E00003); no directed path between any process of the two tools"
+samtools,kraken,parallel_co_use,0,0,,"both consume decont.fastq_for_tadpole (E00008, E00002); no directed path between any process of the two tools"
+seqtk,kraken,parallel_co_use,0,0,,"both consume decont.fastq_for_tadpole (E00006, E00002); no directed path between any process of the two tools"
+tadpole,kraken,parallel_co_use,0,0,,"both consume decont.fastq_for_tadpole (E00003, E00002); no directed path between any process of the two tools"

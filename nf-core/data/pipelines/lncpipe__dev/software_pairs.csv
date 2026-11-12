@@ -1,0 +1,190 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bbmap,fq,data_flow,2,2,E00098,
+bbmap,hisat2,data_flow,1,1,E00314,
+bbmap,salmon,data_flow,1,1,E00118,
+bbmap,samtools,data_flow,1,1,E00159,
+bbmap,sortmerna,data_flow,1,1,E00099,
+cat,bbmap,data_flow,1,1,E00093,
+cat,cutadapt,data_flow,1,1,E00068,
+cat,fastp,data_flow,1,1,E00075,
+cat,fastqc,data_flow,2,2,E00063,
+cat,fq,data_flow,3,3,E00062,
+cat,hisat2,data_flow,1,1,E00322,
+cat,salmon,data_flow,1,1,E00126,
+cat,samtools,data_flow,1,1,E00167,
+cat,sortmerna,data_flow,1,1,E00107,
+cat,umi_tools,data_flow,2,2,E00065,
+custom,bbmap,data_flow,1,1,E00023,
+custom,gffcompare,data_flow,2,2,E00430,
+custom,hisat2,data_flow,3,3,E00043,
+custom,htseq,data_flow,1,1,E00480,
+custom,perl,data_flow,1,1,E00010,
+custom,rsem,data_flow,4,4,E00015,
+custom,salmon,data_flow,3,3,E00054,
+custom,samtools,data_flow,10,10,E00021,
+custom,star,data_flow,2,2,E00025,
+custom,stringtie,data_flow,2,2,E00420,
+custom,subread,data_flow,1,1,E00443,
+cutadapt,bbmap,data_flow,2,1,E00090,
+cutadapt,fq,data_flow,4,2,E00082,
+cutadapt,hisat2,data_flow,2,1,E00319,
+cutadapt,multiqc,data_flow,3,3,E00488,
+cutadapt,salmon,data_flow,2,1,E00123,
+cutadapt,samtools,data_flow,2,1,E00164,
+cutadapt,sortmerna,data_flow,2,1,E00104,
+fastp,bbmap,data_flow,2,1,E00087,
+fastp,fastqc,data_flow,2,1,E00077,
+fastp,fq,data_flow,4,2,E00079,
+fastp,hisat2,data_flow,2,1,E00316,
+fastp,multiqc,data_flow,2,2,E00486,
+fastp,salmon,data_flow,2,1,E00120,
+fastp,samtools,data_flow,2,1,E00161,
+fastp,sortmerna,data_flow,2,1,E00101,
+fastqc,multiqc,data_flow,3,3,E00484,
+fq,bbmap,gate_metadata,2,0,E00094,
+fq,cutadapt,gate_metadata,1,0,E00069,
+fq,fastp,gate_metadata,1,0,E00076,
+fq,fastqc,gate_metadata,2,0,E00064,
+fq,hisat2,gate_metadata,4,0,E00313,
+fq,salmon,data_flow,5,1,E00117,
+fq,samtools,gate_metadata,4,0,E00158,
+fq,sortmerna,gate_metadata,3,0,E00100,
+fq,umi_tools,gate_metadata,2,0,E00066,
+gffcompare,multiqc,data_flow,1,1,E00517,
+gffread,custom,data_flow,1,1,E00008,
+gffread,gffcompare,data_flow,1,1,E00436,
+gffread,gtf_filter,data_flow,1,1,E00004,
+gffread,hisat2,data_flow,2,2,E00046,
+gffread,htseq,data_flow,1,1,E00483,
+gffread,perl,data_flow,1,1,E00013,
+gffread,rsem,data_flow,2,2,E00020,
+gffread,salmon,data_flow,1,1,E00152,
+gffread,samtools,data_flow,2,2,E00036,
+gffread,star,data_flow,1,1,E00030,
+gffread,stringtie,data_flow,2,2,E00423,
+gffread,subread,data_flow,1,1,E00446,
+gtf_filter,custom,data_flow,1,1,E00006,
+gtf_filter,gffcompare,data_flow,1,1,E00434,
+gtf_filter,hisat2,data_flow,2,2,E00044,
+gtf_filter,htseq,data_flow,1,1,E00481,
+gtf_filter,perl,data_flow,1,1,E00011,
+gtf_filter,rsem,data_flow,2,2,E00018,
+gtf_filter,salmon,data_flow,1,1,E00150,
+gtf_filter,samtools,data_flow,2,2,E00034,
+gtf_filter,star,data_flow,1,1,E00028,
+gtf_filter,stringtie,data_flow,2,2,E00421,
+gtf_filter,subread,data_flow,1,1,E00444,
+gunzip,bbmap,data_flow,1,1,E00024,
+gunzip,custom,data_flow,3,3,E00005,
+gunzip,gffcompare,data_flow,2,2,E00431,
+gunzip,gffread,data_flow,1,1,E00001,
+gunzip,gtf_filter,data_flow,2,2,E00002,
+gunzip,hisat2,data_flow,3,3,E00045,
+gunzip,htseq,data_flow,1,1,E00482,
+gunzip,kallisto,data_flow,1,1,E00060,
+gunzip,perl,data_flow,1,1,E00012,
+gunzip,preprocess_transcripts_fasta_gencode,data_flow,1,1,E00014,
+gunzip,rsem,data_flow,4,4,E00016,
+gunzip,salmon,data_flow,6,6,E00055,
+gunzip,samtools,data_flow,16,16,E00022,
+gunzip,star,data_flow,2,2,E00026,
+gunzip,stringtie,data_flow,2,2,E00422,
+gunzip,subread,data_flow,1,1,E00445,
+hisat2,multiqc,data_flow,1,1,E00505,
+hisat2,samtools,data_flow,1,1,E00328,
+preprocess_transcripts_fasta_gencode,kallisto,data_flow,1,1,E00059,
+preprocess_transcripts_fasta_gencode,salmon,data_flow,3,3,E00056,
+preprocess_transcripts_fasta_gencode,samtools,data_flow,6,6,E00193,
+rsem,kallisto,data_flow,1,1,E00061,
+rsem,salmon,data_flow,3,3,E00058,
+rsem,samtools,data_flow,6,6,E00195,
+salmon,hisat2,gate_metadata,1,0,E00311,
+salmon,samtools,gate_metadata,1,0,E00156,
+samtools,gffcompare,data_flow,1,1,E00432,
+samtools,htseq,data_flow,29,20,E00449,
+samtools,multiqc,data_flow,19,19,E00493,
+samtools,stringtie,data_flow,2,2,E00416,
+samtools,subread,data_flow,2,2,E00439,
+samtools,umi_tools,data_flow,27,27,E00237,
+samtools,umicollapse,data_flow,25,25,E00209,
+sortmerna,fq,data_flow,2,2,E00113,
+sortmerna,hisat2,data_flow,1,1,E00312,
+sortmerna,multiqc,data_flow,1,1,E00492,
+sortmerna,salmon,data_flow,1,1,E00116,
+sortmerna,samtools,data_flow,1,1,E00157,
+star,samtools,data_flow,1,1,E00171,
+stringtie,gffcompare,data_flow,1,1,E00429,
+umi_tools,bbmap,data_flow,2,2,E00089,
+umi_tools,cutadapt,data_flow,1,1,E00067,
+umi_tools,fastp,data_flow,1,1,E00074,
+umi_tools,fq,data_flow,4,4,E00081,
+umi_tools,hisat2,data_flow,2,2,E00318,
+umi_tools,htseq,data_flow,2,2,E00448,
+umi_tools,multiqc,data_flow,2,2,E00498,
+umi_tools,salmon,data_flow,2,2,E00122,
+umi_tools,samtools,data_flow,20,20,E00163,
+umi_tools,sortmerna,data_flow,2,2,E00103,
+umi_tools,stringtie,data_flow,2,2,E00415,
+umi_tools,subread,data_flow,2,2,E00438,
+umicollapse,htseq,data_flow,2,2,E00447,
+umicollapse,multiqc,data_flow,2,2,E00497,
+umicollapse,samtools,data_flow,18,18,E00227,
+umicollapse,stringtie,data_flow,2,2,E00414,
+umicollapse,subread,data_flow,2,2,E00437,
+untar,bbmap,data_flow,1,1,E00096,
+untar,hisat2,data_flow,1,1,E00325,
+untar,salmon,data_flow,1,1,E00147,
+untar,samtools,data_flow,1,1,E00170,
+untar,sortmerna,data_flow,1,1,E00111,
+bbmap,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00093, E00070); no directed path between any process of the two tools"
+bbmap,rsem,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00023, E00015); no directed path between any process of the two tools"
+bbmap,star,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00023, E00025); no directed path between any process of the two tools"
+cutadapt,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00068, E00070); no directed path between any process of the two tools"
+fastqc,bbmap,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00070, E00093); no directed path between any process of the two tools"
+fastqc,cutadapt,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00070, E00068); no directed path between any process of the two tools"
+fastqc,hisat2,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00070, E00322); no directed path between any process of the two tools"
+fastqc,salmon,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00070, E00126); no directed path between any process of the two tools"
+fastqc,samtools,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00070, E00167); no directed path between any process of the two tools"
+fastqc,sortmerna,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00070, E00107); no directed path between any process of the two tools"
+gffcompare,htseq,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00433, E00480); no directed path between any process of the two tools"
+gffcompare,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00433, E00010); no directed path between any process of the two tools"
+gffcompare,subread,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00433, E00443); no directed path between any process of the two tools"
+hisat2,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00322, E00070); no directed path between any process of the two tools"
+hisat2,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00049, E00010); no directed path between any process of the two tools"
+hisat2,star,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00047, E00025); no directed path between any process of the two tools"
+htseq,gffcompare,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00480, E00433); no directed path between any process of the two tools"
+htseq,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00480, E00010); no directed path between any process of the two tools"
+htseq,stringtie,parallel_co_use,0,0,,"both consume UMICOLLAPSE.bam (E00447, E00414); no directed path between any process of the two tools"
+kallisto,salmon,parallel_co_use,0,0,,"both consume GUNZIP_TRANSCRIPT_FASTA.gunzip (E00060, E00130); no directed path between any process of the two tools"
+kallisto,samtools,parallel_co_use,0,0,,"both consume GUNZIP_TRANSCRIPT_FASTA.gunzip (E00060, E00377); no directed path between any process of the two tools"
+perl,gffcompare,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00010, E00433); no directed path between any process of the two tools"
+perl,hisat2,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00010, E00049); no directed path between any process of the two tools"
+perl,htseq,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00010, E00480); no directed path between any process of the two tools"
+perl,rsem,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00010, E00017); no directed path between any process of the two tools"
+perl,salmon,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00010, E00149); no directed path between any process of the two tools"
+perl,samtools,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00010, E00173); no directed path between any process of the two tools"
+perl,star,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00010, E00027); no directed path between any process of the two tools"
+perl,stringtie,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00010, E00425); no directed path between any process of the two tools"
+perl,subread,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00010, E00443); no directed path between any process of the two tools"
+rsem,bbmap,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00015, E00023); no directed path between any process of the two tools"
+rsem,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00017, E00010); no directed path between any process of the two tools"
+rsem,star,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00015, E00025); no directed path between any process of the two tools"
+salmon,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00126, E00070); no directed path between any process of the two tools"
+salmon,kallisto,parallel_co_use,0,0,,"both consume GUNZIP_TRANSCRIPT_FASTA.gunzip (E00130, E00060); no directed path between any process of the two tools"
+salmon,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00149, E00010); no directed path between any process of the two tools"
+salmon,star,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00114, E00025); no directed path between any process of the two tools"
+samtools,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00167, E00070); no directed path between any process of the two tools"
+samtools,kallisto,parallel_co_use,0,0,,"both consume GUNZIP_TRANSCRIPT_FASTA.gunzip (E00377, E00060); no directed path between any process of the two tools"
+samtools,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00173, E00010); no directed path between any process of the two tools"
+sortmerna,fastqc,parallel_co_use,0,0,,"both consume CAT_FASTQ.reads (E00107, E00070); no directed path between any process of the two tools"
+star,bbmap,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00025, E00023); no directed path between any process of the two tools"
+star,hisat2,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00025, E00047); no directed path between any process of the two tools"
+star,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00027, E00010); no directed path between any process of the two tools"
+star,rsem,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00025, E00015); no directed path between any process of the two tools"
+star,salmon,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.fasta (E00025, E00114); no directed path between any process of the two tools"
+stringtie,htseq,parallel_co_use,0,0,,"both consume UMICOLLAPSE.bam (E00414, E00447); no directed path between any process of the two tools"
+stringtie,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00425, E00010); no directed path between any process of the two tools"
+stringtie,subread,parallel_co_use,0,0,,"both consume UMICOLLAPSE.bam (E00414, E00437); no directed path between any process of the two tools"
+subread,gffcompare,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00443, E00433); no directed path between any process of the two tools"
+subread,perl,parallel_co_use,0,0,,"both consume CUSTOM_CATADDITIONALFASTA.gtf (E00443, E00010); no directed path between any process of the two tools"
+subread,stringtie,parallel_co_use,0,0,,"both consume UMICOLLAPSE.bam (E00437, E00414); no directed path between any process of the two tools"

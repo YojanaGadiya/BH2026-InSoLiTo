@@ -1,0 +1,6 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+drevalpy,matplotlib,data_flow,4,4,E00017,
+matplotlib,drevalpy,data_flow,3,3,E00009,
+matplotlib,pip,data_flow,2,2,E00001,
+p7zip,matplotlib,data_flow,11,11,E00005,
+pip,matplotlib,data_flow,1,1,E00003,

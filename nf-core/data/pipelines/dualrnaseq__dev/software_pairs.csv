@@ -1,0 +1,49 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+combine_files,htseq_count,data_flow,1,1,E00076,
+combine_files,salmon,data_flow,6,6,E00026,
+combine_files,star,data_flow,4,4,E00047,
+combine_files,star_align,data_flow,2,2,E00051,
+combine_quantification_results_salmon,salmon_split_table,data_flow,2,2,E00038,
+create_transcriptome_fasta,combine_files,data_flow,1,1,E00010,
+create_transcriptome_fasta,salmon_split_table,data_flow,4,4,E00034,
+create_transcriptome_fasta_gffread,combine_files,data_flow,1,1,E00008,
+create_transcriptome_fasta_gffread,salmon_split_table,data_flow,4,4,E00036,
+cuatadapt,fastqc,data_flow,1,1,E00001,
+cuatadapt,salmon,data_flow,1,1,E00028,
+cuatadapt,star_align,data_flow,2,2,E00049,
+extract_annotations,tximport,data_flow,2,2,E00046,
+extract_processed_reads,collate_processed_reads,data_flow,2,2,E00044,
+fastqc,multiqc,data_flow,1,1,E00077,
+replace_attribute_gff,combine_files,data_flow,1,1,E00022,
+replace_attribute_gff,extract_annotations,data_flow,1,1,E00018,
+replace_attribute_gff,replace_gene_feature_gff,data_flow,2,2,E00012,
+replace_gene_feature_gff,combine_files,data_flow,3,3,E00015,
+replace_gene_feature_gff,extract_annotations,data_flow,3,3,E00017,
+replace_gene_feature_gff,replace_attribute_gff,data_flow,1,1,E00020,
+salmon,combine_quantification_results_salmon,data_flow,2,2,E00037,
+salmon,extract_processed_reads,data_flow,2,2,E00043,
+salmon,salmon_split_table,data_flow,2,2,E00032,
+salmon_split_table,tximport,data_flow,2,2,E00045,
+star,star_align,data_flow,2,2,E00050,
+star_align,htseq_count,data_flow,1,1,E00075,
+star_align,salmon,data_flow,1,1,E00052,
+unzip,combine_files,data_flow,4,4,E00002,
+unzip,create_transcriptome_fasta,data_flow,1,1,E00006,
+unzip,create_transcriptome_fasta_gffread,data_flow,2,2,E00004,
+unzip,replace_attribute_gff,data_flow,2,2,E00011,
+unzip,replace_gene_feature_gff,data_flow,2,2,E00019,
+unzip,salmon_split_table,data_flow,8,8,E00033,
+combine_files,extract_annotations,parallel_co_use,0,0,,"both consume REPLACE_GENE_FEATURE_GFF_HOST_SALMON.#0 (E00016, E00017); no directed path between any process of the two tools"
+create_transcriptome_fasta,replace_attribute_gff,parallel_co_use,0,0,,"both consume UNCOMPRESS_PATHOGEN_GFF.files (E00006, E00013); no directed path between any process of the two tools"
+create_transcriptome_fasta,replace_gene_feature_gff,parallel_co_use,0,0,,"both consume UNCOMPRESS_PATHOGEN_GFF.files (E00006, E00021); no directed path between any process of the two tools"
+create_transcriptome_fasta_gffread,replace_attribute_gff,parallel_co_use,0,0,,"both consume UNCOMPRESS_HOST_GFF.files (E00005, E00011); no directed path between any process of the two tools"
+create_transcriptome_fasta_gffread,replace_gene_feature_gff,parallel_co_use,0,0,,"both consume UNCOMPRESS_HOST_GFF.files (E00005, E00019); no directed path between any process of the two tools"
+extract_annotations,combine_files,parallel_co_use,0,0,,"both consume REPLACE_GENE_FEATURE_GFF_HOST_SALMON.#0 (E00017, E00016); no directed path between any process of the two tools"
+fastqc,salmon,parallel_co_use,0,0,,"both consume CUTADAPT.reads (E00001, E00028); no directed path between any process of the two tools"
+fastqc,star_align,parallel_co_use,0,0,,"both consume CUTADAPT.reads (E00001, E00049); no directed path between any process of the two tools"
+replace_attribute_gff,create_transcriptome_fasta,parallel_co_use,0,0,,"both consume UNCOMPRESS_PATHOGEN_GFF.files (E00013, E00006); no directed path between any process of the two tools"
+replace_attribute_gff,create_transcriptome_fasta_gffread,parallel_co_use,0,0,,"both consume UNCOMPRESS_HOST_GFF.files (E00011, E00005); no directed path between any process of the two tools"
+replace_gene_feature_gff,create_transcriptome_fasta,parallel_co_use,0,0,,"both consume UNCOMPRESS_PATHOGEN_GFF.files (E00021, E00006); no directed path between any process of the two tools"
+replace_gene_feature_gff,create_transcriptome_fasta_gffread,parallel_co_use,0,0,,"both consume UNCOMPRESS_HOST_GFF.files (E00019, E00005); no directed path between any process of the two tools"
+salmon,fastqc,parallel_co_use,0,0,,"both consume CUTADAPT.reads (E00028, E00001); no directed path between any process of the two tools"
+star_align,fastqc,parallel_co_use,0,0,,"both consume CUTADAPT.reads (E00049, E00001); no directed path between any process of the two tools"

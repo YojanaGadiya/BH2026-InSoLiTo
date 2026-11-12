@@ -1,0 +1,13 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+pandas,multiqc,data_flow,6,6,E00063,
+pandas,polars,data_flow,5,5,E00010,
+pandas,r-optparse,gate_metadata,4,0,E00003,
+polars,dash_app,data_flow,3,3,E00057,
+polars,multiqc,data_flow,15,15,E00068,
+polars,pandas,data_flow,5,5,E00022,
+polars,tqdm,data_flow,1,1,E00008,
+r-optparse,multiqc,data_flow,4,4,E00076,
+tqdm,pandas,data_flow,1,1,E00009,
+tqdm,polars,data_flow,1,1,E00011,
+dash_app,multiqc,parallel_co_use,0,0,,"both consume AGGREGATE_RESULTS.all_genes_summary (E00059, E00070); no directed path between any process of the two tools"
+multiqc,dash_app,parallel_co_use,0,0,,"both consume AGGREGATE_RESULTS.all_genes_summary (E00070, E00059); no directed path between any process of the two tools"

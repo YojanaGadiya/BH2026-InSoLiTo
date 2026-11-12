@@ -1,0 +1,93 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+assign_nucl_entity_weights,finalize_microbiome_entities,data_flow,1,1,E00019,
+check_samplesheet_create_tables,assign_nucl_entity_weights,data_flow,2,1,E00008,
+check_samplesheet_create_tables,collect_stats,data_flow,3,3,E00056,
+check_samplesheet_create_tables,create_protein_tsv,data_flow,1,1,E00007,
+check_samplesheet_create_tables,download_proteins,data_flow,2,1,E00002,
+check_samplesheet_create_tables,generate_protein_and_entity_ids,data_flow,1,1,E00010,
+check_samplesheet_create_tables,merge_chunks,data_flow,1,1,E00052,
+check_samplesheet_create_tables,merge_chunks_buffer,data_flow,1,1,E00047,
+check_samplesheet_create_tables,plot_entity_binding_ratios,data_flow,1,1,E00078,
+check_samplesheet_create_tables,plot_score_distribution,data_flow,2,2,E00068,
+check_samplesheet_create_tables,prepare_entity_binding_ratios,data_flow,3,3,E00074,
+check_samplesheet_create_tables,prepare_score_distribution,data_flow,3,3,E00064,
+check_samplesheet_create_tables,prodigal,data_flow,1,1,E00004,
+check_samplesheet_create_tables,split_pred_tasks,data_flow,3,3,E00027,
+check_samplesheet_create_tables,unpack_bin_archives,data_flow,1,1,E00001,
+collect_stats,multiqc,data_flow,1,1,E00079,
+create_protein_tsv,generate_protein_and_entity_ids,data_flow,4,4,E00011,
+download_proteins,finalize_microbiome_entities,data_flow,1,1,E00018,
+download_proteins,generate_protein_and_entity_ids,data_flow,3,3,E00015,
+finalize_microbiome_entities,collect_stats,data_flow,1,1,E00055,
+finalize_microbiome_entities,prepare_entity_binding_ratios,data_flow,1,1,E00073,
+finalize_microbiome_entities,prepare_score_distribution,data_flow,1,1,E00063,
+finalize_microbiome_entities,split_pred_tasks,data_flow,1,1,E00026,
+generate_peptides,collect_stats,data_flow,1,1,E00053,
+generate_peptides,merge_chunks,data_flow,1,1,E00051,
+generate_peptides,merge_chunks_buffer,data_flow,1,1,E00046,
+generate_peptides,prepare_entity_binding_ratios,data_flow,1,1,E00071,
+generate_peptides,prepare_score_distribution,data_flow,1,1,E00061,
+generate_peptides,split_pred_tasks,data_flow,2,2,E00023,
+generate_protein_and_entity_ids,collect_stats,data_flow,1,1,E00054,
+generate_protein_and_entity_ids,finalize_microbiome_entities,data_flow,2,2,E00020,
+generate_protein_and_entity_ids,generate_peptides,data_flow,1,1,E00022,
+generate_protein_and_entity_ids,prepare_entity_binding_ratios,data_flow,1,1,E00072,
+generate_protein_and_entity_ids,prepare_score_distribution,data_flow,1,1,E00062,
+generate_protein_and_entity_ids,split_pred_tasks,data_flow,1,1,E00025,
+merge_chunks,collect_stats,data_flow,1,1,E00059,
+merge_chunks,prepare_entity_binding_ratios,data_flow,1,1,E00070,
+merge_chunks,prepare_score_distribution,data_flow,1,1,E00060,
+merge_chunks_buffer,merge_chunks,data_flow,1,1,E00048,
+mhcflurry,mhcgnomes,data_flow,1,1,E00039,
+mhcgnomes,bash,data_flow,2,2,E00035,
+mhcgnomes,merge_chunks,data_flow,1,1,E00050,
+mhcgnomes,merge_chunks_buffer,data_flow,1,1,E00045,
+mhcgnomes,mhcflurry,data_flow,1,1,E00032,
+mhcgnomes,mhcnuggets,data_flow,2,2,E00033,
+mhcnuggets,mhcgnomes,data_flow,2,2,E00040,
+prepare_entity_binding_ratios,plot_entity_binding_ratios,data_flow,1,1,E00077,
+prepare_score_distribution,plot_score_distribution,data_flow,1,1,E00067,
+prodigal,create_protein_tsv,data_flow,1,1,E00006,
+split_pred_tasks,merge_chunks,data_flow,1,1,E00049,
+split_pred_tasks,merge_chunks_buffer,data_flow,1,1,E00044,
+split_pred_tasks,mhcgnomes,data_flow,4,4,E00030,
+unpack_bin_archives,prodigal,data_flow,1,1,E00005,
+unpack_netmhc_software,bash,data_flow,2,2,E00036,
+assign_nucl_entity_weights,create_protein_tsv,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.microbiomes (E00009, E00007); no directed path between any process of the two tools"
+assign_nucl_entity_weights,download_proteins,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.microbiomes (E00009, E00003); no directed path between any process of the two tools"
+assign_nucl_entity_weights,generate_protein_and_entity_ids,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.microbiomes (E00009, E00010); no directed path between any process of the two tools"
+assign_nucl_entity_weights,prodigal,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.microbiomes (E00009, E00004); no directed path between any process of the two tools"
+assign_nucl_entity_weights,unpack_bin_archives,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.microbiomes (E00009, E00001); no directed path between any process of the two tools"
+bash,mhcflurry,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00037, E00032); no directed path between any process of the two tools"
+bash,mhcnuggets,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00037, E00033); no directed path between any process of the two tools"
+collect_stats,plot_entity_binding_ratios,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.alleles (E00057, E00078); no directed path between any process of the two tools"
+collect_stats,plot_score_distribution,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.alleles (E00057, E00068); no directed path between any process of the two tools"
+collect_stats,prepare_entity_binding_ratios,parallel_co_use,0,0,,"both consume FINALIZE_MICROBIOME_ENTITIES.ch_microbiomes_entities (E00055, E00073); no directed path between any process of the two tools"
+collect_stats,prepare_score_distribution,parallel_co_use,0,0,,"both consume FINALIZE_MICROBIOME_ENTITIES.ch_microbiomes_entities (E00055, E00063); no directed path between any process of the two tools"
+create_protein_tsv,assign_nucl_entity_weights,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.microbiomes (E00007, E00009); no directed path between any process of the two tools"
+create_protein_tsv,download_proteins,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.microbiomes (E00007, E00003); no directed path between any process of the two tools"
+download_proteins,assign_nucl_entity_weights,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.microbiomes (E00003, E00009); no directed path between any process of the two tools"
+download_proteins,create_protein_tsv,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.microbiomes (E00003, E00007); no directed path between any process of the two tools"
+download_proteins,prodigal,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.microbiomes (E00003, E00004); no directed path between any process of the two tools"
+download_proteins,unpack_bin_archives,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.microbiomes (E00003, E00001); no directed path between any process of the two tools"
+generate_protein_and_entity_ids,assign_nucl_entity_weights,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.microbiomes (E00010, E00009); no directed path between any process of the two tools"
+mhcflurry,bash,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00032, E00037); no directed path between any process of the two tools"
+mhcflurry,mhcnuggets,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00032, E00033); no directed path between any process of the two tools"
+mhcnuggets,bash,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00033, E00037); no directed path between any process of the two tools"
+mhcnuggets,mhcflurry,parallel_co_use,0,0,,"both consume PREPARE_PREDICTION_INPUT.prepared (E00033, E00032); no directed path between any process of the two tools"
+plot_entity_binding_ratios,collect_stats,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.alleles (E00078, E00057); no directed path between any process of the two tools"
+plot_entity_binding_ratios,plot_score_distribution,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.alleles (E00078, E00068); no directed path between any process of the two tools"
+plot_entity_binding_ratios,prepare_score_distribution,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.alleles (E00078, E00066); no directed path between any process of the two tools"
+plot_score_distribution,collect_stats,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.alleles (E00068, E00057); no directed path between any process of the two tools"
+plot_score_distribution,plot_entity_binding_ratios,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.alleles (E00068, E00078); no directed path between any process of the two tools"
+plot_score_distribution,prepare_entity_binding_ratios,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.alleles (E00068, E00076); no directed path between any process of the two tools"
+prepare_entity_binding_ratios,collect_stats,parallel_co_use,0,0,,"both consume FINALIZE_MICROBIOME_ENTITIES.ch_microbiomes_entities (E00073, E00055); no directed path between any process of the two tools"
+prepare_entity_binding_ratios,plot_score_distribution,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.alleles (E00076, E00068); no directed path between any process of the two tools"
+prepare_entity_binding_ratios,prepare_score_distribution,parallel_co_use,0,0,,"both consume FINALIZE_MICROBIOME_ENTITIES.ch_microbiomes_entities (E00073, E00063); no directed path between any process of the two tools"
+prepare_score_distribution,collect_stats,parallel_co_use,0,0,,"both consume FINALIZE_MICROBIOME_ENTITIES.ch_microbiomes_entities (E00063, E00055); no directed path between any process of the two tools"
+prepare_score_distribution,plot_entity_binding_ratios,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.alleles (E00066, E00078); no directed path between any process of the two tools"
+prepare_score_distribution,prepare_entity_binding_ratios,parallel_co_use,0,0,,"both consume FINALIZE_MICROBIOME_ENTITIES.ch_microbiomes_entities (E00063, E00073); no directed path between any process of the two tools"
+prodigal,assign_nucl_entity_weights,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.microbiomes (E00004, E00009); no directed path between any process of the two tools"
+prodigal,download_proteins,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.microbiomes (E00004, E00003); no directed path between any process of the two tools"
+unpack_bin_archives,assign_nucl_entity_weights,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.microbiomes (E00001, E00009); no directed path between any process of the two tools"
+unpack_bin_archives,download_proteins,parallel_co_use,0,0,,"both consume CHECK_SAMPLESHEET_CREATE_TABLES.microbiomes (E00001, E00003); no directed path between any process of the two tools"

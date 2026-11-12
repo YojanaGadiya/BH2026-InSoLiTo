@@ -1,0 +1,8 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+bwa,fgbio,data_flow,2,2,E00009,
+bwa,samtools,data_flow,1,1,E00007,
+fastqc,multiqc,data_flow,1,1,E00025,
+fgbio,bwa,data_flow,6,6,E00002,
+fgbio,multiqc,data_flow,1,1,E00026,
+samtools,bwa,data_flow,4,4,E00004,
+samtools,fgbio,data_flow,3,3,E00008,

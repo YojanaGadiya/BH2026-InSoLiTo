@@ -1,0 +1,18 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+alleleexpression:SAMPLESHEET_CHECK,SAMPLESHEET_CHECK,modules/local/input_check/main.nf,1,samplesheet_check,,,module name
+alleleexpression:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+alleleexpression:PREPARE_VCF,PREPARE_VCF,modules/local/prepare_vcf/main.nf,1,prepare_vcf,,,module name
+alleleexpression:STAR_GENOMEGENERATE,STAR_GENOMEGENERATE,modules/nf-core/star/genomegenerate/main.nf,1,samtools,star,htslib;samtools;star;gawk,environment.yml
+alleleexpression:STAR_ALIGN_WASP,STAR_ALIGN_WASP,modules/local/star_align_wasp/main.nf,1,star_align_wasp,,,module name
+alleleexpression:FILTER_WASP_READS,FILTER_WASP_READS,modules/local/filter_wasp_reads/main.nf,1,filter_wasp_reads,,,module name
+alleleexpression:SAMTOOLS_SORT,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+alleleexpression:SAMTOOLS_INDEX,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+alleleexpression:UMITOOLS_DEDUP,UMITOOLS_DEDUP,modules/nf-core/umitools/dedup/main.nf,1,umi_tools,umi_tools,umi_tools,environment.yml
+alleleexpression:SAMTOOLS_INDEX_FINAL,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,htslib;samtools,environment.yml
+alleleexpression:BCFTOOLS_VIEW,BCFTOOLS_VIEW,modules/local/bcftools_view/main.nf,1,bcftools_view,,,module name
+alleleexpression:BEAGLE5_BEAGLE,BEAGLE5_BEAGLE,modules/local/beagle5_beagle/main.nf,1,beagle,,beagle;htslib,environment.yml
+alleleexpression:TABIX_INDEX,TABIX_INDEX,modules/local/tabix_index/main.nf,1,tabix_index,,,module name
+alleleexpression:PHASER,PHASER,modules/local/phaser/main.nf,1,phaser,,,module name
+alleleexpression:PHASER_GENE_AE,PHASER_GENE_AE,modules/local/phaser_gene_ae/main.nf,1,phaser_gene_ae,,,module name
+alleleexpression:EXTRACT_ASE_GENES,EXTRACT_ASE_GENES,modules/local/extract_ase_genes/main.nf,1,extract_ase_genes,,,module name
+alleleexpression:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

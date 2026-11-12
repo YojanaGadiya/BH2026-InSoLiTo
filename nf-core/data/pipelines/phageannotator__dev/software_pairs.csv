@@ -1,0 +1,59 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+biopython,bowtie2,data_flow,6,6,E00064,
+biopython,cat,data_flow,2,2,E00052,
+biopython,checkv,data_flow,1,1,E00045,
+biopython,cobra-meta,data_flow,4,4,E00030,
+biopython,genomad,data_flow,4,4,E00009,
+biopython,gunzip,data_flow,3,3,E00103,
+biopython,instrain,data_flow,2,2,E00120,
+biopython,samtools,data_flow,6,6,E00076,
+blast,biopython,data_flow,1,1,E00059,
+bowtie2,samtools,data_flow,2,2,E00016,
+cat,biopython,data_flow,2,2,E00060,
+cat,blast,data_flow,2,2,E00056,
+checkv,biopython,data_flow,3,3,E00049,
+coverm,cobra-meta,data_flow,4,4,E00029,
+fastqc,multiqc,data_flow,1,1,E00124,
+genomad,biopython,data_flow,1,1,E00012,
+genomad,bowtie2,data_flow,2,2,E00066,
+genomad,cat,data_flow,1,1,E00053,
+genomad,checkv,data_flow,1,1,E00044,
+genomad,gunzip,data_flow,1,1,E00105,
+genomad,samtools,data_flow,2,2,E00078,
+gunzip,bacphlip,data_flow,1,1,E00112,
+gunzip,biopython,data_flow,1,1,E00116,
+gunzip,cobra-meta,data_flow,4,4,E00028,
+gunzip,instrain,data_flow,2,2,E00118,
+gunzip,iphop,data_flow,1,1,E00108,
+gunzip,pharokka,data_flow,1,1,E00113,
+mash,biopython,data_flow,1,1,E00007,
+pharokka,gunzip,data_flow,1,1,E00115,
+samtools,cobra-meta,data_flow,4,4,E00031,
+samtools,coverm,data_flow,2,2,E00027,
+samtools,instrain,data_flow,2,2,E00117,
+seqkit,biopython,data_flow,2,2,E00008,
+seqkit,bowtie2,data_flow,2,2,E00068,
+seqkit,cat,data_flow,1,1,E00055,
+seqkit,checkv,data_flow,1,1,E00046,
+seqkit,genomad,data_flow,2,2,E00010,
+seqkit,gunzip,data_flow,1,1,E00107,
+seqkit,mash,data_flow,1,1,E00002,
+seqkit,samtools,data_flow,2,2,E00080,
+untar,checkv,data_flow,1,1,E00048,
+untar,iphop,data_flow,2,2,E00110,
+bacphlip,instrain,parallel_co_use,0,0,,"both consume GUNZIP_CLUSTER_REPS.gunzip (E00112, E00118); no directed path between any process of the two tools"
+bacphlip,iphop,parallel_co_use,0,0,,"both consume GUNZIP_CLUSTER_REPS.gunzip (E00112, E00108); no directed path between any process of the two tools"
+bacphlip,pharokka,parallel_co_use,0,0,,"both consume GUNZIP_CLUSTER_REPS.gunzip (E00112, E00113); no directed path between any process of the two tools"
+bowtie2,gunzip,parallel_co_use,0,0,,"both consume ANICLUSTER_EXTRACTREPS.representatives (E00064, E00103); no directed path between any process of the two tools"
+coverm,instrain,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00096, E00121); no directed path between any process of the two tools"
+gunzip,bowtie2,parallel_co_use,0,0,,"both consume ANICLUSTER_EXTRACTREPS.representatives (E00103, E00064); no directed path between any process of the two tools"
+gunzip,samtools,parallel_co_use,0,0,,"both consume ANICLUSTER_EXTRACTREPS.representatives (E00103, E00085); no directed path between any process of the two tools"
+instrain,bacphlip,parallel_co_use,0,0,,"both consume GUNZIP_CLUSTER_REPS.gunzip (E00118, E00112); no directed path between any process of the two tools"
+instrain,coverm,parallel_co_use,0,0,,"both consume SAMTOOLS_SORT.bam (E00121, E00096); no directed path between any process of the two tools"
+instrain,iphop,parallel_co_use,0,0,,"both consume GUNZIP_CLUSTER_REPS.gunzip (E00118, E00108); no directed path between any process of the two tools"
+iphop,bacphlip,parallel_co_use,0,0,,"both consume GUNZIP_CLUSTER_REPS.gunzip (E00108, E00112); no directed path between any process of the two tools"
+iphop,instrain,parallel_co_use,0,0,,"both consume GUNZIP_CLUSTER_REPS.gunzip (E00108, E00118); no directed path between any process of the two tools"
+iphop,pharokka,parallel_co_use,0,0,,"both consume GUNZIP_CLUSTER_REPS.gunzip (E00108, E00113); no directed path between any process of the two tools"
+pharokka,bacphlip,parallel_co_use,0,0,,"both consume GUNZIP_CLUSTER_REPS.gunzip (E00113, E00112); no directed path between any process of the two tools"
+pharokka,iphop,parallel_co_use,0,0,,"both consume GUNZIP_CLUSTER_REPS.gunzip (E00113, E00108); no directed path between any process of the two tools"
+samtools,gunzip,parallel_co_use,0,0,,"both consume ANICLUSTER_EXTRACTREPS.representatives (E00085, E00103); no directed path between any process of the two tools"

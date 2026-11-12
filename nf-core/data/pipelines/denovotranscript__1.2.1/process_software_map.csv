@@ -1,0 +1,19 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_DENOVOTRANSCRIPT:DENOVOTRANSCRIPT:FASTQ_TRIM_FASTP_FASTQC:FASTQC_RAW,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_DENOVOTRANSCRIPT:DENOVOTRANSCRIPT:FASTQ_TRIM_FASTP_FASTQC:FASTP,FASTP,modules/nf-core/fastp/main.nf,1,fastp,fastp,fastp,environment.yml
+NFCORE_DENOVOTRANSCRIPT:DENOVOTRANSCRIPT:FASTQ_TRIM_FASTP_FASTQC:FASTQC_TRIM,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_DENOVOTRANSCRIPT:DENOVOTRANSCRIPT:SORTMERNA,SORTMERNA,modules/nf-core/sortmerna/main.nf,1,sortmerna,SortMeRNA,sortmerna,environment.yml
+NFCORE_DENOVOTRANSCRIPT:DENOVOTRANSCRIPT:FASTQC_FINAL,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_DENOVOTRANSCRIPT:DENOVOTRANSCRIPT:CAT_FASTQ,CAT_FASTQ,modules/nf-core/cat/fastq/main.nf,1,cat,cat,coreutils,environment.yml
+NFCORE_DENOVOTRANSCRIPT:DENOVOTRANSCRIPT:TRINITY,TRINITY,modules/nf-core/trinity/main.nf,1,trinity,trinity,trinity,environment.yml
+NFCORE_DENOVOTRANSCRIPT:DENOVOTRANSCRIPT:TRINITY_NO_NORM,TRINITY,modules/nf-core/trinity/main.nf,1,trinity,trinity,trinity,environment.yml
+NFCORE_DENOVOTRANSCRIPT:DENOVOTRANSCRIPT:SPADES,SPADES,modules/nf-core/spades/main.nf,1,spades,spades,spades,environment.yml
+NFCORE_DENOVOTRANSCRIPT:DENOVOTRANSCRIPT:CAT_CAT,CAT_CAT,modules/nf-core/cat/cat/main.nf,1,cat,cat,pigz,environment.yml
+NFCORE_DENOVOTRANSCRIPT:DENOVOTRANSCRIPT:EVIGENE_TR2AACDS,EVIGENE_TR2AACDS,modules/nf-core/evigene/tr2aacds/main.nf,1,evigene,evigene,evigene,environment.yml
+NFCORE_DENOVOTRANSCRIPT:DENOVOTRANSCRIPT:TX2GENE,GAWK,modules/nf-core/gawk/main.nf,1,gawk,gawk,gawk,environment.yml
+NFCORE_DENOVOTRANSCRIPT:DENOVOTRANSCRIPT:BUSCO_BUSCO,BUSCO_BUSCO,modules/nf-core/busco/busco/main.nf,1,busco,busco,busco,environment.yml
+NFCORE_DENOVOTRANSCRIPT:DENOVOTRANSCRIPT:RNAQUAST,RNAQUAST,modules/local/rnaquast/main.nf,1,rnaquast,,,module name
+NFCORE_DENOVOTRANSCRIPT:DENOVOTRANSCRIPT:TRANSRATE,ORP_TRANSRATE,modules/local/orp_transrate/main.nf,1,orp_transrate,,,module name
+NFCORE_DENOVOTRANSCRIPT:DENOVOTRANSCRIPT:SALMON_INDEX,SALMON_INDEX,modules/nf-core/salmon/index/main.nf,1,salmon,salmon,salmon,environment.yml
+NFCORE_DENOVOTRANSCRIPT:DENOVOTRANSCRIPT:SALMON_QUANT,SALMON_QUANT,modules/nf-core/salmon/quant/main.nf,1,salmon,salmon,salmon,environment.yml
+NFCORE_DENOVOTRANSCRIPT:DENOVOTRANSCRIPT:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

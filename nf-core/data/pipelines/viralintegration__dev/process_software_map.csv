@@ -1,0 +1,22 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:FASTQC,FASTQC,modules/nf-core/fastqc/main.nf,1,fastqc,fastqc,fastqc,environment.yml
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:STAR_GENOMEGENERATE_HOST,STAR_GENOMEGENERATE,modules/nf-core/star/genomegenerate/main.nf,1,star,star,,meta.yml
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:STAR_ALIGN_HOST,STAR_ALIGN,modules/nf-core/star/align/main.nf,1,star,star,,meta.yml
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:TRIMMOMATIC,TRIMMOMATIC,modules/nf-core/trimmomatic/main.nf,1,trimmomatic,trimmomatic,,meta.yml
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:POLYA_STRIPPER,POLYA_STRIPPER,modules/local/polyA_stripper.nf,1,polya_stripper,,,module name
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:CAT_FASTA,CAT_FASTA,modules/local/cat_fasta.nf,1,cat_fasta,,,module name
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:STAR_GENOMEGENERATE_PLUS,STAR_GENOMEGENERATE,modules/nf-core/star/genomegenerate/main.nf,1,star,star,,meta.yml
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:STAR_ALIGN_PLUS,STAR_ALIGN,modules/nf-core/star/align/main.nf,1,star,star,,meta.yml
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:SAMTOOLS_SORT_PLUS,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:SAMTOOLS_INDEX_PLUS,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:INSERTION_SITE_CANDIDATES,INSERTION_SITE_CANDIDATES,modules/local/insertion_site_candidates.nf,1,insertion_site_candidates,,,module name
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:ABRIDGED_TSV,ABRIDGED_TSV,modules/local/abridged_tsv.nf,1,abridged_tsv,,,module name
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:VIRUS_REPORT,VIRUS_REPORT,modules/local/virus_report.nf,1,virus_report,,,module name
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:EXTRACT_CHIMERIC_GENOMIC_TARGETS,EXTRACT_CHIMERIC_GENOMIC_TARGETS,modules/local/extract_chimeric_genomic_targets.nf,1,extract_chimeric_genomic_targets,,,module name
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:STAR_ALIGN_VALIDATE,STAR_ALIGN_VALIDATE,modules/local/star_align_validate.nf,1,star_align_validate,,,module name
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:SAMTOOLS_SORT_VALIDATE,SAMTOOLS_SORT,modules/nf-core/samtools/sort/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:SAMTOOLS_INDEX_VALIDATE,SAMTOOLS_INDEX,modules/nf-core/samtools/index/main.nf,1,samtools,samtools,,meta.yml
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:REMOVE_DUPLICATES,REMOVE_DUPLICATES,modules/local/remove_duplicates.nf,1,remove_duplicates,,,module name
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:CHIMERIC_CONTIG_EVIDENCE_ANALYZER,CHIMERIC_CONTIG_EVIDENCE_ANALYZER,modules/local/chimeric_contig_evidence_analyzer.nf,1,chimeric_contig_evidence_analyzer,,,module name
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:SUMMARY_REPORT,SUMMARY_REPORT,modules/local/summary_report.nf,1,summary_report,,,module name
+NFCORE_VIRALINTEGRATION:VIRALINTEGRATION:MULTIQC,MULTIQC,modules/nf-core/multiqc/main.nf,1,multiqc,multiqc,multiqc,environment.yml

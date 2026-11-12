@@ -1,0 +1,18 @@
+source_software,target_software,pair_type,n_process_edges,n_data_flow_edges,example_edge_id,evidence
+decimate,generate_toas,data_flow,1,1,E00009,
+dm_rm_calc,generate_image_results,data_flow,1,1,E00003,
+generate_image_results,upload_results,data_flow,1,1,E00004,
+generate_toas,upload_toas,data_flow,1,1,E00010,
+grab_all_pairs,generate_toas,data_flow,1,1,E00008,
+obs_list,decimate,data_flow,1,1,E00007,
+obs_list,grab_all_pairs,data_flow,1,1,E00005,
+obs_list,psradd_calibrate_clean,data_flow,1,1,E00001,
+psradd_calibrate_clean,decimate,data_flow,1,1,E00006,
+psradd_calibrate_clean,dm_rm_calc,data_flow,1,1,E00002,
+upload_toas,generate_residuals,data_flow,1,1,E00011,
+decimate,dm_rm_calc,parallel_co_use,0,0,,"both consume PSRADD_CALIBRATE_CLEAN.#0 (E00006, E00002); no directed path between any process of the two tools"
+decimate,grab_all_pairs,parallel_co_use,0,0,,"both consume OBS_LIST.out_csv (E00007, E00005); no directed path between any process of the two tools"
+dm_rm_calc,decimate,parallel_co_use,0,0,,"both consume PSRADD_CALIBRATE_CLEAN.#0 (E00002, E00006); no directed path between any process of the two tools"
+grab_all_pairs,decimate,parallel_co_use,0,0,,"both consume OBS_LIST.out_csv (E00005, E00007); no directed path between any process of the two tools"
+grab_all_pairs,psradd_calibrate_clean,parallel_co_use,0,0,,"both consume OBS_LIST.out_csv (E00005, E00001); no directed path between any process of the two tools"
+psradd_calibrate_clean,grab_all_pairs,parallel_co_use,0,0,,"both consume OBS_LIST.out_csv (E00001, E00005); no directed path between any process of the two tools"

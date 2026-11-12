@@ -1,0 +1,5 @@
+process_instance,process_module,module_file,module_line,software,meta_yml_tools,environment_deps,method
+NFCORE_LIVERCTANALYSIS:LIVERCTANALYSIS:INPUT_CHECK:SAMPLESHEET_CHECK,SAMPLESHEET_CHECK,modules/local/samplesheet_check.nf,5,samplesheet_check,,,module name
+NFCORE_LIVERCTANALYSIS:LIVERCTANALYSIS:FASTQC,FASTQC,modules/nf-core/modules/fastqc/main.nf,6,fastqc,fastqc,,meta.yml
+NFCORE_LIVERCTANALYSIS:LIVERCTANALYSIS:GET_SOFTWARE_VERSIONS,GET_SOFTWARE_VERSIONS,modules/local/get_software_versions.nf,5,get_software_versions,,,module name
+NFCORE_LIVERCTANALYSIS:LIVERCTANALYSIS:MULTIQC,MULTIQC,modules/nf-core/modules/multiqc/main.nf,6,multiqc,multiqc,,meta.yml
