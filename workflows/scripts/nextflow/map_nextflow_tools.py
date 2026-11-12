@@ -32,17 +32,20 @@ from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from workflows.scripts.galaxy.map_galaxy_tools import (
-    BIOTOOLS_DIR,
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parents[2]
+DATA = ROOT / "workflows" / "data"
+
+sys.path.insert(0, str(HERE.parent / "galaxy"))  # to import map_galaxy_tools
+from map_galaxy_tools import (  # noqa: E402
     BIOTOOLS_PUBS,
     BIOTOOLS_RAW,
     CODEX_FILE,
-    MAPPING,
     PREFIX_BLOCKLIST,
     find_column,
     variants,
 )
-from nfdag.mapping import (
+from nfdag.mapping import (  # noqa: E402
     CONFIDENCE,
     CURATED_FIELDS,
     BiotoolsIndex,
@@ -54,12 +57,12 @@ from nfdag.mapping import (
     translate,
 )
 
-HERE = Path(__file__).resolve().parent
-DAG_DIR = HERE / "data" / "nextflow"
-CURATED_FILE = HERE / "nextflow_curated_map.tsv"
-MAP_DIR = MAPPING / "nextflow"
-OUT_DIR = BIOTOOLS_DIR / "nextflow"
-SUMMARY_FILE = HERE / "data" / "download" / "nextflow" / "nextflow_workflows.csv"  # download_workflowhub_nextflow.py
+DAG_DIR = DATA / "nextflow" / "dags"
+CURATED_FILE = DATA / "nextflow" / "nextflow_curated_map.tsv"
+MAP_DIR = DATA / "mapping" / "nextflow"
+OUT_DIR = DATA / "biotools" / "nextflow"
+SUMMARY_FILE = DATA / "nextflow" / "download" / "nextflow_workflows.csv"  # download_workflowhub_nextflow.py
+
 EXAMPLES = 3  # example processes / workflows per tool in the TSVs
 METHODS = ("curated", "meta", "biotools_id", "biotools_name", "biotools_url", "codex", "prefix")
 LEVELS = sorted(set(CONFIDENCE.values()))  # 1, 2, 3

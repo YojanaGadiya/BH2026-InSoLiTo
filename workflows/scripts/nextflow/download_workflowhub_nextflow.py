@@ -38,14 +38,17 @@ import urllib.request
 import zipfile
 from pathlib import Path, PurePosixPath
 
-from workflows.scripts.nextflow.nfdag.build import build
+from nfdag.build import build
+
+from nfdag.build import build
 
 BASE = "https://workflowhub.org"
-DATA_DIR = Path(__file__).resolve().parent / "data" / "download"  # shared with download_workflowhub.py
+ROOT = Path(__file__).resolve().parents[3]                  # nextflow -> scripts -> workflows -> root
+DATA_DIR = ROOT / "workflows" / "data" / "galaxy" / "download"  # index, meta, crates: shared with the Galaxy download
 INDEX_FILE = DATA_DIR / "index.json"
 META_DIR = DATA_DIR / "meta"
 CRATE_DIR = DATA_DIR / "crates"
-NF_DIR = DATA_DIR / "nextflow"
+NF_DIR = ROOT / "workflows" / "data" / "nextflow" / "download"
 SUMMARY_FILE = NF_DIR / "nextflow_workflows.csv"
 
 EXCLUDED_SPACE = 4  # "nf-core" (WorkflowHub calls spaces "programmes" in the API)

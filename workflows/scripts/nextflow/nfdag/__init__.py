@@ -1,7 +1,7 @@
 """
 Extract the process DAG of each downloaded Nextflow workflow, by reading its .nf files (nothing is run).
 
-Input:  data/download/nextflow/<id>_v<version>/      (from download_workflowhub_nextflow.py)
+Input:  data/nextflow/download/nextflow/<id>_v<version>/      (from download_workflowhub_nextflow.py)
 Output: data/nextflow/<id>_v<version>/nodes.csv     one row per process node, with all tool information
         data/nextflow/<id>_v<version>/edges.csv     source, target, channel
         data/nextflow/<id>_v<version>/warnings.log  what could not be resolved

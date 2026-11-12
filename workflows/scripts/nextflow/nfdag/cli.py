@@ -11,11 +11,12 @@ from .build import build
 from .output import OverviewRow, write_dag, write_error, write_overview
 from .steps import read_excluded
 
-DATA_DIR: Final = Path(__file__).resolve().parent.parent / "data"
-NF_DIR: Final = DATA_DIR / "download" / "nextflow"  # from download_workflowhub_nextflow.py
-DAG_DIR: Final = DATA_DIR / "nextflow"
+ROOT: Final = Path(__file__).resolve().parents[4]           # nfdag -> nextflow -> scripts -> workflows -> root
+DATA_DIR: Final = ROOT / "workflows" / "data" / "nextflow"
+NF_DIR: Final = DATA_DIR / "download"                       # from download_workflowhub_nextflow.py
+DAG_DIR: Final = DATA_DIR / "dags"
 OVERVIEW_NAME: Final = "nextflow_dags.csv"
-EXCLUDED_FILE: Final = Path(__file__).resolve().parent.parent / "nextflow_excluded_tools.txt"
+EXCLUDED_FILE: Final = DATA_DIR / "nextflow_excluded_tools.txt"
 
 
 def _workflow_folders(nf_dir: Path, only: list[str] | None) -> list[Path]:
