@@ -3,7 +3,7 @@ Combines the tool-pair edges of Galaxy, Nextflow and nf-core workflows into one 
 
 Reads one edges CSV per source (e.g. columns: source, target, n_workflows, ...) and writes:
   - data/combined/combined_edges.csv  one row per directed tool pair:
-        source, target, n_wf_galaxy, n_wf_nextflow, n_wf_nfcore
+        source, target, n_wf_galaxy, n_wf_nextflow, n_wf_nfcore, n_articles, median_delta, median_tool_gap
     A pair missing from a source gets 0 for that source.
 
 Tool IDs are matched case-insensitively (tool == TOoL), so the same bio.tools ID matches across sources.
@@ -28,6 +28,7 @@ INPUTS = {
     "nextflow": DATA / "nextflow" / edge_filename,
     "nfcore": DATA / "nf-core" / edge_filename,
 }
+CITATIONS = Path(__file__).resolve().parent.parent / "edges-processed" / "directed_edges 2.csv"
 OUT_FILE = DATA / "combined" / "combined_edges.csv"
 
 MAX_CONFIDENCE = 3  # only for galaxy: 1 = codex mapping only, 2 = codex + name match, 3 = all
@@ -82,6 +83,29 @@ def read_edges(path: Path, name: str, spelling: dict[str, str]) -> pd.DataFrame:
               .rename(columns={"n_workflows": f"n_wf_{name}"}))
 
 
+def read_citations(spelling: dict[str, str]) -> pd.DataFrame:
+    """One row per direction: source cited before target in n_articles articles, with the medians.
+
+    A direction with its own row in the file keeps that row. A direction found only in the _rev
+    columns of the opposite row is added from there, with n_articles but no medians (the file has none).
+    """
+    cols = ["source", "target", "n_articles", "median_delta", "median_tool_gap"]
+    df = pd.read_csv(CITATIONS)
+    fwd = df[cols]
+    rev = (df[df["n_articles_rev"] > 0]
+           .rename(columns={"source": "target", "target": "source"})
+           .assign(n_articles=lambda d: d["n_articles_rev"], median_delta=float("nan"), median_tool_gap=float("nan"))
+           [cols])
+    out = pd.concat([fwd, rev], ignore_index=True)
+    for col in ("source", "target"):
+        low = out[col].astype(str).str.lower()
+        out[col] = low.map(spelling).fillna(low)
+    # forward rows come first, so a direction with its own row keeps it (and its medians)
+    out = out.drop_duplicates(["source", "target"], keep="first")
+    print(f"citations: {len(fwd)} rows, {len(out) - len(fwd)} directions added from the _rev columns")
+    return out
+
+
 def main() -> None:
     spelling = pick_spellings()
     combined = None
@@ -93,6 +117,10 @@ def main() -> None:
     counts = [f"n_wf_{name}" for name in INPUTS]
     combined[counts] = combined[counts].fillna(0).astype(int)
     combined = combined.sort_values(counts, ascending=False)
+
+    combined = combined.merge(read_citations(spelling), on=["source", "target"], how="left")
+    combined["n_articles"] = combined["n_articles"].fillna(0).astype(int)
+    print("workflow edges also cited in the same direction:", (combined["n_articles"] > 0).sum())
 
     OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     combined.to_csv(OUT_FILE, index=False)
