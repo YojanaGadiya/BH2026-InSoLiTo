@@ -79,3 +79,16 @@ export function buildDirectedEdgesQuery ({ nodeIds, minArticles }) {
         parameters: { ids: nodeIds.map(Number), minArticles }
     }
 }
+
+// Tool pairs of registered workflows (WORKFLOW_NEXT: Galaxy, Nextflow, nf-core from
+// WorkflowHub) between the Tool/Database nodes already on screen. Both directions are
+// returned as separate edges. No minimum: there are few of them (~2,400 in total).
+export function buildWorkflowEdgesQuery ({ nodeIds }) {
+    return {
+        statement:
+            'MATCH (a)-[r:WORKFLOW_NEXT]->(b) ' +
+            'WHERE id(a) IN $ids AND id(b) IN $ids ' +
+            'RETURN a,r,b',
+        parameters: { ids: nodeIds.map(Number) }
+    }
+}

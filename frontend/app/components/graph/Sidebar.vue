@@ -373,10 +373,12 @@ async function rebuildGraph () {
             .filter((node) => node.type !== 'Publication')
             .map((node) => node.id)))]
         const directedEdges = await useNeo4jSearch().fetchDirectedEdges(nodeIds, filterStore.directedMinArticles)
+        const workflowEdges = await useNeo4jSearch().fetchWorkflowEdges(nodeIds)
         uiStore.setRebuildPhase('building')
         graphStore.clearResults()
         results.forEach(({ nodes, edges, entryPointId }) => graphStore.addToGraph(nodes, edges, entryPointId))
         graphStore.addToGraph([], directedEdges)
+        graphStore.addToGraph([], workflowEdges)
         emptyResultTerms.value = graphStore.searchTerms
             .filter((_, index) => results[index].nodes.length === 0)
             .map((term) => term.name)

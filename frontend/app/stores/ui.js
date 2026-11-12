@@ -15,7 +15,8 @@ export const useUiStore = defineStore('ui', () => {
     // NONE of them are still active (see isNodeHidden's "any active" semantics).
     const hiddenToolTypes = ref([])
     // Edge layers hidden from the Legend's "Edges" section: 'cocitation'
-    // (METAOCCUR*) and/or 'direction' (CITED_BEFORE). Independent of colorMode.
+    // (METAOCCUR*), 'direction' (CITED_BEFORE, literature workflows) and/or
+    // 'workflow' (WORKFLOW_NEXT, registered workflows). Independent of colorMode.
     const hiddenEdgeTypes = ref([])
     // True while Sidebar's rebuildGraph() has an in-flight request — read by
     // Screen.vue too, to show a loading indicator over the canvas.

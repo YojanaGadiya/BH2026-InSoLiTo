@@ -9,7 +9,7 @@
       <h3 class="selection-info-title">{{ sourceLabel }} ↔ {{ targetLabel }}</h3>
 
       <!-- Co-citation: for a directed edge the total is the sum of the years, so it
-           shows even when the co-citation line is hidden under the arrow or below
+           shows even when the co-citation line is turned off in the legend or below
            the co-citation minimum. -->
       <p class="selection-info-section">Co-citation</p>
       <p v-if="loading" class="selection-info-meta">Loading year breakdown…</p>
@@ -28,7 +28,7 @@
 
       <!-- Direction: only between Tool/Database nodes (never with a Publication). -->
       <template v-if="showDirection">
-        <p class="selection-info-section">Direction</p>
+        <p class="selection-info-section">Literature workflows</p>
         <ul v-if="directions.length" class="edge-direction-list">
           <li v-for="entry in directions" :key="entry.key">
             <strong>{{ entry.from }} → {{ entry.to }}</strong>:
@@ -40,6 +40,16 @@
           </li>
         </ul>
         <p v-else class="selection-info-meta">No direction data (fewer than {{ minArticles }} articles in total, or not in the Europe PMC corpus).</p>
+
+        <p class="selection-info-section">Registered workflows</p>
+        <ul v-if="workflowDirections.length" class="edge-direction-list">
+          <li v-for="entry in workflowDirections" :key="entry.key">
+            <strong>{{ entry.from }} → {{ entry.to }}</strong>:
+            {{ entry.total.toLocaleString('en') }} {{ entry.total === 1 ? 'workflow' : 'workflows' }}
+            ({{ entry.bySource }})
+          </li>
+        </ul>
+        <p v-else class="selection-info-meta">Not found together in registered workflows (WorkflowHub: Galaxy, Nextflow, nf-core).</p>
       </template>
     </template>
 
@@ -168,12 +178,12 @@ const breakdown = ref([])
 const filterStore = useFilterStore()
 const minArticles = computed(() => filterStore.directedMinArticles)
 
-// A directed edge (CITED_BEFORE, drawn as one edge per pair) has no co-citation count
-// of its own, so its total comes from the year breakdown; a co-citation edge keeps
-// its own weight (times), as before.
+// A directed edge (CITED_BEFORE or WORKFLOW_NEXT, drawn as one edge per pair) has no
+// co-citation count of its own, so its total comes from the year breakdown; a
+// co-citation edge keeps its own weight (times), as before.
 const coCitationTotal = computed(() => {
     if (props.selection.kind !== 'edge') return 0
-    if (props.selection.type !== 'CITED_BEFORE') return props.selection.weight
+    if (props.selection.type !== 'CITED_BEFORE' && props.selection.type !== 'WORKFLOW_NEXT') return props.selection.weight
     return breakdown.value.reduce((sum, entry) => sum + (entry.times || 0), 0)
 })
 
@@ -210,6 +220,36 @@ const directions = computed(() => {
             medianDelta: edge.properties?.median_delta ?? null
         }))
         .sort((x, y) => y.nArticles - x.nArticles)
+})
+
+// Both directions of the pair in registered workflows, from the WORKFLOW_NEXT edges
+// already in the graph, most workflows first, with the count per source.
+const WORKFLOW_SOURCES = [
+    ['n_wf_galaxy', 'Galaxy'],
+    ['n_wf_nextflow', 'Nextflow'],
+    ['n_wf_nfcore', 'nf-core']
+]
+const workflowDirections = computed(() => {
+    if (!showDirection.value) return []
+    const a = String(props.selection.source)
+    const b = String(props.selection.target)
+    return graphStore.edges
+        .filter((edge) => edge.type === 'WORKFLOW_NEXT')
+        .filter((edge) => {
+            const s = String(edge.source)
+            const t = String(edge.target)
+            return (s === a && t === b) || (s === b && t === a)
+        })
+        .map((edge) => ({
+            key: `${edge.source}->${edge.target}`,
+            from: labelForId(String(edge.source)),
+            to: labelForId(String(edge.target)),
+            total: edge.properties?.n_workflows ?? 0,
+            bySource: WORKFLOW_SOURCES
+                .map(([key, name]) => `${name} ${edge.properties?.[key] ?? 0}`)
+                .join(' · ')
+        }))
+        .sort((x, y) => y.total - x.total)
 })
 
 // The panel stays mounted while the user clicks from one edge straight to another
