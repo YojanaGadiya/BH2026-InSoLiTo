@@ -10,6 +10,8 @@ DB/InSoLiToImport.zip
 DB/InSoLiToSupportFiles.zip
 directed-graph/europepmc/data/
 directed-graph/citation-order/data/
+directed-graph/citation-order/data_all_publications/
+directed-graph/citation-order/data_full_corpus/
 directed-graph/workflowhub/data/biotools/nextflow/workflows
 directed-graph/workflowhub/data/galaxy/download
 directed-graph/workflowhub/data/nextflow/
