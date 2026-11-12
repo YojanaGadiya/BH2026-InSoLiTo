@@ -124,7 +124,7 @@ deepsomatic,,2,biotool_id
 deeptools,DeepTools,7,biotool_id
 deepvariant,DeepVariant,5,biotool_id
 demuxlet,demuxlet,1,doi
-deseq2,DESeq2,7,biotool_id
+deseq2,DESeq2,6,biotool_id
 dexseq,DEXSeq,2,biotool_id
 dfam,Dfam,1,name
 dfast,DFAST,1,name
@@ -136,6 +136,7 @@ dreval,DrEval,1,doi
 drimseq,DRIMSeq,1,biotool_id
 dropletutils,DropletUtils,1,biotool_id
 drugz,drugZ,1,name
+dupradar,dupRadar,1,biotool_id
 eager,EAGER,2,doi
 edger,edgeR,2,biotool_id
 eggnog-mapper-v2,eggNOG-mapper v2,2,biotool_id
@@ -341,6 +342,7 @@ raxml-ng,RAxML-NG,1,biotool_id
 regtools,regtools,1,biotool_id
 repeatmasker,RepeatMasker,1,biotool_id
 repeatmodeler,RepeatModeler,2,biotool_id
+ribodetector,RiboDetector,2,biotool_id
 ribotricer,Ribotricer,1,biotool_id
 rmats,rMATS,1,biotool_id
 rnaquast,rnaQUAST,1,name
@@ -354,7 +356,6 @@ sambamba,Sambamba,1,biotool_id
 samblaster,SAMBLASTER,1,biotool_id
 samtools,SAMtools,80,biotool_id
 samtools_sort,samtools_sort,1,name
-sativa,SATIVA,1,doi
 scran,scran,1,biotool_id
 sdrf-pipelines,sdrf-pipelines,1,biotool_id
 seacr,SEACR,1,name
@@ -384,7 +385,7 @@ spoqc,spoQC,1,name
 spring,SPRING,3,biotool_id
 sra-tools,SRA Software Toolkit,2,name
 stager,stageR,1,biotool_id
-star,STAR,13,biotool_id
+star,STAR,12,biotool_id
 straglr,Straglr,1,name
 strelka,Strelka,2,biotool_id
 stringtie,StringTie,6,biotool_id
