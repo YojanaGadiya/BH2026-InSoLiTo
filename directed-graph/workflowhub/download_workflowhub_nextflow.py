@@ -3,7 +3,7 @@ Download all Nextflow workflows and their metadata from WorkflowHub
 (with --ignore-nfcore: except those in the space "nf-core").
 
 Step 1 (list):     every workflow ID on WorkflowHub          -> data/download/index.json
-                   with --ignore-nfcore: the nf-core space   -> data/download/nextflow_excluded_space_nf-core.json
+                   the teams of the nf-core space            -> data/download/nextflow_excluded_space_nf-core.json
 Step 2 (metadata): one JSON per workflow, unmodified         -> data/download/meta/<id>.json
 Step 3 (crates):   RO-Crate zip of each Nextflow workflow    -> data/download/crates/<id>_v<version>.crate.zip
                    unpacked (the whole pipeline)             -> data/download/nextflow/<id>_v<version>/
@@ -11,7 +11,8 @@ Step 3 (crates):   RO-Crate zip of each Nextflow workflow    -> data/download/cr
                    included files) are filled from a shallow `git clone` of the repository
                    (needs git; the clone runs no code; --no-clone skips this)
 Step 4 (summary):  one row per downloaded Nextflow workflow  -> data/download/nextflow/nextflow_workflows.csv
-                   id, version, title, projects, topics, operations, tools, nf_files
+                   id, version, title, projects, nf_core (in the nf-core space: true/false), topics,
+                   operations, tools, nf_files
 
 Index, metadata and crates are shared with download_workflowhub.py, so neither script downloads them twice.
 Runs can be stopped and restarted: files already on disk are not downloaded again.
@@ -82,7 +83,7 @@ def fetch_json(url):
 
 
 # --------------------------------------------------------------------------- #
-# Step 1: list all workflow IDs, and the teams of the excluded space
+# Step 1: list all workflow IDs, and the teams of the nf-core space
 # --------------------------------------------------------------------------- #
 
 def list_workflows():
@@ -100,8 +101,8 @@ def list_workflows():
     return ids
 
 
-def excluded_projects(offline):
-    """Return the IDs of the teams (projects) in the excluded space."""
+def nfcore_projects(offline):
+    """Return the IDs of the teams (projects) in the nf-core space."""
     path = DATA_DIR / "nextflow_excluded_space_nf-core.json"
     if offline and path.exists():
         programme = json.loads(path.read_text())
@@ -110,7 +111,7 @@ def excluded_projects(offline):
         path.write_text(json.dumps(programme, indent=1))
     data = programme.get("data", {})
     projects = {p["id"] for p in data.get("relationships", {}).get("projects", {}).get("data", [])}
-    print(f"Excluding space '{data.get('attributes', {}).get('title')}': teams {sorted(projects, key=int)}")
+    print(f"Space '{data.get('attributes', {}).get('title')}': teams {sorted(projects, key=int)}")
     return projects
 
 
@@ -316,7 +317,7 @@ def main():
         folder.mkdir(parents=True, exist_ok=True)
 
     ids = json.loads(INDEX_FILE.read_text()) if args.summary_only else list_workflows()
-    excluded = excluded_projects(offline=args.summary_only) if args.ignore_nfcore else set()
+    nfcore = nfcore_projects(offline=args.summary_only)
 
     rows = []
     nextflow_total = 0
@@ -329,7 +330,8 @@ def main():
             continue
         nextflow_total += 1
         projects = project_ids(metadata)
-        if excluded.intersection(projects):
+        is_nfcore = bool(nfcore.intersection(projects))
+        if args.ignore_nfcore and is_nfcore:
             continue
 
         version = latest_version(attrs)
@@ -347,6 +349,7 @@ def main():
             "version": version,
             "title": attrs.get("title", ""),
             "projects": ";".join(projects),
+            "nf_core": str(is_nfcore).lower(),
             "topics": labels(attrs.get("topic_annotations")),
             "operations": labels(attrs.get("operation_annotations")),
             "tools": labels(attrs.get("tools")),
