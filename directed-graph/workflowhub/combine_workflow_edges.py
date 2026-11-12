@@ -1,17 +1,21 @@
 """
 Combines the tool-pair edges of Galaxy, Nextflow and nf-core workflows into one table.
 
-Reads one edges CSV per source (columns: source, target, n_workflows, ...) and writes:
+Reads one edges CSV per source (e.g. columns: source, target, n_workflows, ...) and writes:
   - data/combined/combined_edges.csv  one row per directed tool pair:
         source, target, n_wf_galaxy, n_wf_nextflow, n_wf_nfcore
     A pair missing from a source gets 0 for that source.
 
-Tool IDs are lowercased so the same bio.tools ID matches across sources.
+Tool IDs are matched case-insensitively (tool == TOoL), so the same bio.tools ID matches across sources.
+Different spellings in different files are merged and the output uses upper case spelling if there is one (tool and TOoL).
+A name spelt in more than one way within the same file (tool and TOoL) means two different tools, which means we cant rely on case
+insensitive merging so it stops the script with an error.
 If an input has a 'confidence' column, only edges with confidence <= MAX_CONFIDENCE are kept.
 
 Usage (from the repository root):
     .venv/bin/python directed-graph/workflowhub/combine_workflow_edges.py
 """
+from collections import Counter
 from pathlib import Path
 
 import pandas as pd
@@ -28,22 +32,61 @@ OUT_FILE = DATA / "combined" / "combined_edges.csv"
 
 MAX_CONFIDENCE = 3  # only for galaxy: 1 = codex mapping only, 2 = codex + name match, 3 = all
 
-def read_edges(path: Path, name: str) -> pd.DataFrame:
+
+def pick_spellings() -> dict[str, str]:
+    """Returns {lowercase ID: spelling to use}, and prints the tools spelt in more than one way.
+
+    Of several spellings (e.g. tool and TOoL), the one with upper case wins;
+    if there are several with upper case, the most common one (in edges, over all files).
+    """
+    counts = {}    # lowercase -> Counter({spelling: edges}), over all files
+    per_file = {}  # lowercase -> {file: {spellings}}
+    for name, path in INPUTS.items():
+        df = pd.read_csv(path, usecols=["source", "target"])
+        for n in pd.concat([df["source"], df["target"]]).astype(str):
+            counts.setdefault(n.lower(), Counter())[n] += 1
+            per_file.setdefault(n.lower(), {}).setdefault(name, set()).add(n)
+
+    chosen = {low: max(c, key=lambda s: (s != low, c[s], s)) for low, c in counts.items()}
+
+    clashes = {low: c for low, c in counts.items() if len(c) > 1}
+    print(f"tools spelt in more than one way: {len(clashes)} of {len(counts)}")
+    for low, c in sorted(clashes.items()):
+        print(f"  {chosen[low]:<25} from {dict(c)}")  # edge counts per spelling
+    print()
+
+    within = {low: f for low, f in per_file.items() if any(len(s) > 1 for s in f.values())}
+    print(f"of those, spelt in more than one way within the same file: {len(within)}")
+    for low, f in sorted(within.items()):
+        print(f"  {chosen[low]:<25} " + "; ".join(f"{name}: {sorted(s)}" for name, s in f.items() if len(s) > 1))
+    print()
+
+    # Two spellings in one file are two different tools, so they cannot be matched case-insensitively
+    if within:
+        raise ValueError(
+            f"{len(within)} names are spelt in more than one way within the same file, so they are "
+            f"different tools that cannot be matched across files: {sorted(within)}. See the list above."
+        )
+    return chosen
+
+
+def read_edges(path: Path, name: str, spelling: dict[str, str]) -> pd.DataFrame:
     """One row per (source, target) with that source's workflow count."""
     df = pd.read_csv(path)
     if "confidence" in df.columns:
         df = df[df["confidence"] <= MAX_CONFIDENCE]
-    df["source"] = df["source"].str.lower()
-    df["target"] = df["target"].str.lower()
-    # lowercasing can merge rows, so sum them
+    df["source"] = df["source"].astype(str).str.lower().map(spelling)
+    df["target"] = df["target"].astype(str).str.lower().map(spelling)
+    # merging spellings can merge rows, so sum them
     return (df.groupby(["source", "target"], as_index=False)["n_workflows"].sum()
               .rename(columns={"n_workflows": f"n_wf_{name}"}))
 
 
 def main() -> None:
+    spelling = pick_spellings()
     combined = None
     for name, path in INPUTS.items():
-        edges = read_edges(path, name)
+        edges = read_edges(path, name, spelling)
         print(f"{name}: {len(edges)} edges from {path.relative_to(DATA)}")
         combined = edges if combined is None else combined.merge(edges, on=["source", "target"], how="outer")
 
