@@ -28,7 +28,7 @@ import argparse
 import csv
 import re
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -43,6 +43,7 @@ from map_galaxy_tools import (
     variants,
 )
 from nfdag.mapping import (
+    CONFIDENCE,
     CURATED_FIELDS,
     BiotoolsIndex,
     BiotoolsPair,
@@ -61,6 +62,7 @@ OUT_DIR = BIOTOOLS_DIR / "nextflow"
 SUMMARY_FILE = HERE / "data" / "download" / "nextflow" / "nextflow_workflows.csv"  # download_workflowhub_nextflow.py
 EXAMPLES = 3  # example processes / workflows per tool in the TSVs
 METHODS = ("curated", "meta", "biotools_id", "biotools_name", "biotools_url", "codex", "prefix")
+LEVELS = sorted(set(CONFIDENCE.values()))  # 1, 2, 3
 
 
 def load_codex_suites() -> dict[str, str]:
@@ -330,25 +332,48 @@ def write_biotools(
     """The same three files as map_galaxy_tools.py, with the bio.tools names in place of the ToolShed names,
     over the given workflows; suffix is added to the file names."""
     edge_workflows: dict[tuple[str, str], set[str]] = defaultdict(set)
+    edge_levels: dict[tuple[str, str], Counter[int]] = defaultdict(Counter)  # confidence -> number of workflows
     node_workflows: dict[str, set[str]] = defaultdict(set)
+    node_levels: dict[str, Counter[int]] = defaultdict(Counter)  # confidence -> number of workflows
     n_pairs = 0
     with (OUT_DIR / f"biotools_pairs{suffix}.csv").open("w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["workflow_id", "source", "target", "source_biotools_name", "target_biotools_name"])
+        writer.writerow(
+            ["workflow_id", "source", "target", "source_biotools_name", "target_biotools_name", "confidence"]
+        )
         for name, workflow_pairs in pairs.items():
             workflow_id = name.split("_v")[0]
-            for source, target in sorted({(p.source, p.target) for p in workflow_pairs}):  # once per workflow
-                writer.writerow([workflow_id, source, target, index.name_of(source), index.name_of(target)])
+            best: dict[tuple[str, str], int] = {}  # like Galaxy: once per workflow, the best of its tool pairs
+            node_best: dict[str, int] = {}  # per node, the best level of its own mapping in this workflow
+            for p in workflow_pairs:
+                best[(p.source, p.target)] = min(p.confidence, best.get((p.source, p.target), p.confidence))
+                for biotools_id, level in ((p.source, p.source_confidence), (p.target, p.target_confidence)):
+                    node_best[biotools_id] = min(level, node_best.get(biotools_id, level))
+            for biotools_id, level in node_best.items():
+                node_levels[biotools_id][level] += 1
+            for (source, target), confidence in sorted(best.items()):
+                writer.writerow([workflow_id, source, target, index.name_of(source), index.name_of(target), confidence])
                 n_pairs += 1
                 edge_workflows[(source, target)].add(workflow_id)
+                edge_levels[(source, target)][confidence] += 1
                 node_workflows[source].add(workflow_id)
                 node_workflows[target].add(workflow_id)
     with (OUT_DIR / f"biotools_edges{suffix}.csv").open("w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(
-            ["source", "target", "n_workflows", "workflow_ids", "source_biotools_name", "target_biotools_name"]
+            [
+                "source",
+                "target",
+                "n_workflows",
+                "workflow_ids",
+                "source_biotools_name",
+                "target_biotools_name",
+                "confidence",  # the best over the workflows
+                *(f"confidence{level}" for level in LEVELS),  # workflows per level
+            ]
         )
         for (source, target), ids in sorted(edge_workflows.items(), key=lambda kv: (-len(kv[1]), kv[0])):
+            levels = edge_levels[(source, target)]
             writer.writerow(
                 [
                     source,
@@ -357,17 +382,45 @@ def write_biotools(
                     ";".join(sorted(ids, key=int)),
                     index.name_of(source),
                     index.name_of(target),
+                    min(levels),
+                    *(levels[level] for level in LEVELS),
                 ]
             )
     with (OUT_DIR / f"biotools_nodes{suffix}.csv").open("w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["biotoolsID", "biotools_name", "n_workflows", "has_publication"])
+        writer.writerow(
+            [
+                "biotoolsID",
+                "biotools_name",
+                "n_workflows",
+                "has_publication",
+                "confidence",  # the best over the workflows
+                *(f"confidence{level}" for level in LEVELS),  # workflows per level
+            ]
+        )
         for biotools_id, ids in sorted(node_workflows.items(), key=lambda kv: (-len(kv[1]), kv[0])):
-            writer.writerow([biotools_id, index.name_of(biotools_id), len(ids), str(biotools_id in with_paper).lower()])
+            levels = node_levels[biotools_id]
+            writer.writerow(
+                [
+                    biotools_id,
+                    index.name_of(biotools_id),
+                    len(ids),
+                    str(biotools_id in with_paper).lower(),
+                    min(levels),
+                    *(levels[level] for level in LEVELS),
+                ]
+            )
+    edges_by = Counter(min(levels) for levels in edge_levels.values())
+    nodes_by = Counter(min(node_levels[n]) for n in node_workflows)
     print(
         f"Wrote {OUT_DIR}/biotools_*{suffix}.csv: {len(pairs)} workflows, {n_pairs} pairs, "
-        f"{len(edge_workflows)} edges, {len(node_workflows)} bio.tools nodes"
+        f"{len(edge_workflows)} edges (confidence {_by_level(edges_by)}), "
+        f"{len(node_workflows)} bio.tools nodes (confidence {_by_level(nodes_by)})"
     )
+
+
+def _by_level(counts: Counter[int]) -> str:
+    return ", ".join(f"{level}: {counts[level]}" for level in LEVELS)
 
 
 def main() -> None:
