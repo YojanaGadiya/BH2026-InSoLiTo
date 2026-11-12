@@ -14,6 +14,8 @@ multiqc	map	multiqc	seed: example of a map row (also found automatically)
 gunzip	drop		decompression (nf-core gunzip module)
 tar	drop		decompression (nf-core gunzip module)
 untar	drop		unpacking archives (nf-core untar module)
+pigz_compress	drop		compression
+pigz_uncompress	drop		decompression
 cat	drop		Linux cat (nf-core cat/fastq, cat/cat); concatenating files is not a tool step
 custom	drop		nf-core custom script, mainly formatting some files as input in next tool
 output_documentation	drop		documentation is not needed

@@ -281,6 +281,7 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 438,bwa,samtools,BWA,SAMtools
 438,fastqc,multiqc,FastQC,MultiQC
 438,graphmap,samtools,graphmap,SAMtools
+438,htseq,samtools,HTSeq,SAMtools
 438,minimap2,samtools,Minimap2,SAMtools
 438,nanofilt,Graphmap2,Nanofilt,Graphmap2
 438,nanofilt,bwa,Nanofilt,BWA
@@ -288,6 +289,7 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 438,nanopolish,Nanocompore,nanopolish,Nanocompore
 438,nanopolish,nanopolishcomp,nanopolish,NanopolishComp
 438,nanopolishcomp,Nanocompore,NanopolishComp,Nanocompore
+438,samtools,htseq,SAMtools,HTSeq
 438,samtools,nanoplot,SAMtools,NanoPlot
 442,bwa,gatk,BWA,GATK
 442,gatk,samtools,GATK,SAMtools
@@ -366,16 +368,21 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 462,GTDB-Tk,iqtree,GTDB-Tk,iqtree
 462,GTDB-Tk,phylo,GTDB-Tk,Phylo
 462,SanntiS,annotate,SanntiS,annotate
+462,amrfinderplus,annotate,AMRFinderPlus,annotate
+462,antidefensefinder,annotate,DefenseFinder,annotate
 462,antismash,annotate,antiSMASH,annotate
 462,bracken,kraken2,Bracken,kraken2
 462,dbcan,annotate,dbCAN,annotate
 462,gunc,prokka,GUNC,Prokka
 462,kraken2,bracken,kraken2,Bracken
+462,mmseqs,interproscan_ebi,MMseqs,InterProScan (EBI)
 462,mmseqs,seqtk,MMseqs,seqtk
 462,panaroo,CORE,Panaroo,CORE
 462,prokka,CRISPRCasFinder,Prokka,CRISPRCasFinder
 462,prokka,SanntiS,Prokka,SanntiS
+462,prokka,amrfinderplus,Prokka,AMRFinderPlus
 462,prokka,annotate,Prokka,annotate
+462,prokka,antidefensefinder,Prokka,DefenseFinder
 462,prokka,antismash,Prokka,antiSMASH
 462,prokka,dbcan,Prokka,dbCAN
 462,prokka,mash,Prokka,Mash
@@ -544,6 +551,7 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 874,Porechop,nanofilt,Porechop,Nanofilt
 874,bamtools,bedtools,BamTools,BEDTools
 874,bamtools,deeptools,BamTools,DeepTools
+874,bamtools,macs,BamTools,MACS
 874,bamtools,phantompeakqualtools,BamTools,phantompeakqualtools
 874,bamtools,picard_tools,BamTools,Picard
 874,bamtools,samtools,BamTools,SAMtools
@@ -612,6 +620,10 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 874,kallisto,pizzly,kallisto,Pizzly
 874,lancet,gatk,Lancet,GATK
 874,lancet,tabix,Lancet,tabix
+874,macs,bedtools,MACS,BEDTools
+874,macs,homer,MACS,homer
+874,macs,plot,MACS,plot
+874,macs,subread,MACS,Subread
 874,manta,bcftools,manta,BCFtools
 874,minimap2,samtools,Minimap2,SAMtools
 874,nanofilt,minimap2,Nanofilt,Minimap2
@@ -641,6 +653,7 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 874,samtools,gbrs,SAMtools,GBRS
 874,samtools,gridss,SAMtools,GRIDSS
 874,samtools,lancet,SAMtools,Lancet
+874,samtools,macs,SAMtools,MACS
 874,samtools,manta,SAMtools,manta
 874,samtools,multiqc,SAMtools,MultiQC
 874,samtools,nanosv,SAMtools,nanosv
@@ -672,6 +685,10 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 874,vep,snpsift,Variant Effect Predictor (VEP),SnpSift
 874,vep,tabix,Variant Effect Predictor (VEP),tabix
 884,GTDB-Tk,propagate,GTDB-Tk,PropagAtE
+884,MetaBAT_2,binette,MetaBAT 2,Binette
+884,MetaBAT_2,bwa,MetaBAT 2,BWA
+884,MetaBAT_2,coverage,MetaBAT 2,CoVerage
+884,MetaBAT_2,eukcc,MetaBAT 2,EukCC
 884,bat,propagate,BAT,PropagAtE
 884,binette,detect,Binette,DETECT
 884,bwa,samtools,BWA,SAMtools
@@ -685,6 +702,7 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 884,drep,busco,dRep,BUSCO
 884,drep,coverage,dRep,CoVerage
 884,drep,propagate,dRep,PropagAtE
+884,fastp,MetaBAT_2,fastp,MetaBAT 2
 884,fastp,binette,fastp,Binette
 884,fastp,bwa,fastp,BWA
 884,fastp,concoct,fastp,CONCOCT
@@ -692,12 +710,16 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 884,fastp,eukcc,fastp,EukCC
 884,fastp,fastqc,fastp,FastQC
 884,gunc,checkm2,GUNC,CheckM2
+884,maxbin,binette,MaxBin,Binette
+884,maxbin,coverage,MaxBin,CoVerage
+884,samtools,MetaBAT_2,SAMtools,MetaBAT 2
 884,samtools,binette,SAMtools,Binette
 884,samtools,bwa,SAMtools,BWA
 884,samtools,concoct,SAMtools,CONCOCT
 884,samtools,coverage,SAMtools,CoVerage
 884,samtools,eukcc,SAMtools,EukCC
 884,samtools,fastqc,SAMtools,FastQC
+884,seqkit,MetaBAT_2,seqkit,MetaBAT 2
 884,seqkit,binette,seqkit,Binette
 884,seqkit,bwa,seqkit,BWA
 884,seqkit,concoct,seqkit,CONCOCT
@@ -871,6 +893,19 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 1058,multiqc,meryl,MultiQC,Meryl
 1058,multiqc,samtools,MultiQC,SAMtools
 1058,multiqc,seqkit,MultiQC,seqkit
+1058,ncbi_fcs,biopython,NCBI fcs,Biopython
+1058,ncbi_fcs,busco,NCBI fcs,BUSCO
+1058,ncbi_fcs,bwa,NCBI fcs,BWA
+1058,ncbi_fcs,fastp,NCBI fcs,fastp
+1058,ncbi_fcs,fastqc,NCBI fcs,FastQC
+1058,ncbi_fcs,gffread,NCBI fcs,gffread
+1058,ncbi_fcs,kraken2,NCBI fcs,kraken2
+1058,ncbi_fcs,ltr-finder-p,NCBI fcs,LTR-FINDER-P
+1058,ncbi_fcs,ltr_retriever,NCBI fcs,LTR_retriever
+1058,ncbi_fcs,merqury,NCBI fcs,Merqury
+1058,ncbi_fcs,meryl,NCBI fcs,Meryl
+1058,ncbi_fcs,samtools,NCBI fcs,SAMtools
+1058,ncbi_fcs,seqkit,NCBI fcs,seqkit
 1058,samtools,gffread,SAMtools,gffread
 1058,samtools,samblaster,SAMtools,SAMBLASTER
 1058,seqkit,FCS,seqkit,Frequency Conservation Score  (FCS)
@@ -936,6 +971,7 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 1263,Porechop,plassembler,Porechop,plassembler
 1263,Porechop,trycycler,Porechop,Trycycler
 1263,Porechop,unicycler,Porechop,Unicycler
+1263,bakta,amrfinderplus,Bakta,AMRFinderPlus
 1263,bakta,multiqc,Bakta,MultiQC
 1263,busco,multiqc,BUSCO,MultiQC
 1263,kraken2,multiqc,kraken2,MultiQC
@@ -1174,6 +1210,7 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 1960,NextPolish,minimap2,NextPolish,Minimap2
 1960,NextPolish,mmseqs,NextPolish,MMseqs
 1960,NextPolish,strobealign,NextPolish,strobealign
+1960,antismash,BiG-SCAPE,antiSMASH,BiG-SCAPE
 1960,bakta,antismash,Bakta,antiSMASH
 1960,barrnap,bedtools,Barrnap,BEDTools
 1960,minimap2,samtools,Minimap2,SAMtools
@@ -1204,6 +1241,10 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 2053,Flye,multiqc,Flye,MultiQC
 2053,GTDB-Tk,genomes,GTDB-Tk,genomes
 2053,GTDB-Tk,multiqc,GTDB-Tk,MultiQC
+2053,MetaBAT_2,binette,MetaBAT 2,Binette
+2053,MetaBAT_2,checkm2,MetaBAT 2,CheckM2
+2053,MetaBAT_2,maxbin,MetaBAT 2,MaxBin
+2053,MetaBAT_2,multiqc,MetaBAT 2,MultiQC
 2053,assign,plot,ASSIGN,plot
 2053,barrnap,multiqc,Barrnap,MultiQC
 2053,binette,drep,Binette,dRep
@@ -1214,12 +1255,14 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 2053,concoct,checkm2,CONCOCT,CheckM2
 2053,concoct,multiqc,CONCOCT,MultiQC
 2053,cutadapt,Flye,Cutadapt,Flye
+2053,cutadapt,MetaBAT_2,Cutadapt,MetaBAT 2
 2053,cutadapt,barrnap,Cutadapt,Barrnap
 2053,cutadapt,binette,Cutadapt,Binette
 2053,cutadapt,concoct,Cutadapt,CONCOCT
 2053,cutadapt,fastqc,Cutadapt,FastQC
 2053,cutadapt,hifiasm-meta,Cutadapt,Hifiasm-meta
 2053,cutadapt,kaiju,Cutadapt,Kaiju
+2053,cutadapt,maxbin,Cutadapt,MaxBin
 2053,cutadapt,megahit,Cutadapt,MEGAHIT
 2053,cutadapt,metamdbg,Cutadapt,metaMDBG
 2053,cutadapt,minimap2,Cutadapt,Minimap2
@@ -1240,6 +1283,9 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 2053,hifiasm-meta,multiqc,Hifiasm-meta,MultiQC
 2053,kaiju,multiqc,Kaiju,MultiQC
 2053,kaiju,plot,Kaiju,plot
+2053,maxbin,binette,MaxBin,Binette
+2053,maxbin,checkm2,MaxBin,CheckM2
+2053,maxbin,multiqc,MaxBin,MultiQC
 2053,megahit,multiqc,MEGAHIT,MultiQC
 2053,metamdbg,multiqc,metaMDBG,MultiQC
 2053,metaspades,spades,metaspades,SPAdes
@@ -1247,6 +1293,7 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 2053,prodigal,multiqc,Prodigal,MultiQC
 2053,quast,multiqc,QUAST,MultiQC
 2053,samtools,Flye,SAMtools,Flye
+2053,samtools,MetaBAT_2,SAMtools,MetaBAT 2
 2053,samtools,assign,SAMtools,ASSIGN
 2053,samtools,barrnap,SAMtools,Barrnap
 2053,samtools,binette,SAMtools,Binette
@@ -1256,6 +1303,7 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 2053,samtools,genomes,SAMtools,genomes
 2053,samtools,hifiasm-meta,SAMtools,Hifiasm-meta
 2053,samtools,kaiju,SAMtools,Kaiju
+2053,samtools,maxbin,SAMtools,MaxBin
 2053,samtools,megahit,SAMtools,MEGAHIT
 2053,samtools,metamdbg,SAMtools,metaMDBG
 2053,samtools,minimap2,SAMtools,Minimap2
@@ -1263,12 +1311,14 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 2053,samtools,prodigal,SAMtools,Prodigal
 2053,samtools,trnascan-se,SAMtools,Trnascan-SE
 2053,sickle,Flye,sickle,Flye
+2053,sickle,MetaBAT_2,sickle,MetaBAT 2
 2053,sickle,barrnap,sickle,Barrnap
 2053,sickle,binette,sickle,Binette
 2053,sickle,concoct,sickle,CONCOCT
 2053,sickle,fastqc,sickle,FastQC
 2053,sickle,hifiasm-meta,sickle,Hifiasm-meta
 2053,sickle,kaiju,sickle,Kaiju
+2053,sickle,maxbin,sickle,MaxBin
 2053,sickle,megahit,sickle,MEGAHIT
 2053,sickle,metamdbg,sickle,metaMDBG
 2053,sickle,minimap2,sickle,Minimap2
@@ -1294,9 +1344,11 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 2054,qiime,omicflow,QIIME,OmicFlow
 2105,bedtools,bwa,BEDTools,BWA
 2105,bedtools,gem,BEDTools,GEM
+2105,bedtools,macs,BEDTools,MACS
 2105,bedtools,manorm,BEDTools,MAnorm
 2105,bedtools,samtools,BEDTools,SAMtools
 2105,bedtools,sicer,BEDTools,SICER
+2105,bwa,macs,BWA,MACS
 2105,bwa,picard_tools,BWA,Picard
 2105,bwa,samtools,BWA,SAMtools
 2105,chipseeker,multiqc,ChIPseeker,MultiQC
@@ -1305,6 +1357,8 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 2105,fastqc,multiqc,FastQC,MultiQC
 2105,gffutils,bed,GFFutils,BED
 2105,khmer,gem,khmer,GEM
+2105,khmer,macs,khmer,MACS
+2105,macs,bedtools,MACS,BEDTools
 2105,phantompeakqualtools,multiqc,phantompeakqualtools,MultiQC
 2105,picard_tools,biopython,Picard,Biopython
 2105,picard_tools,bwa,Picard,BWA
@@ -1313,6 +1367,7 @@ workflow_id,source,target,source_biotools_name,target_biotools_name
 2105,preseq,multiqc,preseq,MultiQC
 2105,samtools,bedtools,SAMtools,BEDTools
 2105,samtools,gem,SAMtools,GEM
+2105,samtools,macs,SAMtools,MACS
 2105,samtools,manorm,SAMtools,MAnorm
 2105,samtools,multiqc,SAMtools,MultiQC
 2105,samtools,phantompeakqualtools,SAMtools,phantompeakqualtools

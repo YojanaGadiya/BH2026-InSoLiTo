@@ -45,6 +45,7 @@ windowmasker,WindowMasker,4,false
 GTDB-Tk,GTDB-Tk,3,true
 MAFFT,MAFFT,3,true
 Porechop,Porechop,3,false
+amrfinderplus,AMRFinderPlus,3,false
 antismash,antiSMASH,3,true
 assign,ASSIGN,3,true
 deepvariant,DeepVariant,3,true
@@ -61,6 +62,7 @@ krona,Krona,3,true
 manta,manta,3,true
 merqury,Merqury,3,true
 mosdepth,mosdepth,3,true
+ncbi_fcs,NCBI fcs,3,true
 prodigal,Prodigal,3,true
 qiime,QIIME,3,true
 sambamba,Sambamba,3,true
@@ -71,6 +73,7 @@ AGAT,AGAT,2,true
 CAT,Cosolvent Analysis Toolkit (CAT),2,true
 FCS,Frequency Conservation Score  (FCS),2,true
 IPA,IPA,2,true
+MetaBAT_2,MetaBAT 2,2,true
 NextPolish,NextPolish,2,true
 OrthoFinder,OrthoFinder,2,true
 Racon,Racon,2,true
@@ -107,17 +110,19 @@ gffutils,GFFutils,2,false
 gridss,GRIDSS,2,true
 hmmer3,HMMER3,2,true
 htslib,HTSlib,2,true
+interproscan_ebi,InterProScan (EBI),2,true
 iqtree,iqtree,2,true
 ivar,iVar,2,true
 kallisto,kallisto,2,true
+macs,MACS,2,true
 mapseq,MAPseq,2,true
 mash,Mash,2,true
 matplotlib,Matplotlib,2,false
+maxbin,MaxBin,2,true
 minia,Minia,2,true
 miniprot,miniprot,2,true
 mummer,MUMmer,2,true
 nanofilt,Nanofilt,2,true
-ncbi_fcs,NCBI fcs,2,true
 numpy,NumPy,2,false
 omicflow,OmicFlow,2,false
 pangolin,Pangolin,2,true
@@ -141,6 +146,7 @@ vcftools,VCFtools,2,true
 ABRicate,ABRicate,1,false
 AnnotSV,AnnotSV,1,true
 Arriba,Arriba,1,false
+BiG-SCAPE,BiG-SCAPE,1,true
 BlobToolKit,BlobToolKit,1,true
 CORE,CORE,1,true
 CRISPRCasFinder,CRISPRCasFinder,1,true
@@ -163,8 +169,8 @@ abyss,ABySS,1,true
 adapterremoval,AdapterRemoval,1,false
 ale,ALE,1,true
 alphatims,AlphaTims,1,true
-amrfinderplus,AMRFinderPlus,1,false
 andersen-lab_ivar,iVar,1,true
+antidefensefinder,DefenseFinder,1,true
 aragorn,aragorn,1,true
 ascat,ASCAT,1,true
 bandage,Bandage,1,true
@@ -248,10 +254,10 @@ hifiadapterfilt,HiFiAdapterFilt,1,true
 hifiasm,Hifiasm,1,true
 hifiasm-meta,Hifiasm-meta,1,false
 homer,homer,1,false
+htseq,HTSeq,1,true
 igvtools,IGVtools,1,true
 infernal,Infernal,1,true
 integron_finder,Integron Finder,1,true
-interproscan_ebi,InterProScan (EBI),1,true
 isescan,ISEScan,1,true
 jcvi,JCVI,1,true
 jvarkit,Jvarkit,1,true

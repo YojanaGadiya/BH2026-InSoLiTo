@@ -72,6 +72,7 @@ Flye,minimap2,2,140;2171,Flye,Minimap2
 Flye,multiqc,2,2053;2171,Flye,MultiQC
 IPA,busco,2,340;560,IPA,BUSCO
 IPA,quast,2,340;560,IPA,QUAST
+MetaBAT_2,binette,2,884;2053,MetaBAT 2,Binette
 Porechop,Flye,2,140;1263,Porechop,Flye
 ThermoRawFileParser,comet,2,837;2110,ThermoRawFileParser,Comet
 assign,bedtools,2,668;813,ASSIGN,BEDTools
@@ -123,7 +124,9 @@ kraken2,fastqc,2,1950;2197,kraken2,FastQC
 kraken2,spades,2,19;2244,kraken2,SPAdes
 krona,multiqc,2,2037;2177,Krona,MultiQC
 lofreq,tabix,2,105;664,lofreq,tabix
+macs,bedtools,2,874;2105,MACS,BEDTools
 manta,bcftools,2,874;1030,manta,BCFtools
+maxbin,binette,2,884;2053,MaxBin,Binette
 megahit,bwa,2,416;2246,MEGAHIT,BWA
 minimap2,Racon,2,140;2171,Minimap2,Racon
 miniprot,bedtools,2,668;813,miniprot,BEDTools
@@ -143,6 +146,7 @@ prodigal,multiqc,2,452;2053,Prodigal,MultiQC
 prokka,samtools,2,454;462,Prokka,SAMtools
 sambamba,gatk,2,417;419,Sambamba,GATK
 sambamba,samtools,2,417;419,Sambamba,SAMtools
+samtools,MetaBAT_2,2,884;2053,SAMtools,MetaBAT 2
 samtools,bedgraphtobigwig,2,668;813,SAMtools,bedGraphToBigWig
 samtools,bedtools_bamtobed,2,668;813,SAMtools,bedtools_bamtobed
 samtools,binette,2,884;2053,SAMtools,Binette
@@ -157,6 +161,7 @@ samtools,ivar,2,19;417,SAMtools,iVar
 samtools,jellyfish,2,340;560,SAMtools,Jellyfish
 samtools,kaiju,2,2037;2053,SAMtools,Kaiju
 samtools,kraken2,2,2037;2197,SAMtools,kraken2
+samtools,macs,2,874;2105,SAMtools,MACS
 samtools,megahit,2,2053;2171,SAMtools,MEGAHIT
 samtools,mosdepth,2,1030;1864,SAMtools,mosdepth
 samtools,nanoplot,2,438;2160,SAMtools,NanoPlot
@@ -239,6 +244,12 @@ MAFFT,gblocks,1,737,MAFFT,gblocks
 MAFFT,hh-suite,1,1954,MAFFT,HH-suite
 MAFFT,hmmer3,1,1954,MAFFT,HMMER3
 MAFFT,multiqc,1,1954,MAFFT,MultiQC
+MetaBAT_2,bwa,1,884,MetaBAT 2,BWA
+MetaBAT_2,checkm2,1,2053,MetaBAT 2,CheckM2
+MetaBAT_2,coverage,1,884,MetaBAT 2,CoVerage
+MetaBAT_2,eukcc,1,884,MetaBAT 2,EukCC
+MetaBAT_2,maxbin,1,2053,MetaBAT 2,MaxBin
+MetaBAT_2,multiqc,1,2053,MetaBAT 2,MultiQC
 NanoCaller,bcftools,1,1865,NanoCaller,BCFtools
 NextPolish,bakta,1,1960,NextPolish,Bakta
 NextPolish,checkm2,1,1960,NextPolish,CheckM2
@@ -301,19 +312,24 @@ adapterremoval,spades,1,1787,AdapterRemoval,SPAdes
 ale,multiqc,1,2217,ALE,MultiQC
 ale,pandas,1,2217,ALE,Pandas
 alphatims,comet,1,2110,AlphaTims,Comet
+amrfinderplus,annotate,1,462,AMRFinderPlus,annotate
 amrfinderplus,multiqc,1,452,AMRFinderPlus,MultiQC
 andersen-lab_ivar,biostrings,1,2244,iVar,Biostrings
 andersen-lab_ivar,multiqc,1,2244,iVar,MultiQC
+antidefensefinder,annotate,1,462,DefenseFinder,annotate
+antismash,BiG-SCAPE,1,1960,antiSMASH,BiG-SCAPE
 antismash,annotate,1,462,antiSMASH,annotate
 antismash,multiqc,1,452,antiSMASH,MultiQC
 aragorn,biopython,1,452,aragorn,Biopython
 aragorn,multiqc,1,452,aragorn,MultiQC
 ascat,multiqc,1,1030,ASCAT,MultiQC
 assign,plot,1,2053,ASSIGN,plot
+bakta,amrfinderplus,1,1263,Bakta,AMRFinderPlus
 bakta,antismash,1,1960,Bakta,antiSMASH
 bakta,multiqc,1,1263,Bakta,MultiQC
 bamtools,bedtools,1,874,BamTools,BEDTools
 bamtools,deeptools,1,874,BamTools,DeepTools
+bamtools,macs,1,874,BamTools,MACS
 bamtools,phantompeakqualtools,1,874,BamTools,phantompeakqualtools
 bamtools,picard_tools,1,874,BamTools,Picard
 bamtools,prinseq,1,192,BamTools,PRINSEQ
@@ -364,6 +380,7 @@ bedtools,bwa,1,2105,BEDTools,BWA
 bedtools,exomedepth,1,1864,BEDTools,ExomeDepth
 bedtools,gem,1,2105,BEDTools,GEM
 bedtools,lancet,1,874,BEDTools,Lancet
+bedtools,macs,1,2105,BEDTools,MACS
 bedtools,manorm,1,2105,BEDTools,MAnorm
 bedtools,pangolin,1,192,BEDTools,Pangolin
 bedtools,picard_tools,1,19,BEDTools,Picard
@@ -431,6 +448,7 @@ busco,tiara-metagenomics,1,2246,BUSCO,Tiara
 bwa,Sentieon_DNASeq,1,1030,BWA,Sentieon DNASeq
 bwa,biopython,1,192,BWA,Biopython
 bwa,gridss,1,383,BWA,GRIDSS
+bwa,macs,1,2105,BWA,MACS
 bwa,manta,1,383,BWA,manta
 bwa,multiqc,1,2171,BWA,MultiQC
 bwa,sambamba,1,106,BWA,Sambamba
@@ -474,6 +492,7 @@ consensus,chipseeker,1,2105,Consensus,ChIPseeker
 cosmic,snpsift,1,874,COSMIC,SnpSift
 coverm,pandas,1,2239,CoverM,Pandas
 cutadapt,Flye,1,2053,Cutadapt,Flye
+cutadapt,MetaBAT_2,1,2053,Cutadapt,MetaBAT 2
 cutadapt,barrnap,1,2053,Cutadapt,Barrnap
 cutadapt,bbmap,1,2197,Cutadapt,BBMap
 cutadapt,binette,1,2053,Cutadapt,Binette
@@ -486,6 +505,7 @@ cutadapt,flash,1,2054,Cutadapt,FLASH
 cutadapt,hifiasm-meta,1,2053,Cutadapt,Hifiasm-meta
 cutadapt,jellyfish,1,1950,Cutadapt,Jellyfish
 cutadapt,kaiju,1,2053,Cutadapt,Kaiju
+cutadapt,maxbin,1,2053,Cutadapt,MaxBin
 cutadapt,megahit,1,2053,Cutadapt,MEGAHIT
 cutadapt,metamdbg,1,2053,Cutadapt,metaMDBG
 cutadapt,pear,1,2054,Cutadapt,PEAR
@@ -558,6 +578,7 @@ famsa,hmmer3,1,1954,FAMSA,HMMER3
 famsa,multiqc,1,1954,FAMSA,MultiQC
 fastk,numpy,1,2246,FASTK,NumPy
 fastp,FQStat,1,2246,fastp,FQStat
+fastp,MetaBAT_2,1,884,fastp,MetaBAT 2
 fastp,PIMENTo,1,2177,fastp,PIMENTo
 fastp,Sentieon_DNASeq,1,1030,fastp,Sentieon DNASeq
 fastp,abyss,1,2246,fastp,ABySS
@@ -693,6 +714,7 @@ hmmer3,find,1,1954,HMMER3,FIND
 hmmer3,hh-suite,1,1954,HMMER3,HH-suite
 homer,annotate,1,874,homer,annotate
 homer,plot,1,874,homer,plot
+htseq,samtools,1,438,HTSeq,SAMtools
 htslib,ensemblvep,1,1865,HTSlib,BioConductor wrapper for Ensembl VEP
 htslib,multiqc,1,452,HTSlib,MultiQC
 htslib,tabix,1,1865,HTSlib,tabix
@@ -717,6 +739,7 @@ kaiju,plot,1,2053,Kaiju,plot
 kallisto,pizzly,1,874,kallisto,Pizzly
 kegg,multiqc,1,1735,Kyoto encyclopedia of genes and genomes (KEGG),MultiQC
 khmer,gem,1,2105,khmer,GEM
+khmer,macs,1,2105,khmer,MACS
 kraken2,Recentrifuge,1,1950,kraken2,Recentrifuge
 kraken2,andersen-lab_ivar,1,2244,kraken2,iVar
 kraken2,biostrings,1,2244,kraken2,Biostrings
@@ -733,6 +756,9 @@ lancet,gatk,1,874,Lancet,GATK
 lancet,tabix,1,874,Lancet,tabix
 lofreq,bcftools,1,417,lofreq,BCFtools
 ltr-finder-p,ltr_retriever,1,1058,LTR-FINDER-P,LTR_retriever
+macs,homer,1,874,MACS,homer
+macs,plot,1,874,MACS,plot
+macs,subread,1,874,MACS,Subread
 macsyfinder,biopython,1,452,MacSyFinder,Biopython
 macsyfinder,multiqc,1,452,MacSyFinder,MultiQC
 manta,bedops,1,383,manta,Bedops
@@ -745,6 +771,9 @@ mapseq,multiqc,1,2177,MAPseq,MultiQC
 masurca,bwa,1,2246,MaSuRCA,BWA
 masurca,fastk,1,2246,MaSuRCA,FASTK
 matplotlib,pandas,1,2239,Matplotlib,Pandas
+maxbin,checkm2,1,2053,MaxBin,CheckM2
+maxbin,coverage,1,884,MaxBin,CoVerage
+maxbin,multiqc,1,2053,MaxBin,MultiQC
 medaka,ABRicate,1,1263,Medaka,ABRicate
 medaka,NextPolish,1,140,Medaka,NextPolish
 medaka,bakta,1,1263,Medaka,Bakta
@@ -791,6 +820,7 @@ minimap2,seqtk,1,683,Minimap2,seqtk
 minimap2,sniffles,1,1865,Minimap2,Sniffles
 minimap2,vg,1,19,Minimap2,vg
 minimod,bedgraphtobigwig,1,1888,minimod,bedGraphToBigWig
+mmseqs,interproscan_ebi,1,462,MMseqs,InterProScan (EBI)
 mmseqs,kallisto,1,454,MMseqs,kallisto
 mmseqs,multiqc,1,1954,MMseqs,MultiQC
 mmseqs,seqtk,1,462,MMseqs,seqtk
@@ -817,7 +847,20 @@ nanoplot,multiqc,1,1263,NanoPlot,MultiQC
 nanopolish,Nanocompore,1,438,nanopolish,Nanocompore
 nanopolish,nanopolishcomp,1,438,nanopolish,NanopolishComp
 nanopolishcomp,Nanocompore,1,438,NanopolishComp,Nanocompore
+ncbi_fcs,biopython,1,1058,NCBI fcs,Biopython
+ncbi_fcs,busco,1,1058,NCBI fcs,BUSCO
+ncbi_fcs,bwa,1,1058,NCBI fcs,BWA
+ncbi_fcs,fastp,1,1058,NCBI fcs,fastp
+ncbi_fcs,fastqc,1,1058,NCBI fcs,FastQC
+ncbi_fcs,gffread,1,1058,NCBI fcs,gffread
+ncbi_fcs,kraken2,1,1058,NCBI fcs,kraken2
+ncbi_fcs,ltr-finder-p,1,1058,NCBI fcs,LTR-FINDER-P
+ncbi_fcs,ltr_retriever,1,1058,NCBI fcs,LTR_retriever
+ncbi_fcs,merqury,1,1058,NCBI fcs,Merqury
+ncbi_fcs,meryl,1,1058,NCBI fcs,Meryl
 ncbi_fcs,pandas,1,2239,NCBI fcs,Pandas
+ncbi_fcs,samtools,1,1058,NCBI fcs,SAMtools
+ncbi_fcs,seqkit,1,1058,NCBI fcs,seqkit
 omamer,omark,1,1330,OMAmer,OMArk
 omark,plot,1,1330,OMArk,plot
 panaroo,CORE,1,462,Panaroo,CORE
@@ -852,7 +895,9 @@ prodigal,OrthoFinder,1,416,Prodigal,OrthoFinder
 prodigal,biopython,1,452,Prodigal,Biopython
 prokka,CRISPRCasFinder,1,462,Prokka,CRISPRCasFinder
 prokka,SanntiS,1,462,Prokka,SanntiS
+prokka,amrfinderplus,1,462,Prokka,AMRFinderPlus
 prokka,annotate,1,462,Prokka,annotate
+prokka,antidefensefinder,1,462,Prokka,DefenseFinder
 prokka,antismash,1,462,Prokka,antiSMASH
 prokka,dbcan,1,462,Prokka,dbCAN
 prokka,mash,1,462,Prokka,Mash
@@ -947,10 +992,12 @@ samtools,genomes,1,2053,SAMtools,genomes
 samtools,gffread,1,1058,SAMtools,gffread
 samtools,hifiasm,1,1106,SAMtools,Hifiasm
 samtools,hifiasm-meta,1,2053,SAMtools,Hifiasm-meta
+samtools,htseq,1,438,SAMtools,HTSeq
 samtools,igvtools,1,192,SAMtools,IGVtools
 samtools,lancet,1,874,SAMtools,Lancet
 samtools,manorm,1,2105,SAMtools,MAnorm
 samtools,mash,1,1106,SAMtools,Mash
+samtools,maxbin,1,2053,SAMtools,MaxBin
 samtools,medaka,1,683,SAMtools,Medaka
 samtools,meryl,1,1106,SAMtools,Meryl
 samtools,metamdbg,1,2053,SAMtools,metaMDBG
@@ -986,6 +1033,7 @@ samtools,vcftools,1,1030,SAMtools,VCFtools
 samtools,yahs,1,813,SAMtools,YaHS
 sctransform,detect,1,2251,sctransform,DETECT
 seqkit,FCS,1,1058,seqkit,Frequency Conservation Score  (FCS)
+seqkit,MetaBAT_2,1,884,seqkit,MetaBAT 2
 seqkit,barrnap,1,1960,seqkit,Barrnap
 seqkit,bbmap,1,2197,seqkit,BBMap
 seqkit,binette,1,884,seqkit,Binette
@@ -1028,12 +1076,14 @@ seqtk,multiqc,1,2177,seqtk,MultiQC
 seqtk,qiime,1,156,seqtk,QIIME
 seqtk,rattle,1,683,seqtk,RATTLE
 sickle,Flye,1,2053,sickle,Flye
+sickle,MetaBAT_2,1,2053,sickle,MetaBAT 2
 sickle,barrnap,1,2053,sickle,Barrnap
 sickle,binette,1,2053,sickle,Binette
 sickle,concoct,1,2053,sickle,CONCOCT
 sickle,fastqc,1,2053,sickle,FastQC
 sickle,hifiasm-meta,1,2053,sickle,Hifiasm-meta
 sickle,kaiju,1,2053,sickle,Kaiju
+sickle,maxbin,1,2053,sickle,MaxBin
 sickle,megahit,1,2053,sickle,MEGAHIT
 sickle,metamdbg,1,2053,sickle,metaMDBG
 sickle,minimap2,1,2053,sickle,Minimap2
