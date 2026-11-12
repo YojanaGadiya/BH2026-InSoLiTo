@@ -10,6 +10,7 @@ from typing import Final
 
 from nfdag.steps import read_excluded
 
+from . import DAG_DIR, DOWNLOAD_DIR
 from . import __doc__ as package_doc
 from .build import NoSnakefileError, build
 from .check import Check, compare
@@ -56,7 +57,10 @@ def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description=package_doc, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--only", action="append", help="only this workflow folder, e.g. owner__repo (repeatable)")
     parser.add_argument("--verbose", action="store_true", help="print the warnings of each workflow")
-    parser.add_argument("--data-dir", type=Path, default=HERE / "data", help="default: data/ next to the scripts")
+    parser.add_argument(
+        "--download-dir", type=Path, default=DOWNLOAD_DIR, help="default: workflows/data/snakemake/download"
+    )
+    parser.add_argument("--out-dir", type=Path, default=DAG_DIR, help="default: workflows/data/snakemake/dags")
     parser.add_argument(
         "--exclude-file",
         type=Path,
@@ -65,7 +69,7 @@ def main(argv: list[str] | None = None) -> None:
     )
     args = parser.parse_args(argv)
 
-    download, out_dir = args.data_dir / "download", args.data_dir / "dags"
+    download, out_dir = args.download_dir, args.out_dir
     excluded = read_excluded(args.exclude_file)
     if not args.only and out_dir.exists():
         shutil.rmtree(out_dir)  # no DAGs left over from workflows no longer downloaded

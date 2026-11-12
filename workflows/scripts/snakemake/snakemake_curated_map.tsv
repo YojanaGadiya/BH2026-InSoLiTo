@@ -4,8 +4,8 @@
 #             drop = not a bio.tools tool: the node goes, its neighbours are connected
 # biotoolsID: for map
 # note:       free text (why)
-# Candidates: data/mapping/snakemake_to_curate.tsv has the same first columns - fill in and copy rows here.
-# The format is that of directed-graph/workflowhub/nextflow_curated_map.tsv.
+# Candidates: workflows/data/mapping/snakemake/snakemake_to_curate.tsv has the same first columns - fill in and copy rows here.
+# The format is that of ../nextflow/nextflow_curated_map.tsv.
 tool	action	biotoolsID	note
 rust-bio-tools	map	rust-bio	maps to Rust-Bio
 bamcoverage	map	deeptools	Is part of DeepTools

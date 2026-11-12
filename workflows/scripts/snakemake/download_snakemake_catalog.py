@@ -18,13 +18,13 @@ usually workflow/Snakefile, workflow/rules/, workflow/envs/). Runs can be stoppe
 already cloned are not cloned again, and every run adds to the same folders.
 
 Usage (from the repository root):
-    python3 directed-graph/snakemake/download_snakemake_catalog.py --sample 50 --standardized
-    python3 directed-graph/snakemake/download_snakemake_catalog.py --sample 50 --non-standardized
-    python3 directed-graph/snakemake/download_snakemake_catalog.py --standardized     # all 479 standardized
-    python3 directed-graph/snakemake/download_snakemake_catalog.py                    # everything
-    python3 directed-graph/snakemake/download_snakemake_catalog.py --summary-only     # rebuild the CSV
-    python3 directed-graph/snakemake/download_snakemake_catalog.py --resparse --summary-only  # new file patterns
-    python3 directed-graph/snakemake/download_snakemake_catalog.py --workflow snakemake-workflows/rna-seq-star-deseq2
+    python3 workflows/scripts/snakemake/download_snakemake_catalog.py --sample 50 --standardized
+    python3 workflows/scripts/snakemake/download_snakemake_catalog.py --sample 50 --non-standardized
+    python3 workflows/scripts/snakemake/download_snakemake_catalog.py --standardized     # all 479 standardized
+    python3 workflows/scripts/snakemake/download_snakemake_catalog.py                    # everything
+    python3 workflows/scripts/snakemake/download_snakemake_catalog.py --summary-only     # rebuild the CSV
+    python3 workflows/scripts/snakemake/download_snakemake_catalog.py --resparse --summary-only  # new file patterns
+    python3 workflows/scripts/snakemake/download_snakemake_catalog.py --workflow snakemake-workflows/rna-seq-star-deseq2
 """
 
 import argparse
@@ -41,6 +41,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any, Final
 
+from smkdag import DOWNLOAD_DIR
 from smkdag.snakefile import main_snakefile, workflow_files
 from smkdag.wrappers import FILES, RAW_URL, WRAPPER_LINE, WrapperRef, wrapper_dir, wrapper_ref
 
@@ -276,10 +277,12 @@ def main() -> None:
         "--resparse", action="store_true", help="apply the current file patterns to the repositories already cloned"
     )
     parser.add_argument("--delay", type=float, default=0.2, help="seconds between wrapper downloads")
-    parser.add_argument("--data-dir", type=Path, default=HERE / "data", help="default: data/ next to this script")
+    parser.add_argument(
+        "--download-dir", type=Path, default=DOWNLOAD_DIR, help="default: workflows/data/snakemake/download"
+    )
     args = parser.parse_args()
 
-    download = args.data_dir / "download"
+    download: Path = args.download_dir
     repos, wrappers, graphs = download / "repos", download / "wrappers", download / "rulegraphs"
     for folder in (repos, wrappers, graphs):
         folder.mkdir(parents=True, exist_ok=True)

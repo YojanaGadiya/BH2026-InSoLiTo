@@ -25,7 +25,7 @@ It outputs:
   - data/biotools/biotools_nodes.csv  one row per bio.tools ID
 
 Usage (from the repository root, after galaxy_tool_pairs.py):
-    .venv/bin/python directed-graph/workflowhub/map_galaxy_tools.py
+    .venv/bin/python workflows/scripts/galaxy/map_galaxy_tools.py
 """
 import csv
 import json

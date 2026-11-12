@@ -1,25 +1,25 @@
 """
 Translates the Snakemake DAGs (tool nodes) to bio.tools IDs, like map_nextflow_tools.py does for Nextflow.
 
-Reads data/dags/<owner>__<repo>/{nodes,edges}.csv (from extract_snakemake_dags.py), the hand-curated
-snakemake_curated_map.tsv next to this script, the bio.tools dump (directed-graph/biotools/data/biotools_raw*.jsonl)
-and the Galaxy Codex (directed-graph/workflowhub/data/mapping/galaxy_codex_tools.tsv).
-The methods are those of directed-graph/workflowhub/nfdag/mapping.py, first match wins:
+Reads workflows/data/snakemake/dags/<owner>__<repo>/{nodes,edges}.csv (from extract_snakemake_dags.py), the
+hand-curated snakemake_curated_map.tsv next to this script, the bio.tools dump
+(directed-graph/biotools/data/biotools_raw*.jsonl) and the Galaxy Codex (workflows/data/mapping/galaxy/).
+The methods are those of workflows/scripts/nextflow/nfdag/mapping.py, first match wins:
 curated > wrapper_homepage (the homepage of a snakemake-wrapper is a bio.tools homepage) > biotools_id >
 biotools_name > biotools_url > codex > prefix (rule names: bwa_mem -> bwa).
 
-It outputs:
-  - data/mapping/snakemake_tool_map.tsv    one row per tool name, with the ID and the method used
-  - data/mapping/snakemake_to_curate.tsv   tools without ID or mapped only by prefix, most used first, with
+It outputs (in workflows/):
+  - data/mapping/snakemake/snakemake_tool_map.tsv    one row per tool name, with the ID and the method used
+  - data/mapping/snakemake/snakemake_to_curate.tsv   tools without ID or mapped only by prefix, most used first, with
                                            suggestions; the first four columns are those of the curated TSV
-  - data/biotools/biotools_pairs.csv       one row per workflow and pair       } all workflows; the same columns
-  - data/biotools/biotools_edges.csv       one row per pair, over workflows    } as the Galaxy and Nextflow files,
-  - data/biotools/biotools_nodes.csv       one row per bio.tools ID            } with confidence 1 (best) - 3
-  - data/biotools/biotools_{pairs,edges,nodes}_standardized.csv   the same, standardized workflows only
-  - data/biotools/workflows/<owner>__<repo>.csv   the bio.tools DAG of each workflow (for Cytoscape)
+  - data/biotools/snakemake/biotools_pairs.csv   one row per workflow and pair     } all workflows; the columns of
+  - data/biotools/snakemake/biotools_edges.csv   one row per pair, over workflows  } the Galaxy and Nextflow files,
+  - data/biotools/snakemake/biotools_nodes.csv   one row per bio.tools ID          } confidence 1 (best) - 3
+  - data/biotools/snakemake/biotools_{pairs,edges,nodes}_standardized.csv   the same, standardized workflows only
+  - data/biotools/snakemake/workflows/<owner>__<repo>.csv   the bio.tools DAG of each workflow (for Cytoscape)
 
 Usage (from the repository root, after extract_snakemake_dags.py):
-    python3 directed-graph/snakemake/map_snakemake_tools.py
+    python3 workflows/scripts/snakemake/map_snakemake_tools.py
 """
 
 import argparse
@@ -28,7 +28,9 @@ import sys
 from pathlib import Path
 from typing import Final
 
-import smkdag  # noqa: F401  (puts directed-graph/workflowhub on the import path)
+from smkdag import DAG_DIR, DOWNLOAD_DIR, MAP_DIR, OUT_DIR  # also puts workflows/scripts/nextflow on the path
+
+# isort: split
 from map_nextflow_tools import load_lookup
 from nfdag.mapping import BiotoolsPair, Lookup, ToolMap, translate
 from nfdag.report import (
@@ -97,10 +99,12 @@ def standardized_folders(summary: Path) -> set[str]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--data-dir", type=Path, default=HERE / "data", help="default: data/ next to this script")
+    parser.add_argument("--dags", type=Path, default=DAG_DIR, help="the DAGs (default: workflows/data/snakemake/dags)")
+    parser.add_argument("--map-dir", type=Path, default=MAP_DIR, help="default: workflows/data/mapping/snakemake")
+    parser.add_argument("--out-dir", type=Path, default=OUT_DIR, help="default: workflows/data/biotools/snakemake")
     parser.add_argument("--curated", type=Path, default=HERE / "snakemake_curated_map.tsv", help="the curated TSV")
     args = parser.parse_args()
-    dag_dir, map_dir, out_dir = args.data_dir / "dags", args.data_dir / "mapping", args.data_dir / "biotools"
+    dag_dir, map_dir, out_dir = args.dags, args.map_dir, args.out_dir
     if not dag_dir.is_dir():
         sys.exit(f"{dag_dir} not found - run extract_snakemake_dags.py first")
     map_dir.mkdir(parents=True, exist_ok=True)
@@ -113,7 +117,7 @@ def main() -> None:
     print_summary(tools, METHODS, to_curate, write_to_curate(to_curate, tools, index, LABELS))
     write_workflow_csvs(out_dir / "workflows", pairs)
     write_biotools(out_dir, pairs, index, with_paper, workflow_id=_workflow_id)
-    standardized = standardized_folders(args.data_dir / "download" / "snakemake_workflows.csv")
+    standardized = standardized_folders(DOWNLOAD_DIR / "snakemake_workflows.csv")
     chosen = {name: p for name, p in pairs.items() if name in standardized}
     write_biotools(out_dir, chosen, index, with_paper, workflow_id=_workflow_id, suffix="_standardized")
 

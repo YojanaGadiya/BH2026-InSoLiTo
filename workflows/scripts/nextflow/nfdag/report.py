@@ -1,6 +1,6 @@
 """Write the mapping results: the tool map, the to-curate list and the bio.tools pairs, edges and nodes.
 
-Shared by map_nextflow_tools.py and the Snakemake catalog (directed-graph/snakemake/map_snakemake_tools.py).
+Shared by map_nextflow_tools.py and the Snakemake catalog (workflows/scripts/snakemake/map_snakemake_tools.py).
 Each workflow is a set of tool nodes, mapped with mapping.Lookup and translated into bio.tools pairs with
 mapping.translate; this module collects the statistics per tool name and writes the files.
 """

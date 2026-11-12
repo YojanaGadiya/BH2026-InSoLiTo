@@ -19,10 +19,10 @@ Runs can be stopped and restarted: files already on disk are not downloaded agai
 Reading public workflows needs no account or token.
 
 Usage (from the repository root):
-    python3 directed-graph/workflowhub/download_workflowhub_nextflow.py --limit 10  # test on 10 workflows
-    python3 directed-graph/workflowhub/download_workflowhub_nextflow.py             # everything
-    python3 directed-graph/workflowhub/download_workflowhub_nextflow.py --summary-only
-    python3 directed-graph/workflowhub/download_workflowhub_nextflow.py --ignore-nfcore  # without nf-core
+    python3 workflows/scripts/nextflow/download_workflowhub_nextflow.py --limit 10  # test on 10 workflows
+    python3 workflows/scripts/nextflow/download_workflowhub_nextflow.py             # everything
+    python3 workflows/scripts/nextflow/download_workflowhub_nextflow.py --summary-only
+    python3 workflows/scripts/nextflow/download_workflowhub_nextflow.py --ignore-nfcore  # without nf-core
 """
 import argparse
 import csv
@@ -37,8 +37,6 @@ import urllib.error
 import urllib.request
 import zipfile
 from pathlib import Path, PurePosixPath
-
-from nfdag.build import build
 
 from nfdag.build import build
 

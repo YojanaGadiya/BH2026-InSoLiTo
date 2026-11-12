@@ -27,7 +27,7 @@ max-returns = 8
 
 [tool.ty.environment]
 python-version = "3.12"
-extra-paths = ["../workflowhub"]  # nfdag and map_nextflow_tools are shared with the Nextflow pipeline
+extra-paths = ["../nextflow", "../galaxy"]  # nfdag, map_nextflow_tools (and map_galaxy_tools) are shared
 
 [tool.ty.src]
 include = ["smkdag", "download_snakemake_catalog.py", "extract_snakemake_dags.py", "map_snakemake_tools.py"]

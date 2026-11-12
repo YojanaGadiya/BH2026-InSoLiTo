@@ -21,9 +21,9 @@ This is static analysis of Groovy code, so it is heuristic: unusual code can los
 Names that could not be resolved are listed in warnings.log.
 
 Usage (from the repository root):
-    python3 directed-graph/workflowhub/extract_nextflow_dags.py
-    python3 directed-graph/workflowhub/extract_nextflow_dags.py --only 462_v3 --verbose
-or, from directed-graph/workflowhub/:
+    python3 workflows/scripts/nextflow/extract_nextflow_dags.py
+    python3 workflows/scripts/nextflow/extract_nextflow_dags.py --only 462_v3 --verbose
+or, from workflows/scripts/nextflow/:
     python3 -m nfdag --only 462_v3 --verbose
 """
 

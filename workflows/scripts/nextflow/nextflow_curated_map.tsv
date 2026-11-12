@@ -4,7 +4,7 @@
 #             drop = not a bio.tools tool: the node goes, its neighbours are connected
 # biotoolsID: for map
 # note:       free text (why)
-# Candidates: data/mapping/nextflow/nextflow_to_curate.tsv has the same first columns - fill in and copy rows here.
+# Candidates: workflows/data/mapping/nextflow/nextflow_to_curate.tsv has the same first columns - fill in and copy rows here.
 # Rows marked "seed" are examples added with the script; edit or remove them freely.
 tool	action	biotoolsID	note
 custom_dumpsoftwareversions	drop		seed: nf-core collector of tool versions

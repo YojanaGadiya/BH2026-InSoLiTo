@@ -44,6 +44,7 @@ from map_galaxy_tools import (  # noqa: E402
     find_column,
     variants,
 )
+
 from nfdag.mapping import BiotoolsIndex, BiotoolsPair, Lookup, ToolMap, read_curated, translate  # noqa: E402
 from nfdag.report import (  # noqa: E402
     ToolStats,
