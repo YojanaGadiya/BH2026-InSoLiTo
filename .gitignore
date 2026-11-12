@@ -10,7 +10,9 @@ DB/PLUGINS/neo4j-graph-data-science-1.8.3.jar
 DB/InSoLiToImport.zip
 DB/InSoLiToSupportFiles.zip
 directed-graph/biotools/data/*.jsonl
-directed-graph/edges-processed/
+directed-graph/edges-processed/*
+!directed-graph/edges-processed/directed_edges.csv
+!directed-graph/edges-processed/directed_edges_raw.parquet
 directed-graph/biotools/data/*.parquet
 directed-graph/edges_processed
 directed-graph/europepmc/data/
