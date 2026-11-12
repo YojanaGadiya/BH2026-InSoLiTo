@@ -40,11 +40,19 @@ let clusterColors = {}
 // range of weights is even possible (e.g. #181 raised the default minimum to 11,
 // which alone exceeded the old hardcoded 1-10 domain).
 let edgeWidthDomain = { min: 1, max: 1 }
-// Same idea for directed pairs (CITED_BEFORE), on the pair's total articles (both
-// directions) and on a log scale: totals go from the fetch minimum (10) to
-// thousands, so a linear scale would leave almost every arrow at the thinnest
-// width. null = no directed pairs on screen.
-let arrowWidthLogDomain = null
+// Same idea for directed edges, per layer (CITED_BEFORE on each direction's
+// articles, WORKFLOW_NEXT on each direction's workflows) and on a log scale: counts
+// go from a few to thousands, so a linear scale would leave almost every arrow at
+// the thinnest width. null for a layer = none of its edges on screen.
+let arrowWidthLogDomain = {}
+
+// Directed layers, each drawn as one edge per direction (see buildDirectedEdges).
+// prefix keeps Cytoscape ids unique across layers; count = what sets the width.
+const DIRECTED_LAYERS = {
+    CITED_BEFORE: { prefix: 'd', count: (props) => props?.n_articles ?? 0 },
+    WORKFLOW_NEXT: { prefix: 'w', count: (props) => props?.n_workflows ?? 0 }
+}
+const isDirectedType = (type) => type in DIRECTED_LAYERS
 // PageRank (Neo4j GDS, computed once globally over the whole dataset) has a long
 // tail like co-citation counts do — a handful of major hub tools dominate, most
 // nodes sit far lower — so sizing on a log scale (same reasoning as Sidebar.vue's
@@ -64,57 +72,54 @@ function cssVar (name) {
 }
 
 function computeEdgeWidthDomain () {
-    // Directed edges (CITED_BEFORE) have no co-citation count, so they stay out
-    // of the range used to size co-citation edges.
-    const coCitationEdges = props.edges.filter((edge) => edge.type !== 'CITED_BEFORE')
+    // Directed edges (CITED_BEFORE, WORKFLOW_NEXT) have no co-citation count, so they
+    // stay out of the range used to size co-citation edges.
+    const coCitationEdges = props.edges.filter((edge) => !isDirectedType(edge.type))
     if (!coCitationEdges.length) return { min: 1, max: 1 }
     const weights = coCitationEdges.map((edge) => edge.weight || 1)
     return { min: Math.min(...weights), max: Math.max(...weights) }
 }
 
-// Joins the two directions of each pair (A->B and B->A, two CITED_BEFORE edges in
-// the store) into one Cytoscape edge, drawn in the dominant direction (more
-// articles): filled arrowhead at the dominant end, hollow one at the other end if
-// the reverse direction exists. Both directions' numbers are kept for the panel.
-function buildDirectedPairs () {
-    const pairs = new Map()
-    props.edges.forEach((edge) => {
-        if (edge.type !== 'CITED_BEFORE') return
-        const [lo, hi] = [String(edge.source), String(edge.target)].sort()
-        const key = `${lo}|${hi}`
-        if (!pairs.has(key)) pairs.set(key, [])
-        pairs.get(key).push(edge)
-    })
-    return [...pairs.values()].map((directions) => {
-        const [dominant, other = null] = [...directions]
-            .sort((x, y) => (y.properties?.n_articles ?? 0) - (x.properties?.n_articles ?? 0))
-        const dominantArticles = dominant.properties?.n_articles ?? 0
-        const otherArticles = other?.properties?.n_articles ?? 0
-        return {
-            id: `d${dominant.id}`,
-            source: String(dominant.source),
-            target: String(dominant.target),
-            pairArticles: dominantArticles + otherArticles,
-            hasReverse: other !== null,
-            isTie: other !== null && dominantArticles === otherArticles,
-            properties: { forward: dominant.properties, reverse: other?.properties ?? null }
-        }
-    })
+// One Cytoscape edge per direction (A->B and B->A are two arrows on the same line,
+// see the edge styles): each one is as wide as its own count, so the main direction
+// stands out and the other one still shows its arrowhead at the opposite end.
+function buildDirectedEdges (type) {
+    const { prefix, count } = DIRECTED_LAYERS[type]
+    return props.edges
+        .filter((edge) => edge.type === type)
+        .map((edge) => ({
+            id: `${prefix}${edge.id}`,
+            source: String(edge.source),
+            target: String(edge.target),
+            type,
+            count: count(edge.properties),
+            properties: edge.properties
+        }))
 }
 
-function computeArrowWidthLogDomain (directedPairs) {
-    const values = directedPairs.map((pair) => pair.pairArticles).filter((value) => value > 0)
+function computeArrowWidthLogDomain (directedEdges) {
+    const values = directedEdges.map((edge) => edge.count).filter((value) => value > 0)
     if (!values.length) return null
     return { min: Math.log(Math.min(...values)), max: Math.log(Math.max(...values)) }
 }
 
-// Width of any edge: co-citations by times (weight), directed pairs by their total
-// articles.
+// Width of directed arrows, in px. The arrowhead grows with the line width.
+const ARROW_WIDTH_MIN = 1
+const ARROW_WIDTH_MAX = 8
+// Arrowhead size relative to the line width (Cytoscape default 1): larger, so the
+// direction can be read on thin arrows too.
+const ARROW_SCALE = 1.6
+
+// Width of any edge: co-citations by times (weight); directed edges by their own
+// count (articles or workflows), log scale, relative to the other edges of the same
+// layer on screen.
 function resolveEdgeWidth (el) {
-    if (el.data('type') === 'CITED_BEFORE') {
-        const pairArticles = el.data('pairArticles')
-        if (!arrowWidthLogDomain || !(pairArticles > 0)) return 1
-        return mapRange(Math.log(pairArticles), arrowWidthLogDomain.min, arrowWidthLogDomain.max, 1, 6)
+    if (isDirectedType(el.data('type'))) {
+        const domain = arrowWidthLogDomain[el.data('type')]
+        const count = el.data('count')
+        if (!domain || !(count > 0)) return ARROW_WIDTH_MIN
+        if (domain.max === domain.min) return ARROW_WIDTH_MAX
+        return mapRange(Math.log(count), domain.min, domain.max, ARROW_WIDTH_MIN, ARROW_WIDTH_MAX)
     }
     return mapRange(el.data('weight'), edgeWidthDomain.min, edgeWidthDomain.max, 1, 6)
 }
@@ -389,22 +394,22 @@ function toElements () {
         group: 'nodes',
         data: { id: String(node.id), label: node.label, type: node.type, properties: node.properties }
     }))
-    // Directed edges are drawn as one edge per pair (buildDirectedPairs), not as
-    // they come from the store. Their width range is set here so it always matches
-    // the pairs actually drawn.
-    const directedPairs = buildDirectedPairs()
-    arrowWidthLogDomain = computeArrowWidthLogDomain(directedPairs)
-    const directedEls = directedPairs.map((pair) => ({
+    // Directed edges: one per direction (buildDirectedEdges). Their width range is
+    // set here so it always matches the edges actually drawn.
+    const literatureEdges = buildDirectedEdges('CITED_BEFORE')
+    const workflowEdges = buildDirectedEdges('WORKFLOW_NEXT')
+    arrowWidthLogDomain = {
+        CITED_BEFORE: computeArrowWidthLogDomain(literatureEdges),
+        WORKFLOW_NEXT: computeArrowWidthLogDomain(workflowEdges)
+    }
+    const directedEls = [...literatureEdges, ...workflowEdges].map((edge) => ({
         group: 'edges',
-        data: { ...pair, type: 'CITED_BEFORE', weight: 1 }
+        data: { ...edge, weight: 1 }
     }))
-    // Node pairs joined by a directed edge. A co-citation edge between the same two
-    // nodes is flagged (hasDirectedPair) and hidden while arrows are shown: a
-    // direction already implies the two tools are cited together. It stays in the
-    // graph (layout, data) and comes back when arrows are hidden.
-    const pairKey = (a, b) => [String(a), String(b)].sort().join('|')
-    const directedPairKeys = new Set(directedPairs.map((pair) => pairKey(pair.source, pair.target)))
-    const edgeEls = props.edges.filter((edge) => edge.type !== 'CITED_BEFORE').map((edge) => {
+    // The three layers are drawn side by side between the same two nodes (co-citation
+    // straight in the middle, literature and registered workflows curved to opposite
+    // sides), so none of them hides another.
+    const edgeEls = props.edges.filter((edge) => !isDirectedType(edge.type)).map((edge) => {
         const data = {
             // Neo4j numbers nodes and relationships separately, so a node and an
             // edge can share an id; Cytoscape needs ids unique across both.
@@ -419,8 +424,6 @@ function toElements () {
         // not truthiness — isPublicationBridge: false would still count as "present"
         // and match every edge, which is exactly the all-dashed bug this avoids.
         if (bridgeEdgeIds.has(String(edge.id))) data.isPublicationBridge = true
-        // Same presence-only rule as isPublicationBridge above.
-        if (directedPairKeys.has(pairKey(edge.source, edge.target))) data.hasDirectedPair = true
         return { group: 'edges', data }
     })
     return [...nodeEls, ...edgeEls, ...directedEls]
@@ -467,11 +470,11 @@ function buildLayoutOptions (randomize) {
 // idealEdgeLength/gravity forces) quietly pulls the two separated hubs right back
 // together over its ~2500 iterations, silently undoing separateHubs() — locking
 // makes the second pass do only the one thing it's meant for.
-// Directed edges (CITED_BEFORE) are drawn on top of the co-citation layout but do
-// not take part in it: they would act as extra springs, moving nodes away from the
-// co-citation star and slowing the layout down.
+// Directed edges (CITED_BEFORE, WORKFLOW_NEXT) are drawn on top of the co-citation
+// layout but do not take part in it: they would act as extra springs, moving nodes
+// away from the co-citation star and slowing the layout down.
 function layoutElements () {
-    return cy.elements().not('edge[type = "CITED_BEFORE"]')
+    return cy.elements().not('edge[type = "CITED_BEFORE"], edge[type = "WORKFLOW_NEXT"]')
 }
 
 function runLayoutSequence () {
@@ -486,7 +489,7 @@ function runLayoutSequence () {
             return
         }
         // Same as layoutElements(): only co-citation edges decide hubs and bridges.
-        const coCitationEdges = props.edges.filter((edge) => edge.type !== 'CITED_BEFORE')
+        const coCitationEdges = props.edges.filter((edge) => !isDirectedType(edge.type))
         const exclusiveLeaves = findExclusiveLeaves(coCitationEdges, props.entryPointIds)
         separateHubs(props.entryPointIds, exclusiveLeaves)
         const bridgeHubs = findBridgeHubs(coCitationEdges, props.entryPointIds)
@@ -564,15 +567,12 @@ function applyVisibility () {
             const hidden = isNodeHidden({ id: node.data('id'), type: node.data('type'), properties: node.data('properties') }, visibility)
             node.toggleClass('layer-hidden', hidden)
         })
-        const directionHidden = props.hiddenEdgeTypes.includes('direction')
-        const coCitationHidden = props.hiddenEdgeTypes.includes('cocitation')
+        // Legend layer of each edge type (anything else is a co-citation)
+        const layerOf = { CITED_BEFORE: 'direction', WORKFLOW_NEXT: 'workflow' }
         cy.edges().forEach((edge) => {
-            const isDirected = edge.data('type') === 'CITED_BEFORE'
-            const layerHidden = isDirected ? directionHidden : coCitationHidden
+            const layer = layerOf[edge.data('type')] ?? 'cocitation'
+            const layerHidden = props.hiddenEdgeTypes.includes(layer)
             edge.toggleClass('layer-hidden', layerHidden || edge.source().hasClass('layer-hidden') || edge.target().hasClass('layer-hidden'))
-            // A co-citation line with an arrow between the same nodes is only
-            // covered while arrows are shown; with "Direction" off it comes back.
-            if (!isDirected) edge.toggleClass('covered-by-arrow', Boolean(edge.data('hasDirectedPair')) && !directionHidden)
         })
     })
 }
@@ -643,8 +643,10 @@ onMounted(() => {
                     selector: 'edge',
                     style: {
                         width: (el) => resolveEdgeWidth(el),
-                        'line-fill': 'linear-gradient',
-                        'line-gradient-stop-colors': (el) => `${resolveNodeFillColor(el.source().data())} ${resolveNodeFillColor(el.target().data())}`,
+                        // Co-citation: plain solid gray, so the colors are left for the
+                        // directed layers (citation order, registered workflows).
+                        'line-fill': 'solid',
+                        'line-color': cssVar('--insolito-edge-cocitation'),
                         // 'straight', not 'bezier': in a hub-and-spoke graph, bezier's default
                         // curvature makes edges toward nearby-clustered targets bow through the
                         // same corridor for most of their length, reading as several lines
@@ -667,31 +669,38 @@ onMounted(() => {
                     }
                 },
                 {
-                    // Co-citation edge with a directed edge between the same nodes (see
-                    // toElements), while arrows are shown (class set in
-                    // applyVisibility): hidden, not removed, so the arrow is drawn
-                    // alone. visibility (not display) keeps it in the layout.
-                    selector: 'edge.covered-by-arrow',
-                    style: { visibility: 'hidden' }
-                },
-                {
-                    // Directed pairs (CITED_BEFORE, one edge per pair, see
-                    // buildDirectedPairs): filled arrowhead at the dominant end, hollow
-                    // one at the other end if the reverse direction exists (both filled
-                    // on an exact tie). Width (resolveEdgeWidth) follows the pair's total
-                    // articles, and arrowhead size follows width. Straight: a co-citation
-                    // line between the same nodes is hidden (edge[hasDirectedPair]).
+                    // Citation order (CITED_BEFORE): one arrow per direction, each
+                    // as wide as its own articles (resolveEdgeWidth); the arrowhead grows
+                    // with the width, so the main direction stands out. Curved to one
+                    // side of the straight co-citation line, registered workflows to the
+                    // other. The curve side depends on the source -> target order, so it
+                    // is flipped for one of the two directions: both directions of a
+                    // pair then share the same curve.
                     selector: 'edge[type = "CITED_BEFORE"]',
                     style: {
                         'line-fill': 'solid',
-                        'line-color': cssVar('--insolito-text-muted'),
+                        'line-color': cssVar('--insolito-edge-literature'),
                         'target-arrow-shape': 'triangle',
-                        'target-arrow-color': cssVar('--insolito-text-muted'),
-                        'source-arrow-shape': (el) => (el.data('hasReverse') ? 'triangle' : 'none'),
-                        'source-arrow-fill': (el) => (el.data('isTie') ? 'filled' : 'hollow'),
-                        'source-arrow-color': cssVar('--insolito-text-muted'),
-                        'arrow-scale': 1,
-                        'curve-style': 'straight'
+                        'target-arrow-color': cssVar('--insolito-edge-literature'),
+                        'arrow-scale': ARROW_SCALE,
+                        'curve-style': 'unbundled-bezier',
+                        'control-point-distances': (el) => (el.data('source') < el.data('target') ? -40 : 40),
+                        'control-point-weights': 0.5
+                    }
+                },
+                {
+                    // Registered workflows (WORKFLOW_NEXT): same idea, own color, curved
+                    // to the opposite side of citation order.
+                    selector: 'edge[type = "WORKFLOW_NEXT"]',
+                    style: {
+                        'line-fill': 'solid',
+                        'line-color': cssVar('--insolito-edge-workflow'),
+                        'target-arrow-shape': 'triangle',
+                        'target-arrow-color': cssVar('--insolito-edge-workflow'),
+                        'arrow-scale': ARROW_SCALE,
+                        'curve-style': 'unbundled-bezier',
+                        'control-point-distances': (el) => (el.data('source') < el.data('target') ? 40 : -40),
+                        'control-point-weights': 0.5
                     }
                 },
                 {

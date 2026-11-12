@@ -31,8 +31,13 @@ services:
       - type: bind
         source: ./frontend
         target: /workspace/frontend
+      # Folder with the 4 static JSON files the frontend imports (CommunityData,
+      # ToolTopicAutocomplete, RelationshipSliderData, YearSliderData). They must
+      # come from the same import as the Neo4j database in use (community ids change
+      # on every import); set INSOLITO_JSON_DIR in .env to use another folder,
+      # e.g. ./DB/raw_data/json_sample for a local Neo4j imported from Zenodo
       - type: bind
-        source: ./DB
+        source: ${INSOLITO_JSON_DIR:-./DB}
         target: /workspace/DB
         read_only: true
     command: sh -c "npm ci && npm run generate"

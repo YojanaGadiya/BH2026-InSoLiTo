@@ -13,7 +13,7 @@ Expected layout of the catalogue:  <catalogue>/<pipeline>/<version>/main.nf   (w
   python run.py tables [--dump FILE]       # the final tables (pairs, edges, nodes) -> workflows/data/biotools/nf-core (runs ../3_nodes_edges/build_tables.py)
   python run.py all [--lookup]             # analyze, ids, match, idtable, merge and tables one after the other
 
-Options: --catalogue DIR (default: current folder)   --out DIR (default: workflows/data/nf-core)
+Options: --catalogue DIR (default: current folder)   --out DIR (default: workflows/data/nf-core/intermediate)
          --jobs N (pipelines analysed in parallel, default 4)   --timeout SECONDS (per pipeline, default 900)   --only TEXT (only pipelines whose path contains TEXT)
 Nothing from the pipelines is executed and nothing is downloaded (except bio.tools answers with --lookup). Only text files are read.
 """
@@ -131,7 +131,7 @@ def main():
     ap.add_argument('--pool-ids', choices=['any', 'biotools'], default='any', help='merge: control pool needs both tools to have any identifier (any) or a bio.tools ID (biotools)')
     a = ap.parse_args()
     a.cat = os.path.abspath(a.catalogue)
-    a.out = os.path.abspath(a.out or os.path.join(HERE, '..', '..', '..', 'data', 'nf-core'))   # workflows/data/nf-core
+    a.out = os.path.abspath(a.out or os.path.join(HERE, '..', '..', '..', 'data', 'nf-core', 'intermediate'))   # workflows/data/nf-core/intermediate
     steps = {'setup': [setup], 'survey': [survey], 'analyze': [analyze], 'ids': [ids], 'match': [match], 'idtable': [idtable], 'merge': [merge], 'tables': [tables], 'all': [analyze, ids, match, idtable, merge, tables]}[a.step]
     for f in steps:
         rc = f(a)

@@ -3,7 +3,7 @@
 
   python build_tables.py [--results DIR] [--out DIR] [--dump FILE] [--keep-parallel]
 
-Reads  (from --results, default workflows/data/nf-core):
+Reads  (from --results, default workflows/data/nf-core/intermediate):
   tools_with_ids.csv        from `run.py idtable`
   pairs_merged_unique.csv   from `run.py merge` (must contain direction_type)
   the bio.tools dump        biotools_raw*.jsonl: found in --results, or give its place with --dump (it can stay where it is, it is only read)
@@ -57,7 +57,7 @@ def pair_table(tools_file, pairs_file):
                        'source_match_method': 'source_match', 'target_match_method': 'target_match'}).reset_index(drop=True)
     out[['source_match', 'target_match']] = out[['source_match', 'target_match']].replace('meta_id', 'biotool_id')   # an ID written in the module's meta.yml
     print(f'All pairs: {len(pairs):,} | both tools have a bio.tools ID: {both.sum():,} | and valid in at least one workflow: {len(out):,}')
-    print(out['direction_type'].value_counts().to_string())
+    print('direction_type of the pairs (kept in pairs_biotools.csv, not in the final tables):'); print(out['direction_type'].value_counts().to_string())
     return out
 
 
@@ -126,7 +126,7 @@ def main():
     a = ap.parse_args()
     results, out = os.path.abspath(a.results), os.path.abspath(a.out)
     tools_file, pairs_file, dump = os.path.join(results, 'tools_with_ids.csv'), os.path.join(results, 'pairs_merged_unique.csv'), find_dump(results, a.dump)
-    missing = [f for f in (tools_file, pairs_file) if not os.path.exists(f)] + ([] if dump and os.path.exists(dump) else ['bio.tools dump (biotools_raw*.jsonl: put it into the data folder (workflows/data/nf-core) or pass --dump FILE)'])
+    missing = [f for f in (tools_file, pairs_file) if not os.path.exists(f)] + ([] if dump and os.path.exists(dump) else ['bio.tools dump (biotools_raw*.jsonl: put it into workflows/data/nf-core/intermediate or pass --dump FILE)'])
     for f in (tools_file, pairs_file, dump): print(('found    ' if f and os.path.exists(f) else 'MISSING  ') + str(f))
     if missing: sys.exit('missing: ' + '; '.join(missing))
 

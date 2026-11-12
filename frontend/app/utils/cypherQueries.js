@@ -64,12 +64,10 @@ export function buildEdgeYearBreakdownQuery ({ sourceId, targetId }) {
 // Directed edges (CITED_BEFORE) between the Tool/Database nodes already on screen.
 // Fetched once after all search terms resolve, because an edge can join nodes that
 // came from different searches. Both directions are returned as separate edges.
-// Only pairs seen in at least DIRECTED_EDGES_MIN_ARTICLES articles, adding up both
-// directions, are drawn (all edges stay in Neo4j); when a pair passes, both of its
-// directions are returned. Fixed for now; may become a filter in the sidebar.
-export const DIRECTED_EDGES_MIN_ARTICLES = 10
-
-export function buildDirectedEdgesQuery ({ nodeIds }) {
+// Only pairs seen in at least minArticles articles, adding up both directions, are
+// drawn (all edges stay in Neo4j); when a pair passes, both of its directions are
+// returned. minArticles comes from the "Minimum articles (direction)" slider.
+export function buildDirectedEdgesQuery ({ nodeIds, minArticles }) {
     return {
         statement:
             'MATCH (a)-[r:CITED_BEFORE]->(b) ' +
@@ -78,6 +76,19 @@ export function buildDirectedEdgesQuery ({ nodeIds }) {
             'WITH a, r, b, r.n_articles + coalesce(rev.n_articles, 0) AS pairArticles ' +
             'WHERE pairArticles >= $minArticles ' +
             'RETURN a,r,b',
-        parameters: { ids: nodeIds.map(Number), minArticles: DIRECTED_EDGES_MIN_ARTICLES }
+        parameters: { ids: nodeIds.map(Number), minArticles }
+    }
+}
+
+// Tool pairs of registered workflows (WORKFLOW_NEXT: Galaxy, Nextflow, nf-core from
+// WorkflowHub) between the Tool/Database nodes already on screen. Both directions are
+// returned as separate edges. No minimum: there are few of them (~2,400 in total).
+export function buildWorkflowEdgesQuery ({ nodeIds }) {
+    return {
+        statement:
+            'MATCH (a)-[r:WORKFLOW_NEXT]->(b) ' +
+            'WHERE id(a) IN $ids AND id(b) IN $ids ' +
+            'RETURN a,r,b',
+        parameters: { ids: nodeIds.map(Number) }
     }
 }
