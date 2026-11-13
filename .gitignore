@@ -23,3 +23,5 @@ __pycache__/
 .DS_Store
 DB/CoCitation/*
 directed-graph/patterns/data/
+directed-graph/biotools/data/biotools_fix_list.csv
+directed-graph/biotools/data/biotools_missing_main_papers.csv
