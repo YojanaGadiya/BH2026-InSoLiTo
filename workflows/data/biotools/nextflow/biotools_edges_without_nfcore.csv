@@ -43,6 +43,7 @@ windowmasker,extract,4,668;813;1320;1321,WindowMasker,EXTRACT,3,0,0,4
 bcftools,bedtools,3,19;192;874,BCFtools,BEDTools,2,0,3,0
 bcftools,gatk,3,874;1030;1862,BCFtools,GATK,2,0,3,0
 bedgraphtobigwig,UCSC_Genome_Browser_Utilities,3,813;1320;1321,bedGraphToBigWig,UCSC Genome Browser Utilities,2,0,3,0
+bedtools,multiqc,3,452;874;2053,BEDTools,MultiQC,2,0,3,0
 bedtools,tabix,3,668;813;2217,BEDTools,tabix,1,2,1,0
 cutadapt,kraken2,3,19;1950;2244,Cutadapt,kraken2,2,0,3,0
 cutadapt,seqkit,3,2054;2177;2197,Cutadapt,seqkit,2,0,3,0
@@ -51,6 +52,7 @@ diamond,multiqc,3,452;2037;2053,Diamond,MultiQC,1,1,2,0
 fastp,kraken2,3,1950;2037;2244,fastp,kraken2,1,1,2,0
 fastp,seqkit,3,2177;2197;2246,fastp,seqkit,1,1,2,0
 fastp,star,3,418;654;2197,fastp,STAR,2,0,3,0
+gatk,tabix,3,874;1030;1864,GATK,tabix,2,0,3,0
 gatk,vep,3,874;1030;1864,GATK,Variant Effect Predictor (VEP),2,0,3,0
 hisat2,samtools,3,264;416;1330,HISAT2,SAMtools,2,0,3,0
 medaka,quast,3,140;1263;2171,Medaka,QUAST,2,0,3,0
@@ -78,7 +80,6 @@ ThermoRawFileParser,comet,2,837;2110,ThermoRawFileParser,Comet,2,0,2,0
 assign,bedtools,2,668;813,ASSIGN,BEDTools,3,0,0,2
 bcftools,plot,2,874;1871,BCFtools,plot,3,0,0,2
 bedtools,UCSC_Genome_Browser_Utilities,2,668;813,BEDTools,UCSC Genome Browser Utilities,1,1,1,0
-bedtools,multiqc,2,452;874,BEDTools,MultiQC,2,0,2,0
 bedtools,samtools,2,874;2105,BEDTools,SAMtools,2,0,2,0
 biopython,bedtools,2,452;2217,Biopython,BEDTools,2,0,2,0
 biopython,pandas,2,417;2239,Biopython,Pandas,2,0,2,0
@@ -113,7 +114,6 @@ gatk,mosdepth,2,1030;1864,GATK,mosdepth,2,0,2,0
 gatk,multiqc,2,874;1030,GATK,MultiQC,2,0,2,0
 gatk,sambamba,2,417;419,GATK,Sambamba,2,0,2,0
 gatk,snpeff,2,874;1030,GATK,snpEff,2,0,2,0
-gatk,tabix,2,874;1030,GATK,tabix,2,0,2,0
 gffread,busco,2,1058;2141,gffread,BUSCO,1,1,1,0
 hmmer3,multiqc,2,1954;2177,HMMER3,MultiQC,2,0,2,0
 ivar,bcftools,2,19;417,iVar,BCFtools,2,0,2,0
@@ -542,6 +542,7 @@ detect,gunc,1,884,DETECT,GUNC,3,0,0,1
 diamond,assign,1,2053,Diamond,ASSIGN,3,0,0,1
 diamond,best,1,2053,Diamond,BEST,3,0,0,1
 diamond,blast,1,2239,Diamond,BLAST,3,0,0,1
+diamond,find,1,1330,Diamond,FIND,3,0,0,1
 diamond,pathofact2,1,452,Diamond,PathoFact2,2,0,1,0
 dorado,samtools,1,2160,Dorado,SAMtools,2,0,1,0
 dram,multiqc,1,1735,DRAM,MultiQC,2,0,1,0
@@ -567,10 +568,12 @@ exomedepth,bedops,1,383,ExomeDepth,Bedops,3,0,0,1
 exomedepth,cnv,1,1864,ExomeDepth,PennCNV,3,0,0,1
 extract,MAFFT,1,1782,EXTRACT,MAFFT,3,0,0,1
 extract,UCSC_Genome_Browser_Utilities,1,813,EXTRACT,UCSC Genome Browser Utilities,3,0,0,1
+extract,blast,1,1330,EXTRACT,BLAST,3,0,0,1
 extract,busco,1,1330,EXTRACT,BUSCO,3,0,0,1
 extract,diamond,1,1330,EXTRACT,Diamond,3,0,0,1
 extract,omamer,1,1330,EXTRACT,OMAmer,3,0,0,1
 extract,plot,1,1330,EXTRACT,plot,3,0,0,1
+extract,score,1,556,EXTRACT,score,3,0,0,1
 extract,tabix,1,813,EXTRACT,tabix,3,0,0,1
 famsa,clipkit,1,1954,FAMSA,ClipKIT in the browser,2,0,1,0
 famsa,hh-suite,1,1954,FAMSA,HH-suite,1,1,0,0
@@ -621,6 +624,7 @@ fastqc,seqkit,1,2197,FastQC,seqkit,2,0,1,0
 fastqc,sourmash,1,2197,FastQC,sourmash,2,0,1,0
 fastqc,star,1,2197,FastQC,STAR,2,0,1,0
 fastqc,unicycler,1,19,FastQC,Unicycler,2,0,1,0
+featurecounts,bedtools,1,2053,FeatureCounts,BEDTools,2,0,1,0
 fgbio,multiqc,1,1030,fgbio,MultiQC,2,0,1,0
 fgbio,samtools,1,1030,fgbio,SAMtools,2,0,1,0
 filter,bcftools,1,192,Filter,BCFtools,2,0,1,0
@@ -634,6 +638,7 @@ find,famsa,1,1954,FIND,FAMSA,2,0,1,0
 find,hmmer3,1,1954,FIND,HMMER3,2,0,1,0
 find,mmseqs,1,1954,FIND,MMseqs,2,0,1,0
 find,multiqc,1,1954,FIND,MultiQC,2,0,1,0
+find,plot,1,1330,FIND,plot,3,0,0,1
 flash,fastqc,1,2054,FLASH,FastQC,2,0,1,0
 flash,multiqc,1,2054,FLASH,MultiQC,2,0,1,0
 flash,seqkit,1,2054,FLASH,seqkit,2,0,1,0
@@ -893,6 +898,7 @@ process,biopython,1,452,PROcess,Biopython,3,0,0,1
 process,multiqc,1,452,PROcess,MultiQC,3,0,0,1
 prodigal,OrthoFinder,1,416,Prodigal,OrthoFinder,2,0,1,0
 prodigal,biopython,1,452,Prodigal,Biopython,2,0,1,0
+prodigal,blast,1,416,Prodigal,BLAST,2,0,1,0
 prokka,CRISPRCasFinder,1,462,Prokka,CRISPRCasFinder,2,0,1,0
 prokka,SanntiS,1,462,Prokka,SanntiS,2,0,1,0
 prokka,amrfinderplus,1,462,Prokka,AMRFinderPlus,2,0,1,0

@@ -1,0 +1,33 @@
+[project]
+name = "snakemake-catalog-dags"
+version = "0.1.0"
+description = "Download the Snakemake Workflow Catalog, extract the rule DAGs and map their tools to bio.tools"
+requires-python = ">=3.12"
+dependencies = ["pyyaml>=6"]
+
+[project.optional-dependencies]
+dev = ["ruff", "ty", "types-PyYAML"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "UP", "B", "SIM", "RUF", "N", "PL"]
+ignore = [
+    "PLR2004",  # magic values: the parsers compare against fixed positions and counts all the time
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["smkdag", "nfdag", "map_galaxy_tools"]
+
+[tool.ruff.lint.pylint]
+max-branches = 15
+max-returns = 8
+
+[tool.ty.environment]
+python-version = "3.12"
+extra-paths = ["../nextflow", "../galaxy"]  # nfdag (and map_galaxy_tools) are shared
+
+[tool.ty.src]
+include = ["smkdag", "01_download_snakemake_catalog.py", "02_extract_snakemake_dags.py", "03_map_snakemake_tools.py"]

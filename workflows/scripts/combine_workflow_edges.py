@@ -1,9 +1,11 @@
 """
-Combines the tool-pair edges of Galaxy, Nextflow and nf-core workflows into one table.
+Combines the tool-pair edges of Galaxy, Nextflow, nf-core and Snakemake workflows into one table.
 
 Reads one edges CSV per source (e.g. columns: source, target, n_workflows, ...) and writes:
-  - data/combined/combined_edges.csv  one row per directed tool pair:
-        source, target, n_wf_galaxy, n_wf_nextflow, n_wf_nfcore, n_articles, median_delta, median_tool_gap
+  - workflows/data/biotools/combined/combined_edges.csv  one row per directed tool pair:
+        source, target, n_wf_galaxy, n_wf_nextflow, n_wf_nfcore, n_wf_snakemake, n_articles, median_delta,
+        median_tool_gap
+    Nextflow: the WorkflowHub workflows without those of the nf-core space (they are the nf-core source).
     A pair missing from a source gets 0 for that source.
 
 Tool IDs are matched case-insensitively (tool == TOoL), so the same bio.tools ID matches across sources.
@@ -28,8 +30,9 @@ INPUTS = {
     "galaxy": DATA / "galaxy" / edge_filename,
     "nextflow": DATA / "nextflow" / "biotools_edges_without_nfcore.csv",
     "nfcore": DATA / "nf-core" / edge_filename,  # written by nf-core/3_nodes_edges/build_tables.py
+    "snakemake": DATA / "snakemake" / edge_filename,
 }
-CITATIONS = REPO / "directed-graph" / "edges-processed" / "directed_edges_delta1.csv"
+CITATIONS = REPO / "directed-graph" / "edges-processed" / "directed_edges.csv"
 OUT_FILE = DATA / "combined" / "combined_edges.csv"
 
 MAX_CONFIDENCE = 3  # only for galaxy: 1 = codex mapping only, 2 = codex + name match, 3 = all

@@ -24,6 +24,7 @@ max-returns = 8
 
 [tool.ty.environment]
 python-version = "3.12"
+extra-paths = ["../galaxy"]  # map_galaxy_tools
 
 [tool.ty.src]
-include = ["nfdag", "extract_nextflow_dags.py", "map_nextflow_tools.py"]
+include = ["nfdag", "02_extract_nextflow_dags.py", "03_map_nextflow_tools.py"]

@@ -14,7 +14,7 @@ _SHELL_SKIP_WORDS: Final = """
     trap read column rev curl wget function let printenv mktemp trap ulimit hostname whoami uname nproc expr
     bc yes cmp diff comm du df file stat sync kill touch type alias shopt pushd popd getopts break continue
     in import from def print library suppressPackageStartupMessages require try except with else: end
-    usr bin time sudo exec nohup command timeout parallel
+    usr bin time sudo exec nohup command timeout parallel rmdir
 """
 SHELL_SKIP: Final = frozenset(_SHELL_SKIP_WORDS.split())
 # words before the actual command: `time samtools ...`, `xargs -n 1 gzip`
@@ -25,6 +25,13 @@ _INTERPRETER_WORDS: Final = (
 )
 INTERPRETERS: Final = frozenset(_INTERPRETER_WORDS.split())
 SCRIPT_FILE: Final = re.compile(r"\.(py|R|r|pl|rb|js|sh|groovy|jl)$")
+# commands whose quoted arguments are programs or text, not shell (awk 'NR==FNR {a[$1]; next} ...', echo "...")
+_EMBEDDED: Final = re.compile(
+    r"(?<![\w.-])(awk|gawk|mawk|bioawk|perl|ruby|Rscript|R|python[23]?|sed|jq|echo|printf|node)(?![\w.-])"
+)
+# `uv run tool ...`, `pixi run tool ...`, `conda run -n env tool ...`: the tool is the command
+_RUNNERS: Final = frozenset({"uv", "pixi", "conda", "mamba", "micromamba", "poetry", "pipenv", "uvx"})
+_RUNNER_VALUE_OPTIONS: Final = frozenset({"-n", "--name", "-p", "--prefix", "-e", "--environment", "--manifest-path"})
 
 
 @dataclass(slots=True)
@@ -46,6 +53,32 @@ def _one_word_values(script: str) -> dict[str, list[str]]:
     return words
 
 
+def _blank_embedded(script: str) -> str:
+    """Replace the quoted arguments of awk / perl / Rscript / echo ... by '' over the whole script, also when they
+    span several lines: they hold programs or text, whose words (`next`, `i`, `params`) are no commands."""
+    out, pos = [], 0
+    for m in _EMBEDDED.finditer(script):
+        if m.start() < pos:
+            continue
+        out.append(script[pos : m.end()])
+        i = m.end()
+        # the arguments of this command, up to its end or a here-document (`python3 - <<'EOF'` keeps its marker)
+        while i < len(script) and script[i] not in "\n;|&)" and not script.startswith("<<", i):
+            c = script[i]
+            if c in "'\"":
+                end = i + 1
+                while end < len(script) and script[end] != c:
+                    end += 2 if script[end] == "\\" and c == '"' else 1
+                out.append("''")
+                i = end + 1
+                continue
+            out.append(c)
+            i += 1
+        pos = i
+    out.append(script[pos:])
+    return "".join(out)
+
+
 def _command_line(stripped: str) -> str:
     """The part of a script line in which commands are looked for."""
     # `CMD="diamond blastx ..."` followed by `eval $CMD`: the value is the command line
@@ -61,7 +94,9 @@ def _command_line(stripped: str) -> str:
 def _interpreter_call(first: str, rest: list[str], found: Commands) -> None:
     """`python x.py`, `java -jar tool.jar`, `mono Tool.exe`: record the script or tool that is run."""
     if first == "java" and "-jar" in rest and rest.index("-jar") + 1 < len(rest):
-        found.executables.append(PurePosixPath(rest[rest.index("-jar") + 1]).stem)
+        jar = rest[rest.index("-jar") + 1]
+        if "{" not in jar and "$" not in jar:  # java -jar {params.jar}: known only at run time
+            found.executables.append(PurePosixPath(jar).stem)
         return
     if first == "mono" and rest:  # mono ThermoRawFileParser.exe
         found.executables.append(PurePosixPath(rest[0].split("/")[-1]).stem)
@@ -76,6 +111,12 @@ def _segment(segment: str, words: dict[str, list[str]], bin_names: set[str], fou
     tokens = segment.split()
     while tokens and (tokens[0] in WRAPPERS or re.match(r"^\w+=", tokens[0]) or tokens[0].startswith("-")):
         tokens.pop(0)
+    if len(tokens) > 2 and tokens[0] in _RUNNERS and tokens[1] in {"run", "exec"}:
+        tokens = tokens[2:]
+        while tokens and tokens[0].startswith("-"):  # conda run -n env, pixi run --manifest-path x
+            tokens = tokens[2:] if tokens[0] in _RUNNER_VALUE_OPTIONS else tokens[1:]
+    elif tokens and tokens[0] == "uvx":
+        tokens = tokens[1:]
     if not tokens:
         return
     first = tokens[0].strip("'\"")
@@ -89,7 +130,8 @@ def _segment(segment: str, words: dict[str, list[str]], bin_names: set[str], fou
     if first in INTERPRETERS:
         _interpreter_call(first, [t.strip("'\"") for t in tokens[1:]], found)
         return
-    if not re.match(r"^[A-Za-z][\w.+-]*$", first) or first in SHELL_SKIP:
+    # `for(i=1;i<=NF;i++)` of an awk program, `for (( i=0; i<n; i++ ))`: an increment, not a command
+    if not re.match(r"^[A-Za-z][\w.+-]*$", first) or first in SHELL_SKIP or first.endswith(("++", "--")):
         return
     if first in bin_names:
         found.scripts.append(first)
@@ -103,7 +145,7 @@ def commands(script: str, bin_names: set[str]) -> Commands:
     shebang = script.lstrip().split("\n")[0]
     if shebang.startswith("#!") and not re.search(r"\b(ba|z)?sh\b", shebang):
         return found  # the whole script is Python/R/Perl, not shell commands
-    script = re.sub(r"\\\\?\n", " ", script)
+    script = _blank_embedded(re.sub(r"\\\\?\n", " ", script))
     words = _one_word_values(script)
     functions: set[str] = set()
     heredoc: str | None = None

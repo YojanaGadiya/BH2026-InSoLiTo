@@ -19,11 +19,12 @@ Runs can be stopped and restarted: files already on disk are not downloaded agai
 Reading public workflows needs no account or token.
 
 Usage (from the repository root):
-    python3 directed-graph/workflowhub/download_workflowhub_nextflow.py --limit 10  # test on 10 workflows
-    python3 directed-graph/workflowhub/download_workflowhub_nextflow.py             # everything
-    python3 directed-graph/workflowhub/download_workflowhub_nextflow.py --summary-only
-    python3 directed-graph/workflowhub/download_workflowhub_nextflow.py --ignore-nfcore  # without nf-core
+    python3 workflows/scripts/nextflow/01_download_workflowhub_nextflow.py --limit 10  # test on 10 workflows
+    python3 workflows/scripts/nextflow/01_download_workflowhub_nextflow.py             # everything
+    python3 workflows/scripts/nextflow/01_download_workflowhub_nextflow.py --summary-only
+    python3 workflows/scripts/nextflow/01_download_workflowhub_nextflow.py --ignore-nfcore  # without nf-core
 """
+
 import argparse
 import csv
 import json
@@ -40,10 +41,8 @@ from pathlib import Path, PurePosixPath
 
 from nfdag.build import build
 
-from nfdag.build import build
-
 BASE = "https://workflowhub.org"
-ROOT = Path(__file__).resolve().parents[3]                  # nextflow -> scripts -> workflows -> root
+ROOT = Path(__file__).resolve().parents[3]  # nextflow -> scripts -> workflows -> root
 DATA_DIR = ROOT / "workflows" / "data" / "galaxy" / "download"  # index, meta, crates: shared with the Galaxy download
 INDEX_FILE = DATA_DIR / "index.json"
 META_DIR = DATA_DIR / "meta"
@@ -62,6 +61,7 @@ TIMEOUT = 60  # seconds per request
 # HTTP
 # --------------------------------------------------------------------------- #
 
+
 def fetch(url, accept="application/json"):
     """GET a URL and return the body as bytes. Retries with increasing waits."""
     request = urllib.request.Request(url, headers={"Accept": accept, "User-Agent": USER_AGENT})
@@ -75,7 +75,7 @@ def fetch(url, accept="application/json"):
             reason = f"HTTP {error.code}"
         except (urllib.error.URLError, TimeoutError) as error:
             reason = str(error)
-        wait = 2 ** attempt
+        wait = 2**attempt
         print(f"  retry {attempt}/{MAX_RETRIES} in {wait}s ({reason}): {url}", file=sys.stderr)
         time.sleep(wait)
     raise RuntimeError(f"Gave up after {MAX_RETRIES} attempts: {url}")
@@ -88,6 +88,7 @@ def fetch_json(url):
 # --------------------------------------------------------------------------- #
 # Step 1: list all workflow IDs, and the teams of the nf-core space
 # --------------------------------------------------------------------------- #
+
 
 def list_workflows():
     """Return all workflow IDs, following pagination links if the API uses them."""
@@ -121,6 +122,7 @@ def nfcore_projects(offline):
 # --------------------------------------------------------------------------- #
 # Step 2: metadata per workflow
 # --------------------------------------------------------------------------- #
+
 
 def get_metadata(workflow_id, delay):
     """Return the workflow's JSON, downloading it only if not saved yet."""
@@ -176,6 +178,7 @@ def labels(items):
 # --------------------------------------------------------------------------- #
 # Step 3: RO-Crate of Nextflow workflows, unpacked
 # --------------------------------------------------------------------------- #
+
 
 def get_crate(workflow_id, version, delay):
     """Download the RO-Crate zip if not saved yet. Returns its path or None."""
@@ -277,8 +280,17 @@ def fill_from_repository(out_dir, attrs, version):
         return
     with tempfile.TemporaryDirectory(dir=DATA_DIR) as tmp:
         clone = Path(tmp) / "repo"
-        command = ["git", "-c", "protocol.file.allow=never", "clone", "--quiet", "--depth", "1",
-                   "--recurse-submodules", "--shallow-submodules"]
+        command = [
+            "git",
+            "-c",
+            "protocol.file.allow=never",
+            "clone",
+            "--quiet",
+            "--depth",
+            "1",
+            "--recurse-submodules",
+            "--shallow-submodules",
+        ]
         env = dict(os.environ, GIT_TERMINAL_PROMPT="0")
         attempts = [[*command, "--branch", ref, url, str(clone)]] if ref else []
         attempts.append([*command, url, str(clone)])  # the default branch, if the ref is gone
@@ -306,6 +318,7 @@ def fill_from_repository(out_dir, attrs, version):
 # --------------------------------------------------------------------------- #
 # Main
 # --------------------------------------------------------------------------- #
+
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -347,17 +360,19 @@ def main():
                 fill_from_repository(NF_DIR / f"{workflow_id}_v{version}", attrs, version)
                 files = nf_files(NF_DIR / f"{workflow_id}_v{version}")
 
-        rows.append({
-            "id": workflow_id,
-            "version": version,
-            "title": attrs.get("title", ""),
-            "projects": ";".join(projects),
-            "nf_core": str(is_nfcore).lower(),
-            "topics": labels(attrs.get("topic_annotations")),
-            "operations": labels(attrs.get("operation_annotations")),
-            "tools": labels(attrs.get("tools")),
-            "nf_files": ";".join(files),
-        })
+        rows.append(
+            {
+                "id": workflow_id,
+                "version": version,
+                "title": attrs.get("title", ""),
+                "projects": ";".join(projects),
+                "nf_core": str(is_nfcore).lower(),
+                "topics": labels(attrs.get("topic_annotations")),
+                "operations": labels(attrs.get("operation_annotations")),
+                "tools": labels(attrs.get("tools")),
+                "nf_files": ";".join(files),
+            }
+        )
         if args.limit and len(rows) >= args.limit:
             break
 
@@ -366,9 +381,11 @@ def main():
         writer.writeheader()
         writer.writerows(rows)
 
-    print(f"Wrote {SUMMARY_FILE}: {nextflow_total} Nextflow workflows, "
-          f"{nextflow_total - len(rows)} skipped (nf-core space or --limit), {len(rows)} kept, "
-          f"{sum(1 for r in rows if r['nf_files'])} with a .nf file")
+    print(
+        f"Wrote {SUMMARY_FILE}: {nextflow_total} Nextflow workflows, "
+        f"{nextflow_total - len(rows)} skipped (nf-core space or --limit), {len(rows)} kept, "
+        f"{sum(1 for r in rows if r['nf_files'])} with a .nf file"
+    )
 
 
 if __name__ == "__main__":
