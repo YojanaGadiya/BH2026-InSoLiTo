@@ -1,0 +1,25 @@
+tool,biotools_entry,paper,year,doi,pmid,listed_in_biotools,citing_articles,citing_in_methods
+XCMS,xcms,"XCMS: processing mass spectrometry data for metabolite profiling using nonlinear peak alignment, matching, and identification",2006,10.1021/ac051437y,16448051,no,1498,1178
+XCMS,xcms,"Highly sensitive feature detection for high resolution LC/MS (centWave)",2008,10.1186/1471-2105-9-504,19040729,no,315,229
+XCMS,xcms_online,"XCMS Online: a web-based platform to process untargeted metabolomic data",2012,10.1021/ac300698c,22533540,no,353,208
+XCMS,camera,"CAMERA: an integrated strategy for compound spectra extraction and annotation of LC/MS data sets",2012,10.1021/ac202450g,22111785,no (camera entry lists no paper),382,281
+XCMS,xcms_online,"Systems biology guided by XCMS Online metabolomics",2017,10.1038/nmeth.4260,28448069,yes,64,33
+XCMS,xcms,"xcms in Peak Form: now anchoring a complete metabolomics data preprocessing and analysis software ecosystem",2025,10.1021/acs.analchem.5c04338,,yes (only paper listed),3,2
+MZmine,mzmine,"MZmine 2: modular framework for processing, visualizing, and analyzing mass spectrometry-based molecular profile data",2010,10.1186/1471-2105-11-395,20650010,no,1023,761
+MZmine,mzmine,"Integrative analysis of multimodal mass spectrometry data in MZmine 3",2023,10.1038/s41587-023-01690-2,36859716,no,305,218
+MZmine,mzmine,"MZmine: toolbox for processing and visualization of mass spectrometry based molecular profile data",2006,10.1093/bioinformatics/btk039,16403790,no,162,69
+MZmine,mzmine,"Reproducible mass spectrometry data processing and compound annotation in MZmine 3",2024,10.1038/s41596-024-00996-y,38769143,no,43,29
+MZmine,mzmine,"Processing methods for differential analysis of LC/MS profile data",2005,10.1186/1471-2105-6-179,16026613,yes (only paper listed),54,23
+SIRIUS,(none: bio.tools 'sirius' is the Rdisop R package),"SIRIUS 4: a rapid tool for turning tandem mass spectra into metabolite structure information",2019,10.1038/s41592-019-0344-8,30886413,no,609,384
+SIRIUS,(none),"Searching molecular structure databases with tandem mass spectra using CSI:FingerID",2015,10.1073/pnas.1509788112,26392543,no,335,158
+SIRIUS,sirius,"SIRIUS: decomposing isotope patterns for metabolite identification",2009,10.1093/bioinformatics/btn603,19015140,yes,89,38
+SIRIUS,sirius,"DECOMP: from interpreting mass spectrometry peaks to solving the money changing problem",2008,10.1093/bioinformatics/btm631,18174179,yes,4,0
+SIRIUS,sirius,"A fast and simple algorithm for the money changing problem",2007,10.1007/s00453-007-0162-8,,yes,3,3
+PRIDE,pride,"The PRIDE database and related tools and resources in 2019: improving support for quantification data",2019,10.1093/nar/gky1106,30395289,no,3008,1819
+PRIDE,pride,"The PRIDE database resources in 2022: a hub for mass spectrometry-based proteomics evidences",2022,10.1093/nar/gkab1038,34723319,no,2740,1510
+PRIDE,pride,"2016 update of the PRIDE database and its related tools",2016,10.1093/nar/gkv1145,26527722,no,1117,781
+PRIDE,pride,"The PRIDE database at 20 years: 2025 update",2025,10.1093/nar/gkae1011,39494541,no,761,372
+PRIDE,pride,"The PRoteomics IDEntifications (PRIDE) database and associated tools: status in 2013",2013,10.1093/nar/gks1262,23203882,no,635,396
+PRIDE,pride,"PRIDE: the proteomics identifications database",2005,10.1002/pmic.200401303,16041671,no,125,40
+PRIDE,pride,"The Proteomics Identifications database: 2010 update",2010,10.1093/nar/gkp964,19906717,no,71,30
+PRIDE,pride,"Using the Proteomics Identifications Database (PRIDE) (Current Protocols unit)",2008,10.1002/0471250953.bi1308s21,18428683,yes (only paper listed),4,0
