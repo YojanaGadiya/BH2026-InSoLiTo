@@ -70,6 +70,7 @@ bioconductor-chipseeker,genomicfeatures,5,Addimator/compare_meth;koesterlab/ross
 consensus,count,5,DavideBrex/SpikeFlow;gynecoloji/snakemake_ATACseq;gynecoloji/snakemake_ATACseq_spikein;gynecoloji/snakemake_ChIPseq;gynecoloji/snakemake_CutandRunseq,Consensus,Count,3,0,0,5
 cutadapt,star,5,AllenInstitute/Bulk-RNA-Snakeline;SiYangming/riboseq.smk;lparsons/pf15-smallrna-rseto;niekwit/eCLIP;zavolanlab/zarp,Cutadapt,STAR,2,0,5,0
 fastp,bwa-mem2,5,MPUSP/snakemake-simple-mapping;SichongP/atac-seq;abbyevewilliams/map-pipeline;aryazand/fastq-process-align;isaacvock/PROseq_etal,fastp,Bwa-mem2,2,0,5,0
+fastp,bwa-meth,5,poloarol/snakemake-methylseq;semenko/serpent-methylation-pipeline;tmweiskittel/serpent-methylation-pipeline-cloud;tmweiskittel/tmw_align_emseq;varlociraptor/varlociraptor-methylation-evaluation,fastp,bwa-meth,2,0,5,0
 freebayes,bcftools,5,IKIM-Essen/uncovar;MPUSP/snakemake-simple-mapping;milesroberts-123/poolseq-kmers;scholl-lab/sm-calling;snakemake-workflows/dna-seq-varlociraptor,FreeBayes,BCFtools,2,0,5,0
 gffread,salmon,5,SiYangming/nanoseq.smk;jma1991/chromium;snakemake-workflows/rna-longseq-de-isoform;tavareshugo/smk-indexer;tdayris/fair_genome_indexer,gffread,Salmon,2,0,5,0
 gffutils,rseqc,5,epigen/rnaseq_pipeline;petroskilp/clustromics;plycrsk/rna-seq-star-deseq2;schlesnerlab/multiconDEnrich;snakemake-workflows/rna-seq-star-deseq2,GFFutils,RSeQC,2,0,5,0
@@ -150,6 +151,7 @@ bowtie,samtools,3,akcorut/kGWASflow;mukherjeelab/CLIPs4U;niekwit/smallRNA-seq,Bo
 bowtie2,gatk,3,martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;ylab-hi/ScanNeo2,Bowtie 2,GATK,2,0,3,0
 bowtie2,qualimap,3,martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe;sneuensc/mapache,Bowtie 2,QualiMap,2,0,3,0
 bwa-mem2,picard_tools,3,abbyevewilliams/map-pipeline;martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe,Bwa-mem2,Picard,2,0,3,0
+bwa-meth,samtools,3,poloarol/snakemake-methylseq;tmweiskittel/tmw_align_emseq;varlociraptor/varlociraptor-methylation-evaluation,bwa-meth,SAMtools,2,0,3,0
 clair3,bcftools,3,Bioinflows-Bioversity-CIAT/ont-target-dna-variant-calling;EichlerLab/ONT_pipelines;MPUSP/snakemake-ont-bacterial-variants,Clair3,BCFtools,2,0,3,0
 clean,fastqc,3,IMS-Bio2Core-Facility/polya_liftover;IMS-Bio2Core-Facility/single_snake_sequencing;joyling93/sc10x_wf,CLEAN,FastQC,3,0,0,3
 cutadapt,usearch,3,KasperSkytte/snakemake_savont;KasperSkytte/snakemake_usearch;MarieRiisgaard/snakemake_usearch_primertrim_and_subset,Cutadapt,USEARCH,2,0,3,0
@@ -231,6 +233,7 @@ bcftools,whatshap,2,friendsofstrandseq/mosaicatcher-pipeline;zhongmicai/mosaicat
 bedops,bcftools,2,martykardos/asacphus_fire_frogs;moiexpositoalonsolab/grenepipe,Bedops,BCFtools,2,0,2,0
 bedtools,bedgraphtobigwig,2,fiberseq/fiberseq-smk;mrvollger/sd-divergence,BEDTools,bedGraphToBigWig,2,0,2,0
 bedtools,biscuit,2,semenko/serpent-methylation-pipeline;tmweiskittel/serpent-methylation-pipeline-cloud,BEDTools,BISCUIT,2,0,2,0
+bedtools,bwa-meth,2,semenko/serpent-methylation-pipeline;tmweiskittel/serpent-methylation-pipeline-cloud,BEDTools,bwa-meth,2,0,2,0
 bedtools,methyldackel,2,semenko/serpent-methylation-pipeline;tmweiskittel/serpent-methylation-pipeline-cloud,BEDTools,MethylDackel,2,0,2,0
 bedtools,minimap2,2,MathiasEskildsen/ONT_RNA-seq_wf;Xavster838/downstream_isoseq_process,BEDTools,Minimap2,2,0,2,0
 bioconductor-anndatar,bioconductor-rhdf5,2,FilippoGas/GeneProgramsProfiler;snakemake-workflows/single-cell-counts-preprocessing,anndataR,rhdf5,2,0,2,0
@@ -646,7 +649,7 @@ busco,seqkit,1,mkrg01/genome_assembly_pipeline,BUSCO,seqkit,2,0,1,0
 bwa,coverage,1,cbg-ethz/V-pipe,BWA,CoVerage,3,0,0,1
 bwa,extract,1,IKIM-Essen/uncovar,BWA,EXTRACT,3,0,0,1
 bwa,minibwa,1,Phlya/tagmap,BWA,minibwa,2,0,1,0
-bwa,msa,1,cbg-ethz/V-pipe,BWA,msa,3,0,0,1
+bwa,msa,1,cbg-ethz/V-pipe,BWA,msa,2,0,1,0
 bwa,orthanq,1,orthanq/orthanq-hla-quantification,BWA,Orthanq,2,0,1,0
 bwa,pairtools,1,Phlya/tagmap,BWA,pairtools,2,0,1,0
 bwa,pysam,1,IKIM-Essen/uncovar,BWA,pysam,2,0,1,0
@@ -658,7 +661,7 @@ bwa-mem2,genomicranges,1,niekwit/partridge-workflow,Bwa-mem2,GenomicRanges,2,0,1
 bwa-mem2,homer,1,isaacvock/PROseq_etal,Bwa-mem2,homer,2,0,1,0
 bwa-mem2,pilon,1,Wheeler-Lab/InDelCoordinateCorrection,Bwa-mem2,pilon,2,0,1,0
 bwa-mem2,sambamba,1,SichongP/atac-seq,Bwa-mem2,Sambamba,2,0,1,0
-bwa-meth,samtools,1,varlociraptor/varlociraptor-methylation-evaluation,bwa-meth,SAMtools,2,0,1,0
+bwa-meth,methyldackel,1,tmweiskittel/tmw_align_emseq,bwa-meth,MethylDackel,2,0,1,0
 canu,kraken2,1,IKIM-Essen/uncovar,CANU,kraken2,2,0,1,0
 canu,samtools,1,IKIM-Essen/uncovar,CANU,SAMtools,2,0,1,0
 canu,tabix,1,IKIM-Essen/uncovar,CANU,tabix,2,0,1,0
@@ -810,7 +813,6 @@ fastk,Smudgeplots,1,mkrg01/genome_assembly_pipeline,FASTK,Smudgeplots,2,0,1,0
 fastp,HybPiper,1,ethan-baldwin/hybpiper_astral_pipeline,fastp,HybPiper,2,0,1,0
 fastp,adapterremoval,1,sneuensc/mapache,fastp,AdapterRemoval,2,0,1,0
 fastp,bismark,1,varlociraptor/varlociraptor-methylation-evaluation,fastp,Bismark,2,0,1,0
-fastp,bwa-meth,1,varlociraptor/varlociraptor-methylation-evaluation,fastp,bwa-meth,2,0,1,0
 fastp,coverage,1,tmweiskittel/tmw_align_emseq,fastp,CoVerage,3,0,0,1
 fastp,fastx-toolkit,1,loganylchen/snakemake-epitranscriptome,fastp,FASTX-Toolkit,2,0,1,0
 fastp,hifi,1,LiaOb21/colora,fastp,HIFI,3,0,0,1

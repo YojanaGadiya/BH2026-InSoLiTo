@@ -11,3 +11,16 @@ rust-bio-tools	map	rust-bio	maps to Rust-Bio
 bamcoverage	map	deeptools	Is part of DeepTools
 fasterq-dump	map	fastER	Part of fastER
 makeblastdb	map	blast	Part of BLAST suite
+bwameth.py	map	bwa-meth	Python call to bwa-meth
+bwa_index	map	bwa	Part of BWA
+bwa_mem	map	bwa	Part of BWA
+bwa-mem3	map	bwa	Part of BWA
+bwa-mem2.fg-labs	map	bwa-mem2	Weird way to call this
+bwa-mem2-wrapper	map	bwa-mem2	Weird way to call this
+bwameth_index	map	bwa-meth	Part of bwa-meth
+bwa__build_index	map	bwa	Part of BWA
+bwa__map_reads_to_reference	map	bwa	Part of BWA
+bwa_map	map	bwa	Part of BWA
+bwa_mem_remapping	map	bwa	Part of BWAmap
+bwa_qa	map	bwa	Part of BWA
+bwa_sort	map	bwa	Part of BWA

@@ -986,7 +986,7 @@ brunosate21-a11y/codigo-sem-commit,carveme,reframed,CarveMe,reFramed,2
 brunosate21-a11y/codigo-sem-commit,pandas,diamond,Pandas,Diamond,2
 brunosate21-a11y/codigo-sem-commit,reframed,pandas,reFramed,Pandas,2
 cbg-ethz/V-pipe,bwa,coverage,BWA,CoVerage,3
-cbg-ethz/V-pipe,bwa,msa,BWA,msa,3
+cbg-ethz/V-pipe,bwa,msa,BWA,msa,2
 cbg-ethz/V-pipe,bwa,samtools,BWA,SAMtools,3
 cbg-ethz/V-pipe,consensus,Augur,Consensus,Augur,3
 cbg-ethz/V-pipe,consensus,bwa,Consensus,BWA,3
@@ -2261,6 +2261,8 @@ plycrsk/rna-seq-star-deseq2,sra-tools,star,SRA Software Toolkit,STAR,2
 plycrsk/rna-seq-star-deseq2,star,multiqc,STAR,MultiQC,2
 plycrsk/rna-seq-star-deseq2,star,pandas,STAR,Pandas,2
 plycrsk/rna-seq-star-deseq2,star,rseqc,STAR,RSeQC,2
+poloarol/snakemake-methylseq,bwa-meth,samtools,bwa-meth,SAMtools,2
+poloarol/snakemake-methylseq,fastp,bwa-meth,fastp,bwa-meth,2
 poloarol/snakemake-methylseq,fastp,fastqc,fastp,FastQC,2
 poloarol/snakemake-methylseq,picard_tools,verifybamid,Picard,verifyBamID,2
 poloarol/snakemake-methylseq,samtools,picard_tools,SAMtools,Picard,2
@@ -2352,7 +2354,9 @@ scholl-lab/sm-calling,samtools,gatk,SAMtools,GATK,2
 seankmartin/atn-sub-lfp-workflow,process,plot,PROcess,plot,3
 seankmartin/atn-sub-lfp-workflow,process,theta,PROcess,ThETA,3
 semenko/serpent-methylation-pipeline,bedtools,biscuit,BEDTools,BISCUIT,2
+semenko/serpent-methylation-pipeline,bedtools,bwa-meth,BEDTools,bwa-meth,2
 semenko/serpent-methylation-pipeline,bedtools,methyldackel,BEDTools,MethylDackel,2
+semenko/serpent-methylation-pipeline,fastp,bwa-meth,fastp,bwa-meth,2
 semenko/serpent-methylation-pipeline,samtools,biscuit,SAMtools,BISCUIT,2
 semenko/serpent-methylation-pipeline,samtools,fastqc,SAMtools,FastQC,2
 semenko/serpent-methylation-pipeline,samtools,methyldackel,SAMtools,MethylDackel,2
@@ -2719,14 +2723,19 @@ thomasbtf/sars-cov-2-wbe,pysam,pandas,pysam,Pandas,2
 thomasbtf/sars-cov-2-wbe,pysam,snakemake,pysam,Snakemake,3
 thomasmulvaney/snakemake-gromacs-workflow,fastqc,multiqc,FastQC,MultiQC,2
 tmweiskittel/serpent-methylation-pipeline-cloud,bedtools,biscuit,BEDTools,BISCUIT,2
+tmweiskittel/serpent-methylation-pipeline-cloud,bedtools,bwa-meth,BEDTools,bwa-meth,2
 tmweiskittel/serpent-methylation-pipeline-cloud,bedtools,methyldackel,BEDTools,MethylDackel,2
 tmweiskittel/serpent-methylation-pipeline-cloud,biscuit,tabix,BISCUIT,tabix,2
+tmweiskittel/serpent-methylation-pipeline-cloud,fastp,bwa-meth,fastp,bwa-meth,2
 tmweiskittel/serpent-methylation-pipeline-cloud,samtools,biscuit,SAMtools,BISCUIT,2
 tmweiskittel/serpent-methylation-pipeline-cloud,samtools,fastqc,SAMtools,FastQC,2
 tmweiskittel/serpent-methylation-pipeline-cloud,samtools,methyldackel,SAMtools,MethylDackel,2
 tmweiskittel/tmw_align_emseq,LAmbDA,samtools,LAmbDA,SAMtools,3
 tmweiskittel/tmw_align_emseq,bedtools,samtools,BEDTools,SAMtools,2
+tmweiskittel/tmw_align_emseq,bwa-meth,methyldackel,bwa-meth,MethylDackel,2
+tmweiskittel/tmw_align_emseq,bwa-meth,samtools,bwa-meth,SAMtools,2
 tmweiskittel/tmw_align_emseq,coverage,samtools,CoVerage,SAMtools,3
+tmweiskittel/tmw_align_emseq,fastp,bwa-meth,fastp,bwa-meth,2
 tmweiskittel/tmw_align_emseq,fastp,coverage,fastp,CoVerage,3
 tmweiskittel/tmw_align_emseq,fastp,samtools,fastp,SAMtools,2
 tmweiskittel/tmw_align_emseq,samtools,bedtools,SAMtools,BEDTools,2

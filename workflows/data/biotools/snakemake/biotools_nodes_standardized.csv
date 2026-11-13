@@ -4,9 +4,9 @@ multiqc,MultiQC,107,true,2,0,107,0
 fastqc,FastQC,101,true,2,0,98,3
 pandas,Pandas,80,false,2,0,80,0
 bcftools,BCFtools,66,true,2,0,66,0
-fastp,fastp,60,true,2,0,59,1
+fastp,fastp,62,true,2,0,61,1
 bedtools,BEDTools,53,true,2,0,53,0
-bwa,BWA,51,true,2,0,49,2
+bwa,BWA,51,true,1,3,48,0
 picard_tools,Picard,42,false,2,0,42,0
 minimap2,Minimap2,39,true,2,0,39,0
 bowtie2,Bowtie 2,36,true,2,0,35,1
@@ -80,6 +80,7 @@ bakta,Bakta,5,true,2,0,5,0
 bedgraphtobigwig,bedGraphToBigWig,5,true,2,0,5,0
 biostrings,Biostrings,5,true,2,0,5,0
 busco,BUSCO,5,true,2,0,5,0
+bwa-meth,bwa-meth,5,true,1,4,1,0
 coverm,CoverM,5,true,2,0,5,0
 delly2,Delly2,5,true,2,0,5,0
 gffcompare,gffcompare,5,false,2,0,4,1
@@ -265,7 +266,6 @@ bioconductor-singler,SingleR,1,true,2,0,1,0
 bioconductor-txdbmaker,txdbmaker,1,true,2,0,1,0
 bioperl,BioPerl,1,true,2,0,1,0
 bracken,Bracken,1,true,2,0,1,0
-bwa-meth,bwa-meth,1,true,2,0,1,0
 bx-python,bx-python,1,false,2,0,1,0
 canu,CANU,1,true,2,0,1,0
 cellsnp-lite,cellsnp-lite,1,true,2,0,1,0
