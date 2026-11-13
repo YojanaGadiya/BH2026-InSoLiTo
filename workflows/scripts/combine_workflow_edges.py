@@ -3,10 +3,11 @@ Combines the tool-pair edges of Galaxy, Nextflow, nf-core and Snakemake workflow
 
 Reads one edges CSV per source (e.g. columns: source, target, n_workflows, ...) and writes:
   - workflows/data/biotools/combined/combined_edges.csv  one row per directed tool pair:
-        source, target, n_wf_galaxy, n_wf_nextflow, n_wf_nfcore, n_wf_snakemake, n_articles, median_delta,
-        median_tool_gap
+        source, target, n_wf_galaxy, n_wf_nextflow, n_wf_nfcore, n_wf_snakemake,
+        galaxy_ids, nextflow_ids, nfcore_ids, snakemake_ids, n_articles, median_delta, median_tool_gap
     Nextflow: the WorkflowHub workflows without those of the nf-core space (they are the nf-core source).
-    A pair missing from a source gets 0 for that source.
+    A pair missing from a source gets 0 and an empty <source>_ids for that source.
+    <source>_ids are the workflow IDs of that source, separated by ';' (as in the input files).
 
 Tool IDs are matched case-insensitively (tool == TOoL), so the same bio.tools ID matches across sources.
 Different spellings in different files are merged and the output uses upper case spelling if there is one (tool and TOoL).
@@ -75,16 +76,23 @@ def pick_spellings() -> dict[str, str]:
     return chosen
 
 
+def join_ids(values: pd.Series) -> str:
+    """'1;2' and '2;3' -> '1;2;3': the workflow IDs of merged rows, each once, in first-seen order."""
+    ids = [i for v in values.dropna().astype(str) for i in v.split(";") if i]
+    return ";".join(dict.fromkeys(ids))
+
+
 def read_edges(path: Path, name: str, spelling: dict[str, str]) -> pd.DataFrame:
-    """One row per (source, target) with that source's workflow count."""
-    df = pd.read_csv(path)
+    """One row per (source, target) with that source's workflow count and workflow IDs."""
+    df = pd.read_csv(path, dtype={"workflow_ids": str})
     if "confidence" in df.columns:
         df = df[df["confidence"] <= MAX_CONFIDENCE]
     df["source"] = df["source"].astype(str).str.lower().map(spelling)
     df["target"] = df["target"].astype(str).str.lower().map(spelling)
-    # merging spellings can merge rows, so sum them
-    return (df.groupby(["source", "target"], as_index=False)["n_workflows"].sum()
-              .rename(columns={"n_workflows": f"n_wf_{name}"}))
+    # merging spellings can merge rows, so sum the counts and join the IDs
+    return (df.groupby(["source", "target"], as_index=False)
+              .agg(n_workflows=("n_workflows", "sum"), workflow_ids=("workflow_ids", join_ids))
+              .rename(columns={"n_workflows": f"n_wf_{name}", "workflow_ids": f"{name}_ids"}))
 
 
 def read_citations(spelling: dict[str, str]) -> pd.DataFrame:
@@ -119,8 +127,10 @@ def main() -> None:
         combined = edges if combined is None else combined.merge(edges, on=["source", "target"], how="outer")
 
     counts = [f"n_wf_{name}" for name in INPUTS]
+    ids = [f"{name}_ids" for name in INPUTS]
     combined[counts] = combined[counts].fillna(0).astype(int)
-    combined = combined.sort_values(counts, ascending=False)
+    combined[ids] = combined[ids].fillna("")
+    combined = combined[["source", "target", *counts, *ids]].sort_values(counts, ascending=False)
 
     combined = combined.merge(read_citations(spelling), on=["source", "target"], how="left")
     combined["n_articles"] = combined["n_articles"].fillna(0).astype(int)
