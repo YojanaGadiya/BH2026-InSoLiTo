@@ -13,7 +13,7 @@ Run from the repo root, with Neo4j up:
 import duckdb
 from neo4j import GraphDatabase
 
-EDGES_CSV = 'directed-graph/citation-order/data/directed_edges.csv'
+EDGES_CSV = 'directed-graph/citation-order/data_full_corpus/directed_edges_delta1.csv'
 NEO4J_URI = 'bolt://localhost:7687'
 
 # 1. Distinct tool IDs in the directed edges

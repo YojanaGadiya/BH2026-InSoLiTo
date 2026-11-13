@@ -1,0 +1,26 @@
+# Hand-curated bio.tools mapping of Snakemake tool nodes (read by 03_map_snakemake_tools.py). Tab-separated.
+# tool:       tool name as in nodes.csv (case-insensitive); for rules without a known tool, the rule name
+# action:     map  = use biotoolsID (several IDs separated by ";" make a chain, e.g. bwa;samtools)
+#             drop = not a bio.tools tool: the node goes, its neighbours are connected
+# biotoolsID: for map
+# note:       free text (why)
+# Candidates: workflows/data/mapping/snakemake/snakemake_to_curate.tsv has the same first columns - fill in and copy rows here.
+# The format is that of ../nextflow/nextflow_curated_map.tsv.
+tool	action	biotoolsID	note
+rust-bio-tools	map	rust-bio	maps to Rust-Bio
+bamcoverage	map	deeptools	Is part of DeepTools
+fasterq-dump	map	fastER	Part of fastER
+makeblastdb	map	blast	Part of BLAST suite
+bwameth.py	map	bwa-meth	Python call to bwa-meth
+bwa_index	map	bwa	Part of BWA
+bwa_mem	map	bwa	Part of BWA
+bwa-mem3	map	bwa	Part of BWA
+bwa-mem2.fg-labs	map	bwa-mem2	Weird way to call this
+bwa-mem2-wrapper	map	bwa-mem2	Weird way to call this
+bwameth_index	map	bwa-meth	Part of bwa-meth
+bwa__build_index	map	bwa	Part of BWA
+bwa__map_reads_to_reference	map	bwa	Part of BWA
+bwa_map	map	bwa	Part of BWA
+bwa_mem_remapping	map	bwa	Part of BWAmap
+bwa_qa	map	bwa	Part of BWA
+bwa_sort	map	bwa	Part of BWA

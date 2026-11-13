@@ -1,6 +1,9 @@
 // Must match Sidebar.vue's OCCURRENCE_DEFAULT — the slider's visual default is
 // meaningless if this store (what the query actually uses) doesn't start there too.
 const OCCURRENCE_DEFAULT = 11
+// Same for Sidebar.vue's DIRECTED_DEFAULT: minimum number of articles (both
+// directions added up) for a directed edge to be drawn.
+const DIRECTED_DEFAULT = 30
 
 export const useFilterStore = defineStore('filter', () => {
     // null means "no filter" (matches the METAOCCUR_ALL query variant, no year condition).
@@ -11,6 +14,7 @@ export const useFilterStore = defineStore('filter', () => {
     const yearMin = ref(null)
     const yearMax = ref(null)
     const occurrenceMin = ref(OCCURRENCE_DEFAULT)
+    const directedMinArticles = ref(DIRECTED_DEFAULT)
 
     function setFilters (newYearMin, newYearMax, newOccurrenceMin) {
         yearMin.value = newYearMin
@@ -18,11 +22,16 @@ export const useFilterStore = defineStore('filter', () => {
         occurrenceMin.value = newOccurrenceMin
     }
 
+    function setDirectedMinArticles (value) {
+        directedMinArticles.value = value
+    }
+
     function reset () {
         yearMin.value = null
         yearMax.value = null
         occurrenceMin.value = OCCURRENCE_DEFAULT
+        directedMinArticles.value = DIRECTED_DEFAULT
     }
 
-    return { yearMin, yearMax, occurrenceMin, setFilters, reset }
+    return { yearMin, yearMax, occurrenceMin, directedMinArticles, setFilters, setDirectedMinArticles, reset }
 })

@@ -1,4 +1,4 @@
-import { buildSearchQuery, buildDirectedEdgesQuery } from '../utils/cypherQueries'
+import { buildSearchQuery, buildDirectedEdgesQuery, buildWorkflowEdgesQuery } from '../utils/cypherQueries'
 import { parseNeo4jGraph } from '../utils/parseNeo4jGraph'
 import { postCypher } from '../utils/neo4jClient'
 
@@ -26,12 +26,20 @@ export function useNeo4jSearch () {
     }
 
     // CITED_BEFORE edges between the given nodes (see buildDirectedEdgesQuery).
-    async function fetchDirectedEdges (nodeIds) {
+    async function fetchDirectedEdges (nodeIds, minArticles) {
         if (nodeIds.length < 2) return []
-        const { statement, parameters } = buildDirectedEdgesQuery({ nodeIds })
+        const { statement, parameters } = buildDirectedEdgesQuery({ nodeIds, minArticles })
         const response = await postCypher(statement, parameters, ['graph'])
         return parseNeo4jGraph(response).edges
     }
 
-    return { search, fetchDirectedEdges, loading, error }
+    // WORKFLOW_NEXT edges between the given nodes (see buildWorkflowEdgesQuery).
+    async function fetchWorkflowEdges (nodeIds) {
+        if (nodeIds.length < 2) return []
+        const { statement, parameters } = buildWorkflowEdgesQuery({ nodeIds })
+        const response = await postCypher(statement, parameters, ['graph'])
+        return parseNeo4jGraph(response).edges
+    }
+
+    return { search, fetchDirectedEdges, fetchWorkflowEdges, loading, error }
 }
